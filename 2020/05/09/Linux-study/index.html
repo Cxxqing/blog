@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/blog/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Carey&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="@TOC 快捷键打开命令行：Ctrl+Alt+T自动补齐：输入前几个字符后+Tab键（只需输入文件或目录名的前几个字符，然后按TAB键，如无相重的，完整的文件名百立即自动在命令行出现；如有相重的，再按一下TAB键，系统会列出当前度目录下所有以这几个字符开头的名字）方向键↑： 取上一个命令方向键↓： 取下一个命令终止命令：Ctirl +C Linux中文件颜色所代表的属性和颜色蓝色：目录白色文件：一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux学习">
+<meta property="og:url" content="http://yoursite.com/2020/05/09/Linux-study/index.html">
 <meta property="og:site_name" content="Carey&#39;s Blog">
+<meta property="og:description" content="@TOC 快捷键打开命令行：Ctrl+Alt+T自动补齐：输入前几个字符后+Tab键（只需输入文件或目录名的前几个字符，然后按TAB键，如无相重的，完整的文件名百立即自动在命令行出现；如有相重的，再按一下TAB键，系统会列出当前度目录下所有以这几个字符开头的名字）方向键↑： 取上一个命令方向键↓： 取下一个命令终止命令：Ctirl +C Linux中文件颜色所代表的属性和颜色蓝色：目录白色文件：一">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-09T06:44:23.000Z">
+<meta property="article:modified_time" content="2020-05-09T06:47:52.845Z">
 <meta property="article:author" content="Carey">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/05/09/Linux-study/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Carey's Blog</title>
+  <title>Linux学习 | Carey's Blog</title>
   
 
 
@@ -139,9 +143,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -157,10 +162,9 @@
       <meta itemprop="name" content="Carey's Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/2020/05/09/Linux-study/" class="post-title-link" itemprop="url">Linux学习</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Linux学习
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -184,7 +188,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>@<a href="Linux系统">TOC</a></p>
+        <p>@<a href="Linux系统">TOC</a></p>
 <h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p>打开命令行：Ctrl+Alt+T<br>自动补齐：输入前几个字符后+Tab键（只需输入文件或目录名的前几个字符，然后按TAB键，如无相重的，完整的文件名百立即自动在命令行出现；如有相重的，再按一下TAB键，系统会列出当前度目录下所有以这几个字符开头的名字）<br>方向键↑： 取上一个命令<br>方向键↓： 取下一个命令<br>终止命令：Ctirl +C</p>
 <h2 id="Linux中文件颜色所代表的属性和颜色"><a href="#Linux中文件颜色所代表的属性和颜色" class="headerlink" title="Linux中文件颜色所代表的属性和颜色"></a>Linux中文件颜色所代表的属性和颜色</h2><p>蓝色：目录<br>白色文件：一般性文件，如文本文件，配置文件，源码文件等 </p>
 <h2 id="Linux命令："><a href="#Linux命令：" class="headerlink" title="Linux命令："></a>Linux命令：</h2><h3 id="pwd命令"><a href="#pwd命令" class="headerlink" title="pwd命令"></a>pwd命令</h3><p>用于显示工作目录，执行pwd指令可立刻得知您目前所在的工作目录的绝对路径名称。</p>
@@ -227,21 +231,23 @@
 <h3 id="可执行文件"><a href="#可执行文件" class="headerlink" title="可执行文件"></a>可执行文件</h3><p>windows下的是exe（批处理命令或者说批处理脚本），一般用来启动某个应用程序的<br>linux下的shell脚本（或者类型的脚本），一般用来启动某个应用程序或者服务程序</p>
 <h3 id="权限修改"><a href="#权限修改" class="headerlink" title="权限修改"></a>权限修改</h3><p>只有文件所有者和超管可以修改文件的权限<br>chmod change the permissions mode of file<br>格式一<br>            chmod [ugoa][+-=][rwx] 文件或者目录<br>            chmod u+w,g+x xx.txt<br>格式二<br>            用数字表示权限 r=4 w=2 x=1<br>            r–rw-rwx            467<br>            651                rw-r-x–x<br>            chmod 651 xxfile<br>            chmod -R 777 xxfile 修改文件包括文件的所有子文件<br>chmod                                 修改文件权限<br>chown(change owner)            修改拥有者（所属者）<br>chgrp(change group)            修改拥有组（所属组）<br>            文件是所属者和所属组发生改变，用户对文件的权限也发生改变<br>chown newuser 文件/文件夹                        修改文件或者文件夹的拥有者<br>chgrp newgroupname 文件/文件夹                修改文件或者文件夹的所属组<br>-R 递归修改所有子文件</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+
+
+        
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -294,6 +300,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷键"><span class="nav-number">1.</span> <span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux中文件颜色所代表的属性和颜色"><span class="nav-number">2.</span> <span class="nav-text">Linux中文件颜色所代表的属性和颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux命令："><span class="nav-number">3.</span> <span class="nav-text">Linux命令：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pwd命令"><span class="nav-number">3.1.</span> <span class="nav-text">pwd命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ls命令"><span class="nav-number">3.2.</span> <span class="nav-text">ls命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ls-通配符使用"><span class="nav-number">3.2.1.</span> <span class="nav-text">ls 通配符使用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cd命令"><span class="nav-number">3.3.</span> <span class="nav-text">cd命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#clear命令"><span class="nav-number">3.4.</span> <span class="nav-text">clear命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#touch命令"><span class="nav-number">3.5.</span> <span class="nav-text">touch命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mkdir命令"><span class="nav-number">3.6.</span> <span class="nav-text">mkdir命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rm命令"><span class="nav-number">3.7.</span> <span class="nav-text">rm命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mv命令"><span class="nav-number">3.8.</span> <span class="nav-text">mv命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cp命令"><span class="nav-number">3.9.</span> <span class="nav-text">cp命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#帮助文档"><span class="nav-number">3.10.</span> <span class="nav-text">帮助文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#which命令"><span class="nav-number">3.11.</span> <span class="nav-text">which命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-系统目录结构"><span class="nav-number">3.12.</span> <span class="nav-text">Linux 系统目录结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#find命令"><span class="nav-number">3.13.</span> <span class="nav-text">find命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#locate-slocate命令"><span class="nav-number">3.14.</span> <span class="nav-text">locate&#x2F;slocate命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#updatedb命令"><span class="nav-number">3.15.</span> <span class="nav-text">updatedb命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cat命令"><span class="nav-number">3.16.</span> <span class="nav-text">cat命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#more命令"><span class="nav-number">3.17.</span> <span class="nav-text">more命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#grep命令"><span class="nav-number">3.18.</span> <span class="nav-text">grep命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#echo命令"><span class="nav-number">3.19.</span> <span class="nav-text">echo命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#管道"><span class="nav-number">3.20.</span> <span class="nav-text">管道</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件软链接"><span class="nav-number">3.21.</span> <span class="nav-text">文件软链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户添加"><span class="nav-number">3.22.</span> <span class="nav-text">用户添加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sudo命令"><span class="nav-number">3.23.</span> <span class="nav-text">sudo命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户组"><span class="nav-number">3.24.</span> <span class="nav-text">用户组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户切换"><span class="nav-number">3.25.</span> <span class="nav-text">用户切换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户删除"><span class="nav-number">3.26.</span> <span class="nav-text">用户删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户组管理"><span class="nav-number">3.27.</span> <span class="nav-text">用户组管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux中的ID"><span class="nav-number">3.28.</span> <span class="nav-text">Linux中的ID</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于配置文件"><span class="nav-number">3.29.</span> <span class="nav-text">关于配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是shell-（我们的命令-cd-ls-…）"><span class="nav-number">3.29.1.</span> <span class="nav-text">什么是shell?（我们的命令 cd ls …）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看用户信息"><span class="nav-number">3.30.</span> <span class="nav-text">查看用户信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改用户信息（usermod）（某些需要重新登录生效）"><span class="nav-number">3.31.</span> <span class="nav-text">修改用户信息（usermod）（某些需要重新登录生效）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）"><span class="nav-number">3.32.</span> <span class="nav-text">用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可执行文件"><span class="nav-number">3.33.</span> <span class="nav-text">可执行文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#权限修改"><span class="nav-number">3.34.</span> <span class="nav-text">权限修改</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
