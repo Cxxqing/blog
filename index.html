@@ -145,6 +145,337 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/11/OSsecondone/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="Carey">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carey's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2020/05/11/OSsecondone/" class="post-title-link" itemprop="url">操作系统2.1</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-11 12:56:34 / 修改时间：13:01:00" itemprop="dateCreated datePublished" datetime="2020-05-11T12:56:34+08:00">2020-05-11</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="进程的概念"><a href="#进程的概念" class="headerlink" title="进程的概念"></a>进程的概念</h2><p>程序：是静态的，就是个存放在磁盘里的可执行文件，就是一系列的指令集合<br>进程（Process）：是动态的，是程序的一次执行过程</p>
+<h2 id="进程的组成"><a href="#进程的组成" class="headerlink" title="进程的组成"></a>进程的组成</h2><p>进程(进程实体)由程序段、数据段、PCB三部分组成</p>
+<ul>
+<li><p>PCB             —-    进程的管理者(操作系统)所需的数据都在PCB中</p>
+<ul>
+<li>进程描述信息</li>
+<li>进程控制和管理信息</li>
+<li>资源分配清单</li>
+<li>处理器相关信息</li>
+</ul>
+</li>
+<li><p>程序段        —-    程序本身运行所需的数据</p>
+<ul>
+<li>存放要执行的代码</li>
+</ul>
+</li>
+<li><p>数据段       —-    程序本身运行所需的数据</p>
+<ul>
+<li>存放程序运行过程中处理的各种数据</li>
+</ul>
+</li>
+</ul>
+<p>总结：PCB 是给操作系统用的。程序段、数据段是给进程自己用的。<br>引入进程实体的概念后，可把进程定义为：<br><strong>进程是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。</strong></p>
+<h2 id="进程的组织"><a href="#进程的组织" class="headerlink" title="进程的组织"></a>进程的组织</h2><ul>
+<li>连接方式<ul>
+<li>按照进程状态将PCB分为多个队列</li>
+<li>操作系统持有指向各个队列的指针</li>
+</ul>
+</li>
+<li>索引方式<ul>
+<li>根据进程状态的不同，建立几张索引表</li>
+<li>操作系统持有指向各个索引表的指针</li>
+</ul>
+</li>
+</ul>
+<h2 id="进程的特征"><a href="#进程的特征" class="headerlink" title="进程的特征"></a>进程的特征</h2><ul>
+<li><p>动态性            —-<strong>动态性是进程最基本的特征</strong></p>
+<ul>
+<li>进程是程序的一次执行过程，是动态地产生、变化和消亡的</li>
+</ul>
+</li>
+<li><p>并发性</p>
+<ul>
+<li>内存中有多个进程实体，各进程可并发执行</li>
+</ul>
+</li>
+<li><p>独立性             —–<strong>进程是资源分配、接受调度的基本单位</strong></p>
+<ul>
+<li>进程是能独立运行、独立获得资源、独立接受调度的基本单位</li>
+</ul>
+</li>
+<li><p>异步性            —–<strong>异步性会导致并发程序执行结果的不确定性</strong></p>
+<ul>
+<li>各进程按各自独立的、不可预知的速度向前推进，操作系统要提供“进程同步机制”来解决异步问题</li>
+</ul>
+</li>
+<li><p>结构性</p>
+<ul>
+<li>每个进程都会配置一个PCB。结构上看，进程由程序段，数据段和PCB组成</li>
+</ul>
+</li>
+</ul>
+<h2 id="进程的状态与转换"><a href="#进程的状态与转换" class="headerlink" title="进程的状态与转换"></a>进程的状态与转换</h2><h3 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h3><ul>
+<li><strong>运行状态</strong><ul>
+<li>CPU✔    其他所需资源✔</li>
+</ul>
+</li>
+<li><strong>就绪状态</strong><ul>
+<li>CPU❌   其他所需资源✔</li>
+</ul>
+</li>
+<li><strong>阻塞状态</strong><ul>
+<li>CPU❌   其他所需资源❌</li>
+</ul>
+</li>
+<li>创建状态<ul>
+<li>操作系统为新进程分配资源、创建PCB</li>
+</ul>
+</li>
+<li>终止状态<ul>
+<li>操作系统回收进程的资源、撤销PCB</li>
+</ul>
+</li>
+</ul>
+<h3 id="进程状态间的转换"><a href="#进程状态间的转换" class="headerlink" title="进程状态间的转换"></a>进程状态间的转换</h3><ul>
+<li><strong>就绪态-&gt;运行态</strong><ul>
+<li>进程被调度</li>
+</ul>
+</li>
+<li><strong>运行态-&gt;就绪态</strong><ul>
+<li>时间片到，或CPU被其他高优先级的进程抢占</li>
+</ul>
+</li>
+<li><strong>运行态-&gt;阻塞态</strong><ul>
+<li>等待系统资源分配，或等待某事件发生(主动行为)</li>
+</ul>
+</li>
+<li><strong>阻塞态-&gt;就绪态</strong><ul>
+<li>资源分配到位，等待事件的发生(被动行为)</li>
+</ul>
+</li>
+<li>创建态-&gt;就绪态<ul>
+<li>系统完成创建进程相关的工作</li>
+</ul>
+</li>
+<li>运行态-&gt;终止态<ul>
+<li>进程运行结束，或运行过程中遇到不可修复的错误</li>
+</ul>
+</li>
+</ul>
+<h2 id="进程控制"><a href="#进程控制" class="headerlink" title="进程控制"></a>进程控制</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li><p>进程控制就是要实现进程状态的转换</p>
+<ul>
+<li>进程控制用原语实现<ul>
+<li>原语用<strong>关/开中断</strong>来实现</li>
+<li>原语是一种特殊的程序</li>
+<li>原语的执行<strong>必须一气呵成，不可中断</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="相关原语"><a href="#相关原语" class="headerlink" title="相关原语"></a>相关原语</h3><ul>
+<li><p>进程的创建</p>
+<ul>
+<li>创建原语<pre><code>- 申请空白PCB
+- 为新进程分配所需资源
+- 初始化PCB
+- 将PCB插入就绪队列           **创建态-&gt;就绪态**</code></pre></li>
+<li>引起进程创建的事件<ul>
+<li>用户登录</li>
+<li>作业调度</li>
+<li>提供服务</li>
+<li>应用请求</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>进程的终止</p>
+<ul>
+<li>撤销原语              <strong>就绪态/阻塞态/运行态/ —-&gt;终止态-&gt;无</strong><ul>
+<li>从PCB集合中找到终止进程的PCB</li>
+<li>若进程正在运行，立即剥夺CPU，将CPU分配给其他进程</li>
+<li>终止其所有子进程              <strong>进程间的关系是树状结构</strong></li>
+<li>将该进程拥有的所有资源归还给父进程或操作系统</li>
+<li>删除PCB</li>
+</ul>
+</li>
+<li>引起进程终止的事件<ul>
+<li>正常结束</li>
+<li>异常结束</li>
+<li>外界干预        </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>进程的阻塞                                 <strong>阻塞和唤醒必须成对使用</strong></p>
+<ul>
+<li>阻塞原语     <strong>运行态-&gt;阻塞态</strong><ul>
+<li>找到要阻塞的进程对应的PCB</li>
+<li>保护进程运行现场，将PCB状态信息设置为“阻塞态”，暂时停止进程运行</li>
+<li>将PCB插入相应事件的等待队列</li>
+</ul>
+</li>
+<li>引起进程阻塞的事件<ul>
+<li>需要等待系统分配某种资源</li>
+<li>需要等待相互合作的其他进程完成工作            </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>进程的唤醒                 </p>
+<ul>
+<li>唤醒原语         <strong>阻塞态-&gt;就绪态</strong><ul>
+<li>在事件等待队列中找到PCB</li>
+<li>将PCB从等待队列移除，设置进程为就绪态</li>
+<li>将PCB插入就绪队列，等待被调度</li>
+</ul>
+</li>
+<li>引起进程唤醒的事件<ul>
+<li>等待事件发生                <strong>因何事阻塞，就应由何事唤醒</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>进程的切换</p>
+<ul>
+<li>切换原语           <strong>运行态-&gt;就绪态     或       就绪态-&gt;运行态</strong><pre><code>- 将运行环境信息(进程上下文context)存入PCB
+- PCB移入相应队列
+- 选择另一个进程执行，并更新其PCB
+- 根据PCB恢复新进程所需的运行环境</code></pre></li>
+<li>引起进程切换的事件<ul>
+<li>当前进程时间片到</li>
+<li>有更高优先级的进程到达</li>
+<li>当前进程主动阻塞</li>
+<li>当前进程终止</li>
+</ul>
+</li>
+</ul>
+<p>以上理解能在选择题分析出答案即可，不用背</p>
+</li>
+</ul>
+<h2 id="进程通信"><a href="#进程通信" class="headerlink" title="进程通信"></a>进程通信</h2><ul>
+<li>共享存储<ul>
+<li>设置一个共享空间</li>
+<li>要<strong>互斥地访问</strong>共享空间<ul>
+<li>两种方式<ul>
+<li>基于数据结构(低级)</li>
+<li>基于存储区的共享(高级)</li>
+</ul>
+</li>
+<li>管道通信</li>
+<li>设置一个特殊的共享文件(管道)，其实就是一个缓冲区</li>
+<li><strong>一个管道只能实现半双工通信</strong></li>
+<li>实现双向同时通信要建立两个管道</li>
+<li>各进程要互斥访问管道</li>
+<li><strong>写满时，不能再写。读空时，不能再读</strong></li>
+<li><strong>没写满，不能读。没读空，不能写</strong></li>
+<li>消息传递</li>
+<li>传递结构化的消息(消息头/消息体)</li>
+<li>系统提供“发送/接受原语”</li>
+<li>两种方式</li>
+<li>直接通信方式</li>
+</ul>
+</li>
+<li>消息直接挂到接收方的消息队列里<ul>
+<li>间接(信箱)通信方式</li>
+</ul>
+</li>
+<li>消息先发到中间体(信箱)</li>
+</ul>
+</li>
+</ul>
+<h2 id="线程、多线程模型"><a href="#线程、多线程模型" class="headerlink" title="线程、多线程模型"></a>线程、多线程模型</h2><ul>
+<li>什么是线程，为什么要引入线程<ul>
+<li>可理解为“轻量级进程”</li>
+<li>可增加并发度，减少并发带来的开销<ul>
+<li>引入进程机制后，有什么变化？(和传统进程机制对比)</li>
+<li>资源分配、处理机调度</li>
+<li>传统进程机制中，进程是资源分配、调度的基本单位</li>
+<li>引入线程后，进程是资源分配的基本单位，线程是调度的基本单位</li>
+<li>并发性</li>
+<li>传统进程机制中，只能进程间并发</li>
+<li>引入进程后，各线程间也能并发，提升了并发度</li>
+<li>系统开销</li>
+<li>传统的进程间并发，需要切换进程的运行环境，系统开销很大</li>
+<li>线程间并发，如果是同一进程内的线程切换，则不需要切换进程环境，系统开销小</li>
+<li>引入线程后，并发带来的系统开销减小</li>
+<li>线程有哪些重要的属性</li>
+<li><strong>线程是处理机调度的单位，进程是资源分配的单位</strong></li>
+<li>同一进程的各线程共享进程拥有的资源</li>
+<li>同一进程内的线程切换不会导致进程切换</li>
+<li>线程的实现方式</li>
+<li>用户级线程</li>
+<li>从用户视角看的线程</li>
+<li>内核级线程</li>
+<li>从操作系统视角看的进程(<strong>内核级线程才是处理机分配的单位</strong>)</li>
+<li>组合方式</li>
+<li>上述两种方式的结合</li>
+<li>多线程模型</li>
+<li>多对一模型</li>
+<li>优：进程管理开销小效率高</li>
+<li>缺：<strong>一个线程阻塞会导致整个进程都被阻塞</strong>(并发度低)</li>
+<li>一对一模型</li>
+<li>优：各个线程可分配到多核处理机并发执行，并发度高</li>
+<li>缺：进程管理开销大</li>
+<li>多对多模型</li>
+<li>集二者多所长</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/10/OSfirst/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1400,7 +1731,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
