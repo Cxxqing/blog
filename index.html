@@ -145,6 +145,171 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/12/OSsecondtwo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="Carey">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carey's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2020/05/12/OSsecondtwo/" class="post-title-link" itemprop="url">OSsecondtwo</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-12 15:19:11 / 修改时间：16:18:14" itemprop="dateCreated datePublished" datetime="2020-05-12T15:19:11+08:00">2020-05-12</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="处理机调度"><a href="#处理机调度" class="headerlink" title="处理机调度"></a>处理机调度</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li>按某种算法选择一个进程将处理机分配给它</li>
+</ul>
+<h3 id="三个层次"><a href="#三个层次" class="headerlink" title="三个层次"></a>三个层次</h3><ul>
+<li><p>高级调度<strong>(作业调度)</strong></p>
+<ul>
+<li>按照某种规则，从后备队列中选择合适的作业将其调入内存，并为其创建进程</li>
+</ul>
+</li>
+<li><p>中级调度<strong>(内存调度)</strong></p>
+<ul>
+<li>按照某种规则，从挂起队列中选择合适的进程将其数据调回内存</li>
+</ul>
+</li>
+<li><p>低级调度(进程调度)</p>
+<ul>
+<li>按照某种规则，从就绪队列中选择一个进程为其分配处理机</li>
+</ul>
+</li>
+</ul>
+<h3 id="三层调度的联系、对比"><a href="#三层调度的联系、对比" class="headerlink" title="三层调度的联系、对比"></a>三层调度的联系、对比</h3><ul>
+<li>高级调度<ul>
+<li>外存-&gt;内存(面向作业)</li>
+<li>发生频率：最低</li>
+</ul>
+</li>
+<li>中级调度<ul>
+<li>外存-&gt;内存(面向进程)</li>
+<li>发送频率：中等</li>
+</ul>
+</li>
+<li>低级调度<ul>
+<li>内存-&gt;CPU</li>
+<li>发生频率：最高</li>
+</ul>
+</li>
+</ul>
+<h3 id="补充知识"><a href="#补充知识" class="headerlink" title="补充知识"></a>补充知识</h3><ul>
+<li><p>为减轻系统负载，提供资源利用率，暂时不执行的进程会被调到外存从而变为“挂起态”</p>
+</li>
+<li><p>七状态模型：在五状态模型的基础上加入了“就绪挂起”和“阻塞挂起”两种状态</p>
+</li>
+</ul>
+<h2 id="进程调度的时机、切换与过程、调度方式"><a href="#进程调度的时机、切换与过程、调度方式" class="headerlink" title="进程调度的时机、切换与过程、调度方式"></a>进程调度的时机、切换与过程、调度方式</h2><h3 id="时机"><a href="#时机" class="headerlink" title="时机"></a>时机</h3><ul>
+<li>什么时候需要进程调度？<ul>
+<li>主动放弃<ul>
+<li>进程正常终止</li>
+<li>运行过程中发生异常而终止</li>
+<li>主动阻塞(如等待I/O)</li>
+</ul>
+</li>
+<li>被动放弃<ul>
+<li>分给进程的时间片用完</li>
+<li>有更紧急的事情需要处理(如I/O中断)</li>
+<li>有更高优先级的进程进入就绪队列</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>什么时候不能进行进程调度<ul>
+<li>在处理中断的过程中</li>
+<li>进程在操作系统内核程序临界区中</li>
+<li>原子操作过程中(原语)</li>
+</ul>
+</li>
+</ul>
+<h3 id="切换与过程"><a href="#切换与过程" class="headerlink" title="切换与过程"></a>切换与过程</h3><ul>
+<li>切换过程<ul>
+<li>对原来运行进程各种数据的保存</li>
+<li>对新的进程各种数据的恢复</li>
+</ul>
+</li>
+<li>重要结论：<strong>进程调度、切换是有代价的</strong>，并不是调度越频繁，并发度越高</li>
+</ul>
+<h3 id="方式"><a href="#方式" class="headerlink" title="方式"></a>方式</h3><ul>
+<li>非剥夺调度方式(非抢占式)<ul>
+<li>只能由当前运行的进程主动放弃CPU</li>
+</ul>
+</li>
+<li>剥夺调度方式(抢占式)<ul>
+<li>可由操作系统剥夺当前进程的CPU使用权</li>
+</ul>
+</li>
+</ul>
+<h2 id="调度算法的评价指标"><a href="#调度算法的评价指标" class="headerlink" title="调度算法的评价指标"></a>调度算法的评价指标</h2><h3 id="CPU利用率"><a href="#CPU利用率" class="headerlink" title="CPU利用率"></a>CPU利用率</h3><ul>
+<li>$$<br>利用率 = 忙碌的时间/总时间<br>$$</li>
+</ul>
+<h3 id="系统吞吐量"><a href="#系统吞吐量" class="headerlink" title="系统吞吐量"></a>系统吞吐量</h3><ul>
+<li>$$<br>系统吞吐量 = 总共完成了多少道作业/总共花了多少时间<br>$$</li>
+</ul>
+<h3 id="周转时间"><a href="#周转时间" class="headerlink" title="周转时间"></a>周转时间</h3><ul>
+<li><p>$$<br>周转时间 = 作业完成时间-作业提交时间<br>$$</p>
+</li>
+<li><p>$$<br>平均周转时间 = 各作业周转时间之和/作业数<br>$$</p>
+</li>
+<li><p>$$<br>带权周转时间 = 作业周转时间 / 作业实际运行的时间<br>$$</p>
+</li>
+<li><p>$$<br>平均带权周转时间 = 各作业带权周转时间之和 / 作业数<br>$$</p>
+</li>
+</ul>
+<h3 id="等待时间"><a href="#等待时间" class="headerlink" title="等待时间"></a>等待时间</h3><ul>
+<li>进程/作业                等待被服务的时间之和</li>
+<li>平均等待时间即   各个进程/作业等待时间的平均值</li>
+</ul>
+<h3 id="响应时间"><a href="#响应时间" class="headerlink" title="响应时间"></a>响应时间</h3><ul>
+<li>从用户提交请求到首次产生响应所用的时间</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/11/OSsecondone/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1382,10 +1547,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-09 15:13:48 / 修改时间：15:16:12" itemprop="dateCreated datePublished" datetime="2020-05-09T15:13:48+08:00">2020-05-09</time>
+              <time title="创建时间：2020-05-09 15:13:48" itemprop="dateCreated datePublished" datetime="2020-05-09T15:13:48+08:00">2020-05-09</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-12 21:19:26" itemprop="dateModified" datetime="2020-05-12T21:19:26+08:00">2020-05-12</time>
+              </span>
 
           
 
@@ -1398,18 +1569,162 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>@<a href="MySQL数据库学习">TOC</a></p>
-<h1 id="数据库的基本操作"><a href="#数据库的基本操作" class="headerlink" title="数据库的基本操作"></a>数据库的基本操作</h1><h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><p>create database 数据库名字 [库选项];<br>库选项：数据库的相关属性<br>字符集：charset + 字符集  代表着当前数据库下的所有表存储的数据默认指定的字符集(如果当前不指定，那么采用DBMS默认的)<br>校对集：collate + 校对集<br>create database 数据库名字 charset 字符集名称;</p>
-<h2 id="显示数据库"><a href="#显示数据库" class="headerlink" title="显示数据库"></a>显示数据库</h2><p>基本语法：show databases like ‘匹配模式’;<br>_ : 匹配当前位置单个字符<br>% : 匹配指定位置多个字符<br>获取全部数据库：show databases;<br>查看以my开头的数据库：show databases like ‘my%’;<br>获取m开头，后面第一个字母不确定，最后为database的数据库：’m_database’;<br>获取以database结尾的数据库: ‘%database’;</p>
-<p>查看数据库创建语句：show create database 数据库名字;</p>
-<h2 id="选择数据库"><a href="#选择数据库" class="headerlink" title="选择数据库"></a>选择数据库</h2><p>基本语法：use 数据库名字; </p>
-<h2 id="修改数据库"><a href="#修改数据库" class="headerlink" title="修改数据库"></a>修改数据库</h2><p>5.5之后的版本无法直接修改数据库名字</p>
-<p>修改数据库字符集：alter database 数据库名称 charset  = 字符集名称;         (注意：=可加可不加)</p>
-<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><p>基本语法：drop database 数据库名字;</p>
-<h1 id="数据表操作"><a href="#数据表操作" class="headerlink" title="数据表操作"></a>数据表操作</h1><h2 id="创建数据表"><a href="#创建数据表" class="headerlink" title="创建数据表"></a>创建数据表</h2><h3 id="普通创建表"><a href="#普通创建表" class="headerlink" title="普通创建表"></a>普通创建表</h3><p>基本语法：create table 表明(字段名 字段类型[字段属性], 字段名 字段类型[字段属性]… )[表选项]<br>创建表之前要指定一个存放的库<br>一个是数据库名字.数据表：create table mydatabase2.class(name varchar(10));</p>
-<p>另一种先 use 数据库名字：<br>use mydatabase2;<br>create table teacher(name varchar(10));<br>表选项：与数据库选项类似<br>engine :存储引擎，mysql 提供的具体存储数据的方式，默认有一个innodb(5.5以前默认是myisam)<br>charet: 字符集，只对当前自己表有效(级别比数据库高)<br>collate: 校对集</p>
-<h3 id="复制已有表结构"><a href="#复制已有表结构" class="headerlink" title="复制已有表结构"></a>复制已有表结构</h3><p>从已经存在的表复制一份（只复制结构，不复制数据）<br>基本语法： create table 新表名 like 表名;                //可借助数据库.表名去访问其他数据库的表</p>
-<h2 id="显示数据表"><a href="#显示数据表" class="headerlink" title="显示数据表"></a>显示数据表</h2>
+          <h2 id="1、初识数据库"><a href="#1、初识数据库" class="headerlink" title="1、初识数据库"></a>1、初识数据库</h2><p><strong>1.1、安装MySQL</strong></p>
+<p>1、解压zip文件</p>
+<p>2、把这个包放到自己的电脑环境目录下~</p>
+<p>3、配置环境变量</p>
+<p>4、新建mysql配置文件</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[mysqld]</span></span><br><span class="line"><span class="comment">#  目录一定要换成自己的</span></span><br><span class="line"><span class="attr">basedir</span>=D:\mysql-<span class="number">5.7</span>.<span class="number">30</span>\</span><br><span class="line"><span class="attr">datadir</span>=D:\mysql-<span class="number">5.7</span>.<span class="number">30</span>\data\</span><br><span class="line"><span class="attr">port</span>=<span class="number">3306</span></span><br><span class="line">skip-grant-tables</span><br></pre></td></tr></table></figure>
+
+<p>5、启动管理员模式下的CMD，运行所有的命令</p>
+<p>6、安装mysql的服务</p>
+<p>​    C:\WINDOWS\system32&gt;cd /d D:\mysql-5.7.30</p>
+<p>​    D:\mysql-5.7.30&gt;mysqld -install</p>
+<p>7、初始化数据库文件</p>
+<p>D:\mysql-5.7.30&gt;mysqld –initialize-insecure –user=mysql</p>
+<p>8、启动mysql，进去修改密码~</p>
+<p>D:\mysql-5.7.30&gt;net start mysql</p>
+<p>9、进入mysql，通过命令行(-p后面不要加空格)，修改密码(sql语句后面一定要加分号！)</p>
+<p>D:\mysql-5.7.30&gt;mysql -u root -p</p>
+<p>由于还没有密码，直接回车就行</p>
+<p>mysql&gt; update mysql.user set authentication string=password(‘123456’) where user=’root’ and Host = ‘localhost’;</p>
+<p>mysql&gt; flush privileges;</p>
+<p>10、注释掉ini中的跳过密码</p>
+<p>11、重启mysqk，连接测试，如果连接成功就OK了</p>
+<p><strong>1.2、数据库分类</strong></p>
+<p>关系型数据库 ( SQL )</p>
+<ul>
+<li><p>MySQL , Oracle , SQL Server , SQLite , DB2 , …</p>
+</li>
+<li><p>关系型数据库通过外键关联来建立表与表之间的关系</p>
+</li>
+</ul>
+<p>非关系型数据库 ( NOSQL )</p>
+<ul>
+<li><p>Redis , MongoDB , …</p>
+</li>
+<li><p>非关系型数据库通常指数据以对象的形式存储在数据库中，而对象之间的关系通过每个对象自身的属性来决定</p>
+</li>
+</ul>
+<p>DBMS（数据库管理系统）</p>
+<ul>
+<li>科学组织和存储数据 , 高效地获取和维护数据</li>
+</ul>
+<hr>
+<p><strong>1.3、MySQL简介</strong></p>
+<p>MySQL是一个<strong>关系型数据库管理系统</strong></p>
+<p>前世：瑞典MySQL AB公司</p>
+<p>今生：属于 <a href="https://baike.baidu.com/item/Oracle" target="_blank" rel="noopener">Oracle</a> 旗下产品</p>
+<p>MySQL是最好的 <a href="https://baike.baidu.com/item/RDBMS/1048260" target="_blank" rel="noopener">RDBMS</a> (Relational Database Management System，关系数据库管理系统) 应用软件之一</p>
+<p>体积小、速度快、总体拥有成本低</p>
+<p>官网：<a href="https://www.mysql.com/" target="_blank" rel="noopener">https://www.mysql.com/</a></p>
+<hr>
+<p><strong>1.4、连接数据库</strong></p>
+<p>mysql -uroot -p123456      —连接数据库</p>
+<hr>
+<p>所以语句都使用  ;    结尾</p>
+<p>show databases;                       显示所有数据库<br>use dbname；                          打开某个数据库<br>show tables;                             显示数据库mysql中所有的表<br>describe user;                         显示表mysql数据库中user表的列信息<br>create database name;         创建数据库<br>use databasename;                 选择数据库<br>exit;                                            退出Mysql</p>
+<p> –                                                (sql的单行注释)</p>
+<p>/*                                                (sql的多行注释)</p>
+<p>asaad</p>
+<p>ada</p>
+<p>*/</p>
+<p><strong>数据库xxx语言</strong></p>
+<p>DDL     定义</p>
+<p>DML    操作</p>
+<p>DQL     查询</p>
+<p>DCL      控制</p>
+<h2 id="2、操作数据库"><a href="#2、操作数据库" class="headerlink" title="2、操作数据库"></a>2、操作数据库</h2><p>操作数据库&gt;操作数据库中的表&gt;操作数据库中表的数据</p>
+<p><strong>mysql关键字不区分大小写</strong></p>
+<h3 id="2-1、操作数据库（了解）"><a href="#2-1、操作数据库（了解）" class="headerlink" title="2.1、操作数据库（了解）"></a>2.1、操作数据库（了解）</h3><p>1、 创建数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] westos;</span><br></pre></td></tr></table></figure>
+
+<p>2、 删除数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">DATABASE</span> [<span class="keyword">IF</span> <span class="keyword">EXISTS</span>] westos;</span><br></pre></td></tr></table></figure>
+
+<p>3、使用数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- tab键的上面，如果你的表名或者字段名是一个特殊字符，就需要带``</span></span><br><span class="line"><span class="keyword">USE</span> <span class="string">`school`</span></span><br></pre></td></tr></table></figure>
+
+<p>4、查看数据库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW DATABASES --  查看所有的数据库</span><br></pre></td></tr></table></figure>
+
+<p>学习思路：</p>
+<pre><code>- 对照可视化历史记录查看
+- 固定的语法或关键字必须要强行记住</code></pre><p><img src="C:%5CUsers%5CCarey%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200512193554975.png" alt="image-20200512193554975"></p>
+<h3 id="2-2、数据库的列类型"><a href="#2-2、数据库的列类型" class="headerlink" title="2.2、数据库的列类型"></a>2.2、数据库的列类型</h3><blockquote>
+<p>数值</p>
+</blockquote>
+<ul>
+<li>tinyint      十分小的数据    1个字节</li>
+<li>smallint     较小的数据      2个字节</li>
+<li>mediumint    中等大小的数据       3个字节</li>
+<li><strong>int                    标准的整数        4个字节</strong>   常用的   int</li>
+<li>bigint              较大的数据         8个字节</li>
+<li>float               浮点数                  4个字节</li>
+<li>double            浮点数            8个字节   (精度问题!)</li>
+<li>decimal       字符串形式的浮点数       金融计算的时候，一般是使用decimal</li>
+</ul>
+<blockquote>
+<p>字符串</p>
+</blockquote>
+<ul>
+<li>char         字符串固定大小的         0~255</li>
+<li><strong>varchar        可变字符串          0~65535</strong>      常用的    String</li>
+<li>tinytext       微型文本         2^8 - 1</li>
+<li><strong>text             文本串           2^16 - 1</strong>            保存大文本</li>
+</ul>
+<blockquote>
+<p>时间日期</p>
+</blockquote>
+<p>java.util.Date</p>
+<ul>
+<li>date         YYYY-MM-DD,  日期格式</li>
+<li>time        HH:mm:ss         时间格式</li>
+<li><strong>datetime      YYYY-MM-DD   HH: mm：ss   最常用的时间格式</strong></li>
+<li><strong>timestamp   时间戳，   1970.1.1 到现在的毫秒数！</strong>  也较为常用！</li>
+<li>year  年份表示</li>
+</ul>
+<blockquote>
+<p>null</p>
+</blockquote>
+<ul>
+<li>没有值，未知</li>
+<li><strong>注意，不要使用NULL进行运算，结果为NULL</strong></li>
+</ul>
+<h3 id="2-3、数据库的字段属性-重点"><a href="#2-3、数据库的字段属性-重点" class="headerlink" title="2.3、数据库的字段属性(重点)"></a>2.3、数据库的字段属性(重点)</h3><p>Unsigned:</p>
+<ul>
+<li>无符号的整数</li>
+<li>声明了该列不能声明为负数</li>
+</ul>
+<p>zerofill:</p>
+<ul>
+<li>0填充的</li>
+<li>不足的位数，使用0来填充，   int(3)    ,    5   —  005</li>
+</ul>
+<p>自增：</p>
+<ul>
+<li>通常理解为自增，自动在上一条记录的基础上+1(默认)</li>
+<li>通常用来设计唯一的主键~ index， 必须是整数类型</li>
+<li>可以自定义设计主键自增的起始值和步长</li>
+</ul>
+<p>非空 NUll not null</p>
+<ul>
+<li>假设设置为 not null ，如果不给它赋值，就会报错！</li>
+<li>NULL ， 如果不填写值，默认就是null！</li>
+</ul>
+<p>默认：</p>
+<ul>
+<li>设置默认的值！</li>
+<li>sex ，默认值为男，如果不指定该列的值，则会有默认的值！</li>
+</ul>
+<p><strong>拓展：听听就好**</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*  每一个表，都必须存在以下五个字段！未来做项目用的，表示一个记录存在意义！</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">id	主键</span></span><br><span class="line"><span class="comment">`version`	乐观锁</span></span><br><span class="line"><span class="comment">is_delete	伪删除</span></span><br><span class="line"><span class="comment">gmt_create	创建时间</span></span><br><span class="line"><span class="comment">gmt_update	修改时间</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-4、创建数据库表-重点"><a href="#2-4、创建数据库表-重点" class="headerlink" title="2.4、创建数据库表(重点)"></a>2.4、创建数据库表(重点)</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 目标 : 创建一个school数据库</span></span><br><span class="line"><span class="comment">-- 创建学生表(列,字段)       使用SQL创建</span></span><br><span class="line"><span class="comment">-- 学号int 登录密码varchar(20) 姓名,性别varchar(2),出生日期(datatime),家庭住址,email</span></span><br><span class="line"><span class="comment">-- 注意点，使用英文(),表的名称和字段尽量使用``括起来</span></span><br><span class="line"><span class="comment">-- AUTO_INCREMENT  自增</span></span><br><span class="line"><span class="comment">-- 字符串使用  '' 单引号括起来！</span></span><br><span class="line"><span class="comment">-- 所以的语句后面加 , (英文的)，最后一个不用加</span></span><br><span class="line"><span class="comment">-- PRIMARY KEY 主键，一般一个表只有一个唯一的主键！</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> <span class="string">`student`</span> (</span><br><span class="line">	<span class="string">`id`</span> <span class="built_in">INT</span>(<span class="number">4</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT <span class="keyword">COMMENT</span> <span class="string">'学号'</span>,</span><br><span class="line">	<span class="string">`name`</span> <span class="built_in">VARCHAR</span>(<span class="number">30</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'匿名'</span> <span class="keyword">COMMENT</span> <span class="string">'姓名'</span>,</span><br><span class="line">	<span class="string">`pwd`</span> <span class="built_in">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'123456'</span> <span class="keyword">COMMENT</span> <span class="string">'密码'</span>,</span><br><span class="line">	<span class="string">`sex`</span> <span class="built_in">VARCHAR</span>(<span class="number">2</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'女'</span> <span class="keyword">COMMENT</span> <span class="string">'性别'</span>,</span><br><span class="line">	<span class="string">`birthday`</span> DATETIME <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'出生日期'</span>,</span><br><span class="line">	<span class="string">`address`</span> <span class="built_in">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'家庭住址'</span>,</span><br><span class="line">	<span class="string">`email`</span> <span class="built_in">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'邮箱'</span>,</span><br><span class="line">	PRIMARY <span class="keyword">KEY</span>(<span class="string">`id`</span>)</span><br><span class="line">)<span class="keyword">ENGINE</span>=<span class="keyword">INNODB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8</span><br></pre></td></tr></table></figure>
+
+<p>格式</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] <span class="string">`表名`</span>(</span><br><span class="line">	<span class="string">`字段名`</span> 列类型 [属性] [索引] [注释],</span><br><span class="line">    <span class="string">`字段名`</span> 列类型 [属性] [索引] [注释],</span><br><span class="line">	......</span><br><span class="line">    <span class="string">`字段名`</span> 列类型 [属性] [索引] [注释],</span><br><span class="line">)[表类型][字符集设置][注释]</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
 
@@ -1565,108 +1880,11 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/09/Linux-study/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blog/images/avatar.gif">
-      <meta itemprop="name" content="Carey">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Carey's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/2020/05/09/Linux-study/" class="post-title-link" itemprop="url">Linux学习</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-09 14:44:23 / 修改时间：14:47:52" itemprop="dateCreated datePublished" datetime="2020-05-09T14:44:23+08:00">2020-05-09</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>@<a href="Linux系统">TOC</a></p>
-<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p>打开命令行：Ctrl+Alt+T<br>自动补齐：输入前几个字符后+Tab键（只需输入文件或目录名的前几个字符，然后按TAB键，如无相重的，完整的文件名百立即自动在命令行出现；如有相重的，再按一下TAB键，系统会列出当前度目录下所有以这几个字符开头的名字）<br>方向键↑： 取上一个命令<br>方向键↓： 取下一个命令<br>终止命令：Ctirl +C</p>
-<h2 id="Linux中文件颜色所代表的属性和颜色"><a href="#Linux中文件颜色所代表的属性和颜色" class="headerlink" title="Linux中文件颜色所代表的属性和颜色"></a>Linux中文件颜色所代表的属性和颜色</h2><p>蓝色：目录<br>白色文件：一般性文件，如文本文件，配置文件，源码文件等 </p>
-<h2 id="Linux命令："><a href="#Linux命令：" class="headerlink" title="Linux命令："></a>Linux命令：</h2><h3 id="pwd命令"><a href="#pwd命令" class="headerlink" title="pwd命令"></a>pwd命令</h3><p>用于显示工作目录，执行pwd指令可立刻得知您目前所在的工作目录的绝对路径名称。</p>
-<h3 id="ls命令"><a href="#ls命令" class="headerlink" title="ls命令"></a>ls命令</h3><p>用于显示指定工作目录下之内容（列出目前工作目录所含之文件及子目录)。<br>ls ：多列显示输出结果；<br>ls -C：多列显示输出结果。这是默认选项；<br>ls -l：与“-C”选项功能相反，所有输出信息用单列格式输出，不输出为多列；   可以用ll进行简单表示，但会多一条本级目录和上级目录<br>ls -a：显示所有档案及目录（ls内定将档案名或目录名称为“.”的视为影藏，不会列出）；</p>
-<h4 id="ls-通配符使用"><a href="#ls-通配符使用" class="headerlink" title="ls 通配符使用"></a>ls 通配符使用</h4><p>*            代表任意个数个字符<br>？          代表1个字符<br>[ ]            表示可以匹配字符组中的任意一个<br>[abc]    匹配a、b、c中的任意一个<br>[a-f]        匹配从a到f范围内的任意一个字符</p>
-<h3 id="cd命令"><a href="#cd命令" class="headerlink" title="cd命令"></a>cd命令</h3><p>用于切换当前工作目录至 dirName(目录参数)。                打开文件夹<br>cd ..  返回上一级目录<br>cd .   当前目录<br>cd ~  进入用户主目录<br>cd     进入用户主目录<br>cd -   返回进入此目录之前所在的目录(切换最近的两个目录来回切换)                           </p>
-<h3 id="clear命令"><a href="#clear命令" class="headerlink" title="clear命令"></a>clear命令</h3><p>用于清除当前屏幕终端上的任何信息</p>
-<h3 id="touch命令"><a href="#touch命令" class="headerlink" title="touch命令"></a>touch命令</h3><p>一是用来创建新的空文件；二是用于把已存在文件的时间标签更新为系统当前的时间（默认方式），它们的数据将原封不动地保留下来</p>
-<h3 id="mkdir命令"><a href="#mkdir命令" class="headerlink" title="mkdir命令"></a>mkdir命令</h3><p>用来创建目录</p>
-<h3 id="rm命令"><a href="#rm命令" class="headerlink" title="rm命令"></a>rm命令</h3><p>可以删除一个目录中的一个或多个文件或目录，也可以将某个目录及其下属的所有文件及其子目录均删除掉。对于链接文件，只是删除整个链接文件，而原有文件保持不变。<br>rm -r或-R：递归处理，将指定目录下的所有文件与子目录一并处理；</p>
-<h3 id="mv命令"><a href="#mv命令" class="headerlink" title="mv命令"></a>mv命令</h3><p>用来为文件或目录改名、或将文件或目录移入其它位置</p>
-<h3 id="cp命令"><a href="#cp命令" class="headerlink" title="cp命令"></a>cp命令</h3><p>主要用于复制文件或目录</p>
-<h3 id="帮助文档"><a href="#帮助文档" class="headerlink" title="帮助文档"></a>帮助文档</h3><p>命令 –help       或 man 命令(q退出，b上一页，空格下一页)</p>
-<h3 id="which命令"><a href="#which命令" class="headerlink" title="which命令"></a>which命令</h3><p>用于查找并显示给定命令的绝对路径，环境变量PATH中保存了查找命令时需要遍历的目录。<br>which cd 为空，因为cd是shell内置的命令</p>
-<h3 id="Linux-系统目录结构"><a href="#Linux-系统目录结构" class="headerlink" title="Linux 系统目录结构"></a>Linux 系统目录结构</h3><p>/bin：bin是Binary的缩写, 这个目录存放着最经常使用的命令。<br>/sbin：s就是Super User的意思，这里存放的是系统管理员使用的系统管理程序。<br>/usr/bin：系统用户使用的应用程序。<br>/usr/sbin：超级用户使用的比较高级的管理程序和系统守护程序。</p>
-<h3 id="find命令"><a href="#find命令" class="headerlink" title="find命令"></a>find命令</h3><p>用来在指定目录下查找文件。<br>find 搜索范围 搜索条件<br>示例一：find /home -name 123<br>//精确搜索<br>示例二：find /home -name 123*                 //模糊搜索 其他用法：*123* 123？？<br>示例三：find /home -iname abc               //选项-i 不区分大小写<br>示例四：find /home -size +204800            //根据文件大小搜索，1数据块=512字节Byte=0.5KB(加号表示大于该数据块)<br>                                          -204800        //204800=00MB 100<em>1024KB 100</em>1024<em>2</em>数据块(减号表示小于该数据块)<br>示例五：find /home -user carey             //在home路径下搜索用户名为carey的文件<br>示例六：find /home -mmin -5                //文件内容上次被修改时间在5分钟以内<br>                                                                mmin上次文件内容被修改时间<br>                                                                amin 上次文件被访问时间<br>                                                                cmin 上次文件属性（文件的权限）被修改时间<br>                                                                -5 5分钟以内 +5超过5分钟<br>示例七：find /home -type f                    //-type文件类型  ( f:文件 d:目录（文件夹）l:软链接文件（Link）)<br>                                                                ———-条件链接<br>                                                                -a and同时满足             -o or或者，满足其中一个即可<br>示例八：find /home -name 123 -a -size +5<br>示例九：ls -i                                            //列出带id的文件<br>              find /home -inum 3434              //在home路径下搜索id为3434的文件</p>
-<h3 id="locate-slocate命令"><a href="#locate-slocate命令" class="headerlink" title="locate/slocate命令"></a>locate/slocate命令</h3><p>用来查找文件或目录。其实是find -name的另一种写法，但是要比后者快得多，原因在于它不搜索具体目录，而是搜索一个数据库/var/lib/locatedb，这个数据库中含有本地所有文件信息。<br>优点：查找快<br>缺点：最新文件找不到（需要时间更新索引库）</p>
-<h3 id="updatedb命令"><a href="#updatedb命令" class="headerlink" title="updatedb命令"></a>updatedb命令</h3><p>用来创建或更新slocate命令所必需的数据库文件。<br>sudo updatedb                         //updatedb命令前面加sudo表示通过管理员方式运行</p>
-<h3 id="cat命令"><a href="#cat命令" class="headerlink" title="cat命令"></a>cat命令</h3><p>用来查看文件内容<br>cat xx.txt             显示所有文件内容<br>cat -b xx.txt           显示行号，对于空白行不编号<br>cat -n xx.txt          显示行号，包含空白行编号</p>
-<h3 id="more命令"><a href="#more命令" class="headerlink" title="more命令"></a>more命令</h3><p>类似cat，不过分页显示文件内容<br>more xx.txt                                    （下一页（空格） 上一页（b） 下一行（Enter））</p>
-<h3 id="grep命令"><a href="#grep命令" class="headerlink" title="grep命令"></a>grep命令</h3><p>搜索文件内容<br>grep xx xxx.txt<br>grep -n xx xx.txt         显示包含内容行的行号<br>grep -v xx xx.txt         去掉包含内容的行，显示其他所有内容<br>grep -v # xx.txt         去掉带#的行（去掉带注释的行） ‘#’<br>grep -v ^# xx.txt         去掉只有注释的行               ^x       以x开头的行<br>grep #$ xx.txt                                                          x$   以x结尾的行<br>grep -i xx xx.txt         忽略大小写搜索</p>
-<h3 id="echo命令"><a href="#echo命令" class="headerlink" title="echo命令"></a>echo命令</h3><p>用于字符串的输出<br>echo xxx<br>echo xxx &gt; xx.txt                 写入（覆盖）<br>echo xxx &gt;&gt; xx.txt                 追加（末尾）</p>
-<p>ls &gt; xx.txt                            把ls显示的内容写入(覆盖)到xx.txt中<br>ls &gt;&gt; xx.txt                           把ls显示的内容追加到xx.txt中</p>
-<h3 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h3><p>把一个命令的输出 通过管道连接 作为另一个命令的输入<br>输出就是命令的结果，输入一般是一个命令的参数，管道连接通过 | 建立。      </p>
-<h3 id="文件软链接"><a href="#文件软链接" class="headerlink" title="文件软链接"></a>文件软链接</h3><p>ln -s 源文件 目标文件</p>
-<h3 id="用户添加"><a href="#用户添加" class="headerlink" title="用户添加"></a>用户添加</h3><p>第一步：添加用户名<br>useradd xx                (sudo useradd xx)        （-m：创建家目录 和 -g：指定所在的组 选项）<br>第二步：设置密码(不设置用户名的用户是不能使用的)（注意是passwd不是password）<br>passwd xx                （sudo passwd xx）<br>passwd 给自己设置密码</p>
-<h3 id="sudo命令"><a href="#sudo命令" class="headerlink" title="sudo命令"></a>sudo命令</h3><p>以系统管理者的身份执行指令，也就是说，经由 sudo 所执行的指令就好像是 root 亲自执行。<br>使用权限：在 /etc/sudoers 中有出现的使用者。用户使用sudo时，必须先输入密码，之后有5分钟的有效期限，超过期限则必须重新输入密码。</p>
-<h3 id="用户组"><a href="#用户组" class="headerlink" title="用户组"></a>用户组</h3><p>每个用户都有一个初始组，可以有零个或者多个附加组。用户组的作用，是为了方便权限控制。（附加组<br>就是为了给用户附加别的权限）<br>当创建用户的时候，系统会创建一个跟用户名同名的组。<br>文件属性：所属用户、所属用户组</p>
-<h3 id="用户切换"><a href="#用户切换" class="headerlink" title="用户切换"></a>用户切换</h3><p>su xx                           用户切换<br>su - xx                     用户切换，并回到家目录<br>切换到root用户:  1、 su       2、  su -<br>使用 su 命令时，有 - 和没有 - 是完全不同的，- 选项表示在切换用户身份的同时，连当前使用的环境变量也切换成指定用户的。我们知道，环境变量是用来定义操作系统环境的，因此如果系统环境没有随用户身份切换，很多命令无法正确执行。<br>exit 退出当前用户，返回上一个用户（从哪个用户切换过来的）如果没有上一个用户，直接退出终端</p>
-<h3 id="用户删除"><a href="#用户删除" class="headerlink" title="用户删除"></a>用户删除</h3><p>userdel xx<br>userdel -r xx         删除家目录<br>userdel -f xx        强制删除，即使用户正在登陆系统</p>
-<h3 id="用户组管理"><a href="#用户组管理" class="headerlink" title="用户组管理"></a>用户组管理</h3><p>groupadd xx                             添加<br>            cat /etc/group 确认组是否被添加成功<br>goupmod -n newxx oldxx            改名<br>groupdel xx                                删除</p>
-<h3 id="Linux中的ID"><a href="#Linux中的ID" class="headerlink" title="Linux中的ID"></a>Linux中的ID</h3><p>文件id uid gid<br>ls -i            查看文件id<br>id                查看当前用户的uid和gid<br>id xx            查看xx用户的uid和gid</p>
-<h3 id="关于配置文件"><a href="#关于配置文件" class="headerlink" title="关于配置文件"></a>关于配置文件</h3><p>/etc/passwd         配置当前系统有哪些用户，以及用户的密码（密码在影子文件里面，passwd的影子文件）<br>1，用户名<br>2，密码标志<br>3，UID<br>4，GID<br>5，用户全名<br>6，家目录<br>7，使用的shell</p>
-<h4 id="什么是shell-（我们的命令-cd-ls-…）"><a href="#什么是shell-（我们的命令-cd-ls-…）" class="headerlink" title="什么是shell?（我们的命令 cd ls …）"></a>什么是shell?（我们的命令 cd ls …）</h4><p>shell是用来解析命令的，它接收用户命令，然后调用相应的程序执行。shell相当于一个翻译，翻译我们的命令，让机器听懂。<br>第一种shell：/bin/bash                    翻译一号<br>第二种shell：/usr/sbin/nologin        翻译二号<br>第三种shell：/bin/sh                        翻译三号（我们创建用户的时候的shell）<br>cat /etc/shells                    查看所有的shell<br>chsh                                更换shell<br>/etc/group                配置当前系统有哪些用户组<br>                                                                                1，组名<br>                                                                                2，组密码标志<br>                                                                                3，GID<br>                                                                                4，组中附加用户<br>which cd？<br>1，为什么没有命令文件<br>因为cd这个命令是放在shell（bash里面的）<br>2，什么是内置命令（cd dirs ls）<br>内置命令在系统启动时就调入内存，是常驻内存的，所以执行效率高。<br>而外部命令是系统的软件功能，用户需要时才从硬盘中读入内存。<br>大部分内置命令都是内置在shell中的，也有一些内置命令有自己单独的文件。<br>系统启动，会把shell中的内置命令，其他其他不在shell中的内置命令加载到内存中。</p>
-<h3 id="查看用户信息"><a href="#查看用户信息" class="headerlink" title="查看用户信息"></a>查看用户信息</h3><p>id<br>whoami         当前登录用户<br>who                当前所有登录用户罗列出来</p>
-<h3 id="修改用户信息（usermod）（某些需要重新登录生效）"><a href="#修改用户信息（usermod）（某些需要重新登录生效）" class="headerlink" title="修改用户信息（usermod）（某些需要重新登录生效）"></a>修改用户信息（usermod）（某些需要重新登录生效）</h3><p>usermod -g xxgroup xxuser                        修改初始组（基本不去修改）<br>usermod -G xxgroup,xxgroup xxuser             修改附加组<br>usermod -s /bin/bash xxuser                        修改shell</p>
-<h3 id="用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）"><a href="#用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）" class="headerlink" title="用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）"></a>用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）</h3><p>u g o</p>
-<hr>
-<p>a表示文件类型 -二进制文件（包括不限于文本文件） d目录（文件夹） l（软连接文件）<br>后面表示这个文件的权限<br>u（user）所有者            g（group）所属组         o（other）其他用户<br>r读写 w写 x执行</p>
-<h3 id="可执行文件"><a href="#可执行文件" class="headerlink" title="可执行文件"></a>可执行文件</h3><p>windows下的是exe（批处理命令或者说批处理脚本），一般用来启动某个应用程序的<br>linux下的shell脚本（或者类型的脚本），一般用来启动某个应用程序或者服务程序</p>
-<h3 id="权限修改"><a href="#权限修改" class="headerlink" title="权限修改"></a>权限修改</h3><p>只有文件所有者和超管可以修改文件的权限<br>chmod change the permissions mode of file<br>格式一<br>            chmod [ugoa][+-=][rwx] 文件或者目录<br>            chmod u+w,g+x xx.txt<br>格式二<br>            用数字表示权限 r=4 w=2 x=1<br>            r–rw-rwx            467<br>            651                rw-r-x–x<br>            chmod 651 xxfile<br>            chmod -R 777 xxfile 修改文件包括文件的所有子文件<br>chmod                                 修改文件权限<br>chown(change owner)            修改拥有者（所属者）<br>chgrp(change group)            修改拥有组（所属组）<br>            文件是所属者和所属组发生改变，用户对文件的权限也发生改变<br>chown newuser 文件/文件夹                        修改文件或者文件夹的拥有者<br>chgrp newgroupname 文件/文件夹                修改文件或者文件夹的所属组<br>-R 递归修改所有子文件</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/blog/page/2/">2</a><a class="extend next" rel="next" href="/blog/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 
@@ -1731,7 +1949,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

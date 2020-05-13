@@ -20,17 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/blog/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="@TOC 数据库的基本操作创建数据库create database 数据库名字 [库选项];库选项：数据库的相关属性字符集：charset + 字符集  代表着当前数据库下的所有表存储的数据默认指定的字符集(如果当前不指定，那么采用DBMS默认的)校对集：collate + 校对集create database 数据库名字 charset 字符集名称; 显示数据库基本语法：show databas">
+  <meta name="description" content="1、初识数据库1.1、安装MySQL 1、解压zip文件 2、把这个包放到自己的电脑环境目录下~ 3、配置环境变量 4、新建mysql配置文件 123456[mysqld]#  目录一定要换成自己的basedir&#x3D;D:\mysql-5.7.30\datadir&#x3D;D:\mysql-5.7.30\data\port&#x3D;3306skip-grant-tables  5、启动管理员模式下的CMD，运行所有的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mysql学习">
 <meta property="og:url" content="http://yoursite.com/2020/05/09/mysql-study/index.html">
 <meta property="og:site_name" content="Carey&#39;s Blog">
-<meta property="og:description" content="@TOC 数据库的基本操作创建数据库create database 数据库名字 [库选项];库选项：数据库的相关属性字符集：charset + 字符集  代表着当前数据库下的所有表存储的数据默认指定的字符集(如果当前不指定，那么采用DBMS默认的)校对集：collate + 校对集create database 数据库名字 charset 字符集名称; 显示数据库基本语法：show databas">
+<meta property="og:description" content="1、初识数据库1.1、安装MySQL 1、解压zip文件 2、把这个包放到自己的电脑环境目录下~ 3、配置环境变量 4、新建mysql配置文件 123456[mysqld]#  目录一定要换成自己的basedir&#x3D;D:\mysql-5.7.30\datadir&#x3D;D:\mysql-5.7.30\data\port&#x3D;3306skip-grant-tables  5、启动管理员模式下的CMD，运行所有的">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="c:%5CUsers%5CCarey%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200512193554975.png">
 <meta property="article:published_time" content="2020-05-09T07:13:48.000Z">
-<meta property="article:modified_time" content="2020-05-09T07:16:12.378Z">
+<meta property="article:modified_time" content="2020-05-12T13:19:26.878Z">
 <meta property="article:author" content="Carey">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:%5CUsers%5CCarey%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200512193554975.png">
 
 <link rel="canonical" href="http://yoursite.com/2020/05/09/mysql-study/">
 
@@ -172,10 +174,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-09 15:13:48 / 修改时间：15:16:12" itemprop="dateCreated datePublished" datetime="2020-05-09T15:13:48+08:00">2020-05-09</time>
+              <time title="创建时间：2020-05-09 15:13:48" itemprop="dateCreated datePublished" datetime="2020-05-09T15:13:48+08:00">2020-05-09</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-12 21:19:26" itemprop="dateModified" datetime="2020-05-12T21:19:26+08:00">2020-05-12</time>
+              </span>
 
           
 
@@ -188,18 +196,162 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>@<a href="MySQL数据库学习">TOC</a></p>
-<h1 id="数据库的基本操作"><a href="#数据库的基本操作" class="headerlink" title="数据库的基本操作"></a>数据库的基本操作</h1><h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><p>create database 数据库名字 [库选项];<br>库选项：数据库的相关属性<br>字符集：charset + 字符集  代表着当前数据库下的所有表存储的数据默认指定的字符集(如果当前不指定，那么采用DBMS默认的)<br>校对集：collate + 校对集<br>create database 数据库名字 charset 字符集名称;</p>
-<h2 id="显示数据库"><a href="#显示数据库" class="headerlink" title="显示数据库"></a>显示数据库</h2><p>基本语法：show databases like ‘匹配模式’;<br>_ : 匹配当前位置单个字符<br>% : 匹配指定位置多个字符<br>获取全部数据库：show databases;<br>查看以my开头的数据库：show databases like ‘my%’;<br>获取m开头，后面第一个字母不确定，最后为database的数据库：’m_database’;<br>获取以database结尾的数据库: ‘%database’;</p>
-<p>查看数据库创建语句：show create database 数据库名字;</p>
-<h2 id="选择数据库"><a href="#选择数据库" class="headerlink" title="选择数据库"></a>选择数据库</h2><p>基本语法：use 数据库名字; </p>
-<h2 id="修改数据库"><a href="#修改数据库" class="headerlink" title="修改数据库"></a>修改数据库</h2><p>5.5之后的版本无法直接修改数据库名字</p>
-<p>修改数据库字符集：alter database 数据库名称 charset  = 字符集名称;         (注意：=可加可不加)</p>
-<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><p>基本语法：drop database 数据库名字;</p>
-<h1 id="数据表操作"><a href="#数据表操作" class="headerlink" title="数据表操作"></a>数据表操作</h1><h2 id="创建数据表"><a href="#创建数据表" class="headerlink" title="创建数据表"></a>创建数据表</h2><h3 id="普通创建表"><a href="#普通创建表" class="headerlink" title="普通创建表"></a>普通创建表</h3><p>基本语法：create table 表明(字段名 字段类型[字段属性], 字段名 字段类型[字段属性]… )[表选项]<br>创建表之前要指定一个存放的库<br>一个是数据库名字.数据表：create table mydatabase2.class(name varchar(10));</p>
-<p>另一种先 use 数据库名字：<br>use mydatabase2;<br>create table teacher(name varchar(10));<br>表选项：与数据库选项类似<br>engine :存储引擎，mysql 提供的具体存储数据的方式，默认有一个innodb(5.5以前默认是myisam)<br>charet: 字符集，只对当前自己表有效(级别比数据库高)<br>collate: 校对集</p>
-<h3 id="复制已有表结构"><a href="#复制已有表结构" class="headerlink" title="复制已有表结构"></a>复制已有表结构</h3><p>从已经存在的表复制一份（只复制结构，不复制数据）<br>基本语法： create table 新表名 like 表名;                //可借助数据库.表名去访问其他数据库的表</p>
-<h2 id="显示数据表"><a href="#显示数据表" class="headerlink" title="显示数据表"></a>显示数据表</h2>
+        <h2 id="1、初识数据库"><a href="#1、初识数据库" class="headerlink" title="1、初识数据库"></a>1、初识数据库</h2><p><strong>1.1、安装MySQL</strong></p>
+<p>1、解压zip文件</p>
+<p>2、把这个包放到自己的电脑环境目录下~</p>
+<p>3、配置环境变量</p>
+<p>4、新建mysql配置文件</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[mysqld]</span></span><br><span class="line"><span class="comment">#  目录一定要换成自己的</span></span><br><span class="line"><span class="attr">basedir</span>=D:\mysql-<span class="number">5.7</span>.<span class="number">30</span>\</span><br><span class="line"><span class="attr">datadir</span>=D:\mysql-<span class="number">5.7</span>.<span class="number">30</span>\data\</span><br><span class="line"><span class="attr">port</span>=<span class="number">3306</span></span><br><span class="line">skip-grant-tables</span><br></pre></td></tr></table></figure>
+
+<p>5、启动管理员模式下的CMD，运行所有的命令</p>
+<p>6、安装mysql的服务</p>
+<p>​    C:\WINDOWS\system32&gt;cd /d D:\mysql-5.7.30</p>
+<p>​    D:\mysql-5.7.30&gt;mysqld -install</p>
+<p>7、初始化数据库文件</p>
+<p>D:\mysql-5.7.30&gt;mysqld –initialize-insecure –user=mysql</p>
+<p>8、启动mysql，进去修改密码~</p>
+<p>D:\mysql-5.7.30&gt;net start mysql</p>
+<p>9、进入mysql，通过命令行(-p后面不要加空格)，修改密码(sql语句后面一定要加分号！)</p>
+<p>D:\mysql-5.7.30&gt;mysql -u root -p</p>
+<p>由于还没有密码，直接回车就行</p>
+<p>mysql&gt; update mysql.user set authentication string=password(‘123456’) where user=’root’ and Host = ‘localhost’;</p>
+<p>mysql&gt; flush privileges;</p>
+<p>10、注释掉ini中的跳过密码</p>
+<p>11、重启mysqk，连接测试，如果连接成功就OK了</p>
+<p><strong>1.2、数据库分类</strong></p>
+<p>关系型数据库 ( SQL )</p>
+<ul>
+<li><p>MySQL , Oracle , SQL Server , SQLite , DB2 , …</p>
+</li>
+<li><p>关系型数据库通过外键关联来建立表与表之间的关系</p>
+</li>
+</ul>
+<p>非关系型数据库 ( NOSQL )</p>
+<ul>
+<li><p>Redis , MongoDB , …</p>
+</li>
+<li><p>非关系型数据库通常指数据以对象的形式存储在数据库中，而对象之间的关系通过每个对象自身的属性来决定</p>
+</li>
+</ul>
+<p>DBMS（数据库管理系统）</p>
+<ul>
+<li>科学组织和存储数据 , 高效地获取和维护数据</li>
+</ul>
+<hr>
+<p><strong>1.3、MySQL简介</strong></p>
+<p>MySQL是一个<strong>关系型数据库管理系统</strong></p>
+<p>前世：瑞典MySQL AB公司</p>
+<p>今生：属于 <a href="https://baike.baidu.com/item/Oracle" target="_blank" rel="noopener">Oracle</a> 旗下产品</p>
+<p>MySQL是最好的 <a href="https://baike.baidu.com/item/RDBMS/1048260" target="_blank" rel="noopener">RDBMS</a> (Relational Database Management System，关系数据库管理系统) 应用软件之一</p>
+<p>体积小、速度快、总体拥有成本低</p>
+<p>官网：<a href="https://www.mysql.com/" target="_blank" rel="noopener">https://www.mysql.com/</a></p>
+<hr>
+<p><strong>1.4、连接数据库</strong></p>
+<p>mysql -uroot -p123456      —连接数据库</p>
+<hr>
+<p>所以语句都使用  ;    结尾</p>
+<p>show databases;                       显示所有数据库<br>use dbname；                          打开某个数据库<br>show tables;                             显示数据库mysql中所有的表<br>describe user;                         显示表mysql数据库中user表的列信息<br>create database name;         创建数据库<br>use databasename;                 选择数据库<br>exit;                                            退出Mysql</p>
+<p> –                                                (sql的单行注释)</p>
+<p>/*                                                (sql的多行注释)</p>
+<p>asaad</p>
+<p>ada</p>
+<p>*/</p>
+<p><strong>数据库xxx语言</strong></p>
+<p>DDL     定义</p>
+<p>DML    操作</p>
+<p>DQL     查询</p>
+<p>DCL      控制</p>
+<h2 id="2、操作数据库"><a href="#2、操作数据库" class="headerlink" title="2、操作数据库"></a>2、操作数据库</h2><p>操作数据库&gt;操作数据库中的表&gt;操作数据库中表的数据</p>
+<p><strong>mysql关键字不区分大小写</strong></p>
+<h3 id="2-1、操作数据库（了解）"><a href="#2-1、操作数据库（了解）" class="headerlink" title="2.1、操作数据库（了解）"></a>2.1、操作数据库（了解）</h3><p>1、 创建数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] westos;</span><br></pre></td></tr></table></figure>
+
+<p>2、 删除数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">DATABASE</span> [<span class="keyword">IF</span> <span class="keyword">EXISTS</span>] westos;</span><br></pre></td></tr></table></figure>
+
+<p>3、使用数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- tab键的上面，如果你的表名或者字段名是一个特殊字符，就需要带``</span></span><br><span class="line"><span class="keyword">USE</span> <span class="string">`school`</span></span><br></pre></td></tr></table></figure>
+
+<p>4、查看数据库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW DATABASES --  查看所有的数据库</span><br></pre></td></tr></table></figure>
+
+<p>学习思路：</p>
+<pre><code>- 对照可视化历史记录查看
+- 固定的语法或关键字必须要强行记住</code></pre><p><img src="C:%5CUsers%5CCarey%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200512193554975.png" alt="image-20200512193554975"></p>
+<h3 id="2-2、数据库的列类型"><a href="#2-2、数据库的列类型" class="headerlink" title="2.2、数据库的列类型"></a>2.2、数据库的列类型</h3><blockquote>
+<p>数值</p>
+</blockquote>
+<ul>
+<li>tinyint      十分小的数据    1个字节</li>
+<li>smallint     较小的数据      2个字节</li>
+<li>mediumint    中等大小的数据       3个字节</li>
+<li><strong>int                    标准的整数        4个字节</strong>   常用的   int</li>
+<li>bigint              较大的数据         8个字节</li>
+<li>float               浮点数                  4个字节</li>
+<li>double            浮点数            8个字节   (精度问题!)</li>
+<li>decimal       字符串形式的浮点数       金融计算的时候，一般是使用decimal</li>
+</ul>
+<blockquote>
+<p>字符串</p>
+</blockquote>
+<ul>
+<li>char         字符串固定大小的         0~255</li>
+<li><strong>varchar        可变字符串          0~65535</strong>      常用的    String</li>
+<li>tinytext       微型文本         2^8 - 1</li>
+<li><strong>text             文本串           2^16 - 1</strong>            保存大文本</li>
+</ul>
+<blockquote>
+<p>时间日期</p>
+</blockquote>
+<p>java.util.Date</p>
+<ul>
+<li>date         YYYY-MM-DD,  日期格式</li>
+<li>time        HH:mm:ss         时间格式</li>
+<li><strong>datetime      YYYY-MM-DD   HH: mm：ss   最常用的时间格式</strong></li>
+<li><strong>timestamp   时间戳，   1970.1.1 到现在的毫秒数！</strong>  也较为常用！</li>
+<li>year  年份表示</li>
+</ul>
+<blockquote>
+<p>null</p>
+</blockquote>
+<ul>
+<li>没有值，未知</li>
+<li><strong>注意，不要使用NULL进行运算，结果为NULL</strong></li>
+</ul>
+<h3 id="2-3、数据库的字段属性-重点"><a href="#2-3、数据库的字段属性-重点" class="headerlink" title="2.3、数据库的字段属性(重点)"></a>2.3、数据库的字段属性(重点)</h3><p>Unsigned:</p>
+<ul>
+<li>无符号的整数</li>
+<li>声明了该列不能声明为负数</li>
+</ul>
+<p>zerofill:</p>
+<ul>
+<li>0填充的</li>
+<li>不足的位数，使用0来填充，   int(3)    ,    5   —  005</li>
+</ul>
+<p>自增：</p>
+<ul>
+<li>通常理解为自增，自动在上一条记录的基础上+1(默认)</li>
+<li>通常用来设计唯一的主键~ index， 必须是整数类型</li>
+<li>可以自定义设计主键自增的起始值和步长</li>
+</ul>
+<p>非空 NUll not null</p>
+<ul>
+<li>假设设置为 not null ，如果不给它赋值，就会报错！</li>
+<li>NULL ， 如果不填写值，默认就是null！</li>
+</ul>
+<p>默认：</p>
+<ul>
+<li>设置默认的值！</li>
+<li>sex ，默认值为男，如果不指定该列的值，则会有默认的值！</li>
+</ul>
+<p><strong>拓展：听听就好**</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*  每一个表，都必须存在以下五个字段！未来做项目用的，表示一个记录存在意义！</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">id	主键</span></span><br><span class="line"><span class="comment">`version`	乐观锁</span></span><br><span class="line"><span class="comment">is_delete	伪删除</span></span><br><span class="line"><span class="comment">gmt_create	创建时间</span></span><br><span class="line"><span class="comment">gmt_update	修改时间</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-4、创建数据库表-重点"><a href="#2-4、创建数据库表-重点" class="headerlink" title="2.4、创建数据库表(重点)"></a>2.4、创建数据库表(重点)</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 目标 : 创建一个school数据库</span></span><br><span class="line"><span class="comment">-- 创建学生表(列,字段)       使用SQL创建</span></span><br><span class="line"><span class="comment">-- 学号int 登录密码varchar(20) 姓名,性别varchar(2),出生日期(datatime),家庭住址,email</span></span><br><span class="line"><span class="comment">-- 注意点，使用英文(),表的名称和字段尽量使用``括起来</span></span><br><span class="line"><span class="comment">-- AUTO_INCREMENT  自增</span></span><br><span class="line"><span class="comment">-- 字符串使用  '' 单引号括起来！</span></span><br><span class="line"><span class="comment">-- 所以的语句后面加 , (英文的)，最后一个不用加</span></span><br><span class="line"><span class="comment">-- PRIMARY KEY 主键，一般一个表只有一个唯一的主键！</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> <span class="string">`student`</span> (</span><br><span class="line">	<span class="string">`id`</span> <span class="built_in">INT</span>(<span class="number">4</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT <span class="keyword">COMMENT</span> <span class="string">'学号'</span>,</span><br><span class="line">	<span class="string">`name`</span> <span class="built_in">VARCHAR</span>(<span class="number">30</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'匿名'</span> <span class="keyword">COMMENT</span> <span class="string">'姓名'</span>,</span><br><span class="line">	<span class="string">`pwd`</span> <span class="built_in">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'123456'</span> <span class="keyword">COMMENT</span> <span class="string">'密码'</span>,</span><br><span class="line">	<span class="string">`sex`</span> <span class="built_in">VARCHAR</span>(<span class="number">2</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'女'</span> <span class="keyword">COMMENT</span> <span class="string">'性别'</span>,</span><br><span class="line">	<span class="string">`birthday`</span> DATETIME <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'出生日期'</span>,</span><br><span class="line">	<span class="string">`address`</span> <span class="built_in">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'家庭住址'</span>,</span><br><span class="line">	<span class="string">`email`</span> <span class="built_in">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'邮箱'</span>,</span><br><span class="line">	PRIMARY <span class="keyword">KEY</span>(<span class="string">`id`</span>)</span><br><span class="line">)<span class="keyword">ENGINE</span>=<span class="keyword">INNODB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8</span><br></pre></td></tr></table></figure>
+
+<p>格式</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] <span class="string">`表名`</span>(</span><br><span class="line">	<span class="string">`字段名`</span> 列类型 [属性] [索引] [注释],</span><br><span class="line">    <span class="string">`字段名`</span> 列类型 [属性] [索引] [注释],</span><br><span class="line">	......</span><br><span class="line">    <span class="string">`字段名`</span> 列类型 [属性] [索引] [注释],</span><br><span class="line">)[表类型][字符集设置][注释]</span><br></pre></td></tr></table></figure>
+
+
     </div>
 
     
@@ -279,7 +431,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库的基本操作"><span class="nav-number">1.</span> <span class="nav-text">数据库的基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建数据库"><span class="nav-number">1.1.</span> <span class="nav-text">创建数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示数据库"><span class="nav-number">1.2.</span> <span class="nav-text">显示数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择数据库"><span class="nav-number">1.3.</span> <span class="nav-text">选择数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改数据库"><span class="nav-number">1.4.</span> <span class="nav-text">修改数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除数据库"><span class="nav-number">1.5.</span> <span class="nav-text">删除数据库</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据表操作"><span class="nav-number">2.</span> <span class="nav-text">数据表操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建数据表"><span class="nav-number">2.1.</span> <span class="nav-text">创建数据表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#普通创建表"><span class="nav-number">2.1.1.</span> <span class="nav-text">普通创建表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复制已有表结构"><span class="nav-number">2.1.2.</span> <span class="nav-text">复制已有表结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示数据表"><span class="nav-number">2.2.</span> <span class="nav-text">显示数据表</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、初识数据库"><span class="nav-number">1.</span> <span class="nav-text">1、初识数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、操作数据库"><span class="nav-number">2.</span> <span class="nav-text">2、操作数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1、操作数据库（了解）"><span class="nav-number">2.1.</span> <span class="nav-text">2.1、操作数据库（了解）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2、数据库的列类型"><span class="nav-number">2.2.</span> <span class="nav-text">2.2、数据库的列类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3、数据库的字段属性-重点"><span class="nav-number">2.3.</span> <span class="nav-text">2.3、数据库的字段属性(重点)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4、创建数据库表-重点"><span class="nav-number">2.4.</span> <span class="nav-text">2.4、创建数据库表(重点)</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -293,7 +445,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
