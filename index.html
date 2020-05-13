@@ -145,6 +145,63 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/13/OSsecondthree/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="Carey">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carey's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2020/05/13/OSsecondthree/" class="post-title-link" itemprop="url">OSsecondthree</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-13 11:55:17" itemprop="dateCreated datePublished" datetime="2020-05-13T11:55:17+08:00">2020-05-13</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/12/OSsecondtwo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -168,10 +225,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-12 15:19:11 / 修改时间：16:18:14" itemprop="dateCreated datePublished" datetime="2020-05-12T15:19:11+08:00">2020-05-12</time>
+              <time title="创建时间：2020-05-12 15:19:11" itemprop="dateCreated datePublished" datetime="2020-05-12T15:19:11+08:00">2020-05-12</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-13 11:53:47" itemprop="dateModified" datetime="2020-05-13T11:53:47+08:00">2020-05-13</time>
+              </span>
 
           
 
@@ -275,7 +338,7 @@
 <li>$$<br>系统吞吐量 = 总共完成了多少道作业/总共花了多少时间<br>$$</li>
 </ul>
 <h3 id="周转时间"><a href="#周转时间" class="headerlink" title="周转时间"></a>周转时间</h3><ul>
-<li><p>$$<br>周转时间 = 作业完成时间-作业提交时间<br>$$</p>
+<li><p>$$<br>周转时间 = 作业完成时间-作业到达时间<br>$$</p>
 </li>
 <li><p>$$<br>平均周转时间 = 各作业周转时间之和/作业数<br>$$</p>
 </li>
@@ -285,11 +348,164 @@
 </li>
 </ul>
 <h3 id="等待时间"><a href="#等待时间" class="headerlink" title="等待时间"></a>等待时间</h3><ul>
-<li>进程/作业                等待被服务的时间之和</li>
+<li>//进程/作业                等待被服务的时间之和</li>
+<li>周转时间-运行时间-(I/O操作的时间)</li>
 <li>平均等待时间即   各个进程/作业等待时间的平均值</li>
 </ul>
 <h3 id="响应时间"><a href="#响应时间" class="headerlink" title="响应时间"></a>响应时间</h3><ul>
 <li>从用户提交请求到首次产生响应所用的时间</li>
+</ul>
+<h2 id="调度算法"><a href="#调度算法" class="headerlink" title="调度算法"></a>调度算法</h2><h3 id="先来先服务-FCFS"><a href="#先来先服务-FCFS" class="headerlink" title="先来先服务(FCFS)"></a>先来先服务(FCFS)</h3><ul>
+<li>思想&amp;&amp;规则<ul>
+<li>按照到达的先后顺序调度，事实上就是等待时间越久越优先得到服务</li>
+</ul>
+</li>
+<li>可抢占？<ul>
+<li>非抢占式</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>公平：实现简单</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>对短作业不利</li>
+</ul>
+</li>
+<li>考虑到等待时间&amp;运行时间？<ul>
+<li>等待时间√    </li>
+<li>运行时间×</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>不会</li>
+</ul>
+</li>
+</ul>
+<h3 id="短作业优先-SJF-SPF"><a href="#短作业优先-SJF-SPF" class="headerlink" title="短作业优先(SJF/SPF)"></a>短作业优先(SJF/SPF)</h3><ul>
+<li>思想&amp;规则<ul>
+<li>每次调度时选择当前已到达且运行时间最短的作业/进程</li>
+</ul>
+</li>
+<li>可抢占？<ul>
+<li>默认为非抢占式，也有SJF的抢占式，版本最短剩余时间优先算法(SRTN)</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>“最短的”平均等待/周转时间</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>对长作业不利，可能导致饥饿；难以做到真正的短作业优先</li>
+</ul>
+</li>
+<li>考虑到等待时间&amp;运行时间<ul>
+<li>等待时间×</li>
+<li>运行时间√</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>会</li>
+</ul>
+</li>
+</ul>
+<h3 id="高响应比优先-HRRN"><a href="#高响应比优先-HRRN" class="headerlink" title="高响应比优先(HRRN)"></a>高响应比优先(HRRN)</h3><ul>
+<li><p>$$<br>响应比 = (等待时间+要求服务的时间)/要求服务的时间<br>$$</p>
+</li>
+<li><p>思想&amp;规则</p>
+<ul>
+<li>非抢占式的调度算法，只有当前运行的进程主动放弃CPU时（正常/异常完成，或主动阻塞），才需要进行调度，调度时计算所有就绪进程的响应比，选响应比最高的进程上处理机</li>
+</ul>
+</li>
+<li><p>可抢占式？</p>
+<ul>
+<li>非抢占式</li>
+</ul>
+</li>
+<li><p>优点</p>
+<ul>
+<li>上述两种算法的权衡折中，综合考虑的等待时间和运行时间</li>
+</ul>
+</li>
+<li><p>缺点</p>
+</li>
+<li><p>考虑到等待时间&amp;运行时间？</p>
+<ul>
+<li>等待时间√</li>
+<li>运行时间√</li>
+</ul>
+</li>
+<li><p>会导致饥饿？</p>
+<ul>
+<li>不会</li>
+</ul>
+</li>
+</ul>
+<h3 id="时间片轮转-RR"><a href="#时间片轮转-RR" class="headerlink" title="时间片轮转(RR)"></a>时间片轮转(RR)</h3><ul>
+<li>思想&amp;规则</li>
+<li>可抢占？<ul>
+<li>抢占式</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>公平，适用于分时系统</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>频繁切换有开销，不区分优先级</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>不会</li>
+</ul>
+</li>
+<li>补充<ul>
+<li>时间片太大或太小有何影响？</li>
+</ul>
+</li>
+</ul>
+<h3 id="优先级调度"><a href="#优先级调度" class="headerlink" title="优先级调度"></a>优先级调度</h3><ul>
+<li>思想&amp;规则</li>
+<li>可抢占？<ul>
+<li>有抢占式的，也有非抢占式的。注意做题时的区别</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>区分优先级，适用于实时系统</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>可能导致饥饿</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>会</li>
+</ul>
+</li>
+<li>补充<ul>
+<li>动态/静态优先级。</li>
+<li>各类型进程如何设置优先级？</li>
+<li>如何调整优先级？</li>
+</ul>
+</li>
+</ul>
+<h3 id="多级反馈队列"><a href="#多级反馈队列" class="headerlink" title="多级反馈队列"></a>多级反馈队列</h3><ul>
+<li>思想&amp;规则<ul>
+<li>较复杂，注意理解</li>
+</ul>
+</li>
+<li>可抢占？<ul>
+<li>抢占式</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>平衡优秀</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>一般不说它有缺点，不过可能导致饥饿</li>
+</ul>
+</li>
 </ul>
 
       
@@ -1555,7 +1771,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-13 10:26:16" itemprop="dateModified" datetime="2020-05-13T10:26:16+08:00">2020-05-13</time>
+                <time title="修改时间：2020-05-13 11:56:24" itemprop="dateModified" datetime="2020-05-13T11:56:24+08:00">2020-05-13</time>
               </span>
 
           
@@ -1650,7 +1866,7 @@
 
 <p>学习思路：</p>
 <pre><code>- 对照可视化历史记录查看
-- 固定的语法或关键字必须要强行记住</code></pre><p><img src="/blog/.com//D:%5CProject%5Cblog%5Csource%5Cimg%5C%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA.png" alt="image-20200512193554975"></p>
+- 固定的语法或关键字必须要强行记住</code></pre><p><img src="/blog/.com//D:%5CProject%5Cblog%5Csource_posts%5Cmysql-study%5C%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA.png" alt="数据库创建"></p>
 <h3 id="2-2、数据库的列类型"><a href="#2-2、数据库的列类型" class="headerlink" title="2.2、数据库的列类型"></a>2.2、数据库的列类型</h3><blockquote>
 <p>数值</p>
 </blockquote>
@@ -1805,81 +2021,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/09/qianrushi-study/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blog/images/avatar.gif">
-      <meta itemprop="name" content="Carey">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Carey's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/2020/05/09/qianrushi-study/" class="post-title-link" itemprop="url">嵌入式学习</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-09 15:10:58 / 修改时间：15:16:24" itemprop="dateCreated datePublished" datetime="2020-05-09T15:10:58+08:00">2020-05-09</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><strong>CISC(复杂指令集）与RISC（精简指令集）的区别</strong><br>![CISC(复杂指令集）与RISC（精简指令集）的区别](<a href="https://img-blog.csdnimg.cn/20200503155704487.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDcxNzI4NA==,size_16,color_FFFFFF,t_70#pic_left" target="_blank" rel="noopener">https://img-blog.csdnimg.cn/20200503155704487.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDcxNzI4NA==,size_16,color_FFFFFF,t_70#pic_left</a> =600x400)<br> <strong>CISC：复杂指令集(Complex Instruction Set Computer)</strong><br>①具有大量的指令和寻址方式<br>②8/2原则：80%的程序只使用20%的指令<br>③大多数程序只使用少量的指令就能够运行。<br><strong>RISC：精简指令集(Reduced Instruction Set Computer)</strong><br>①在通道中只包含最有用的指令<br>②确保数据通道快速执行每一条指令<br>③使CPU硬件结构设计变得更为简单</p>
-<p>（Random Access Memory）RAM，随机存取存储器，具有随机访问的特性，是非易失性存储器。<br>SRAM 是“staticRAM（静态随机存储器）”的简称，之所以这样命名是因为当数据被存入其中后只要不掉电，不会消失。<br>①DRAM：它的基本原件是小电容，电容可以在两个极板上保留电荷，但是需要<strong>定期的充电（刷新）</strong>，否则数据会丢失。缺点：由于要定期刷新存储介质，存取速度较慢。<br>②SRAM：它是一种具有静止存取功能的内存，不需要定期刷新电路就能保存它内部存储的数据。其优点：存取速度快; 但是缺点是：功耗大，成本高。常用作存储容量<br>③SDRAM(Synchronous Dynamic Random Access Memory):同步动态随机存储器.是RAM中最快的一种。</p>
-<p>NOR Flash芯片其内部结构是采用并行方式工作的，内部的地址线和数据线是分开的。其特点可以按字节随机读取任意单元的内容。NOR <strong>Flash可以直接运行启动代码。</strong><br>而NAND型Flash的基本工作方式是按顺序串行读取，一个区块写入或读出结束再进行下一个操作，采用的是串行方式工作。<br>因为作为ARM处理器内存空间必须要具备随机读写特性，所以只有NOR Flash才能挂在内存空间。</p>
-<p><strong>硬件抽象层：</strong><br>①是一种软件。<br>②将操作系统与硬件平台隔开。<br>③有利于系统的模块化设计。</p>
-<p><strong>在ARM系统中，MMU(存储管理单元)主要完成的工作：</strong><br>1.虚拟存储空间到物理存储空间的映射。(页式虚拟存储管理)<br>2.存储器访问权限的控制。<br>3.设置虚拟存储空间的缓冲特性。</p>
-<p>TCB：任务控制块<br>MMU：存储管理单元<br>CACHE：高速缓存<br>DMA：直接存储器访问</p>
-<p>总线带宽 ＝ 总线位宽×总线频率/8<br>例题：<br>某总线有 104 根信号线，其中数据总线32 根，若总线工作频率为 33MHz，则其理论最大传输率为 (C ) 。(注：本题答案中的 B 表示 Byte)<br> A.33 MB/s<br> B.64MB/s<br> C.132 MB/s<br> D.164 MB/s<br>总线带宽 ＝ 总线位宽×总线频率/8=32*33/8＝132MB/s         （数据总线32根说明了总线位宽是32位）</p>
-<p><strong>可重入函数和不可重入函数：</strong><br>可重入函数：主要用于多任务环境中，一个可重入函数简单来说就是可以被中断的函数，也就是说，可以在这个函数执行的任何时刻中断它，转入OS调度下去执行另外一段代码，而返回控制时不会出现什么错误；<br>不可重入函数：由于使用了一些系统资源（全局变量区，中断向量表等），所以它如果被中断的话，可能会出现问题，这类函数是不能运行在多任务环境下的。</p>
-<p><strong>三级流水线结构的<br>指令执行顺序：取值→译码→执行</strong><br>例题1：<br>执行指令    ADD PC，PC，#4后，PC的值为多少？<br>地址                         指令<br>0x7000             ADD PC，PC，#4<br>0x7004 ……<br>0x7008 ……<br>0x700C ……</p>
-<p>（ARM长度时，每条指令为4字节长，所以<br><strong>取值在0X7000</strong>   <strong>译码在0X7004</strong>    <strong>执行在0X7008</strong>,人们习惯性约定将正在执行的指令作为参考点，<br>则PC值=当前程序执行位置+8，所以本题PC=0X7008开始算）<br>指令    ADD PC，PC，#4 是一条ARM指令，意思是 PC = PC + 4 = 0X7008 + 4 = 0X700C.</p>
-<p>例题2：<br>若每一条指令都可以分解为取指、分析和执行三步。已知取指时间t取指＝4△t，分析时间 t分析＝3△t，执行时间 t 执行＝5△t。如果按串行方式执行完100条指令需要(C)△t。如果按照流水线方式执行，执行完100条指令需要(F)△t。<br>A.1190    B.1195    C.1200    D.1205    E.504    F.507    G.508    H.510</p>
-<p>按串行方式，执行完一条指令才能执行下一条指令，那么执行完 100 条指令的时间为：（4＋3＋5）×100＝1200 ；<br>按流水线方式可以同时执行多条指令，（当第一条指令开始分析时，第二条指令开始取指；当第一条指令执行时，第二条指令分析，第三条指令取指；当第二条指令执行时，第三条指令分析，第四条指令取指……..以此类推，当第一条指令完成之后，每一个“执行”的周期就可以完成一条指令）<br>计算的时候，第一条指令必须算全过程时间，后面的指令计算执行时间即可。<br>如果流水线的子过程所用时间不一样长，则吞吐率应以最长子过程来计算。因此，我们可以计算得 100 条指令的执行时间为：（4＋3＋5）＋（100－1）×5＝507。</p>
-<p><strong>staic的三种使用方法：</strong><br>1)在函数体内，一个被声明为静态的变量在这一函数被调用过程中维持其值不变。<br>2)在文件域内(但在函数体外)，一个被声明为静态的变量可以被文件域内所有函数访问，但不能被文件域外其它函数访问。它是一个本地的全局变量。<br>3)在文件域内，一个被声明为静态的函数只可被这一文件域内的其它函数调用。那就是，这个函数被限制在声明它的文件的本地范围内使用。</p>
-<p><strong>位运算</strong><br>位逻辑运算<br>~  按位取反：    单目右结合<br>&amp;  按位与：        全1取1，否则取0   （有0取0）<br>^  按位异或：    相同取0，不同取1<br>|  按位或：        全0取0，否则取1    （有1取1）</p>
-<p>移位运算<br>    &lt;&lt;    对操作数左移给出的位数        (左移一位相当于*2)<br>    &gt;&gt;    对操作数右移给出的位数        (右移一位相当于/2)</p>
-<p>例子：<br>00111010  &lt;&lt; 3   =  (左移三位空出位补0)   11010000<br>00111010  &gt;&gt; 3      =   (右移三位,按右移后的最高位的值进行填补) 00000111<br>11011010  &gt;&gt;3    =    11101101<br>注意：<br>①位运算是对二进制的位进行运算<br>②只能对int型，char型和long型进行位运算</p>
-<p>位运算的技巧：<br>采用位运算交换两个变量的值：<br>      a = a^b;<br>      b = a^b;<br>      a = a^b;  </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1949,7 +2090,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
