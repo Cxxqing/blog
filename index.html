@@ -145,6 +145,63 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/14/javaweb/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="Carey">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carey's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2020/05/14/javaweb/" class="post-title-link" itemprop="url">javaweb</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-14 21:50:15" itemprop="dateCreated datePublished" datetime="2020-05-14T21:50:15+08:00">2020-05-14</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/13/OSsecondthree/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -168,10 +225,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-13 11:55:17 / 修改时间：12:01:42" itemprop="dateCreated datePublished" datetime="2020-05-13T11:55:17+08:00">2020-05-13</time>
+              <time title="创建时间：2020-05-13 11:55:17" itemprop="dateCreated datePublished" datetime="2020-05-13T11:55:17+08:00">2020-05-13</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 21:40:27" itemprop="dateModified" datetime="2020-05-14T21:40:27+08:00">2020-05-14</time>
+              </span>
 
           
 
@@ -184,7 +247,120 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="/blog/.com//D:%5CProject%5Cblog%5Csource_posts%5COSsecondthree%5C%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA.png" alt="数据库创建"></p>
+          <h2 id="2-3-1互斥同步"><a href="#2-3-1互斥同步" class="headerlink" title="2.3.1互斥同步"></a>2.3.1互斥同步</h2><h3 id="进程同步"><a href="#进程同步" class="headerlink" title="进程同步"></a>进程同步</h3><ul>
+<li>并发性带来了异步性，有时需要通过进程同步解决这种异步问题。有的进程之间需要相互配合地完成工作，各进程的工作推进需要遵循一定的先后顺序。</li>
+</ul>
+<h3 id="进程互斥"><a href="#进程互斥" class="headerlink" title="进程互斥"></a>进程互斥</h3><ul>
+<li><p>对临界资源的访问，需要互斥的进行。即同一时间段内只能允许一个进程访问该资源</p>
+</li>
+<li><p>四个部门</p>
+<ul>
+<li>进入区<ul>
+<li>检查是否可进入临界区，若可进入，需要“上锁”</li>
+</ul>
+</li>
+<li>临界区<ul>
+<li>访问邻接资源的那段代码</li>
+</ul>
+</li>
+<li>退出区<ul>
+<li>负责“解锁”</li>
+</ul>
+</li>
+<li>剩余区<ul>
+<li>其余代码部分</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>需要遵循的原则</p>
+<ul>
+<li>空闲让进<ul>
+<li>临界区空闲时，应允许一个进程访问</li>
+</ul>
+</li>
+<li>忙则等待<ul>
+<li>临界区正在被访问时，其他试图访问的进程需要等待</li>
+</ul>
+</li>
+<li>有限等待<ul>
+<li>要在有限时间内进入临界区，保证不会饥饿</li>
+</ul>
+</li>
+<li>让权等待<ul>
+<li>进不了临界区的进程，需释放处理机，防止忙等</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-3-2进程互斥的软件实现方法"><a href="#2-3-2进程互斥的软件实现方法" class="headerlink" title="2.3.2进程互斥的软件实现方法"></a>2.3.2进程互斥的软件实现方法</h2><h3 id="单标志法"><a href="#单标志法" class="headerlink" title="单标志法"></a>单标志法</h3><ul>
+<li>在进入区只做“检查”，不做“上锁”</li>
+<li>在退出区把临界区的使用权转交给另一个进程(相当于在退出区既给另一个进程“解锁”，又给自己“上锁”)</li>
+<li>主要问题：不遵循“空闲让进”原则</li>
+</ul>
+<h3 id="双标志先检查"><a href="#双标志先检查" class="headerlink" title="双标志先检查"></a>双标志先检查</h3><ul>
+<li>在进入区先“检查”后“上锁”，退出区“解锁”</li>
+<li>主要问题：不遵循“忙则等待”原则</li>
+</ul>
+<h3 id="双标志后检查"><a href="#双标志后检查" class="headerlink" title="双标志后检查"></a>双标志后检查</h3><ul>
+<li>在进入区先“加锁”后“检查，退出区“解锁”</li>
+<li>主要问题：不遵循“空闲让进，有限等待”原则，可能导致“饥饿”</li>
+</ul>
+<h3 id="Peterson算法"><a href="#Peterson算法" class="headerlink" title="Peterson算法"></a>Peterson算法</h3><ul>
+<li>在进入区“主动争取—主动谦让—检查对方是否相近、己方是否谦让”</li>
+<li>主要问题：不遵循“让权等待”原则，会发送“忙等”</li>
+</ul>
+<h2 id="2-3-3进程互斥的硬件实现方法"><a href="#2-3-3进程互斥的硬件实现方法" class="headerlink" title="2.3.3进程互斥的硬件实现方法"></a>2.3.3进程互斥的硬件实现方法</h2><h3 id="中断屏蔽方法"><a href="#中断屏蔽方法" class="headerlink" title="中断屏蔽方法"></a>中断屏蔽方法</h3><ul>
+<li>使用“开/关中断”指令实现</li>
+<li>优点：简单高效</li>
+<li>缺点：只适用于单片机；只适用于操作系统内核进程</li>
+</ul>
+<h3 id="TestAndSet-TS指令-TSL指令"><a href="#TestAndSet-TS指令-TSL指令" class="headerlink" title="TestAndSet(TS指令/TSL指令)"></a>TestAndSet(TS指令/TSL指令)</h3><ul>
+<li><p>1、old记录是否已被上锁；</p>
+<p>2、再将lock设为true；</p>
+<p>3、检查临界区是否已被上锁(若以上锁，则循环重复前几步)</p>
+</li>
+<li><p>优点：实现简单；适用于多处理机环境</p>
+</li>
+<li><p>缺点：不满足让权等待</p>
+</li>
+</ul>
+<h3 id="Swap指令-XCHG指令"><a href="#Swap指令-XCHG指令" class="headerlink" title="Swap指令(XCHG指令)"></a>Swap指令(XCHG指令)</h3><ul>
+<li>逻辑上同TSL</li>
+</ul>
+<h2 id="2-3-4、信号量机制"><a href="#2-3-4、信号量机制" class="headerlink" title="2.3.4、信号量机制"></a>2.3.4、信号量机制</h2><h3 id="整型信号量"><a href="#整型信号量" class="headerlink" title="整型信号量"></a>整型信号量</h3><ul>
+<li>用一个整数型变量作为信号量，数值表示某种资源数</li>
+<li>整型信号量与普通整型变量的区别：对信号量只能执行初始化、P、V三种操作</li>
+<li>整型信号量==存在的问题：不满足让权等待原则==</li>
+</ul>
+<h3 id="记录型信号量"><a href="#记录型信号量" class="headerlink" title="记录型信号量"></a>记录型信号量</h3><ul>
+<li>S.value表示某种资源数，S.L指向等待该资源的队列</li>
+<li>P操作中，一定是先S.value–，之后可能需要执行block原语</li>
+<li>V操作中，一定是先S.value++，之后可能需要执行wakeup原语</li>
+<li>注意：==要能够自己推断在什么条件下需要执行block或wakeup==</li>
+<li>可以用记录型信号量实现系统资源的“申请”和“释放”</li>
+<li>可以用记录型信号量实现进程互斥、进程同步</li>
+</ul>
+<p>注：若考试中出现P(S)、V(S)的操作，除非特别说明，否则默认S为记录型信号量</p>
+<h2 id="2-3-5、用信号量实现进程互斥、同步、前驱关系"><a href="#2-3-5、用信号量实现进程互斥、同步、前驱关系" class="headerlink" title="2.3.5、用信号量实现进程互斥、同步、前驱关系"></a>2.3.5、用信号量实现进程互斥、同步、前驱关系</h2><h3 id="实现进程互斥"><a href="#实现进程互斥" class="headerlink" title="实现进程互斥"></a>实现进程互斥</h3><ul>
+<li>分析问题，确定临界区</li>
+<li>设置互斥信号量，初值为1（==互斥问题，信号量初值为1==）</li>
+<li>==临界区之前==对信号量执行P操作</li>
+<li>==临界区之后==对信号量执行V操作</li>
+</ul>
+<h3 id="实现进程同步"><a href="#实现进程同步" class="headerlink" title="实现进程同步"></a>实现进程同步</h3><ul>
+<li>分析问题，找出哪里需要实现“一前一后”的同步关系</li>
+<li>设置同步信号量，初始值为0（==同步问题，信号量初值为0==）</li>
+<li>在==“前操作”之后==执行V操作</li>
+<li>在==“后操作”之前==执行P操作</li>
+</ul>
+<h3 id="实现进程的前驱关系"><a href="#实现进程的前驱关系" class="headerlink" title="实现进程的前驱关系"></a>实现进程的前驱关系</h3><ul>
+<li>分析问题，画出前驱图，把每一对前驱关系都看成一个同步问题（前驱问题，本质上就是更复杂的同步问题）</li>
+<li>为每一对前驱关系设置同步信号量，初值为0</li>
+<li>在每一个“前操作”之后执行V操作</li>
+<li>在每一个“后操作”之前执行P操作</li>
+</ul>
 
       
     </div>
@@ -1773,7 +1949,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-13 11:56:24" itemprop="dateModified" datetime="2020-05-13T11:56:24+08:00">2020-05-13</time>
+                <time title="修改时间：2020-05-14 18:24:12" itemprop="dateModified" datetime="2020-05-14T18:24:12+08:00">2020-05-14</time>
               </span>
 
           
@@ -1787,7 +1963,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1、初识数据库"><a href="#1、初识数据库" class="headerlink" title="1、初识数据库"></a>1、初识数据库</h2><p><strong>1.1、安装MySQL</strong></p>
+          <p>学习 整理自：<a href="https://www.bilibili.com/video/BV1NJ411J79W?p=16" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1NJ411J79W?p=16</a></p>
+<h2 id="1、初识数据库"><a href="#1、初识数据库" class="headerlink" title="1、初识数据库"></a>1、初识数据库</h2><p><strong>1.1、安装MySQL</strong></p>
 <p>1、解压zip文件</p>
 <p>2、把这个包放到自己的电脑环境目录下~</p>
 <p>3、配置环境变量</p>
@@ -1942,72 +2119,297 @@
 <p>格式</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] <span class="string">`表名`</span>(</span><br><span class="line">	<span class="string">`字段名`</span> 列类型 [属性] [索引] [注释],</span><br><span class="line">    <span class="string">`字段名`</span> 列类型 [属性] [索引] [注释],</span><br><span class="line">	......</span><br><span class="line">    <span class="string">`字段名`</span> 列类型 [属性] [索引] [注释],</span><br><span class="line">)[表类型][字符集设置][注释]</span><br></pre></td></tr></table></figure>
 
+<p>常用命令</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> <span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> school   <span class="comment">-- 查看创建数据库的语句</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">CREATE</span> <span class="keyword">TABLE</span> student	<span class="comment">-- 查看student数据表的定义语句</span></span><br><span class="line"><span class="keyword">DESC</span> student   <span class="comment">-- 显示表的结构</span></span><br></pre></td></tr></table></figure>
 
-      
-    </div>
+<h3 id="2-5、数据表的类型"><a href="#2-5、数据表的类型" class="headerlink" title="2.5、数据表的类型"></a>2.5、数据表的类型</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 关于数据库引擎</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">INNODB  默认使用~</span></span><br><span class="line"><span class="comment">MYISAM	早些年使用的</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+<table>
+<thead>
+<tr>
+<th></th>
+<th>MYISAM</th>
+<th>INNODB</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>事务支持</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>数据行锁定</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>外键约束</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>全文索引</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>表空间的大小</td>
+<td>较小</td>
+<td>较大，约为2倍</td>
+</tr>
+</tbody></table>
+<p>常规使用操作：</p>
+<ul>
+<li>MYISAM    节约空间，速度较快</li>
+<li>INNODB    安全性高，事务的处理，多表多用户</li>
+</ul>
+<blockquote>
+<p>在物理空间存在的位置</p>
+</blockquote>
+<p>所以的数据库文件都存在data目录下，一个文件夹就对应一个数据库</p>
+<p>本质还是文件的存储！</p>
+<p>MySQL引擎在物理文件上的区别</p>
+<ul>
+<li>InnoDB在数据库表中只有一个*.frm文件，以及上级目录下的ibdata1文件</li>
+<li>MYISAM对应文件<ul>
+<li>*.frm    表结构体的定义文件</li>
+<li>*.MYD    数据文件(data)</li>
+<li>*.MYI     索引文件(index)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>设置数据库的字符集编码</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CHARSET=utf8</span><br></pre></td></tr></table></figure>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/09/idea-confidentkey/">
+<p>不设置的话，会是mysql默认的字符集编码~ (不支持中文！)</p>
+<p>MySQL的默认编码是Latin1，不支持中文</p>
+<p>可以选择在my.ini中配置默认的编码，但在别人电脑可能没有设置这个会出错</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">character-<span class="keyword">set</span>-<span class="keyword">server</span>=utf8</span><br></pre></td></tr></table></figure>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blog/images/avatar.gif">
-      <meta itemprop="name" content="Carey">
-      <meta itemprop="description" content="">
-    </span>
+<h3 id="2-6、修改删除表"><a href="#2-6、修改删除表" class="headerlink" title="2.6、修改删除表"></a>2.6、修改删除表</h3><blockquote>
+<p>修改</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 修改表名： ALTER TABLE 旧表名 RENAME AS 新表名</span></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> teacher <span class="keyword">RENAME</span> <span class="keyword">AS</span> teacher1</span><br><span class="line"><span class="comment">-- 增加表的字段： ALTER TABLE 表名 ADD 字段名 列属性</span></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> teacher1 <span class="keyword">ADD</span> age <span class="built_in">INT</span>(<span class="number">11</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 修改表的字段  （重命名，修改约束！）</span></span><br><span class="line"><span class="comment">--ALTER TABLE 表名 MODIFY 字段名 列属性[]</span></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> teacher1 <span class="keyword">MODIFY</span> age <span class="built_in">VARCHAR</span>(<span class="number">11</span>)   <span class="comment">-- 修改约束</span></span><br><span class="line"><span class="comment">--ALTER TABLE 表名 CHANGE 旧名字 新名字 列属性[]</span></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> teacher1 <span class="keyword">CHANGE</span> age age1 <span class="built_in">INT</span>(<span class="number">1</span>)   <span class="comment">-- 字段重命名</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 删除表的字段：ALTER TABLE 表名 DROP 字段名</span></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> teacher1 <span class="keyword">DROP</span> age1</span><br></pre></td></tr></table></figure>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Carey's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/2020/05/09/idea-confidentkey/" class="post-title-link" itemprop="url">IDEA快捷键</a>
-        </h2>
+<blockquote>
+<p>删除</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 删除表（如果表存在再删除）</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">EXISTS</span> teacher1</span><br></pre></td></tr></table></figure>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
+<p><strong>==所以的创建和删除操作尽量加上判断，以免报错~==</strong></p>
+<p>注意点：</p>
+<ul>
+<li>`` 字段名，使用这个包裹！</li>
+<li>注释 –  /**/</li>
+<li>sql关键字大小写不敏感，建议写小写</li>
+<li>所以的符号全部用英文</li>
+</ul>
+<h2 id="3、MYSQL数据管理"><a href="#3、MYSQL数据管理" class="headerlink" title="3、MYSQL数据管理"></a>3、MYSQL数据管理</h2><h3 id="3-1、外键-了解即可"><a href="#3-1、外键-了解即可" class="headerlink" title="3.1、外键    (了解即可)"></a>3.1、外键    (了解即可)</h3><blockquote>
+<p>方式一、在创建表的时候，增加约束 (麻烦，比较复杂)</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`grade`</span>(</span><br><span class="line">	<span class="string">`gradeid`</span> <span class="built_in">INT</span>(<span class="number">10</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT <span class="keyword">COMMENT</span> <span class="string">'年级id'</span>,</span><br><span class="line">	<span class="string">`gradename`</span> <span class="built_in">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'年级名称'</span>,</span><br><span class="line">	PRIMARY <span class="keyword">KEY</span>(<span class="string">`gradeid`</span>)</span><br><span class="line">)<span class="keyword">ENGINE</span>=<span class="keyword">INNODB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 学生表的 gradeid 字段 要去引导年级表的 gradeid</span></span><br><span class="line"><span class="comment">-- 定义外键key</span></span><br><span class="line"><span class="comment">-- 给这个外键添加约束 	(执行引用)	references 引用</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`student`</span> (</span><br><span class="line">  <span class="string">`id`</span> <span class="built_in">int</span>(<span class="number">4</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT <span class="keyword">COMMENT</span> <span class="string">'学号'</span>,</span><br><span class="line">  <span class="string">`name`</span> <span class="built_in">varchar</span>(<span class="number">30</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'匿名'</span> <span class="keyword">COMMENT</span> <span class="string">'姓名'</span>,</span><br><span class="line">  <span class="string">`pwd`</span> <span class="built_in">varchar</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'123456'</span> <span class="keyword">COMMENT</span> <span class="string">'密码'</span>,</span><br><span class="line">  <span class="string">`sex`</span> <span class="built_in">varchar</span>(<span class="number">2</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'女'</span> <span class="keyword">COMMENT</span> <span class="string">'性别'</span>,</span><br><span class="line">  <span class="string">`birthday`</span> DATETIME <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'出生日期'</span>,</span><br><span class="line">  <span class="string">`gradeid`</span> <span class="built_in">INT</span>(<span class="number">10</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'学生的年级'</span>,</span><br><span class="line">  <span class="string">`address`</span> <span class="built_in">varchar</span>(<span class="number">100</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'家庭住址'</span>,</span><br><span class="line">  <span class="string">`email`</span> <span class="built_in">varchar</span>(<span class="number">50</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'邮箱'</span>,</span><br><span class="line">   PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>),</span><br><span class="line">   <span class="keyword">KEY</span> <span class="string">`FK_gradeid`</span> (<span class="string">`gradeid`</span>),</span><br><span class="line">    <span class="keyword">CONSTRAINT</span> <span class="string">`FK_gradeid`</span> <span class="keyword">FOREIGN</span> <span class="keyword">KEY</span> (<span class="string">`gradeid`</span>) <span class="keyword">REFERENCES</span> <span class="string">`grade`</span>(<span class="string">`gradeid`</span>)</span><br><span class="line">) <span class="keyword">ENGINE</span>=<span class="keyword">INNODB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8</span><br></pre></td></tr></table></figure>
 
-              <time title="创建时间：2020-05-09 15:12:36 / 修改时间：15:15:54" itemprop="dateCreated datePublished" datetime="2020-05-09T15:12:36+08:00">2020-05-09</time>
-            </span>
 
-          
 
-        </div>
-      </header>
+<p>删除有外键关系的表的时候，必须要先删除引用别人的表(从表)，再删除被引用的表(主表)</p>
+<blockquote>
+<p>方式二：创建表成功后，添加外键约束</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`grade`</span>(</span><br><span class="line">	<span class="string">`gradeid`</span> <span class="built_in">INT</span>(<span class="number">10</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT <span class="keyword">COMMENT</span> <span class="string">'年级id'</span>,</span><br><span class="line">	<span class="string">`gradename`</span> <span class="built_in">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'年级名称'</span>,</span><br><span class="line">	PRIMARY <span class="keyword">KEY</span>(<span class="string">`gradeid`</span>)</span><br><span class="line">)<span class="keyword">ENGINE</span>=<span class="keyword">INNODB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 学生表的 gradeid 字段 要去引导年级表的 gradeid</span></span><br><span class="line"><span class="comment">-- 定义外键key</span></span><br><span class="line"><span class="comment">-- 给这个外键添加约束 	(执行引用)	references 引用</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`student`</span> (</span><br><span class="line">  <span class="string">`id`</span> <span class="built_in">int</span>(<span class="number">4</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT <span class="keyword">COMMENT</span> <span class="string">'学号'</span>,</span><br><span class="line">  <span class="string">`name`</span> <span class="built_in">varchar</span>(<span class="number">30</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'匿名'</span> <span class="keyword">COMMENT</span> <span class="string">'姓名'</span>,</span><br><span class="line">  <span class="string">`pwd`</span> <span class="built_in">varchar</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'123456'</span> <span class="keyword">COMMENT</span> <span class="string">'密码'</span>,</span><br><span class="line">  <span class="string">`sex`</span> <span class="built_in">varchar</span>(<span class="number">2</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="string">'女'</span> <span class="keyword">COMMENT</span> <span class="string">'性别'</span>,</span><br><span class="line">  <span class="string">`birthday`</span> DATETIME <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'出生日期'</span>,</span><br><span class="line">  <span class="string">`gradeid`</span> <span class="built_in">INT</span>(<span class="number">10</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'学生的年级'</span>,</span><br><span class="line">  <span class="string">`address`</span> <span class="built_in">varchar</span>(<span class="number">100</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'家庭住址'</span>,</span><br><span class="line">  <span class="string">`email`</span> <span class="built_in">varchar</span>(<span class="number">50</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'邮箱'</span>,</span><br><span class="line">  PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>)</span><br><span class="line">) <span class="keyword">ENGINE</span>=<span class="keyword">INNODB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 创建表的时候没有外键关系</span></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> <span class="string">`student`</span></span><br><span class="line"><span class="keyword">ADD</span> <span class="keyword">CONSTRAINT</span> <span class="string">`FK_gradeid`</span> <span class="keyword">FOREIGN</span> <span class="keyword">KEY</span>(<span class="string">`gradeid`</span>) <span class="keyword">REFERENCES</span> <span class="string">`grade`</span>(<span class="string">`gradeid`</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- ALTER TABLE 表 ADD CONSTRAINT 约束名 FOREIGN KEY(作为外键的列) REFERENCES 哪个表（哪个字段）</span></span><br></pre></td></tr></table></figure>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+<p>以上的操作都是物理外键，数据库级别的外键，我们不建议使用！(避免数据库过多造成困扰，这里了解即可)</p>
+<p>==最佳实践==</p>
+<ul>
+<li>数据库就是单纯的表，只用来存数据，只有行（数据）和列（字段）</li>
+<li>我们想使用多张表的数据，想使用外键（程序去实现）</li>
+</ul>
+<h3 id="3-2、DML语言-全部记住"><a href="#3-2、DML语言-全部记住" class="headerlink" title="3.2、DML语言(全部记住)"></a>3.2、DML语言(全部记住)</h3><p>数据库的意义：数据存储，数据管理</p>
+<p>DML语言： 数据操作语言</p>
+<ul>
+<li>insert</li>
+<li>update</li>
+<li>delete</li>
+</ul>
+<h3 id="3-3、添加"><a href="#3-3、添加" class="headerlink" title="3.3、添加"></a>3.3、添加</h3><blockquote>
+<p>insert</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 插入语句(添加)</span></span><br><span class="line"><span class="comment">-- insert into 表名([字段名1，字段名2，字段名3])values('值1'),('值2'),('值3',...)</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`grade`</span> (<span class="string">`gradename`</span>) <span class="keyword">VALUES</span> (<span class="string">'大四'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 由于主键自增我们可以省略 (如果不写表的字段，他就会一一匹配)</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`grade`</span> <span class="keyword">VALUES</span> (<span class="string">'大三'</span>)</span><br><span class="line"><span class="comment">-- - Column count doesn't match value count at row 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 一般写插入语句，我们一定要数据和字段一一对应！</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 插入多个字段</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`grade`</span> (<span class="string">`gradename`</span>)</span><br><span class="line"><span class="keyword">VALUES</span>(<span class="string">'大二'</span>),(<span class="string">'大一'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`student`</span> (<span class="string">`name`</span>) <span class="keyword">VALUES</span> (<span class="string">'张三'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`student`</span> (<span class="string">`name`</span>,<span class="string">`pwd`</span>,<span class="string">`sex`</span>) <span class="keyword">VALUES</span> (<span class="string">'张三'</span>,<span class="string">'aaaaa'</span>,<span class="string">'男'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`student`</span> (<span class="string">`name`</span>,<span class="string">`pwd`</span>,<span class="string">`sex`</span>) </span><br><span class="line"><span class="keyword">VALUES</span> (<span class="string">'李四'</span>,<span class="string">'aaaaa'</span>,<span class="string">'男'</span>),(<span class="string">'王五'</span>,<span class="string">'aaaaa'</span>,<span class="string">'男'</span>)</span><br></pre></td></tr></table></figure>
 
-      
-          <p><strong>main方法：  main  /   psvm</strong></p>
-<p><strong>for方法：    for + i  + Tab</strong></p>
-<p><strong>不知道方法该填写什么参数的话，可以把光标放到待填方法内容中： Ctrl + P</strong></p>
-<p><strong>复制当前行：Ctrl + D</strong></p>
-<p><strong>格式化代码（变整洁）：Ctrl + Alt + L</strong></p>
-<p><strong>选中替换：Ctrl + R</strong></p>
-<p><strong>插入方法：Alt + Insert</strong></p>
-<p><strong>Translation： 选中单词或者段落ctrl+shift+y翻译，ctrl+shift+s切换翻译源</strong></p>
+<p>语法：<strong>insert into 表名([字段名1，字段名2，字段名3])values(‘值1’),(‘值2’),(‘值3’,…)</strong></p>
+<p>注意事项：</p>
+<p>​    1.字段和字段之间使用 英文逗号 隔开</p>
+<p>​    2.字段是可以省略的，但是后面的值必须要一一对应，不能少</p>
+<p>​    3.可以同时插入多条数据，VALUES后面的值，需要使用逗号，隔开即可 <strong>VALUES ( ),( ),….</strong></p>
+<h3 id="3-4、修改"><a href="#3-4、修改" class="headerlink" title="3.4、修改"></a>3.4、修改</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 修改学生名字，带了简介</span></span><br><span class="line"><span class="keyword">UPDATE</span> <span class="string">`student`</span> <span class="keyword">SET</span> <span class="string">`name`</span> = <span class="string">'小蜜'</span> <span class="keyword">WHERE</span> <span class="keyword">id</span> = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 不指定条件的情况下，会改动所有的表</span></span><br><span class="line"><span class="keyword">UPDATE</span> <span class="string">`student`</span> <span class="keyword">SET</span> <span class="string">`name`</span> = <span class="string">'长江七号'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 修改多个属性，逗号隔开</span></span><br><span class="line"><span class="keyword">UPDATE</span> <span class="string">`student`</span> <span class="keyword">SET</span>  <span class="string">`name`</span> = <span class="string">'小蜜'</span>, <span class="string">`email`</span> = <span class="string">'2474xxx2@qq.com'</span> <span class="keyword">WHERE</span> <span class="keyword">id</span> = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 语法：</span></span><br><span class="line"><span class="comment">-- UPDATE 表名 SET column_name = value,[column_name = value,...] WHERE [条件];</span></span><br></pre></td></tr></table></figure>
+
+<p>条件：where子句 运算符 id 等于某个值，大于某个值，在某个区间内修改…</p>
+<p>操作符会返回 布尔值</p>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>含义</th>
+<th>范围示例</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>=</td>
+<td>等于</td>
+<td>5=6</td>
+<td>false</td>
+</tr>
+<tr>
+<td>&lt;&gt;或!=</td>
+<td>不等于</td>
+<td>5&lt;&gt;6</td>
+<td>true</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BETWEEN…AND…</td>
+<td>在某个范围内</td>
+<td>[2,5]</td>
+<td></td>
+</tr>
+<tr>
+<td>AND</td>
+<td>我和你 &amp;&amp;</td>
+<td>5&gt;1 and 1&gt;2</td>
+<td>false</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>我或你 ||</td>
+<td>5&gt;1 or 1&gt;2</td>
+<td>true</td>
+</tr>
+</tbody></table>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 通过多个条件定位数据</span></span><br><span class="line"><span class="keyword">UPDATE</span> <span class="string">`student`</span> <span class="keyword">SET</span> <span class="string">`name`</span> = <span class="string">'长江7号'</span> <span class="keyword">WHERE</span> <span class="string">`name`</span> = <span class="string">'小蜜'</span> <span class="keyword">AND</span> <span class="string">`sex`</span> = <span class="string">'女'</span>;</span><br></pre></td></tr></table></figure>
+
+<p>语法：<strong>UPDATE 表名 SET column_name = value,[column_name = value,…] WHERE [条件];</strong></p>
+<p>注意：</p>
+<ul>
+<li>column_name 是数据库的列，尽量带上``</li>
+<li>条件，筛选的条件，如果没有指定，则会修改所以的列</li>
+<li>value，是一个具体的值，也可以是一个变量</li>
+<li>多个设置的属性之间 ，使用英文逗号隔开</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> <span class="string">`student`</span> <span class="keyword">SET</span> <span class="string">`birthday`</span> = <span class="keyword">CURRENT_TIME</span> <span class="keyword">WHERE</span> <span class="string">`name`</span>=<span class="string">'长江7号'</span> <span class="keyword">AND</span> sex = <span class="string">'女'</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-5、删除"><a href="#3-5、删除" class="headerlink" title="3.5、删除"></a>3.5、删除</h3><blockquote>
+<p>delete命令</p>
+</blockquote>
+<p>语法：delete from 表名 [where 条件]</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 删除数据(避免这样写，会全部删除)</span></span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> <span class="string">`student`</span> </span><br><span class="line"></span><br><span class="line"><span class="comment">--删除指定数据</span></span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> <span class="string">`student`</span> <span class="keyword">WHERE</span> <span class="keyword">id</span> = <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>TRUNCATE命令</p>
+</blockquote>
+<p>作用：完全清空一个数据库表，表的结构和索引约束不会变！</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 清空student表</span></span><br><span class="line"><span class="keyword">TRUNCATE</span> <span class="string">`student`</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>delete和 TURNCATE区别</p>
+</blockquote>
+<ul>
+<li>相同点：都能删除数据，都不会删除表结构</li>
+<li>不同：<ul>
+<li>TRUNCATE 重新设置 自增列 计数器会归零</li>
+<li>TRUNCATE 不会影响事物</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 测试delete 和 TRUNCATE 区别</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`test`</span> (</span><br><span class="line">	<span class="string">`id`</span> <span class="built_in">INT</span>(<span class="number">4</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT,</span><br><span class="line">	<span class="string">`coll`</span> <span class="built_in">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">	PRIMARY <span class="keyword">KEY</span>(<span class="string">`id`</span>)</span><br><span class="line">)<span class="keyword">ENGINE</span>=<span class="keyword">INNODB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`test`</span> (<span class="string">`coll`</span>) <span class="keyword">VALUES</span>(<span class="string">'1'</span>),(<span class="string">'2'</span>),(<span class="string">'3'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> <span class="string">`test`</span> <span class="comment">-- 不会影响自增</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">TRUNCATE</span> <span class="keyword">TABLE</span> <span class="string">`test`</span> <span class="comment">-- 自增会归零</span></span><br></pre></td></tr></table></figure>
+
+<p>了解即可：<strong>DELETE删除的问题</strong>，重启数据库，现象</p>
+<ul>
+<li>INNODB 自增列会从1开始（存在内存当中的，断电即失）</li>
+<li>MyISAM  继续从上一个自增量开始（存在文件中的，不会丢失）</li>
+</ul>
+<h2 id="4、DQL查询数据-最重点"><a href="#4、DQL查询数据-最重点" class="headerlink" title="4、DQL查询数据(最重点)"></a>4、DQL查询数据(最重点)</h2><h3 id="4-1、DQL"><a href="#4-1、DQL" class="headerlink" title="4.1、DQL"></a>4.1、DQL</h3><p>(Data Query LANGUAGE:数据查询语言)</p>
+<ul>
+<li>所有查询操作都用它    Select</li>
+<li>简单的查询，复杂的查询它都能做~</li>
+<li>==数据库中最核心的语言，最重要的语句==</li>
+<li>使用频率最高的语句</li>
+</ul>
+<h3 id="4-2、指定查询字段"><a href="#4-2、指定查询字段" class="headerlink" title="4.2、指定查询字段"></a>4.2、指定查询字段</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 查询全部的学生	 	SELECT 字段 FROM 表</span></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> student</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 查询指定字段</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="string">`StudentNo`</span>,<span class="string">`StudentName`</span> <span class="keyword">FROM</span> <span class="string">`student`</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 别名，给结果起一个名字   AS	可以给字段起别名，也可以给表起别名</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="string">`StudentNo`</span> <span class="keyword">AS</span> 学号,<span class="string">`StudentName`</span> <span class="keyword">AS</span> 学生姓名 <span class="keyword">FROM</span> student <span class="keyword">AS</span> s</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 函数	Contat（a,b）</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">CONCAT</span>(<span class="string">'姓名：'</span>,StudentName) <span class="keyword">AS</span> 新名字 <span class="keyword">FROM</span> student</span><br></pre></td></tr></table></figure>
+
+<p>语法： <strong>SELECT 字段…. FROM 表</strong></p>
+<blockquote>
+<p>有的时候，列名字不是那么的见名知意。我们起别名       AS      字段名     as 别名  表名   as 别名</p>
+</blockquote>
+<blockquote>
+<p>去重 distinct</p>
+</blockquote>
+<p>作用：去除SELECT查询出来的结果中重复的数据，重复的数据只显示一条</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 查询一下有哪些同学参加了考试，成绩</span></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">result</span> <span class="comment">-- 查询全部的考试成绩</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="string">`StudentNo`</span> <span class="keyword">FROM</span> <span class="keyword">result</span> <span class="comment">-- 查询有哪些同学参加了考试</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> <span class="string">`StudentNo`</span> <span class="keyword">FROM</span> <span class="keyword">result</span> <span class="comment">-- 发现重复数据，去重</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>数据库的列（表达式）</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">VERSION</span>()  <span class="comment">-- 查询系统版本（函数）</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="number">100</span>*<span class="number">3</span><span class="number">-1</span> <span class="keyword">AS</span> 计算结果    <span class="comment">-- 用来计算（表达式）</span></span><br><span class="line"><span class="keyword">SELECT</span> @@auto_increment_increment  <span class="comment">-- 查询自增的步长（变量）</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 学生考试成绩 +1分查看</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="string">`StudentNo`</span>,<span class="string">`StudentResult`</span>+<span class="number">1</span> <span class="keyword">AS</span> <span class="string">'提分后'</span> <span class="keyword">FROM</span> <span class="keyword">result</span></span><br></pre></td></tr></table></figure>
+
+<p>==数据库中的表达式：文本值，列，Null，计算表达式，系统变量…==</p>
+<p>select <strong>表达式</strong> from 表</p>
+<h3 id="4-3、where-条件子句"><a href="#4-3、where-条件子句" class="headerlink" title="4.3、where 条件子句"></a>4.3、where 条件子句</h3><p>作用：检索数据中<strong>符合条件</strong>的值</p>
+<p>搜索的条件由一个或者多个表达式组成！结果布尔值</p>
+<blockquote>
+<p>逻辑运算符</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>语法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and       &amp;&amp;</td>
+<td>a and b     a&amp;&amp;b</td>
+<td>逻辑与，两个都为真，结果为真</td>
+</tr>
+<tr>
+<td>or          ||</td>
+<td>a or b         a||b</td>
+<td>逻辑或，其中一个为真，结果为真</td>
+</tr>
+<tr>
+<td>Not        ！</td>
+<td>not  a         !a</td>
+<td>逻辑非，真为假，假为真！</td>
+</tr>
+</tbody></table>
+<p>==尽量使用英文字母==</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- ==================   where   =======================</span></span><br><span class="line"><span class="keyword">SELECT</span> studentno,<span class="string">`studentresult`</span> <span class="keyword">FROM</span> <span class="keyword">result</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 查询考试成绩在 95~100 分之间</span></span><br><span class="line"><span class="keyword">SELECT</span> studentno,<span class="string">`studentresult`</span> <span class="keyword">FROM</span> <span class="keyword">result</span></span><br><span class="line"><span class="keyword">WHERE</span> studentresult&gt;=<span class="number">95</span> <span class="keyword">AND</span> studentresult&lt;=<span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- and     &amp;&amp;</span></span><br><span class="line"><span class="keyword">SELECT</span> studentno,<span class="string">`studentresult`</span> <span class="keyword">FROM</span> <span class="keyword">result</span></span><br><span class="line"><span class="keyword">WHERE</span> studentresult&gt;=<span class="number">95</span> &amp;&amp; studentresult&lt;=<span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 模糊查询（区间）</span></span><br><span class="line"><span class="keyword">SELECT</span> studentno,<span class="string">`studentresult`</span> <span class="keyword">FROM</span> <span class="keyword">result</span></span><br><span class="line"><span class="keyword">WHERE</span> studentresult	<span class="keyword">BETWEEN</span> <span class="number">95</span> <span class="keyword">AND</span> <span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 除了1000号学生之外的同学的成绩</span></span><br><span class="line"><span class="keyword">SELECT</span> studentno,<span class="string">`studentresult`</span> <span class="keyword">FROM</span> <span class="keyword">result</span></span><br><span class="line"><span class="keyword">WHERE</span> studentno !=<span class="number">1000</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- !=     NOT</span></span><br><span class="line"><span class="keyword">SELECT</span> studentno,<span class="string">`studentresult`</span> <span class="keyword">FROM</span> <span class="keyword">result</span></span><br><span class="line"><span class="keyword">WHERE</span>  <span class="keyword">NOT</span> studentno = <span class="number">1000</span></span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -2092,7 +2494,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
