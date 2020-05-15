@@ -159,7 +159,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/blog/2020/05/14/javaweb/" class="post-title-link" itemprop="url">javaweb</a>
+            <a href="/blog/2020/05/14/javaweb/" class="post-title-link" itemprop="url">Javaweb学习</a>
         </h2>
 
         <div class="post-meta">
@@ -171,6 +171,13 @@
 
               <time title="创建时间：2020-05-14 21:50:15" itemprop="dateCreated datePublished" datetime="2020-05-14T21:50:15+08:00">2020-05-14</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-15 00:27:01" itemprop="dateModified" datetime="2020-05-15T00:27:01+08:00">2020-05-15</time>
+              </span>
 
           
 
@@ -183,7 +190,80 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h2 id="Javaweb"><a href="#Javaweb" class="headerlink" title="Javaweb"></a>Javaweb</h2><p>学习自：<a href="https://www.bilibili.com/video/BV12J411M7Sj?p=1" target="_blank" rel="noopener">https://www.bilibili.com/video/BV12J411M7Sj?p=1</a>    </p>
+<h2 id="1、基本概念"><a href="#1、基本概念" class="headerlink" title="1、基本概念"></a>1、基本概念</h2><h3 id="1-1、前言"><a href="#1-1、前言" class="headerlink" title="1.1、前言"></a>1.1、前言</h3><p>web开发：</p>
+<ul>
+<li><p>web，网页的意思</p>
+</li>
+<li><p>静态web</p>
+<ul>
+<li>html.css</li>
+<li>提供给所有人看的数据始终不会发生变化！</li>
+</ul>
+</li>
+<li><p>动态web</p>
+<ul>
+<li>提供给所有人看的数据始终会发生变化，每个人在不同的时间，不同的地点看到的信息各不相同</li>
+<li>技术栈：Servlet/JSP,ASP,PHP</li>
+</ul>
+<p>在java中，动态web资源开发的技术统称为Javaweb</p>
+</li>
+</ul>
+<h3 id="1-2、web应用程序"><a href="#1-2、web应用程序" class="headerlink" title="1.2、web应用程序"></a>1.2、web应用程序</h3><p>web应用程序： 可以提供浏览器访问的程序；</p>
+<ul>
+<li><p>a.htm、b.html….多个web资源，这些web资源可以被外界访问，对外界提供服务；</p>
+</li>
+<li><p>能访问到的任何一个页面或者资源，都存在于这个世界的某一个角落的计算机上</p>
+</li>
+<li><p>URL</p>
+</li>
+<li><p>这个统一的web资源会被放在同一个文件夹下，web应用程序–&gt;Tomcat：服务器</p>
+</li>
+<li><p>一个web应用由多部分组成(静态web，动态web)</p>
+<ul>
+<li>html, css, js</li>
+<li>jsp, servlet</li>
+<li>java程序</li>
+<li>jar包</li>
+<li>配置文件(Properties)</li>
+</ul>
+<p>web应用程序编写完毕后，若想提供给外界访问：需要一个服务器来统一管理</p>
+</li>
+</ul>
+<h3 id="1-3、静态web"><a href="#1-3、静态web" class="headerlink" title="1.3、静态web"></a>1.3、静态web</h3><ul>
+<li><p>*.htm,*.html,这些都是网页的后缀，如果服务器上一直存在这些东西，我们就可以直接进行读取，通络；</p>
+<p><img src="/blog/2020/05/14/javaweb/D:%5CProject%5Cblog%5Csource_posts%5Cjavaweb%5Cimage-20200515002613898.png" alt="image-20200515002613898"></p>
+</li>
+<li><p>静态web存在的缺点</p>
+<ul>
+<li>Web页面无法动态更新，所以用户看到的都是同一个页面<ul>
+<li>轮播图，点击特效：伪动态</li>
+<li>JavaScript[实际开发中，它用的最多]</li>
+<li>VBScript</li>
+</ul>
+</li>
+<li>它无法和数据库交互(数据无法持久化，用户无法交互)</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-4、动态web"><a href="#1-4、动态web" class="headerlink" title="1.4、动态web"></a>1.4、动态web</h3><p>页面会动态展示：“web的页面展示效果因人而异</p>
+<p><img src="/blog/2020/05/14/javaweb/D:%5CProject%5Cblog%5Csource_posts%5Cjavaweb%5Cimage-20200515001740921.png" alt="image-20200515001740921"></p>
+<p>缺点：</p>
+<ul>
+<li>加入服务器的动态web资源出现了错误，我们需要重新编写我们的<strong>后台程序</strong>，重新发布<ul>
+<li>停机维护</li>
+</ul>
+</li>
+</ul>
+<p>优点：</p>
+<ul>
+<li><p>Web页面可以动态更新，所以用户看到都不是同一个页面</p>
+</li>
+<li><p>它可以与数据库交互(数据持久化：注册，商品信息，用户信息…..)</p>
+<p><img src="/blog/2020/05/14/javaweb/D:%5CProject%5Cblog%5Csource_posts%5Cjavaweb%5Cimage-20200515002307795.png" alt="image-20200515002307795"></p>
+</li>
+</ul>
+
       
     </div>
 
@@ -233,7 +313,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-14 21:40:27" itemprop="dateModified" datetime="2020-05-14T21:40:27+08:00">2020-05-14</time>
+                <time title="修改时间：2020-05-15 14:52:41" itemprop="dateModified" datetime="2020-05-15T14:52:41+08:00">2020-05-15</time>
               </span>
 
           
@@ -361,6 +441,11 @@
 <li>在每一个“前操作”之后执行V操作</li>
 <li>在每一个“后操作”之前执行P操作</li>
 </ul>
+<h3 id="2-3-6、生产者消费者问题"><a href="#2-3-6、生产者消费者问题" class="headerlink" title="2.3.6、生产者消费者问题"></a>2.3.6、生产者消费者问题</h3><p>PV 操作题目的解题思路：</p>
+<p>1、关系分析。找出题目中描述的各个进程，分析它们之间的同步、互斥关闭。        2、整理思路。根据各进程的操作流程确定P、V操作的大致顺序。<br>        3、设置信号量。设置需要的信号量，并根据题目条件确定信号量初值。（互斥信号量初值一般为1，同步信号量的初始值要看对应资源的初始值是多少）。</p>
+<p>生产者消费者问题是一个互斥、同步的综合问题。<br>        有时候是消费者需要等待生产者生产，有时候是生产者要等待消费者消费，这是两个不同的“一前一后问题”，因此也需要设置两个同步信号量。</p>
+<p><img src="/blog/2020/05/13/OSsecondthree/D:%5CProject%5Cblog%5Csource_posts%5COSsecondthree%5Cimage-20200515141953621.png" alt="image-20200515141953621"></p>
+<p>==易错点==：实现互斥和实现同步的两个P操作的先后顺序</p>
 
       
     </div>
@@ -1271,7 +1356,7 @@
 <hr>
 <h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p><del>两端两个波浪线</del></p>
 <hr>
-<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>markdown无下划线语法，但可以利用html语法<u></p>
+<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>markdown无下划线语法，但可以利用html语法<u></u></p>
 <p><u>这是下划线</u></p>
 <hr>
 <h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>无序列表使用星号*、加号 +、减号 -其中之一来表示即可，注意需要和符号之间保持一个空格</p>
@@ -1898,7 +1983,7 @@
 <li>闭着眼睛深度调优</li>
 <li>吊打面试官</li>
 </ul>
-<h2 id="平稳降落"><a href="#平稳降落" class="headerlink" title="平稳降落"></a>平稳降落</h2><h2 id="路线图"><a href="#路线图" class="headerlink" title="路线图"></a>路线图</h2><p><img src="C:%5CUsers%5CCarey%5CDesktop%5CJava%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF-%E9%AB%98%E6%B8%85%E7%89%88.jpg" alt="路线图"></p>
+<h2 id="平稳降落"><a href="#平稳降落" class="headerlink" title="平稳降落"></a>平稳降落</h2><h2 id="路线图"><a href="#路线图" class="headerlink" title="路线图"></a>路线图</h2><p><img src="/blog/2020/05/09/JAVAdeveloproad/C:%5CUsers%5CCarey%5CDesktop%5CJava%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF-%E9%AB%98%E6%B8%85%E7%89%88.jpg" alt="路线图"></p>
 
       
     </div>
@@ -2045,7 +2130,7 @@
 
 <p>学习思路：</p>
 <pre><code>- 对照可视化历史记录查看
-- 固定的语法或关键字必须要强行记住</code></pre><p><img src="/blog/.com//D:%5CProject%5Cblog%5Csource_posts%5Cmysql-study%5C%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA.png" alt="数据库创建"></p>
+- 固定的语法或关键字必须要强行记住</code></pre><p><img src="/blog/2020/05/09/mysql-study/D:%5CProject%5Cblog%5Csource_posts%5Cmysql-study%5C%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA.png" alt="数据库创建"></p>
 <h3 id="2-2、数据库的列类型"><a href="#2-2、数据库的列类型" class="headerlink" title="2.2、数据库的列类型"></a>2.2、数据库的列类型</h3><blockquote>
 <p>数值</p>
 </blockquote>
