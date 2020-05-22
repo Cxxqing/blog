@@ -168,10 +168,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-20 17:42:06 / 修改时间：21:04:23" itemprop="dateCreated datePublished" datetime="2020-05-20T17:42:06+08:00">2020-05-20</time>
+              <time title="创建时间：2020-05-20 17:42:06" itemprop="dateCreated datePublished" datetime="2020-05-20T17:42:06+08:00">2020-05-20</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-22 20:49:44" itemprop="dateModified" datetime="2020-05-22T20:49:44+08:00">2020-05-22</time>
+              </span>
 
           
 
@@ -303,6 +309,86 @@
 <td>索引表需占用一定的存储空间。访问数据库前需要先读入索引块。若采用链接方案，查找索引块时可能需要很多次读磁盘操作</td>
 </tr>
 </tbody></table>
+<h2 id="4-1-5、文件存储空间管理"><a href="#4-1-5、文件存储空间管理" class="headerlink" title="4.1.5、文件存储空间管理"></a>4.1.5、文件存储空间管理</h2><h3 id="存储空间的划分与初始化"><a href="#存储空间的划分与初始化" class="headerlink" title="存储空间的划分与初始化"></a>存储空间的划分与初始化</h3><ul>
+<li>文件卷(逻辑卷)，目录区、文件区的概念</li>
+<li>==目录区包含文件目录、空闲表、位示图、超级块等用于文件管理的数据==</li>
+</ul>
+<h3 id="空闲表法"><a href="#空闲表法" class="headerlink" title="空闲表法"></a>空闲表法</h3><ul>
+<li>空闲表中记录每个连续空闲区的起始盘块号、盘块数</li>
+<li>分配时可采用==首次适应、最佳适应等策略；回收时注意表项的合并问题==</li>
+</ul>
+<h3 id="空闲链表法"><a href="#空闲链表法" class="headerlink" title="空闲链表法"></a>空闲链表法</h3><ul>
+<li>空闲盘块链<ul>
+<li>以==盘块==为单位组成一条空闲链</li>
+<li>分配时从链头依次取出空闲块，回收时将空闲块查到链尾</li>
+</ul>
+</li>
+<li>空闲盘区链<ul>
+<li>以==盘区==为单位组成一条空闲链</li>
+<li>分配时可采用首次适应、最佳适应等策略；回收时注意相邻空闲盘区合并的问题</li>
+</ul>
+</li>
+</ul>
+<h3 id="位示图法"><a href="#位示图法" class="headerlink" title="位示图法"></a>位示图法</h3><ul>
+<li>一个二进制位对应一个盘块。（字号，位号）或（行号，列号）与盘块号一一对应</li>
+<li>==重要考点：==要能够自己退出盘块号-&gt;（字号，位号）之间的相互转换公式</li>
+<li>==需要注意的题目条件==<ul>
+<li>二进制位0/1到底哪个代表空闲，哪个代表不空闲</li>
+<li>字号、位号、盘块号到底是从0开始还是从1开始</li>
+</ul>
+</li>
+</ul>
+<h3 id="成组链接法"><a href="#成组链接法" class="headerlink" title="成组链接法"></a>成组链接法</h3><ul>
+<li>UNIX采用的策略，适合大型文件系统。理解即可，不方便用文字描述的知识点也很难作为考题</li>
+</ul>
+<h2 id="4-1-6、文件的基本操作"><a href="#4-1-6、文件的基本操作" class="headerlink" title="4.1.6、文件的基本操作"></a>4.1.6、文件的基本操作</h2><h3 id="创建文件"><a href="#创建文件" class="headerlink" title="创建文件"></a>创建文件</h3><ul>
+<li>分配外存空间，创建目录项</li>
+</ul>
+<h3 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h3><ul>
+<li>回收外存空间，删除目录项</li>
+</ul>
+<h3 id="打开文件"><a href="#打开文件" class="headerlink" title="打开文件"></a>打开文件</h3><ul>
+<li>==将目录项中的信息复制到内存中的打开文件表中，并将打开文件表的索引号返回给用户==</li>
+<li>打开文件之后，对文件的操作不再需要每次都查询目录，可以根据内存中的打开文件表进行操作</li>
+<li>每个进程有自己的打开文件表，系统中也有一张总的打开文件表</li>
+<li>进程打开文件表中特有的属性：读写指针、访问权限（只读？读写？）</li>
+<li>系统打开文件表中特有的属性：打开计数器（有多少个进程打开了该文件）</li>
+</ul>
+<h3 id="关闭文件"><a href="#关闭文件" class="headerlink" title="关闭文件"></a>关闭文件</h3><ul>
+<li>将进程打开文件表中的相应表项删除</li>
+<li>系统打开文件表的打开计数器减1，若打开计数器位0，则删除系统表的表项</li>
+</ul>
+<h3 id="读文件"><a href="#读文件" class="headerlink" title="读文件"></a>读文件</h3><ul>
+<li>根据读指针、读入数据量、内存位置==将文件数据从外存读入内存==</li>
+<li>根据写指针、写出数据量、内存位置==将文件数据从内存写出外存==</li>
+</ul>
+<h2 id="4-1-7、文件共享"><a href="#4-1-7、文件共享" class="headerlink" title="4.1.7、文件共享"></a>4.1.7、文件共享</h2><h3 id="硬链接"><a href="#硬链接" class="headerlink" title="硬链接"></a>硬链接</h3><ul>
+<li>各个用户的目录项指向同一个索引结点</li>
+<li>索引结点中需要有链接计数count</li>
+<li>某用户想删除文件时，只是删除该用户的目录项，且count–</li>
+<li>只有count == 0时才能真正删除文件数据和索引结点，否则会导致指针悬空</li>
+</ul>
+<h3 id="软链接（符号链接）"><a href="#软链接（符号链接）" class="headerlink" title="软链接（符号链接）"></a>软链接（符号链接）</h3><ul>
+<li>在一个Link型的文件中记录共享文件的存放路径（Windows快捷方式）</li>
+<li>操作系统根据路径一层层查找目录，最终找到共享文件</li>
+<li>即使软链接指向的共享文件已被删除，Link型文件依然存在，只是通过Link型文件中的路径区查找共享文件会失败（找不到对应目录项）</li>
+<li>由于用软链接的方式访问共享文件时要查询多级目录，会有多次磁盘I/O，因此用软链接访问比硬链接慢</li>
+</ul>
+<h2 id="4-1-8、-文件保护"><a href="#4-1-8、-文件保护" class="headerlink" title="4.1.8、 文件保护"></a>4.1.8、 文件保护</h2><h3 id="口令保护"><a href="#口令保护" class="headerlink" title="口令保护"></a>口令保护</h3><ul>
+<li>为文件设置一个“口令”，用户想要访问文件时需要提供口令，由系统验证口令是否正确</li>
+<li>实现开销小，但“口令”一般存放在FCB或索引结点中（也就是存放在系统中）因此不太安全</li>
+</ul>
+<h3 id="加密保护"><a href="#加密保护" class="headerlink" title="加密保护"></a>加密保护</h3><ul>
+<li>用一个“密码”对文件加密，用户想要访问文件时，需要提供相同的“密码”才能正确的解密</li>
+<li>安全性高，但加密/解密需要耗费一定的时间（Eg:异或加密）</li>
+</ul>
+<h3 id="访问控制"><a href="#访问控制" class="headerlink" title="访问控制"></a>访问控制</h3><ul>
+<li>用一个访问控制表(ACL)记录各个用户（或各组用户）对文件的访问权限</li>
+<li>对文件的访问类型可以分为：读/写/执行/删除等</li>
+<li>实现灵活，可以实现复杂的文件保护功能</li>
+</ul>
+<h2 id="4-1-9、文件系统的层次结构"><a href="#4-1-9、文件系统的层次结构" class="headerlink" title="4.1.9、文件系统的层次结构"></a>4.1.9、文件系统的层次结构</h2><p><img src="/blog/2020/05/20/OSfourthone/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84.png" alt="image-20200522204702751"></p>
+<p><img src="/blog/2020/05/20/OSfourthone/%E4%B8%BE%E4%BE%8B%E8%AF%B4%E6%98%8E%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84.png" alt="image-20200522204621132"></p>
 
       
     </div>
@@ -1028,7 +1114,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-22 14:40:52" itemprop="dateModified" datetime="2020-05-22T14:40:52+08:00">2020-05-22</time>
+                <time title="修改时间：2020-05-23 02:15:00" itemprop="dateModified" datetime="2020-05-23T02:15:00+08:00">2020-05-23</time>
               </span>
 
           
@@ -1213,7 +1299,142 @@
 <li>Servlet配置</li>
 <li>原理</li>
 </ul>
-<h3 id="4、Http"><a href="#4、Http" class="headerlink" title="4、Http"></a>4、Http</h3>
+<h3 id="4、Http"><a href="#4、Http" class="headerlink" title="4、Http"></a>4、Http</h3><h4 id="4-1、什么是HTTP"><a href="#4-1、什么是HTTP" class="headerlink" title="4.1、什么是HTTP"></a>4.1、什么是HTTP</h4><p>HTTP（超文本传输协议）是一个简单的请求-响应协议，它通常运行在TCP之上。</p>
+<ul>
+<li>文本：html，字符串，…</li>
+<li>超文本：图片，音乐，视频，定位，地图….</li>
+</ul>
+<p>http端口：80</p>
+<p>https端口：443      s代表安全的</p>
+<h4 id="4-2、两个时代"><a href="#4-2、两个时代" class="headerlink" title="4.2、两个时代"></a>4.2、两个时代</h4><ul>
+<li>http1.0<ul>
+<li>HTTP/1.0：客户端可以与web服务器连接后，只能获得一个web资源，断开连接。</li>
+</ul>
+</li>
+<li>http2.0<ul>
+<li>HTTP/1.1：客户端可以与web服务器连接后，可以获得多个web资源，断开连接。</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-3、Http请求"><a href="#4-3、Http请求" class="headerlink" title="4.3、Http请求"></a>4.3、Http请求</h4><ul>
+<li>客户端—请求(Request)—服务器</li>
+</ul>
+<p>百度：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Request URL: https:<span class="comment">//www.baidu.com/   请求地址</span></span><br><span class="line">Request Method: GET			get方法/post方法</span><br><span class="line">Status Code: <span class="number">200</span> OK			状态码：<span class="number">200</span></span><br><span class="line">Remote(远程) Address: <span class="number">14.215</span><span class="number">.177</span><span class="number">.39</span>:<span class="number">443</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Accept: text/html</span><br><span class="line">Accept-Encoding: gzip, deflate, br</span><br><span class="line">Accept-Language: zh-CN,zh;q=<span class="number">0.9</span>     语言</span><br><span class="line">Cache-Control: max-age=<span class="number">0</span></span><br><span class="line">Connection: keep-alive</span><br></pre></td></tr></table></figure>
+
+<h5 id="1、请求行"><a href="#1、请求行" class="headerlink" title="1、请求行"></a>1、请求行</h5><ul>
+<li>请求行中的请求方式：GET</li>
+<li>请求方式：<strong>Get,Post</strong>， HEAD,DELETE,PUT,TRACT…<ul>
+<li>get：请求能够携带的参数比较少，大小有限制，会在浏览器的URL地址栏显示数据内容，不安全，但高效</li>
+<li>post：请求能够携带的参数没有限制，大小没有限制，不会在浏览器的URL地址栏显示数据内容，安全，但不高效。</li>
+</ul>
+</li>
+</ul>
+<h5 id="2、消息头"><a href="#2、消息头" class="headerlink" title="2、消息头"></a>2、消息头</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Accept：告诉浏览器，他所支持的数据类型</span><br><span class="line">Accept-Encoding：支持哪种编码格式 GBK UTF-<span class="number">8</span> GB2312 ISO8859-<span class="number">1</span></span><br><span class="line">Accept-Language:告诉浏览器，它的语言环境</span><br><span class="line">Cache-Control：缓存控制</span><br><span class="line">Connection：告诉浏览器，请求完成是断开还是保持连接</span><br><span class="line">HOST:主机....</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="4-4、Http响应"><a href="#4-4、Http响应" class="headerlink" title="4.4、Http响应"></a>4.4、Http响应</h4><ul>
+<li>服务器—响应—客户端</li>
+</ul>
+<p>百度：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Cache-Control: <span class="keyword">private</span>    缓存控制</span><br><span class="line">Connection: keep-alive    连接</span><br><span class="line">Content-Encoding: gzip		编码</span><br><span class="line">Content-Type: text/html		类型</span><br></pre></td></tr></table></figure>
+
+<h5 id="1、响应体"><a href="#1、响应体" class="headerlink" title="1、响应体"></a>1、响应体</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Accept：告诉浏览器，他所支持的数据类型</span><br><span class="line">Accept-Encoding：支持哪种编码格式 GBK UTF-<span class="number">8</span> GB2312 ISO8859-<span class="number">1</span></span><br><span class="line">Accept-Language:告诉浏览器，它的语言环境</span><br><span class="line">Cache-Control：缓存控制</span><br><span class="line">Connection：告诉浏览器，请求完成是断开还是保持连接</span><br><span class="line">HOST:主机....</span><br><span class="line">Refresh：告诉客户端，多久刷新一次</span><br><span class="line">Location：让网页重新定位</span><br></pre></td></tr></table></figure>
+
+<h5 id="2、响应状态码"><a href="#2、响应状态码" class="headerlink" title="2、响应状态码"></a>2、响应状态码</h5><p>200：请求响应成功    200</p>
+<p>3xx：请求重定向</p>
+<ul>
+<li>重定向：你重新到我给你新位置去；</li>
+</ul>
+<p>4xx：找不到资源      404</p>
+<ul>
+<li>资源不存在；</li>
+</ul>
+<p>5xx：服务器代码错误  500           502：网关错误</p>
+<p>​        </p>
+<p><strong>常见面试题：</strong></p>
+<p>当你的浏览器中地址栏输入地址并回车的一瞬间到页面能够展示回来，经历了什么？</p>
+<h3 id="5、Maven"><a href="#5、Maven" class="headerlink" title="5、Maven"></a>5、Maven</h3><p><strong>我为什么要学习这个技术</strong>？</p>
+<p>​    1、在javaweb开发中，需要使用大量的jar包，我们手动去导入；</p>
+<p>​    2、如何能够让一个东西自动帮我导入和配置这个jar包</p>
+<p>​    由此，Maven诞生了！</p>
+<h4 id="5-1、Maven项目架构管理工具"><a href="#5-1、Maven项目架构管理工具" class="headerlink" title="5.1、Maven项目架构管理工具"></a>5.1、Maven项目架构管理工具</h4><p>我们目前用来就是方便导入jar包的！</p>
+<p>Maven的核心思想：<strong>约定大于配置</strong></p>
+<ul>
+<li>有约束，不要去违反。</li>
+</ul>
+<p>Maven会规定好你该如何去编写我们的Java代码，必须要按照这个规范来；</p>
+<h4 id="5-2、下载安装Maven"><a href="#5-2、下载安装Maven" class="headerlink" title="5.2、下载安装Maven"></a>5.2、下载安装Maven</h4><p>官网：<a href="https://maven.apache.org/" target="_blank" rel="noopener">https://maven.apache.org/</a></p>
+<p><img src="/blog/2020/05/14/javaweb/%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85maven.png" alt="image-20200522213953483"></p>
+<p>下载完成后，解压即可；</p>
+<h4 id="5-3、配置环境变量"><a href="#5-3、配置环境变量" class="headerlink" title="5.3、配置环境变量"></a>5.3、配置环境变量</h4><p>在我们的系统环境变量中</p>
+<p>配置如下配置：</p>
+<ul>
+<li>M2_HOME        maven目录下的bin目录</li>
+<li>MAVEN_HOME         maven的目录</li>
+<li>在系统的path中配置    %MAVEN_HOME%\bin</li>
+</ul>
+<p><img src="/blog/2020/05/14/javaweb/%E6%B5%8B%E8%AF%95maven%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png" alt="image-20200522220445894"></p>
+<p>测试maven是否安装成功，保证必须配置完毕！</p>
+<h4 id="5-4、阿里云镜像"><a href="#5-4、阿里云镜像" class="headerlink" title="5.4、阿里云镜像"></a>5.4、阿里云镜像</h4><ul>
+<li>镜像：mirrors<ul>
+<li>作用：加速我们的下载</li>
+</ul>
+</li>
+<li>国内建议使用阿里云的镜像</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">　　<span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus-aliyun<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">　　<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*,!jeecg,!jeecg-snapshots<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">　　<span class="tag">&lt;<span class="name">name</span>&gt;</span>Nexus aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">　　<span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-5、本地仓库"><a href="#5-5、本地仓库" class="headerlink" title="5.5、本地仓库"></a>5.5、本地仓库</h4><p>在本地的仓库，远程仓库；</p>
+<p><strong>建立一个本地仓库</strong>：localRepository</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>D:\environment\apache-maven-3.6.3\maven-repo<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-6、在IDEA中使用Maven"><a href="#5-6、在IDEA中使用Maven" class="headerlink" title="5.6、在IDEA中使用Maven"></a>5.6、在IDEA中使用Maven</h4><p>1.启动IDEA</p>
+<p>2.创建一个MavenWeb项目</p>
+<p><img src="/blog/2020/05/14/javaweb/%E5%88%9B%E5%BB%BAMavenWeb%E9%A1%B9%E7%9B%AE.png" alt="image-20200522223156611"></p>
+<p><img src="/blog/2020/05/14/javaweb/%E7%BB%84id%E5%92%8C%E9%A1%B9%E7%9B%AE%E5%90%8D.png" alt="image-20200522223407655"></p>
+<p><img src="/blog/2020/05/14/javaweb/%E9%80%89%E6%8B%A9maven%E7%B1%BB%E5%9E%8B%E5%92%8C%E4%BB%93%E5%BA%93.png" alt="image-20200522224000978"></p>
+<p><img src="/blog/2020/05/14/javaweb/IDEA%E8%87%AA%E5%B8%A6maven.png" alt="image-20200522223842283"></p>
+<p>3.等待项目初始化完毕    </p>
+<p><img src="/blog/2020/05/14/javaweb/maven%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png" alt="image-20200522224912953"></p>
+<p>4.观察maven仓库中多了什么东西？</p>
+<p>5.IDEA中的Maven设置</p>
+<p>IDEA项目配置成功后，看一眼Maven配置</p>
+<p><img src="/blog/2020/05/14/javaweb/%E6%A3%80%E6%9F%A5IDEA%E7%9A%84Maven%E9%85%8D%E7%BD%AE.png" alt="image-20200523001345121"></p>
+<p><img src="/blog/2020/05/14/javaweb/%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5%E6%BA%90%E7%A0%81.png" alt="image-20200523001539992"></p>
+<p>6.到这里，Maven在IDEA中的配置和使用就OK了！</p>
+<h4 id="5-7、创建一个普通的Maven项目"><a href="#5-7、创建一个普通的Maven项目" class="headerlink" title="5.7、创建一个普通的Maven项目"></a>5.7、创建一个普通的Maven项目</h4><p><img src="/blog/2020/05/14/javaweb/%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9AMaven%E9%A1%B9%E7%9B%AE.png" alt="image-20200523002048926"></p>
+<p><img src="/blog/2020/05/14/javaweb/%E5%B9%B2%E5%87%80Maven%E9%A1%B9%E7%9B%AE%E7%95%8C%E9%9D%A2.png" alt="image-20200523002836004"></p>
+<p>下面这个只有在Web应用下才会有！</p>
+<p><img src="/blog/2020/05/14/javaweb/WEB-INF.png" alt="image-20200523003159794"></p>
+<h4 id="5-8、标记文件夹功能"><a href="#5-8、标记文件夹功能" class="headerlink" title="5.8、标记文件夹功能"></a>5.8、标记文件夹功能</h4><p><img src="/blog/2020/05/14/javaweb/%E6%A0%87%E8%AE%B0%E7%9B%AE%E5%BD%95%E5%8A%9F%E8%83%BD.png" alt="image-20200523004313123"></p>
+<p><img src="/blog/2020/05/14/javaweb/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E9%85%8D%E7%BD%AE.png" alt="image-20200523004720479"></p>
+<p><img src="/blog/2020/05/14/javaweb/%E5%9C%A8%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E4%B8%AD%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%BB%99%E7%9B%AE%E5%BD%95%E6%A0%87%E8%AE%B0%E7%B1%BB%E5%9E%8B.png" alt="image-20200523004851461"></p>
+<p><img src="/blog/2020/05/14/javaweb/target.png" alt="image-20200523005028198"></p>
+<h4 id="5-9、在IDEA中配置Tomcat"><a href="#5-9、在IDEA中配置Tomcat" class="headerlink" title="5.9、在IDEA中配置Tomcat"></a>5.9、在IDEA中配置Tomcat</h4><p><img src="/blog/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0%E9%85%8D%E7%BD%AE.png" alt="image-20200523005358175"></p>
+<p><img src="/blog/2020/05/14/javaweb/%E6%9F%A5%E7%9C%8B%E9%80%89%E6%8B%A9%E9%85%8D%E7%BD%AE.png" alt="image-20200523005635890"></p>
+<p><img src="/blog/2020/05/14/javaweb/%E9%80%89%E6%8B%A9Tomcat.png" alt="image-20200523010053534"></p>
+<p><img src="/blog/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="image-20200523011121914"></p>
+<p>解决警告问题</p>
+<p>必须要的配置：<strong>为什么会有这个问题：我们访问一个网站，需要制定一个文件夹名字；</strong></p>
+<p><img src="/blog/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0Artifact%E8%A7%A3%E5%86%B3%E8%AD%A6%E5%91%8A.png" alt="image-20200523011503518"></p>
+<p><img src="/blog/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E8%B7%AF%E5%BE%84%E8%AE%BE%E7%BD%AE.png" alt="image-20200523011829379"></p>
+<p><img src="/blog/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8Tomcat.png" alt="image-20200523011934034"></p>
+<p><img src="/blog/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E9%BB%98%E8%AE%A4%E7%9A%84index.jsp%E7%9A%84%E5%86%85%E5%AE%B9.png" alt="image-20200523012356070"></p>
+<h4 id="5-10、pom文件"><a href="#5-10、pom文件" class="headerlink" title="5.10、pom文件"></a>5.10、pom文件</h4><p>pom.xml是Maven的核心配置文件</p>
+<p><img src="/blog/2020/05/14/javaweb/Maven%E5%86%85%E5%AE%B9%E4%BB%8B%E7%BB%8D.png" alt="image-20200523013103579"></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--Maven版本和头文件--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span> <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--这里就是我们刚才配置的GAV--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.carey<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>javaweb-01-maven<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!--Package：项目的打包方式</span></span><br><span class="line"><span class="comment">  jar：java应用</span></span><br><span class="line"><span class="comment">  war：Javaweb应用</span></span><br><span class="line"><span class="comment">  --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>war<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--配置--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--项目的默认构建编码--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--编码版本--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--项目依赖--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--具体依赖的jar包配置文件--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.11<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--项目构建用的东西--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">finalName</span>&gt;</span>javaweb-01-maven<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginManagement</span>&gt;</span><span class="comment">&lt;!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-clean-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-resources-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.0.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.8.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-surefire-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.22.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-war-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-install-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.5.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-deploy-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.8.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginManagement</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/blog/2020/05/14/javaweb/pom.xml%E9%85%8D%E7%BD%AE%E5%90%8E%E5%AF%BC%E5%85%A5jar%E7%A4%BA%E4%BE%8B.png" alt="image-20200523015623291"></p>
+<p>maven由于它的约定大于配置，我们之后可能遇到我们写的配置文件，无法被导出或者生效的问题，解决方案：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--在build中配置resources，来防止我们资源导出失败的问题--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">excludes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">excludes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>false<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>false<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-11、IDEA操作"><a href="#5-11、IDEA操作" class="headerlink" title="5.11、IDEA操作"></a>5.11、IDEA操作</h4><p><img src="/blog/2020/05/14/javaweb/%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%E6%A0%91.png" alt="image-20200523021318428"></p>
+<p><img src="/blog/2020/05/14/javaweb/Maven%E4%B8%ADjar%E5%8C%85%E7%9A%84%E8%81%94%E7%B3%BB%E5%85%B3%E8%81%94%E5%9B%BE.png" alt="image-20200523021221135"></p>
+
       
     </div>
 
