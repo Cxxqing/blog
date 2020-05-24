@@ -145,6 +145,706 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/11/OSsecondone/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="Carey">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carey's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2020/05/11/OSsecondone/" class="post-title-link" itemprop="url">操作系统2.1</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-11 12:56:34 / 修改时间：13:01:00" itemprop="dateCreated datePublished" datetime="2020-05-11T12:56:34+08:00">2020-05-11</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="进程的概念"><a href="#进程的概念" class="headerlink" title="进程的概念"></a>进程的概念</h2><p>程序：是静态的，就是个存放在磁盘里的可执行文件，就是一系列的指令集合<br>进程（Process）：是动态的，是程序的一次执行过程</p>
+<h2 id="进程的组成"><a href="#进程的组成" class="headerlink" title="进程的组成"></a>进程的组成</h2><p>进程(进程实体)由程序段、数据段、PCB三部分组成</p>
+<ul>
+<li><p>PCB             —-    进程的管理者(操作系统)所需的数据都在PCB中</p>
+<ul>
+<li>进程描述信息</li>
+<li>进程控制和管理信息</li>
+<li>资源分配清单</li>
+<li>处理器相关信息</li>
+</ul>
+</li>
+<li><p>程序段        —-    程序本身运行所需的数据</p>
+<ul>
+<li>存放要执行的代码</li>
+</ul>
+</li>
+<li><p>数据段       —-    程序本身运行所需的数据</p>
+<ul>
+<li>存放程序运行过程中处理的各种数据</li>
+</ul>
+</li>
+</ul>
+<p>总结：PCB 是给操作系统用的。程序段、数据段是给进程自己用的。<br>引入进程实体的概念后，可把进程定义为：<br><strong>进程是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。</strong></p>
+<h2 id="进程的组织"><a href="#进程的组织" class="headerlink" title="进程的组织"></a>进程的组织</h2><ul>
+<li>连接方式<ul>
+<li>按照进程状态将PCB分为多个队列</li>
+<li>操作系统持有指向各个队列的指针</li>
+</ul>
+</li>
+<li>索引方式<ul>
+<li>根据进程状态的不同，建立几张索引表</li>
+<li>操作系统持有指向各个索引表的指针</li>
+</ul>
+</li>
+</ul>
+<h2 id="进程的特征"><a href="#进程的特征" class="headerlink" title="进程的特征"></a>进程的特征</h2><ul>
+<li><p>动态性            —-<strong>动态性是进程最基本的特征</strong></p>
+<ul>
+<li>进程是程序的一次执行过程，是动态地产生、变化和消亡的</li>
+</ul>
+</li>
+<li><p>并发性</p>
+<ul>
+<li>内存中有多个进程实体，各进程可并发执行</li>
+</ul>
+</li>
+<li><p>独立性             —–<strong>进程是资源分配、接受调度的基本单位</strong></p>
+<ul>
+<li>进程是能独立运行、独立获得资源、独立接受调度的基本单位</li>
+</ul>
+</li>
+<li><p>异步性            —–<strong>异步性会导致并发程序执行结果的不确定性</strong></p>
+<ul>
+<li>各进程按各自独立的、不可预知的速度向前推进，操作系统要提供“进程同步机制”来解决异步问题</li>
+</ul>
+</li>
+<li><p>结构性</p>
+<ul>
+<li>每个进程都会配置一个PCB。结构上看，进程由程序段，数据段和PCB组成</li>
+</ul>
+</li>
+</ul>
+<h2 id="进程的状态与转换"><a href="#进程的状态与转换" class="headerlink" title="进程的状态与转换"></a>进程的状态与转换</h2><h3 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h3><ul>
+<li><strong>运行状态</strong><ul>
+<li>CPU✔    其他所需资源✔</li>
+</ul>
+</li>
+<li><strong>就绪状态</strong><ul>
+<li>CPU❌   其他所需资源✔</li>
+</ul>
+</li>
+<li><strong>阻塞状态</strong><ul>
+<li>CPU❌   其他所需资源❌</li>
+</ul>
+</li>
+<li>创建状态<ul>
+<li>操作系统为新进程分配资源、创建PCB</li>
+</ul>
+</li>
+<li>终止状态<ul>
+<li>操作系统回收进程的资源、撤销PCB</li>
+</ul>
+</li>
+</ul>
+<h3 id="进程状态间的转换"><a href="#进程状态间的转换" class="headerlink" title="进程状态间的转换"></a>进程状态间的转换</h3><ul>
+<li><strong>就绪态-&gt;运行态</strong><ul>
+<li>进程被调度</li>
+</ul>
+</li>
+<li><strong>运行态-&gt;就绪态</strong><ul>
+<li>时间片到，或CPU被其他高优先级的进程抢占</li>
+</ul>
+</li>
+<li><strong>运行态-&gt;阻塞态</strong><ul>
+<li>等待系统资源分配，或等待某事件发生(主动行为)</li>
+</ul>
+</li>
+<li><strong>阻塞态-&gt;就绪态</strong><ul>
+<li>资源分配到位，等待事件的发生(被动行为)</li>
+</ul>
+</li>
+<li>创建态-&gt;就绪态<ul>
+<li>系统完成创建进程相关的工作</li>
+</ul>
+</li>
+<li>运行态-&gt;终止态<ul>
+<li>进程运行结束，或运行过程中遇到不可修复的错误</li>
+</ul>
+</li>
+</ul>
+<h2 id="进程控制"><a href="#进程控制" class="headerlink" title="进程控制"></a>进程控制</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li><p>进程控制就是要实现进程状态的转换</p>
+<ul>
+<li>进程控制用原语实现<ul>
+<li>原语用<strong>关/开中断</strong>来实现</li>
+<li>原语是一种特殊的程序</li>
+<li>原语的执行<strong>必须一气呵成，不可中断</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="相关原语"><a href="#相关原语" class="headerlink" title="相关原语"></a>相关原语</h3><ul>
+<li><p>进程的创建</p>
+<ul>
+<li>创建原语<pre><code>- 申请空白PCB
+- 为新进程分配所需资源
+- 初始化PCB
+- 将PCB插入就绪队列           **创建态-&gt;就绪态**</code></pre></li>
+<li>引起进程创建的事件<ul>
+<li>用户登录</li>
+<li>作业调度</li>
+<li>提供服务</li>
+<li>应用请求</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>进程的终止</p>
+<ul>
+<li>撤销原语              <strong>就绪态/阻塞态/运行态/ —-&gt;终止态-&gt;无</strong><ul>
+<li>从PCB集合中找到终止进程的PCB</li>
+<li>若进程正在运行，立即剥夺CPU，将CPU分配给其他进程</li>
+<li>终止其所有子进程              <strong>进程间的关系是树状结构</strong></li>
+<li>将该进程拥有的所有资源归还给父进程或操作系统</li>
+<li>删除PCB</li>
+</ul>
+</li>
+<li>引起进程终止的事件<ul>
+<li>正常结束</li>
+<li>异常结束</li>
+<li>外界干预        </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>进程的阻塞                                 <strong>阻塞和唤醒必须成对使用</strong></p>
+<ul>
+<li>阻塞原语     <strong>运行态-&gt;阻塞态</strong><ul>
+<li>找到要阻塞的进程对应的PCB</li>
+<li>保护进程运行现场，将PCB状态信息设置为“阻塞态”，暂时停止进程运行</li>
+<li>将PCB插入相应事件的等待队列</li>
+</ul>
+</li>
+<li>引起进程阻塞的事件<ul>
+<li>需要等待系统分配某种资源</li>
+<li>需要等待相互合作的其他进程完成工作            </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>进程的唤醒                 </p>
+<ul>
+<li>唤醒原语         <strong>阻塞态-&gt;就绪态</strong><ul>
+<li>在事件等待队列中找到PCB</li>
+<li>将PCB从等待队列移除，设置进程为就绪态</li>
+<li>将PCB插入就绪队列，等待被调度</li>
+</ul>
+</li>
+<li>引起进程唤醒的事件<ul>
+<li>等待事件发生                <strong>因何事阻塞，就应由何事唤醒</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>进程的切换</p>
+<ul>
+<li>切换原语           <strong>运行态-&gt;就绪态     或       就绪态-&gt;运行态</strong><pre><code>- 将运行环境信息(进程上下文context)存入PCB
+- PCB移入相应队列
+- 选择另一个进程执行，并更新其PCB
+- 根据PCB恢复新进程所需的运行环境</code></pre></li>
+<li>引起进程切换的事件<ul>
+<li>当前进程时间片到</li>
+<li>有更高优先级的进程到达</li>
+<li>当前进程主动阻塞</li>
+<li>当前进程终止</li>
+</ul>
+</li>
+</ul>
+<p>以上理解能在选择题分析出答案即可，不用背</p>
+</li>
+</ul>
+<h2 id="进程通信"><a href="#进程通信" class="headerlink" title="进程通信"></a>进程通信</h2><ul>
+<li>共享存储<ul>
+<li>设置一个共享空间</li>
+<li>要<strong>互斥地访问</strong>共享空间<ul>
+<li>两种方式<ul>
+<li>基于数据结构(低级)</li>
+<li>基于存储区的共享(高级)</li>
+</ul>
+</li>
+<li>管道通信</li>
+<li>设置一个特殊的共享文件(管道)，其实就是一个缓冲区</li>
+<li><strong>一个管道只能实现半双工通信</strong></li>
+<li>实现双向同时通信要建立两个管道</li>
+<li>各进程要互斥访问管道</li>
+<li><strong>写满时，不能再写。读空时，不能再读</strong></li>
+<li><strong>没写满，不能读。没读空，不能写</strong></li>
+<li>消息传递</li>
+<li>传递结构化的消息(消息头/消息体)</li>
+<li>系统提供“发送/接受原语”</li>
+<li>两种方式</li>
+<li>直接通信方式</li>
+</ul>
+</li>
+<li>消息直接挂到接收方的消息队列里<ul>
+<li>间接(信箱)通信方式</li>
+</ul>
+</li>
+<li>消息先发到中间体(信箱)</li>
+</ul>
+</li>
+</ul>
+<h2 id="线程、多线程模型"><a href="#线程、多线程模型" class="headerlink" title="线程、多线程模型"></a>线程、多线程模型</h2><ul>
+<li>什么是线程，为什么要引入线程<ul>
+<li>可理解为“轻量级进程”</li>
+<li>可增加并发度，减少并发带来的开销<ul>
+<li>引入进程机制后，有什么变化？(和传统进程机制对比)</li>
+<li>资源分配、处理机调度</li>
+<li>传统进程机制中，进程是资源分配、调度的基本单位</li>
+<li>引入线程后，进程是资源分配的基本单位，线程是调度的基本单位</li>
+<li>并发性</li>
+<li>传统进程机制中，只能进程间并发</li>
+<li>引入进程后，各线程间也能并发，提升了并发度</li>
+<li>系统开销</li>
+<li>传统的进程间并发，需要切换进程的运行环境，系统开销很大</li>
+<li>线程间并发，如果是同一进程内的线程切换，则不需要切换进程环境，系统开销小</li>
+<li>引入线程后，并发带来的系统开销减小</li>
+<li>线程有哪些重要的属性</li>
+<li><strong>线程是处理机调度的单位，进程是资源分配的单位</strong></li>
+<li>同一进程的各线程共享进程拥有的资源</li>
+<li>同一进程内的线程切换不会导致进程切换</li>
+<li>线程的实现方式</li>
+<li>用户级线程</li>
+<li>从用户视角看的线程</li>
+<li>内核级线程</li>
+<li>从操作系统视角看的进程(<strong>内核级线程才是处理机分配的单位</strong>)</li>
+<li>组合方式</li>
+<li>上述两种方式的结合</li>
+<li>多线程模型</li>
+<li>多对一模型</li>
+<li>优：进程管理开销小效率高</li>
+<li>缺：<strong>一个线程阻塞会导致整个进程都被阻塞</strong>(并发度低)</li>
+<li>一对一模型</li>
+<li>优：各个线程可分配到多核处理机并发执行，并发度高</li>
+<li>缺：进程管理开销大</li>
+<li>多对多模型</li>
+<li>集二者多所长</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/10/OSfirst/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="Carey">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carey's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2020/05/10/OSfirst/" class="post-title-link" itemprop="url">操作系统概述</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-10 15:59:26 / 修改时间：16:02:40" itemprop="dateCreated datePublished" datetime="2020-05-10T15:59:26+08:00">2020-05-10</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="操作系统的概念（定义）"><a href="#操作系统的概念（定义）" class="headerlink" title="操作系统的概念（定义）"></a>操作系统的概念（定义）</h2><p>操作系统（Operating System， OS）是指控制和管理整个计算机系统的硬件和软件资源，并合理地组织调度计算机的工作和资源的分配；以提供给用户和其他软件方便的接口和环境；它是计算机系统中最基本的系统软件。</p>
+<hr>
+<h2 id="操作系统的特征"><a href="#操作系统的特征" class="headerlink" title="操作系统的特征"></a>操作系统的特征</h2><ul>
+<li>并发：指两个或多个事件在同一时间间隔内发生。这些事件宏观上是同时发生的，但微观上是交替发生的。<br>易混淆考点–并行：指两个或多个事件在同一时刻同时发生。</li>
+<li>共享即资源共享，是指系统中的资源可供内存中多个并发执行的进程共同使用。<ul>
+<li>互斥共享方式(如对摄像头设备的共享使用)</li>
+<li>同时共享方式(如对磁盘自由的共享使用)</li>
+</ul>
+</li>
+<li>虚拟是指把一个物理上的实体变为若干个逻辑上的对应物。物理实体（前者）是实际存在的，而逻辑上对应物（后者）是用户感受到的。<ul>
+<li>空分复用技术(如虚拟存储器)</li>
+<li>时分复用技术(如虚拟处理器)</li>
+</ul>
+</li>
+<li>异步是指在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底的，而是走走停停，以不可预知的速度向前推进，这就是进程的异步性。</li>
+</ul>
+<hr>
+<h2 id="OS的发展与分类"><a href="#OS的发展与分类" class="headerlink" title="OS的发展与分类"></a>OS的发展与分类</h2><h3 id="手工操作系统"><a href="#手工操作系统" class="headerlink" title="手工操作系统"></a>手工操作系统</h3><h3 id="批处理阶段"><a href="#批处理阶段" class="headerlink" title="批处理阶段"></a>批处理阶段</h3><ul>
+<li>单道批处理系统<br>引入脱机输入/输出技术（用外围机+磁带完成），并由监督程序负责控制作业的输入、输出<br>缺点：内存中仅能有一道程序运行, CPU有大量的时间是在空闲等待I/O完成</li>
+<li>多道批处理系统(操作系统开始出现)<br>优点：多道程序并发执行，共享计算机资源。资源利用率大幅提升<br>缺点：没有人机交互功能</li>
+</ul>
+<h3 id="分时操作系统"><a href="#分时操作系统" class="headerlink" title="分时操作系统"></a>分时操作系统</h3><p>计算机以时间片为单位轮流为各个用户/作业服务<br>优点：解决了人机交互问题<br>缺点：不能优先处理一些紧急任务</p>
+<h3 id="实时操作系统"><a href="#实时操作系统" class="headerlink" title="实时操作系统"></a>实时操作系统</h3><p>要在严格的时限内处理完事件，具有及时性和可靠性</p>
+<ul>
+<li><p>硬实时系统  必须在绝对严格的规定时间内完成处理    如导弹控制系统</p>
+</li>
+<li><p>软实时系统     能接受偶尔违反时间规定              如12306火车订票系统</p>
+</li>
+</ul>
+<h3 id="网络操作系统"><a href="#网络操作系统" class="headerlink" title="网络操作系统"></a>网络操作系统</h3><p>实现网络中各种资源的共享（如文件共享）和各台计算机之间的通信</p>
+<h3 id="分布式操作系统"><a href="#分布式操作系统" class="headerlink" title="分布式操作系统"></a>分布式操作系统</h3><p>分布性和并行性<br>任何工作都可以分布在这些计算机上，由它们并行、协同完成这个任务</p>
+<h3 id="个人计算机操作系统"><a href="#个人计算机操作系统" class="headerlink" title="个人计算机操作系统"></a>个人计算机操作系统</h3><hr>
+<h2 id="OS的运行机制和体系结构"><a href="#OS的运行机制和体系结构" class="headerlink" title="OS的运行机制和体系结构"></a>OS的运行机制和体系结构</h2><h3 id="运行机制"><a href="#运行机制" class="headerlink" title="运行机制"></a>运行机制</h3><ul>
+<li>两种指令<ul>
+<li>特权指令                只能在核心态下执行</li>
+<li>非特权指令</li>
+</ul>
+</li>
+<li>两种处理器状态                   <ul>
+<li>核心态</li>
+<li>用户态</li>
+</ul>
+</li>
+<li>两种程序<ul>
+<li>内核程序         只能在核心态下执行</li>
+<li>应用程序</li>
+</ul>
+</li>
+</ul>
+<h3 id="操作系统内核"><a href="#操作系统内核" class="headerlink" title="操作系统内核"></a>操作系统内核</h3><ul>
+<li>时钟管理</li>
+<li>中断处理</li>
+<li>原语   —-  是一种特殊的程序，其执行具有原子性</li>
+<li>对系统资源进行管理的功能<ul>
+<li>进程管理</li>
+<li>存储器管理</li>
+<li>设备管理</li>
+</ul>
+</li>
+<li>操作系统的体系结构<ul>
+<li>大内核<ul>
+<li>优点：高性能</li>
+<li>缺点：内核代码庞大，结构混乱，难以维护</li>
+</ul>
+</li>
+<li>微内核<ul>
+<li>优点：内核功能少，结构清晰，方便维护</li>
+<li>缺点：需要频繁地在核心态和用户态之间切换，性能低</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="中断和异常"><a href="#中断和异常" class="headerlink" title="中断和异常"></a>中断和异常</h2><h3 id="中断机制的诞生"><a href="#中断机制的诞生" class="headerlink" title="中断机制的诞生"></a>中断机制的诞生</h3><p>为了实现多道程序并发执行而引入的技术</p>
+<h3 id="中断的概念和作用"><a href="#中断的概念和作用" class="headerlink" title="中断的概念和作用"></a>中断的概念和作用</h3><ul>
+<li>发生中断，就意味着需要操作系统介入开展管理工作，CPU会立即进入核心态</li>
+<li>“中断”是CPU从用户态进入核心态的唯一途径<br>“用户态-&gt;核心态”是通过中断实现的，并且中断是唯一途径<br>“核心态-&gt;用户态”：执行一条特权指令——修改PSW的标志位为“用户态”</li>
+</ul>
+<h3 id="中断的分类"><a href="#中断的分类" class="headerlink" title="中断的分类"></a>中断的分类</h3><h4 id="内中断-也称异常、例外、陷入"><a href="#内中断-也称异常、例外、陷入" class="headerlink" title="内中断(也称异常、例外、陷入)"></a>内中断(也称异常、例外、陷入)</h4><ul>
+<li>自愿中断—指令中断</li>
+<li>强迫中断<ul>
+<li>硬件故障</li>
+<li>软中断</li>
+</ul>
+</li>
+</ul>
+<h4 id="外中断-中断"><a href="#外中断-中断" class="headerlink" title="外中断(中断)"></a>外中断(中断)</h4><ul>
+<li>外设请求</li>
+<li>人工干预</li>
+</ul>
+<h4 id="补充：内中断的另一种分类方式"><a href="#补充：内中断的另一种分类方式" class="headerlink" title="补充：内中断的另一种分类方式"></a>补充：内中断的另一种分类方式</h4><ul>
+<li>陷阱、陷入(trap)</li>
+<li>故障(fault)</li>
+<li>终止(abort)</li>
+</ul>
+<h4 id="外中断的处理过程"><a href="#外中断的处理过程" class="headerlink" title="外中断的处理过程"></a>外中断的处理过程</h4><ul>
+<li>每条指令执行结束后，CPU检查是否有外部中断信号</li>
+<li>若有外部中断信号，则需要保护被中断进程的CPU环境</li>
+<li>根据中断信号类型转入相应的中断处理程序</li>
+<li>恢复原进程的CPU环境并退出中断，返回原进程继续往下执行</li>
+</ul>
+<hr>
+<h2 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h2><h3 id="什么是系统调用，有何作用"><a href="#什么是系统调用，有何作用" class="headerlink" title="什么是系统调用，有何作用"></a>什么是系统调用，有何作用</h3><ul>
+<li>操作系统提供给应用程序使用的接口</li>
+<li>应用程序通过系统调用来请求获得操作系统的服务</li>
+<li>系统调用会使处理器从用户态进入核心态</li>
+<li>分类<ul>
+<li>设备管理</li>
+<li>文件管理</li>
+<li>进程控制</li>
+<li>进程通信</li>
+<li>内存管理</li>
+</ul>
+</li>
+</ul>
+<p>凡是与资源有关的操作、会直接影响到其他进程的操作，一定需要操作系统介入，即需要通过系统调用来实现</p>
+<h3 id="系统调用和库函数的区别"><a href="#系统调用和库函数的区别" class="headerlink" title="系统调用和库函数的区别"></a>系统调用和库函数的区别</h3><ul>
+<li>系统调用是操作系统向上层提供的接口</li>
+<li>有的库函数是对系统调用的进一步封装</li>
+<li>当今编写的应用程序大多是通过高级语言提供的库函数间接地进行系统调用</li>
+</ul>
+<h3 id="系统调用背后的过程"><a href="#系统调用背后的过程" class="headerlink" title="系统调用背后的过程"></a>系统调用背后的过程</h3><p>1.传递系统调用参数<br>2.执行陷入指令<br>3.执行系统调用相应服务程序<br>4.返回用户程序</p>
+<p>系统调用发送在用户态，对系统调用的处理发送在核心态<br>执行陷入指令会产生内中断，使处理器从用户态进入核心态</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/10/markdownlanguage/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="Carey">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carey's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2020/05/10/markdownlanguage/" class="post-title-link" itemprop="url">markdown语法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-10 09:07:12" itemprop="dateCreated datePublished" datetime="2020-05-10T09:07:12+08:00">2020-05-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-21 01:18:40" itemprop="dateModified" datetime="2020-05-21T01:18:40+08:00">2020-05-21</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>不要使用一级标题</p>
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>总结：标题使用#号表示，一个#代表1级标题，一共有6个级别，他们的大小依次变小</p>
+<hr>
+<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><p>第一个段落在这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里    </p>
+<p>第二个段落这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里</p>
+<p>总结：空格两个以上并且按下回车键（换行）就是下一个段落，没有的话这段文字就自成一段在Typora里面只需要回车换行</p>
+<hr>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p><em>两端一个星号斜体</em></p>
+<p><strong>两端两个星号粗体</strong></p>
+<p><strong><em>两端三个星号斜粗体</em></strong></p>
+<hr>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>分隔线在一行中，使用三个以上的星号、减号、下划线来建立(可以隔开)</p>
+<hr>
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p><del>两端两个波浪线</del></p>
+<hr>
+<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>markdown无下划线语法，但可以利用html语法<u></u></p>
+<p><u>这是下划线</u></p>
+<hr>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>无序列表使用星号*、加号 +、减号 -其中之一来表示即可，注意需要和符号之间保持一个空格</p>
+<ul>
+<li><p>第一项</p>
+</li>
+<li><p>第二项</p>
+</li>
+<li><p>第三项</p>
+</li>
+</ul>
+<hr>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>数字加上.             文本使用空格隔开</p>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+<hr>
+<h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3><p>有序和无序可以一起使用，只需要在子列表的选项前面添加四个空格</p>
+<ol>
+<li><p>第一项：  </p>
+<ul>
+<li>子列表1</li>
+<li>子列表2</li>
+<li>子列表3</li>
+</ul>
+</li>
+<li><p>第二项：</p>
+<ul>
+<li>子列表1</li>
+<li>子列表2</li>
+<li>子列表3</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h2><p>区块是用来引用的，比如链接或者一段文本</p>
+<p>在段落的开头使用&gt;符号，使用空格，隔开文本</p>
+<blockquote>
+<p>引用的内容1</p>
+<p>第二段引用的内容</p>
+</blockquote>
+<blockquote>
+<p>引用的内容2</p>
+</blockquote>
+<blockquote>
+<p>第二段引用的内容</p>
+</blockquote>
+<p>在引用里面也是分段落的，我们不是使用回车，而是使用&gt;成单个一行,即在段落1和段落2中间一行添加一个&gt;单独一行，使得区块没有断开</p>
+<hr>
+<h2 id="区块嵌套"><a href="#区块嵌套" class="headerlink" title="区块嵌套"></a>区块嵌套</h2><blockquote>
+<p>引用</p>
+<blockquote>
+<p>2</p>
+<blockquote>
+<p>3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>越多&gt;表示区块越小</p>
+<hr>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>上下使用三个点进行包裹，最顶上的三个点后面可以写上代码的类型使得代码高亮</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">'RUNOOB'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>插入链接有两种方式：</p>
+<p>第一种：直接插入<br><a href="https://cxxqing.github.io/blog/" target="_blank" rel="noopener">https://cxxqing.github.io/blog/</a></p>
+<p>这种方式适用于短的链接，但是过长的链接可能会看起来不得当</p>
+<p>第二种：使用markdown语法插入<br>其实就是让一段文本，拥有跳转功能</p>
+<p><a href="用一对小括号填写链接地址">用一对中括号填写链接名称</a>    一对小括号填写链接地址</p>
+<p>第一种无法识别的话用一对尖括号&lt;链接地址&gt;百分百表示链接地址</p>
+<hr>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>![图片描述]()      </p>
+<hr>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<p> |    表头    |    表头    |</p>
+<p>|    —-        |     —-    |</p>
+<p>|    单元格    |    单元格|</p>
+<p>|    单元格    |    单元格|</p>
+<hr>
+<h3 id="让表格自动对其方式"><a href="#让表格自动对其方式" class="headerlink" title="让表格自动对其方式"></a>让表格自动对其方式</h3><p>居右 -:</p>
+<p>居左 :-</p>
+<p>居中 :-:</p>
+<p> |    左对齐    |    右对齐    |   居中对齐    |</p>
+<p>|    :—-        |     —-:    |    :——:      |</p>
+<p>|    单元格    |    单元格|    单元格  |    </p>
+<p>|    单元格    |    单元格|    单元格  |    </p>
+<hr>
+<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>\   反斜杠        加上需要的符号就可以正常显示了</p>
+<h2 id="代码中内容整体移动"><a href="#代码中内容整体移动" class="headerlink" title="代码中内容整体移动"></a>代码中内容整体移动</h2><p>选中内容全部左移：Ctrl +【</p>
+<p>选中内容全部右移：Ctrl + 】</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/10/command-operatekey/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2094,7 +2794,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives/">
         
-          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
