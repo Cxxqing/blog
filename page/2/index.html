@@ -145,6 +145,330 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/12/OSsecondtwo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="Carey">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carey's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2020/05/12/OSsecondtwo/" class="post-title-link" itemprop="url">操作系统2.2</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-12 15:19:11" itemprop="dateCreated datePublished" datetime="2020-05-12T15:19:11+08:00">2020-05-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-13 12:01:58" itemprop="dateModified" datetime="2020-05-13T12:01:58+08:00">2020-05-13</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="处理机调度"><a href="#处理机调度" class="headerlink" title="处理机调度"></a>处理机调度</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li>按某种算法选择一个进程将处理机分配给它</li>
+</ul>
+<h3 id="三个层次"><a href="#三个层次" class="headerlink" title="三个层次"></a>三个层次</h3><ul>
+<li><p>高级调度<strong>(作业调度)</strong></p>
+<ul>
+<li>按照某种规则，从后备队列中选择合适的作业将其调入内存，并为其创建进程</li>
+</ul>
+</li>
+<li><p>中级调度<strong>(内存调度)</strong></p>
+<ul>
+<li>按照某种规则，从挂起队列中选择合适的进程将其数据调回内存</li>
+</ul>
+</li>
+<li><p>低级调度(进程调度)</p>
+<ul>
+<li>按照某种规则，从就绪队列中选择一个进程为其分配处理机</li>
+</ul>
+</li>
+</ul>
+<h3 id="三层调度的联系、对比"><a href="#三层调度的联系、对比" class="headerlink" title="三层调度的联系、对比"></a>三层调度的联系、对比</h3><ul>
+<li>高级调度<ul>
+<li>外存-&gt;内存(面向作业)</li>
+<li>发生频率：最低</li>
+</ul>
+</li>
+<li>中级调度<ul>
+<li>外存-&gt;内存(面向进程)</li>
+<li>发送频率：中等</li>
+</ul>
+</li>
+<li>低级调度<ul>
+<li>内存-&gt;CPU</li>
+<li>发生频率：最高</li>
+</ul>
+</li>
+</ul>
+<h3 id="补充知识"><a href="#补充知识" class="headerlink" title="补充知识"></a>补充知识</h3><ul>
+<li><p>为减轻系统负载，提供资源利用率，暂时不执行的进程会被调到外存从而变为“挂起态”</p>
+</li>
+<li><p>七状态模型：在五状态模型的基础上加入了“就绪挂起”和“阻塞挂起”两种状态</p>
+</li>
+</ul>
+<h2 id="进程调度的时机、切换与过程、调度方式"><a href="#进程调度的时机、切换与过程、调度方式" class="headerlink" title="进程调度的时机、切换与过程、调度方式"></a>进程调度的时机、切换与过程、调度方式</h2><h3 id="时机"><a href="#时机" class="headerlink" title="时机"></a>时机</h3><ul>
+<li>什么时候需要进程调度？<ul>
+<li>主动放弃<ul>
+<li>进程正常终止</li>
+<li>运行过程中发生异常而终止</li>
+<li>主动阻塞(如等待I/O)</li>
+</ul>
+</li>
+<li>被动放弃<ul>
+<li>分给进程的时间片用完</li>
+<li>有更紧急的事情需要处理(如I/O中断)</li>
+<li>有更高优先级的进程进入就绪队列</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>什么时候不能进行进程调度<ul>
+<li>在处理中断的过程中</li>
+<li>进程在操作系统内核程序临界区中</li>
+<li>原子操作过程中(原语)</li>
+</ul>
+</li>
+</ul>
+<h3 id="切换与过程"><a href="#切换与过程" class="headerlink" title="切换与过程"></a>切换与过程</h3><ul>
+<li>切换过程<ul>
+<li>对原来运行进程各种数据的保存</li>
+<li>对新的进程各种数据的恢复</li>
+</ul>
+</li>
+<li>重要结论：<strong>进程调度、切换是有代价的</strong>，并不是调度越频繁，并发度越高</li>
+</ul>
+<h3 id="方式"><a href="#方式" class="headerlink" title="方式"></a>方式</h3><ul>
+<li>非剥夺调度方式(非抢占式)<ul>
+<li>只能由当前运行的进程主动放弃CPU</li>
+</ul>
+</li>
+<li>剥夺调度方式(抢占式)<ul>
+<li>可由操作系统剥夺当前进程的CPU使用权</li>
+</ul>
+</li>
+</ul>
+<h2 id="调度算法的评价指标"><a href="#调度算法的评价指标" class="headerlink" title="调度算法的评价指标"></a>调度算法的评价指标</h2><h3 id="CPU利用率"><a href="#CPU利用率" class="headerlink" title="CPU利用率"></a>CPU利用率</h3><ul>
+<li>$$<br>利用率 = 忙碌的时间/总时间<br>$$</li>
+</ul>
+<h3 id="系统吞吐量"><a href="#系统吞吐量" class="headerlink" title="系统吞吐量"></a>系统吞吐量</h3><ul>
+<li>$$<br>系统吞吐量 = 总共完成了多少道作业/总共花了多少时间<br>$$</li>
+</ul>
+<h3 id="周转时间"><a href="#周转时间" class="headerlink" title="周转时间"></a>周转时间</h3><ul>
+<li><p>$$<br>周转时间 = 作业完成时间-作业到达时间<br>$$</p>
+</li>
+<li><p>$$<br>平均周转时间 = 各作业周转时间之和/作业数<br>$$</p>
+</li>
+<li><p>$$<br>带权周转时间 = 作业周转时间 / 作业实际运行的时间<br>$$</p>
+</li>
+<li><p>$$<br>平均带权周转时间 = 各作业带权周转时间之和 / 作业数<br>$$</p>
+</li>
+</ul>
+<h3 id="等待时间"><a href="#等待时间" class="headerlink" title="等待时间"></a>等待时间</h3><ul>
+<li>//进程/作业                等待被服务的时间之和</li>
+<li>周转时间-运行时间-(I/O操作的时间)</li>
+<li>平均等待时间即   各个进程/作业等待时间的平均值</li>
+</ul>
+<h3 id="响应时间"><a href="#响应时间" class="headerlink" title="响应时间"></a>响应时间</h3><ul>
+<li>从用户提交请求到首次产生响应所用的时间</li>
+</ul>
+<h2 id="调度算法"><a href="#调度算法" class="headerlink" title="调度算法"></a>调度算法</h2><h3 id="先来先服务-FCFS"><a href="#先来先服务-FCFS" class="headerlink" title="先来先服务(FCFS)"></a>先来先服务(FCFS)</h3><ul>
+<li>思想&amp;&amp;规则<ul>
+<li>按照到达的先后顺序调度，事实上就是等待时间越久越优先得到服务</li>
+</ul>
+</li>
+<li>可抢占？<ul>
+<li>非抢占式</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>公平：实现简单</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>对短作业不利</li>
+</ul>
+</li>
+<li>考虑到等待时间&amp;运行时间？<ul>
+<li>等待时间√    </li>
+<li>运行时间×</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>不会</li>
+</ul>
+</li>
+</ul>
+<h3 id="短作业优先-SJF-SPF"><a href="#短作业优先-SJF-SPF" class="headerlink" title="短作业优先(SJF/SPF)"></a>短作业优先(SJF/SPF)</h3><ul>
+<li>思想&amp;规则<ul>
+<li>每次调度时选择当前已到达且运行时间最短的作业/进程</li>
+</ul>
+</li>
+<li>可抢占？<ul>
+<li>默认为非抢占式，也有SJF的抢占式，版本最短剩余时间优先算法(SRTN)</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>“最短的”平均等待/周转时间</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>对长作业不利，可能导致饥饿；难以做到真正的短作业优先</li>
+</ul>
+</li>
+<li>考虑到等待时间&amp;运行时间<ul>
+<li>等待时间×</li>
+<li>运行时间√</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>会</li>
+</ul>
+</li>
+</ul>
+<h3 id="高响应比优先-HRRN"><a href="#高响应比优先-HRRN" class="headerlink" title="高响应比优先(HRRN)"></a>高响应比优先(HRRN)</h3><ul>
+<li><p>$$<br>响应比 = (等待时间+要求服务的时间)/要求服务的时间<br>$$</p>
+</li>
+<li><p>思想&amp;规则</p>
+<ul>
+<li>非抢占式的调度算法，只有当前运行的进程主动放弃CPU时（正常/异常完成，或主动阻塞），才需要进行调度，调度时计算所有就绪进程的响应比，选响应比最高的进程上处理机</li>
+</ul>
+</li>
+<li><p>可抢占式？</p>
+<ul>
+<li>非抢占式</li>
+</ul>
+</li>
+<li><p>优点</p>
+<ul>
+<li>上述两种算法的权衡折中，综合考虑的等待时间和运行时间</li>
+</ul>
+</li>
+<li><p>缺点</p>
+</li>
+<li><p>考虑到等待时间&amp;运行时间？</p>
+<ul>
+<li>等待时间√</li>
+<li>运行时间√</li>
+</ul>
+</li>
+<li><p>会导致饥饿？</p>
+<ul>
+<li>不会</li>
+</ul>
+</li>
+</ul>
+<h3 id="时间片轮转-RR"><a href="#时间片轮转-RR" class="headerlink" title="时间片轮转(RR)"></a>时间片轮转(RR)</h3><ul>
+<li>思想&amp;规则</li>
+<li>可抢占？<ul>
+<li>抢占式</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>公平，适用于分时系统</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>频繁切换有开销，不区分优先级</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>不会</li>
+</ul>
+</li>
+<li>补充<ul>
+<li>时间片太大或太小有何影响？</li>
+</ul>
+</li>
+</ul>
+<h3 id="优先级调度"><a href="#优先级调度" class="headerlink" title="优先级调度"></a>优先级调度</h3><ul>
+<li>思想&amp;规则</li>
+<li>可抢占？<ul>
+<li>有抢占式的，也有非抢占式的。注意做题时的区别</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>区分优先级，适用于实时系统</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>可能导致饥饿</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>会</li>
+</ul>
+</li>
+<li>补充<ul>
+<li>动态/静态优先级。</li>
+<li>各类型进程如何设置优先级？</li>
+<li>如何调整优先级？</li>
+</ul>
+</li>
+</ul>
+<h3 id="多级反馈队列"><a href="#多级反馈队列" class="headerlink" title="多级反馈队列"></a>多级反馈队列</h3><ul>
+<li>思想&amp;规则<ul>
+<li>较复杂，注意理解</li>
+</ul>
+</li>
+<li>可抢占？<ul>
+<li>抢占式</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>平衡优秀</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>一般不说它有缺点，不过可能导致饥饿</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/11/OSsecondone/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1673,7 +1997,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives/">
         
-          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
