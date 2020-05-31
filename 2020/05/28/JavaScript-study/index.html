@@ -28,8 +28,10 @@
 <meta property="og:description" content="1、什么是JavaScript1.1、概述JavaScript是一门世界上最流行的脚本语言 java、JavaScript 10天~ &#x3D;&#x3D;一个合格的后端人员，必须要精通JavaScript&#x3D;&#x3D; 1.2、历史https:&#x2F;&#x2F;blog.csdn.net&#x2F;kese7952&#x2F;article&#x2F;details&#x2F;79357868 ECMAScript它可以理解为JavaScript的一个标准 最新那本已经到es">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/blog/2020/05/28/JavaScript-study/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BC%80%E5%8F%91%E9%80%89%E9%A1%B9.png">
+<meta property="og:image" content="http://yoursite.com/blog/2020/05/28/JavaScript-study/%E8%AE%BE%E7%BD%AEES6.png">
+<meta property="og:image" content="http://yoursite.com/blog/2020/05/28/JavaScript-study/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8D%E5%8F%AF%E5%8F%98%E6%80%A7.png">
 <meta property="article:published_time" content="2020-05-27T16:53:59.000Z">
-<meta property="article:modified_time" content="2020-05-28T02:54:46.318Z">
+<meta property="article:modified_time" content="2020-05-28T13:06:39.660Z">
 <meta property="article:author" content="Carey">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/blog/2020/05/28/JavaScript-study/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BC%80%E5%8F%91%E9%80%89%E9%A1%B9.png">
@@ -176,7 +178,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-05-28 00:53:59 / 修改时间：10:54:46" itemprop="dateCreated datePublished" datetime="2020-05-28T00:53:59+08:00">2020-05-28</time>
+              <time title="创建时间：2020-05-28 00:53:59 / 修改时间：21:06:39" itemprop="dateCreated datePublished" datetime="2020-05-28T00:53:59+08:00">2020-05-28</time>
             </span>
 
           
@@ -217,18 +219,31 @@
 <p>浏览器必备调试须知：</p>
 <p><img src="/blog/2020/05/28/JavaScript-study/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BC%80%E5%8F%91%E9%80%89%E9%A1%B9.png" alt="image-20200528103753685"></p>
 <h4 id="2-3、数据类型"><a href="#2-3、数据类型" class="headerlink" title="2.3、数据类型"></a>2.3、数据类型</h4><p>数值，文本，图形，音频，视频….</p>
+<p>==变量==</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="built_in">String</span> 王者荣耀 = <span class="string">"倔强青铜"</span>;</span><br></pre></td></tr></table></figure>
+
+
+
 <p>==number==</p>
 <p>js不区分小数和整数，Number</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">123</span>			<span class="comment">//整数123</span></span><br><span class="line"><span class="number">123.1</span>		<span class="comment">//浮点数123.1</span></span><br><span class="line"><span class="number">1.123e3</span>		<span class="comment">//科学计数法</span></span><br><span class="line"><span class="number">-99</span>			<span class="comment">//负数</span></span><br><span class="line">NAN			<span class="comment">//not a number</span></span><br><span class="line"><span class="literal">Infinity</span>      <span class="comment">//表示无限大</span></span><br></pre></td></tr></table></figure>
 
+
+
 <p>==字符串==</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'abc'</span>				<span class="string">"abc"</span></span><br></pre></td></tr></table></figure>
+
+
 
 <p>==布尔值==</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">true</span>         <span class="literal">false</span></span><br></pre></td></tr></table></figure>
 
+
+
 <p>==逻辑运算==</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&amp;&amp;			<span class="comment">//两个都为真，结果为真</span></span><br><span class="line">    </span><br><span class="line">||			<span class="comment">//一个为真，结果为真</span></span><br><span class="line">    </span><br><span class="line">!    		<span class="comment">//真即假，假即真</span></span><br></pre></td></tr></table></figure>
+
+
 
 <p>==比较运算符==  ！！！重要！</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">=</span><br><span class="line">==		等于（类型不一样，值一样，也会判断为<span class="literal">true</span>）</span><br><span class="line">===    绝对等于（类型一样，值一样，结果为<span class="literal">true</span>）</span><br></pre></td></tr></table></figure>
@@ -242,7 +257,153 @@
 <p>浮点数问题：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log((<span class="number">1</span>/<span class="number">3</span>)===(<span class="number">1</span><span class="number">-2</span>/<span class="number">3</span>))     <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
 
-<p>尽量避免使用</p>
+<p>尽量避免使用浮点数进行运算，存在精度问题！</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.abs(<span class="number">1</span>/<span class="number">3</span>-(<span class="number">1</span><span class="number">-2</span>/<span class="number">3</span>))&lt;<span class="number">0.00000001</span>     <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+
+<p>==null和undefined==</p>
+<ul>
+<li>null     空</li>
+<li>undefined    未定义</li>
+</ul>
+<p>==数组==</p>
+<p>java的数值必须是相同类型的对象~，JS中不需要这样！</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//保证代码的可读性，尽量使用[]</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="string">'hello'</span>,<span class="literal">null</span>,<span class="literal">true</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="string">'hello'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>取数组下标：如果越界了就会</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">undefined</span></span><br></pre></td></tr></table></figure>
+
+<p>==对象==</p>
+<p>对象是大括号，数组是中括号</p>
+<blockquote>
+<p>每个属性之间使用逗号隔开，最后一个不需要添加</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Person person = new Person(1,2,3,4,5,);</span></span><br><span class="line">        <span class="keyword">var</span> person = &#123;</span><br><span class="line">            name: <span class="string">"carey"</span>,</span><br><span class="line">            age: <span class="number">3</span>,</span><br><span class="line">            tags: [<span class="string">'js'</span>, <span class="string">'java'</span>, <span class="string">'web'</span>, <span class="string">'...'</span>]</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<p>取对象的值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">person.name</span><br><span class="line">&gt; <span class="string">"carey"</span></span><br><span class="line">person.age</span><br><span class="line">&gt; <span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<p>2.4、严格检查格式</p>
+<p><img src="/blog/2020/05/28/JavaScript-study/%E8%AE%BE%E7%BD%AEES6.png" alt="image-20200528154016126"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">    前提：IDEA需要设置支持ES6语法</span></span><br><span class="line"><span class="comment">    'use strict';   严格检查模式，预防JavaScript的随意性导致产生的一些问题</span></span><br><span class="line"><span class="comment">    必须写在JavaScript的第一行！</span></span><br><span class="line"><span class="comment">    局部变量建议都使用let 去定义~</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript"><span class="meta">        'use strict'</span>;</span></span><br><span class="line"><span class="actionscript">        <span class="comment">//  全局变量</span></span></span><br><span class="line"><span class="javascript">         <span class="keyword">let</span> i = <span class="number">1</span>;</span></span><br><span class="line"><span class="actionscript">        <span class="comment">//ES6     let</span></span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3、数据类型"><a href="#3、数据类型" class="headerlink" title="3、数据类型"></a>3、数据类型</h3><h4 id="3-1、字符串"><a href="#3-1、字符串" class="headerlink" title="3.1、字符串"></a>3.1、字符串</h4><p>1、正常字符串我们使用 单引号，或者双引号包裹</p>
+<p>2、注意转义字符 \</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\&#39;</span><br><span class="line">\n</span><br><span class="line">\t</span><br><span class="line">\u4e2d    \u#### unicode字符</span><br><span class="line">\x41        Asc11字符</span><br></pre></td></tr></table></figure>
+
+<p>3、多行字符串编写 </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//tab 上面 esc键下面的单反引号</span></span><br><span class="line"><span class="keyword">var</span> mag = </span><br><span class="line">	<span class="string">`hello</span></span><br><span class="line"><span class="string">world</span></span><br><span class="line"><span class="string">你好ya</span></span><br><span class="line"><span class="string">你好`</span></span><br></pre></td></tr></table></figure>
+
+<p>4、模板字符串</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//tab 上面 esc键下面的单反引号</span></span><br><span class="line"><span class="keyword">let</span> name = <span class="string">"carey"</span>;</span><br><span class="line"><span class="keyword">let</span> age = <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> msg = <span class="string">`你好呀，<span class="subst">$&#123;name&#125;</span>`</span></span><br></pre></td></tr></table></figure>
+
+<p>5、字符串长度</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str.length</span><br></pre></td></tr></table></figure>
+
+<p>6、字符串的可变性，不可变</p>
+<p><img src="/blog/2020/05/28/JavaScript-study/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8D%E5%8F%AF%E5%8F%98%E6%80%A7.png" alt="image-20200528160012011"></p>
+<p>7、大小写转换</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//注意，这里是方法，不是属性了</span></span><br><span class="line">student.toUpperCase()</span><br><span class="line">student.toLowerCase()</span><br></pre></td></tr></table></figure>
+
+<p>8、student.indexOf(‘t’)</p>
+<p>9、substring</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[)</span><br><span class="line"> student.substring(<span class="number">1</span>)  <span class="comment">// 从第一个字符串截取到最后一个字符串</span></span><br><span class="line"> student.substring(<span class="number">1</span>,<span class="number">3</span>) <span class="comment">//[1,3)</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-2、数组"><a href="#3-2、数组" class="headerlink" title="3.2、数组"></a>3.2、数组</h4><p>Array可以包含任意的数据类型</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>];  <span class="comment">//通过下标取值和赋值</span></span><br><span class="line">arr[<span class="number">0</span>]</span><br><span class="line">arr[<span class="number">0</span>] = <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<p>1、长度</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.length</span><br></pre></td></tr></table></figure>
+
+<p>注意：假如给arr.length赋值，数组大小就会发生变化~，如果赋值过小，元素就会丢失</p>
+<p>2、indexOf，通过元素获得下标索引</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.indexof(<span class="number">2</span>)</span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<p>字符串的”1”和数字1是不同的</p>
+<p><strong>3、slice()</strong> 截取Array的一部分，返回一个新数组，类似于String中的substring</p>
+<p>4、push(),pop()       尾部</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">push：压入到尾部</span><br><span class="line">pop：弹出尾部的一个元素</span><br></pre></td></tr></table></figure>
+
+<p>5、unshift(), shift()  头部</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">unshift：压入到头部</span><br><span class="line">shift：弹出头部的一个元素</span><br></pre></td></tr></table></figure>
+
+<p>6、排序sort()</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.sort()</span><br></pre></td></tr></table></figure>
+
+<p>7、元素反转reverse()</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.reverse()</span><br></pre></td></tr></table></figure>
+
+<p>8、concat()</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">arr</span><br><span class="line">(<span class="number">3</span>) [<span class="string">"A"</span>, <span class="string">"B"</span>, <span class="string">"C"</span>]</span><br><span class="line">arr.concat(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line">(<span class="number">6</span>) [<span class="string">"A"</span>, <span class="string">"B"</span>, <span class="string">"C"</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">arr</span><br><span class="line">(<span class="number">3</span>) [<span class="string">"A"</span>, <span class="string">"B"</span>, <span class="string">"C"</span>]</span><br></pre></td></tr></table></figure>
+
+<p>注意：concat()并没有修改数组，只是会返回一个新的数组</p>
+<p>9、连接符join</p>
+<p>打印拼接数组，使用特定的字符串连接</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="number">3</span>) [<span class="string">"A"</span>, <span class="string">"B"</span>, <span class="string">"C"</span>]</span><br><span class="line">arr.join(<span class="string">'-'</span>)</span><br><span class="line"><span class="string">"A-B-C"</span></span><br></pre></td></tr></table></figure>
+
+<p>10、多维数组</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">arr=[[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">3</span>,<span class="number">4</span>],[<span class="string">"5"</span>,<span class="string">"6"</span>]]</span><br><span class="line">arr[<span class="number">1</span>][<span class="number">1</span>]</span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+<p>数组：存储数据(如何存，如何取，方法都可以自己实现)</p>
+<h4 id="3-3、对象"><a href="#3-3、对象" class="headerlink" title="3.3、对象"></a>3.3、对象</h4><p>若干个键值对</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> 对象名 = &#123;</span><br><span class="line">    属性名：属性值.</span><br><span class="line">    属性名：属性值.</span><br><span class="line">    属性名：属性值</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义了一个person对象，它有四个属性！</span></span><br><span class="line"><span class="keyword">var</span> people = &#123;</span><br><span class="line">    name:<span class="string">"carey"</span>,</span><br><span class="line">    age:<span class="number">3</span>,</span><br><span class="line">    email:<span class="string">"24734453@qq.com"</span>,</span><br><span class="line">    score:<span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>js中对象，{……}表示一个对象，键值对描述属性 xxxx:xxxx,多个属性之间使用逗号隔开，最后一个属性不加逗号！</p>
+<p>JavaScript中的所有的键都是字符串，值是任意对象！</p>
+<p>1、对象赋值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">people.name = <span class="string">"cxxqing"</span></span><br><span class="line"><span class="string">"cxxqing"</span></span><br><span class="line">people.name</span><br><span class="line"><span class="string">"cxxqing"</span></span><br></pre></td></tr></table></figure>
+
+<p>2、使用一个不存在的对象属性，不会报错！undefined</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">people.haha</span><br><span class="line"><span class="literal">undefined</span></span><br></pre></td></tr></table></figure>
+
+<p>3、动态的删减属性.通过delete删除对象的属性</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span> people.name</span><br><span class="line"><span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>4、动态的增加，直接给新的属性增加值即可</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">people.haha = <span class="string">"haha"</span></span><br><span class="line"><span class="string">"haha"</span></span><br></pre></td></tr></table></figure>
+
+<p>5、判断属性值是否在这个对象中！  xxx in xxx!</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'age'</span> <span class="keyword">in</span> people</span><br><span class="line"><span class="literal">true</span></span><br><span class="line"><span class="comment">//继承</span></span><br><span class="line"><span class="string">'toString'</span> <span class="keyword">in</span> people</span><br><span class="line"><span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>6、判断一个属性是否是这个对象自身拥有的hasOwnProperty()</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">people.hasOwnProperty(<span class="string">'toString'</span>)</span><br><span class="line"><span class="literal">false</span></span><br><span class="line">people.hasOwnProperty(<span class="string">'age'</span>)</span><br><span class="line"><span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-4、流程控制"><a href="#3-4、流程控制" class="headerlink" title="3.4、流程控制"></a>3.4、流程控制</h4><p>if判断</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">if</span>(age&gt;<span class="number">3</span>)&#123;	<span class="comment">//第一个判断</span></span><br><span class="line">    alert(<span class="string">"haha"</span>);</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(age &lt;<span class="number">5</span>)&#123;	<span class="comment">//第二个判断</span></span><br><span class="line">    alert(<span class="string">"kuwa"</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;	<span class="comment">//否则</span></span><br><span class="line">    alert(<span class="string">"kkkxa"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>while循环，避免程序死循环</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">while</span>(age&lt;<span class="number">100</span>)&#123;</span><br><span class="line">    age = age + <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(age);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">    age = age + <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(age);</span><br><span class="line">&#125;<span class="keyword">while</span>(age&lt;<span class="number">100</span>)</span><br></pre></td></tr></table></figure>
+
+<p>for循环</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>;i++) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>forEach循环</strong></p>
+<blockquote>
+<p>5.1引入的</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age = [<span class="number">12</span>,<span class="number">3</span>,<span class="number">12</span>,<span class="number">3</span>,<span class="number">12</span>,<span class="number">3</span>,<span class="number">12</span>,<span class="number">31</span>,<span class="number">23</span>,<span class="number">123</span>];</span><br><span class="line"><span class="comment">//函数</span></span><br><span class="line">age.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(value);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>for…in</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//for(var index in object)&#123;&#125;</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> num <span class="keyword">in</span> age)&#123;</span><br><span class="line">    <span class="keyword">if</span>(age.hasOwnProperty(num))&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"存在"</span>);</span><br><span class="line">        <span class="built_in">console</span>.log(age[num])</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-5、Map和Set"><a href="#3-5、Map和Set" class="headerlink" title="3.5、Map和Set"></a>3.5、Map和Set</h4><blockquote>
+<p> ES6的新特性~</p>
+</blockquote>
+<p>Map：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ES6     Map</span></span><br><span class="line"><span class="comment">// 学生的成绩，学生的名字</span></span><br><span class="line"><span class="comment">// var names = ["tom","jack","haha"];</span></span><br><span class="line"><span class="comment">// var scores = [100,90,80]</span></span><br><span class="line"><span class="keyword">var</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>([[<span class="string">'tom'</span>,<span class="number">100</span>],[<span class="string">'jack'</span>,<span class="number">90</span>],[<span class="string">'haha'</span>,<span class="number">80</span>]]);</span><br><span class="line"><span class="keyword">var</span> score = map.get(<span class="string">'tom'</span>); <span class="comment">//通过key获得value</span></span><br><span class="line">map.set(<span class="string">'admin'</span>,<span class="number">123456</span>);	<span class="comment">//新增或修改</span></span><br><span class="line">map.delete(<span class="string">'tom'</span>);		<span class="comment">//删除</span></span><br></pre></td></tr></table></figure>
+
+<p>Set：无序不重复的集合</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span>.add(2);    //添加@</span><br><span class="line"><span class="keyword">set</span>.delete(1);			//删除@</span><br><span class="line">console.log(<span class="keyword">set</span>.has(3));		//是否包含某个元素！</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-6、iterator"><a href="#3-6、iterator" class="headerlink" title="3.6、iterator"></a>3.6、iterator</h4><p>遍历数组</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//通过for of输出arr的内容               for in  输出是下标</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> x <span class="keyword">of</span> arr)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>遍历map</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>([[<span class="string">"tom"</span>,<span class="number">100</span>],[<span class="string">"jack"</span>,<span class="number">90</span>],[<span class="string">"haha"</span>,<span class="number">80</span>]]);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> x <span class="keyword">of</span> map)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>遍历set</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="keyword">set</span> = new Set([5,6,7]);</span><br><span class="line">for (let x of <span class="keyword">set</span>)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、函数及面向对象"><a href="#4、函数及面向对象" class="headerlink" title="4、函数及面向对象"></a>4、函数及面向对象</h3><h4 id="4-1、函数定义及变量作用域"><a href="#4-1、函数定义及变量作用域" class="headerlink" title="4.1、函数定义及变量作用域"></a>4.1、函数定义及变量作用域</h4><h4 id="4-2、方法"><a href="#4-2、方法" class="headerlink" title="4.2、方法"></a>4.2、方法</h4><h4 id="4-3、闭包（难点）"><a href="#4-3、闭包（难点）" class="headerlink" title="4.3、闭包（难点）"></a>4.3、闭包（难点）</h4><h4 id="4-4、箭头函数（新特性）"><a href="#4-4、箭头函数（新特性）" class="headerlink" title="4.4、箭头函数（新特性）"></a>4.4、箭头函数（新特性）</h4><h4 id="4-5、创建对象"><a href="#4-5、创建对象" class="headerlink" title="4.5、创建对象"></a>4.5、创建对象</h4><h4 id="4-6、class继承（新特性）"><a href="#4-6、class继承（新特性）" class="headerlink" title="4.6、class继承（新特性）"></a>4.6、class继承（新特性）</h4><h4 id="4-7、原型链继承（难）"><a href="#4-7、原型链继承（难）" class="headerlink" title="4.7、原型链继承（难）"></a>4.7、原型链继承（难）</h4><h3 id="5、常用对象"><a href="#5、常用对象" class="headerlink" title="5、常用对象"></a>5、常用对象</h3><h4 id="5-1、Date"><a href="#5-1、Date" class="headerlink" title="5.1、Date"></a>5.1、Date</h4><h4 id="5-2、JSON"><a href="#5-2、JSON" class="headerlink" title="5.2、JSON"></a>5.2、JSON</h4><h3 id="6、操作Dom元素"><a href="#6、操作Dom元素" class="headerlink" title="6、操作Dom元素"></a>6、操作Dom元素</h3><h4 id="6-1、插入Dom"><a href="#6-1、插入Dom" class="headerlink" title="6.1、插入Dom"></a>6.1、插入Dom</h4><h4 id="6-2、更新Dom"><a href="#6-2、更新Dom" class="headerlink" title="6.2、更新Dom"></a>6.2、更新Dom</h4><h4 id="6-3、删除Dom"><a href="#6-3、删除Dom" class="headerlink" title="6.3、删除Dom"></a>6.3、删除Dom</h4><h3 id="7、操作Bom元素"><a href="#7、操作Bom元素" class="headerlink" title="7、操作Bom元素"></a>7、操作Bom元素</h3><h4 id="7-1、window"><a href="#7-1、window" class="headerlink" title="7.1、window"></a>7.1、window</h4><h4 id="7-2、navigator"><a href="#7-2、navigator" class="headerlink" title="7.2、navigator"></a>7.2、navigator</h4><h4 id="7-3、screen"><a href="#7-3、screen" class="headerlink" title="7.3、screen"></a>7.3、screen</h4><h4 id="7-4、location"><a href="#7-4、location" class="headerlink" title="7.4、location"></a>7.4、location</h4><h4 id="7-5、Document"><a href="#7-5、Document" class="headerlink" title="7.5、Document"></a>7.5、Document</h4><p>7.</p>
 
     </div>
 
@@ -261,7 +422,10 @@
     <a href="/blog/2020/05/28/solve-the-mess/" rel="prev" title="解决乱码">
       <i class="fa fa-chevron-left"></i> 解决乱码
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/blog/2020/05/30/Annotation/" rel="next" title="注解">
+      注解 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -320,7 +484,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、什么是JavaScript"><span class="nav-number">1.</span> <span class="nav-text">1、什么是JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1、概述"><span class="nav-number">1.1.</span> <span class="nav-text">1.1、概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2、历史"><span class="nav-number">1.2.</span> <span class="nav-text">1.2、历史</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、快速入门"><span class="nav-number">2.</span> <span class="nav-text">2、快速入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1、引入JavaScript"><span class="nav-number">2.1.</span> <span class="nav-text">2.1、引入JavaScript</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2、基本语法入门"><span class="nav-number">2.2.</span> <span class="nav-text">2.2、基本语法入门</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3、数据类型"><span class="nav-number">2.3.</span> <span class="nav-text">2.3、数据类型</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、什么是JavaScript"><span class="nav-number">1.</span> <span class="nav-text">1、什么是JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1、概述"><span class="nav-number">1.1.</span> <span class="nav-text">1.1、概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2、历史"><span class="nav-number">1.2.</span> <span class="nav-text">1.2、历史</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、快速入门"><span class="nav-number">2.</span> <span class="nav-text">2、快速入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1、引入JavaScript"><span class="nav-number">2.1.</span> <span class="nav-text">2.1、引入JavaScript</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2、基本语法入门"><span class="nav-number">2.2.</span> <span class="nav-text">2.2、基本语法入门</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3、数据类型"><span class="nav-number">2.3.</span> <span class="nav-text">2.3、数据类型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、数据类型"><span class="nav-number">3.</span> <span class="nav-text">3、数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1、字符串"><span class="nav-number">3.1.</span> <span class="nav-text">3.1、字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2、数组"><span class="nav-number">3.2.</span> <span class="nav-text">3.2、数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3、对象"><span class="nav-number">3.3.</span> <span class="nav-text">3.3、对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4、流程控制"><span class="nav-number">3.4.</span> <span class="nav-text">3.4、流程控制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5、Map和Set"><span class="nav-number">3.5.</span> <span class="nav-text">3.5、Map和Set</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-6、iterator"><span class="nav-number">3.6.</span> <span class="nav-text">3.6、iterator</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、函数及面向对象"><span class="nav-number">4.</span> <span class="nav-text">4、函数及面向对象</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1、函数定义及变量作用域"><span class="nav-number">4.1.</span> <span class="nav-text">4.1、函数定义及变量作用域</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2、方法"><span class="nav-number">4.2.</span> <span class="nav-text">4.2、方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3、闭包（难点）"><span class="nav-number">4.3.</span> <span class="nav-text">4.3、闭包（难点）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-4、箭头函数（新特性）"><span class="nav-number">4.4.</span> <span class="nav-text">4.4、箭头函数（新特性）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5、创建对象"><span class="nav-number">4.5.</span> <span class="nav-text">4.5、创建对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-6、class继承（新特性）"><span class="nav-number">4.6.</span> <span class="nav-text">4.6、class继承（新特性）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-7、原型链继承（难）"><span class="nav-number">4.7.</span> <span class="nav-text">4.7、原型链继承（难）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、常用对象"><span class="nav-number">5.</span> <span class="nav-text">5、常用对象</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1、Date"><span class="nav-number">5.1.</span> <span class="nav-text">5.1、Date</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-2、JSON"><span class="nav-number">5.2.</span> <span class="nav-text">5.2、JSON</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6、操作Dom元素"><span class="nav-number">6.</span> <span class="nav-text">6、操作Dom元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6-1、插入Dom"><span class="nav-number">6.1.</span> <span class="nav-text">6.1、插入Dom</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-2、更新Dom"><span class="nav-number">6.2.</span> <span class="nav-text">6.2、更新Dom</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-3、删除Dom"><span class="nav-number">6.3.</span> <span class="nav-text">6.3、删除Dom</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7、操作Bom元素"><span class="nav-number">7.</span> <span class="nav-text">7、操作Bom元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#7-1、window"><span class="nav-number">7.1.</span> <span class="nav-text">7.1、window</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-2、navigator"><span class="nav-number">7.2.</span> <span class="nav-text">7.2、navigator</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-3、screen"><span class="nav-number">7.3.</span> <span class="nav-text">7.3、screen</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-4、location"><span class="nav-number">7.4.</span> <span class="nav-text">7.4、location</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-5、Document"><span class="nav-number">7.5.</span> <span class="nav-text">7.5、Document</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -334,7 +498,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives/">
         
-          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-count">25</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

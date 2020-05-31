@@ -20,21 +20,17 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/blog/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="1、解决Tomcat乱码1.在32位的idea.exe.vmoptions和64位的idea64.exe.vmoptions启动项配置文件下添加了下面 1-Dfile.encoding&#x3D;UTF-8&#96; &#96;-Dconsole.encoding&#x3D;UTF-8  2.tomcat目录下conf目录下的自己的server.xml文件中添加了一个配置 3.修改 tomcat">
-<meta property="og:type" content="article">
-<meta property="og:title" content="解决乱码">
-<meta property="og:url" content="http://yoursite.com/2020/05/28/solve-the-mess/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="smbms-web-servlet">
+<meta property="og:url" content="http://yoursite.com/2020/05/31/smbms-web-servlet/index.html">
 <meta property="og:site_name" content="Carey&#39;s Blog">
-<meta property="og:description" content="1、解决Tomcat乱码1.在32位的idea.exe.vmoptions和64位的idea64.exe.vmoptions启动项配置文件下添加了下面 1-Dfile.encoding&#x3D;UTF-8&#96; &#96;-Dconsole.encoding&#x3D;UTF-8  2.tomcat目录下conf目录下的自己的server.xml文件中添加了一个配置 3.修改 tomcat">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/blog/2020/05/28/solve-the-mess/%E4%BF%AE%E6%94%B9server.xml.png">
-<meta property="article:published_time" content="2020-05-27T16:39:43.000Z">
-<meta property="article:modified_time" content="2020-05-27T16:45:21.516Z">
+<meta property="article:published_time" content="2020-05-31T07:30:01.000Z">
+<meta property="article:modified_time" content="2020-05-31T07:30:01.956Z">
 <meta property="article:author" content="Carey">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/blog/2020/05/28/solve-the-mess/%E4%BF%AE%E6%94%B9server.xml.png">
 
-<link rel="canonical" href="http://yoursite.com/2020/05/28/solve-the-mess/">
+<link rel="canonical" href="http://yoursite.com/2020/05/31/smbms-web-servlet/">
 
 
 <script id="page-configurations">
@@ -47,7 +43,7 @@
   };
 </script>
 
-  <title>解决乱码 | Carey's Blog</title>
+  <title>smbms-web-servlet | Carey's Blog</title>
   
 
 
@@ -152,7 +148,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/28/solve-the-mess/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/31/smbms-web-servlet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/blog/images/avatar.gif">
@@ -165,7 +161,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          解决乱码
+          smbms-web-servlet
         </h1>
 
         <div class="post-meta">
@@ -174,9 +170,8 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-28 00:39:43 / 修改时间：00:45:21" itemprop="dateCreated datePublished" datetime="2020-05-28T00:39:43+08:00">2020-05-28</time>
+              <time title="创建时间：2020-05-31 15:30:01" itemprop="dateCreated datePublished" datetime="2020-05-31T15:30:01+08:00">2020-05-31</time>
             </span>
 
           
@@ -190,12 +185,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="1、解决Tomcat乱码"><a href="#1、解决Tomcat乱码" class="headerlink" title="1、解决Tomcat乱码"></a>1、解决Tomcat乱码</h3><p>1.在32位的idea.exe.vmoptions和64位的idea64.exe.vmoptions启动项配置文件下添加了下面</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Dfile.encoding&#x3D;UTF-8&#96; &#96;-Dconsole.encoding&#x3D;UTF-8</span><br></pre></td></tr></table></figure>
-
-<p>2.tomcat目录下conf目录下的自己的server.xml文件中添加了一个配置<img src="/blog/2020/05/28/solve-the-mess/%E4%BF%AE%E6%94%B9server.xml.png" alt="img"></p>
-<p>3.修改 tomcat 下的 logging.properties这个文件 为 GBK 就好了。<br>#java.util.logging.ConsoleHandler.encoding = UTF-8<br>java.util.logging.ConsoleHandler.encoding = GBK</p>
-
+        
     </div>
 
     
@@ -210,13 +200,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/blog/2020/05/26/HTML5-study/" rel="prev" title="HTML5学习">
-      <i class="fa fa-chevron-left"></i> HTML5学习
+    <a href="/blog/2020/05/30/Annotation/" rel="prev" title="注解">
+      <i class="fa fa-chevron-left"></i> 注解
     </a></div>
-      <div class="post-nav-item">
-    <a href="/blog/2020/05/28/JavaScript-study/" rel="next" title="JavaScript">
-      JavaScript <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -275,7 +262,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、解决Tomcat乱码"><span class="nav-number">1.</span> <span class="nav-text">1、解决Tomcat乱码</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
