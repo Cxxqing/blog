@@ -81,17 +81,19 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/06/06/css3/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/06/css3/</id>
     <published>2020-06-06T14:01:20.000Z</published>
-    <updated>2020-06-06T14:41:38.900Z</updated>
+    <updated>2020-06-15T14:54:26.382Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;什么是CSS&quot;&gt;&lt;a href=&quot;#什么是CSS&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;什么是CSS&quot;&gt;&lt;a href=&quot;#什么是CSS&quot; class=&quot;headerlink&quot; title=&quot;什么是CSS&quot;&gt;&lt;/a&gt;什么是CSS&lt;/h2&gt;&lt;p&gt;学习内容&lt;/p&gt;
+&lt;p&gt;1.CSS是什么&lt;/p&gt;
+&lt;p&gt;2.CSS怎么用（快速入门）&lt;/p&gt;
+&lt;p&gt;3.&lt;strong&gt;CSS选择器（重点+难点）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;4.美化网页（文字，阴影，超链接，列表，渐变…）&lt;/p&gt;
+&lt;p&gt;5.盒子模型&lt;/p&gt;
+&lt;p&gt;6.浮动&lt;/p&gt;
+&lt;p&gt;7.定位&lt;/p&gt;
+&lt;p&gt;8.网页动画（特效效果）&lt;/p&gt;
     
     </summary>
     
@@ -104,20 +106,26 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/06/05/MyBatis/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/05/MyBatis/</id>
     <published>2020-06-04T16:37:42.000Z</published>
-    <updated>2020-06-15T06:32:43.702Z</updated>
+    <updated>2020-06-15T14:52:16.182Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;MyBatis&quot;&gt;&lt;a href=&quot;#MyBatis&quot; class=&quot;headerlink&quot; title=&quot;MyBatis&quot;&gt;&lt;/a&gt;MyBatis&lt;/h2&gt;&lt;p&gt;环境：&lt;/p&gt;
+      &lt;h2 id=&quot;MyBatis&quot;&gt;&lt;a href=&quot;#MyBatis&quot; class=&quot;headerlink&quot; title=&quot;MyBatis&quot;&gt;&lt;/a&gt;MyBatis&lt;/h2&gt;&lt;p&gt;环境：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;JDK1.8&lt;/li&gt;
-&lt;li&gt;MySQL
-        
-      
+&lt;li&gt;MySQL 5.7&lt;/li&gt;
+&lt;li&gt;Maven 3.6.3&lt;/li&gt;
+&lt;li&gt;IDEA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;回顾：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JDBC&lt;/li&gt;
+&lt;li&gt;MySQL&lt;/li&gt;
+&lt;li&gt;Java基础&lt;/li&gt;
+&lt;li&gt;Maven&lt;/li&gt;
+&lt;li&gt;Junit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SSM框架：配置文件。最好的方式：看官网文档&lt;/p&gt;
     
     </summary>
     
@@ -132,17 +140,15 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/31/smbms-web-servlet/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/31/smbms-web-servlet/</id>
     <published>2020-05-31T07:30:01.000Z</published>
-    <updated>2020-06-03T03:38:39.247Z</updated>
+    <updated>2020-06-15T14:49:00.948Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;SMBMS&quot;&gt;&lt;a href=&quot;#SMBMS&quot; class=&quot;headerlink&quot; title=&quot;SMBMS&quot;&gt;&lt;/a&gt;SMBMS&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/blog/2020/05/31/smbms-web-servlet/SMBMS.png&quot;
-        
-      
+      &lt;h2 id=&quot;SMBMS&quot;&gt;&lt;a href=&quot;#SMBMS&quot; class=&quot;headerlink&quot; title=&quot;SMBMS&quot;&gt;&lt;/a&gt;SMBMS&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/blog/blog/.com/2020/05/31/smbms-web-servlet/SMBMS.png&quot; alt=&quot;image-20200531154107414&quot;&gt;&lt;/p&gt;
+&lt;p&gt;数据库：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/blog/.com/2020/05/31/smbms-web-servlet/%E6%95%B0%E6%8D%AE%E5%BA%93.png&quot; alt=&quot;image-20200531154623620&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;项目如何搭建？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;考虑使用不使用Maven？ 依赖，jar&lt;/p&gt;
     
     </summary>
     
@@ -155,17 +161,25 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/30/Annotation/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/30/Annotation/</id>
     <published>2020-05-29T16:21:49.000Z</published>
-    <updated>2020-05-29T16:29:19.170Z</updated>
+    <updated>2020-06-15T14:54:49.772Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;注解&quot;&gt;&lt;a href=&quot;#注解&quot; class=&quot;headerlink&quot; title=&quot;注解&quot;&gt;&lt;/a&gt;注解&lt;/h2&gt;&lt;h3 id=&quot;1、注解&quot;&gt;&lt;a href=&quot;#1、注解&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;注解&quot;&gt;&lt;a href=&quot;#注解&quot; class=&quot;headerlink&quot; title=&quot;注解&quot;&gt;&lt;/a&gt;注解&lt;/h2&gt;&lt;h3 id=&quot;1、注解&quot;&gt;&lt;a href=&quot;#1、注解&quot; class=&quot;headerlink&quot; title=&quot;1、注解&quot;&gt;&lt;/a&gt;1、注解&lt;/h3&gt;&lt;h4 id=&quot;什么是注解&quot;&gt;&lt;a href=&quot;#什么是注解&quot; class=&quot;headerlink&quot; title=&quot;什么是注解&quot;&gt;&lt;/a&gt;什么是注解&lt;/h4&gt;&lt;p&gt;Annotation是从JDK5.0开始引入的新技术.&lt;/p&gt;
+&lt;p&gt;Annotation的作用：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不是程序本身，可以对程序作出解释.（这一点和注释（comment）没什么区别）&lt;/li&gt;
+&lt;li&gt;==可以被其他程序（比如：编译器等）读取==&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Annotation的格式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注解是以“@注释名”在代码中存在的，还可以增加一些参数值，例如：@SuppressWarnings（value=”unchecked”）.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Annotation在哪里使用？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可以附加在package，class，method，field等上面，相当于给他们增加了额外的辅助信息，我们可以通过反射机制编程实现对这些元数据的访问&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2、&lt;/p&gt;
     
     </summary>
     
@@ -178,17 +192,19 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/28/JavaScript-study/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/28/JavaScript-study/</id>
     <published>2020-05-27T16:53:59.000Z</published>
-    <updated>2020-06-04T10:46:47.284Z</updated>
+    <updated>2020-06-15T14:53:27.592Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;1、什么是JavaScript&quot;&gt;&lt;a href=&quot;#1、什么是JavaScript&quot; class=&quot;headerlink&quot; title=&quot;1、什么是JavaScript&quot;&gt;&lt;/a&gt;1、什么是JavaScript&lt;/h3&gt;&lt;h4 id=&quot;1-1、概述&quot;&gt;&lt;a
-        
-      
+      &lt;h3 id=&quot;1、什么是JavaScript&quot;&gt;&lt;a href=&quot;#1、什么是JavaScript&quot; class=&quot;headerlink&quot; title=&quot;1、什么是JavaScript&quot;&gt;&lt;/a&gt;1、什么是JavaScript&lt;/h3&gt;&lt;h4 id=&quot;1-1、概述&quot;&gt;&lt;a href=&quot;#1-1、概述&quot; class=&quot;headerlink&quot; title=&quot;1.1、概述&quot;&gt;&lt;/a&gt;1.1、概述&lt;/h4&gt;&lt;p&gt;JavaScript是一门世界上最流行的脚本语言&lt;/p&gt;
+&lt;p&gt;java、JavaScript&lt;/p&gt;
+&lt;p&gt;10天~&lt;/p&gt;
+&lt;p&gt;==一个合格的后端人员，必须要精通JavaScript==&lt;/p&gt;
+&lt;h4 id=&quot;1-2、历史&quot;&gt;&lt;a href=&quot;#1-2、历史&quot; class=&quot;headerlink&quot; title=&quot;1.2、历史&quot;&gt;&lt;/a&gt;1.2、历史&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/kese7952/article/details/79357868&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/kese7952/article/details/79357868&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ECMAScript&lt;/strong&gt;它可以理解为JavaScript的一个标准&lt;/p&gt;
+&lt;p&gt;最新那本已经到es6版本~&lt;/p&gt;
+&lt;p&gt;但是大部分浏览器还只停留在支持es5代码上！&lt;/p&gt;
+&lt;p&gt;开发环境—线上环境，版本不一致&lt;/p&gt;
     
     </summary>
     
@@ -201,17 +217,15 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/28/solve-the-mess/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/28/solve-the-mess/</id>
     <published>2020-05-27T16:39:43.000Z</published>
-    <updated>2020-05-27T16:45:21.516Z</updated>
+    <updated>2020-06-15T14:48:46.812Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;1、解决Tomcat乱码&quot;&gt;&lt;a href=&quot;#1、解决Tomcat乱码&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h3 id=&quot;1、解决Tomcat乱码&quot;&gt;&lt;a href=&quot;#1、解决Tomcat乱码&quot; class=&quot;headerlink&quot; title=&quot;1、解决Tomcat乱码&quot;&gt;&lt;/a&gt;1、解决Tomcat乱码&lt;/h3&gt;&lt;p&gt;1.在32位的idea.exe.vmoptions和64位的idea64.exe.vmoptions启动项配置文件下添加了下面&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;-Dfile.encoding&amp;#x3D;UTF-8&amp;#96; &amp;#96;-Dconsole.encoding&amp;#x3D;UTF-8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;2.tomcat目录下conf目录下的自己的server.xml文件中添加了一个配置&lt;img src=&quot;/blog/blog/.com/2020/05/28/solve-the-mess/%E4%BF%AE%E6%94%B9server.xml.png&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;3.修改 tomcat 下的 logging.properties这个文件 为 GBK 就好了。&lt;br&gt;#java.util.logging.ConsoleHandler.encoding = UTF-8&lt;br&gt;java.util.logging.ConsoleHandler.encoding = GBK&lt;/p&gt;
     
     </summary>
     
@@ -224,19 +238,33 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/26/HTML5-study/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/26/HTML5-study/</id>
     <published>2020-05-26T08:46:49.000Z</published>
-    <updated>2020-06-14T11:35:12.772Z</updated>
+    <updated>2020-06-15T14:54:08.406Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;1、初识HTML&quot;&gt;&lt;a href=&quot;#1、初识HTML&quot; class=&quot;headerlink&quot; title=&quot;1、初识HTML&quot;&gt;&lt;/a&gt;1、初识HTML&lt;/h3&gt;&lt;p&gt;HTML&lt;/p&gt;
+      &lt;h3 id=&quot;1、初识HTML&quot;&gt;&lt;a href=&quot;#1、初识HTML&quot; class=&quot;headerlink&quot; title=&quot;1、初识HTML&quot;&gt;&lt;/a&gt;1、初识HTML&lt;/h3&gt;&lt;p&gt;HTML&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;==H==yper ==T==ext
-        
-      
+&lt;li&gt;==H==yper ==T==ext ==M==arkup ==L==anguage(超文本==标记语言==)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;W3C&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;==W==orld ==W==ide ==W==eb ==C==onsortium(万维网联盟)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;成立于1994年，Web技术领域最权威和具影响力的国际==中立性技术标准机构==&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.w3.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.w3.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.chinaw3c.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.chinaw3c.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;W3C标准包括&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;==结构==化标准语言(HTML、XML)&lt;/li&gt;
+&lt;li&gt;==表现==标准语言(CSS)&lt;/li&gt;
+&lt;li&gt;==行为==标准(DOM、ECMAScript)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;基本信息：&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- DOCTYPE：告诉浏览器，我们要使用什么规范 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;!DOCTYPE &lt;span class=&quot;meta-keyword&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;lang&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;en&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- head标签代表网页头部 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- meta描述性标签，它用来描述我们网站的一些信息--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- meta一般用来做SEO--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;charset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;keywords&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;carey的html笔记&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;description&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;来这个地方可以查看自己的html笔记&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- title网页标题 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;我的第一个网页&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- body标签代表网页主体 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Hello，World！&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -249,17 +277,38 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/24/thread-study/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/24/thread-study/</id>
     <published>2020-05-23T16:08:58.000Z</published>
-    <updated>2020-05-26T08:03:58.957Z</updated>
+    <updated>2020-06-15T14:48:33.448Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h4 id=&quot;1、线程实现&quot;&gt;&lt;a href=&quot;#1、线程实现&quot; class=&quot;headerlink&quot; title=&quot;1、线程实现&quot;&gt;&lt;/a&gt;1、线程实现&lt;/h4&gt;&lt;h5 id=&quot;1-1、继承Thread类&quot;&gt;&lt;a href=&quot;#1-1、继承Thread类&quot;
-        
-      
+      &lt;h4 id=&quot;1、线程实现&quot;&gt;&lt;a href=&quot;#1、线程实现&quot; class=&quot;headerlink&quot; title=&quot;1、线程实现&quot;&gt;&lt;/a&gt;1、线程实现&lt;/h4&gt;&lt;h5 id=&quot;1-1、继承Thread类&quot;&gt;&lt;a href=&quot;#1-1、继承Thread类&quot; class=&quot;headerlink&quot; title=&quot;1.1、继承Thread类&quot;&gt;&lt;/a&gt;1.1、继承Thread类&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;子类继承Thread类具备多线程能力&lt;/li&gt;
+&lt;li&gt;启动线程：子类对象.start()&lt;/li&gt;
+&lt;li&gt;==不建议使用：避免OOP单继承局限性==&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//创建线程方式一:继承Thread类，重写run()方法，调用start开启线程&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//总结：注意，线程开启不一定立即执行，由CPU调度执行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TestThread1&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Thread&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//run方法线程体&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; &lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;我在看代码---&quot;&lt;/span&gt;+i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//main线程，主线程&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//创建一个线程对象&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        TestThread1 testThread1 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; TestThread1();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//调用start()方法开启线程&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        testThread1.start();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; &lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;我在学习多线程---&quot;&lt;/span&gt;+i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;1-2、实现Runnable接口&quot;&gt;&lt;a href=&quot;#1-2、实现Runnable接口&quot; class=&quot;headerlink&quot; title=&quot;1.2、实现Runnable接口&quot;&gt;&lt;/a&gt;1.2、实现Runnable接口&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;实现接口Runnable具有多线程能力&lt;/li&gt;
+&lt;li&gt;启动线程：传入目标对象+Thread对象.start()&lt;/li&gt;
+&lt;li&gt;==推荐使用：避免单继承局限性，灵活方便，方便同一个对象被多个线程使用==&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//创建线程方式2：实现runnable接口，重写run方法，执行线程需要丢入runnable接口的实现类，调用start方法。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TestThread3&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Runnable&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//run方法线程体&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; &lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;我在看代码---&quot;&lt;/span&gt;+i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//创建runnable接口的实现类对象&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        TestThread3 testThread3 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; TestThread3();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//创建线程对象，通过线程对象来开启我们的线程&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//        Thread thread = new Thread(testThread3);&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//        thread.start();&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Thread(testThread3).start();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; &lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;我在学习多线程---&quot;&lt;/span&gt;+i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h6 id=&quot;案例：龟兔赛跑-Race&quot;&gt;&lt;a href=&quot;#案例：龟兔赛跑-Race&quot; class=&quot;headerlink&quot; title=&quot;案例：龟兔赛跑-Race&quot;&gt;&lt;/a&gt;案例：龟兔赛跑-Race&lt;/h6&gt;&lt;p&gt;1.首先来个赛道距离，然后要离终点越来越近&lt;/p&gt;
+&lt;p&gt;2.判断比赛是否结束&lt;/p&gt;
+&lt;p&gt;3.打印出胜利者&lt;/p&gt;
+&lt;p&gt;4.龟兔赛跑开始&lt;/p&gt;
+&lt;p&gt;5.故事中是乌龟赢的，兔子需要睡觉，所以我们来模拟兔子睡觉&lt;/p&gt;
+&lt;p&gt;6.终于，乌龟赢得比赛&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//模拟龟兔赛跑&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Race&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Runnable&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//胜利者&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; String winner;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt;= &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//模拟兔子休息&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(Thread.currentThread().getName().equals(&lt;span class=&quot;string&quot;&gt;&quot;兔子&quot;&lt;/span&gt;) &amp;amp;&amp;amp; i%&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;keyword&quot;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    Thread.sleep(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#125; &lt;span class=&quot;keyword&quot;&gt;catch&lt;/span&gt; (InterruptedException e) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    e.printStackTrace();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//判断比赛是否结束&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;boolean&lt;/span&gt; flag = gameOver(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//如果比赛结束了，就停止程序&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(flag)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            System.out.println(Thread.currentThread().getName()+&lt;span class=&quot;string&quot;&gt;&quot;--》跑了&quot;&lt;/span&gt;+i+&lt;span class=&quot;string&quot;&gt;&quot;步&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//判断是否完成比赛&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;gameOver&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; steps)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//判断是否有胜利者&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(winner!=&lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;)&amp;#123;   &lt;span class=&quot;comment&quot;&gt;//已经存在胜利者了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (steps &amp;gt;= &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                winner = Thread.currentThread().getName();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;Winner is&quot;&lt;/span&gt; + winner);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Race race = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Race();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Thread(race,&lt;span class=&quot;string&quot;&gt;&quot;兔子&quot;&lt;/span&gt;).start();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Thread(race,&lt;span class=&quot;string&quot;&gt;&quot;乌龟&quot;&lt;/span&gt;).start();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;1-3、实现Callable接口-了解即可&quot;&gt;&lt;a href=&quot;#1-3、实现Callable接口-了解即可&quot; class=&quot;headerlink&quot; title=&quot;1.3、实现Callable接口(了解即可)&quot;&gt;&lt;/a&gt;1.3、实现Callable接口(了解即可)&lt;/h5&gt;&lt;p&gt;演示：利用callable改造下载图片案例&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;73&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; org.apache.commons.io.FileUtils;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; java.io.File;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; java.io.IOException;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; java.net.URL;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; java.util.concurrent.*;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt; * &lt;span class=&quot;doctag&quot;&gt;@author&lt;/span&gt;: Carey&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt; */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//创建线程方式三：实现callable接口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/*&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;callable的好处：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;1.可以定义返回值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;2.可以抛出异常&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TestCallable&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Callable&lt;/span&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;Boolean&lt;/span&gt;&amp;gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; String url;    &lt;span class=&quot;comment&quot;&gt;//网络图片地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; String name;    &lt;span class=&quot;comment&quot;&gt;//保存的文件名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TestCallable&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String url,String name)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.url = url;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.name = name;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//下载图片线程的执行体&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; Boolean &lt;span class=&quot;title&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        WebDownloader webDownloader = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; WebDownloader();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        webDownloader.downloader(url, name);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;下载了文件名为：&quot;&lt;/span&gt;+name);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;throws&lt;/span&gt; ExecutionException, InterruptedException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        TestCallable t1 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; TestCallable(&lt;span class=&quot;string&quot;&gt;&quot;https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3809381459,3903924594&amp;amp;fm=26&amp;amp;gp=0.jpg&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;1.jpg&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        TestCallable t2 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; TestCallable(&lt;span class=&quot;string&quot;&gt;&quot;https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3809381459,3903924594&amp;amp;fm=26&amp;amp;gp=0.jpg&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;2.jpg&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        TestCallable t3 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; TestCallable(&lt;span class=&quot;string&quot;&gt;&quot;https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3809381459,3903924594&amp;amp;fm=26&amp;amp;gp=0.jpg&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;3.jpg&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//创建执行服务：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ExecutorService ser = Executors.newFixedThreadPool(&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//提交执行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Future&amp;lt;Boolean&amp;gt; r1 = ser.submit(t1);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Future&amp;lt;Boolean&amp;gt; r2 = ser.submit(t2);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Future&amp;lt;Boolean&amp;gt; r3 = ser.submit(t3);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//获取结果&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;boolean&lt;/span&gt; rs1 = r1.get();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;boolean&lt;/span&gt; rs2 = r2.get();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;boolean&lt;/span&gt; rs3 = r3.get();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(rs1);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(rs2);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(rs3);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//关闭服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ser.shutdownNow();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//下载器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;WebDownloader&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//下载方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;downloader&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String url,String name)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            FileUtils.copyURLToFile(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; URL(url), &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; File(name));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125; &lt;span class=&quot;keyword&quot;&gt;catch&lt;/span&gt; (IOException e) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            e.printStackTrace();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;IO异常，downloader方法出现问题&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;1-4、Lamdba表达式&quot;&gt;&lt;a href=&quot;#1-4、Lamdba表达式&quot; class=&quot;headerlink&quot; title=&quot;1.4、Lamdba表达式&quot;&gt;&lt;/a&gt;1.4、Lamdba表达式&lt;/h5&gt;&lt;h6 id=&quot;推导过程：&quot;&gt;&lt;a href=&quot;#推导过程：&quot; class=&quot;headerlink&quot; title=&quot;推导过程：&quot;&gt;&lt;/a&gt;推导过程：&lt;/h6&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;62&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/*&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;推导lambda表达式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt; */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TestLambda1&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//3.静态内部类&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Like2&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;ILike&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;i like lambda2&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ILike like = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Like();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        like.lambda();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        like = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Like2();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        like.lambda();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//4.局部内部类&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Like3&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;ILike&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;i like lambda3&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        like = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Like3();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        like.lambda();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//5.匿名内部类，没有类的名称，必须借助接口或者父类&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        like = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ILike() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;i like lambda4&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        like.lambda();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//6.用lambda简化&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        like = ()-&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;i like lambda5&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        like.lambda();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//1.定义一个函数式接口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;ILike&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//2.实现类&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Like&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;ILike&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;i like lambda&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h6 id=&quot;书写过程：&quot;&gt;&lt;a href=&quot;#书写过程：&quot; class=&quot;headerlink&quot; title=&quot;书写过程：&quot;&gt;&lt;/a&gt;书写过程：&lt;/h6&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;package&lt;/span&gt; com.carey.lambda;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt; * &lt;span class=&quot;doctag&quot;&gt;@author&lt;/span&gt;: Carey&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt; */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TestLambda2&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Ilove love = &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;span class=&quot;comment&quot;&gt;//1.lambda表达简化&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//        Ilove love = (int a)-&amp;gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//                System.out.println(&quot;i love you--&amp;gt;&quot;+a);&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//            &amp;#125;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;span class=&quot;comment&quot;&gt;//简化1.参数类型&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//        love = (a)-&amp;gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//            System.out.println(&quot;i love you--&amp;gt;&quot;+a);&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//        &amp;#125;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//简化2.简化括号&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//        love = a-&amp;gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//            System.out.println(&quot;i love you--&amp;gt;&quot;+a);&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//        &amp;#125;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//简化3.去掉花括号&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        love = a-&amp;gt;System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;i love you--&amp;gt;&quot;&lt;/span&gt;+a);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;/*总结：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;            lambda表达式只能有一行代码的情况下才能简化成为一行，如果有多行，那么就用代码块包裹。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;            前提是接口为函数式表达式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;            多个参数也可以去掉参数类型，要去掉就都去掉，必须加上括号&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;         */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        love.love(&lt;span class=&quot;number&quot;&gt;521&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Ilove&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;love&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -272,17 +321,50 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/23/OSfifthone/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/23/OSfifthone/</id>
     <published>2020-05-23T06:56:11.000Z</published>
-    <updated>2020-05-24T06:06:59.301Z</updated>
+    <updated>2020-06-15T14:51:48.645Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;5-1-1、-I-O设备的基本概念与分类&quot;&gt;&lt;a href=&quot;#5-1-1、-I-O设备的基本概念与分类&quot; class=&quot;headerlink&quot; title=&quot;5.1.1、 I/O设备的基本概念与分类&quot;&gt;&lt;/a&gt;5.1.1、
-        
-      
+      &lt;h2 id=&quot;5-1-1、-I-O设备的基本概念与分类&quot;&gt;&lt;a href=&quot;#5-1-1、-I-O设备的基本概念与分类&quot; class=&quot;headerlink&quot; title=&quot;5.1.1、 I/O设备的基本概念与分类&quot;&gt;&lt;/a&gt;5.1.1、 I/O设备的基本概念与分类&lt;/h2&gt;&lt;h3 id=&quot;什么是I-O设备&quot;&gt;&lt;a href=&quot;#什么是I-O设备&quot; class=&quot;headerlink&quot; title=&quot;什么是I/O设备&quot;&gt;&lt;/a&gt;什么是I/O设备&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;将数据Input/Output(输入/输出)计算机的外部设备&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;按使用特性分类&quot;&gt;&lt;a href=&quot;#按使用特性分类&quot; class=&quot;headerlink&quot; title=&quot;按使用特性分类&quot;&gt;&lt;/a&gt;按使用特性分类&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;人机交互类外部设备&lt;/li&gt;
+&lt;li&gt;存储设备&lt;/li&gt;
+&lt;li&gt;网络通信设备&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;按传输速率分类&quot;&gt;&lt;a href=&quot;#按传输速率分类&quot; class=&quot;headerlink&quot; title=&quot;按传输速率分类&quot;&gt;&lt;/a&gt;按传输速率分类&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;低速设备&lt;/li&gt;
+&lt;li&gt;中速设备&lt;/li&gt;
+&lt;li&gt;高速设备&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;按信息交换的单位分类&quot;&gt;&lt;a href=&quot;#按信息交换的单位分类&quot; class=&quot;headerlink&quot; title=&quot;按信息交换的单位分类&quot;&gt;&lt;/a&gt;按信息交换的单位分类&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;块设备（传输快，可寻址）&lt;/li&gt;
+&lt;li&gt;字符设备（传输满，不可寻址，常采用==中断驱动方式==）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;5-1-2、I-O控制器&quot;&gt;&lt;a href=&quot;#5-1-2、I-O控制器&quot; class=&quot;headerlink&quot; title=&quot;5.1.2、I/O控制器&quot;&gt;&lt;/a&gt;5.1.2、I/O控制器&lt;/h2&gt;&lt;h3 id=&quot;主要功能&quot;&gt;&lt;a href=&quot;#主要功能&quot; class=&quot;headerlink&quot; title=&quot;主要功能&quot;&gt;&lt;/a&gt;主要功能&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;接受和识别CPU发出的命令（要有控制寄存器）&lt;/li&gt;
+&lt;li&gt;向CPU报告设备的状态（要有状态寄存器）&lt;/li&gt;
+&lt;li&gt;数据交换（要有数据寄存器，暂存输入/输出的数据）&lt;/li&gt;
+&lt;li&gt;地址识别（由I/O逻辑实现）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;组成&quot;&gt;&lt;a href=&quot;#组成&quot; class=&quot;headerlink&quot; title=&quot;组成&quot;&gt;&lt;/a&gt;组成&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;CPU与控制器之间的接口（实现控制器与CPU之间的通信）&lt;/li&gt;
+&lt;li&gt;I/O逻辑（负责识别CPU发出的命令，并向设备发出命令）&lt;/li&gt;
+&lt;li&gt;控制器与设备之间的接口（实现控制器与设备之间的通信）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;两种寄存器编址方式&quot;&gt;&lt;a href=&quot;#两种寄存器编址方式&quot; class=&quot;headerlink&quot; title=&quot;两种寄存器编址方式&quot;&gt;&lt;/a&gt;两种寄存器编址方式&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;内存映射I/O&lt;ul&gt;
+&lt;li&gt;控制器中的寄存器与内存统一编制&lt;/li&gt;
+&lt;li&gt;可以采用对内存进行操作的指令来对控制器进行操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;寄存器独立编制&lt;ul&gt;
+&lt;li&gt;控制器中的寄存器独立编制&lt;/li&gt;
+&lt;li&gt;需要设置专门的指令来操作控制器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -295,17 +377,36 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/23/OSfourthtwo/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/23/OSfourthtwo/</id>
     <published>2020-05-23T03:13:22.000Z</published>
-    <updated>2020-05-23T06:54:35.859Z</updated>
+    <updated>2020-06-15T14:50:55.177Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;4-2-1、磁盘的结构&quot;&gt;&lt;a href=&quot;#4-2-1、磁盘的结构&quot; class=&quot;headerlink&quot; title=&quot;4.2.1、磁盘的结构&quot;&gt;&lt;/a&gt;4.2.1、磁盘的结构&lt;/h2&gt;&lt;h3 id=&quot;磁盘、磁道、扇区的概念&quot;&gt;&lt;a
-        
-      
+      &lt;h2 id=&quot;4-2-1、磁盘的结构&quot;&gt;&lt;a href=&quot;#4-2-1、磁盘的结构&quot; class=&quot;headerlink&quot; title=&quot;4.2.1、磁盘的结构&quot;&gt;&lt;/a&gt;4.2.1、磁盘的结构&lt;/h2&gt;&lt;h3 id=&quot;磁盘、磁道、扇区的概念&quot;&gt;&lt;a href=&quot;#磁盘、磁道、扇区的概念&quot; class=&quot;headerlink&quot; title=&quot;磁盘、磁道、扇区的概念&quot;&gt;&lt;/a&gt;磁盘、磁道、扇区的概念&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;磁盘由表面涂有磁性物质的圆形盘片组成&lt;/li&gt;
+&lt;li&gt;每个盘片被划分为一个个磁道，每个磁道又划分为一个个扇区&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;如何在磁盘中读-写数据&quot;&gt;&lt;a href=&quot;#如何在磁盘中读-写数据&quot; class=&quot;headerlink&quot; title=&quot;如何在磁盘中读/写数据&quot;&gt;&lt;/a&gt;如何在磁盘中读/写数据&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;磁头移动到目标位置，盘片旋转，对应扇区划过磁道才能完成读/写&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;盘面、柱面的概念&quot;&gt;&lt;a href=&quot;#盘面、柱面的概念&quot; class=&quot;headerlink&quot; title=&quot;盘面、柱面的概念&quot;&gt;&lt;/a&gt;盘面、柱面的概念&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;磁盘有多个盘片“摞”起来，每个盘片有两个盘面&lt;/li&gt;
+&lt;li&gt;所以盘面中相对位置相同的磁道组成柱面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;磁盘的物理地址&quot;&gt;&lt;a href=&quot;#磁盘的物理地址&quot; class=&quot;headerlink&quot; title=&quot;磁盘的物理地址&quot;&gt;&lt;/a&gt;磁盘的物理地址&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;（柱面号，盘面号，扇区号）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;磁盘的分类&quot;&gt;&lt;a href=&quot;#磁盘的分类&quot; class=&quot;headerlink&quot; title=&quot;磁盘的分类&quot;&gt;&lt;/a&gt;磁盘的分类&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;根据磁头是否可移动&lt;ul&gt;
+&lt;li&gt;固定头磁盘（每个磁道有一个磁头）&lt;/li&gt;
+&lt;li&gt;移动头磁盘（每个盘面只有一个磁头）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;根据盘片是否可更换&lt;ul&gt;
+&lt;li&gt;固定盘磁盘&lt;/li&gt;
+&lt;li&gt;可换盘磁盘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -318,17 +419,85 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/20/OSfourthone/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/20/OSfourthone/</id>
     <published>2020-05-20T09:42:06.000Z</published>
-    <updated>2020-05-22T12:49:44.220Z</updated>
+    <updated>2020-06-15T14:51:07.686Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;4-1-1、初识文件管理&quot;&gt;&lt;a href=&quot;#4-1-1、初识文件管理&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;4-1-1、初识文件管理&quot;&gt;&lt;a href=&quot;#4-1-1、初识文件管理&quot; class=&quot;headerlink&quot; title=&quot;4.1.1、初识文件管理&quot;&gt;&lt;/a&gt;4.1.1、初识文件管理&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;文件的定义：一组有意义的信息的集合&lt;/li&gt;
+&lt;li&gt;文件的属性：文件名、标识符、类型、位置、大小、保护信息…&lt;/li&gt;
+&lt;li&gt;文件内部应该如何被组织起来（文件的逻辑结构）&lt;/li&gt;
+&lt;li&gt;文件之间应该如何被组织起来（目录结构）&lt;/li&gt;
+&lt;li&gt;操作系统应向上提供哪些功能（create、delete、open、close、read、write系统调用）&lt;/li&gt;
+&lt;li&gt;文件应如何存放在外存中（文件的物理结构）&lt;/li&gt;
+&lt;li&gt;操作系统如何管理外存中的空闲块（存储空间的管理）&lt;/li&gt;
+&lt;li&gt;操作系统需要提供的其他文件管理功能&lt;ul&gt;
+&lt;li&gt;文件共享&lt;/li&gt;
+&lt;li&gt;文件保护&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;4-1-2、文件的逻辑结构&quot;&gt;&lt;a href=&quot;#4-1-2、文件的逻辑结构&quot; class=&quot;headerlink&quot; title=&quot;4.1.2、文件的逻辑结构&quot;&gt;&lt;/a&gt;4.1.2、文件的逻辑结构&lt;/h2&gt;&lt;h3 id=&quot;无结构文件&quot;&gt;&lt;a href=&quot;#无结构文件&quot; class=&quot;headerlink&quot; title=&quot;无结构文件&quot;&gt;&lt;/a&gt;无结构文件&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;由二进制流或字符流组成，无明显的逻辑结构&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;有结构文件&quot;&gt;&lt;a href=&quot;#有结构文件&quot; class=&quot;headerlink&quot; title=&quot;有结构文件&quot;&gt;&lt;/a&gt;有结构文件&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;由记录组成，分为定长记录、可变长记录&lt;/li&gt;
+&lt;li&gt;逻辑机构&lt;ul&gt;
+&lt;li&gt;顺序文件&lt;ul&gt;
+&lt;li&gt;串结构：记录顺序与关键字无关&lt;/li&gt;
+&lt;li&gt;顺序结构：记录按关键字顺序排列&lt;/li&gt;
+&lt;li&gt;==可变长记录的顺序文件无法实现随机存取，定长记录可以==&lt;/li&gt;
+&lt;li&gt;==定长记录、顺序结构的顺序文件可以快速检索（根据关键字快速找到记录）==&lt;/li&gt;
+&lt;li&gt;最大缺点：不方便添加/删除    记录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;索引文件&lt;ul&gt;
+&lt;li&gt;建立一张索引表，每个记录对应一个表项。各记录不用保持顺序，方便添加/删除记录&lt;/li&gt;
+&lt;li&gt;==索引表本身就是定长记录的顺序文件==，一个索引表项就是一条定长记录，因此索引文件可支持随机存取&lt;/li&gt;
+&lt;li&gt;==若索引表按关键字顺序排列，则可支持快速检索==&lt;/li&gt;
+&lt;li&gt;解决了顺序文件不方便增/删记录的问题，同时让不定长记录的文件实现了随机存取。但索引表可能占用很多空间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;索引顺序文件&lt;ul&gt;
+&lt;li&gt;将记录分组，每组对应一个索引表项&lt;/li&gt;
+&lt;li&gt;检索记录时先顺序查索引表，找到分组，再顺序查找分组&lt;/li&gt;
+&lt;li&gt;当记录过多时，可建立多级索引表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;4-1-3、文件目录&quot;&gt;&lt;a href=&quot;#4-1-3、文件目录&quot; class=&quot;headerlink&quot; title=&quot;4.1.3、文件目录&quot;&gt;&lt;/a&gt;4.1.3、文件目录&lt;/h2&gt;&lt;h3 id=&quot;文件目录的实现&quot;&gt;&lt;a href=&quot;#文件目录的实现&quot; class=&quot;headerlink&quot; title=&quot;文件目录的实现&quot;&gt;&lt;/a&gt;文件目录的实现&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;==一个文件对应一个FCB，一个FCB就是一个目录项，多个FCB组成文件目录==&lt;/li&gt;
+&lt;li&gt;对目录的操作：搜索、创建文件、删除文件、显示文件、修改文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;目录结构&quot;&gt;&lt;a href=&quot;#目录结构&quot; class=&quot;headerlink&quot; title=&quot;目录结构&quot;&gt;&lt;/a&gt;目录结构&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;单级目录结构&lt;ul&gt;
+&lt;li&gt;一个系统只有一张目录表，==不允许文件重名==&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;两级目录结构&lt;ul&gt;
+&lt;li&gt;不同用户的文件可以重名，但==不能对文件进行分类==&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;多级（树形）目录结构&lt;ul&gt;
+&lt;li&gt;不同目录下的文件可以重名，可以对文件进行分类，==不方便文件共享==&lt;/li&gt;
+&lt;li&gt;系统根据“文件路径”找到目标文件&lt;/li&gt;
+&lt;li&gt;从根目录出发的路径是“==绝对路径==”（“/照片/2015-08/自拍.jpg”）&lt;/li&gt;
+&lt;li&gt;从“==当前目录==”出发的路径是“==相对路径==”（“/照片/2015-08/自拍.jpg”）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;无环图目录结构&lt;ul&gt;
+&lt;li&gt;在树形目录结构的基础上，增加一些指向同一节点的有向边，使整个目录成为一个有向无环图&lt;/li&gt;
+&lt;li&gt;为共享节点设置一个共享计数器，==计数器为0时才真正删除该节点==&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;索引结点&quot;&gt;&lt;a href=&quot;#索引结点&quot; class=&quot;headerlink&quot; title=&quot;索引结点&quot;&gt;&lt;/a&gt;索引结点&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;除了文件名之外的所有信息都放到索引结点中，每个文件对应一个索引结点&lt;/li&gt;
+&lt;li&gt;目录项中只包含文件名、索引结点指针，因此每个目录项的长度大幅减小&lt;/li&gt;
+&lt;li&gt;由于目录项长度减小，因此每个磁盘可以存放更多个目录项，因此检索文件时磁盘I/O的次数就少了很多&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -341,17 +510,59 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/19/OSthirdtwo/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/19/OSthirdtwo/</id>
     <published>2020-05-19T06:45:10.000Z</published>
-    <updated>2020-05-19T08:12:50.850Z</updated>
+    <updated>2020-06-15T14:49:28.935Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;3-2-1、虚拟内存的基本概念&quot;&gt;&lt;a href=&quot;#3-2-1、虚拟内存的基本概念&quot; class=&quot;headerlink&quot; title=&quot;3.2.1、虚拟内存的基本概念&quot;&gt;&lt;/a&gt;3.2.1、虚拟内存的基本概念&lt;/h2&gt;&lt;h3
-        
-      
+      &lt;h2 id=&quot;3-2-1、虚拟内存的基本概念&quot;&gt;&lt;a href=&quot;#3-2-1、虚拟内存的基本概念&quot; class=&quot;headerlink&quot; title=&quot;3.2.1、虚拟内存的基本概念&quot;&gt;&lt;/a&gt;3.2.1、虚拟内存的基本概念&lt;/h2&gt;&lt;h3 id=&quot;传统存储管理方式的特征、缺点&quot;&gt;&lt;a href=&quot;#传统存储管理方式的特征、缺点&quot; class=&quot;headerlink&quot; title=&quot;传统存储管理方式的特征、缺点&quot;&gt;&lt;/a&gt;传统存储管理方式的特征、缺点&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;一次性：作业数据必须一次全部调入内存&lt;/li&gt;
+&lt;li&gt;驻留性：作业数据在整个运行期间都会常驻内存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;局部性原理&quot;&gt;&lt;a href=&quot;#局部性原理&quot; class=&quot;headerlink&quot; title=&quot;局部性原理&quot;&gt;&lt;/a&gt;局部性原理&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;时间局部性：现在访问的指令、数据在不久后很可能会被再次访问&lt;/li&gt;
+&lt;li&gt;空间局部性：现在访问的内存单元周围的内存空间，很可能在不久后会被访问&lt;/li&gt;
+&lt;li&gt;高速缓存技术：使用频繁的数据放到更高速的存储器中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;虚拟内存的定义和特征&quot;&gt;&lt;a href=&quot;#虚拟内存的定义和特征&quot; class=&quot;headerlink&quot; title=&quot;虚拟内存的定义和特征&quot;&gt;&lt;/a&gt;虚拟内存的定义和特征&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;程序不需全部装入即可运行，运行时根据需要动态调入数据，若内存不够，还需换出一些数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;特征&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;多次性：无需在作业运行时一次性全部装入内存，而是允许被分成多次调入内存。&lt;/li&gt;
+&lt;li&gt;对换性：无需在作业运行时一直常驻内存，而是允许在作业运行过程中，将作业换入、换出。&lt;/li&gt;
+&lt;li&gt;虚拟性：从逻辑上扩充了内存的容量，使用户看到的内存容量，远大于实际的容量。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;如何实现虚拟内存技术&quot;&gt;&lt;a href=&quot;#如何实现虚拟内存技术&quot; class=&quot;headerlink&quot; title=&quot;如何实现虚拟内存技术&quot;&gt;&lt;/a&gt;如何实现虚拟内存技术&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;访问的信息不在内存时，由操作系统负责将所需信息从外存调入内存==（请求调页功能）==&lt;/li&gt;
+&lt;li&gt;内存空间不够时，将内存中暂时用不到的信息换出到外存==（页面置换功能）==&lt;/li&gt;
+&lt;li&gt;虚拟内存的实现&lt;ul&gt;
+&lt;li&gt;==请求分页存储管理==&lt;/li&gt;
+&lt;li&gt;请求分段存储管理&lt;/li&gt;
+&lt;li&gt;请求段页式存储管理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;3-2-2、请求分页管理方式&quot;&gt;&lt;a href=&quot;#3-2-2、请求分页管理方式&quot; class=&quot;headerlink&quot; title=&quot;3.2.2、请求分页管理方式&quot;&gt;&lt;/a&gt;3.2.2、请求分页管理方式&lt;/h2&gt;&lt;h3 id=&quot;页表机制&quot;&gt;&lt;a href=&quot;#页表机制&quot; class=&quot;headerlink&quot; title=&quot;页表机制&quot;&gt;&lt;/a&gt;页表机制&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;在基本分页的基础上增加了几个表项&lt;/li&gt;
+&lt;li&gt;状态位：表示页面是否已在内存中&lt;/li&gt;
+&lt;li&gt;访问字段：记录最近被访问过几次，或记录上次访问的及时，供置换算法选择换出页面时参考&lt;/li&gt;
+&lt;li&gt;修改位：表示页面调入内存后是否被修改过，只有修改过的页面才需在置换时写回外存&lt;/li&gt;
+&lt;li&gt;外存地址：页面在外存中存放的位置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;缺页中断机构&quot;&gt;&lt;a href=&quot;#缺页中断机构&quot; class=&quot;headerlink&quot; title=&quot;缺页中断机构&quot;&gt;&lt;/a&gt;缺页中断机构&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;找到页表项后检查是否已在内存，若没在内存，产生缺页中断&lt;/li&gt;
+&lt;li&gt;缺页中断处理中，需要讲目标页面调入内存，有必要时还要换出页面&lt;/li&gt;
+&lt;li&gt;缺页中断属于内中断，属于内中断中的“故障”，即可能被系统修复的异常&lt;/li&gt;
+&lt;li&gt;一条指令在执行过程中可能产生多次缺页中断&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;地址变换机构（重点关注与基本分页不同的地方）&quot;&gt;&lt;a href=&quot;#地址变换机构（重点关注与基本分页不同的地方）&quot; class=&quot;headerlink&quot; title=&quot;地址变换机构（重点关注与基本分页不同的地方）&quot;&gt;&lt;/a&gt;地址变换机构（重点关注与基本分页不同的地方）&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;找到页表项是需要检查页面是否在内存中&lt;/li&gt;
+&lt;li&gt;若页面不在内存中，需要请求调页&lt;/li&gt;
+&lt;li&gt;若内存空间不够，还需要调出页面&lt;/li&gt;
+&lt;li&gt;页面调入内存后，需要修改相应页表项&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -364,17 +575,67 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/16/OSthirdone/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/16/OSthirdone/</id>
     <published>2020-05-16T08:31:49.000Z</published>
-    <updated>2020-05-18T07:09:58.385Z</updated>
+    <updated>2020-06-15T14:49:41.624Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;3-1-1、内存的基础知识&quot;&gt;&lt;a href=&quot;#3-1-1、内存的基础知识&quot; class=&quot;headerlink&quot; title=&quot;3.1.1、内存的基础知识&quot;&gt;&lt;/a&gt;3.1.1、内存的基础知识&lt;/h2&gt;&lt;h3 id=&quot;什么是内存，有何作用&quot;&gt;&lt;a
-        
-      
+      &lt;h2 id=&quot;3-1-1、内存的基础知识&quot;&gt;&lt;a href=&quot;#3-1-1、内存的基础知识&quot; class=&quot;headerlink&quot; title=&quot;3.1.1、内存的基础知识&quot;&gt;&lt;/a&gt;3.1.1、内存的基础知识&lt;/h2&gt;&lt;h3 id=&quot;什么是内存，有何作用&quot;&gt;&lt;a href=&quot;#什么是内存，有何作用&quot; class=&quot;headerlink&quot; title=&quot;==什么是内存，有何作用==&quot;&gt;&lt;/a&gt;==什么是内存，有何作用==&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;存储单元、内存地址的概念和联系&lt;/li&gt;
+&lt;li&gt;按字节编址 VS 按字编址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;进程运行的基本原理&quot;&gt;&lt;a href=&quot;#进程运行的基本原理&quot; class=&quot;headerlink&quot; title=&quot;进程运行的基本原理&quot;&gt;&lt;/a&gt;进程运行的基本原理&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;指令的工作原理&lt;ul&gt;
+&lt;li&gt;操作码+若干参数（可能包含地址参数）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;==逻辑地址（相对地址） vs 物理地址（绝对地址）==&lt;/li&gt;
+&lt;li&gt;==从写程序到程序运行==&lt;ul&gt;
+&lt;li&gt;编辑源代码文件&lt;/li&gt;
+&lt;li&gt;编译&lt;ul&gt;
+&lt;li&gt;由源代码文件生成目标模块(高级语言“翻译为”机器语言)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;链接&lt;ul&gt;
+&lt;li&gt;由目标模块生成装入模块，链接后形成完整的逻辑地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;装入&lt;ul&gt;
+&lt;li&gt;将装入模块装入内存，装入后形成物理地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;三种链接方式&lt;ul&gt;
+&lt;li&gt;静态链接&lt;ul&gt;
+&lt;li&gt;装入前链接成一个完整装入模块&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;装入时动态链接&lt;ul&gt;
+&lt;li&gt;运行前面边装入边链接&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;运行时动态链接&lt;ul&gt;
+&lt;li&gt;运行时需要目标模块才装入并链接&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;==三种装入方式==&lt;ul&gt;
+&lt;li&gt;绝对装入&lt;ul&gt;
+&lt;li&gt;编译时产生绝对地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;可重定位装入&lt;ul&gt;
+&lt;li&gt;装入时将逻辑地址转换为物理地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;==动态运行时装入==&lt;ul&gt;
+&lt;li&gt;运行时将逻辑地址转换为物理地址，需设置重定位寄存器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -387,17 +648,62 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/16/OSsecondfour/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/16/OSsecondfour/</id>
     <published>2020-05-16T07:14:21.000Z</published>
-    <updated>2020-05-16T08:18:06.042Z</updated>
+    <updated>2020-06-15T14:50:45.534Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;2-4-1、死锁的概念&quot;&gt;&lt;a href=&quot;#2-4-1、死锁的概念&quot; class=&quot;headerlink&quot; title=&quot;2.4.1、死锁的概念&quot;&gt;&lt;/a&gt;2.4.1、死锁的概念&lt;/h2&gt;&lt;h3 id=&quot;什么是死锁&quot;&gt;&lt;a href=&quot;#什么是死锁&quot;
-        
-      
+      &lt;h2 id=&quot;2-4-1、死锁的概念&quot;&gt;&lt;a href=&quot;#2-4-1、死锁的概念&quot; class=&quot;headerlink&quot; title=&quot;2.4.1、死锁的概念&quot;&gt;&lt;/a&gt;2.4.1、死锁的概念&lt;/h2&gt;&lt;h3 id=&quot;什么是死锁&quot;&gt;&lt;a href=&quot;#什么是死锁&quot; class=&quot;headerlink&quot; title=&quot;什么是死锁&quot;&gt;&lt;/a&gt;什么是死锁&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;各进程互相等待对方手里的资源，导致各进程都阻塞，无法向前推进&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;死锁、饥饿、死循环的区别&quot;&gt;&lt;a href=&quot;#死锁、饥饿、死循环的区别&quot; class=&quot;headerlink&quot; title=&quot;死锁、饥饿、死循环的区别&quot;&gt;&lt;/a&gt;死锁、饥饿、死循环的区别&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;死锁：至少是两个进程一起死锁，死锁进程处于阻塞态&lt;/li&gt;
+&lt;li&gt;饥饿：可以只有一个进程饥饿，饥饿进程可能阻塞也可能就绪&lt;/li&gt;
+&lt;li&gt;死循环：可能只有一个进程发生死循环，死循环的进程可上处理机&lt;/li&gt;
+&lt;li&gt;死锁和饥饿是操作系统要解决的问题，死循环是应用程序员要解决的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;死锁产生的必要条件&quot;&gt;&lt;a href=&quot;#死锁产生的必要条件&quot; class=&quot;headerlink&quot; title=&quot;死锁产生的必要条件&quot;&gt;&lt;/a&gt;死锁产生的必要条件&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;互斥条件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对必须互斥使用的资源的争抢才会导致死锁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;不剥夺条件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;进程保持的资源只能主动释放，不可强行剥夺&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;请求和保持条件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;保持着某些资源不放的同时，请求别的资源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;循环等待条件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;存在一种进程资源的循环等待链&lt;/li&gt;
+&lt;li&gt;循环等待未必死锁，死锁一定有循环等待&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;什么时候会发生死锁&quot;&gt;&lt;a href=&quot;#什么时候会发生死锁&quot; class=&quot;headerlink&quot; title=&quot;什么时候会发生死锁&quot;&gt;&lt;/a&gt;什么时候会发生死锁&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;对不可剥夺资源的不合理分配，可能导致死锁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;死锁的处理策略&quot;&gt;&lt;a href=&quot;#死锁的处理策略&quot; class=&quot;headerlink&quot; title=&quot;死锁的处理策略&quot;&gt;&lt;/a&gt;死锁的处理策略&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;预防死锁&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;破坏死锁产生的四个必要条件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;避免死锁&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;避免系统进入不安全状态(银行家算法)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;死锁的检测和解除&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;允许死锁发生，系统负责检测出死锁并解除&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -410,17 +716,11 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/14/javaweb/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/14/javaweb/</id>
     <published>2020-05-14T13:50:15.000Z</published>
-    <updated>2020-05-31T07:25:04.480Z</updated>
+    <updated>2020-06-15T14:53:09.660Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;Javaweb&quot;&gt;&lt;a href=&quot;#Javaweb&quot; class=&quot;headerlink&quot; title=&quot;Javaweb&quot;&gt;&lt;/a&gt;Javaweb&lt;/h2&gt;&lt;p&gt;学习自：&lt;a
-        
-      
+      &lt;h2 id=&quot;Javaweb&quot;&gt;&lt;a href=&quot;#Javaweb&quot; class=&quot;headerlink&quot; title=&quot;Javaweb&quot;&gt;&lt;/a&gt;Javaweb&lt;/h2&gt;&lt;p&gt;学习自：&lt;a href=&quot;https://www.bilibili.com/video/BV12J411M7Sj?p=1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/BV12J411M7Sj?p=1&lt;/a&gt;    &lt;/p&gt;
     
     </summary>
     
@@ -433,17 +733,55 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/13/OSsecondthree/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/13/OSsecondthree/</id>
     <published>2020-05-13T03:55:17.000Z</published>
-    <updated>2020-05-15T10:58:12.596Z</updated>
+    <updated>2020-06-15T14:50:13.305Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;2-3-1互斥同步&quot;&gt;&lt;a href=&quot;#2-3-1互斥同步&quot; class=&quot;headerlink&quot; title=&quot;2.3.1互斥同步&quot;&gt;&lt;/a&gt;2.3.1互斥同步&lt;/h2&gt;&lt;h3 id=&quot;进程同步&quot;&gt;&lt;a href=&quot;#进程同步&quot;
-        
-      
+      &lt;h2 id=&quot;2-3-1互斥同步&quot;&gt;&lt;a href=&quot;#2-3-1互斥同步&quot; class=&quot;headerlink&quot; title=&quot;2.3.1互斥同步&quot;&gt;&lt;/a&gt;2.3.1互斥同步&lt;/h2&gt;&lt;h3 id=&quot;进程同步&quot;&gt;&lt;a href=&quot;#进程同步&quot; class=&quot;headerlink&quot; title=&quot;进程同步&quot;&gt;&lt;/a&gt;进程同步&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;并发性带来了异步性，有时需要通过进程同步解决这种异步问题。有的进程之间需要相互配合地完成工作，各进程的工作推进需要遵循一定的先后顺序。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;进程互斥&quot;&gt;&lt;a href=&quot;#进程互斥&quot; class=&quot;headerlink&quot; title=&quot;进程互斥&quot;&gt;&lt;/a&gt;进程互斥&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;对临界资源的访问，需要互斥的进行。即同一时间段内只能允许一个进程访问该资源&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;四个部门&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;进入区&lt;ul&gt;
+&lt;li&gt;检查是否可进入临界区，若可进入，需要“上锁”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;临界区&lt;ul&gt;
+&lt;li&gt;访问邻接资源的那段代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;退出区&lt;ul&gt;
+&lt;li&gt;负责“解锁”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;剩余区&lt;ul&gt;
+&lt;li&gt;其余代码部分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;需要遵循的原则&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;空闲让进&lt;ul&gt;
+&lt;li&gt;临界区空闲时，应允许一个进程访问&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;忙则等待&lt;ul&gt;
+&lt;li&gt;临界区正在被访问时，其他试图访问的进程需要等待&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;有限等待&lt;ul&gt;
+&lt;li&gt;要在有限时间内进入临界区，保证不会饥饿&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;让权等待&lt;ul&gt;
+&lt;li&gt;进不了临界区的进程，需释放处理机，防止忙等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
@@ -456,17 +794,51 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/12/OSsecondtwo/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/12/OSsecondtwo/</id>
     <published>2020-05-12T07:19:11.000Z</published>
-    <updated>2020-05-13T04:01:58.373Z</updated>
+    <updated>2020-06-15T14:49:52.629Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;处理机调度&quot;&gt;&lt;a href=&quot;#处理机调度&quot; class=&quot;headerlink&quot; title=&quot;处理机调度&quot;&gt;&lt;/a&gt;处理机调度&lt;/h2&gt;&lt;h3 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;处理机调度&quot;&gt;&lt;a href=&quot;#处理机调度&quot; class=&quot;headerlink&quot; title=&quot;处理机调度&quot;&gt;&lt;/a&gt;处理机调度&lt;/h2&gt;&lt;h3 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot; title=&quot;基本概念&quot;&gt;&lt;/a&gt;基本概念&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;按某种算法选择一个进程将处理机分配给它&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;三个层次&quot;&gt;&lt;a href=&quot;#三个层次&quot; class=&quot;headerlink&quot; title=&quot;三个层次&quot;&gt;&lt;/a&gt;三个层次&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;高级调度&lt;strong&gt;(作业调度)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;按照某种规则，从后备队列中选择合适的作业将其调入内存，并为其创建进程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;中级调度&lt;strong&gt;(内存调度)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;按照某种规则，从挂起队列中选择合适的进程将其数据调回内存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;低级调度(进程调度)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;按照某种规则，从就绪队列中选择一个进程为其分配处理机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;三层调度的联系、对比&quot;&gt;&lt;a href=&quot;#三层调度的联系、对比&quot; class=&quot;headerlink&quot; title=&quot;三层调度的联系、对比&quot;&gt;&lt;/a&gt;三层调度的联系、对比&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;高级调度&lt;ul&gt;
+&lt;li&gt;外存-&amp;gt;内存(面向作业)&lt;/li&gt;
+&lt;li&gt;发生频率：最低&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;中级调度&lt;ul&gt;
+&lt;li&gt;外存-&amp;gt;内存(面向进程)&lt;/li&gt;
+&lt;li&gt;发送频率：中等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;低级调度&lt;ul&gt;
+&lt;li&gt;内存-&amp;gt;CPU&lt;/li&gt;
+&lt;li&gt;发生频率：最高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;补充知识&quot;&gt;&lt;a href=&quot;#补充知识&quot; class=&quot;headerlink&quot; title=&quot;补充知识&quot;&gt;&lt;/a&gt;补充知识&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;为减轻系统负载，提供资源利用率，暂时不执行的进程会被调到外存从而变为“挂起态”&lt;/li&gt;
+&lt;li&gt;七状态模型：在五状态模型的基础上加入了“就绪挂起”和“阻塞挂起”两种状态&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -479,17 +851,45 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/11/OSsecondone/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/11/OSsecondone/</id>
     <published>2020-05-11T04:56:34.000Z</published>
-    <updated>2020-05-11T05:01:00.957Z</updated>
+    <updated>2020-06-15T14:50:29.734Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;进程的概念&quot;&gt;&lt;a href=&quot;#进程的概念&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;进程的概念&quot;&gt;&lt;a href=&quot;#进程的概念&quot; class=&quot;headerlink&quot; title=&quot;进程的概念&quot;&gt;&lt;/a&gt;进程的概念&lt;/h2&gt;&lt;p&gt;程序：是静态的，就是个存放在磁盘里的可执行文件，就是一系列的指令集合&lt;br&gt;进程（Process）：是动态的，是程序的一次执行过程&lt;/p&gt;
+&lt;h2 id=&quot;进程的组成&quot;&gt;&lt;a href=&quot;#进程的组成&quot; class=&quot;headerlink&quot; title=&quot;进程的组成&quot;&gt;&lt;/a&gt;进程的组成&lt;/h2&gt;&lt;p&gt;进程(进程实体)由程序段、数据段、PCB三部分组成&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;PCB             —-    进程的管理者(操作系统)所需的数据都在PCB中&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;进程描述信息&lt;/li&gt;
+&lt;li&gt;进程控制和管理信息&lt;/li&gt;
+&lt;li&gt;资源分配清单&lt;/li&gt;
+&lt;li&gt;处理器相关信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;程序段        —-    程序本身运行所需的数据&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;存放要执行的代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;数据段       —-    程序本身运行所需的数据&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;存放程序运行过程中处理的各种数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总结：PCB 是给操作系统用的。程序段、数据段是给进程自己用的。&lt;br&gt;引入进程实体的概念后，可把进程定义为：&lt;br&gt;&lt;strong&gt;进程是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;进程的组织&quot;&gt;&lt;a href=&quot;#进程的组织&quot; class=&quot;headerlink&quot; title=&quot;进程的组织&quot;&gt;&lt;/a&gt;进程的组织&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;连接方式&lt;ul&gt;
+&lt;li&gt;按照进程状态将PCB分为多个队列&lt;/li&gt;
+&lt;li&gt;操作系统持有指向各个队列的指针&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;索引方式&lt;ul&gt;
+&lt;li&gt;根据进程状态的不同，建立几张索引表&lt;/li&gt;
+&lt;li&gt;操作系统持有指向各个索引表的指针&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -502,17 +902,42 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/10/OSfirst/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/10/OSfirst/</id>
     <published>2020-05-10T07:59:26.000Z</published>
-    <updated>2020-05-10T08:02:40.654Z</updated>
+    <updated>2020-06-15T14:51:37.475Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;操作系统的概念（定义）&quot;&gt;&lt;a href=&quot;#操作系统的概念（定义）&quot; class=&quot;headerlink&quot; title=&quot;操作系统的概念（定义）&quot;&gt;&lt;/a&gt;操作系统的概念（定义）&lt;/h2&gt;&lt;p&gt;操作系统（Operating System，
-        
-      
+      &lt;h2 id=&quot;操作系统的概念（定义）&quot;&gt;&lt;a href=&quot;#操作系统的概念（定义）&quot; class=&quot;headerlink&quot; title=&quot;操作系统的概念（定义）&quot;&gt;&lt;/a&gt;操作系统的概念（定义）&lt;/h2&gt;&lt;p&gt;操作系统（Operating System， OS）是指控制和管理整个计算机系统的硬件和软件资源，并合理地组织调度计算机的工作和资源的分配；以提供给用户和其他软件方便的接口和环境；它是计算机系统中最基本的系统软件。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;操作系统的特征&quot;&gt;&lt;a href=&quot;#操作系统的特征&quot; class=&quot;headerlink&quot; title=&quot;操作系统的特征&quot;&gt;&lt;/a&gt;操作系统的特征&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;并发：指两个或多个事件在同一时间间隔内发生。这些事件宏观上是同时发生的，但微观上是交替发生的。&lt;br&gt;易混淆考点–并行：指两个或多个事件在同一时刻同时发生。&lt;/li&gt;
+&lt;li&gt;共享即资源共享，是指系统中的资源可供内存中多个并发执行的进程共同使用。&lt;ul&gt;
+&lt;li&gt;互斥共享方式(如对摄像头设备的共享使用)&lt;/li&gt;
+&lt;li&gt;同时共享方式(如对磁盘自由的共享使用)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;虚拟是指把一个物理上的实体变为若干个逻辑上的对应物。物理实体（前者）是实际存在的，而逻辑上对应物（后者）是用户感受到的。&lt;ul&gt;
+&lt;li&gt;空分复用技术(如虚拟存储器)&lt;/li&gt;
+&lt;li&gt;时分复用技术(如虚拟处理器)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;异步是指在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底的，而是走走停停，以不可预知的速度向前推进，这就是进程的异步性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;OS的发展与分类&quot;&gt;&lt;a href=&quot;#OS的发展与分类&quot; class=&quot;headerlink&quot; title=&quot;OS的发展与分类&quot;&gt;&lt;/a&gt;OS的发展与分类&lt;/h2&gt;&lt;h3 id=&quot;手工操作系统&quot;&gt;&lt;a href=&quot;#手工操作系统&quot; class=&quot;headerlink&quot; title=&quot;手工操作系统&quot;&gt;&lt;/a&gt;手工操作系统&lt;/h3&gt;&lt;h3 id=&quot;批处理阶段&quot;&gt;&lt;a href=&quot;#批处理阶段&quot; class=&quot;headerlink&quot; title=&quot;批处理阶段&quot;&gt;&lt;/a&gt;批处理阶段&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;单道批处理系统&lt;br&gt;引入脱机输入/输出技术（用外围机+磁带完成），并由监督程序负责控制作业的输入、输出&lt;br&gt;缺点：内存中仅能有一道程序运行, CPU有大量的时间是在空闲等待I/O完成&lt;/li&gt;
+&lt;li&gt;多道批处理系统(操作系统开始出现)&lt;br&gt;优点：多道程序并发执行，共享计算机资源。资源利用率大幅提升&lt;br&gt;缺点：没有人机交互功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;分时操作系统&quot;&gt;&lt;a href=&quot;#分时操作系统&quot; class=&quot;headerlink&quot; title=&quot;分时操作系统&quot;&gt;&lt;/a&gt;分时操作系统&lt;/h3&gt;&lt;p&gt;计算机以时间片为单位轮流为各个用户/作业服务&lt;br&gt;优点：解决了人机交互问题&lt;br&gt;缺点：不能优先处理一些紧急任务&lt;/p&gt;
+&lt;h3 id=&quot;实时操作系统&quot;&gt;&lt;a href=&quot;#实时操作系统&quot; class=&quot;headerlink&quot; title=&quot;实时操作系统&quot;&gt;&lt;/a&gt;实时操作系统&lt;/h3&gt;&lt;p&gt;要在严格的时限内处理完事件，具有及时性和可靠性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;硬实时系统  必须在绝对严格的规定时间内完成处理    如导弹控制系统&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;软实时系统     能接受偶尔违反时间规定              如12306火车订票系统&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;网络操作系统&quot;&gt;&lt;a href=&quot;#网络操作系统&quot; class=&quot;headerlink&quot; title=&quot;网络操作系统&quot;&gt;&lt;/a&gt;网络操作系统&lt;/h3&gt;&lt;p&gt;实现网络中各种资源的共享（如文件共享）和各台计算机之间的通信&lt;/p&gt;
+&lt;h3 id=&quot;分布式操作系统&quot;&gt;&lt;a href=&quot;#分布式操作系统&quot; class=&quot;headerlink&quot; title=&quot;分布式操作系统&quot;&gt;&lt;/a&gt;分布式操作系统&lt;/h3&gt;&lt;p&gt;分布性和并行性&lt;br&gt;任何工作都可以分布在这些计算机上，由它们并行、协同完成这个任务&lt;/p&gt;
+&lt;h3 id=&quot;个人计算机操作系统&quot;&gt;&lt;a href=&quot;#个人计算机操作系统&quot; class=&quot;headerlink&quot; title=&quot;个人计算机操作系统&quot;&gt;&lt;/a&gt;个人计算机操作系统&lt;/h3&gt;&lt;hr&gt;
     
     </summary>
     

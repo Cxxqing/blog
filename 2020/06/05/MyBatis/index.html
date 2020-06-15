@@ -21,42 +21,42 @@
     var CONFIG = {"hostname":"cxxqing.github.io","root":"/blog/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="MyBatis环境：  JDK1.8 MySQL 5.7 Maven 3.6.3 IDEA  回顾：  JDBC MySQL Java基础 Maven Junit  SSM框架：配置文件。最好的方式：看官网文档 1、简介1.1、什么是MyBatis  MyBatis 是一款优秀的持久层框架 它支持自定义 SQL、存储过程以及高级映射。 MyBatis 免除了几乎所有的 JDBC 代码以及设置参数和">
+  <meta name="description" content="MyBatis环境：  JDK1.8 MySQL 5.7 Maven 3.6.3 IDEA  回顾：  JDBC MySQL Java基础 Maven Junit  SSM框架：配置文件。最好的方式：看官网文档">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MyBatis">
 <meta property="og:url" content="https://cxxqing.github.io/blog/.com/2020/06/05/MyBatis/index.html">
 <meta property="og:site_name" content="Carey&#39;s Blog">
-<meta property="og:description" content="MyBatis环境：  JDK1.8 MySQL 5.7 Maven 3.6.3 IDEA  回顾：  JDBC MySQL Java基础 Maven Junit  SSM框架：配置文件。最好的方式：看官网文档 1、简介1.1、什么是MyBatis  MyBatis 是一款优秀的持久层框架 它支持自定义 SQL、存储过程以及高级映射。 MyBatis 免除了几乎所有的 JDBC 代码以及设置参数和">
+<meta property="og:description" content="MyBatis环境：  JDK1.8 MySQL 5.7 Maven 3.6.3 IDEA  回顾：  JDBC MySQL Java基础 Maven Junit  SSM框架：配置文件。最好的方式：看官网文档">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/MyBatis%E7%9A%84logo.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/db.properties%E6%96%87%E4%BB%B6%E4%B8%AD%E6%A0%87%E7%AD%BE%E8%A6%81%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%86%99.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/logImpl.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/lazyLoadingEnabled.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/sqlSession%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/sqlSession%E5%8E%9F%E7%90%86.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/mybatis%E7%9A%84user%E8%A1%A8.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/%E6%B5%8B%E8%AF%95%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/%E6%97%A5%E5%BF%97%E5%B7%A5%E5%8E%82.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/%E6%97%A5%E5%BF%97%E4%BF%A1%E6%81%AF.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/log4j%E6%97%A5%E5%BF%971.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/log4j%E6%97%A5%E5%BF%972.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/PageHelper.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/mybatis%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/%E5%A4%9A%E5%AF%B9%E4%B8%80.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/%E5%AD%A6%E7%94%9F%E8%80%81%E5%B8%88%E8%A1%A8.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/foreach.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/%E8%A1%A8.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/%E4%B8%80%E7%BA%A7%E7%BC%93%E5%AD%981.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/%E4%B8%80%E7%BA%A7%E7%BC%93%E5%AD%982.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/%E6%89%8B%E5%8A%A8%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/%E7%BC%93%E5%AD%98%E5%8E%9F%E7%90%86.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/MyBatis%E7%9A%84logo.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/db.properties%E6%96%87%E4%BB%B6%E4%B8%AD%E6%A0%87%E7%AD%BE%E8%A6%81%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%86%99.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/logImpl.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/lazyLoadingEnabled.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/sqlSession%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/sqlSession%E5%8E%9F%E7%90%86.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/mybatis%E7%9A%84user%E8%A1%A8.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/%E6%B5%8B%E8%AF%95%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/%E6%97%A5%E5%BF%97%E5%B7%A5%E5%8E%82.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/%E6%97%A5%E5%BF%97%E4%BF%A1%E6%81%AF.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/log4j%E6%97%A5%E5%BF%971.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/log4j%E6%97%A5%E5%BF%972.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/PageHelper.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/mybatis%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/%E5%A4%9A%E5%AF%B9%E4%B8%80.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/%E5%AD%A6%E7%94%9F%E8%80%81%E5%B8%88%E8%A1%A8.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/foreach.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/%E8%A1%A8.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/%E4%B8%80%E7%BA%A7%E7%BC%93%E5%AD%981.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/%E4%B8%80%E7%BA%A7%E7%BC%93%E5%AD%982.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/%E6%89%8B%E5%8A%A8%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/%E7%BC%93%E5%AD%98%E5%8E%9F%E7%90%86.png">
 <meta property="article:published_time" content="2020-06-04T16:37:42.000Z">
-<meta property="article:modified_time" content="2020-06-15T06:32:43.702Z">
+<meta property="article:modified_time" content="2020-06-15T14:52:16.182Z">
 <meta property="article:author" content="Carey">
 <meta property="article:tag" content="框架">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cxxqing.github.io/blog/2020/06/05/MyBatis/MyBatis%E7%9A%84logo.png">
+<meta name="twitter:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/05/MyBatis/MyBatis%E7%9A%84logo.png">
 
 <link rel="canonical" href="https://cxxqing.github.io/blog/.com/2020/06/05/MyBatis/">
 
@@ -250,7 +250,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-15 14:32:43" itemprop="dateModified" datetime="2020-06-15T14:32:43+08:00">2020-06-15</time>
+                <time title="修改时间：2020-06-15 22:52:16" itemprop="dateModified" datetime="2020-06-15T22:52:16+08:00">2020-06-15</time>
               </span>
 
           <br>
@@ -294,7 +294,9 @@
 <li>Junit</li>
 </ul>
 <p>SSM框架：配置文件。最好的方式：看官网文档</p>
-<h2 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h2><h3 id="1-1、什么是MyBatis"><a href="#1-1、什么是MyBatis" class="headerlink" title="1.1、什么是MyBatis"></a>1.1、什么是MyBatis</h3><p><img src="/blog/2020/06/05/MyBatis/MyBatis%E7%9A%84logo.png" alt="image-20200605004511293"></p>
+<a id="more"></a>
+
+<h2 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h2><h3 id="1-1、什么是MyBatis"><a href="#1-1、什么是MyBatis" class="headerlink" title="1.1、什么是MyBatis"></a>1.1、什么是MyBatis</h3><p><img src="/blog/blog/.com/2020/06/05/MyBatis/MyBatis%E7%9A%84logo.png" alt="image-20200605004511293"></p>
 <ul>
 <li>MyBatis 是一款优秀的<strong>持久层框架</strong></li>
 <li>它支持自定义 SQL、存储过程以及高级映射。</li>
@@ -470,7 +472,7 @@
 <p>Mybatis默认的事务管理器就是 JDBC  ， 连接池 ： POOLED</p>
 <h3 id="3、属性（properties）"><a href="#3、属性（properties）" class="headerlink" title="3、属性（properties）"></a>3、属性（properties）</h3><p>我们可以通过properties属性来实现引用配置文件</p>
 <p>这些属性都是可外部配置且可动态替换的，既可以在典型的 Java 属性文件中配置，亦可通过 properties 元素的子元素来传递。【db.properties】</p>
-<p><img src="/blog/2020/06/05/MyBatis/db.properties%E6%96%87%E4%BB%B6%E4%B8%AD%E6%A0%87%E7%AD%BE%E8%A6%81%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%86%99.png" alt="image-20200606112442040"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/db.properties%E6%96%87%E4%BB%B6%E4%B8%AD%E6%A0%87%E7%AD%BE%E8%A6%81%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%86%99.png" alt="image-20200606112442040"></p>
 <p>编写一个配置文件</p>
 <p>db.properties</p>
 <figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">driver</span>=<span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line"><span class="attr">url</span>=<span class="string">jdbc:mysql://localhost:3306/mybatis?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8</span></span><br><span class="line"><span class="attr">username</span>=<span class="string">root</span></span><br><span class="line"><span class="attr">password</span>=<span class="string">123456</span></span><br></pre></td></tr></table></figure>
@@ -499,8 +501,8 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Alias</span>(<span class="string">"user"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="5、设置"><a href="#5、设置" class="headerlink" title="5、设置"></a>5、设置</h3><p>这是 MyBatis 中极为重要的调整设置，它们会改变 MyBatis 的运行时行为。 </p>
-<p><img src="/blog/2020/06/05/MyBatis/logImpl.png" alt="1569657659080"></p>
-<p><img src="/blog/2020/06/05/MyBatis/lazyLoadingEnabled.png" alt="1569657672791"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/logImpl.png" alt="1569657659080"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/lazyLoadingEnabled.png" alt="1569657672791"></p>
 <h3 id="6、其他配置"><a href="#6、其他配置" class="headerlink" title="6、其他配置"></a>6、其他配置</h3><ul>
 <li><a href="https://mybatis.org/mybatis-3/zh/configuration.html#typeHandlers" target="_blank" rel="noopener">typeHandlers（类型处理器）</a></li>
 <li><a href="https://mybatis.org/mybatis-3/zh/configuration.html#objectFactory" target="_blank" rel="noopener">objectFactory（对象工厂）</a></li>
@@ -531,7 +533,7 @@
 <li>接口和他的Mapper配置文件必须同名！</li>
 <li>接口和他的Mapper配置文件必须在同一个包下！</li>
 </ul>
-<h3 id="8、生命周期和作用域"><a href="#8、生命周期和作用域" class="headerlink" title="8、生命周期和作用域"></a>8、生命周期和作用域</h3><p><img src="/blog/2020/06/05/MyBatis/sqlSession%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B.png" alt="1569660357745"></p>
+<h3 id="8、生命周期和作用域"><a href="#8、生命周期和作用域" class="headerlink" title="8、生命周期和作用域"></a>8、生命周期和作用域</h3><p><img src="/blog/blog/.com/2020/06/05/MyBatis/sqlSession%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B.png" alt="1569660357745"></p>
 <p>生命周期，和作用域，是至关重要的，因为错误的使用会导致非常严重的<strong>并发问题</strong>。</p>
 <p><strong>SqlSessionFactoryBuilder：</strong></p>
 <ul>
@@ -551,15 +553,15 @@
 <li>SqlSession 的实例不是线程安全的，因此是不能被共享的，所以它的最佳的作用域是请求或方法作用域。</li>
 <li>用完之后需要赶紧关闭，否则资源被占用！</li>
 </ul>
-<p><img src="/blog/2020/06/05/MyBatis/sqlSession%E5%8E%9F%E7%90%86.png" alt="1569660737088"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/sqlSession%E5%8E%9F%E7%90%86.png" alt="1569660737088"></p>
 <p>这里面的每一个Mapper，就代表一个具体的业务！</p>
 <h2 id="5、解决属性名和字段名不一致的问题"><a href="#5、解决属性名和字段名不一致的问题" class="headerlink" title="5、解决属性名和字段名不一致的问题"></a>5、解决属性名和字段名不一致的问题</h2><h3 id="1、-问题"><a href="#1、-问题" class="headerlink" title="1、 问题"></a>1、 问题</h3><p>数据库中的字段</p>
-<p><img src="/blog/2020/06/05/MyBatis/mybatis%E7%9A%84user%E8%A1%A8.png" alt="1569660831076"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/mybatis%E7%9A%84user%E8%A1%A8.png" alt="1569660831076"></p>
 <p>新建一个项目，拷贝之前的，测试实体类字段不一致的情况</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>测试出现问题</p>
-<p><img src="/blog/2020/06/05/MyBatis/%E6%B5%8B%E8%AF%95%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98.png" alt="image-20200606155641666"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/%E6%B5%8B%E8%AF%95%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98.png" alt="image-20200606155641666"></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//    select * from mybatis.user where id = #&#123;id&#125;</span><br><span class="line">//类型处理器</span><br><span class="line">//    select id,name,pwd from mybatis.user where id = #&#123;id&#125;</span><br></pre></td></tr></table></figure>
 
 <p>解决方法：</p>
@@ -583,7 +585,7 @@
 <h2 id="6、日志"><a href="#6、日志" class="headerlink" title="6、日志"></a>6、日志</h2><h3 id="6-1、日志工厂"><a href="#6-1、日志工厂" class="headerlink" title="6.1、日志工厂"></a>6.1、日志工厂</h3><p>如果一个数据库操作，出现了异常，我们需要排错。日志就是最好的助手！</p>
 <p>曾经：sout 、debug</p>
 <p>现在：日志工厂！</p>
-<p><img src="/blog/2020/06/05/MyBatis/%E6%97%A5%E5%BF%97%E5%B7%A5%E5%8E%82.png" alt="1569892155104"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/%E6%97%A5%E5%BF%97%E5%B7%A5%E5%8E%82.png" alt="1569892155104"></p>
 <ul>
 <li>SLF4J </li>
 <li>LOG4J  【掌握】</li>
@@ -598,7 +600,7 @@
 <p>在mybatis核心配置文件中，配置我们的日志！</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">settings</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"logImpl"</span> <span class="attr">value</span>=<span class="string">"STDOUT_LOGGING"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/2020/06/05/MyBatis/%E6%97%A5%E5%BF%97%E4%BF%A1%E6%81%AF.png" alt="image-20200606165103799"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/%E6%97%A5%E5%BF%97%E4%BF%A1%E6%81%AF.png" alt="image-20200606165103799"></p>
 <h3 id="6-2、Log4j"><a href="#6-2、Log4j" class="headerlink" title="6.2、Log4j"></a>6.2、Log4j</h3><p>什么是Log4j？</p>
 <ul>
 <li>Log4j是<a href="https://baike.baidu.com/item/Apache/8512995" target="_blank" rel="noopener">Apache</a>的一个开源项目，通过使用Log4j，我们可以控制日志信息输送的目的地是<a href="https://baike.baidu.com/item/控制台/2438626" target="_blank" rel="noopener">控制台</a>、文件、<a href="https://baike.baidu.com/item/GUI" target="_blank" rel="noopener">GUI</a>组件</li>
@@ -619,8 +621,8 @@
 <li><p>Log4j的使用！，直接测试运行刚才的查询</p>
 </li>
 </ol>
-<p><img src="/blog/2020/06/05/MyBatis/log4j%E6%97%A5%E5%BF%971.png" alt="image-20200607092524719"></p>
-<p><img src="/blog/2020/06/05/MyBatis/log4j%E6%97%A5%E5%BF%972.png" alt="image-20200607092624057"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/log4j%E6%97%A5%E5%BF%971.png" alt="image-20200607092524719"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/log4j%E6%97%A5%E5%BF%972.png" alt="image-20200607092624057"></p>
 <p><strong>简单使用</strong></p>
 <ol>
 <li><p>在要使用Log4j 的类中，导入包  import org.apache.log4j.Logger;</p>
@@ -673,7 +675,7 @@
 
 </li>
 </ol>
-<h3 id="7-3、分页插件"><a href="#7-3、分页插件" class="headerlink" title="7.3、分页插件"></a>7.3、分页插件</h3><p><img src="/blog/2020/06/05/MyBatis/PageHelper.png" alt="image-20200607154746680"></p>
+<h3 id="7-3、分页插件"><a href="#7-3、分页插件" class="headerlink" title="7.3、分页插件"></a>7.3、分页插件</h3><p><img src="/blog/blog/.com/2020/06/05/MyBatis/PageHelper.png" alt="image-20200607154746680"></p>
 <p>需要使用的时候再去查文档看看，打好基础为主</p>
 <h2 id="8、使用注解开发"><a href="#8、使用注解开发" class="headerlink" title="8、使用注解开发"></a>8、使用注解开发</h2><h3 id="8-1、面向接口编程"><a href="#8-1、面向接口编程" class="headerlink" title="8.1、面向接口编程"></a>8.1、面向接口编程</h3><p>- 大家之前都学过面向对象编程，也学习过接口，但在真正的开发中，很多时候我们会选择面向接口编程<br>- <strong>根本原因 :  ==解耦== , 可拓展 , 提高复用 , 分层开发中 , 上层不用管具体的实现 , 大家都遵守共同的标准 , 使得开发变得容易 , 规范性更好</strong><br>- 在一个面向对象的系统中，系统的各种功能是由许许多多的不同对象协作完成的。在这种情况下，各个对象内部是如何实现自己的,对系统设计人员来讲就不那么重要了；<br>- 而各个对象之间的协作关系则成为系统设计的关键。小到不同类之间的通信，大到各模块之间的交互，在系统设计之初都是要着重考虑的，这也是系统设计的主要工作内容。面向接口编程就是指按照这种思想来编程。</p>
 <p><strong>关于接口的理解</strong></p>
@@ -692,9 +694,9 @@
 </ol>
 <p>本质：反射机制实现</p>
 <p>底层：动态代理！</p>
-<p><img src="/blog/2020/06/05/MyBatis/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86.png" alt="1569898830704"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86.png" alt="1569898830704"></p>
 <p><strong>Mybatis详细的执行流程！</strong></p>
-<p><img src="/blog/2020/06/05/MyBatis/mybatis%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png" alt="Temp"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/mybatis%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png" alt="Temp"></p>
 <h3 id="8-3、CRUD"><a href="#8-3、CRUD" class="headerlink" title="8.3、CRUD"></a>8.3、CRUD</h3><p>我们可以在工具类创建的时候实现自动提交事务！</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SqlSession  <span class="title">getSqlSession</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> sqlSessionFactory.openSession(<span class="keyword">true</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -747,13 +749,13 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@Data：无参构造，get、set、tostring、hashcode，equals</span><br><span class="line">@AllArgsConstructor     有参构造</span><br><span class="line">@NoArgsConstructor		无参构造</span><br><span class="line">@EqualsAndHashCode</span><br><span class="line">@ToString		toString方法</span><br><span class="line">@Getter      Getter方法</span><br><span class="line">@Setter		Setter方法</span><br></pre></td></tr></table></figure>
 
 <h2 id="10、多对一处理"><a href="#10、多对一处理" class="headerlink" title="10、多对一处理"></a>10、多对一处理</h2><p>多对一：</p>
-<p><img src="/blog/2020/06/05/MyBatis/%E5%A4%9A%E5%AF%B9%E4%B8%80.png" alt="1569909163944"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/%E5%A4%9A%E5%AF%B9%E4%B8%80.png" alt="1569909163944"></p>
 <ul>
 <li>多个学生，对应一个老师</li>
 <li>对于学生这边而言，  <strong>关联</strong> ..  多个学生，关联一个老师  【多对一】</li>
 <li>对于老师而言， <strong>集合</strong> ， 一个老师，有很多学生 【一对多】</li>
 </ul>
-<p><img src="/blog/2020/06/05/MyBatis/%E5%AD%A6%E7%94%9F%E8%80%81%E5%B8%88%E8%A1%A8.png" alt="image-20200608163314371"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/%E5%AD%A6%E7%94%9F%E8%80%81%E5%B8%88%E8%A1%A8.png" alt="image-20200608163314371"></p>
 <p>SQL：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`teacher`</span> (</span><br><span class="line">  <span class="string">`id`</span> <span class="built_in">INT</span>(<span class="number">10</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">  <span class="string">`name`</span> <span class="built_in">VARCHAR</span>(<span class="number">30</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span>,</span><br><span class="line">  PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>)</span><br><span class="line">) <span class="keyword">ENGINE</span>=<span class="keyword">INNODB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8;</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> teacher(<span class="string">`id`</span>, <span class="string">`name`</span>) <span class="keyword">VALUES</span> (<span class="number">1</span>, <span class="string">'秦老师'</span>); </span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`student`</span> (</span><br><span class="line">  <span class="string">`id`</span> <span class="built_in">INT</span>(<span class="number">10</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">  <span class="string">`name`</span> <span class="built_in">VARCHAR</span>(<span class="number">30</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span>,</span><br><span class="line">  <span class="string">`tid`</span> <span class="built_in">INT</span>(<span class="number">10</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span>,</span><br><span class="line">  PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>),</span><br><span class="line">  <span class="keyword">KEY</span> <span class="string">`fktid`</span> (<span class="string">`tid`</span>),</span><br><span class="line">  <span class="keyword">CONSTRAINT</span> <span class="string">`fktid`</span> <span class="keyword">FOREIGN</span> <span class="keyword">KEY</span> (<span class="string">`tid`</span>) <span class="keyword">REFERENCES</span> <span class="string">`teacher`</span> (<span class="string">`id`</span>)</span><br><span class="line">) <span class="keyword">ENGINE</span>=<span class="keyword">INNODB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`student`</span> (<span class="string">`id`</span>, <span class="string">`name`</span>, <span class="string">`tid`</span>) <span class="keyword">VALUES</span> (<span class="string">'1'</span>, <span class="string">'小明'</span>, <span class="string">'1'</span>); </span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`student`</span> (<span class="string">`id`</span>, <span class="string">`name`</span>, <span class="string">`tid`</span>) <span class="keyword">VALUES</span> (<span class="string">'2'</span>, <span class="string">'小红'</span>, <span class="string">'1'</span>); </span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`student`</span> (<span class="string">`id`</span>, <span class="string">`name`</span>, <span class="string">`tid`</span>) <span class="keyword">VALUES</span> (<span class="string">'3'</span>, <span class="string">'小张'</span>, <span class="string">'1'</span>); </span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`student`</span> (<span class="string">`id`</span>, <span class="string">`name`</span>, <span class="string">`tid`</span>) <span class="keyword">VALUES</span> (<span class="string">'4'</span>, <span class="string">'小李'</span>, <span class="string">'1'</span>); </span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`student`</span> (<span class="string">`id`</span>, <span class="string">`name`</span>, <span class="string">`tid`</span>) <span class="keyword">VALUES</span> (<span class="string">'5'</span>, <span class="string">'小王'</span>, <span class="string">'1'</span>);</span><br></pre></td></tr></table></figure>
 
@@ -866,8 +868,8 @@
 </ul>
 <h3 id="Foreach"><a href="#Foreach" class="headerlink" title="Foreach"></a>Foreach</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="keyword">user</span> <span class="keyword">where</span> <span class="number">1</span>=<span class="number">1</span> <span class="keyword">and</span> </span><br><span class="line"></span><br><span class="line">  &lt;foreach item=<span class="string">"id"</span> collection=<span class="string">"ids"</span></span><br><span class="line">      <span class="keyword">open</span>=<span class="string">"("</span> separator=<span class="string">"or"</span> <span class="keyword">close</span>=<span class="string">")"</span>&gt;</span><br><span class="line">        <span class="comment">#&#123;id&#125;</span></span><br><span class="line">  &lt;/foreach&gt;</span><br><span class="line"></span><br><span class="line">(<span class="keyword">id</span>=<span class="number">1</span> <span class="keyword">or</span> <span class="keyword">id</span>=<span class="number">2</span> <span class="keyword">or</span> <span class="keyword">id</span>=<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/2020/06/05/MyBatis/foreach.png" alt="1569979229205"></p>
-<p><img src="/blog/2020/06/05/MyBatis/%E8%A1%A8.png" alt></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/foreach.png" alt="1569979229205"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/%E8%A1%A8.png" alt></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">        select * from mybatis.blog where 1=1 and (id=1 or id = 2 or id=3)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">        我们现在传递一个万能的map ， 这map中可以存在一个集合！</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"queryBlogForeach"</span> <span class="attr">parameterType</span>=<span class="string">"map"</span> <span class="attr">resultType</span>=<span class="string">"blog"</span>&gt;</span></span><br><span class="line">    select * from mybatis.blog</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">where</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">"ids"</span> <span class="attr">item</span>=<span class="string">"id"</span> <span class="attr">open</span>=<span class="string">"and ("</span> <span class="attr">close</span>=<span class="string">")"</span> <span class="attr">separator</span>=<span class="string">"or"</span>&gt;</span> //注意and和(之间要加空格</span><br><span class="line">            id = #&#123;id&#125;</span><br><span class="line">        <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">where</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
@@ -926,18 +928,18 @@
 <li>测试在一个Sesion中查询两次相同记录</li>
 <li>查看日志输出</li>
 </ol>
-<p><img src="/blog/2020/06/05/MyBatis/%E4%B8%80%E7%BA%A7%E7%BC%93%E5%AD%981.png" alt="1569983650437"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/%E4%B8%80%E7%BA%A7%E7%BC%93%E5%AD%981.png" alt="1569983650437"></p>
 <p>缓存失效的情况：</p>
 <ol>
 <li><p>查询不同的东西</p>
 </li>
 <li><p>增删改操作，可能会改变原来的数据，所以必定会刷新缓存！</p>
-<p><img src="/blog/2020/06/05/MyBatis/%E4%B8%80%E7%BA%A7%E7%BC%93%E5%AD%982.png" alt="1569983952321"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/%E4%B8%80%E7%BA%A7%E7%BC%93%E5%AD%982.png" alt="1569983952321"></p>
 </li>
 <li><p>查询不同的Mapper.xml</p>
 </li>
 <li><p>手动清理缓存！</p>
-<p><img src="/blog/2020/06/05/MyBatis/%E6%89%8B%E5%8A%A8%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98.png" alt="1569984008824"></p>
+<p><img src="/blog/blog/.com/2020/06/05/MyBatis/%E6%89%8B%E5%8A%A8%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98.png" alt="1569984008824"></p>
 </li>
 </ol>
 <p>小结：一级缓存默认是开启的，只在一次SqlSession中有效，也就是拿到连接到关闭连接这个区间段！</p>
@@ -981,7 +983,7 @@
 <li>所有的数据都会先放在一级缓存中；</li>
 <li>只有当会话提交，或者关闭的时候，才会提交到二级缓冲中！</li>
 </ul>
-<h3 id="13-5、缓存原理"><a href="#13-5、缓存原理" class="headerlink" title="13.5、缓存原理"></a>13.5、缓存原理</h3><p><img src="/blog/2020/06/05/MyBatis/%E7%BC%93%E5%AD%98%E5%8E%9F%E7%90%86.png" alt="1569985541106"></p>
+<h3 id="13-5、缓存原理"><a href="#13-5、缓存原理" class="headerlink" title="13.5、缓存原理"></a>13.5、缓存原理</h3><p><img src="/blog/blog/.com/2020/06/05/MyBatis/%E7%BC%93%E5%AD%98%E5%8E%9F%E7%90%86.png" alt="1569985541106"></p>
 <h3 id="13-6、自定义缓存-ehcache"><a href="#13-6、自定义缓存-ehcache" class="headerlink" title="13.6、自定义缓存-ehcache"></a>13.6、自定义缓存-ehcache</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ehcache是一种广泛使用的开源Java分布式缓存。主要面向通用缓存</span><br></pre></td></tr></table></figure>
 
 <p>要在程序中使用ehcache，先要导包！</p>

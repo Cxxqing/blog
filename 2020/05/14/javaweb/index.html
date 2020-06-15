@@ -21,87 +21,87 @@
     var CONFIG = {"hostname":"cxxqing.github.io","root":"/blog/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Javaweb学习自：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV12J411M7Sj?p&#x3D;1     1、基本概念1.1、前言web开发：  web，网页的意思  静态web  html.css 提供给所有人看的数据始终不会发生变化！   动态web  提供给所有人看的数据始终会发生变化，每个人在不同的时间，不同的地点看到的信息各不相同 技术栈：Servlet&#x2F;JSP,AS">
+  <meta name="description" content="Javaweb学习自：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV12J411M7Sj?p&#x3D;1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Javaweb学习">
 <meta property="og:url" content="https://cxxqing.github.io/blog/.com/2020/05/14/javaweb/index.html">
 <meta property="og:site_name" content="Carey&#39;s Blog">
-<meta property="og:description" content="Javaweb学习自：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV12J411M7Sj?p&#x3D;1     1、基本概念1.1、前言web开发：  web，网页的意思  静态web  html.css 提供给所有人看的数据始终不会发生变化！   动态web  提供给所有人看的数据始终会发生变化，每个人在不同的时间，不同的地点看到的信息各不相同 技术栈：Servlet&#x2F;JSP,AS">
+<meta property="og:description" content="Javaweb学习自：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV12J411M7Sj?p&#x3D;1">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/image-20200515002613898.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/image-20200515001740921.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/image-20200515002307795.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/Tomcat-logo.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/Tomcat%E4%B8%8B%E8%BD%BD.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E8%A7%A3%E5%8E%8BTomcat%E5%AE%89%E8%A3%85%E5%8C%85.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/Tomcat%E6%96%87%E4%BB%B6%E5%A4%B9%E4%BD%9C%E7%94%A8.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8%E5%85%B3%E9%97%ADTomcat.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%96%87%E4%BB%B6.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E8%BF%87%E7%A8%8B.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85maven.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E6%B5%8B%E8%AF%95maven%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E5%88%9B%E5%BB%BAMavenWeb%E9%A1%B9%E7%9B%AE.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E7%BB%84id%E5%92%8C%E9%A1%B9%E7%9B%AE%E5%90%8D.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E9%80%89%E6%8B%A9maven%E7%B1%BB%E5%9E%8B%E5%92%8C%E4%BB%93%E5%BA%93.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/IDEA%E8%87%AA%E5%B8%A6maven.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/maven%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E6%A3%80%E6%9F%A5IDEA%E7%9A%84Maven%E9%85%8D%E7%BD%AE.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5%E6%BA%90%E7%A0%81.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9AMaven%E9%A1%B9%E7%9B%AE.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E5%B9%B2%E5%87%80Maven%E9%A1%B9%E7%9B%AE%E7%95%8C%E9%9D%A2.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/WEB-INF.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E6%A0%87%E8%AE%B0%E7%9B%AE%E5%BD%95%E5%8A%9F%E8%83%BD.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E9%85%8D%E7%BD%AE.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E5%9C%A8%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E4%B8%AD%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%BB%99%E7%9B%AE%E5%BD%95%E6%A0%87%E8%AE%B0%E7%B1%BB%E5%9E%8B.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/target.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0%E9%85%8D%E7%BD%AE.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E6%9F%A5%E7%9C%8B%E9%80%89%E6%8B%A9%E9%85%8D%E7%BD%AE.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E9%80%89%E6%8B%A9Tomcat.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0Artifact%E8%A7%A3%E5%86%B3%E8%AD%A6%E5%91%8A.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E8%B7%AF%E5%BE%84%E8%AE%BE%E7%BD%AE.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8Tomcat.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E9%BB%98%E8%AE%A4%E7%9A%84index.jsp%E7%9A%84%E5%86%85%E5%AE%B9.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/Maven%E5%86%85%E5%AE%B9%E4%BB%8B%E7%BB%8D.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/pom.xml%E9%85%8D%E7%BD%AE%E5%90%8E%E5%AF%BC%E5%85%A5jar%E7%A4%BA%E4%BE%8B.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%E6%A0%91.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/Maven%E4%B8%ADjar%E5%8C%85%E7%9A%84%E8%81%94%E7%B3%BB%E5%85%B3%E8%81%94%E5%9B%BE.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E5%85%A8%E5%B1%80%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E5%85%A5%E5%8F%A3.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E9%85%8D%E7%BD%AE%E5%85%A8%E5%B1%80%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E9%BB%98%E8%AE%A4%E7%9A%84web.xml%E7%89%88%E6%9C%AC.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E6%90%9C%E7%B4%A2Java%E5%8C%85.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E6%9F%A5%E6%89%BEservlet%E7%9A%84jar%E5%8C%85.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84jar%E5%8C%85%E7%89%88%E6%9C%AC.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/jar%E5%92%8CMaven%E4%BE%9D%E8%B5%96%E5%8F%AF%E9%80%89.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E7%9B%B4%E6%8E%A5%E7%BB%A7%E6%89%BFHttpServlet.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/Servlet%E5%8E%9F%E7%90%86.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%92%8C%E9%87%8D%E5%AE%9A%E5%90%91%E5%8C%BA%E5%88%AB.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E9%87%8D%E5%AE%9A%E5%90%91.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%92%8C%E9%87%8D%E5%AE%9A%E5%90%91%E5%8C%BA%E5%88%AB-.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/HttpServletRequest%E6%96%B9%E6%B3%951.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/HttpServletRequest%E6%96%B9%E6%B3%952.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E8%8E%B7%E5%8F%96%E5%89%8D%E7%AB%AF%E4%BC%A0%E9%80%92%E7%9A%84%E5%8F%82%E6%95%B0.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/cookie.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/Session.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/Session%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/ServletContext.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/IDEA%E7%9A%84tomcat%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/jsp.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/JSP%E5%8E%9F%E7%90%86.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/JSTL%E6%A0%B8%E5%BF%83%E6%A0%87%E7%AD%BE.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E6%97%A9%E4%BA%9B%E5%B9%B4%E6%9E%B6%E6%9E%84.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/MVC%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/%E8%BF%87%E6%BB%A4%E5%99%A8.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/Filter%E5%AF%BC%E5%8C%85%E4%B8%8D%E8%A6%81%E9%94%99.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/JDBC%E5%8E%9F%E7%90%86.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/IDEA%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/@Test%E6%B5%8B%E8%AF%95%E6%88%90%E5%8A%9F.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/@Test%E6%B5%8B%E8%AF%95%E5%A4%B1%E8%B4%A5.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/image-20200515002613898.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/image-20200515001740921.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/image-20200515002307795.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/Tomcat-logo.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/Tomcat%E4%B8%8B%E8%BD%BD.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E8%A7%A3%E5%8E%8BTomcat%E5%AE%89%E8%A3%85%E5%8C%85.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/Tomcat%E6%96%87%E4%BB%B6%E5%A4%B9%E4%BD%9C%E7%94%A8.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8%E5%85%B3%E9%97%ADTomcat.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%96%87%E4%BB%B6.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E8%BF%87%E7%A8%8B.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85maven.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E6%B5%8B%E8%AF%95maven%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E5%88%9B%E5%BB%BAMavenWeb%E9%A1%B9%E7%9B%AE.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E7%BB%84id%E5%92%8C%E9%A1%B9%E7%9B%AE%E5%90%8D.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E9%80%89%E6%8B%A9maven%E7%B1%BB%E5%9E%8B%E5%92%8C%E4%BB%93%E5%BA%93.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/IDEA%E8%87%AA%E5%B8%A6maven.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/maven%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E6%A3%80%E6%9F%A5IDEA%E7%9A%84Maven%E9%85%8D%E7%BD%AE.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5%E6%BA%90%E7%A0%81.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9AMaven%E9%A1%B9%E7%9B%AE.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E5%B9%B2%E5%87%80Maven%E9%A1%B9%E7%9B%AE%E7%95%8C%E9%9D%A2.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/WEB-INF.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E6%A0%87%E8%AE%B0%E7%9B%AE%E5%BD%95%E5%8A%9F%E8%83%BD.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E9%85%8D%E7%BD%AE.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E5%9C%A8%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E4%B8%AD%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%BB%99%E7%9B%AE%E5%BD%95%E6%A0%87%E8%AE%B0%E7%B1%BB%E5%9E%8B.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/target.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0%E9%85%8D%E7%BD%AE.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E6%9F%A5%E7%9C%8B%E9%80%89%E6%8B%A9%E9%85%8D%E7%BD%AE.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E9%80%89%E6%8B%A9Tomcat.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0Artifact%E8%A7%A3%E5%86%B3%E8%AD%A6%E5%91%8A.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E8%B7%AF%E5%BE%84%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8Tomcat.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E9%BB%98%E8%AE%A4%E7%9A%84index.jsp%E7%9A%84%E5%86%85%E5%AE%B9.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/Maven%E5%86%85%E5%AE%B9%E4%BB%8B%E7%BB%8D.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/pom.xml%E9%85%8D%E7%BD%AE%E5%90%8E%E5%AF%BC%E5%85%A5jar%E7%A4%BA%E4%BE%8B.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%E6%A0%91.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/Maven%E4%B8%ADjar%E5%8C%85%E7%9A%84%E8%81%94%E7%B3%BB%E5%85%B3%E8%81%94%E5%9B%BE.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E5%85%A8%E5%B1%80%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E5%85%A5%E5%8F%A3.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E9%85%8D%E7%BD%AE%E5%85%A8%E5%B1%80%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E9%BB%98%E8%AE%A4%E7%9A%84web.xml%E7%89%88%E6%9C%AC.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E6%90%9C%E7%B4%A2Java%E5%8C%85.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E6%9F%A5%E6%89%BEservlet%E7%9A%84jar%E5%8C%85.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84jar%E5%8C%85%E7%89%88%E6%9C%AC.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/jar%E5%92%8CMaven%E4%BE%9D%E8%B5%96%E5%8F%AF%E9%80%89.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E7%9B%B4%E6%8E%A5%E7%BB%A7%E6%89%BFHttpServlet.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/Servlet%E5%8E%9F%E7%90%86.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%92%8C%E9%87%8D%E5%AE%9A%E5%90%91%E5%8C%BA%E5%88%AB.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E9%87%8D%E5%AE%9A%E5%90%91.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%92%8C%E9%87%8D%E5%AE%9A%E5%90%91%E5%8C%BA%E5%88%AB-.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/HttpServletRequest%E6%96%B9%E6%B3%951.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/HttpServletRequest%E6%96%B9%E6%B3%952.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E8%8E%B7%E5%8F%96%E5%89%8D%E7%AB%AF%E4%BC%A0%E9%80%92%E7%9A%84%E5%8F%82%E6%95%B0.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/cookie.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/Session.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/Session%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/ServletContext.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/IDEA%E7%9A%84tomcat%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/jsp.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/JSP%E5%8E%9F%E7%90%86.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/JSTL%E6%A0%B8%E5%BF%83%E6%A0%87%E7%AD%BE.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E6%97%A9%E4%BA%9B%E5%B9%B4%E6%9E%B6%E6%9E%84.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/MVC%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/%E8%BF%87%E6%BB%A4%E5%99%A8.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/Filter%E5%AF%BC%E5%8C%85%E4%B8%8D%E8%A6%81%E9%94%99.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/JDBC%E5%8E%9F%E7%90%86.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/IDEA%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/@Test%E6%B5%8B%E8%AF%95%E6%88%90%E5%8A%9F.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/@Test%E6%B5%8B%E8%AF%95%E5%A4%B1%E8%B4%A5.png">
 <meta property="article:published_time" content="2020-05-14T13:50:15.000Z">
-<meta property="article:modified_time" content="2020-05-31T07:25:04.480Z">
+<meta property="article:modified_time" content="2020-06-15T14:53:09.660Z">
 <meta property="article:author" content="Carey">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cxxqing.github.io/blog/2020/05/14/javaweb/image-20200515002613898.png">
+<meta name="twitter:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/14/javaweb/image-20200515002613898.png">
 
 <link rel="canonical" href="https://cxxqing.github.io/blog/.com/2020/05/14/javaweb/">
 
@@ -295,7 +295,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-31 15:25:04" itemprop="dateModified" datetime="2020-05-31T15:25:04+08:00">2020-05-31</time>
+                <time title="修改时间：2020-06-15 22:53:09" itemprop="dateModified" datetime="2020-06-15T22:53:09+08:00">2020-06-15</time>
               </span>
 
           <br>
@@ -324,6 +324,8 @@
 
       
         <h2 id="Javaweb"><a href="#Javaweb" class="headerlink" title="Javaweb"></a>Javaweb</h2><p>学习自：<a href="https://www.bilibili.com/video/BV12J411M7Sj?p=1" target="_blank" rel="noopener">https://www.bilibili.com/video/BV12J411M7Sj?p=1</a>    </p>
+<a id="more"></a>
+
 <h3 id="1、基本概念"><a href="#1、基本概念" class="headerlink" title="1、基本概念"></a>1、基本概念</h3><h4 id="1-1、前言"><a href="#1-1、前言" class="headerlink" title="1.1、前言"></a>1.1、前言</h4><p>web开发：</p>
 <ul>
 <li><p>web，网页的意思</p>
@@ -365,7 +367,7 @@
 </ul>
 <h4 id="1-3、静态web"><a href="#1-3、静态web" class="headerlink" title="1.3、静态web"></a>1.3、静态web</h4><ul>
 <li><p>*.htm,*.html,这些都是网页的后缀，如果服务器上一直存在这些东西，我们就可以直接进行读取，通络；</p>
-<p><img src="/blog/2020/05/14/javaweb/image-20200515002613898.png" alt="image-20200515002613898"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/image-20200515002613898.png" alt="image-20200515002613898"></p>
 </li>
 <li><p>静态web存在的缺点</p>
 <ul>
@@ -380,7 +382,7 @@
 </li>
 </ul>
 <h4 id="1-4、动态web"><a href="#1-4、动态web" class="headerlink" title="1.4、动态web"></a>1.4、动态web</h4><p>页面会动态展示：“web的页面展示效果因人而异</p>
-<p><img src="/blog/2020/05/14/javaweb/image-20200515001740921.png" alt="image-20200515001740921"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/image-20200515001740921.png" alt="image-20200515001740921"></p>
 <p>缺点：</p>
 <ul>
 <li>加入服务器的动态web资源出现了错误，我们需要重新编写我们的<strong>后台程序</strong>，重新发布<ul>
@@ -393,7 +395,7 @@
 <li><p>Web页面可以动态更新，所以用户看到都不是同一个页面</p>
 </li>
 <li><p>它可以与数据库交互(数据持久化：注册，商品信息，用户信息…..)</p>
-<p><img src="/blog/2020/05/14/javaweb/image-20200515002307795.png" alt="image-20200515002307795"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/image-20200515002307795.png" alt="image-20200515002307795"></p>
 </li>
 </ul>
 <h3 id="2、web服务器"><a href="#2、web服务器" class="headerlink" title="2、web服务器"></a>2、web服务器</h3><h4 id="2-1、技术讲解"><a href="#2-1、技术讲解" class="headerlink" title="2.1、技术讲解"></a>2.1、技术讲解</h4><p><strong>ASP:</strong></p>
@@ -423,7 +425,7 @@
 <p><strong>IIS</strong> </p>
 <p>微软的;ASP…Windows自带</p>
 <p><strong>Tomcat</strong></p>
-<p><img src="/blog/2020/05/14/javaweb/Tomcat-logo.png" alt="image-20200522093402530"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/Tomcat-logo.png" alt="image-20200522093402530"></p>
 <p>Tomcat是Apache 软件基金会（Apache Software Foundation）的Jakarta 项目中的一个核心项目，最新的Servlet和JSP规范总是能在Tomcat中得到体现，因为Tomcat 技术先进、性能稳定，而且<strong>免费</strong>，因而深受Java 爱好者的喜爱并得到了部分软件开发商的认可，成为目前比较流行的Web 应用服务器。</p>
 <p>Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于轻量级应用<a href="https://baike.baidu.com/item/服务器" target="_blank" rel="noopener">服务器</a>，在中小型系统和并发访问用户不是很多的场合下被普遍使用，是开发和调试JSP 程序的首选。对于一个初学者来说，它是最佳的选择</p>
 <p>Tomcat 实际上运行JSP 页面和Servlet。Tomcat最新版本为<strong>10.0.0-M4。</strong></p>
@@ -434,18 +436,18 @@
 <p>2、了解配置文件及目录结构</p>
 <p>3、这个东西的作用</p>
 <h3 id="3、Tomcat"><a href="#3、Tomcat" class="headerlink" title="3、Tomcat"></a>3、Tomcat</h3><h4 id="3-1、安装Tomcat"><a href="#3-1、安装Tomcat" class="headerlink" title="3.1、安装Tomcat"></a>3.1、安装Tomcat</h4><p> Tomcat官网：<a href="https://tomcat.apache.org/" target="_blank" rel="noopener">https://tomcat.apache.org/</a></p>
-<p><img src="/blog/2020/05/14/javaweb/Tomcat%E4%B8%8B%E8%BD%BD.png" alt="image-20200522094350611"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E8%A7%A3%E5%8E%8BTomcat%E5%AE%89%E8%A3%85%E5%8C%85.png" alt="image-20200522100420201"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/Tomcat%E4%B8%8B%E8%BD%BD.png" alt="image-20200522094350611"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%A7%A3%E5%8E%8BTomcat%E5%AE%89%E8%A3%85%E5%8C%85.png" alt="image-20200522100420201"></p>
 <h4 id="3-2、Tomcat启动和配置"><a href="#3-2、Tomcat启动和配置" class="headerlink" title="3.2、Tomcat启动和配置"></a>3.2、Tomcat启动和配置</h4><p>文件夹作用：</p>
-<p><img src="/blog/2020/05/14/javaweb/Tomcat%E6%96%87%E4%BB%B6%E5%A4%B9%E4%BD%9C%E7%94%A8.png" alt="image-20200522101352070"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/Tomcat%E6%96%87%E4%BB%B6%E5%A4%B9%E4%BD%9C%E7%94%A8.png" alt="image-20200522101352070"></p>
 <p><strong>启动，关闭Tomcat</strong></p>
-<p><img src="/blog/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8%E5%85%B3%E9%97%ADTomcat.png" alt="image-20200522102718557"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8%E5%85%B3%E9%97%ADTomcat.png" alt="image-20200522102718557"></p>
 <p>访问测试：<a href="http://localhost:8080/" target="_blank" rel="noopener">http://localhost:8080/</a></p>
 <p>可能遇到的问题：</p>
 <p>1、java环境变量没有配置</p>
 <p>2、闪退问题：需要配置兼容性</p>
 <p>3、乱码问题：配置文件中设置</p>
-<h4 id="3-3、配置"><a href="#3-3、配置" class="headerlink" title="3.3、配置"></a>3.3、配置</h4><p><img src="/blog/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%96%87%E4%BB%B6.png" alt="image-20200522120749015"></p>
+<h4 id="3-3、配置"><a href="#3-3、配置" class="headerlink" title="3.3、配置"></a>3.3、配置</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%96%87%E4%BB%B6.png" alt="image-20200522120749015"></p>
 <p>可以配置启动的端口号</p>
 <ul>
 <li>tomcat的默认端口号为8080</li>
@@ -473,7 +475,7 @@
 <ul>
 <li>没有，去DNS服务器找，找到的话就返回，找不到就返回找不到；</li>
 </ul>
-<p><img src="/blog/2020/05/14/javaweb/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E8%BF%87%E7%A8%8B.png" alt="image-20200522123410354"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E8%BF%87%E7%A8%8B.png" alt="image-20200522123410354"></p>
 <h4 id="3-4、发布一个web网站"><a href="#3-4、发布一个web网站" class="headerlink" title="3.4、发布一个web网站"></a>3.4、发布一个web网站</h4><p>不会就先模仿</p>
 <ul>
 <li>将自己写的网站，放到服务器(Tomcat)中指定的web应用的文件夹(webapps)下，就可以访问了</li>
@@ -563,7 +565,7 @@
 </ul>
 <p>Maven会规定好你该如何去编写我们的Java代码，必须要按照这个规范来；</p>
 <h4 id="5-2、下载安装Maven"><a href="#5-2、下载安装Maven" class="headerlink" title="5.2、下载安装Maven"></a>5.2、下载安装Maven</h4><p>官网：<a href="https://maven.apache.org/" target="_blank" rel="noopener">https://maven.apache.org/</a></p>
-<p><img src="/blog/2020/05/14/javaweb/%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85maven.png" alt="image-20200522213953483"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85maven.png" alt="image-20200522213953483"></p>
 <p>下载完成后，解压即可；</p>
 <h4 id="5-3、配置环境变量"><a href="#5-3、配置环境变量" class="headerlink" title="5.3、配置环境变量"></a>5.3、配置环境变量</h4><p>在我们的系统环境变量中</p>
 <p>配置如下配置：</p>
@@ -572,7 +574,7 @@
 <li>MAVEN_HOME         maven的目录</li>
 <li>在系统的path中配置    %MAVEN_HOME%\bin</li>
 </ul>
-<p><img src="/blog/2020/05/14/javaweb/%E6%B5%8B%E8%AF%95maven%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png" alt="image-20200522220445894"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%B5%8B%E8%AF%95maven%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png" alt="image-20200522220445894"></p>
 <p>测试maven是否安装成功，保证必须配置完毕！</p>
 <h4 id="5-4、阿里云镜像"><a href="#5-4、阿里云镜像" class="headerlink" title="5.4、阿里云镜像"></a>5.4、阿里云镜像</h4><ul>
 <li>镜像：mirrors<ul>
@@ -589,65 +591,65 @@
 
 <h4 id="5-6、在IDEA中使用Maven"><a href="#5-6、在IDEA中使用Maven" class="headerlink" title="5.6、在IDEA中使用Maven"></a>5.6、在IDEA中使用Maven</h4><p>1.启动IDEA</p>
 <p>2.创建一个MavenWeb项目</p>
-<p><img src="/blog/2020/05/14/javaweb/%E5%88%9B%E5%BB%BAMavenWeb%E9%A1%B9%E7%9B%AE.png" alt="image-20200522223156611"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E7%BB%84id%E5%92%8C%E9%A1%B9%E7%9B%AE%E5%90%8D.png" alt="image-20200522223407655"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E9%80%89%E6%8B%A9maven%E7%B1%BB%E5%9E%8B%E5%92%8C%E4%BB%93%E5%BA%93.png" alt="image-20200522224000978"></p>
-<p><img src="/blog/2020/05/14/javaweb/IDEA%E8%87%AA%E5%B8%A6maven.png" alt="image-20200522223842283"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%88%9B%E5%BB%BAMavenWeb%E9%A1%B9%E7%9B%AE.png" alt="image-20200522223156611"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E7%BB%84id%E5%92%8C%E9%A1%B9%E7%9B%AE%E5%90%8D.png" alt="image-20200522223407655"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%80%89%E6%8B%A9maven%E7%B1%BB%E5%9E%8B%E5%92%8C%E4%BB%93%E5%BA%93.png" alt="image-20200522224000978"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/IDEA%E8%87%AA%E5%B8%A6maven.png" alt="image-20200522223842283"></p>
 <p>3.等待项目初始化完毕    </p>
-<p><img src="/blog/2020/05/14/javaweb/maven%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png" alt="image-20200522224912953"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/maven%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png" alt="image-20200522224912953"></p>
 <p>4.观察maven仓库中多了什么东西？</p>
 <p>5.IDEA中的Maven设置</p>
 <p>IDEA项目配置成功后，看一眼Maven配置</p>
-<p><img src="/blog/2020/05/14/javaweb/%E6%A3%80%E6%9F%A5IDEA%E7%9A%84Maven%E9%85%8D%E7%BD%AE.png" alt="image-20200523001345121"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5%E6%BA%90%E7%A0%81.png" alt="image-20200523001539992"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%A3%80%E6%9F%A5IDEA%E7%9A%84Maven%E9%85%8D%E7%BD%AE.png" alt="image-20200523001345121"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5%E6%BA%90%E7%A0%81.png" alt="image-20200523001539992"></p>
 <p>6.到这里，Maven在IDEA中的配置和使用就OK了！</p>
-<h4 id="5-7、创建一个普通的Maven项目"><a href="#5-7、创建一个普通的Maven项目" class="headerlink" title="5.7、创建一个普通的Maven项目"></a>5.7、创建一个普通的Maven项目</h4><p><img src="/blog/2020/05/14/javaweb/%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9AMaven%E9%A1%B9%E7%9B%AE.png" alt="image-20200523002048926"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E5%B9%B2%E5%87%80Maven%E9%A1%B9%E7%9B%AE%E7%95%8C%E9%9D%A2.png" alt="image-20200523002836004"></p>
+<h4 id="5-7、创建一个普通的Maven项目"><a href="#5-7、创建一个普通的Maven项目" class="headerlink" title="5.7、创建一个普通的Maven项目"></a>5.7、创建一个普通的Maven项目</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9AMaven%E9%A1%B9%E7%9B%AE.png" alt="image-20200523002048926"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%B9%B2%E5%87%80Maven%E9%A1%B9%E7%9B%AE%E7%95%8C%E9%9D%A2.png" alt="image-20200523002836004"></p>
 <p>下面这个只有在Web应用下才会有！</p>
-<p><img src="/blog/2020/05/14/javaweb/WEB-INF.png" alt="image-20200523003159794"></p>
-<h4 id="5-8、标记文件夹功能"><a href="#5-8、标记文件夹功能" class="headerlink" title="5.8、标记文件夹功能"></a>5.8、标记文件夹功能</h4><p><img src="/blog/2020/05/14/javaweb/%E6%A0%87%E8%AE%B0%E7%9B%AE%E5%BD%95%E5%8A%9F%E8%83%BD.png" alt="image-20200523004313123"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E9%85%8D%E7%BD%AE.png" alt="image-20200523004720479"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E5%9C%A8%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E4%B8%AD%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%BB%99%E7%9B%AE%E5%BD%95%E6%A0%87%E8%AE%B0%E7%B1%BB%E5%9E%8B.png" alt="image-20200523004851461"></p>
-<p><img src="/blog/2020/05/14/javaweb/target.png" alt="image-20200523005028198"></p>
-<h4 id="5-9、在IDEA中配置Tomcat"><a href="#5-9、在IDEA中配置Tomcat" class="headerlink" title="5.9、在IDEA中配置Tomcat"></a>5.9、在IDEA中配置Tomcat</h4><p><img src="/blog/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0%E9%85%8D%E7%BD%AE.png" alt="image-20200523005358175"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E6%9F%A5%E7%9C%8B%E9%80%89%E6%8B%A9%E9%85%8D%E7%BD%AE.png" alt="image-20200523005635890"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E9%80%89%E6%8B%A9Tomcat.png" alt="image-20200523010053534"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="image-20200523011121914"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/WEB-INF.png" alt="image-20200523003159794"></p>
+<h4 id="5-8、标记文件夹功能"><a href="#5-8、标记文件夹功能" class="headerlink" title="5.8、标记文件夹功能"></a>5.8、标记文件夹功能</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%A0%87%E8%AE%B0%E7%9B%AE%E5%BD%95%E5%8A%9F%E8%83%BD.png" alt="image-20200523004313123"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E9%85%8D%E7%BD%AE.png" alt="image-20200523004720479"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%9C%A8%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E4%B8%AD%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%BB%99%E7%9B%AE%E5%BD%95%E6%A0%87%E8%AE%B0%E7%B1%BB%E5%9E%8B.png" alt="image-20200523004851461"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/target.png" alt="image-20200523005028198"></p>
+<h4 id="5-9、在IDEA中配置Tomcat"><a href="#5-9、在IDEA中配置Tomcat" class="headerlink" title="5.9、在IDEA中配置Tomcat"></a>5.9、在IDEA中配置Tomcat</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0%E9%85%8D%E7%BD%AE.png" alt="image-20200523005358175"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%9F%A5%E7%9C%8B%E9%80%89%E6%8B%A9%E9%85%8D%E7%BD%AE.png" alt="image-20200523005635890"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%80%89%E6%8B%A9Tomcat.png" alt="image-20200523010053534"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="image-20200523011121914"></p>
 <p>解决警告问题</p>
 <p>必须要的配置：<strong>为什么会有这个问题：我们访问一个网站，需要制定一个文件夹名字；</strong></p>
-<p><img src="/blog/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0Artifact%E8%A7%A3%E5%86%B3%E8%AD%A6%E5%91%8A.png" alt="image-20200523011503518"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E8%B7%AF%E5%BE%84%E8%AE%BE%E7%BD%AE.png" alt="image-20200523011829379"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8Tomcat.png" alt="image-20200523011934034"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E9%BB%98%E8%AE%A4%E7%9A%84index.jsp%E7%9A%84%E5%86%85%E5%AE%B9.png" alt="image-20200523012356070"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0Artifact%E8%A7%A3%E5%86%B3%E8%AD%A6%E5%91%8A.png" alt="image-20200523011503518"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E8%B7%AF%E5%BE%84%E8%AE%BE%E7%BD%AE.png" alt="image-20200523011829379"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8Tomcat.png" alt="image-20200523011934034"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E9%BB%98%E8%AE%A4%E7%9A%84index.jsp%E7%9A%84%E5%86%85%E5%AE%B9.png" alt="image-20200523012356070"></p>
 <h4 id="5-10、pom文件"><a href="#5-10、pom文件" class="headerlink" title="5.10、pom文件"></a>5.10、pom文件</h4><p>pom.xml是Maven的核心配置文件</p>
-<p><img src="/blog/2020/05/14/javaweb/Maven%E5%86%85%E5%AE%B9%E4%BB%8B%E7%BB%8D.png" alt="image-20200523013103579"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/Maven%E5%86%85%E5%AE%B9%E4%BB%8B%E7%BB%8D.png" alt="image-20200523013103579"></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--Maven版本和头文件--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span> <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--这里就是我们刚才配置的GAV--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.carey<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>javaweb-01-maven<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!--Package：项目的打包方式</span></span><br><span class="line"><span class="comment">  jar：java应用</span></span><br><span class="line"><span class="comment">  war：Javaweb应用</span></span><br><span class="line"><span class="comment">  --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>war<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--配置--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--项目的默认构建编码--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--编码版本--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--项目依赖--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--具体依赖的jar包配置文件--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.11<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--项目构建用的东西--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">finalName</span>&gt;</span>javaweb-01-maven<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginManagement</span>&gt;</span><span class="comment">&lt;!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-clean-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-resources-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.0.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.8.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-surefire-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.22.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-war-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-install-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.5.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-deploy-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.8.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginManagement</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/2020/05/14/javaweb/pom.xml%E9%85%8D%E7%BD%AE%E5%90%8E%E5%AF%BC%E5%85%A5jar%E7%A4%BA%E4%BE%8B.png" alt="image-20200523015623291"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/pom.xml%E9%85%8D%E7%BD%AE%E5%90%8E%E5%AF%BC%E5%85%A5jar%E7%A4%BA%E4%BE%8B.png" alt="image-20200523015623291"></p>
 <p>maven由于它的约定大于配置，我们之后可能遇到我们写的配置文件，无法被导出或者生效的问题，解决方案：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--在build中配置resources，来防止我们资源导出失败的问题--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">excludes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">excludes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>false<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>false<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="5-11、IDEA操作"><a href="#5-11、IDEA操作" class="headerlink" title="5.11、IDEA操作"></a>5.11、IDEA操作</h4><p><img src="/blog/2020/05/14/javaweb/%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%E6%A0%91.png" alt="image-20200523021318428"></p>
-<p><img src="/blog/2020/05/14/javaweb/Maven%E4%B8%ADjar%E5%8C%85%E7%9A%84%E8%81%94%E7%B3%BB%E5%85%B3%E8%81%94%E5%9B%BE.png" alt="image-20200523021221135"></p>
+<h4 id="5-11、IDEA操作"><a href="#5-11、IDEA操作" class="headerlink" title="5.11、IDEA操作"></a>5.11、IDEA操作</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%E6%A0%91.png" alt="image-20200523021318428"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/Maven%E4%B8%ADjar%E5%8C%85%E7%9A%84%E8%81%94%E7%B3%BB%E5%85%B3%E8%81%94%E5%9B%BE.png" alt="image-20200523021221135"></p>
 <h4 id="5-12、解决遇到的问题"><a href="#5-12、解决遇到的问题" class="headerlink" title="5.12、解决遇到的问题"></a>5.12、解决遇到的问题</h4><p>1.Maven 3.6.2</p>
 <p>解决方法：IDEA版本用高级点或者降级Maven为3.6.1</p>
 <p>2.Tomcat闪退</p>
 <p>3.IDEA中每次都要重复配置Maven</p>
 <p>在IDEA中的全局默认配置中去配置</p>
-<p><img src="/blog/2020/05/14/javaweb/%E5%85%A8%E5%B1%80%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E5%85%A5%E5%8F%A3.png" alt="image-20200523153718385"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E9%85%8D%E7%BD%AE%E5%85%A8%E5%B1%80%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE.png" alt="image-20200523154009316"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%85%A8%E5%B1%80%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E5%85%A5%E5%8F%A3.png" alt="image-20200523153718385"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%85%8D%E7%BD%AE%E5%85%A8%E5%B1%80%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE.png" alt="image-20200523154009316"></p>
 <p>4.Maven项目中Tomcat无法配置</p>
 <p>5.maven默认web项目中的web.xml版本问题</p>
-<p><img src="/blog/2020/05/14/javaweb/%E9%BB%98%E8%AE%A4%E7%9A%84web.xml%E7%89%88%E6%9C%AC.png" alt="image-20200523154912626"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%BB%98%E8%AE%A4%E7%9A%84web.xml%E7%89%88%E6%9C%AC.png" alt="image-20200523154912626"></p>
 <p>6.替换为webapp4.0版本和tomcat一致</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">web-app</span> <span class="attr">xmlns</span>=<span class="string">"http://xmlns.jcp.org/xml/ns/javaee"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://xmlns.jcp.org/xml/ns/javaee</span></span></span><br><span class="line"><span class="tag"><span class="string">                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">version</span>=<span class="string">"4.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">metadata-complete</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">web-app</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>7.Maven仓库的使用</p>
 <p>地址：<a href="https://mvnrepository.com/" target="_blank" rel="noopener">https://mvnrepository.com/</a></p>
-<p><img src="/blog/2020/05/14/javaweb/%E6%90%9C%E7%B4%A2Java%E5%8C%85.png" alt="image-20200523155823185"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E6%9F%A5%E6%89%BEservlet%E7%9A%84jar%E5%8C%85.png" alt="image-20200523160040910"></p>
-<p><img src="/blog/2020/05/14/javaweb/%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84jar%E5%8C%85%E7%89%88%E6%9C%AC.png" alt="image-20200523160200025"></p>
-<p><img src="/blog/2020/05/14/javaweb/jar%E5%92%8CMaven%E4%BE%9D%E8%B5%96%E5%8F%AF%E9%80%89.png" alt="image-20200523160321856"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%90%9C%E7%B4%A2Java%E5%8C%85.png" alt="image-20200523155823185"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%9F%A5%E6%89%BEservlet%E7%9A%84jar%E5%8C%85.png" alt="image-20200523160040910"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84jar%E5%8C%85%E7%89%88%E6%9C%AC.png" alt="image-20200523160200025"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/jar%E5%92%8CMaven%E4%BE%9D%E8%B5%96%E5%8F%AF%E9%80%89.png" alt="image-20200523160321856"></p>
 <h3 id="6、Servlet"><a href="#6、Servlet" class="headerlink" title="6、Servlet"></a>6、Servlet</h3><h4 id="6-1、Servlet简介"><a href="#6-1、Servlet简介" class="headerlink" title="6.1、Servlet简介"></a>6.1、Servlet简介</h4><ul>
 <li>Servlet就是sun公司开发动态web的一门技术</li>
 <li>Sun在这些API中提供一个接口叫做：Servlet，如果你想发开一个Servlet程序，只需要完成两个小步骤：<ul>
@@ -675,7 +677,7 @@
 <p>4.编写一个Servlet程序</p>
 <p>​    1.编写一个普通类</p>
 <p>​    2.实现Servlet接口，这里我们直接继承HttpServlet</p>
-<p><img src="/blog/2020/05/14/javaweb/%E7%9B%B4%E6%8E%A5%E7%BB%A7%E6%89%BFHttpServlet.png" alt="image-20200523190307395"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E7%9B%B4%E6%8E%A5%E7%BB%A7%E6%89%BFHttpServlet.png" alt="image-20200523190307395"></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloServlet</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//由于get或者post只是请求实现的不同的方式，可以相互调用，业务逻辑都一样；</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        <span class="comment">//ServletOutputStream outputStream = resp.getOutputStream();</span></span><br><span class="line">        PrintWriter writer = resp.getWriter();<span class="comment">//响应流</span></span><br><span class="line">        writer.print(<span class="string">"Hello,Servlet"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        doGet(req, resp);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>5.编写Servlet的映射</p>
@@ -686,7 +688,7 @@
 <p>​    注意：配置项目发布的路径就可以了</p>
 <p>7.启动测试，ok！</p>
 <h4 id="6-3、Servlet原理"><a href="#6-3、Servlet原理" class="headerlink" title="6.3、Servlet原理"></a>6.3、Servlet原理</h4><p>Servlet是由web服务器调用，web服务器在收到浏览器请求之后，会</p>
-<p><img src="/blog/2020/05/14/javaweb/Servlet%E5%8E%9F%E7%90%86.png" alt="image-20200523205318797"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/Servlet%E5%8E%9F%E7%90%86.png" alt="image-20200523205318797"></p>
 <h4 id="6-4、Mapping问题"><a href="#6-4、Mapping问题" class="headerlink" title="6.4、Mapping问题"></a>6.4、Mapping问题</h4><p>1.一个Servlet可以指定一个映射路径</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/hello<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -721,7 +723,7 @@
 
 <h5 id="3、请求转发"><a href="#3、请求转发" class="headerlink" title="3、请求转发"></a>3、请求转发</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        ServletContext context = <span class="keyword">this</span>.getServletContext();</span><br><span class="line">        System.out.println(<span class="string">"进入了ServletDemo04"</span>);</span><br><span class="line">        <span class="comment">//RequestDispatcher requestDispatcher = context.getRequestDispatcher("/gp");//转发的请求路径</span></span><br><span class="line">        <span class="comment">//requestDispatcher.forward(req, resp);//调用forward实现转发请求；</span></span><br><span class="line">        context.getRequestDispatcher(<span class="string">"/gp"</span>).forward(req, resp);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/2020/05/14/javaweb/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%92%8C%E9%87%8D%E5%AE%9A%E5%90%91%E5%8C%BA%E5%88%AB.png" alt="image-20200524202900416"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%92%8C%E9%87%8D%E5%AE%9A%E5%90%91%E5%8C%BA%E5%88%AB.png" alt="image-20200524202900416"></p>
 <h5 id="4、读取资源文件"><a href="#4、读取资源文件" class="headerlink" title="4、读取资源文件"></a>4、读取资源文件</h5><p>Properties</p>
 <ul>
 <li>在java目录下新建properties</li>
@@ -762,7 +764,7 @@
 
 <h5 id="3、验证码功能"><a href="#3、验证码功能" class="headerlink" title="3、验证码功能"></a>3、验证码功能</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ImageServlet</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//如何让浏览器5秒自动刷新一次</span></span><br><span class="line">        resp.setHeader(<span class="string">"refresh"</span>, <span class="string">"3"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//在内存中创建一个图片</span></span><br><span class="line">        BufferedImage image = <span class="keyword">new</span> BufferedImage(<span class="number">80</span>, <span class="number">20</span>, BufferedImage.TYPE_INT_RGB);</span><br><span class="line">        <span class="comment">//得到图片</span></span><br><span class="line">        Graphics2D g = (Graphics2D)image.getGraphics();<span class="comment">//笔</span></span><br><span class="line">        <span class="comment">//设置图片的背景颜色</span></span><br><span class="line">        g.setColor(Color.white);</span><br><span class="line">        g.fillRect(<span class="number">0</span>, <span class="number">0</span>, <span class="number">80</span>, <span class="number">20</span>);</span><br><span class="line">        <span class="comment">//给图片写数据</span></span><br><span class="line">        g.setColor(Color.blue);</span><br><span class="line">        g.setFont(<span class="keyword">new</span> Font(<span class="keyword">null</span>, Font.BOLD, <span class="number">20</span>));</span><br><span class="line">        g.drawString(makeNum(), <span class="number">0</span>, <span class="number">20</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//告诉浏览器，这个请求用图片的方式打开</span></span><br><span class="line">        resp.setContentType(<span class="string">"image/jpeg"</span>);</span><br><span class="line">        <span class="comment">//网站存在缓存，不让浏览器缓存</span></span><br><span class="line">        resp.setDateHeader(<span class="string">"expires"</span>, -<span class="number">1</span>);</span><br><span class="line">        resp.setHeader(<span class="string">"Cache-Control"</span>, <span class="string">"no-cache"</span>);</span><br><span class="line">        resp.setHeader(<span class="string">"Pragma"</span>, <span class="string">"no-cache"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//把图片写给浏览器</span></span><br><span class="line">        ImageIO.write(image, <span class="string">"jpg"</span>, resp.getOutputStream());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//生成随机数</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">makeNum</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Random random = <span class="keyword">new</span> Random();</span><br><span class="line">        String num = random.nextInt(<span class="number">9999999</span>) + <span class="string">""</span>;</span><br><span class="line">        StringBuffer sb = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>-num.length(); i++) &#123;</span><br><span class="line">            sb.append(<span class="string">"0"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        num = sb.toString()+num;</span><br><span class="line">        <span class="keyword">return</span> num;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        doGet(req, resp);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h5 id="4、实现重定向"><a href="#4、实现重定向" class="headerlink" title="4、实现重定向"></a>4、实现重定向</h5><p><img src="/blog/2020/05/14/javaweb/%E9%87%8D%E5%AE%9A%E5%90%91.png" alt="image-20200527194324203"></p>
+<h5 id="4、实现重定向"><a href="#4、实现重定向" class="headerlink" title="4、实现重定向"></a>4、实现重定向</h5><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%87%8D%E5%AE%9A%E5%90%91.png" alt="image-20200527194324203"></p>
 <p>一个web资源B收到客户端A请求后，B会通知A客户端去访问另一个wen资源C，这个过程叫重定向</p>
 <p>常见场景：</p>
 <ul>
@@ -783,7 +785,7 @@
 <li>请求转发的时候，url不会产生变化</li>
 <li>重定向时候，url地址栏会发生变化</li>
 </ul>
-<p><img src="/blog/2020/05/14/javaweb/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%92%8C%E9%87%8D%E5%AE%9A%E5%90%91%E5%8C%BA%E5%88%AB-.png" alt="重定向"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%92%8C%E9%87%8D%E5%AE%9A%E5%90%91%E5%8C%BA%E5%88%AB-.png" alt="重定向"></p>
 <h5 id="5、测试request"><a href="#5、测试request" class="headerlink" title="5、测试request"></a>5、测试request</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RequestTest</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        <span class="comment">//处理请求</span></span><br><span class="line">        String username = req.getParameter(<span class="string">"username"</span>);</span><br><span class="line">        String password = req.getParameter(<span class="string">"password"</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(username+<span class="string">":"</span>+password);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//重定向时候一定要注意，路径问题，否则404；</span></span><br><span class="line">        resp.sendRedirect(<span class="string">"/r/success.jsp"</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>request<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>com.carey.servlet.RequestTest<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>request<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/login<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -793,9 +795,9 @@
 
 
 <h4 id="6-7、HttpServletRequest"><a href="#6-7、HttpServletRequest" class="headerlink" title="6.7、HttpServletRequest"></a>6.7、HttpServletRequest</h4><p>HttpServletRequest代表客户端的请求，用户通过Http协议访问服务器，HTTP请求中的所有信息会被封装到HttpServletRequest，通过这个HttpServletRequest的方法，获得客户端的所有信息；</p>
-<p><img src="/blog/2020/05/14/javaweb/HttpServletRequest%E6%96%B9%E6%B3%951.png" alt="image-20200527211141420"></p>
-<p><img src="/blog/2020/05/14/javaweb/HttpServletRequest%E6%96%B9%E6%B3%952.png" alt="image-20200527211315619"></p>
-<h5 id="获取前端传递的参数，并且请求转发"><a href="#获取前端传递的参数，并且请求转发" class="headerlink" title="获取前端传递的参数，并且请求转发"></a>获取前端传递的参数，并且请求转发</h5><p><img src="/blog/2020/05/14/javaweb/%E8%8E%B7%E5%8F%96%E5%89%8D%E7%AB%AF%E4%BC%A0%E9%80%92%E7%9A%84%E5%8F%82%E6%95%B0.png" alt="image-20200527211544637"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/HttpServletRequest%E6%96%B9%E6%B3%951.png" alt="image-20200527211141420"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/HttpServletRequest%E6%96%B9%E6%B3%952.png" alt="image-20200527211315619"></p>
+<h5 id="获取前端传递的参数，并且请求转发"><a href="#获取前端传递的参数，并且请求转发" class="headerlink" title="获取前端传递的参数，并且请求转发"></a>获取前端传递的参数，并且请求转发</h5><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%8E%B7%E5%8F%96%E5%89%8D%E7%AB%AF%E4%BC%A0%E9%80%92%E7%9A%84%E5%8F%82%E6%95%B0.png" alt="image-20200527211544637"></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line"></span><br><span class="line">        req.setCharacterEncoding(<span class="string">"utf-8"</span>);</span><br><span class="line">        resp.setCharacterEncoding(<span class="string">"utf-8"</span>);</span><br><span class="line">        String username = req.getParameter(<span class="string">"username"</span>);</span><br><span class="line">        String password = req.getParameter(<span class="string">"password"</span>);</span><br><span class="line">        String[] hobbies = req.getParameterValues(<span class="string">"hobbies"</span>);</span><br><span class="line">        System.out.println(<span class="string">"=================="</span>);</span><br><span class="line">        <span class="comment">//后台接收出现中文乱码问题</span></span><br><span class="line">        System.out.println(username);</span><br><span class="line">        System.out.println(password);</span><br><span class="line">        System.out.println(Arrays.toString(hobbies));</span><br><span class="line">        System.out.println(<span class="string">"=================="</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(req.getContextPath());</span><br><span class="line">        <span class="comment">//通过请求转发</span></span><br><span class="line">        <span class="comment">//这里的/代表当前web应用</span></span><br><span class="line">        req.getRequestDispatcher(<span class="string">"/success.jsp"</span>).forward(req, resp);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
 <p>面试题：请你聊聊重定向和转发的区别？</p>
@@ -827,7 +829,7 @@
 <li>服务器技术，利用这个技术，可以保存用户的会话信息？我们可以把信息或者数据放在session中！</li>
 </ul>
 <p>常见：网站登录之后，下次不用再登录了，第二次访问直接上去了</p>
-<h4 id="7-3、Cookie"><a href="#7-3、Cookie" class="headerlink" title="7.3、Cookie"></a>7.3、Cookie</h4><p><img src="/blog/2020/05/14/javaweb/cookie.png" alt="image-20200529151304481"></p>
+<h4 id="7-3、Cookie"><a href="#7-3、Cookie" class="headerlink" title="7.3、Cookie"></a>7.3、Cookie</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/cookie.png" alt="image-20200529151304481"></p>
 <p>1.从请求中拿到cookie信息</p>
 <p>2.服务器响应给客户端cookie</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Cookie[] cookies = req.getCookies()    <span class="comment">//获得cookie</span></span><br><span class="line">cookie.getName();     <span class="comment">//获得cookie中的key</span></span><br><span class="line">cookie.getValue();    <span class="comment">//获得cookie中的value</span></span><br><span class="line"><span class="keyword">new</span> Cookie(<span class="string">"lastLoginTime"</span>, System.currentTimeMillis()+<span class="string">""</span>);   <span class="comment">//新建一个cookie</span></span><br><span class="line">cookie.setMaxAge(<span class="number">24</span>*<span class="number">60</span>*<span class="number">60</span>);      <span class="comment">//设置cookie的有效期</span></span><br><span class="line">resp.addCookie(cookie);          <span class="comment">//响应给客户端一个cookie</span></span><br></pre></td></tr></table></figure>
@@ -848,14 +850,14 @@
 <p><strong>编码解码：</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">URLEncoder.encode(<span class="string">"特朗普"</span>,<span class="string">"utf-8"</span>)</span><br><span class="line">URLDecoder.decode(cookie.getValue(),<span class="string">"utf-8"</span>)</span><br></pre></td></tr></table></figure>
 
-<h4 id="7-4、Session（重点）"><a href="#7-4、Session（重点）" class="headerlink" title="7.4、Session（重点）"></a>7.4、Session（重点）</h4><p><img src="/blog/2020/05/14/javaweb/Session.png" alt="image-20200529151447215"></p>
+<h4 id="7-4、Session（重点）"><a href="#7-4、Session（重点）" class="headerlink" title="7.4、Session（重点）"></a>7.4、Session（重点）</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/Session.png" alt="image-20200529151447215"></p>
 <p>什么是Session：</p>
 <ul>
 <li>服务器会给每一个用户（浏览器）创建一个Session对象</li>
 <li>一个Session独占一个浏览器，只要浏览器没有关闭这个Session就存在；</li>
 <li>用户登录之后，整个网站它都可以访问！—&gt;保存用户的信息；保存购物车的信息…</li>
 </ul>
-<p><img src="/blog/2020/05/14/javaweb/Session%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95.png" alt="image-20200529142740478"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/Session%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95.png" alt="image-20200529142740478"></p>
 <p>Session和Cookie的区别</p>
 <ul>
 <li>Cookie是把用户的数据写到用户的浏览器，浏览器保存（可以保存多个）</li>
@@ -880,7 +882,7 @@
 <p><strong>会话自动过期：web.xml配置</strong></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--设置Session默认的失效时间--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">session-config</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--15分钟后Session自动失效，以分钟为单位--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">session-timeout</span>&gt;</span>15<span class="tag">&lt;/<span class="name">session-timeout</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">session-config</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/2020/05/14/javaweb/ServletContext.png" alt="image-20200529151747359"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/ServletContext.png" alt="image-20200529151747359"></p>
 <h3 id="8、JSP"><a href="#8、JSP" class="headerlink" title="8、JSP"></a>8、JSP</h3><h4 id="8-1、什么是JSP"><a href="#8-1、什么是JSP" class="headerlink" title="8.1、什么是JSP"></a>8.1、什么是JSP</h4><p>Java Server Pages：Java服务器端页面，也和Servlet一样，用于动态Web技术！</p>
 <p>最大的特点：</p>
 <ul>
@@ -901,13 +903,13 @@
 </li>
 </ul>
 <ul>
-<li><img src="/blog/2020/05/14/javaweb/IDEA%E7%9A%84tomcat%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95.png" alt="image-20200529153313397"></li>
+<li><img src="/blog/blog/.com/2020/05/14/javaweb/IDEA%E7%9A%84tomcat%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95.png" alt="image-20200529153313397"></li>
 </ul>
 <p>我电脑的地址：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Carey\AppData\Local\JetBrains\IntelliJIdea2020.1\tomcat\Unnamed_javaweb-session-cookie\work\Catalina\localhost\ROOT\org\apache\jsp</span><br></pre></td></tr></table></figure>
 
 <p>发现页面转变成了java程序！</p>
-<p><img src="/blog/2020/05/14/javaweb/jsp.png" alt="image-20200529153643182"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/jsp.png" alt="image-20200529153643182"></p>
 <p><strong>浏览器向服务器发送请求，不管访问什么资源，其实都是在访问servlet！</strong></p>
 <p>JSP最终也会被转化为java类</p>
 <p><strong>JSP本质上就是一个Servlet</strong></p>
@@ -921,7 +923,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">response.setContentType(<span class="string">"text/html"</span>);			<span class="comment">//设置响应的页面类型</span></span><br><span class="line">pageContext = _jspxFactory.getPageContext(<span class="keyword">this</span>, request, response,</span><br><span class="line">                                          <span class="keyword">null</span>, <span class="keyword">true</span>, <span class="number">8192</span>, <span class="keyword">true</span>);</span><br><span class="line">_jspx_page_context = pageContext;</span><br><span class="line">application = pageContext.getServletContext();</span><br><span class="line">config = pageContext.getServletConfig();</span><br><span class="line">session = pageContext.getSession();</span><br><span class="line">out = pageContext.getOut();</span><br><span class="line">_jspx_out = out;</span><br></pre></td></tr></table></figure>
 
 <p>4.以上的这些个对象我们可以在JSP页面中直接使用！</p>
-<p><img src="/blog/2020/05/14/javaweb/JSP%E5%8E%9F%E7%90%86.png" alt="image-20200529160502381"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/JSP%E5%8E%9F%E7%90%86.png" alt="image-20200529160502381"></p>
 <p>在jsp页面中：</p>
 <p>只要是Java代码就会原封不动的输出；</p>
 <p>如果是HTML代码，就会被转换为：</p>
@@ -977,7 +979,7 @@
 <p><strong>SQL标签</strong></p>
 <p><strong>XML 标签</strong></p>
 <p><strong>核心标签</strong>（掌握部分）</p>
-<p><img src="/blog/2020/05/14/javaweb/JSTL%E6%A0%B8%E5%BF%83%E6%A0%87%E7%AD%BE.png" alt="image-20200530112017362"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/JSTL%E6%A0%B8%E5%BF%83%E6%A0%87%E7%AD%BE.png" alt="image-20200530112017362"></p>
 <p>JSTL标签库使用步骤：</p>
 <ul>
 <li>引入对应的taglib</li>
@@ -1039,11 +1041,11 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">People</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">private</span> String address;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span></span>&#123;</span><br><span class="line">    <span class="keyword">new</span> People(<span class="number">1</span>,<span class="string">"长江1号"</span>,<span class="number">3</span>,<span class="string">"北京"</span>);</span><br><span class="line">    <span class="keyword">new</span> People(<span class="number">2</span>,<span class="string">"长江2号"</span>,<span class="number">18</span>,<span class="string">"广州"</span>);</span><br><span class="line">    <span class="keyword">new</span> People(<span class="number">3</span>,<span class="string">"长江3号"</span>,<span class="number">100</span>,<span class="string">"上海"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="10、MVC三层架构"><a href="#10、MVC三层架构" class="headerlink" title="10、MVC三层架构"></a>10、MVC三层架构</h3><p>什么是MVC： Model       view    Controller             模型、视图、控制器</p>
-<h4 id="10-1、早些年"><a href="#10-1、早些年" class="headerlink" title="10.1、早些年"></a>10.1、早些年</h4><p><img src="/blog/2020/05/14/javaweb/%E6%97%A9%E4%BA%9B%E5%B9%B4%E6%9E%B6%E6%9E%84.png" alt="image-20200530141506606"></p>
+<h4 id="10-1、早些年"><a href="#10-1、早些年" class="headerlink" title="10.1、早些年"></a>10.1、早些年</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%97%A9%E4%BA%9B%E5%B9%B4%E6%9E%B6%E6%9E%84.png" alt="image-20200530141506606"></p>
 <p>用户直接访问控制层，控制层就可以直接操作数据库；</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">servlet--CRUD--&gt;数据库</span><br><span class="line">弊端：程序十分臃肿，不利于维护</span><br><span class="line">servlet的代码中：处理请求、响应、视图跳转、处理JDBC、处理业务代码、处理逻辑代码</span><br><span class="line">    </span><br><span class="line">架构：没有什么是加一层解决不了的！</span><br><span class="line">程序员调用</span><br><span class="line">    |</span><br><span class="line">   JDBC</span><br><span class="line">    |</span><br><span class="line">MySQL  Oracle  SqlServer...</span><br></pre></td></tr></table></figure>
 
-<h4 id="10-2、MVC三层架构"><a href="#10-2、MVC三层架构" class="headerlink" title="10.2、MVC三层架构"></a>10.2、MVC三层架构</h4><p><img src="/blog/2020/05/14/javaweb/MVC%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84.png" alt="image-20200530142524959"></p>
+<h4 id="10-2、MVC三层架构"><a href="#10-2、MVC三层架构" class="headerlink" title="10.2、MVC三层架构"></a>10.2、MVC三层架构</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/MVC%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84.png" alt="image-20200530142524959"></p>
 <p>Model</p>
 <ul>
 <li>业务处理：业务逻辑（Service）</li>
@@ -1067,12 +1069,12 @@
 <li>处理中文乱码</li>
 <li>登录验证…</li>
 </ul>
-<p><img src="/blog/2020/05/14/javaweb/%E8%BF%87%E6%BB%A4%E5%99%A8.png" alt="image-20200530150523744"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%BF%87%E6%BB%A4%E5%99%A8.png" alt="image-20200530150523744"></p>
 <p>Filter开发步骤：</p>
 <p>1.导包</p>
 <p>2.编写过滤器</p>
 <p>​        1.导包不要错</p>
-<p>​    <img src="/blog/2020/05/14/javaweb/Filter%E5%AF%BC%E5%8C%85%E4%B8%8D%E8%A6%81%E9%94%99.png" alt="image-20200530151403109"></p>
+<p>​    <img src="/blog/blog/.com/2020/05/14/javaweb/Filter%E5%AF%BC%E5%8C%85%E4%B8%8D%E8%A6%81%E9%94%99.png" alt="image-20200530151403109"></p>
 <p>​    2.实现Filter接口，重写对应的方法即可</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CharacterEncodingFilter</span> <span class="keyword">implements</span> <span class="title">Filter</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//初始化：web服务器启动，就已经初始化了，随时等待过滤对象出现！</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(FilterConfig filterConfig)</span> <span class="keyword">throws</span> ServletException </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"CharacterEncodingFilter初始化"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//chain：链</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    1. 过滤中的所有代码，在过滤特定请求的时候都会执行</span></span><br><span class="line"><span class="comment">    2. 必须要让过滤器继续同行</span></span><br><span class="line"><span class="comment">        filterChain.doFilter(servletRequest, servletResponse);</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doFilter</span><span class="params">(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)</span> <span class="keyword">throws</span> IOException, ServletException </span>&#123;</span><br><span class="line">        servletRequest.setCharacterEncoding(<span class="string">"utf-8"</span>);</span><br><span class="line">        servletResponse.setCharacterEncoding(<span class="string">"utf-8"</span>);</span><br><span class="line">        servletResponse.setContentType(<span class="string">"text/html;charset=utf-8"</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"CharacterEncodingFilter执行前..."</span>);</span><br><span class="line">        filterChain.doFilter(servletRequest, servletResponse);<span class="comment">//让我们的请求继续走，如果不写，程序到这里就被拦截停止！</span></span><br><span class="line">        System.out.println(<span class="string">"CharacterEncodingFilter执行后..."</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//销毁：web服务器关闭的时候，过滤会销毁</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"CharacterEncodingFilter销毁"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -1097,7 +1099,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">HttpServletRequest request = (HttpServletRequest) req;</span><br><span class="line">HttpServletResponse response = (HttpServletResponse) resp;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(request.getSession().getAttribute(Constant.USER_SESSION)==<span class="keyword">null</span>)&#123;</span><br><span class="line">    response.sendRedirect(<span class="string">"/error.jsp"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">chain.doFilter(request, response);</span><br></pre></td></tr></table></figure>
 
 <h3 id="14、JDBC"><a href="#14、JDBC" class="headerlink" title="14、JDBC"></a>14、JDBC</h3><p>什么是JDBC：Java连接数据库！</p>
-<p><img src="/blog/2020/05/14/javaweb/JDBC%E5%8E%9F%E7%90%86.png" alt="image-20200531124443905"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/JDBC%E5%8E%9F%E7%90%86.png" alt="image-20200531124443905"></p>
 <p>需要jar包的支持：</p>
 <ul>
 <li>java.sql</li>
@@ -1111,7 +1113,7 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--mysql的驱动--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.1.49<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>IDEA中连接数据库</p>
-<p><img src="/blog/2020/05/14/javaweb/IDEA%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93.png" alt="image-20200531132103949"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/IDEA%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93.png" alt="image-20200531132103949"></p>
 <p><strong>JDBC固定步骤：</strong></p>
 <p>​        1.加载驱动</p>
 <p>​        2.连接数据库</p>
@@ -1137,9 +1139,9 @@
 <p>@Test注解只有在方法上有效，只要加了这个注解的方法就可以直接运行</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"Hello"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/2020/05/14/javaweb/@Test%E6%B5%8B%E8%AF%95%E6%88%90%E5%8A%9F.png" alt="image-20200531142900534"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/@Test%E6%B5%8B%E8%AF%95%E6%88%90%E5%8A%9F.png" alt="image-20200531142900534"></p>
 <p>失败的时候是红色：</p>
-<p><img src="/blog/2020/05/14/javaweb/@Test%E6%B5%8B%E8%AF%95%E5%A4%B1%E8%B4%A5.png" alt="image-20200531142948521"></p>
+<p><img src="/blog/blog/.com/2020/05/14/javaweb/@Test%E6%B5%8B%E8%AF%95%E5%A4%B1%E8%B4%A5.png" alt="image-20200531142948521"></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestJDBC3</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span>  </span>&#123;</span><br><span class="line">        <span class="comment">//配置信息</span></span><br><span class="line">        <span class="comment">//useUnicode=true&amp;characterEncoding=utf-8解决中文乱码</span></span><br><span class="line">        String url = <span class="string">"jdbc:mysql://localhost:3306/jdbc?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false"</span>;</span><br><span class="line">        String username = <span class="string">"root"</span>;</span><br><span class="line">        String password = <span class="string">"123456"</span>;</span><br><span class="line">        Connection connection = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">//1.加载驱动</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">            <span class="comment">//2.连接数据库，代表数据库</span></span><br><span class="line">            connection = DriverManager.getConnection(url, username, password);</span><br><span class="line"></span><br><span class="line">            <span class="comment">//3.通知数据库开启事务, false 开启</span></span><br><span class="line">            connection.setAutoCommit(<span class="keyword">false</span>);</span><br><span class="line"></span><br><span class="line">            String sql = <span class="string">"update account set money = money-100 where name = 'A'"</span>;</span><br><span class="line">            connection.prepareStatement(sql).executeUpdate();</span><br><span class="line"></span><br><span class="line">            <span class="comment">//制造错误</span></span><br><span class="line">            <span class="comment">//int i = 1/0;</span></span><br><span class="line"></span><br><span class="line">            String sql2 = <span class="string">"update account set money = money+100 where name = 'B'"</span>;</span><br><span class="line">            connection.prepareStatement(sql2).executeUpdate();</span><br><span class="line"></span><br><span class="line">            connection.commit();<span class="comment">//以上两条SQL都执行成功了，就提交事务！</span></span><br><span class="line">            System.out.println(<span class="string">"success"</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            <span class="keyword">try</span>&#123;</span><br><span class="line">                <span class="comment">//如果出现异常，就通知数据库回滚事务</span></span><br><span class="line">                connection.rollback();</span><br><span class="line">            &#125;<span class="keyword">catch</span> (Exception e1)&#123;</span><br><span class="line">                e1.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                connection.close();</span><br><span class="line">            &#125; <span class="keyword">catch</span> (SQLException throwables) &#123;</span><br><span class="line">                throwables.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 

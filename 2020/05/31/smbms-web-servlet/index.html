@@ -21,26 +21,26 @@
     var CONFIG = {"hostname":"cxxqing.github.io","root":"/blog/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="SMBMS 数据库：  项目如何搭建？ 考虑使用不使用Maven？ 依赖，jar 项目搭建准备工作1.搭建一个maven web项目 2.配置Tomcat 3.测试项目是否能够跑起来 4.导入项目中会遇到的jar包 jsp,servlet,mysql驱动,jstl,standard… 5.创建项目包结构  6.编写实体类  ORM映射：表-类映射 7.编写基础公共类 ​    1.数据库配置文件">
+  <meta name="description" content="SMBMS 数据库：  项目如何搭建？ 考虑使用不使用Maven？ 依赖，jar">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SMBMS(基于servlet)">
 <meta property="og:url" content="https://cxxqing.github.io/blog/.com/2020/05/31/smbms-web-servlet/index.html">
 <meta property="og:site_name" content="Carey&#39;s Blog">
-<meta property="og:description" content="SMBMS 数据库：  项目如何搭建？ 考虑使用不使用Maven？ 依赖，jar 项目搭建准备工作1.搭建一个maven web项目 2.配置Tomcat 3.测试项目是否能够跑起来 4.导入项目中会遇到的jar包 jsp,servlet,mysql驱动,jstl,standard… 5.创建项目包结构  6.编写实体类  ORM映射：表-类映射 7.编写基础公共类 ​    1.数据库配置文件">
+<meta property="og:description" content="SMBMS 数据库：  项目如何搭建？ 考虑使用不使用Maven？ 依赖，jar">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/31/smbms-web-servlet/SMBMS.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/31/smbms-web-servlet/%E6%95%B0%E6%8D%AE%E5%BA%93.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/31/smbms-web-servlet/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%8C%85%E7%BB%93%E6%9E%84.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/31/smbms-web-servlet/%E5%AF%BC%E5%85%A5%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/31/smbms-web-servlet/%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/31/smbms-web-servlet/%E4%BB%8E%E5%BA%95%E5%B1%82%E6%9C%9B%E4%B8%8A%E5%86%99.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/31/smbms-web-servlet/%E5%AF%BC%E5%85%A5mysql%E5%8C%85%E8%A7%A3%E5%86%B3jdbc%E6%8A%A5%E9%94%99.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/2020/05/31/smbms-web-servlet/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/31/smbms-web-servlet/SMBMS.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/31/smbms-web-servlet/%E6%95%B0%E6%8D%AE%E5%BA%93.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/31/smbms-web-servlet/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%8C%85%E7%BB%93%E6%9E%84.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/31/smbms-web-servlet/%E5%AF%BC%E5%85%A5%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/31/smbms-web-servlet/%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/31/smbms-web-servlet/%E4%BB%8E%E5%BA%95%E5%B1%82%E6%9C%9B%E4%B8%8A%E5%86%99.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/31/smbms-web-servlet/%E5%AF%BC%E5%85%A5mysql%E5%8C%85%E8%A7%A3%E5%86%B3jdbc%E6%8A%A5%E9%94%99.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/31/smbms-web-servlet/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86.png">
 <meta property="article:published_time" content="2020-05-31T07:30:01.000Z">
-<meta property="article:modified_time" content="2020-06-03T03:38:39.247Z">
+<meta property="article:modified_time" content="2020-06-15T14:49:00.948Z">
 <meta property="article:author" content="Carey">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cxxqing.github.io/blog/2020/05/31/smbms-web-servlet/SMBMS.png">
+<meta name="twitter:image" content="https://cxxqing.github.io/blog/blog/.com/2020/05/31/smbms-web-servlet/SMBMS.png">
 
 <link rel="canonical" href="https://cxxqing.github.io/blog/.com/2020/05/31/smbms-web-servlet/">
 
@@ -234,7 +234,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-03 11:38:39" itemprop="dateModified" datetime="2020-06-03T11:38:39+08:00">2020-06-03</time>
+                <time title="修改时间：2020-06-15 22:49:00" itemprop="dateModified" datetime="2020-06-15T22:49:00+08:00">2020-06-15</time>
               </span>
 
           <br>
@@ -262,18 +262,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="SMBMS"><a href="#SMBMS" class="headerlink" title="SMBMS"></a>SMBMS</h2><p><img src="/blog/2020/05/31/smbms-web-servlet/SMBMS.png" alt="image-20200531154107414"></p>
+        <h2 id="SMBMS"><a href="#SMBMS" class="headerlink" title="SMBMS"></a>SMBMS</h2><p><img src="/blog/blog/.com/2020/05/31/smbms-web-servlet/SMBMS.png" alt="image-20200531154107414"></p>
 <p>数据库：</p>
-<p><img src="/blog/2020/05/31/smbms-web-servlet/%E6%95%B0%E6%8D%AE%E5%BA%93.png" alt="image-20200531154623620"></p>
+<p><img src="/blog/blog/.com/2020/05/31/smbms-web-servlet/%E6%95%B0%E6%8D%AE%E5%BA%93.png" alt="image-20200531154623620"></p>
 <p><strong>项目如何搭建？</strong></p>
 <p>考虑使用不使用Maven？ 依赖，jar</p>
+<a id="more"></a>
+
 <h2 id="项目搭建准备工作"><a href="#项目搭建准备工作" class="headerlink" title="项目搭建准备工作"></a>项目搭建准备工作</h2><p>1.搭建一个maven web项目</p>
 <p>2.配置Tomcat</p>
 <p>3.测试项目是否能够跑起来</p>
 <p>4.导入项目中会遇到的jar包</p>
 <p>jsp,servlet,mysql驱动,jstl,standard…</p>
 <p>5.创建项目包结构</p>
-<p><img src="/blog/2020/05/31/smbms-web-servlet/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%8C%85%E7%BB%93%E6%9E%84.png" alt="image-20200531160228546"></p>
+<p><img src="/blog/blog/.com/2020/05/31/smbms-web-servlet/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%8C%85%E7%BB%93%E6%9E%84.png" alt="image-20200531160228546"></p>
 <p>6.编写实体类 </p>
 <p>ORM映射：表-类映射</p>
 <p>7.编写基础公共类</p>
@@ -289,8 +291,8 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--字符编码过滤器--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>com.carey.filter.CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>​    4.导入静态资源</p>
-<p><img src="/blog/2020/05/31/smbms-web-servlet/%E5%AF%BC%E5%85%A5%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90.png" alt="image-20200531181356347"></p>
-<h2 id="登录功能实现"><a href="#登录功能实现" class="headerlink" title="登录功能实现"></a>登录功能实现</h2><p><img src="/blog/2020/05/31/smbms-web-servlet/%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD.png" alt="image-20200531182905985"></p>
+<p><img src="/blog/blog/.com/2020/05/31/smbms-web-servlet/%E5%AF%BC%E5%85%A5%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90.png" alt="image-20200531181356347"></p>
+<h2 id="登录功能实现"><a href="#登录功能实现" class="headerlink" title="登录功能实现"></a>登录功能实现</h2><p><img src="/blog/blog/.com/2020/05/31/smbms-web-servlet/%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD.png" alt="image-20200531182905985"></p>
 <p>1.编写前端页面</p>
 <p>2.设置首页</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--设置欢迎页面--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">welcome-file-list</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">welcome-file</span>&gt;</span>login.jsp<span class="tag">&lt;/<span class="name">welcome-file</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">welcome-file-list</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -335,7 +337,7 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;li&gt;&lt;a href="$&#123;pageContext.request.contextPath &#125;/jsp/pwdmodify.jsp"&gt;密码修改&lt;/a&gt;&lt;/li&gt;</span><br></pre></td></tr></table></figure>
 
 <p>2.写项目，建议从底层向上写</p>
-<p><img src="/blog/2020/05/31/smbms-web-servlet/%E4%BB%8E%E5%BA%95%E5%B1%82%E6%9C%9B%E4%B8%8A%E5%86%99.png" alt="image-20200601184601650"></p>
+<p><img src="/blog/blog/.com/2020/05/31/smbms-web-servlet/%E4%BB%8E%E5%BA%95%E5%B1%82%E6%9C%9B%E4%B8%8A%E5%86%99.png" alt="image-20200601184601650"></p>
 <p>3.UserDao接口</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//修改当前用户密码</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">updatePwd</span><span class="params">(Connection connection, <span class="keyword">int</span> id, String password)</span> <span class="keyword">throws</span> Exception</span>;</span><br></pre></td></tr></table></figure>
 
@@ -349,7 +351,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">updatePwd</span><span class="params">(<span class="keyword">int</span> id, String pwd)</span> </span>&#123;</span><br><span class="line">    Connection connection = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">boolean</span> flag = <span class="keyword">false</span>;</span><br><span class="line">    <span class="comment">//修改密码</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        connection = BaseDao.getConnection();</span><br><span class="line">        <span class="keyword">if</span>(userDao.updatePwd(connection, id, pwd)&gt;<span class="number">0</span>)&#123;</span><br><span class="line">            flag = <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">        BaseDao.closeResource(connection, <span class="keyword">null</span>, <span class="keyword">null</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> flag;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>==补充：IntelliJ IDEA: Error:(11, 72) java: 程序包com.mysql.jdbc不存在==</p>
-<p><img src="/blog/2020/05/31/smbms-web-servlet/%E5%AF%BC%E5%85%A5mysql%E5%8C%85%E8%A7%A3%E5%86%B3jdbc%E6%8A%A5%E9%94%99.png" alt="image-20200601214751022"></p>
+<p><img src="/blog/blog/.com/2020/05/31/smbms-web-servlet/%E5%AF%BC%E5%85%A5mysql%E5%8C%85%E8%A7%A3%E5%86%B3jdbc%E6%8A%A5%E9%94%99.png" alt="image-20200601214751022"></p>
 <p>7.Servlet记得实现复用，需要提取出方法！</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//实现servlet复用</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServlet</span>  <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        String method = req.getParameter(<span class="string">"method"</span>);</span><br><span class="line">        <span class="keyword">if</span>(method!=<span class="keyword">null</span> &amp;&amp; method.equals(<span class="string">"savepwd"</span>))&#123;</span><br><span class="line">            <span class="keyword">this</span>.updatePwd(req, resp);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        doGet(req, resp);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">updatePwd</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//从Session里面拿ID;</span></span><br><span class="line">        Object o = req.getSession().getAttribute(Constants.USER_SESSION);</span><br><span class="line">        String newpassword = req.getParameter(<span class="string">"newpassword"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">boolean</span> flag = <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (o != <span class="keyword">null</span> &amp;&amp; newpassword != <span class="keyword">null</span> &amp;&amp; newpassword.length() != <span class="number">0</span>) &#123;</span><br><span class="line">            UserService userService = <span class="keyword">new</span> UserServiceImpl();</span><br><span class="line">            flag = userService.updatePwd(((User) o).getId(), newpassword);</span><br><span class="line">            <span class="keyword">if</span> (flag) &#123;</span><br><span class="line">                req.setAttribute(<span class="string">"message"</span>, <span class="string">"修改密码成功，请退出，使用新密码登录"</span>);</span><br><span class="line">                <span class="comment">//密码修改成功，移除当前session</span></span><br><span class="line">                req.getSession().removeAttribute(Constants.USER_SESSION);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                req.setAttribute(<span class="string">"message"</span>, <span class="string">"密码修改失败"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            req.setAttribute(<span class="string">"meaage"</span>, <span class="string">"新密码有问题"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            req.getRequestDispatcher(<span class="string">"pwdmodify.jsp"</span>).forward(req, resp);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (ServletException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -363,7 +365,7 @@
 
 <p>3.测试</p>
 <h2 id="用户管理实现"><a href="#用户管理实现" class="headerlink" title="用户管理实现"></a>用户管理实现</h2><p>思路：</p>
-<p><img src="/blog/2020/05/31/smbms-web-servlet/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86.png" alt="image-20200602212830717"></p>
+<p><img src="/blog/blog/.com/2020/05/31/smbms-web-servlet/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86.png" alt="image-20200602212830717"></p>
 <p>1.导入分页的工具类</p>
 <p>2.用户列表页面导入</p>
 <h3 id="1、获取用户数量"><a href="#1、获取用户数量" class="headerlink" title="1、获取用户数量"></a>1、获取用户数量</h3><p>1.UserDao</p>
