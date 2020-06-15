@@ -215,7 +215,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-06-15 15:09:30 / 修改时间：21:52:15" itemprop="dateCreated datePublished" datetime="2020-06-15T15:09:30+08:00">2020-06-15</time>
+              <time title="创建时间：2020-06-15 15:09:30 / 修改时间：22:38:10" itemprop="dateCreated datePublished" datetime="2020-06-15T15:09:30+08:00">2020-06-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -292,20 +292,14 @@
 </ul>
 <p>学习SpringBoot的前提是需要完全掌握Spring和SpringMVC，承上启下的作用！</p>
 <p><strong>弊端：发展了太久之后，违背了原来的理念，配置十分繁琐，人称：”配置地域“！</strong></p>
-<h2 id="2、IOC理论推导"><a href="#2、IOC理论推导" class="headerlink" title="2、IOC理论推导"></a>2、IOC理论推导</h2><p>1.UserDao 接口</p>
-<p>2.UserDaoImpl 实现类</p>
-<p>3.UserService 业务接口</p>
-<p>4.UserServiceImpl 业务实现类</p>
-<p>在我们之前的业务中，用户的需求可能会影响我们原来的代码，我们需要根据用户的需求去修改原代码！如果代码量十分大，修改一次的成本代价十分昂贵！</p>
-<p>我们使用一个Set接口实现.已经发生了革命性的变化</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> UserDao userDao;</span><br><span class="line"></span><br><span class="line"><span class="comment">//利用set进行动态实现值的注入！</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUserDao</span><span class="params">(UserDao userDao)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.userDao = userDao;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>之前，程序是主动创建对象！控制权在程序猿手上！</li>
-<li>使用了set注入后，程序不再具有主动性，而是变成了被动的接受对象！</li>
-</ul>
-<p>这种思想，从本质上解决了问题，我们程序猿不用再去管理对象的创建了。系统的耦合性大大降低，可能更加专注在业务的实现上！这是IOC的原型！</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/blog/2020/06/15/Spring-5/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 

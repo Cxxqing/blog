@@ -3071,6 +3071,10 @@
 </ul>
 <p>学习SpringBoot的前提是需要完全掌握Spring和SpringMVC，承上启下的作用！</p>
 <p><strong>弊端：发展了太久之后，违背了原来的理念，配置十分繁琐，人称：”配置地域“！</strong></p>
+<a id="more"></a>
+
+
+
 <h2 id="2、IOC理论推导"><a href="#2、IOC理论推导" class="headerlink" title="2、IOC理论推导"></a>2、IOC理论推导</h2><p>1.UserDao 接口</p>
 <p>2.UserDaoImpl 实现类</p>
 <p>3.UserService 业务接口</p>
