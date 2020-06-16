@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://cxxqing.github.io/blog/.com/"/>
-  <updated>2020-06-15T14:46:28.675Z</updated>
+  <updated>2020-06-16T01:05:36.254Z</updated>
   <id>https://cxxqing.github.io/blog/.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/06/15/Spring-5/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/15/Spring-5/</id>
     <published>2020-06-15T07:09:30.000Z</published>
-    <updated>2020-06-15T14:46:28.675Z</updated>
+    <updated>2020-06-16T01:05:36.254Z</updated>
     
     <summary type="html">
     
@@ -50,7 +50,7 @@
 &lt;p&gt;&lt;strong&gt;总结一句话：Spring是一个轻量级的控制反转(IoC)和面向切面编程(AOP)的容器（框架）。&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&quot;1-3、组成&quot;&gt;&lt;a href=&quot;#1-3、组成&quot; class=&quot;headerlink&quot; title=&quot;1.3、组成&quot;&gt;&lt;/a&gt;1.3、组成&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/blog/blog/.com/2020/06/15/Spring-5/%E4%B8%83%E5%A4%A7%E6%A8%A1%E5%9D%97.png&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;1-4、拓展&quot;&gt;&lt;a href=&quot;#1-4、拓展&quot; class=&quot;headerlink&quot; title=&quot;1.4、拓展&quot;&gt;&lt;/a&gt;1.4、拓展&lt;/h3&gt;&lt;p&gt;现代化Java开发，即基于Spring的开发！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/blog/.com/2020/06/15/Spring-5/%E7%8E%B0%E4%BB%A3%E5%8C%96Java%E5%BC%80%E5%8F%91.png&quot; alt=&quot;现代化java开发&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/blog/.com/2020/06/15/Spring-5/%E7%8E%B0%E4%BB%A3%E5%8C%96Java%E5%BC%80%E5%8F%91.png&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Spring Boot&lt;ul&gt;
 &lt;li&gt;一个快速开发的脚手架。&lt;/li&gt;
