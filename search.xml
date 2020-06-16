@@ -146,356 +146,6 @@
 <a id="more"></a>]]></content>
   </entry>
   <entry>
-    <title>Java开发路线</title>
-    <url>/blog/2020/05/09/JAVAdeveloproad/</url>
-    <content><![CDATA[<h2 id="编程基础（掌握）"><a href="#编程基础（掌握）" class="headerlink" title="编程基础（掌握）"></a>编程基础（掌握）</h2><h3 id="JAVA语法"><a href="#JAVA语法" class="headerlink" title="JAVA语法"></a>JAVA语法</h3><h4 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h4><h4 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h4><ul>
-<li><p>类加载机制</p>
-</li>
-<li><p>字节码执行机制</p>
-</li>
-<li><p>JVM内存模型</p>
-</li>
-<li><p>GC垃圾回收</p>
-</li>
-<li><p>VM性能监控与故障定位</p>
-</li>
-<li><p>JVM调优</p>
-</li>
-</ul>
-<h4 id="并发-多线程"><a href="#并发-多线程" class="headerlink" title="并发/多线程"></a>并发/多线程</h4><ul>
-<li><p>并发编程的基础</p>
-</li>
-<li><p>线程池</p>
-</li>
-<li><p>锁</p>
-</li>
-<li><p>并发容器</p>
-</li>
-<li><p>原子类</p>
-</li>
-<li><p>JUC并发工具类</p>
-</li>
-</ul>
-<h3 id="数据结构和算法"><a href="#数据结构和算法" class="headerlink" title="数据结构和算法"></a>数据结构和算法</h3><h4 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h4><ul>
-<li>字符串</li>
-<li>数组</li>
-<li>链表</li>
-<li>堆、栈、队列</li>
-<li>二叉树</li>
-<li>哈希</li>
-<li>图</li>
-</ul>
-<h4 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h4><ul>
-<li>排序</li>
-<li>查找</li>
-<li>贪心</li>
-<li>分治</li>
-<li>动态规划</li>
-<li>回溯</li>
-</ul>
-<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><ul>
-<li>ARP协议</li>
-<li>IP/ ICMP协议</li>
-<li>TCP/ UDP协议</li>
-<li>DNS/HTTP/ HTTPS协议</li>
-<li>Session/ Cookie</li>
-</ul>
-<h3 id="MySQL数据库"><a href="#MySQL数据库" class="headerlink" title="MySQL数据库"></a>MySQL数据库</h3><ul>
-<li>SQL语句的书写</li>
-<li>SQL语句的优化</li>
-<li>事务以及隔离级别</li>
-<li>索引</li>
-<li>锁</li>
-</ul>
-<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><ul>
-<li>进程/ 线程</li>
-<li>并发/ 锁</li>
-<li>内存管理和调度</li>
-<li>I/ O原理</li>
-</ul>
-<h3 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h3><ul>
-<li>单例</li>
-<li>工厂</li>
-<li>代理</li>
-<li>策略</li>
-<li>模板方法</li>
-<li>观察者</li>
-<li>适配器</li>
-<li>责任链</li>
-<li>建造者</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="研发工具"><a href="#研发工具" class="headerlink" title="研发工具"></a>研发工具</h2><h3 id="集成开发环境"><a href="#集成开发环境" class="headerlink" title="集成开发环境"></a>集成开发环境</h3><ul>
-<li>Eclipse</li>
-<li>Intellij IDEA</li>
-<li>VS Code</li>
-</ul>
-<h3 id="Linux系统（了解）"><a href="#Linux系统（了解）" class="headerlink" title="Linux系统（了解）"></a>Linux系统（了解）</h3><ul>
-<li>常用命令</li>
-<li>Shell脚本</li>
-</ul>
-<h3 id="项目管理-构建工具（掌握）"><a href="#项目管理-构建工具（掌握）" class="headerlink" title="项目管理/构建工具（掌握）"></a>项目管理/构建工具（掌握）</h3><ul>
-<li>Maven</li>
-<li>Gradle</li>
-</ul>
-<h3 id="代码管理工具（了解）"><a href="#代码管理工具（了解）" class="headerlink" title="代码管理工具（了解）"></a>代码管理工具（了解）</h3><ul>
-<li>SVN</li>
-<li>Git</li>
-</ul>
-<h2 id="应用框架"><a href="#应用框架" class="headerlink" title="应用框架"></a>应用框架</h2><h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><h4 id="Spring家族框架（掌握-2-3month）"><a href="#Spring家族框架（掌握-2-3month）" class="headerlink" title="Spring家族框架（掌握,2-3month）"></a>Spring家族框架（掌握,2-3month）</h4><ul>
-<li><strong>Spring</strong><ul>
-<li>IoC</li>
-<li>AOP</li>
-</ul>
-</li>
-<li><strong>SpringMVC</strong></li>
-<li><strong>Spring Boot</strong><ul>
-<li>自动配置、开箱即用</li>
-<li>整合Web</li>
-<li>整合数据库（事务问题）</li>
-<li>整合权限<ul>
-<li>Shiro</li>
-<li>Spring Security</li>
-</ul>
-</li>
-<li>整合各种中间件<ul>
-<li>Redis、 MQ、 RPC框架、NIO框架</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="服务器软件"><a href="#服务器软件" class="headerlink" title="服务器软件"></a>服务器软件</h4><ul>
-<li>Web服务器<ul>
-<li>Nginx（重要）</li>
-</ul>
-</li>
-<li>应用服务器<ul>
-<li>Tomcat</li>
-<li>Jetty</li>
-<li>Undertow（性能较好）</li>
-</ul>
-</li>
-</ul>
-<h4 id="中间件（应对高并发、大容量）"><a href="#中间件（应对高并发、大容量）" class="headerlink" title="中间件（应对高并发、大容量）"></a>中间件（应对高并发、大容量）</h4><ul>
-<li><p>缓存</p>
-<ul>
-<li><strong>Redis</strong>（掌握，重要,2week）                                                                        <ul>
-<li>书籍：《Redis设计与实践》</li>
-<li>5大基础数据类型</li>
-<li>事务</li>
-<li>消息通知</li>
-<li>管道</li>
-<li>持久化</li>
-<li>集群</li>
-</ul>
-</li>
-<li>memcache</li>
-</ul>
-</li>
-<li><p>消息队列（学一个即可）</p>
-<ul>
-<li>RocketMQ</li>
-<li>RabbitMQ</li>
-<li>Kafka（大数据）</li>
-</ul>
-</li>
-<li><p>RPC框架</p>
-<ul>
-<li>Dubbo</li>
-<li>gRPC</li>
-<li>Thrift</li>
-<li>Spring Cloud</li>
-<li>Netty</li>
-</ul>
-</li>
-<li><p>数据库框架</p>
-<ul>
-<li><strong>ORM层框架</strong>（掌握）<ul>
-<li>Mybatis</li>
-<li>Hibernate</li>
-<li>JPA</li>
-</ul>
-</li>
-<li><strong>连接池</strong>（掌握）<ul>
-<li>Druid</li>
-<li>HikariCP</li>
-<li>C3P0</li>
-</ul>
-</li>
-<li>分库分表<ul>
-<li>MyCAT</li>
-<li>Sharding-JDBC</li>
-<li>Sharding-Sphere</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>搜索引擎（了解）</p>
-<ul>
-<li>ElasticSearch</li>
-<li>Solr</li>
-</ul>
-</li>
-<li><p>分布式/微服务（了解,2-3week）</p>
-<ul>
-<li><p>服务发现/注册</p>
-<ul>
-<li>Eureka</li>
-<li>Consul</li>
-<li>Zookeeper（重要）</li>
-<li>Nacos</li>
-</ul>
-</li>
-<li><p>网关</p>
-<ul>
-<li>Zuul</li>
-<li>Gateway</li>
-</ul>
-</li>
-<li><p>服务调用（负载均衡）</p>
-<ul>
-<li>Ribbon</li>
-<li>Feign</li>
-</ul>
-</li>
-<li><p>熔断/降级</p>
-<ul>
-<li>Hystrix</li>
-</ul>
-</li>
-<li><p>配置中心</p>
-<ul>
-<li>Config</li>
-<li>Apollo</li>
-<li>Nacos</li>
-</ul>
-</li>
-<li><p>认证和鉴权（稍微重要些）</p>
-<ul>
-<li><p>Shiro</p>
-</li>
-<li><p>Spring Security</p>
-</li>
-<li><p>OAuth2</p>
-</li>
-<li><p>SSO单点登录</p>
-</li>
-</ul>
-</li>
-<li><p>分布式事务</p>
-<ul>
-<li>JTA接口——Atomikos组件</li>
-<li>2PC、3PC</li>
-<li>XA模式</li>
-<li>TCC模式——tcc-transaction、ByteTCC、EasyTransaction、SeaTa</li>
-<li>SAGA模式——ServiceComb、Seata</li>
-<li>LCN模式——tx-Icn</li>
-</ul>
-</li>
-<li><p>任务调度</p>
-<ul>
-<li>Quartz</li>
-<li>Elastic-Job</li>
-</ul>
-</li>
-<li><p>链路追踪和监控</p>
-<ul>
-<li>Zipkin</li>
-<li>Sleuth</li>
-<li>Skywalking</li>
-</ul>
-</li>
-<li><p>日志分析与监控——ELK</p>
-<ul>
-<li>ElasticSearch</li>
-<li>Logstash</li>
-<li>Kibana</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>虚拟化/容器化</p>
-<ul>
-<li>容器化——Docker</li>
-<li>容器编排技术——Kubernetes、Swarm</li>
-</ul>
-</li>
-</ul>
-<h3 id="前端（了解）"><a href="#前端（了解）" class="headerlink" title="前端（了解）"></a>前端（了解）</h3><ul>
-<li><p>基础套餐（大致了解，2-3天）</p>
-<ul>
-<li>三大件<ul>
-<li>HTML</li>
-<li>JavaScript</li>
-<li>CSS</li>
-</ul>
-</li>
-<li>基础库<ul>
-<li>jQuery</li>
-<li>Ajax</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>模板框架</p>
-<ul>
-<li>JSP/JSTL（已过时）</li>
-<li>Thymeleaf</li>
-<li>FreeMarker</li>
-</ul>
-</li>
-<li><p>组件化框架</p>
-<ul>
-<li><p>Node</p>
-</li>
-<li><p>Vue</p>
-</li>
-<li><p>React</p>
-</li>
-<li><p>Angular</p>
-</li>
-</ul>
-<hr>
-</li>
-</ul>
-<h2 id="运维知识（配置）"><a href="#运维知识（配置）" class="headerlink" title="运维知识（配置）"></a>运维知识（配置）</h2><ul>
-<li>Web服务器<ul>
-<li>Nginx</li>
-</ul>
-</li>
-<li>应用服务器<ul>
-<li>Tomcat</li>
-<li>Jetty</li>
-<li>Undertow</li>
-</ul>
-</li>
-<li>CDN加速</li>
-<li>持续集成/持续部署<ul>
-<li>Jenkins</li>
-</ul>
-</li>
-<li>代码质量检查<ul>
-<li>sonar</li>
-</ul>
-</li>
-<li>日志收集和分析<ul>
-<li>ELK</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="成神之路"><a href="#成神之路" class="headerlink" title="成神之路"></a>成神之路</h2><ul>
-<li>徒手撕源码</li>
-<li>光脚造轮子</li>
-<li>闭着眼睛深度调优</li>
-<li>吊打面试官</li>
-</ul>
-<h2 id="平稳降落"><a href="#平稳降落" class="headerlink" title="平稳降落"></a>平稳降落</h2><h2 id="路线图"><a href="#路线图" class="headerlink" title="路线图"></a>路线图</h2><p><img src="/blog/blog/.com/2020/05/09/JAVAdeveloproad/C:%5CUsers%5CCarey%5CDesktop%5CJava%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF-%E9%AB%98%E6%B8%85%E7%89%88.jpg" alt="路线图"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Linux学习</title>
     <url>/blog/2020/05/09/Linux-study/</url>
     <content><![CDATA[<p>@<a href="Linux系统">TOC</a></p>
@@ -1153,6 +803,356 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Java开发路线</title>
+    <url>/blog/2020/05/09/JAVAdeveloproad/</url>
+    <content><![CDATA[<h2 id="编程基础（掌握）"><a href="#编程基础（掌握）" class="headerlink" title="编程基础（掌握）"></a>编程基础（掌握）</h2><h3 id="JAVA语法"><a href="#JAVA语法" class="headerlink" title="JAVA语法"></a>JAVA语法</h3><h4 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h4><h4 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h4><ul>
+<li><p>类加载机制</p>
+</li>
+<li><p>字节码执行机制</p>
+</li>
+<li><p>JVM内存模型</p>
+</li>
+<li><p>GC垃圾回收</p>
+</li>
+<li><p>VM性能监控与故障定位</p>
+</li>
+<li><p>JVM调优</p>
+</li>
+</ul>
+<h4 id="并发-多线程"><a href="#并发-多线程" class="headerlink" title="并发/多线程"></a>并发/多线程</h4><ul>
+<li><p>并发编程的基础</p>
+</li>
+<li><p>线程池</p>
+</li>
+<li><p>锁</p>
+</li>
+<li><p>并发容器</p>
+</li>
+<li><p>原子类</p>
+</li>
+<li><p>JUC并发工具类</p>
+</li>
+</ul>
+<h3 id="数据结构和算法"><a href="#数据结构和算法" class="headerlink" title="数据结构和算法"></a>数据结构和算法</h3><h4 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h4><ul>
+<li>字符串</li>
+<li>数组</li>
+<li>链表</li>
+<li>堆、栈、队列</li>
+<li>二叉树</li>
+<li>哈希</li>
+<li>图</li>
+</ul>
+<h4 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h4><ul>
+<li>排序</li>
+<li>查找</li>
+<li>贪心</li>
+<li>分治</li>
+<li>动态规划</li>
+<li>回溯</li>
+</ul>
+<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><ul>
+<li>ARP协议</li>
+<li>IP/ ICMP协议</li>
+<li>TCP/ UDP协议</li>
+<li>DNS/HTTP/ HTTPS协议</li>
+<li>Session/ Cookie</li>
+</ul>
+<h3 id="MySQL数据库"><a href="#MySQL数据库" class="headerlink" title="MySQL数据库"></a>MySQL数据库</h3><ul>
+<li>SQL语句的书写</li>
+<li>SQL语句的优化</li>
+<li>事务以及隔离级别</li>
+<li>索引</li>
+<li>锁</li>
+</ul>
+<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><ul>
+<li>进程/ 线程</li>
+<li>并发/ 锁</li>
+<li>内存管理和调度</li>
+<li>I/ O原理</li>
+</ul>
+<h3 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h3><ul>
+<li>单例</li>
+<li>工厂</li>
+<li>代理</li>
+<li>策略</li>
+<li>模板方法</li>
+<li>观察者</li>
+<li>适配器</li>
+<li>责任链</li>
+<li>建造者</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="研发工具"><a href="#研发工具" class="headerlink" title="研发工具"></a>研发工具</h2><h3 id="集成开发环境"><a href="#集成开发环境" class="headerlink" title="集成开发环境"></a>集成开发环境</h3><ul>
+<li>Eclipse</li>
+<li>Intellij IDEA</li>
+<li>VS Code</li>
+</ul>
+<h3 id="Linux系统（了解）"><a href="#Linux系统（了解）" class="headerlink" title="Linux系统（了解）"></a>Linux系统（了解）</h3><ul>
+<li>常用命令</li>
+<li>Shell脚本</li>
+</ul>
+<h3 id="项目管理-构建工具（掌握）"><a href="#项目管理-构建工具（掌握）" class="headerlink" title="项目管理/构建工具（掌握）"></a>项目管理/构建工具（掌握）</h3><ul>
+<li>Maven</li>
+<li>Gradle</li>
+</ul>
+<h3 id="代码管理工具（了解）"><a href="#代码管理工具（了解）" class="headerlink" title="代码管理工具（了解）"></a>代码管理工具（了解）</h3><ul>
+<li>SVN</li>
+<li>Git</li>
+</ul>
+<h2 id="应用框架"><a href="#应用框架" class="headerlink" title="应用框架"></a>应用框架</h2><h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><h4 id="Spring家族框架（掌握-2-3month）"><a href="#Spring家族框架（掌握-2-3month）" class="headerlink" title="Spring家族框架（掌握,2-3month）"></a>Spring家族框架（掌握,2-3month）</h4><ul>
+<li><strong>Spring</strong><ul>
+<li>IoC</li>
+<li>AOP</li>
+</ul>
+</li>
+<li><strong>SpringMVC</strong></li>
+<li><strong>Spring Boot</strong><ul>
+<li>自动配置、开箱即用</li>
+<li>整合Web</li>
+<li>整合数据库（事务问题）</li>
+<li>整合权限<ul>
+<li>Shiro</li>
+<li>Spring Security</li>
+</ul>
+</li>
+<li>整合各种中间件<ul>
+<li>Redis、 MQ、 RPC框架、NIO框架</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="服务器软件"><a href="#服务器软件" class="headerlink" title="服务器软件"></a>服务器软件</h4><ul>
+<li>Web服务器<ul>
+<li>Nginx（重要）</li>
+</ul>
+</li>
+<li>应用服务器<ul>
+<li>Tomcat</li>
+<li>Jetty</li>
+<li>Undertow（性能较好）</li>
+</ul>
+</li>
+</ul>
+<h4 id="中间件（应对高并发、大容量）"><a href="#中间件（应对高并发、大容量）" class="headerlink" title="中间件（应对高并发、大容量）"></a>中间件（应对高并发、大容量）</h4><ul>
+<li><p>缓存</p>
+<ul>
+<li><strong>Redis</strong>（掌握，重要,2week）                                                                        <ul>
+<li>书籍：《Redis设计与实践》</li>
+<li>5大基础数据类型</li>
+<li>事务</li>
+<li>消息通知</li>
+<li>管道</li>
+<li>持久化</li>
+<li>集群</li>
+</ul>
+</li>
+<li>memcache</li>
+</ul>
+</li>
+<li><p>消息队列（学一个即可）</p>
+<ul>
+<li>RocketMQ</li>
+<li>RabbitMQ</li>
+<li>Kafka（大数据）</li>
+</ul>
+</li>
+<li><p>RPC框架</p>
+<ul>
+<li>Dubbo</li>
+<li>gRPC</li>
+<li>Thrift</li>
+<li>Spring Cloud</li>
+<li>Netty</li>
+</ul>
+</li>
+<li><p>数据库框架</p>
+<ul>
+<li><strong>ORM层框架</strong>（掌握）<ul>
+<li>Mybatis</li>
+<li>Hibernate</li>
+<li>JPA</li>
+</ul>
+</li>
+<li><strong>连接池</strong>（掌握）<ul>
+<li>Druid</li>
+<li>HikariCP</li>
+<li>C3P0</li>
+</ul>
+</li>
+<li>分库分表<ul>
+<li>MyCAT</li>
+<li>Sharding-JDBC</li>
+<li>Sharding-Sphere</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>搜索引擎（了解）</p>
+<ul>
+<li>ElasticSearch</li>
+<li>Solr</li>
+</ul>
+</li>
+<li><p>分布式/微服务（了解,2-3week）</p>
+<ul>
+<li><p>服务发现/注册</p>
+<ul>
+<li>Eureka</li>
+<li>Consul</li>
+<li>Zookeeper（重要）</li>
+<li>Nacos</li>
+</ul>
+</li>
+<li><p>网关</p>
+<ul>
+<li>Zuul</li>
+<li>Gateway</li>
+</ul>
+</li>
+<li><p>服务调用（负载均衡）</p>
+<ul>
+<li>Ribbon</li>
+<li>Feign</li>
+</ul>
+</li>
+<li><p>熔断/降级</p>
+<ul>
+<li>Hystrix</li>
+</ul>
+</li>
+<li><p>配置中心</p>
+<ul>
+<li>Config</li>
+<li>Apollo</li>
+<li>Nacos</li>
+</ul>
+</li>
+<li><p>认证和鉴权（稍微重要些）</p>
+<ul>
+<li><p>Shiro</p>
+</li>
+<li><p>Spring Security</p>
+</li>
+<li><p>OAuth2</p>
+</li>
+<li><p>SSO单点登录</p>
+</li>
+</ul>
+</li>
+<li><p>分布式事务</p>
+<ul>
+<li>JTA接口——Atomikos组件</li>
+<li>2PC、3PC</li>
+<li>XA模式</li>
+<li>TCC模式——tcc-transaction、ByteTCC、EasyTransaction、SeaTa</li>
+<li>SAGA模式——ServiceComb、Seata</li>
+<li>LCN模式——tx-Icn</li>
+</ul>
+</li>
+<li><p>任务调度</p>
+<ul>
+<li>Quartz</li>
+<li>Elastic-Job</li>
+</ul>
+</li>
+<li><p>链路追踪和监控</p>
+<ul>
+<li>Zipkin</li>
+<li>Sleuth</li>
+<li>Skywalking</li>
+</ul>
+</li>
+<li><p>日志分析与监控——ELK</p>
+<ul>
+<li>ElasticSearch</li>
+<li>Logstash</li>
+<li>Kibana</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>虚拟化/容器化</p>
+<ul>
+<li>容器化——Docker</li>
+<li>容器编排技术——Kubernetes、Swarm</li>
+</ul>
+</li>
+</ul>
+<h3 id="前端（了解）"><a href="#前端（了解）" class="headerlink" title="前端（了解）"></a>前端（了解）</h3><ul>
+<li><p>基础套餐（大致了解，2-3天）</p>
+<ul>
+<li>三大件<ul>
+<li>HTML</li>
+<li>JavaScript</li>
+<li>CSS</li>
+</ul>
+</li>
+<li>基础库<ul>
+<li>jQuery</li>
+<li>Ajax</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>模板框架</p>
+<ul>
+<li>JSP/JSTL（已过时）</li>
+<li>Thymeleaf</li>
+<li>FreeMarker</li>
+</ul>
+</li>
+<li><p>组件化框架</p>
+<ul>
+<li><p>Node</p>
+</li>
+<li><p>Vue</p>
+</li>
+<li><p>React</p>
+</li>
+<li><p>Angular</p>
+</li>
+</ul>
+<hr>
+</li>
+</ul>
+<h2 id="运维知识（配置）"><a href="#运维知识（配置）" class="headerlink" title="运维知识（配置）"></a>运维知识（配置）</h2><ul>
+<li>Web服务器<ul>
+<li>Nginx</li>
+</ul>
+</li>
+<li>应用服务器<ul>
+<li>Tomcat</li>
+<li>Jetty</li>
+<li>Undertow</li>
+</ul>
+</li>
+<li>CDN加速</li>
+<li>持续集成/持续部署<ul>
+<li>Jenkins</li>
+</ul>
+</li>
+<li>代码质量检查<ul>
+<li>sonar</li>
+</ul>
+</li>
+<li>日志收集和分析<ul>
+<li>ELK</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="成神之路"><a href="#成神之路" class="headerlink" title="成神之路"></a>成神之路</h2><ul>
+<li>徒手撕源码</li>
+<li>光脚造轮子</li>
+<li>闭着眼睛深度调优</li>
+<li>吊打面试官</li>
+</ul>
+<h2 id="平稳降落"><a href="#平稳降落" class="headerlink" title="平稳降落"></a>平稳降落</h2><h2 id="路线图"><a href="#路线图" class="headerlink" title="路线图"></a>路线图</h2><p><img src="/blog/blog/.com/2020/05/09/JAVAdeveloproad/C:%5CUsers%5CCarey%5CDesktop%5CJava%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF-%E9%AB%98%E6%B8%85%E7%89%88.jpg" alt="路线图"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>操作系统5.1</title>
     <url>/blog/2020/05/23/OSfifthone/</url>
     <content><![CDATA[<h2 id="5-1-1、-I-O设备的基本概念与分类"><a href="#5-1-1、-I-O设备的基本概念与分类" class="headerlink" title="5.1.1、 I/O设备的基本概念与分类"></a>5.1.1、 I/O设备的基本概念与分类</h2><h3 id="什么是I-O设备"><a href="#什么是I-O设备" class="headerlink" title="什么是I/O设备"></a>什么是I/O设备</h3><ul>
@@ -1214,6 +1214,256 @@
 <h3 id="共享打印机"><a href="#共享打印机" class="headerlink" title="共享打印机"></a>共享打印机</h3><p>用SPOOLing技术将独占式打印机“虚拟”成共享打印机</p>
 <h2 id="5-1-7、设备的分配与回收"><a href="#5-1-7、设备的分配与回收" class="headerlink" title="5.1.7、设备的分配与回收"></a>5.1.7、设备的分配与回收</h2><p><img src="/blog/blog/.com/2020/05/23/OSfifthone/%E8%AE%BE%E5%A4%87%E7%9A%84%E5%88%86%E9%85%8D%E4%B8%8E%E5%9B%9E%E6%94%B6.png" alt="image-20200524113435733"></p>
 <h2 id="5-1-8、缓冲区管理"><a href="#5-1-8、缓冲区管理" class="headerlink" title="5.1.8、缓冲区管理"></a>5.1.8、缓冲区管理</h2><p><img src="/blog/blog/.com/2020/05/23/OSfifthone/%E7%BC%93%E5%86%B2%E5%8C%BA%E7%AE%A1%E7%90%86.png" alt="image-20200524140636556"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>操作系统2.4</title>
+    <url>/blog/2020/05/16/OSsecondfour/</url>
+    <content><![CDATA[<h2 id="2-4-1、死锁的概念"><a href="#2-4-1、死锁的概念" class="headerlink" title="2.4.1、死锁的概念"></a>2.4.1、死锁的概念</h2><h3 id="什么是死锁"><a href="#什么是死锁" class="headerlink" title="什么是死锁"></a>什么是死锁</h3><ul>
+<li>各进程互相等待对方手里的资源，导致各进程都阻塞，无法向前推进</li>
+</ul>
+<h3 id="死锁、饥饿、死循环的区别"><a href="#死锁、饥饿、死循环的区别" class="headerlink" title="死锁、饥饿、死循环的区别"></a>死锁、饥饿、死循环的区别</h3><ul>
+<li>死锁：至少是两个进程一起死锁，死锁进程处于阻塞态</li>
+<li>饥饿：可以只有一个进程饥饿，饥饿进程可能阻塞也可能就绪</li>
+<li>死循环：可能只有一个进程发生死循环，死循环的进程可上处理机</li>
+<li>死锁和饥饿是操作系统要解决的问题，死循环是应用程序员要解决的</li>
+</ul>
+<h3 id="死锁产生的必要条件"><a href="#死锁产生的必要条件" class="headerlink" title="死锁产生的必要条件"></a>死锁产生的必要条件</h3><ul>
+<li><p>互斥条件</p>
+<ul>
+<li>对必须互斥使用的资源的争抢才会导致死锁</li>
+</ul>
+</li>
+<li><p>不剥夺条件</p>
+<ul>
+<li>进程保持的资源只能主动释放，不可强行剥夺</li>
+</ul>
+</li>
+<li><p>请求和保持条件</p>
+<ul>
+<li>保持着某些资源不放的同时，请求别的资源</li>
+</ul>
+</li>
+<li><p>循环等待条件</p>
+<ul>
+<li>存在一种进程资源的循环等待链</li>
+<li>循环等待未必死锁，死锁一定有循环等待</li>
+</ul>
+</li>
+</ul>
+<h3 id="什么时候会发生死锁"><a href="#什么时候会发生死锁" class="headerlink" title="什么时候会发生死锁"></a>什么时候会发生死锁</h3><ul>
+<li>对不可剥夺资源的不合理分配，可能导致死锁</li>
+</ul>
+<h3 id="死锁的处理策略"><a href="#死锁的处理策略" class="headerlink" title="死锁的处理策略"></a>死锁的处理策略</h3><ul>
+<li><p>预防死锁</p>
+<ul>
+<li>破坏死锁产生的四个必要条件</li>
+</ul>
+</li>
+<li><p>避免死锁</p>
+<ul>
+<li>避免系统进入不安全状态(银行家算法)</li>
+</ul>
+</li>
+<li><p>死锁的检测和解除</p>
+<ul>
+<li>允许死锁发生，系统负责检测出死锁并解除</li>
+</ul>
+</li>
+</ul>
+  <a id="more"></a>
+
+<h2 id="2-4-2、预防死锁"><a href="#2-4-2、预防死锁" class="headerlink" title="2.4.2、预防死锁"></a>2.4.2、预防死锁</h2><h3 id="破坏互斥条件"><a href="#破坏互斥条件" class="headerlink" title="破坏互斥条件"></a>破坏互斥条件</h3><ul>
+<li>将临界资源改造为可共享使用的资源(如SPOOLing技术)</li>
+<li>缺点：可行性不高，很多时候无法破坏互斥条件</li>
+</ul>
+<h3 id="破坏不剥夺条件"><a href="#破坏不剥夺条件" class="headerlink" title="破坏不剥夺条件"></a>破坏不剥夺条件</h3><ul>
+<li>方案一：申请的资源得不到满足时，立即释放拥有的所有资源</li>
+<li>方案二：申请的资源被其他进程占用时，由操作系统协助剥夺(考虑优先级)</li>
+<li>缺点：实现复杂；剥夺资源可能导致部分工作失效；反复申请和释放导致系统开销大；可能导致饥饿</li>
+</ul>
+<h3 id="破坏请求和保持条件"><a href="#破坏请求和保持条件" class="headerlink" title="破坏请求和保持条件"></a>破坏请求和保持条件</h3><ul>
+<li>运行前分配好所有需要的资源，之后一直保持</li>
+<li>缺点：资源利用率低；可能导致饥饿</li>
+</ul>
+<h3 id="破坏循环等待条件"><a href="#破坏循环等待条件" class="headerlink" title="破坏循环等待条件"></a>破坏循环等待条件</h3><ul>
+<li>给资源编号，必须按编号从小到大的顺序申请资源</li>
+<li>缺点：不方便增加新设备；会导致资源浪费；用户编程麻烦</li>
+</ul>
+<h2 id="2-4-3、避免死锁"><a href="#2-4-3、避免死锁" class="headerlink" title="2.4.3、避免死锁"></a>2.4.3、避免死锁</h2><h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><ul>
+<li>长度为m的一维数组Available 表示还有多少可用资源</li>
+<li>n*m矩阵Max表示各进程对资源的最大需求数</li>
+<li>n*m矩阵Allocation表示已经给各进程分配了多少资源</li>
+<li>Max - Allocation = Need 矩阵表示各进程最多还需要多少资源</li>
+<li>用长度为m的一维数组Request表示进程此次申请的各种资源数</li>
+</ul>
+<h3 id="银行家算法步骤："><a href="#银行家算法步骤：" class="headerlink" title="银行家算法步骤："></a>银行家算法步骤：</h3><p>① 检查此次申请是否超过了之前声明的最大需求数</p>
+<p>② 检查此时系统剩余的可用资源是否还能满足这次请求</p>
+<p>③ 试探着分配，更改各数据结构</p>
+<p>④ 用安全性算法检查此次分配是否会导致系统进入不安全状态</p>
+<h3 id="安全性算法步骤："><a href="#安全性算法步骤：" class="headerlink" title="安全性算法步骤："></a>安全性算法步骤：</h3><ul>
+<li>检查当前的剩余可用资源是否能满足某个进程的最大需求，如果可以，就把该进程加入安全序列，并把该进程持有的资源全部回收。</li>
+<li>不断重复上述过程，看最终是否能让所有进程都加入安全序列。</li>
+</ul>
+<p>系统处于不安全状态未必死锁，但死锁时一定处于不安全状态。系统处于安全状态一定不会死锁。</p>
+<h2 id="2-4-4、死锁的检测和解除"><a href="#2-4-4、死锁的检测和解除" class="headerlink" title="2.4.4、死锁的检测和解除"></a>2.4.4、死锁的检测和解除</h2><h3 id="如何检测"><a href="#如何检测" class="headerlink" title="如何检测"></a>如何检测</h3><ul>
+<li>数据结构：==资源分配图==<ul>
+<li>两种结点<ul>
+<li>进程结点</li>
+<li>资源结点</li>
+</ul>
+</li>
+<li>两种边<ul>
+<li>进程结点—&gt;资源结点(请求边)</li>
+<li>资源结点—&gt;进程结点(分配边)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>==死锁检测算法==<ul>
+<li>==依次消除与不阻塞进程相连的边，直到无边可消==</li>
+<li>注：所谓不阻塞进程是指其申请的资源数还足够的进程</li>
+<li>死锁定理：若资源分配图是不可完全简化的，说明发生了死锁</li>
+</ul>
+</li>
+<li>如何解除<ul>
+<li>资源剥夺法</li>
+<li>撤销进程法(终止进程法)</li>
+<li>进程回退法</li>
+</ul>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>操作系统概述</title>
+    <url>/blog/2020/05/10/OSfirst/</url>
+    <content><![CDATA[<h2 id="操作系统的概念（定义）"><a href="#操作系统的概念（定义）" class="headerlink" title="操作系统的概念（定义）"></a>操作系统的概念（定义）</h2><p>操作系统（Operating System， OS）是指控制和管理整个计算机系统的硬件和软件资源，并合理地组织调度计算机的工作和资源的分配；以提供给用户和其他软件方便的接口和环境；它是计算机系统中最基本的系统软件。</p>
+<hr>
+<h2 id="操作系统的特征"><a href="#操作系统的特征" class="headerlink" title="操作系统的特征"></a>操作系统的特征</h2><ul>
+<li>并发：指两个或多个事件在同一时间间隔内发生。这些事件宏观上是同时发生的，但微观上是交替发生的。<br>易混淆考点–并行：指两个或多个事件在同一时刻同时发生。</li>
+<li>共享即资源共享，是指系统中的资源可供内存中多个并发执行的进程共同使用。<ul>
+<li>互斥共享方式(如对摄像头设备的共享使用)</li>
+<li>同时共享方式(如对磁盘自由的共享使用)</li>
+</ul>
+</li>
+<li>虚拟是指把一个物理上的实体变为若干个逻辑上的对应物。物理实体（前者）是实际存在的，而逻辑上对应物（后者）是用户感受到的。<ul>
+<li>空分复用技术(如虚拟存储器)</li>
+<li>时分复用技术(如虚拟处理器)</li>
+</ul>
+</li>
+<li>异步是指在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底的，而是走走停停，以不可预知的速度向前推进，这就是进程的异步性。</li>
+</ul>
+<hr>
+<h2 id="OS的发展与分类"><a href="#OS的发展与分类" class="headerlink" title="OS的发展与分类"></a>OS的发展与分类</h2><h3 id="手工操作系统"><a href="#手工操作系统" class="headerlink" title="手工操作系统"></a>手工操作系统</h3><h3 id="批处理阶段"><a href="#批处理阶段" class="headerlink" title="批处理阶段"></a>批处理阶段</h3><ul>
+<li>单道批处理系统<br>引入脱机输入/输出技术（用外围机+磁带完成），并由监督程序负责控制作业的输入、输出<br>缺点：内存中仅能有一道程序运行, CPU有大量的时间是在空闲等待I/O完成</li>
+<li>多道批处理系统(操作系统开始出现)<br>优点：多道程序并发执行，共享计算机资源。资源利用率大幅提升<br>缺点：没有人机交互功能</li>
+</ul>
+<h3 id="分时操作系统"><a href="#分时操作系统" class="headerlink" title="分时操作系统"></a>分时操作系统</h3><p>计算机以时间片为单位轮流为各个用户/作业服务<br>优点：解决了人机交互问题<br>缺点：不能优先处理一些紧急任务</p>
+<h3 id="实时操作系统"><a href="#实时操作系统" class="headerlink" title="实时操作系统"></a>实时操作系统</h3><p>要在严格的时限内处理完事件，具有及时性和可靠性</p>
+<ul>
+<li><p>硬实时系统  必须在绝对严格的规定时间内完成处理    如导弹控制系统</p>
+</li>
+<li><p>软实时系统     能接受偶尔违反时间规定              如12306火车订票系统</p>
+</li>
+</ul>
+<h3 id="网络操作系统"><a href="#网络操作系统" class="headerlink" title="网络操作系统"></a>网络操作系统</h3><p>实现网络中各种资源的共享（如文件共享）和各台计算机之间的通信</p>
+<h3 id="分布式操作系统"><a href="#分布式操作系统" class="headerlink" title="分布式操作系统"></a>分布式操作系统</h3><p>分布性和并行性<br>任何工作都可以分布在这些计算机上，由它们并行、协同完成这个任务</p>
+<h3 id="个人计算机操作系统"><a href="#个人计算机操作系统" class="headerlink" title="个人计算机操作系统"></a>个人计算机操作系统</h3><hr>
+<a id="more"></a>
+
+<h2 id="OS的运行机制和体系结构"><a href="#OS的运行机制和体系结构" class="headerlink" title="OS的运行机制和体系结构"></a>OS的运行机制和体系结构</h2><h3 id="运行机制"><a href="#运行机制" class="headerlink" title="运行机制"></a>运行机制</h3><ul>
+<li>两种指令<ul>
+<li>特权指令                只能在核心态下执行</li>
+<li>非特权指令</li>
+</ul>
+</li>
+<li>两种处理器状态                   <ul>
+<li>核心态</li>
+<li>用户态</li>
+</ul>
+</li>
+<li>两种程序<ul>
+<li>内核程序         只能在核心态下执行</li>
+<li>应用程序</li>
+</ul>
+</li>
+</ul>
+<h3 id="操作系统内核"><a href="#操作系统内核" class="headerlink" title="操作系统内核"></a>操作系统内核</h3><ul>
+<li>时钟管理</li>
+<li>中断处理</li>
+<li>原语   —-  是一种特殊的程序，其执行具有原子性</li>
+<li>对系统资源进行管理的功能<ul>
+<li>进程管理</li>
+<li>存储器管理</li>
+<li>设备管理</li>
+</ul>
+</li>
+<li>操作系统的体系结构<ul>
+<li>大内核<ul>
+<li>优点：高性能</li>
+<li>缺点：内核代码庞大，结构混乱，难以维护</li>
+</ul>
+</li>
+<li>微内核<ul>
+<li>优点：内核功能少，结构清晰，方便维护</li>
+<li>缺点：需要频繁地在核心态和用户态之间切换，性能低</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="中断和异常"><a href="#中断和异常" class="headerlink" title="中断和异常"></a>中断和异常</h2><h3 id="中断机制的诞生"><a href="#中断机制的诞生" class="headerlink" title="中断机制的诞生"></a>中断机制的诞生</h3><p>为了实现多道程序并发执行而引入的技术</p>
+<h3 id="中断的概念和作用"><a href="#中断的概念和作用" class="headerlink" title="中断的概念和作用"></a>中断的概念和作用</h3><ul>
+<li>发生中断，就意味着需要操作系统介入开展管理工作，CPU会立即进入核心态</li>
+<li>“中断”是CPU从用户态进入核心态的唯一途径<br>“用户态-&gt;核心态”是通过中断实现的，并且中断是唯一途径<br>“核心态-&gt;用户态”：执行一条特权指令——修改PSW的标志位为“用户态”</li>
+</ul>
+<h3 id="中断的分类"><a href="#中断的分类" class="headerlink" title="中断的分类"></a>中断的分类</h3><h4 id="内中断-也称异常、例外、陷入"><a href="#内中断-也称异常、例外、陷入" class="headerlink" title="内中断(也称异常、例外、陷入)"></a>内中断(也称异常、例外、陷入)</h4><ul>
+<li>自愿中断—指令中断</li>
+<li>强迫中断<ul>
+<li>硬件故障</li>
+<li>软中断</li>
+</ul>
+</li>
+</ul>
+<h4 id="外中断-中断"><a href="#外中断-中断" class="headerlink" title="外中断(中断)"></a>外中断(中断)</h4><ul>
+<li>外设请求</li>
+<li>人工干预</li>
+</ul>
+<h4 id="补充：内中断的另一种分类方式"><a href="#补充：内中断的另一种分类方式" class="headerlink" title="补充：内中断的另一种分类方式"></a>补充：内中断的另一种分类方式</h4><ul>
+<li>陷阱、陷入(trap)</li>
+<li>故障(fault)</li>
+<li>终止(abort)</li>
+</ul>
+<h4 id="外中断的处理过程"><a href="#外中断的处理过程" class="headerlink" title="外中断的处理过程"></a>外中断的处理过程</h4><ul>
+<li>每条指令执行结束后，CPU检查是否有外部中断信号</li>
+<li>若有外部中断信号，则需要保护被中断进程的CPU环境</li>
+<li>根据中断信号类型转入相应的中断处理程序</li>
+<li>恢复原进程的CPU环境并退出中断，返回原进程继续往下执行</li>
+</ul>
+<hr>
+<h2 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h2><h3 id="什么是系统调用，有何作用"><a href="#什么是系统调用，有何作用" class="headerlink" title="什么是系统调用，有何作用"></a>什么是系统调用，有何作用</h3><ul>
+<li>操作系统提供给应用程序使用的接口</li>
+<li>应用程序通过系统调用来请求获得操作系统的服务</li>
+<li>系统调用会使处理器从用户态进入核心态</li>
+<li>分类<ul>
+<li>设备管理</li>
+<li>文件管理</li>
+<li>进程控制</li>
+<li>进程通信</li>
+<li>内存管理</li>
+</ul>
+</li>
+</ul>
+<p>凡是与资源有关的操作、会直接影响到其他进程的操作，一定需要操作系统介入，即需要通过系统调用来实现</p>
+<h3 id="系统调用和库函数的区别"><a href="#系统调用和库函数的区别" class="headerlink" title="系统调用和库函数的区别"></a>系统调用和库函数的区别</h3><ul>
+<li>系统调用是操作系统向上层提供的接口</li>
+<li>有的库函数是对系统调用的进一步封装</li>
+<li>当今编写的应用程序大多是通过高级语言提供的库函数间接地进行系统调用</li>
+</ul>
+<h3 id="系统调用背后的过程"><a href="#系统调用背后的过程" class="headerlink" title="系统调用背后的过程"></a>系统调用背后的过程</h3><p>1.传递系统调用参数<br>2.执行陷入指令<br>3.执行系统调用相应服务程序<br>4.返回用户程序</p>
+<p>系统调用发送在用户态，对系统调用的处理发送在核心态<br>执行陷入指令会产生内中断，使处理器从用户态进入核心态</p>
 ]]></content>
   </entry>
   <entry>
@@ -1945,137 +2195,6 @@
       </tags>
   </entry>
   <entry>
-    <title>操作系统概述</title>
-    <url>/blog/2020/05/10/OSfirst/</url>
-    <content><![CDATA[<h2 id="操作系统的概念（定义）"><a href="#操作系统的概念（定义）" class="headerlink" title="操作系统的概念（定义）"></a>操作系统的概念（定义）</h2><p>操作系统（Operating System， OS）是指控制和管理整个计算机系统的硬件和软件资源，并合理地组织调度计算机的工作和资源的分配；以提供给用户和其他软件方便的接口和环境；它是计算机系统中最基本的系统软件。</p>
-<hr>
-<h2 id="操作系统的特征"><a href="#操作系统的特征" class="headerlink" title="操作系统的特征"></a>操作系统的特征</h2><ul>
-<li>并发：指两个或多个事件在同一时间间隔内发生。这些事件宏观上是同时发生的，但微观上是交替发生的。<br>易混淆考点–并行：指两个或多个事件在同一时刻同时发生。</li>
-<li>共享即资源共享，是指系统中的资源可供内存中多个并发执行的进程共同使用。<ul>
-<li>互斥共享方式(如对摄像头设备的共享使用)</li>
-<li>同时共享方式(如对磁盘自由的共享使用)</li>
-</ul>
-</li>
-<li>虚拟是指把一个物理上的实体变为若干个逻辑上的对应物。物理实体（前者）是实际存在的，而逻辑上对应物（后者）是用户感受到的。<ul>
-<li>空分复用技术(如虚拟存储器)</li>
-<li>时分复用技术(如虚拟处理器)</li>
-</ul>
-</li>
-<li>异步是指在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底的，而是走走停停，以不可预知的速度向前推进，这就是进程的异步性。</li>
-</ul>
-<hr>
-<h2 id="OS的发展与分类"><a href="#OS的发展与分类" class="headerlink" title="OS的发展与分类"></a>OS的发展与分类</h2><h3 id="手工操作系统"><a href="#手工操作系统" class="headerlink" title="手工操作系统"></a>手工操作系统</h3><h3 id="批处理阶段"><a href="#批处理阶段" class="headerlink" title="批处理阶段"></a>批处理阶段</h3><ul>
-<li>单道批处理系统<br>引入脱机输入/输出技术（用外围机+磁带完成），并由监督程序负责控制作业的输入、输出<br>缺点：内存中仅能有一道程序运行, CPU有大量的时间是在空闲等待I/O完成</li>
-<li>多道批处理系统(操作系统开始出现)<br>优点：多道程序并发执行，共享计算机资源。资源利用率大幅提升<br>缺点：没有人机交互功能</li>
-</ul>
-<h3 id="分时操作系统"><a href="#分时操作系统" class="headerlink" title="分时操作系统"></a>分时操作系统</h3><p>计算机以时间片为单位轮流为各个用户/作业服务<br>优点：解决了人机交互问题<br>缺点：不能优先处理一些紧急任务</p>
-<h3 id="实时操作系统"><a href="#实时操作系统" class="headerlink" title="实时操作系统"></a>实时操作系统</h3><p>要在严格的时限内处理完事件，具有及时性和可靠性</p>
-<ul>
-<li><p>硬实时系统  必须在绝对严格的规定时间内完成处理    如导弹控制系统</p>
-</li>
-<li><p>软实时系统     能接受偶尔违反时间规定              如12306火车订票系统</p>
-</li>
-</ul>
-<h3 id="网络操作系统"><a href="#网络操作系统" class="headerlink" title="网络操作系统"></a>网络操作系统</h3><p>实现网络中各种资源的共享（如文件共享）和各台计算机之间的通信</p>
-<h3 id="分布式操作系统"><a href="#分布式操作系统" class="headerlink" title="分布式操作系统"></a>分布式操作系统</h3><p>分布性和并行性<br>任何工作都可以分布在这些计算机上，由它们并行、协同完成这个任务</p>
-<h3 id="个人计算机操作系统"><a href="#个人计算机操作系统" class="headerlink" title="个人计算机操作系统"></a>个人计算机操作系统</h3><hr>
-<a id="more"></a>
-
-<h2 id="OS的运行机制和体系结构"><a href="#OS的运行机制和体系结构" class="headerlink" title="OS的运行机制和体系结构"></a>OS的运行机制和体系结构</h2><h3 id="运行机制"><a href="#运行机制" class="headerlink" title="运行机制"></a>运行机制</h3><ul>
-<li>两种指令<ul>
-<li>特权指令                只能在核心态下执行</li>
-<li>非特权指令</li>
-</ul>
-</li>
-<li>两种处理器状态                   <ul>
-<li>核心态</li>
-<li>用户态</li>
-</ul>
-</li>
-<li>两种程序<ul>
-<li>内核程序         只能在核心态下执行</li>
-<li>应用程序</li>
-</ul>
-</li>
-</ul>
-<h3 id="操作系统内核"><a href="#操作系统内核" class="headerlink" title="操作系统内核"></a>操作系统内核</h3><ul>
-<li>时钟管理</li>
-<li>中断处理</li>
-<li>原语   —-  是一种特殊的程序，其执行具有原子性</li>
-<li>对系统资源进行管理的功能<ul>
-<li>进程管理</li>
-<li>存储器管理</li>
-<li>设备管理</li>
-</ul>
-</li>
-<li>操作系统的体系结构<ul>
-<li>大内核<ul>
-<li>优点：高性能</li>
-<li>缺点：内核代码庞大，结构混乱，难以维护</li>
-</ul>
-</li>
-<li>微内核<ul>
-<li>优点：内核功能少，结构清晰，方便维护</li>
-<li>缺点：需要频繁地在核心态和用户态之间切换，性能低</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="中断和异常"><a href="#中断和异常" class="headerlink" title="中断和异常"></a>中断和异常</h2><h3 id="中断机制的诞生"><a href="#中断机制的诞生" class="headerlink" title="中断机制的诞生"></a>中断机制的诞生</h3><p>为了实现多道程序并发执行而引入的技术</p>
-<h3 id="中断的概念和作用"><a href="#中断的概念和作用" class="headerlink" title="中断的概念和作用"></a>中断的概念和作用</h3><ul>
-<li>发生中断，就意味着需要操作系统介入开展管理工作，CPU会立即进入核心态</li>
-<li>“中断”是CPU从用户态进入核心态的唯一途径<br>“用户态-&gt;核心态”是通过中断实现的，并且中断是唯一途径<br>“核心态-&gt;用户态”：执行一条特权指令——修改PSW的标志位为“用户态”</li>
-</ul>
-<h3 id="中断的分类"><a href="#中断的分类" class="headerlink" title="中断的分类"></a>中断的分类</h3><h4 id="内中断-也称异常、例外、陷入"><a href="#内中断-也称异常、例外、陷入" class="headerlink" title="内中断(也称异常、例外、陷入)"></a>内中断(也称异常、例外、陷入)</h4><ul>
-<li>自愿中断—指令中断</li>
-<li>强迫中断<ul>
-<li>硬件故障</li>
-<li>软中断</li>
-</ul>
-</li>
-</ul>
-<h4 id="外中断-中断"><a href="#外中断-中断" class="headerlink" title="外中断(中断)"></a>外中断(中断)</h4><ul>
-<li>外设请求</li>
-<li>人工干预</li>
-</ul>
-<h4 id="补充：内中断的另一种分类方式"><a href="#补充：内中断的另一种分类方式" class="headerlink" title="补充：内中断的另一种分类方式"></a>补充：内中断的另一种分类方式</h4><ul>
-<li>陷阱、陷入(trap)</li>
-<li>故障(fault)</li>
-<li>终止(abort)</li>
-</ul>
-<h4 id="外中断的处理过程"><a href="#外中断的处理过程" class="headerlink" title="外中断的处理过程"></a>外中断的处理过程</h4><ul>
-<li>每条指令执行结束后，CPU检查是否有外部中断信号</li>
-<li>若有外部中断信号，则需要保护被中断进程的CPU环境</li>
-<li>根据中断信号类型转入相应的中断处理程序</li>
-<li>恢复原进程的CPU环境并退出中断，返回原进程继续往下执行</li>
-</ul>
-<hr>
-<h2 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h2><h3 id="什么是系统调用，有何作用"><a href="#什么是系统调用，有何作用" class="headerlink" title="什么是系统调用，有何作用"></a>什么是系统调用，有何作用</h3><ul>
-<li>操作系统提供给应用程序使用的接口</li>
-<li>应用程序通过系统调用来请求获得操作系统的服务</li>
-<li>系统调用会使处理器从用户态进入核心态</li>
-<li>分类<ul>
-<li>设备管理</li>
-<li>文件管理</li>
-<li>进程控制</li>
-<li>进程通信</li>
-<li>内存管理</li>
-</ul>
-</li>
-</ul>
-<p>凡是与资源有关的操作、会直接影响到其他进程的操作，一定需要操作系统介入，即需要通过系统调用来实现</p>
-<h3 id="系统调用和库函数的区别"><a href="#系统调用和库函数的区别" class="headerlink" title="系统调用和库函数的区别"></a>系统调用和库函数的区别</h3><ul>
-<li>系统调用是操作系统向上层提供的接口</li>
-<li>有的库函数是对系统调用的进一步封装</li>
-<li>当今编写的应用程序大多是通过高级语言提供的库函数间接地进行系统调用</li>
-</ul>
-<h3 id="系统调用背后的过程"><a href="#系统调用背后的过程" class="headerlink" title="系统调用背后的过程"></a>系统调用背后的过程</h3><p>1.传递系统调用参数<br>2.执行陷入指令<br>3.执行系统调用相应服务程序<br>4.返回用户程序</p>
-<p>系统调用发送在用户态，对系统调用的处理发送在核心态<br>执行陷入指令会产生内中断，使处理器从用户态进入核心态</p>
-]]></content>
-  </entry>
-  <entry>
     <title>操作系统4.1</title>
     <url>/blog/2020/05/20/OSfourthone/</url>
     <content><![CDATA[<h2 id="4-1-1、初识文件管理"><a href="#4-1-1、初识文件管理" class="headerlink" title="4.1.1、初识文件管理"></a>4.1.1、初识文件管理</h2><ul>
@@ -2379,287 +2498,265 @@
 ]]></content>
   </entry>
   <entry>
-    <title>操作系统2.3</title>
-    <url>/blog/2020/05/13/OSsecondthree/</url>
-    <content><![CDATA[<h2 id="2-3-1互斥同步"><a href="#2-3-1互斥同步" class="headerlink" title="2.3.1互斥同步"></a>2.3.1互斥同步</h2><h3 id="进程同步"><a href="#进程同步" class="headerlink" title="进程同步"></a>进程同步</h3><ul>
-<li>并发性带来了异步性，有时需要通过进程同步解决这种异步问题。有的进程之间需要相互配合地完成工作，各进程的工作推进需要遵循一定的先后顺序。</li>
+    <title>操作系统2.2</title>
+    <url>/blog/2020/05/12/OSsecondtwo/</url>
+    <content><![CDATA[<h2 id="处理机调度"><a href="#处理机调度" class="headerlink" title="处理机调度"></a>处理机调度</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li>按某种算法选择一个进程将处理机分配给它</li>
 </ul>
-<h3 id="进程互斥"><a href="#进程互斥" class="headerlink" title="进程互斥"></a>进程互斥</h3><ul>
-<li><p>对临界资源的访问，需要互斥的进行。即同一时间段内只能允许一个进程访问该资源</p>
-</li>
-<li><p>四个部门</p>
+<h3 id="三个层次"><a href="#三个层次" class="headerlink" title="三个层次"></a>三个层次</h3><ul>
+<li><p>高级调度<strong>(作业调度)</strong></p>
 <ul>
-<li>进入区<ul>
-<li>检查是否可进入临界区，若可进入，需要“上锁”</li>
+<li>按照某种规则，从后备队列中选择合适的作业将其调入内存，并为其创建进程</li>
 </ul>
 </li>
-<li>临界区<ul>
-<li>访问邻接资源的那段代码</li>
-</ul>
-</li>
-<li>退出区<ul>
-<li>负责“解锁”</li>
-</ul>
-</li>
-<li>剩余区<ul>
-<li>其余代码部分</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>需要遵循的原则</p>
+<li><p>中级调度<strong>(内存调度)</strong></p>
 <ul>
-<li>空闲让进<ul>
-<li>临界区空闲时，应允许一个进程访问</li>
+<li>按照某种规则，从挂起队列中选择合适的进程将其数据调回内存</li>
 </ul>
 </li>
-<li>忙则等待<ul>
-<li>临界区正在被访问时，其他试图访问的进程需要等待</li>
+<li><p>低级调度(进程调度)</p>
+<ul>
+<li>按照某种规则，从就绪队列中选择一个进程为其分配处理机</li>
 </ul>
 </li>
-<li>有限等待<ul>
-<li>要在有限时间内进入临界区，保证不会饥饿</li>
+</ul>
+<h3 id="三层调度的联系、对比"><a href="#三层调度的联系、对比" class="headerlink" title="三层调度的联系、对比"></a>三层调度的联系、对比</h3><ul>
+<li>高级调度<ul>
+<li>外存-&gt;内存(面向作业)</li>
+<li>发生频率：最低</li>
 </ul>
 </li>
-<li>让权等待<ul>
-<li>进不了临界区的进程，需释放处理机，防止忙等</li>
+<li>中级调度<ul>
+<li>外存-&gt;内存(面向进程)</li>
+<li>发送频率：中等</li>
 </ul>
 </li>
+<li>低级调度<ul>
+<li>内存-&gt;CPU</li>
+<li>发生频率：最高</li>
+</ul>
+</li>
+</ul>
+<h3 id="补充知识"><a href="#补充知识" class="headerlink" title="补充知识"></a>补充知识</h3><ul>
+<li>为减轻系统负载，提供资源利用率，暂时不执行的进程会被调到外存从而变为“挂起态”</li>
+<li>七状态模型：在五状态模型的基础上加入了“就绪挂起”和“阻塞挂起”两种状态</li>
 </ul>
 <a id="more"></a>
 
-</li>
-</ul>
-<h2 id="2-3-2进程互斥的软件实现方法"><a href="#2-3-2进程互斥的软件实现方法" class="headerlink" title="2.3.2进程互斥的软件实现方法"></a>2.3.2进程互斥的软件实现方法</h2><h3 id="单标志法"><a href="#单标志法" class="headerlink" title="单标志法"></a>单标志法</h3><ul>
-<li>在进入区只做“检查”，不做“上锁”</li>
-<li>在退出区把临界区的使用权转交给另一个进程(相当于在退出区既给另一个进程“解锁”，又给自己“上锁”)</li>
-<li>主要问题：不遵循“空闲让进”原则</li>
-</ul>
-<h3 id="双标志先检查"><a href="#双标志先检查" class="headerlink" title="双标志先检查"></a>双标志先检查</h3><ul>
-<li>在进入区先“检查”后“上锁”，退出区“解锁”</li>
-<li>主要问题：不遵循“忙则等待”原则</li>
-</ul>
-<h3 id="双标志后检查"><a href="#双标志后检查" class="headerlink" title="双标志后检查"></a>双标志后检查</h3><ul>
-<li>在进入区先“加锁”后“检查，退出区“解锁”</li>
-<li>主要问题：不遵循“空闲让进，有限等待”原则，可能导致“饥饿”</li>
-</ul>
-<h3 id="Peterson算法"><a href="#Peterson算法" class="headerlink" title="Peterson算法"></a>Peterson算法</h3><ul>
-<li>在进入区“主动争取—主动谦让—检查对方是否相近、己方是否谦让”</li>
-<li>主要问题：不遵循“让权等待”原则，会发送“忙等”</li>
-</ul>
-<h2 id="2-3-3进程互斥的硬件实现方法"><a href="#2-3-3进程互斥的硬件实现方法" class="headerlink" title="2.3.3进程互斥的硬件实现方法"></a>2.3.3进程互斥的硬件实现方法</h2><h3 id="中断屏蔽方法"><a href="#中断屏蔽方法" class="headerlink" title="中断屏蔽方法"></a>中断屏蔽方法</h3><ul>
-<li>使用“开/关中断”指令实现</li>
-<li>优点：简单高效</li>
-<li>缺点：只适用于单片机；只适用于操作系统内核进程</li>
-</ul>
-<h3 id="TestAndSet-TS指令-TSL指令"><a href="#TestAndSet-TS指令-TSL指令" class="headerlink" title="TestAndSet(TS指令/TSL指令)"></a>TestAndSet(TS指令/TSL指令)</h3><ul>
-<li><p>1、old记录是否已被上锁；</p>
-<p>2、再将lock设为true；</p>
-<p>3、检查临界区是否已被上锁(若以上锁，则循环重复前几步)</p>
-</li>
-<li><p>优点：实现简单；适用于多处理机环境</p>
-</li>
-<li><p>缺点：不满足让权等待</p>
-</li>
-</ul>
-<h3 id="Swap指令-XCHG指令"><a href="#Swap指令-XCHG指令" class="headerlink" title="Swap指令(XCHG指令)"></a>Swap指令(XCHG指令)</h3><ul>
-<li>逻辑上同TSL</li>
-</ul>
-<h2 id="2-3-4、信号量机制"><a href="#2-3-4、信号量机制" class="headerlink" title="2.3.4、信号量机制"></a>2.3.4、信号量机制</h2><h3 id="整型信号量"><a href="#整型信号量" class="headerlink" title="整型信号量"></a>整型信号量</h3><ul>
-<li>用一个整数型变量作为信号量，数值表示某种资源数</li>
-<li>整型信号量与普通整型变量的区别：对信号量只能执行初始化、P、V三种操作</li>
-<li>整型信号量==存在的问题：不满足让权等待原则==</li>
-</ul>
-<h3 id="记录型信号量"><a href="#记录型信号量" class="headerlink" title="记录型信号量"></a>记录型信号量</h3><ul>
-<li>S.value表示某种资源数，S.L指向等待该资源的队列</li>
-<li>P操作中，一定是先S.value–，之后可能需要执行block原语</li>
-<li>V操作中，一定是先S.value++，之后可能需要执行wakeup原语</li>
-<li>注意：==要能够自己推断在什么条件下需要执行block或wakeup==</li>
-<li>可以用记录型信号量实现系统资源的“申请”和“释放”</li>
-<li>可以用记录型信号量实现进程互斥、进程同步</li>
-</ul>
-<p>注：若考试中出现P(S)、V(S)的操作，除非特别说明，否则默认S为记录型信号量</p>
-<h2 id="2-3-5、用信号量实现进程互斥、同步、前驱关系"><a href="#2-3-5、用信号量实现进程互斥、同步、前驱关系" class="headerlink" title="2.3.5、用信号量实现进程互斥、同步、前驱关系"></a>2.3.5、用信号量实现进程互斥、同步、前驱关系</h2><h3 id="实现进程互斥"><a href="#实现进程互斥" class="headerlink" title="实现进程互斥"></a>实现进程互斥</h3><ul>
-<li>分析问题，确定临界区</li>
-<li>设置互斥信号量，初值为1（==互斥问题，信号量初值为1==）</li>
-<li>==临界区之前==对信号量执行P操作</li>
-<li>==临界区之后==对信号量执行V操作</li>
-</ul>
-<h3 id="实现进程同步"><a href="#实现进程同步" class="headerlink" title="实现进程同步"></a>实现进程同步</h3><ul>
-<li>分析问题，找出哪里需要实现“一前一后”的同步关系</li>
-<li>设置同步信号量，初始值为0（==同步问题，信号量初值为0==）</li>
-<li>在==“前操作”之后==执行V操作</li>
-<li>在==“后操作”之前==执行P操作</li>
-</ul>
-<h3 id="实现进程的前驱关系"><a href="#实现进程的前驱关系" class="headerlink" title="实现进程的前驱关系"></a>实现进程的前驱关系</h3><ul>
-<li>分析问题，画出前驱图，把每一对前驱关系都看成一个同步问题（前驱问题，本质上就是更复杂的同步问题）</li>
-<li>为每一对前驱关系设置同步信号量，初值为0</li>
-<li>在每一个“前操作”之后执行V操作</li>
-<li>在每一个“后操作”之前执行P操作</li>
-</ul>
-<h2 id="2-3-6、生产者消费者问题"><a href="#2-3-6、生产者消费者问题" class="headerlink" title="2.3.6、生产者消费者问题"></a>2.3.6、生产者消费者问题</h2><p>PV 操作题目的解题思路：</p>
-<p>1、关系分析。找出题目中描述的各个进程，分析它们之间的同步、互斥关闭。        2、整理思路。根据各进程的操作流程确定P、V操作的大致顺序。<br>        3、设置信号量。设置需要的信号量，并根据题目条件确定信号量初值。（互斥信号量初值一般为1，同步信号量的初始值要看对应资源的初始值是多少）。</p>
-<p>生产者消费者问题是一个互斥、同步的综合问题。<br>        有时候是消费者需要等待生产者生产，有时候是生产者要等待消费者消费，这是两个不同的“一前一后问题”，因此也需要设置两个同步信号量。</p>
-<p><img src="/blog/blog/.com/2020/05/13/OSsecondthree/OSsecondthree%5Cimage-20200515141953621.png" alt="生产者消费者"></p>
-<p>==易错点==：实现互斥和实现同步的两个P操作的先后顺序</p>
-<h2 id="2-3-7多生产者-多消费者问题"><a href="#2-3-7多生产者-多消费者问题" class="headerlink" title="2.3.7多生产者-多消费者问题"></a>2.3.7多生产者-多消费者问题</h2><p>解决“多生产者-多消费者问题”的关键在于理清复杂的同步关系。</p>
-<p>在分析同步问题(一前一后问题)的时候不能从单个进程行为的角度来分析，要把“一前一后”发生的事看做是两种“事件”的前后关系。</p>
-<p>比如，如果==从单个进程行为的角度来考虑==的话，我们会有以下结论：</p>
-<p>==如果盘子里装有苹果，那么一定要女儿取走苹果后父亲或母亲才能再放入水果==</p>
-<p>==如果盘子里装有橘子，那么一定要有儿子取走橘子后父亲或母亲才能再放入水果==</p>
-<p>这么看是否就意味着要设置四个同步信号量分别实现这四个“一前一后”的关系了？</p>
-<p>正确的分析方法应该==从“事件”的角度来考虑==，我们可以把上述四对“进程行为的前后关系”抽象为一对“事件的前后关系”</p>
-<p>盘子变空事件-&gt;放入水果事件。“盘子变空事件”即可由儿子引发，也可由女儿引发；“放水果事件”既可能是父亲执行，也可能是母亲执行。这样的话，就可以用一个同步信号量解决问题了。</p>
-<h2 id="2-3-8吸烟者问题"><a href="#2-3-8吸烟者问题" class="headerlink" title="2.3.8吸烟者问题"></a>2.3.8吸烟者问题</h2><p>吸烟者问题可以为我们解决“可以生产多个产品的单生产者”问题提供一个思路</p>
-<p>值得吸取精华是：“轮流让各个吸烟者吸烟”必然需要“轮流的在桌上放上组合一、二、三”，注意体会我们是如何用一个整型变量i实现这个“轮流”过程的</p>
-<p>如果题目改为“每次随机地让一个吸烟者吸烟”，我们又应该如何用代码写出这个逻辑？</p>
-<p>若一个生产者要生产多种产品(或者说会引发多种前驱事件)，那么各个V操作应该放在各自对应“事件”发生之后的位置</p>
-<h2 id="2-3-9读者-写者问题"><a href="#2-3-9读者-写者问题" class="headerlink" title="2.3.9读者-写者问题"></a>2.3.9读者-写者问题</h2><p>读者-写者问题为我们解决复杂的互斥问题提供了一个参考思路。</p>
-<p>其==核心思想==在于设置了一个==计数器count==用来记录当前正在访问共享文件的读进程数。我们可以用count的值来判断当前进入的进程是否是第一个/最后一个读进程，从而做出不同的处理。</p>
-<p>另外，对count变量的检查和赋值不能一气呵成导致了一些错误，如果==需要实现“一气呵成”，自然应该想到用互斥信号量。==</p>
-<p>最后，还要体会我们是如何解决“写进程饥饿”问题的</p>
-<h2 id="2-3-10哲学家进餐问题"><a href="#2-3-10哲学家进餐问题" class="headerlink" title="2.3.10哲学家进餐问题"></a>2.3.10哲学家进餐问题</h2><p>哲学家进餐问题的关键在于解决进程死锁。</p>
-<p>这些内存之间只存在互斥关系，但是与之前接触到的互斥关系不同的是，每个进程都需要同时持有两个临界资源，因此就有“死锁”问题的隐患。</p>
-<p>如果在考试中遇到了一个进程需要同时持有多个临界资源的情况，应该参考哲学家问题的思想，分析题中给出的进程之间是否会发送循环等待，是否会发生死锁</p>
-<p>可以参考哲学家就餐问题解决死锁的三种思路</p>
-<h2 id="2-3-11管程"><a href="#2-3-11管程" class="headerlink" title="2.3.11管程"></a>2.3.11管程</h2><ul>
-<li>为什么要引入管程<ul>
-<li>解决信号量机制编程麻烦、易出错的问题</li>
+<h2 id="进程调度的时机、切换与过程、调度方式"><a href="#进程调度的时机、切换与过程、调度方式" class="headerlink" title="进程调度的时机、切换与过程、调度方式"></a>进程调度的时机、切换与过程、调度方式</h2><h3 id="时机"><a href="#时机" class="headerlink" title="时机"></a>时机</h3><ul>
+<li>什么时候需要进程调度？<ul>
+<li>主动放弃<ul>
+<li>进程正常终止</li>
+<li>运行过程中发生异常而终止</li>
+<li>主动阻塞(如等待I/O)</li>
 </ul>
 </li>
-<li>组成<ul>
-<li>共享数据结构</li>
-<li>对数据结构初始化的语句</li>
-<li>一组用来访问数据结构的过程（函数）</li>
+<li>被动放弃<ul>
+<li>分给进程的时间片用完</li>
+<li>有更紧急的事情需要处理(如I/O中断)</li>
+<li>有更高优先级的进程进入就绪队列</li>
 </ul>
 </li>
-<li>基本特征<ul>
-<li>==各外部进程/线程只能通过管程提供的特定“入口”才能访问共享数据==</li>
-<li>==每次仅允许一个进程在管程内执行某个内部过程==</li>
+</ul>
+</li>
+<li>什么时候不能进行进程调度<ul>
+<li>在处理中断的过程中</li>
+<li>进程在操作系统内核程序临界区中</li>
+<li>原子操作过程中(原语)</li>
+</ul>
+</li>
+</ul>
+<h3 id="切换与过程"><a href="#切换与过程" class="headerlink" title="切换与过程"></a>切换与过程</h3><ul>
+<li>切换过程<ul>
+<li>对原来运行进程各种数据的保存</li>
+<li>对新的进程各种数据的恢复</li>
+</ul>
+</li>
+<li>重要结论：<strong>进程调度、切换是有代价的</strong>，并不是调度越频繁，并发度越高</li>
+</ul>
+<h3 id="方式"><a href="#方式" class="headerlink" title="方式"></a>方式</h3><ul>
+<li>非剥夺调度方式(非抢占式)<ul>
+<li>只能由当前运行的进程主动放弃CPU</li>
+</ul>
+</li>
+<li>剥夺调度方式(抢占式)<ul>
+<li>可由操作系统剥夺当前进程的CPU使用权</li>
+</ul>
+</li>
+</ul>
+<h2 id="调度算法的评价指标"><a href="#调度算法的评价指标" class="headerlink" title="调度算法的评价指标"></a>调度算法的评价指标</h2><h3 id="CPU利用率"><a href="#CPU利用率" class="headerlink" title="CPU利用率"></a>CPU利用率</h3><ul>
+<li>$$<br>利用率 = 忙碌的时间/总时间<br>$$</li>
+</ul>
+<h3 id="系统吞吐量"><a href="#系统吞吐量" class="headerlink" title="系统吞吐量"></a>系统吞吐量</h3><ul>
+<li>$$<br>系统吞吐量 = 总共完成了多少道作业/总共花了多少时间<br>$$</li>
+</ul>
+<h3 id="周转时间"><a href="#周转时间" class="headerlink" title="周转时间"></a>周转时间</h3><ul>
+<li><p>$$<br>周转时间 = 作业完成时间-作业到达时间<br>$$</p>
+</li>
+<li><p>$$<br>平均周转时间 = 各作业周转时间之和/作业数<br>$$</p>
+</li>
+<li><p>$$<br>带权周转时间 = 作业周转时间 / 作业实际运行的时间<br>$$</p>
+</li>
+<li><p>$$<br>平均带权周转时间 = 各作业带权周转时间之和 / 作业数<br>$$</p>
+</li>
+</ul>
+<h3 id="等待时间"><a href="#等待时间" class="headerlink" title="等待时间"></a>等待时间</h3><ul>
+<li>//进程/作业                等待被服务的时间之和</li>
+<li>周转时间-运行时间-(I/O操作的时间)</li>
+<li>平均等待时间即   各个进程/作业等待时间的平均值</li>
+</ul>
+<h3 id="响应时间"><a href="#响应时间" class="headerlink" title="响应时间"></a>响应时间</h3><ul>
+<li>从用户提交请求到首次产生响应所用的时间</li>
+</ul>
+<h2 id="调度算法"><a href="#调度算法" class="headerlink" title="调度算法"></a>调度算法</h2><h3 id="先来先服务-FCFS"><a href="#先来先服务-FCFS" class="headerlink" title="先来先服务(FCFS)"></a>先来先服务(FCFS)</h3><ul>
+<li>思想&amp;&amp;规则<ul>
+<li>按照到达的先后顺序调度，事实上就是等待时间越久越优先得到服务</li>
+</ul>
+</li>
+<li>可抢占？<ul>
+<li>非抢占式</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>公平：实现简单</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>对短作业不利</li>
+</ul>
+</li>
+<li>考虑到等待时间&amp;运行时间？<ul>
+<li>等待时间√    </li>
+<li>运行时间×</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>不会</li>
+</ul>
+</li>
+</ul>
+<h3 id="短作业优先-SJF-SPF"><a href="#短作业优先-SJF-SPF" class="headerlink" title="短作业优先(SJF/SPF)"></a>短作业优先(SJF/SPF)</h3><ul>
+<li>思想&amp;规则<ul>
+<li>每次调度时选择当前已到达且运行时间最短的作业/进程</li>
+</ul>
+</li>
+<li>可抢占？<ul>
+<li>默认为非抢占式，也有SJF的抢占式，版本最短剩余时间优先算法(SRTN)</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>“最短的”平均等待/周转时间</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>对长作业不利，可能导致饥饿；难以做到真正的短作业优先</li>
+</ul>
+</li>
+<li>考虑到等待时间&amp;运行时间<ul>
+<li>等待时间×</li>
+<li>运行时间√</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>会</li>
+</ul>
+</li>
+</ul>
+<h3 id="高响应比优先-HRRN"><a href="#高响应比优先-HRRN" class="headerlink" title="高响应比优先(HRRN)"></a>高响应比优先(HRRN)</h3><ul>
+<li><p>$$<br>响应比 = (等待时间+要求服务的时间)/要求服务的时间<br>$$</p>
+</li>
+<li><p>思想&amp;规则</p>
+<ul>
+<li>非抢占式的调度算法，只有当前运行的进程主动放弃CPU时（正常/异常完成，或主动阻塞），才需要进行调度，调度时计算所有就绪进程的响应比，选响应比最高的进程上处理机</li>
+</ul>
+</li>
+<li><p>可抢占式？</p>
+<ul>
+<li>非抢占式</li>
+</ul>
+</li>
+<li><p>优点</p>
+<ul>
+<li>上述两种算法的权衡折中，综合考虑的等待时间和运行时间</li>
+</ul>
+</li>
+<li><p>缺点</p>
+</li>
+<li><p>考虑到等待时间&amp;运行时间？</p>
+<ul>
+<li>等待时间√</li>
+<li>运行时间√</li>
+</ul>
+</li>
+<li><p>会导致饥饿？</p>
+<ul>
+<li>不会</li>
+</ul>
+</li>
+</ul>
+<h3 id="时间片轮转-RR"><a href="#时间片轮转-RR" class="headerlink" title="时间片轮转(RR)"></a>时间片轮转(RR)</h3><ul>
+<li>思想&amp;规则</li>
+<li>可抢占？<ul>
+<li>抢占式</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>公平，适用于分时系统</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>频繁切换有开销，不区分优先级</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>不会</li>
 </ul>
 </li>
 <li>补充<ul>
-<li>各进程必须互斥访问管程的特性是由编译器实现的</li>
-<li>可在管程中设置条件变量及等待/唤醒操作以解决同步问题</li>
+<li>时间片太大或太小有何影响？</li>
 </ul>
 </li>
 </ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>操作系统2.4</title>
-    <url>/blog/2020/05/16/OSsecondfour/</url>
-    <content><![CDATA[<h2 id="2-4-1、死锁的概念"><a href="#2-4-1、死锁的概念" class="headerlink" title="2.4.1、死锁的概念"></a>2.4.1、死锁的概念</h2><h3 id="什么是死锁"><a href="#什么是死锁" class="headerlink" title="什么是死锁"></a>什么是死锁</h3><ul>
-<li>各进程互相等待对方手里的资源，导致各进程都阻塞，无法向前推进</li>
-</ul>
-<h3 id="死锁、饥饿、死循环的区别"><a href="#死锁、饥饿、死循环的区别" class="headerlink" title="死锁、饥饿、死循环的区别"></a>死锁、饥饿、死循环的区别</h3><ul>
-<li>死锁：至少是两个进程一起死锁，死锁进程处于阻塞态</li>
-<li>饥饿：可以只有一个进程饥饿，饥饿进程可能阻塞也可能就绪</li>
-<li>死循环：可能只有一个进程发生死循环，死循环的进程可上处理机</li>
-<li>死锁和饥饿是操作系统要解决的问题，死循环是应用程序员要解决的</li>
-</ul>
-<h3 id="死锁产生的必要条件"><a href="#死锁产生的必要条件" class="headerlink" title="死锁产生的必要条件"></a>死锁产生的必要条件</h3><ul>
-<li><p>互斥条件</p>
-<ul>
-<li>对必须互斥使用的资源的争抢才会导致死锁</li>
+<h3 id="优先级调度"><a href="#优先级调度" class="headerlink" title="优先级调度"></a>优先级调度</h3><ul>
+<li>思想&amp;规则</li>
+<li>可抢占？<ul>
+<li>有抢占式的，也有非抢占式的。注意做题时的区别</li>
 </ul>
 </li>
-<li><p>不剥夺条件</p>
-<ul>
-<li>进程保持的资源只能主动释放，不可强行剥夺</li>
+<li>优点<ul>
+<li>区分优先级，适用于实时系统</li>
 </ul>
 </li>
-<li><p>请求和保持条件</p>
-<ul>
-<li>保持着某些资源不放的同时，请求别的资源</li>
+<li>缺点<ul>
+<li>可能导致饥饿</li>
 </ul>
 </li>
-<li><p>循环等待条件</p>
-<ul>
-<li>存在一种进程资源的循环等待链</li>
-<li>循环等待未必死锁，死锁一定有循环等待</li>
+<li>会导致饥饿？<ul>
+<li>会</li>
+</ul>
+</li>
+<li>补充<ul>
+<li>动态/静态优先级。</li>
+<li>各类型进程如何设置优先级？</li>
+<li>如何调整优先级？</li>
 </ul>
 </li>
 </ul>
-<h3 id="什么时候会发生死锁"><a href="#什么时候会发生死锁" class="headerlink" title="什么时候会发生死锁"></a>什么时候会发生死锁</h3><ul>
-<li>对不可剥夺资源的不合理分配，可能导致死锁</li>
-</ul>
-<h3 id="死锁的处理策略"><a href="#死锁的处理策略" class="headerlink" title="死锁的处理策略"></a>死锁的处理策略</h3><ul>
-<li><p>预防死锁</p>
-<ul>
-<li>破坏死锁产生的四个必要条件</li>
+<h3 id="多级反馈队列"><a href="#多级反馈队列" class="headerlink" title="多级反馈队列"></a>多级反馈队列</h3><ul>
+<li>思想&amp;规则<ul>
+<li>较复杂，注意理解</li>
 </ul>
 </li>
-<li><p>避免死锁</p>
-<ul>
-<li>避免系统进入不安全状态(银行家算法)</li>
+<li>可抢占？<ul>
+<li>抢占式</li>
 </ul>
 </li>
-<li><p>死锁的检测和解除</p>
-<ul>
-<li>允许死锁发生，系统负责检测出死锁并解除</li>
+<li>优点<ul>
+<li>平衡优秀</li>
 </ul>
 </li>
-</ul>
-  <a id="more"></a>
-
-<h2 id="2-4-2、预防死锁"><a href="#2-4-2、预防死锁" class="headerlink" title="2.4.2、预防死锁"></a>2.4.2、预防死锁</h2><h3 id="破坏互斥条件"><a href="#破坏互斥条件" class="headerlink" title="破坏互斥条件"></a>破坏互斥条件</h3><ul>
-<li>将临界资源改造为可共享使用的资源(如SPOOLing技术)</li>
-<li>缺点：可行性不高，很多时候无法破坏互斥条件</li>
-</ul>
-<h3 id="破坏不剥夺条件"><a href="#破坏不剥夺条件" class="headerlink" title="破坏不剥夺条件"></a>破坏不剥夺条件</h3><ul>
-<li>方案一：申请的资源得不到满足时，立即释放拥有的所有资源</li>
-<li>方案二：申请的资源被其他进程占用时，由操作系统协助剥夺(考虑优先级)</li>
-<li>缺点：实现复杂；剥夺资源可能导致部分工作失效；反复申请和释放导致系统开销大；可能导致饥饿</li>
-</ul>
-<h3 id="破坏请求和保持条件"><a href="#破坏请求和保持条件" class="headerlink" title="破坏请求和保持条件"></a>破坏请求和保持条件</h3><ul>
-<li>运行前分配好所有需要的资源，之后一直保持</li>
-<li>缺点：资源利用率低；可能导致饥饿</li>
-</ul>
-<h3 id="破坏循环等待条件"><a href="#破坏循环等待条件" class="headerlink" title="破坏循环等待条件"></a>破坏循环等待条件</h3><ul>
-<li>给资源编号，必须按编号从小到大的顺序申请资源</li>
-<li>缺点：不方便增加新设备；会导致资源浪费；用户编程麻烦</li>
-</ul>
-<h2 id="2-4-3、避免死锁"><a href="#2-4-3、避免死锁" class="headerlink" title="2.4.3、避免死锁"></a>2.4.3、避免死锁</h2><h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><ul>
-<li>长度为m的一维数组Available 表示还有多少可用资源</li>
-<li>n*m矩阵Max表示各进程对资源的最大需求数</li>
-<li>n*m矩阵Allocation表示已经给各进程分配了多少资源</li>
-<li>Max - Allocation = Need 矩阵表示各进程最多还需要多少资源</li>
-<li>用长度为m的一维数组Request表示进程此次申请的各种资源数</li>
-</ul>
-<h3 id="银行家算法步骤："><a href="#银行家算法步骤：" class="headerlink" title="银行家算法步骤："></a>银行家算法步骤：</h3><p>① 检查此次申请是否超过了之前声明的最大需求数</p>
-<p>② 检查此时系统剩余的可用资源是否还能满足这次请求</p>
-<p>③ 试探着分配，更改各数据结构</p>
-<p>④ 用安全性算法检查此次分配是否会导致系统进入不安全状态</p>
-<h3 id="安全性算法步骤："><a href="#安全性算法步骤：" class="headerlink" title="安全性算法步骤："></a>安全性算法步骤：</h3><ul>
-<li>检查当前的剩余可用资源是否能满足某个进程的最大需求，如果可以，就把该进程加入安全序列，并把该进程持有的资源全部回收。</li>
-<li>不断重复上述过程，看最终是否能让所有进程都加入安全序列。</li>
-</ul>
-<p>系统处于不安全状态未必死锁，但死锁时一定处于不安全状态。系统处于安全状态一定不会死锁。</p>
-<h2 id="2-4-4、死锁的检测和解除"><a href="#2-4-4、死锁的检测和解除" class="headerlink" title="2.4.4、死锁的检测和解除"></a>2.4.4、死锁的检测和解除</h2><h3 id="如何检测"><a href="#如何检测" class="headerlink" title="如何检测"></a>如何检测</h3><ul>
-<li>数据结构：==资源分配图==<ul>
-<li>两种结点<ul>
-<li>进程结点</li>
-<li>资源结点</li>
-</ul>
-</li>
-<li>两种边<ul>
-<li>进程结点—&gt;资源结点(请求边)</li>
-<li>资源结点—&gt;进程结点(分配边)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>==死锁检测算法==<ul>
-<li>==依次消除与不阻塞进程相连的边，直到无边可消==</li>
-<li>注：所谓不阻塞进程是指其申请的资源数还足够的进程</li>
-<li>死锁定理：若资源分配图是不可完全简化的，说明发生了死锁</li>
-</ul>
-</li>
-<li>如何解除<ul>
-<li>资源剥夺法</li>
-<li>撤销进程法(终止进程法)</li>
-<li>进程回退法</li>
+<li>缺点<ul>
+<li>一般不说它有缺点，不过可能导致饥饿</li>
 </ul>
 </li>
 </ul>
@@ -2946,458 +3043,172 @@
 ]]></content>
   </entry>
   <entry>
-    <title>操作系统3.2</title>
-    <url>/blog/2020/05/19/OSthirdtwo/</url>
-    <content><![CDATA[<h2 id="3-2-1、虚拟内存的基本概念"><a href="#3-2-1、虚拟内存的基本概念" class="headerlink" title="3.2.1、虚拟内存的基本概念"></a>3.2.1、虚拟内存的基本概念</h2><h3 id="传统存储管理方式的特征、缺点"><a href="#传统存储管理方式的特征、缺点" class="headerlink" title="传统存储管理方式的特征、缺点"></a>传统存储管理方式的特征、缺点</h3><ul>
-<li>一次性：作业数据必须一次全部调入内存</li>
-<li>驻留性：作业数据在整个运行期间都会常驻内存</li>
+    <title>操作系统2.3</title>
+    <url>/blog/2020/05/13/OSsecondthree/</url>
+    <content><![CDATA[<h2 id="2-3-1互斥同步"><a href="#2-3-1互斥同步" class="headerlink" title="2.3.1互斥同步"></a>2.3.1互斥同步</h2><h3 id="进程同步"><a href="#进程同步" class="headerlink" title="进程同步"></a>进程同步</h3><ul>
+<li>并发性带来了异步性，有时需要通过进程同步解决这种异步问题。有的进程之间需要相互配合地完成工作，各进程的工作推进需要遵循一定的先后顺序。</li>
 </ul>
-<h3 id="局部性原理"><a href="#局部性原理" class="headerlink" title="局部性原理"></a>局部性原理</h3><ul>
-<li>时间局部性：现在访问的指令、数据在不久后很可能会被再次访问</li>
-<li>空间局部性：现在访问的内存单元周围的内存空间，很可能在不久后会被访问</li>
-<li>高速缓存技术：使用频繁的数据放到更高速的存储器中</li>
-</ul>
-<h3 id="虚拟内存的定义和特征"><a href="#虚拟内存的定义和特征" class="headerlink" title="虚拟内存的定义和特征"></a>虚拟内存的定义和特征</h3><ul>
-<li><p>程序不需全部装入即可运行，运行时根据需要动态调入数据，若内存不够，还需换出一些数据</p>
+<h3 id="进程互斥"><a href="#进程互斥" class="headerlink" title="进程互斥"></a>进程互斥</h3><ul>
+<li><p>对临界资源的访问，需要互斥的进行。即同一时间段内只能允许一个进程访问该资源</p>
 </li>
-<li><p>特征</p>
+<li><p>四个部门</p>
 <ul>
-<li>多次性：无需在作业运行时一次性全部装入内存，而是允许被分成多次调入内存。</li>
-<li>对换性：无需在作业运行时一直常驻内存，而是允许在作业运行过程中，将作业换入、换出。</li>
-<li>虚拟性：从逻辑上扩充了内存的容量，使用户看到的内存容量，远大于实际的容量。</li>
+<li>进入区<ul>
+<li>检查是否可进入临界区，若可进入，需要“上锁”</li>
+</ul>
+</li>
+<li>临界区<ul>
+<li>访问邻接资源的那段代码</li>
+</ul>
+</li>
+<li>退出区<ul>
+<li>负责“解锁”</li>
+</ul>
+</li>
+<li>剩余区<ul>
+<li>其余代码部分</li>
 </ul>
 </li>
 </ul>
-<h3 id="如何实现虚拟内存技术"><a href="#如何实现虚拟内存技术" class="headerlink" title="如何实现虚拟内存技术"></a>如何实现虚拟内存技术</h3><ul>
-<li>访问的信息不在内存时，由操作系统负责将所需信息从外存调入内存==（请求调页功能）==</li>
-<li>内存空间不够时，将内存中暂时用不到的信息换出到外存==（页面置换功能）==</li>
-<li>虚拟内存的实现<ul>
-<li>==请求分页存储管理==</li>
-<li>请求分段存储管理</li>
-<li>请求段页式存储管理</li>
+</li>
+<li><p>需要遵循的原则</p>
+<ul>
+<li>空闲让进<ul>
+<li>临界区空闲时，应允许一个进程访问</li>
 </ul>
 </li>
+<li>忙则等待<ul>
+<li>临界区正在被访问时，其他试图访问的进程需要等待</li>
 </ul>
-<h2 id="3-2-2、请求分页管理方式"><a href="#3-2-2、请求分页管理方式" class="headerlink" title="3.2.2、请求分页管理方式"></a>3.2.2、请求分页管理方式</h2><h3 id="页表机制"><a href="#页表机制" class="headerlink" title="页表机制"></a>页表机制</h3><ul>
-<li>在基本分页的基础上增加了几个表项</li>
-<li>状态位：表示页面是否已在内存中</li>
-<li>访问字段：记录最近被访问过几次，或记录上次访问的及时，供置换算法选择换出页面时参考</li>
-<li>修改位：表示页面调入内存后是否被修改过，只有修改过的页面才需在置换时写回外存</li>
-<li>外存地址：页面在外存中存放的位置</li>
+</li>
+<li>有限等待<ul>
+<li>要在有限时间内进入临界区，保证不会饥饿</li>
 </ul>
-<h3 id="缺页中断机构"><a href="#缺页中断机构" class="headerlink" title="缺页中断机构"></a>缺页中断机构</h3><ul>
-<li>找到页表项后检查是否已在内存，若没在内存，产生缺页中断</li>
-<li>缺页中断处理中，需要讲目标页面调入内存，有必要时还要换出页面</li>
-<li>缺页中断属于内中断，属于内中断中的“故障”，即可能被系统修复的异常</li>
-<li>一条指令在执行过程中可能产生多次缺页中断</li>
+</li>
+<li>让权等待<ul>
+<li>进不了临界区的进程，需释放处理机，防止忙等</li>
 </ul>
-<h3 id="地址变换机构（重点关注与基本分页不同的地方）"><a href="#地址变换机构（重点关注与基本分页不同的地方）" class="headerlink" title="地址变换机构（重点关注与基本分页不同的地方）"></a>地址变换机构（重点关注与基本分页不同的地方）</h3><ul>
-<li>找到页表项是需要检查页面是否在内存中</li>
-<li>若页面不在内存中，需要请求调页</li>
-<li>若内存空间不够，还需要调出页面</li>
-<li>页面调入内存后，需要修改相应页表项</li>
+</li>
 </ul>
 <a id="more"></a>
 
-<h2 id="3-2-3、页面置换算法"><a href="#3-2-3、页面置换算法" class="headerlink" title="3.2.3、页面置换算法"></a>3.2.3、页面置换算法</h2><table>
-<thead>
-<tr>
-<th></th>
-<th>算法规则</th>
-<th>优缺点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>最佳置换算法（OPT）</td>
-<td>优先淘汰最长时间内不会被访问的页面</td>
-<td>缺页率最小，性能最好；但无法实现</td>
-</tr>
-<tr>
-<td>先进先出置换算法（FIFO）</td>
-<td>优先淘汰最先进入内存的页面</td>
-<td>实现简单；但性能很差，可能出现Belady异常</td>
-</tr>
-<tr>
-<td>最近最久未使用置换算法（LRU）</td>
-<td>优先淘汰最近最久没访问的页面</td>
-<td>性能很好；但需要硬件支持，算法开销大</td>
-</tr>
-<tr>
-<td>时钟置换算法CLOCK（NRU）</td>
-<td>循环扫描个页面<br>第一轮淘汰访问位=0的，并将扫描过的页面访问位改为1。若第一轮没选中，则进行第二轮扫描</td>
-<td>实现简单，算法开销小；但未考虑页面是否被修改过</td>
-</tr>
-<tr>
-<td>改进型时钟置换算法CLOCK（改进型NRU）</td>
-<td>若用（访问位，修改位）的形式表述，则<br>第一轮：淘汰(0,0)<br>第二轮：淘汰(0,1)，并将扫描过的页面访问位都置为0<br>第三轮：淘汰(0,0)<br>第四轮：淘汰(0,1)</td>
-<td>算法开销较小，性能也不错</td>
-</tr>
-</tbody></table>
-<h2 id="3-2-4、页面分配策略"><a href="#3-2-4、页面分配策略" class="headerlink" title="3.2.4、页面分配策略"></a>3.2.4、页面分配策略</h2><h3 id="驻留集"><a href="#驻留集" class="headerlink" title="==驻留集=="></a>==驻留集==</h3><ul>
-<li>指请求分页存储管理中给进程分配的内存块的集合</li>
-</ul>
-<h3 id="页面分配、置换策略"><a href="#页面分配、置换策略" class="headerlink" title="页面分配、置换策略"></a>页面分配、置换策略</h3><ul>
-<li>固定分配 VS 可变分配：区别在于进程运行期间驻留集大小是否可变</li>
-<li>局部置换 VS 全局置换：区别在于发生缺页时是否只能从进程自己的页面中选择一个换出</li>
-<li>==固定分配局部置换：==进程运行前就分配一定数量物理块，缺页时只能换出进程自己的某一页</li>
-<li>==可变分配全局置换：==只要缺页就分配新物理块，可能来自空闲物理块，也可能需换出别的进程页面</li>
-<li>==可变分配局部置换：==频繁缺页的进程，多分配一些物理块；缺页率很低的进程，回收一些物理块。知道缺页率合适</li>
-</ul>
-<h3 id="何时调入页面"><a href="#何时调入页面" class="headerlink" title="何时调入页面"></a>何时调入页面</h3><ul>
-<li>预调页策略：一般用于进程运行前</li>
-<li>请求调页策略：进程运行时，发现缺页再调页</li>
-</ul>
-<h3 id="从何处调页"><a href="#从何处调页" class="headerlink" title="从何处调页"></a>从何处调页</h3><ul>
-<li>对换区——采用连续存储方式，速度更快;文件去——采用离散存储方式，速度更慢。</li>
-<li>兑换区足够大：运行将数据从文件去复制到对换区，之后所以的页面调入、调出都是在内存与对换区之间进行</li>
-<li>对换区不够大：不会修改的数据每次都从文件区调入；会修改的数据调出到对换区，需要时再从对换区调入</li>
-<li>UNIX方法：第一次使用的页面都从文件区调入；调出的页面都写回对换区，再次使用时从对换区调入</li>
-</ul>
-<h3 id="抖动-颠簸-现象"><a href="#抖动-颠簸-现象" class="headerlink" title="==抖动(颠簸)现象=="></a>==抖动(颠簸)现象==</h3><ul>
-<li>页面频繁换入换出的现象。==主要原因是分配给进程的物理块不够==</li>
-</ul>
-<h3 id="工作集"><a href="#工作集" class="headerlink" title="工作集"></a>工作集</h3><ul>
-<li>在某段时间间隔里，进程实际访问页面的集合。驻留集大小一般不能小于工作集大小</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>Spring5</title>
-    <url>/blog/2020/06/15/Spring-5/</url>
-    <content><![CDATA[<h2 id="1、Spring"><a href="#1、Spring" class="headerlink" title="1、Spring"></a>1、Spring</h2><h3 id="1-1、简介"><a href="#1-1、简介" class="headerlink" title="1.1、简介"></a>1.1、简介</h3><ul>
-<li>Spring : 春天 —&gt;给软件行业带来了春天</li>
-<li>2002年，Rod Jahnson首次推出了Spring框架雏形interface21框架。</li>
-<li>2004年3月24日，Spring框架以interface21框架为基础，经过重新设计，发布了1.0正式版。</li>
-<li>Rod Johnson，Spring Framework创始人，著名作者。很难想象Rod Johnson的学历 , 他是悉尼大学的博士，然而他的专业不是计算机，而是音乐学。</li>
-<li>Spring理念 : 使现有技术更加实用 , 本身就是一个大杂烩 , 整合现有的框架技术</li>
-</ul>
-<ul>
-<li>SSH：Struct2 + Spring + Hibernate</li>
-<li>SSM：SpringMVC + Spring + MyBatis</li>
-</ul>
-<p>官网 : <a href="http://spring.io/" target="_blank" rel="noopener">http://spring.io/</a></p>
-<p>官方下载地址 : <a href="https://repo.spring.io/libs-release-local/org/springframework/spring/" target="_blank" rel="noopener">https://repo.spring.io/libs-release-local/org/springframework/spring/</a></p>
-<p>GitHub : <a href="https://github.com/spring-projects" target="_blank" rel="noopener">https://github.com/spring-projects</a></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-webmvc<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.7.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-jdbc<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.7.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2、优点"><a href="#1-2、优点" class="headerlink" title="1.2、优点"></a>1.2、优点</h3><ul>
-<li>Spring是一个开源免费的框架（容器）</li>
-<li>Spring是一个轻量级的框架 , 非侵入式的</li>
-<li><strong>控制反转( IoC)  , 面向切面编程 (Aop)</strong></li>
-<li>对事务的处理 , 对框架整合的支持</li>
-</ul>
-<p><strong>总结一句话：Spring是一个轻量级的控制反转(IoC)和面向切面编程(AOP)的容器（框架）。</strong></p>
-<h3 id="1-3、组成"><a href="#1-3、组成" class="headerlink" title="1.3、组成"></a>1.3、组成</h3><p><img src="/blog/blog/.com/2020/06/15/Spring-5/%E4%B8%83%E5%A4%A7%E6%A8%A1%E5%9D%97.png" alt="img"></p>
-<h3 id="1-4、拓展"><a href="#1-4、拓展" class="headerlink" title="1.4、拓展"></a>1.4、拓展</h3><p>现代化Java开发，即基于Spring的开发！</p>
-<p><img src="/blog/blog/.com/2020/06/15/Spring-5/%E7%8E%B0%E4%BB%A3%E5%8C%96Java%E5%BC%80%E5%8F%91.png" alt="img"></p>
-<ul>
-<li>Spring Boot<ul>
-<li>一个快速开发的脚手架。</li>
-<li>基于Spring Boot 快速开发单个微服务</li>
-<li>约定大于配置！</li>
-</ul>
-</li>
-<li>Spring Cloud<ul>
-<li>SpringCloud是基于SpringBoot实现的</li>
-</ul>
 </li>
 </ul>
-<p>学习SpringBoot的前提是需要完全掌握Spring和SpringMVC，承上启下的作用！</p>
-<p><strong>弊端：发展了太久之后，违背了原来的理念，配置十分繁琐，人称：”配置地域“！</strong></p>
-<a id="more"></a>
-
-<h2 id="2、IOC理论推导"><a href="#2、IOC理论推导" class="headerlink" title="2、IOC理论推导"></a>2、IOC理论推导</h2><p>1.UserDao 接口</p>
-<p>2.UserDaoImpl 实现类</p>
-<p>3.UserService 业务接口</p>
-<p>4.UserServiceImpl 业务实现类</p>
-<p>在我们之前的业务中，用户的需求可能会影响我们原来的代码，我们需要根据用户的需求去修改原代码！如果代码量十分大，修改一次的成本代价十分昂贵！</p>
-<p>我们使用一个Set接口实现.已经发生了革命性的变化</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> UserDao userDao;</span><br><span class="line"></span><br><span class="line"><span class="comment">//利用set进行动态实现值的注入！</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUserDao</span><span class="params">(UserDao userDao)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.userDao = userDao;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>之前，程序是主动创建对象！控制权在程序猿手上！</li>
-<li>使用了set注入后，程序不再具有主动性，而是变成了被动的接受对象！</li>
+<h2 id="2-3-2进程互斥的软件实现方法"><a href="#2-3-2进程互斥的软件实现方法" class="headerlink" title="2.3.2进程互斥的软件实现方法"></a>2.3.2进程互斥的软件实现方法</h2><h3 id="单标志法"><a href="#单标志法" class="headerlink" title="单标志法"></a>单标志法</h3><ul>
+<li>在进入区只做“检查”，不做“上锁”</li>
+<li>在退出区把临界区的使用权转交给另一个进程(相当于在退出区既给另一个进程“解锁”，又给自己“上锁”)</li>
+<li>主要问题：不遵循“空闲让进”原则</li>
 </ul>
-<p>这种思想，从本质上解决了问题，我们程序猿不用再去管理对象的创建了。系统的耦合性大大降低，可能更加专注在业务的实现上！这是IOC的原型！</p>
-]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>框架</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>操作系统2.2</title>
-    <url>/blog/2020/05/12/OSsecondtwo/</url>
-    <content><![CDATA[<h2 id="处理机调度"><a href="#处理机调度" class="headerlink" title="处理机调度"></a>处理机调度</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
-<li>按某种算法选择一个进程将处理机分配给它</li>
+<h3 id="双标志先检查"><a href="#双标志先检查" class="headerlink" title="双标志先检查"></a>双标志先检查</h3><ul>
+<li>在进入区先“检查”后“上锁”，退出区“解锁”</li>
+<li>主要问题：不遵循“忙则等待”原则</li>
 </ul>
-<h3 id="三个层次"><a href="#三个层次" class="headerlink" title="三个层次"></a>三个层次</h3><ul>
-<li><p>高级调度<strong>(作业调度)</strong></p>
-<ul>
-<li>按照某种规则，从后备队列中选择合适的作业将其调入内存，并为其创建进程</li>
+<h3 id="双标志后检查"><a href="#双标志后检查" class="headerlink" title="双标志后检查"></a>双标志后检查</h3><ul>
+<li>在进入区先“加锁”后“检查，退出区“解锁”</li>
+<li>主要问题：不遵循“空闲让进，有限等待”原则，可能导致“饥饿”</li>
 </ul>
+<h3 id="Peterson算法"><a href="#Peterson算法" class="headerlink" title="Peterson算法"></a>Peterson算法</h3><ul>
+<li>在进入区“主动争取—主动谦让—检查对方是否相近、己方是否谦让”</li>
+<li>主要问题：不遵循“让权等待”原则，会发送“忙等”</li>
+</ul>
+<h2 id="2-3-3进程互斥的硬件实现方法"><a href="#2-3-3进程互斥的硬件实现方法" class="headerlink" title="2.3.3进程互斥的硬件实现方法"></a>2.3.3进程互斥的硬件实现方法</h2><h3 id="中断屏蔽方法"><a href="#中断屏蔽方法" class="headerlink" title="中断屏蔽方法"></a>中断屏蔽方法</h3><ul>
+<li>使用“开/关中断”指令实现</li>
+<li>优点：简单高效</li>
+<li>缺点：只适用于单片机；只适用于操作系统内核进程</li>
+</ul>
+<h3 id="TestAndSet-TS指令-TSL指令"><a href="#TestAndSet-TS指令-TSL指令" class="headerlink" title="TestAndSet(TS指令/TSL指令)"></a>TestAndSet(TS指令/TSL指令)</h3><ul>
+<li><p>1、old记录是否已被上锁；</p>
+<p>2、再将lock设为true；</p>
+<p>3、检查临界区是否已被上锁(若以上锁，则循环重复前几步)</p>
 </li>
-<li><p>中级调度<strong>(内存调度)</strong></p>
-<ul>
-<li>按照某种规则，从挂起队列中选择合适的进程将其数据调回内存</li>
-</ul>
+<li><p>优点：实现简单；适用于多处理机环境</p>
 </li>
-<li><p>低级调度(进程调度)</p>
-<ul>
-<li>按照某种规则，从就绪队列中选择一个进程为其分配处理机</li>
-</ul>
+<li><p>缺点：不满足让权等待</p>
 </li>
 </ul>
-<h3 id="三层调度的联系、对比"><a href="#三层调度的联系、对比" class="headerlink" title="三层调度的联系、对比"></a>三层调度的联系、对比</h3><ul>
-<li>高级调度<ul>
-<li>外存-&gt;内存(面向作业)</li>
-<li>发生频率：最低</li>
+<h3 id="Swap指令-XCHG指令"><a href="#Swap指令-XCHG指令" class="headerlink" title="Swap指令(XCHG指令)"></a>Swap指令(XCHG指令)</h3><ul>
+<li>逻辑上同TSL</li>
+</ul>
+<h2 id="2-3-4、信号量机制"><a href="#2-3-4、信号量机制" class="headerlink" title="2.3.4、信号量机制"></a>2.3.4、信号量机制</h2><h3 id="整型信号量"><a href="#整型信号量" class="headerlink" title="整型信号量"></a>整型信号量</h3><ul>
+<li>用一个整数型变量作为信号量，数值表示某种资源数</li>
+<li>整型信号量与普通整型变量的区别：对信号量只能执行初始化、P、V三种操作</li>
+<li>整型信号量==存在的问题：不满足让权等待原则==</li>
+</ul>
+<h3 id="记录型信号量"><a href="#记录型信号量" class="headerlink" title="记录型信号量"></a>记录型信号量</h3><ul>
+<li>S.value表示某种资源数，S.L指向等待该资源的队列</li>
+<li>P操作中，一定是先S.value–，之后可能需要执行block原语</li>
+<li>V操作中，一定是先S.value++，之后可能需要执行wakeup原语</li>
+<li>注意：==要能够自己推断在什么条件下需要执行block或wakeup==</li>
+<li>可以用记录型信号量实现系统资源的“申请”和“释放”</li>
+<li>可以用记录型信号量实现进程互斥、进程同步</li>
+</ul>
+<p>注：若考试中出现P(S)、V(S)的操作，除非特别说明，否则默认S为记录型信号量</p>
+<h2 id="2-3-5、用信号量实现进程互斥、同步、前驱关系"><a href="#2-3-5、用信号量实现进程互斥、同步、前驱关系" class="headerlink" title="2.3.5、用信号量实现进程互斥、同步、前驱关系"></a>2.3.5、用信号量实现进程互斥、同步、前驱关系</h2><h3 id="实现进程互斥"><a href="#实现进程互斥" class="headerlink" title="实现进程互斥"></a>实现进程互斥</h3><ul>
+<li>分析问题，确定临界区</li>
+<li>设置互斥信号量，初值为1（==互斥问题，信号量初值为1==）</li>
+<li>==临界区之前==对信号量执行P操作</li>
+<li>==临界区之后==对信号量执行V操作</li>
+</ul>
+<h3 id="实现进程同步"><a href="#实现进程同步" class="headerlink" title="实现进程同步"></a>实现进程同步</h3><ul>
+<li>分析问题，找出哪里需要实现“一前一后”的同步关系</li>
+<li>设置同步信号量，初始值为0（==同步问题，信号量初值为0==）</li>
+<li>在==“前操作”之后==执行V操作</li>
+<li>在==“后操作”之前==执行P操作</li>
+</ul>
+<h3 id="实现进程的前驱关系"><a href="#实现进程的前驱关系" class="headerlink" title="实现进程的前驱关系"></a>实现进程的前驱关系</h3><ul>
+<li>分析问题，画出前驱图，把每一对前驱关系都看成一个同步问题（前驱问题，本质上就是更复杂的同步问题）</li>
+<li>为每一对前驱关系设置同步信号量，初值为0</li>
+<li>在每一个“前操作”之后执行V操作</li>
+<li>在每一个“后操作”之前执行P操作</li>
+</ul>
+<h2 id="2-3-6、生产者消费者问题"><a href="#2-3-6、生产者消费者问题" class="headerlink" title="2.3.6、生产者消费者问题"></a>2.3.6、生产者消费者问题</h2><p>PV 操作题目的解题思路：</p>
+<p>1、关系分析。找出题目中描述的各个进程，分析它们之间的同步、互斥关闭。        2、整理思路。根据各进程的操作流程确定P、V操作的大致顺序。<br>        3、设置信号量。设置需要的信号量，并根据题目条件确定信号量初值。（互斥信号量初值一般为1，同步信号量的初始值要看对应资源的初始值是多少）。</p>
+<p>生产者消费者问题是一个互斥、同步的综合问题。<br>        有时候是消费者需要等待生产者生产，有时候是生产者要等待消费者消费，这是两个不同的“一前一后问题”，因此也需要设置两个同步信号量。</p>
+<p><img src="/blog/blog/.com/2020/05/13/OSsecondthree/OSsecondthree%5Cimage-20200515141953621.png" alt="生产者消费者"></p>
+<p>==易错点==：实现互斥和实现同步的两个P操作的先后顺序</p>
+<h2 id="2-3-7多生产者-多消费者问题"><a href="#2-3-7多生产者-多消费者问题" class="headerlink" title="2.3.7多生产者-多消费者问题"></a>2.3.7多生产者-多消费者问题</h2><p>解决“多生产者-多消费者问题”的关键在于理清复杂的同步关系。</p>
+<p>在分析同步问题(一前一后问题)的时候不能从单个进程行为的角度来分析，要把“一前一后”发生的事看做是两种“事件”的前后关系。</p>
+<p>比如，如果==从单个进程行为的角度来考虑==的话，我们会有以下结论：</p>
+<p>==如果盘子里装有苹果，那么一定要女儿取走苹果后父亲或母亲才能再放入水果==</p>
+<p>==如果盘子里装有橘子，那么一定要有儿子取走橘子后父亲或母亲才能再放入水果==</p>
+<p>这么看是否就意味着要设置四个同步信号量分别实现这四个“一前一后”的关系了？</p>
+<p>正确的分析方法应该==从“事件”的角度来考虑==，我们可以把上述四对“进程行为的前后关系”抽象为一对“事件的前后关系”</p>
+<p>盘子变空事件-&gt;放入水果事件。“盘子变空事件”即可由儿子引发，也可由女儿引发；“放水果事件”既可能是父亲执行，也可能是母亲执行。这样的话，就可以用一个同步信号量解决问题了。</p>
+<h2 id="2-3-8吸烟者问题"><a href="#2-3-8吸烟者问题" class="headerlink" title="2.3.8吸烟者问题"></a>2.3.8吸烟者问题</h2><p>吸烟者问题可以为我们解决“可以生产多个产品的单生产者”问题提供一个思路</p>
+<p>值得吸取精华是：“轮流让各个吸烟者吸烟”必然需要“轮流的在桌上放上组合一、二、三”，注意体会我们是如何用一个整型变量i实现这个“轮流”过程的</p>
+<p>如果题目改为“每次随机地让一个吸烟者吸烟”，我们又应该如何用代码写出这个逻辑？</p>
+<p>若一个生产者要生产多种产品(或者说会引发多种前驱事件)，那么各个V操作应该放在各自对应“事件”发生之后的位置</p>
+<h2 id="2-3-9读者-写者问题"><a href="#2-3-9读者-写者问题" class="headerlink" title="2.3.9读者-写者问题"></a>2.3.9读者-写者问题</h2><p>读者-写者问题为我们解决复杂的互斥问题提供了一个参考思路。</p>
+<p>其==核心思想==在于设置了一个==计数器count==用来记录当前正在访问共享文件的读进程数。我们可以用count的值来判断当前进入的进程是否是第一个/最后一个读进程，从而做出不同的处理。</p>
+<p>另外，对count变量的检查和赋值不能一气呵成导致了一些错误，如果==需要实现“一气呵成”，自然应该想到用互斥信号量。==</p>
+<p>最后，还要体会我们是如何解决“写进程饥饿”问题的</p>
+<h2 id="2-3-10哲学家进餐问题"><a href="#2-3-10哲学家进餐问题" class="headerlink" title="2.3.10哲学家进餐问题"></a>2.3.10哲学家进餐问题</h2><p>哲学家进餐问题的关键在于解决进程死锁。</p>
+<p>这些内存之间只存在互斥关系，但是与之前接触到的互斥关系不同的是，每个进程都需要同时持有两个临界资源，因此就有“死锁”问题的隐患。</p>
+<p>如果在考试中遇到了一个进程需要同时持有多个临界资源的情况，应该参考哲学家问题的思想，分析题中给出的进程之间是否会发送循环等待，是否会发生死锁</p>
+<p>可以参考哲学家就餐问题解决死锁的三种思路</p>
+<h2 id="2-3-11管程"><a href="#2-3-11管程" class="headerlink" title="2.3.11管程"></a>2.3.11管程</h2><ul>
+<li>为什么要引入管程<ul>
+<li>解决信号量机制编程麻烦、易出错的问题</li>
 </ul>
 </li>
-<li>中级调度<ul>
-<li>外存-&gt;内存(面向进程)</li>
-<li>发送频率：中等</li>
+<li>组成<ul>
+<li>共享数据结构</li>
+<li>对数据结构初始化的语句</li>
+<li>一组用来访问数据结构的过程（函数）</li>
 </ul>
 </li>
-<li>低级调度<ul>
-<li>内存-&gt;CPU</li>
-<li>发生频率：最高</li>
-</ul>
-</li>
-</ul>
-<h3 id="补充知识"><a href="#补充知识" class="headerlink" title="补充知识"></a>补充知识</h3><ul>
-<li>为减轻系统负载，提供资源利用率，暂时不执行的进程会被调到外存从而变为“挂起态”</li>
-<li>七状态模型：在五状态模型的基础上加入了“就绪挂起”和“阻塞挂起”两种状态</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="进程调度的时机、切换与过程、调度方式"><a href="#进程调度的时机、切换与过程、调度方式" class="headerlink" title="进程调度的时机、切换与过程、调度方式"></a>进程调度的时机、切换与过程、调度方式</h2><h3 id="时机"><a href="#时机" class="headerlink" title="时机"></a>时机</h3><ul>
-<li>什么时候需要进程调度？<ul>
-<li>主动放弃<ul>
-<li>进程正常终止</li>
-<li>运行过程中发生异常而终止</li>
-<li>主动阻塞(如等待I/O)</li>
-</ul>
-</li>
-<li>被动放弃<ul>
-<li>分给进程的时间片用完</li>
-<li>有更紧急的事情需要处理(如I/O中断)</li>
-<li>有更高优先级的进程进入就绪队列</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>什么时候不能进行进程调度<ul>
-<li>在处理中断的过程中</li>
-<li>进程在操作系统内核程序临界区中</li>
-<li>原子操作过程中(原语)</li>
-</ul>
-</li>
-</ul>
-<h3 id="切换与过程"><a href="#切换与过程" class="headerlink" title="切换与过程"></a>切换与过程</h3><ul>
-<li>切换过程<ul>
-<li>对原来运行进程各种数据的保存</li>
-<li>对新的进程各种数据的恢复</li>
-</ul>
-</li>
-<li>重要结论：<strong>进程调度、切换是有代价的</strong>，并不是调度越频繁，并发度越高</li>
-</ul>
-<h3 id="方式"><a href="#方式" class="headerlink" title="方式"></a>方式</h3><ul>
-<li>非剥夺调度方式(非抢占式)<ul>
-<li>只能由当前运行的进程主动放弃CPU</li>
-</ul>
-</li>
-<li>剥夺调度方式(抢占式)<ul>
-<li>可由操作系统剥夺当前进程的CPU使用权</li>
-</ul>
-</li>
-</ul>
-<h2 id="调度算法的评价指标"><a href="#调度算法的评价指标" class="headerlink" title="调度算法的评价指标"></a>调度算法的评价指标</h2><h3 id="CPU利用率"><a href="#CPU利用率" class="headerlink" title="CPU利用率"></a>CPU利用率</h3><ul>
-<li>$$<br>利用率 = 忙碌的时间/总时间<br>$$</li>
-</ul>
-<h3 id="系统吞吐量"><a href="#系统吞吐量" class="headerlink" title="系统吞吐量"></a>系统吞吐量</h3><ul>
-<li>$$<br>系统吞吐量 = 总共完成了多少道作业/总共花了多少时间<br>$$</li>
-</ul>
-<h3 id="周转时间"><a href="#周转时间" class="headerlink" title="周转时间"></a>周转时间</h3><ul>
-<li><p>$$<br>周转时间 = 作业完成时间-作业到达时间<br>$$</p>
-</li>
-<li><p>$$<br>平均周转时间 = 各作业周转时间之和/作业数<br>$$</p>
-</li>
-<li><p>$$<br>带权周转时间 = 作业周转时间 / 作业实际运行的时间<br>$$</p>
-</li>
-<li><p>$$<br>平均带权周转时间 = 各作业带权周转时间之和 / 作业数<br>$$</p>
-</li>
-</ul>
-<h3 id="等待时间"><a href="#等待时间" class="headerlink" title="等待时间"></a>等待时间</h3><ul>
-<li>//进程/作业                等待被服务的时间之和</li>
-<li>周转时间-运行时间-(I/O操作的时间)</li>
-<li>平均等待时间即   各个进程/作业等待时间的平均值</li>
-</ul>
-<h3 id="响应时间"><a href="#响应时间" class="headerlink" title="响应时间"></a>响应时间</h3><ul>
-<li>从用户提交请求到首次产生响应所用的时间</li>
-</ul>
-<h2 id="调度算法"><a href="#调度算法" class="headerlink" title="调度算法"></a>调度算法</h2><h3 id="先来先服务-FCFS"><a href="#先来先服务-FCFS" class="headerlink" title="先来先服务(FCFS)"></a>先来先服务(FCFS)</h3><ul>
-<li>思想&amp;&amp;规则<ul>
-<li>按照到达的先后顺序调度，事实上就是等待时间越久越优先得到服务</li>
-</ul>
-</li>
-<li>可抢占？<ul>
-<li>非抢占式</li>
-</ul>
-</li>
-<li>优点<ul>
-<li>公平：实现简单</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>对短作业不利</li>
-</ul>
-</li>
-<li>考虑到等待时间&amp;运行时间？<ul>
-<li>等待时间√    </li>
-<li>运行时间×</li>
-</ul>
-</li>
-<li>会导致饥饿？<ul>
-<li>不会</li>
-</ul>
-</li>
-</ul>
-<h3 id="短作业优先-SJF-SPF"><a href="#短作业优先-SJF-SPF" class="headerlink" title="短作业优先(SJF/SPF)"></a>短作业优先(SJF/SPF)</h3><ul>
-<li>思想&amp;规则<ul>
-<li>每次调度时选择当前已到达且运行时间最短的作业/进程</li>
-</ul>
-</li>
-<li>可抢占？<ul>
-<li>默认为非抢占式，也有SJF的抢占式，版本最短剩余时间优先算法(SRTN)</li>
-</ul>
-</li>
-<li>优点<ul>
-<li>“最短的”平均等待/周转时间</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>对长作业不利，可能导致饥饿；难以做到真正的短作业优先</li>
-</ul>
-</li>
-<li>考虑到等待时间&amp;运行时间<ul>
-<li>等待时间×</li>
-<li>运行时间√</li>
-</ul>
-</li>
-<li>会导致饥饿？<ul>
-<li>会</li>
-</ul>
-</li>
-</ul>
-<h3 id="高响应比优先-HRRN"><a href="#高响应比优先-HRRN" class="headerlink" title="高响应比优先(HRRN)"></a>高响应比优先(HRRN)</h3><ul>
-<li><p>$$<br>响应比 = (等待时间+要求服务的时间)/要求服务的时间<br>$$</p>
-</li>
-<li><p>思想&amp;规则</p>
-<ul>
-<li>非抢占式的调度算法，只有当前运行的进程主动放弃CPU时（正常/异常完成，或主动阻塞），才需要进行调度，调度时计算所有就绪进程的响应比，选响应比最高的进程上处理机</li>
-</ul>
-</li>
-<li><p>可抢占式？</p>
-<ul>
-<li>非抢占式</li>
-</ul>
-</li>
-<li><p>优点</p>
-<ul>
-<li>上述两种算法的权衡折中，综合考虑的等待时间和运行时间</li>
-</ul>
-</li>
-<li><p>缺点</p>
-</li>
-<li><p>考虑到等待时间&amp;运行时间？</p>
-<ul>
-<li>等待时间√</li>
-<li>运行时间√</li>
-</ul>
-</li>
-<li><p>会导致饥饿？</p>
-<ul>
-<li>不会</li>
-</ul>
-</li>
-</ul>
-<h3 id="时间片轮转-RR"><a href="#时间片轮转-RR" class="headerlink" title="时间片轮转(RR)"></a>时间片轮转(RR)</h3><ul>
-<li>思想&amp;规则</li>
-<li>可抢占？<ul>
-<li>抢占式</li>
-</ul>
-</li>
-<li>优点<ul>
-<li>公平，适用于分时系统</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>频繁切换有开销，不区分优先级</li>
-</ul>
-</li>
-<li>会导致饥饿？<ul>
-<li>不会</li>
+<li>基本特征<ul>
+<li>==各外部进程/线程只能通过管程提供的特定“入口”才能访问共享数据==</li>
+<li>==每次仅允许一个进程在管程内执行某个内部过程==</li>
 </ul>
 </li>
 <li>补充<ul>
-<li>时间片太大或太小有何影响？</li>
-</ul>
-</li>
-</ul>
-<h3 id="优先级调度"><a href="#优先级调度" class="headerlink" title="优先级调度"></a>优先级调度</h3><ul>
-<li>思想&amp;规则</li>
-<li>可抢占？<ul>
-<li>有抢占式的，也有非抢占式的。注意做题时的区别</li>
-</ul>
-</li>
-<li>优点<ul>
-<li>区分优先级，适用于实时系统</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>可能导致饥饿</li>
-</ul>
-</li>
-<li>会导致饥饿？<ul>
-<li>会</li>
-</ul>
-</li>
-<li>补充<ul>
-<li>动态/静态优先级。</li>
-<li>各类型进程如何设置优先级？</li>
-<li>如何调整优先级？</li>
-</ul>
-</li>
-</ul>
-<h3 id="多级反馈队列"><a href="#多级反馈队列" class="headerlink" title="多级反馈队列"></a>多级反馈队列</h3><ul>
-<li>思想&amp;规则<ul>
-<li>较复杂，注意理解</li>
-</ul>
-</li>
-<li>可抢占？<ul>
-<li>抢占式</li>
-</ul>
-</li>
-<li>优点<ul>
-<li>平衡优秀</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>一般不说它有缺点，不过可能导致饥饿</li>
+<li>各进程必须互斥访问管程的特性是由编译器实现的</li>
+<li>可在管程中设置条件变量及等待/唤醒操作以解决同步问题</li>
 </ul>
 </li>
 </ul>
 ]]></content>
-  </entry>
-  <entry>
-    <title>命令行操作符</title>
-    <url>/blog/2020/05/10/command-operatekey/</url>
-    <content><![CDATA[<p>命令提示符（cmd）</p>
-<p>启动：        开始+R，输入cmd<br>切换盘符：    盘符名称<br>进入文件夹：    cd 文件夹名称<br>进入多级文件夹：    cd 文件夹 1\文件夹 2\文件夹 3<br>回到上一级：    cd ..<br>回到盘符根路径：    cd <br>查看内容：    dir<br>清屏：        cls<br>退出：        exit</p>
-<a id="more"></a>]]></content>
   </entry>
   <entry>
     <title>操作系统3.1</title>
@@ -3681,6 +3492,188 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Spring5</title>
+    <url>/blog/2020/06/15/Spring-5/</url>
+    <content><![CDATA[<h2 id="1、Spring"><a href="#1、Spring" class="headerlink" title="1、Spring"></a>1、Spring</h2><h3 id="1-1、简介"><a href="#1-1、简介" class="headerlink" title="1.1、简介"></a>1.1、简介</h3><ul>
+<li>Spring : 春天 —&gt;给软件行业带来了春天</li>
+<li>2002年，Rod Jahnson首次推出了Spring框架雏形interface21框架。</li>
+<li>2004年3月24日，Spring框架以interface21框架为基础，经过重新设计，发布了1.0正式版。</li>
+<li>Rod Johnson，Spring Framework创始人，著名作者。很难想象Rod Johnson的学历 , 他是悉尼大学的博士，然而他的专业不是计算机，而是音乐学。</li>
+<li>Spring理念 : 使现有技术更加实用 , 本身就是一个大杂烩 , 整合现有的框架技术</li>
+</ul>
+<ul>
+<li>SSH：Struct2 + Spring + Hibernate</li>
+<li>SSM：SpringMVC + Spring + MyBatis</li>
+</ul>
+<p>官网 : <a href="http://spring.io/" target="_blank" rel="noopener">http://spring.io/</a></p>
+<p>官方下载地址 : <a href="https://repo.spring.io/libs-release-local/org/springframework/spring/" target="_blank" rel="noopener">https://repo.spring.io/libs-release-local/org/springframework/spring/</a></p>
+<p>GitHub : <a href="https://github.com/spring-projects" target="_blank" rel="noopener">https://github.com/spring-projects</a></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-webmvc<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.7.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-jdbc<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.7.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2、优点"><a href="#1-2、优点" class="headerlink" title="1.2、优点"></a>1.2、优点</h3><ul>
+<li>Spring是一个开源免费的框架（容器）</li>
+<li>Spring是一个轻量级的框架 , 非侵入式的</li>
+<li><strong>控制反转( IoC)  , 面向切面编程 (Aop)</strong></li>
+<li>对事务的处理 , 对框架整合的支持</li>
+</ul>
+<p><strong>总结一句话：Spring是一个轻量级的控制反转(IoC)和面向切面编程(AOP)的容器（框架）。</strong></p>
+<h3 id="1-3、组成"><a href="#1-3、组成" class="headerlink" title="1.3、组成"></a>1.3、组成</h3><p><img src="/blog/blog/.com/2020/06/15/Spring-5/%E4%B8%83%E5%A4%A7%E6%A8%A1%E5%9D%97.png" alt="img"></p>
+<h3 id="1-4、拓展"><a href="#1-4、拓展" class="headerlink" title="1.4、拓展"></a>1.4、拓展</h3><p>现代化Java开发，即基于Spring的开发！</p>
+<p><img src="/blog/blog/.com/2020/06/15/Spring-5/%E7%8E%B0%E4%BB%A3%E5%8C%96Java%E5%BC%80%E5%8F%91.png" alt="img"></p>
+<ul>
+<li>Spring Boot<ul>
+<li>一个快速开发的脚手架。</li>
+<li>基于Spring Boot 快速开发单个微服务</li>
+<li>约定大于配置！</li>
+</ul>
+</li>
+<li>Spring Cloud<ul>
+<li>SpringCloud是基于SpringBoot实现的</li>
+</ul>
+</li>
+</ul>
+<p>学习SpringBoot的前提是需要完全掌握Spring和SpringMVC，承上启下的作用！</p>
+<p><strong>弊端：发展了太久之后，违背了原来的理念，配置十分繁琐，人称：”配置地域“！</strong></p>
+<a id="more"></a>
+
+<h2 id="2、IOC理论推导"><a href="#2、IOC理论推导" class="headerlink" title="2、IOC理论推导"></a>2、IOC理论推导</h2><p>1.UserDao 接口</p>
+<p>2.UserDaoImpl 实现类</p>
+<p>3.UserService 业务接口</p>
+<p>4.UserServiceImpl 业务实现类</p>
+<p>在我们之前的业务中，用户的需求可能会影响我们原来的代码，我们需要根据用户的需求去修改原代码！如果代码量十分大，修改一次的成本代价十分昂贵！</p>
+<p>我们使用一个Set接口实现.已经发生了革命性的变化</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> UserDao userDao;</span><br><span class="line"></span><br><span class="line"><span class="comment">//利用set进行动态实现值的注入！</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUserDao</span><span class="params">(UserDao userDao)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.userDao = userDao;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>之前，程序是主动创建对象！控制权在程序猿手上！</li>
+<li>使用了set注入后，程序不再具有主动性，而是变成了被动的接受对象！</li>
+</ul>
+<p>这种思想，从本质上解决了问题，我们程序猿不用再去管理对象的创建了。系统的耦合性大大降低，可能更加专注在业务的实现上！这是IOC的原型！</p>
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>框架</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>操作系统3.2</title>
+    <url>/blog/2020/05/19/OSthirdtwo/</url>
+    <content><![CDATA[<h2 id="3-2-1、虚拟内存的基本概念"><a href="#3-2-1、虚拟内存的基本概念" class="headerlink" title="3.2.1、虚拟内存的基本概念"></a>3.2.1、虚拟内存的基本概念</h2><h3 id="传统存储管理方式的特征、缺点"><a href="#传统存储管理方式的特征、缺点" class="headerlink" title="传统存储管理方式的特征、缺点"></a>传统存储管理方式的特征、缺点</h3><ul>
+<li>一次性：作业数据必须一次全部调入内存</li>
+<li>驻留性：作业数据在整个运行期间都会常驻内存</li>
+</ul>
+<h3 id="局部性原理"><a href="#局部性原理" class="headerlink" title="局部性原理"></a>局部性原理</h3><ul>
+<li>时间局部性：现在访问的指令、数据在不久后很可能会被再次访问</li>
+<li>空间局部性：现在访问的内存单元周围的内存空间，很可能在不久后会被访问</li>
+<li>高速缓存技术：使用频繁的数据放到更高速的存储器中</li>
+</ul>
+<h3 id="虚拟内存的定义和特征"><a href="#虚拟内存的定义和特征" class="headerlink" title="虚拟内存的定义和特征"></a>虚拟内存的定义和特征</h3><ul>
+<li><p>程序不需全部装入即可运行，运行时根据需要动态调入数据，若内存不够，还需换出一些数据</p>
+</li>
+<li><p>特征</p>
+<ul>
+<li>多次性：无需在作业运行时一次性全部装入内存，而是允许被分成多次调入内存。</li>
+<li>对换性：无需在作业运行时一直常驻内存，而是允许在作业运行过程中，将作业换入、换出。</li>
+<li>虚拟性：从逻辑上扩充了内存的容量，使用户看到的内存容量，远大于实际的容量。</li>
+</ul>
+</li>
+</ul>
+<h3 id="如何实现虚拟内存技术"><a href="#如何实现虚拟内存技术" class="headerlink" title="如何实现虚拟内存技术"></a>如何实现虚拟内存技术</h3><ul>
+<li>访问的信息不在内存时，由操作系统负责将所需信息从外存调入内存==（请求调页功能）==</li>
+<li>内存空间不够时，将内存中暂时用不到的信息换出到外存==（页面置换功能）==</li>
+<li>虚拟内存的实现<ul>
+<li>==请求分页存储管理==</li>
+<li>请求分段存储管理</li>
+<li>请求段页式存储管理</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-2-2、请求分页管理方式"><a href="#3-2-2、请求分页管理方式" class="headerlink" title="3.2.2、请求分页管理方式"></a>3.2.2、请求分页管理方式</h2><h3 id="页表机制"><a href="#页表机制" class="headerlink" title="页表机制"></a>页表机制</h3><ul>
+<li>在基本分页的基础上增加了几个表项</li>
+<li>状态位：表示页面是否已在内存中</li>
+<li>访问字段：记录最近被访问过几次，或记录上次访问的及时，供置换算法选择换出页面时参考</li>
+<li>修改位：表示页面调入内存后是否被修改过，只有修改过的页面才需在置换时写回外存</li>
+<li>外存地址：页面在外存中存放的位置</li>
+</ul>
+<h3 id="缺页中断机构"><a href="#缺页中断机构" class="headerlink" title="缺页中断机构"></a>缺页中断机构</h3><ul>
+<li>找到页表项后检查是否已在内存，若没在内存，产生缺页中断</li>
+<li>缺页中断处理中，需要讲目标页面调入内存，有必要时还要换出页面</li>
+<li>缺页中断属于内中断，属于内中断中的“故障”，即可能被系统修复的异常</li>
+<li>一条指令在执行过程中可能产生多次缺页中断</li>
+</ul>
+<h3 id="地址变换机构（重点关注与基本分页不同的地方）"><a href="#地址变换机构（重点关注与基本分页不同的地方）" class="headerlink" title="地址变换机构（重点关注与基本分页不同的地方）"></a>地址变换机构（重点关注与基本分页不同的地方）</h3><ul>
+<li>找到页表项是需要检查页面是否在内存中</li>
+<li>若页面不在内存中，需要请求调页</li>
+<li>若内存空间不够，还需要调出页面</li>
+<li>页面调入内存后，需要修改相应页表项</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="3-2-3、页面置换算法"><a href="#3-2-3、页面置换算法" class="headerlink" title="3.2.3、页面置换算法"></a>3.2.3、页面置换算法</h2><table>
+<thead>
+<tr>
+<th></th>
+<th>算法规则</th>
+<th>优缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>最佳置换算法（OPT）</td>
+<td>优先淘汰最长时间内不会被访问的页面</td>
+<td>缺页率最小，性能最好；但无法实现</td>
+</tr>
+<tr>
+<td>先进先出置换算法（FIFO）</td>
+<td>优先淘汰最先进入内存的页面</td>
+<td>实现简单；但性能很差，可能出现Belady异常</td>
+</tr>
+<tr>
+<td>最近最久未使用置换算法（LRU）</td>
+<td>优先淘汰最近最久没访问的页面</td>
+<td>性能很好；但需要硬件支持，算法开销大</td>
+</tr>
+<tr>
+<td>时钟置换算法CLOCK（NRU）</td>
+<td>循环扫描个页面<br>第一轮淘汰访问位=0的，并将扫描过的页面访问位改为1。若第一轮没选中，则进行第二轮扫描</td>
+<td>实现简单，算法开销小；但未考虑页面是否被修改过</td>
+</tr>
+<tr>
+<td>改进型时钟置换算法CLOCK（改进型NRU）</td>
+<td>若用（访问位，修改位）的形式表述，则<br>第一轮：淘汰(0,0)<br>第二轮：淘汰(0,1)，并将扫描过的页面访问位都置为0<br>第三轮：淘汰(0,0)<br>第四轮：淘汰(0,1)</td>
+<td>算法开销较小，性能也不错</td>
+</tr>
+</tbody></table>
+<h2 id="3-2-4、页面分配策略"><a href="#3-2-4、页面分配策略" class="headerlink" title="3.2.4、页面分配策略"></a>3.2.4、页面分配策略</h2><h3 id="驻留集"><a href="#驻留集" class="headerlink" title="==驻留集=="></a>==驻留集==</h3><ul>
+<li>指请求分页存储管理中给进程分配的内存块的集合</li>
+</ul>
+<h3 id="页面分配、置换策略"><a href="#页面分配、置换策略" class="headerlink" title="页面分配、置换策略"></a>页面分配、置换策略</h3><ul>
+<li>固定分配 VS 可变分配：区别在于进程运行期间驻留集大小是否可变</li>
+<li>局部置换 VS 全局置换：区别在于发生缺页时是否只能从进程自己的页面中选择一个换出</li>
+<li>==固定分配局部置换：==进程运行前就分配一定数量物理块，缺页时只能换出进程自己的某一页</li>
+<li>==可变分配全局置换：==只要缺页就分配新物理块，可能来自空闲物理块，也可能需换出别的进程页面</li>
+<li>==可变分配局部置换：==频繁缺页的进程，多分配一些物理块；缺页率很低的进程，回收一些物理块。知道缺页率合适</li>
+</ul>
+<h3 id="何时调入页面"><a href="#何时调入页面" class="headerlink" title="何时调入页面"></a>何时调入页面</h3><ul>
+<li>预调页策略：一般用于进程运行前</li>
+<li>请求调页策略：进程运行时，发现缺页再调页</li>
+</ul>
+<h3 id="从何处调页"><a href="#从何处调页" class="headerlink" title="从何处调页"></a>从何处调页</h3><ul>
+<li>对换区——采用连续存储方式，速度更快;文件去——采用离散存储方式，速度更慢。</li>
+<li>兑换区足够大：运行将数据从文件去复制到对换区，之后所以的页面调入、调出都是在内存与对换区之间进行</li>
+<li>对换区不够大：不会修改的数据每次都从文件区调入；会修改的数据调出到对换区，需要时再从对换区调入</li>
+<li>UNIX方法：第一次使用的页面都从文件区调入；调出的页面都写回对换区，再次使用时从对换区调入</li>
+</ul>
+<h3 id="抖动-颠簸-现象"><a href="#抖动-颠簸-现象" class="headerlink" title="==抖动(颠簸)现象=="></a>==抖动(颠簸)现象==</h3><ul>
+<li>页面频繁换入换出的现象。==主要原因是分配给进程的物理块不够==</li>
+</ul>
+<h3 id="工作集"><a href="#工作集" class="headerlink" title="工作集"></a>工作集</h3><ul>
+<li>在某段时间间隔里，进程实际访问页面的集合。驻留集大小一般不能小于工作集大小</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>css3</title>
     <url>/blog/2020/06/06/css3/</url>
     <content><![CDATA[<h2 id="什么是CSS"><a href="#什么是CSS" class="headerlink" title="什么是CSS"></a>什么是CSS</h2><p>学习内容</p>
@@ -3731,6 +3724,42 @@
 ]]></content>
   </entry>
   <entry>
+    <title>eclipse快捷键</title>
+    <url>/blog/2020/05/10/eclipse-convenientkey/</url>
+    <content><![CDATA[<p>常用的快捷键：</p>
+<p>添加单行注释： Ctrl + /        取消：Ctrl + /<br>添加多行注释：Ctrl + Shift + /        取消：Ctrl + Shift + <br>向下复制一行：Ctrl + Alt + 向下<br>向上复制一行：Ctrl + Alt + 向上<br>向上移动代码：Alt + 向上<br>向下移动代码：Alt + 向下<br>删除当前行：Ctrl + D<br>格式化：Ctrl + Shift + F<br>智能提示：Alt + /<br>更改变量名称：Alt + Shift + R<br>弹出源代码的相关选项： Alt+Shift+S</p>
+<a id="more"></a>]]></content>
+  </entry>
+  <entry>
+    <title>命令行操作符</title>
+    <url>/blog/2020/05/10/command-operatekey/</url>
+    <content><![CDATA[<p>命令提示符（cmd）</p>
+<p>启动：        开始+R，输入cmd<br>切换盘符：    盘符名称<br>进入文件夹：    cd 文件夹名称<br>进入多级文件夹：    cd 文件夹 1\文件夹 2\文件夹 3<br>回到上一级：    cd ..<br>回到盘符根路径：    cd <br>查看内容：    dir<br>清屏：        cls<br>退出：        exit</p>
+<a id="more"></a>]]></content>
+  </entry>
+  <entry>
+    <title>嵌入式学习</title>
+    <url>/blog/2020/05/09/qianrushi-study/</url>
+    <content><![CDATA[<p><strong>CISC(复杂指令集）与RISC（精简指令集）的区别</strong><br>![CISC(复杂指令集）与RISC（精简指令集）的区别](<a href="https://img-blog.csdnimg.cn/20200503155704487.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDcxNzI4NA==,size_16,color_FFFFFF,t_70#pic_left" target="_blank" rel="noopener">https://img-blog.csdnimg.cn/20200503155704487.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDcxNzI4NA==,size_16,color_FFFFFF,t_70#pic_left</a> =600x400)<br> <strong>CISC：复杂指令集(Complex Instruction Set Computer)</strong><br>①具有大量的指令和寻址方式<br>②8/2原则：80%的程序只使用20%的指令<br>③大多数程序只使用少量的指令就能够运行。<br><strong>RISC：精简指令集(Reduced Instruction Set Computer)</strong><br>①在通道中只包含最有用的指令<br>②确保数据通道快速执行每一条指令<br>③使CPU硬件结构设计变得更为简单</p>
+<p>（Random Access Memory）RAM，随机存取存储器，具有随机访问的特性，是非易失性存储器。<br>SRAM 是“staticRAM（静态随机存储器）”的简称，之所以这样命名是因为当数据被存入其中后只要不掉电，不会消失。<br>①DRAM：它的基本原件是小电容，电容可以在两个极板上保留电荷，但是需要<strong>定期的充电（刷新）</strong>，否则数据会丢失。缺点：由于要定期刷新存储介质，存取速度较慢。<br>②SRAM：它是一种具有静止存取功能的内存，不需要定期刷新电路就能保存它内部存储的数据。其优点：存取速度快; 但是缺点是：功耗大，成本高。常用作存储容量<br>③SDRAM(Synchronous Dynamic Random Access Memory):同步动态随机存储器.是RAM中最快的一种。</p>
+<p>NOR Flash芯片其内部结构是采用并行方式工作的，内部的地址线和数据线是分开的。其特点可以按字节随机读取任意单元的内容。NOR <strong>Flash可以直接运行启动代码。</strong><br>而NAND型Flash的基本工作方式是按顺序串行读取，一个区块写入或读出结束再进行下一个操作，采用的是串行方式工作。<br>因为作为ARM处理器内存空间必须要具备随机读写特性，所以只有NOR Flash才能挂在内存空间。</p>
+<p><strong>硬件抽象层：</strong><br>①是一种软件。<br>②将操作系统与硬件平台隔开。<br>③有利于系统的模块化设计。</p>
+<p><strong>在ARM系统中，MMU(存储管理单元)主要完成的工作：</strong><br>1.虚拟存储空间到物理存储空间的映射。(页式虚拟存储管理)<br>2.存储器访问权限的控制。<br>3.设置虚拟存储空间的缓冲特性。</p>
+<p>TCB：任务控制块<br>MMU：存储管理单元<br>CACHE：高速缓存<br>DMA：直接存储器访问</p>
+<p>总线带宽 ＝ 总线位宽×总线频率/8<br>例题：<br>某总线有 104 根信号线，其中数据总线32 根，若总线工作频率为 33MHz，则其理论最大传输率为 (C ) 。(注：本题答案中的 B 表示 Byte)<br> A.33 MB/s<br> B.64MB/s<br> C.132 MB/s<br> D.164 MB/s<br>总线带宽 ＝ 总线位宽×总线频率/8=32*33/8＝132MB/s         （数据总线32根说明了总线位宽是32位）</p>
+<p><strong>可重入函数和不可重入函数：</strong><br>可重入函数：主要用于多任务环境中，一个可重入函数简单来说就是可以被中断的函数，也就是说，可以在这个函数执行的任何时刻中断它，转入OS调度下去执行另外一段代码，而返回控制时不会出现什么错误；<br>不可重入函数：由于使用了一些系统资源（全局变量区，中断向量表等），所以它如果被中断的话，可能会出现问题，这类函数是不能运行在多任务环境下的。</p>
+<p><strong>三级流水线结构的<br>指令执行顺序：取值→译码→执行</strong><br>例题1：<br>执行指令    ADD PC，PC，#4后，PC的值为多少？<br>地址                         指令<br>0x7000             ADD PC，PC，#4<br>0x7004 ……<br>0x7008 ……<br>0x700C ……</p>
+<p>（ARM长度时，每条指令为4字节长，所以<br><strong>取值在0X7000</strong>   <strong>译码在0X7004</strong>    <strong>执行在0X7008</strong>,人们习惯性约定将正在执行的指令作为参考点，<br>则PC值=当前程序执行位置+8，所以本题PC=0X7008开始算）<br>指令    ADD PC，PC，#4 是一条ARM指令，意思是 PC = PC + 4 = 0X7008 + 4 = 0X700C.</p>
+<p>例题2：<br>若每一条指令都可以分解为取指、分析和执行三步。已知取指时间t取指＝4△t，分析时间 t分析＝3△t，执行时间 t 执行＝5△t。如果按串行方式执行完100条指令需要(C)△t。如果按照流水线方式执行，执行完100条指令需要(F)△t。<br>A.1190    B.1195    C.1200    D.1205    E.504    F.507    G.508    H.510</p>
+<p>按串行方式，执行完一条指令才能执行下一条指令，那么执行完 100 条指令的时间为：（4＋3＋5）×100＝1200 ；<br>按流水线方式可以同时执行多条指令，（当第一条指令开始分析时，第二条指令开始取指；当第一条指令执行时，第二条指令分析，第三条指令取指；当第二条指令执行时，第三条指令分析，第四条指令取指……..以此类推，当第一条指令完成之后，每一个“执行”的周期就可以完成一条指令）<br>计算的时候，第一条指令必须算全过程时间，后面的指令计算执行时间即可。<br>如果流水线的子过程所用时间不一样长，则吞吐率应以最长子过程来计算。因此，我们可以计算得 100 条指令的执行时间为：（4＋3＋5）＋（100－1）×5＝507。</p>
+<p><strong>staic的三种使用方法：</strong><br>1)在函数体内，一个被声明为静态的变量在这一函数被调用过程中维持其值不变。<br>2)在文件域内(但在函数体外)，一个被声明为静态的变量可以被文件域内所有函数访问，但不能被文件域外其它函数访问。它是一个本地的全局变量。<br>3)在文件域内，一个被声明为静态的函数只可被这一文件域内的其它函数调用。那就是，这个函数被限制在声明它的文件的本地范围内使用。</p>
+<p><strong>位运算</strong><br>位逻辑运算<br>~  按位取反：    单目右结合<br>&amp;  按位与：        全1取1，否则取0   （有0取0）<br>^  按位异或：    相同取0，不同取1<br>|  按位或：        全0取0，否则取1    （有1取1）</p>
+<p>移位运算<br>    &lt;&lt;    对操作数左移给出的位数        (左移一位相当于*2)<br>    &gt;&gt;    对操作数右移给出的位数        (右移一位相当于/2)</p>
+<p>例子：<br>00111010  &lt;&lt; 3   =  (左移三位空出位补0)   11010000<br>00111010  &gt;&gt; 3      =   (右移三位,按右移后的最高位的值进行填补) 00000111<br>11011010  &gt;&gt;3    =    11101101<br>注意：<br>①位运算是对二进制的位进行运算<br>②只能对int型，char型和long型进行位运算</p>
+<p>位运算的技巧：<br>采用位运算交换两个变量的值：<br>      a = a^b;<br>      b = a^b;<br>      a = a^b;  </p>
+]]></content>
+  </entry>
+  <entry>
     <title>IDEA快捷键</title>
     <url>/blog/2020/05/09/idea-confidentkey/</url>
     <content><![CDATA[<p><strong>main方法：  main  /   psvm</strong></p>
@@ -3742,143 +3771,6 @@
 <p><strong>插入方法：Alt + Insert</strong></p>
 <p><strong>Translation： 选中单词或者段落ctrl+shift+y翻译，ctrl+shift+s切换翻译源</strong></p>
 <p><strong>上下移动代码：Ctrl+Shift+上下键</strong></p>
-<a id="more"></a>]]></content>
-  </entry>
-  <entry>
-    <title>markdown语法</title>
-    <url>/blog/2020/05/10/markdownlanguage/</url>
-    <content><![CDATA[<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>不要使用一级标题</p>
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>总结：标题使用#号表示，一个#代表1级标题，一共有6个级别，他们的大小依次变小</p>
-<hr>
-<a id="more"></a>
-
-<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><p>第一个段落在这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里    </p>
-<p>第二个段落这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里</p>
-<p>总结：空格两个以上并且按下回车键（换行）就是下一个段落，没有的话这段文字就自成一段在Typora里面只需要回车换行</p>
-<hr>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p><em>两端一个星号斜体</em></p>
-<p><strong>两端两个星号粗体</strong></p>
-<p><strong><em>两端三个星号斜粗体</em></strong></p>
-<hr>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>分隔线在一行中，使用三个以上的星号、减号、下划线来建立(可以隔开)</p>
-<hr>
-<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p><del>两端两个波浪线</del></p>
-<hr>
-<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>markdown无下划线语法，但可以利用html语法<u></u></p>
-<p><u>这是下划线</u></p>
-<hr>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>无序列表使用星号*、加号 +、减号 -其中之一来表示即可，注意需要和符号之间保持一个空格</p>
-<ul>
-<li><p>第一项</p>
-</li>
-<li><p>第二项</p>
-</li>
-<li><p>第三项</p>
-</li>
-</ul>
-<hr>
-<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>数字加上.             文本使用空格隔开</p>
-<ol>
-<li>第一项</li>
-<li>第二项</li>
-<li>第三项</li>
-</ol>
-<hr>
-<h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3><p>有序和无序可以一起使用，只需要在子列表的选项前面添加四个空格</p>
-<ol>
-<li><p>第一项：  </p>
-<ul>
-<li>子列表1</li>
-<li>子列表2</li>
-<li>子列表3</li>
-</ul>
-</li>
-<li><p>第二项：</p>
-<ul>
-<li>子列表1</li>
-<li>子列表2</li>
-<li>子列表3</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h2><p>区块是用来引用的，比如链接或者一段文本</p>
-<p>在段落的开头使用&gt;符号，使用空格，隔开文本</p>
-<blockquote>
-<p>引用的内容1</p>
-<p>第二段引用的内容</p>
-</blockquote>
-<blockquote>
-<p>引用的内容2</p>
-</blockquote>
-<blockquote>
-<p>第二段引用的内容</p>
-</blockquote>
-<p>在引用里面也是分段落的，我们不是使用回车，而是使用&gt;成单个一行,即在段落1和段落2中间一行添加一个&gt;单独一行，使得区块没有断开</p>
-<hr>
-<h2 id="区块嵌套"><a href="#区块嵌套" class="headerlink" title="区块嵌套"></a>区块嵌套</h2><blockquote>
-<p>引用</p>
-<blockquote>
-<p>2</p>
-<blockquote>
-<p>3</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>越多&gt;表示区块越小</p>
-<hr>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>上下使用三个点进行包裹，最顶上的三个点后面可以写上代码的类型使得代码高亮</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">'RUNOOB'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>插入链接有两种方式：</p>
-<p>第一种：直接插入<br><a href="https://cxxqing.github.io/blog/">https://cxxqing.github.io/blog/</a></p>
-<p>这种方式适用于短的链接，但是过长的链接可能会看起来不得当</p>
-<p>第二种：使用markdown语法插入<br>其实就是让一段文本，拥有跳转功能</p>
-<p><a href="用一对小括号填写链接地址">用一对中括号填写链接名称</a>    一对小括号填写链接地址</p>
-<p>第一种无法识别的话用一对尖括号&lt;链接地址&gt;百分百表示链接地址</p>
-<hr>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>![图片描述]()      </p>
-<hr>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
-<thead>
-<tr>
-<th>表头</th>
-<th>表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-<tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-</tbody></table>
-<p> |    表头    |    表头    |</p>
-<p>|    —-        |     —-    |</p>
-<p>|    单元格    |    单元格|</p>
-<p>|    单元格    |    单元格|</p>
-<hr>
-<h3 id="让表格自动对其方式"><a href="#让表格自动对其方式" class="headerlink" title="让表格自动对其方式"></a>让表格自动对其方式</h3><p>居右 -:</p>
-<p>居左 :-</p>
-<p>居中 :-:</p>
-<p> |    左对齐    |    右对齐    |   居中对齐    |</p>
-<p>|    :—-        |     —-:    |    :——:      |</p>
-<p>|    单元格    |    单元格|    单元格  |    </p>
-<p>|    单元格    |    单元格|    单元格  |    </p>
-<hr>
-<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>\   反斜杠        加上需要的符号就可以正常显示了</p>
-<h2 id="代码中内容整体移动"><a href="#代码中内容整体移动" class="headerlink" title="代码中内容整体移动"></a>代码中内容整体移动</h2><p>选中内容全部左移：Ctrl +【</p>
-<p>选中内容全部右移：Ctrl + 】</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>eclipse快捷键</title>
-    <url>/blog/2020/05/10/eclipse-convenientkey/</url>
-    <content><![CDATA[<p>常用的快捷键：</p>
-<p>添加单行注释： Ctrl + /        取消：Ctrl + /<br>添加多行注释：Ctrl + Shift + /        取消：Ctrl + Shift + <br>向下复制一行：Ctrl + Alt + 向下<br>向上复制一行：Ctrl + Alt + 向上<br>向上移动代码：Alt + 向上<br>向下移动代码：Alt + 向下<br>删除当前行：Ctrl + D<br>格式化：Ctrl + Shift + F<br>智能提示：Alt + /<br>更改变量名称：Alt + Shift + R<br>弹出源代码的相关选项： Alt+Shift+S</p>
 <a id="more"></a>]]></content>
   </entry>
   <entry>
@@ -4708,25 +4600,133 @@
 ]]></content>
   </entry>
   <entry>
-    <title>嵌入式学习</title>
-    <url>/blog/2020/05/09/qianrushi-study/</url>
-    <content><![CDATA[<p><strong>CISC(复杂指令集）与RISC（精简指令集）的区别</strong><br>![CISC(复杂指令集）与RISC（精简指令集）的区别](<a href="https://img-blog.csdnimg.cn/20200503155704487.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDcxNzI4NA==,size_16,color_FFFFFF,t_70#pic_left" target="_blank" rel="noopener">https://img-blog.csdnimg.cn/20200503155704487.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDcxNzI4NA==,size_16,color_FFFFFF,t_70#pic_left</a> =600x400)<br> <strong>CISC：复杂指令集(Complex Instruction Set Computer)</strong><br>①具有大量的指令和寻址方式<br>②8/2原则：80%的程序只使用20%的指令<br>③大多数程序只使用少量的指令就能够运行。<br><strong>RISC：精简指令集(Reduced Instruction Set Computer)</strong><br>①在通道中只包含最有用的指令<br>②确保数据通道快速执行每一条指令<br>③使CPU硬件结构设计变得更为简单</p>
-<p>（Random Access Memory）RAM，随机存取存储器，具有随机访问的特性，是非易失性存储器。<br>SRAM 是“staticRAM（静态随机存储器）”的简称，之所以这样命名是因为当数据被存入其中后只要不掉电，不会消失。<br>①DRAM：它的基本原件是小电容，电容可以在两个极板上保留电荷，但是需要<strong>定期的充电（刷新）</strong>，否则数据会丢失。缺点：由于要定期刷新存储介质，存取速度较慢。<br>②SRAM：它是一种具有静止存取功能的内存，不需要定期刷新电路就能保存它内部存储的数据。其优点：存取速度快; 但是缺点是：功耗大，成本高。常用作存储容量<br>③SDRAM(Synchronous Dynamic Random Access Memory):同步动态随机存储器.是RAM中最快的一种。</p>
-<p>NOR Flash芯片其内部结构是采用并行方式工作的，内部的地址线和数据线是分开的。其特点可以按字节随机读取任意单元的内容。NOR <strong>Flash可以直接运行启动代码。</strong><br>而NAND型Flash的基本工作方式是按顺序串行读取，一个区块写入或读出结束再进行下一个操作，采用的是串行方式工作。<br>因为作为ARM处理器内存空间必须要具备随机读写特性，所以只有NOR Flash才能挂在内存空间。</p>
-<p><strong>硬件抽象层：</strong><br>①是一种软件。<br>②将操作系统与硬件平台隔开。<br>③有利于系统的模块化设计。</p>
-<p><strong>在ARM系统中，MMU(存储管理单元)主要完成的工作：</strong><br>1.虚拟存储空间到物理存储空间的映射。(页式虚拟存储管理)<br>2.存储器访问权限的控制。<br>3.设置虚拟存储空间的缓冲特性。</p>
-<p>TCB：任务控制块<br>MMU：存储管理单元<br>CACHE：高速缓存<br>DMA：直接存储器访问</p>
-<p>总线带宽 ＝ 总线位宽×总线频率/8<br>例题：<br>某总线有 104 根信号线，其中数据总线32 根，若总线工作频率为 33MHz，则其理论最大传输率为 (C ) 。(注：本题答案中的 B 表示 Byte)<br> A.33 MB/s<br> B.64MB/s<br> C.132 MB/s<br> D.164 MB/s<br>总线带宽 ＝ 总线位宽×总线频率/8=32*33/8＝132MB/s         （数据总线32根说明了总线位宽是32位）</p>
-<p><strong>可重入函数和不可重入函数：</strong><br>可重入函数：主要用于多任务环境中，一个可重入函数简单来说就是可以被中断的函数，也就是说，可以在这个函数执行的任何时刻中断它，转入OS调度下去执行另外一段代码，而返回控制时不会出现什么错误；<br>不可重入函数：由于使用了一些系统资源（全局变量区，中断向量表等），所以它如果被中断的话，可能会出现问题，这类函数是不能运行在多任务环境下的。</p>
-<p><strong>三级流水线结构的<br>指令执行顺序：取值→译码→执行</strong><br>例题1：<br>执行指令    ADD PC，PC，#4后，PC的值为多少？<br>地址                         指令<br>0x7000             ADD PC，PC，#4<br>0x7004 ……<br>0x7008 ……<br>0x700C ……</p>
-<p>（ARM长度时，每条指令为4字节长，所以<br><strong>取值在0X7000</strong>   <strong>译码在0X7004</strong>    <strong>执行在0X7008</strong>,人们习惯性约定将正在执行的指令作为参考点，<br>则PC值=当前程序执行位置+8，所以本题PC=0X7008开始算）<br>指令    ADD PC，PC，#4 是一条ARM指令，意思是 PC = PC + 4 = 0X7008 + 4 = 0X700C.</p>
-<p>例题2：<br>若每一条指令都可以分解为取指、分析和执行三步。已知取指时间t取指＝4△t，分析时间 t分析＝3△t，执行时间 t 执行＝5△t。如果按串行方式执行完100条指令需要(C)△t。如果按照流水线方式执行，执行完100条指令需要(F)△t。<br>A.1190    B.1195    C.1200    D.1205    E.504    F.507    G.508    H.510</p>
-<p>按串行方式，执行完一条指令才能执行下一条指令，那么执行完 100 条指令的时间为：（4＋3＋5）×100＝1200 ；<br>按流水线方式可以同时执行多条指令，（当第一条指令开始分析时，第二条指令开始取指；当第一条指令执行时，第二条指令分析，第三条指令取指；当第二条指令执行时，第三条指令分析，第四条指令取指……..以此类推，当第一条指令完成之后，每一个“执行”的周期就可以完成一条指令）<br>计算的时候，第一条指令必须算全过程时间，后面的指令计算执行时间即可。<br>如果流水线的子过程所用时间不一样长，则吞吐率应以最长子过程来计算。因此，我们可以计算得 100 条指令的执行时间为：（4＋3＋5）＋（100－1）×5＝507。</p>
-<p><strong>staic的三种使用方法：</strong><br>1)在函数体内，一个被声明为静态的变量在这一函数被调用过程中维持其值不变。<br>2)在文件域内(但在函数体外)，一个被声明为静态的变量可以被文件域内所有函数访问，但不能被文件域外其它函数访问。它是一个本地的全局变量。<br>3)在文件域内，一个被声明为静态的函数只可被这一文件域内的其它函数调用。那就是，这个函数被限制在声明它的文件的本地范围内使用。</p>
-<p><strong>位运算</strong><br>位逻辑运算<br>~  按位取反：    单目右结合<br>&amp;  按位与：        全1取1，否则取0   （有0取0）<br>^  按位异或：    相同取0，不同取1<br>|  按位或：        全0取0，否则取1    （有1取1）</p>
-<p>移位运算<br>    &lt;&lt;    对操作数左移给出的位数        (左移一位相当于*2)<br>    &gt;&gt;    对操作数右移给出的位数        (右移一位相当于/2)</p>
-<p>例子：<br>00111010  &lt;&lt; 3   =  (左移三位空出位补0)   11010000<br>00111010  &gt;&gt; 3      =   (右移三位,按右移后的最高位的值进行填补) 00000111<br>11011010  &gt;&gt;3    =    11101101<br>注意：<br>①位运算是对二进制的位进行运算<br>②只能对int型，char型和long型进行位运算</p>
-<p>位运算的技巧：<br>采用位运算交换两个变量的值：<br>      a = a^b;<br>      b = a^b;<br>      a = a^b;  </p>
+    <title>markdown语法</title>
+    <url>/blog/2020/05/10/markdownlanguage/</url>
+    <content><![CDATA[<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>不要使用一级标题</p>
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>总结：标题使用#号表示，一个#代表1级标题，一共有6个级别，他们的大小依次变小</p>
+<hr>
+<a id="more"></a>
+
+<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><p>第一个段落在这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里    </p>
+<p>第二个段落这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里这里</p>
+<p>总结：空格两个以上并且按下回车键（换行）就是下一个段落，没有的话这段文字就自成一段在Typora里面只需要回车换行</p>
+<hr>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p><em>两端一个星号斜体</em></p>
+<p><strong>两端两个星号粗体</strong></p>
+<p><strong><em>两端三个星号斜粗体</em></strong></p>
+<hr>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>分隔线在一行中，使用三个以上的星号、减号、下划线来建立(可以隔开)</p>
+<hr>
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p><del>两端两个波浪线</del></p>
+<hr>
+<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>markdown无下划线语法，但可以利用html语法<u></u></p>
+<p><u>这是下划线</u></p>
+<hr>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>无序列表使用星号*、加号 +、减号 -其中之一来表示即可，注意需要和符号之间保持一个空格</p>
+<ul>
+<li><p>第一项</p>
+</li>
+<li><p>第二项</p>
+</li>
+<li><p>第三项</p>
+</li>
+</ul>
+<hr>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>数字加上.             文本使用空格隔开</p>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+<hr>
+<h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3><p>有序和无序可以一起使用，只需要在子列表的选项前面添加四个空格</p>
+<ol>
+<li><p>第一项：  </p>
+<ul>
+<li>子列表1</li>
+<li>子列表2</li>
+<li>子列表3</li>
+</ul>
+</li>
+<li><p>第二项：</p>
+<ul>
+<li>子列表1</li>
+<li>子列表2</li>
+<li>子列表3</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h2><p>区块是用来引用的，比如链接或者一段文本</p>
+<p>在段落的开头使用&gt;符号，使用空格，隔开文本</p>
+<blockquote>
+<p>引用的内容1</p>
+<p>第二段引用的内容</p>
+</blockquote>
+<blockquote>
+<p>引用的内容2</p>
+</blockquote>
+<blockquote>
+<p>第二段引用的内容</p>
+</blockquote>
+<p>在引用里面也是分段落的，我们不是使用回车，而是使用&gt;成单个一行,即在段落1和段落2中间一行添加一个&gt;单独一行，使得区块没有断开</p>
+<hr>
+<h2 id="区块嵌套"><a href="#区块嵌套" class="headerlink" title="区块嵌套"></a>区块嵌套</h2><blockquote>
+<p>引用</p>
+<blockquote>
+<p>2</p>
+<blockquote>
+<p>3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>越多&gt;表示区块越小</p>
+<hr>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>上下使用三个点进行包裹，最顶上的三个点后面可以写上代码的类型使得代码高亮</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">'RUNOOB'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>插入链接有两种方式：</p>
+<p>第一种：直接插入<br><a href="https://cxxqing.github.io/blog/">https://cxxqing.github.io/blog/</a></p>
+<p>这种方式适用于短的链接，但是过长的链接可能会看起来不得当</p>
+<p>第二种：使用markdown语法插入<br>其实就是让一段文本，拥有跳转功能</p>
+<p><a href="用一对小括号填写链接地址">用一对中括号填写链接名称</a>    一对小括号填写链接地址</p>
+<p>第一种无法识别的话用一对尖括号&lt;链接地址&gt;百分百表示链接地址</p>
+<hr>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>![图片描述]()      </p>
+<hr>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<p> |    表头    |    表头    |</p>
+<p>|    —-        |     —-    |</p>
+<p>|    单元格    |    单元格|</p>
+<p>|    单元格    |    单元格|</p>
+<hr>
+<h3 id="让表格自动对其方式"><a href="#让表格自动对其方式" class="headerlink" title="让表格自动对其方式"></a>让表格自动对其方式</h3><p>居右 -:</p>
+<p>居左 :-</p>
+<p>居中 :-:</p>
+<p> |    左对齐    |    右对齐    |   居中对齐    |</p>
+<p>|    :—-        |     —-:    |    :——:      |</p>
+<p>|    单元格    |    单元格|    单元格  |    </p>
+<p>|    单元格    |    单元格|    单元格  |    </p>
+<hr>
+<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>\   反斜杠        加上需要的符号就可以正常显示了</p>
+<h2 id="代码中内容整体移动"><a href="#代码中内容整体移动" class="headerlink" title="代码中内容整体移动"></a>代码中内容整体移动</h2><p>选中内容全部左移：Ctrl +【</p>
+<p>选中内容全部右移：Ctrl + 】</p>
 ]]></content>
   </entry>
   <entry>
