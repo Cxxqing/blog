@@ -1,6 +1,501 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>注解</title>
+    <url>/blog/2020/05/30/Annotation/</url>
+    <content><![CDATA[<h2 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h2><h3 id="1、注解"><a href="#1、注解" class="headerlink" title="1、注解"></a>1、注解</h3><h4 id="什么是注解"><a href="#什么是注解" class="headerlink" title="什么是注解"></a>什么是注解</h4><p>Annotation是从JDK5.0开始引入的新技术.</p>
+<p>Annotation的作用：</p>
+<ul>
+<li>不是程序本身，可以对程序作出解释.（这一点和注释（comment）没什么区别）</li>
+<li>==可以被其他程序（比如：编译器等）读取==</li>
+</ul>
+<p>Annotation的格式：</p>
+<ul>
+<li>注解是以“@注释名”在代码中存在的，还可以增加一些参数值，例如：@SuppressWarnings（value=”unchecked”）.</li>
+</ul>
+<p>Annotation在哪里使用？</p>
+<ul>
+<li>可以附加在package，class，method，field等上面，相当于给他们增加了额外的辅助信息，我们可以通过反射机制编程实现对这些元数据的访问</li>
+</ul>
+<p>2、</p>
+<a id="more"></a>]]></content>
+  </entry>
+  <entry>
+    <title>HTML5学习</title>
+    <url>/blog/2020/05/26/HTML5-study/</url>
+    <content><![CDATA[<h3 id="1、初识HTML"><a href="#1、初识HTML" class="headerlink" title="1、初识HTML"></a>1、初识HTML</h3><p>HTML</p>
+<ul>
+<li>==H==yper ==T==ext ==M==arkup ==L==anguage(超文本==标记语言==)</li>
+</ul>
+<p>W3C</p>
+<ul>
+<li><p>==W==orld ==W==ide ==W==eb ==C==onsortium(万维网联盟)</p>
+</li>
+<li><p>成立于1994年，Web技术领域最权威和具影响力的国际==中立性技术标准机构==</p>
+</li>
+<li><p><a href="http://www.w3.org/" target="_blank" rel="noopener">http://www.w3.org/</a></p>
+</li>
+<li><p><a href="http://www.chinaw3c.org/" target="_blank" rel="noopener">http://www.chinaw3c.org/</a></p>
+</li>
+</ul>
+<p>W3C标准包括</p>
+<ul>
+<li>==结构==化标准语言(HTML、XML)</li>
+<li>==表现==标准语言(CSS)</li>
+<li>==行为==标准(DOM、ECMAScript)</li>
+</ul>
+<p>基本信息：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- DOCTYPE：告诉浏览器，我们要使用什么规范 --&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- head标签代表网页头部 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- meta描述性标签，它用来描述我们网站的一些信息--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- meta一般用来做SEO--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">"carey的html笔记"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"来这个地方可以查看自己的html笔记"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- title网页标题 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>我的第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- body标签代表网页主体 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">Hello，World！</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h3 id="2、网页的基本标签"><a href="#2、网页的基本标签" class="headerlink" title="2、网页的基本标签"></a>2、网页的基本标签</h3><p><strong>补充：IDEA中快捷键，标签名+Tab键</strong></p>
+<h4 id="2-1、标题标签"><a href="#2-1、标题标签" class="headerlink" title="2.1、标题标签"></a>2.1、标题标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--标题标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>一级标签<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>二级标签<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>三级标签<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>四级标签<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>五级标签<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>六级标签<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2、段落标签"><a href="#2-2、段落标签" class="headerlink" title="2.2、段落标签"></a>2.2、段落标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--段落标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>两只老虎，两只老虎，<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>跑得快，跑得快，<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>一只没有耳朵，<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>一只没有尾巴，<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>真奇怪！真奇怪！<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-3、水平标签"><a href="#2-3、水平标签" class="headerlink" title="2.3、水平标签"></a>2.3、水平标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--水平线标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-4、换行标签"><a href="#2-4、换行标签" class="headerlink" title="2.4、换行标签"></a>2.4、换行标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--换行标签--&gt;</span></span><br><span class="line">两只老虎，两只老虎，<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">跑得快，跑得快，<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">一只没有耳朵，<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">一只没有尾巴，<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">真奇怪！真奇怪！</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-5、粗体，斜体"><a href="#2-5、粗体，斜体" class="headerlink" title="2.5、粗体，斜体"></a>2.5、粗体，斜体</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--粗体，斜体--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>字体样式标签<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">粗体：<span class="tag">&lt;<span class="name">strong</span>&gt;</span>i love you<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">斜体：<span class="tag">&lt;<span class="name">em</span>&gt;</span>i love you<span class="tag">&lt;/<span class="name">em</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-6、特殊符号"><a href="#2-6、特殊符号" class="headerlink" title="2.6、特殊符号"></a>2.6、特殊符号</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--特殊符号--&gt;</span></span><br><span class="line">空       格</span><br><span class="line">空 <span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span>  格</span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">大于号：<span class="symbol">&amp;gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">小于号：<span class="symbol">&amp;lt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">商标：<span class="symbol">&amp;copy;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3、图像、超链接、网页布局"><a href="#3、图像、超链接、网页布局" class="headerlink" title="3、图像、超链接、网页布局"></a>3、图像、超链接、网页布局</h3><h4 id="3-1、图像标签"><a href="#3-1、图像标签" class="headerlink" title="3.1、图像标签"></a>3.1、图像标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--img学习</span></span><br><span class="line"><span class="comment">src：图片地址     (必填)</span></span><br><span class="line"><span class="comment">    相对地址(推荐使用) ， 绝对地址</span></span><br><span class="line"><span class="comment">    ../    --上一级目录</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">alt：图片名字(必填)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">title：鼠标悬停时候的文字</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../resources/image/1.jpg"</span> <span class="attr">alt</span>=<span class="string">"Edge的logo"</span> <span class="attr">title</span>=<span class="string">"悬停文字"</span> <span class="attr">width</span>=<span class="string">"300"</span> <span class="attr">height</span>=<span class="string">"300"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-2、超链接标签及其应用"><a href="#3-2、超链接标签及其应用" class="headerlink" title="3.2、超链接标签及其应用"></a>3.2、超链接标签及其应用</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--使用name作为标记--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">"top"</span>&gt;</span>顶部<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--a标签</span></span><br><span class="line"><span class="comment">href：必填，表示要跳转到哪个页面</span></span><br><span class="line"><span class="comment">target：表示窗口在哪里打开</span></span><br><span class="line"><span class="comment">    _blank      在新标签中打开</span></span><br><span class="line"><span class="comment">    _self       在自己的网页中打开(默认)</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"1.我的第一个网页.html"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>点击我跳转到页面一<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://www.baidu.com"</span> <span class="attr">target</span>=<span class="string">"_self"</span>&gt;</span>点击我跳转到百度<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"1.我的第一个网页.html"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../resources/image/1.jpg"</span> <span class="attr">alt</span>=<span class="string">"Edge的logo"</span> <span class="attr">title</span>=<span class="string">"悬停文字"</span> <span class="attr">width</span>=<span class="string">"300"</span> <span class="attr">height</span>=<span class="string">"300"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--锚链接</span></span><br><span class="line"><span class="comment">1.需要一个标记</span></span><br><span class="line"><span class="comment">2.跳转到标记</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#top"</span>&gt;</span>回到顶部<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">"down"</span>&gt;</span>down<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--功能性链接</span></span><br><span class="line"><span class="comment">邮件链接：mailto</span></span><br><span class="line"><span class="comment">QQ链接：可以网上搜索qq推广登录后填写生成得到标签内容</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"mailto:64174@gmail.com"</span>&gt;</span>点击联系我<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-3、行内元素和块元素"><a href="#3-3、行内元素和块元素" class="headerlink" title="3.3、行内元素和块元素"></a>3.3、行内元素和块元素</h4><ul>
+<li>块元素<ul>
+<li>无论内容多少，该元素独占一行</li>
+<li>(p、h1-h6…)</li>
+</ul>
+</li>
+<li>行内元素<ul>
+<li>内容撑开宽度，左右都是行内元素的可以排在一行</li>
+<li>(a、strong、em…)</li>
+</ul>
+</li>
+</ul>
+<h3 id="4、列表、表单、媒体元素"><a href="#4、列表、表单、媒体元素" class="headerlink" title="4、列表、表单、媒体元素"></a>4、列表、表单、媒体元素</h3><h4 id="4-1、列表标签"><a href="#4-1、列表标签" class="headerlink" title="4.1、列表标签"></a>4.1、列表标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--有序列表</span></span><br><span class="line"><span class="comment">应用范围：试卷，问答...</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Java<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Python<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>运维<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>前端<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>C/C++<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--无序列表</span></span><br><span class="line"><span class="comment">应用范围：导航，侧边栏...</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Java<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Python<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>运维<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>前端<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>C/C++<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--自定义列表</span></span><br><span class="line"><span class="comment">dl：标签</span></span><br><span class="line"><span class="comment">dt：列表名称</span></span><br><span class="line"><span class="comment">dd：列表内容</span></span><br><span class="line"><span class="comment">应用范围：公司网站底部...</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>学科<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Java<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Python<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Linux<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>C<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>位置<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>上海<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>广州<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>深圳<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="4-2、表格标签"><a href="#4-2、表格标签" class="headerlink" title="4.2、表格标签"></a>4.2、表格标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--表格table</span></span><br><span class="line"><span class="comment">行   tr  rows</span></span><br><span class="line"><span class="comment">列   td</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">"1px"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--colspan 跨列--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">"4"</span>&gt;</span>1-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--rowspan 跨行--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span> <span class="attr">rowspan</span>=<span class="string">"2"</span>&gt;</span>2-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>2-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>2-3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>2-4<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>3-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>3-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>3-3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="4-3、媒体元素"><a href="#4-3、媒体元素" class="headerlink" title="4.3、媒体元素"></a>4.3、媒体元素</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--音频和视频</span></span><br><span class="line"><span class="comment">src：资源路径</span></span><br><span class="line"><span class="comment">controls：控制条</span></span><br><span class="line"><span class="comment">autoplay：自动播放</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">"../resources/video/IU.mp4"</span> <span class="attr">controls</span> <span class="attr">autoplay</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">"../resources/audio/寻.mp3"</span> <span class="attr">controls</span> <span class="attr">autoplay</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="4-4、页面结构分析"><a href="#4-4、页面结构分析" class="headerlink" title="4.4、页面结构分析"></a>4.4、页面结构分析</h4><table>
+<thead>
+<tr>
+<th>元素名</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>==header==</td>
+<td>标题头部区域的内容(用于页面或页面中的一块区域)</td>
+</tr>
+<tr>
+<td>==footer==</td>
+<td>标记脚部区域的内容(用于整个页面或页面的一块区域)</td>
+</tr>
+<tr>
+<td>==section==</td>
+<td>Web页面中的一块独立区域</td>
+</tr>
+<tr>
+<td>article</td>
+<td>独立的文章内容</td>
+</tr>
+<tr>
+<td>aside</td>
+<td>相关内容或应用(常用语侧边栏)</td>
+</tr>
+<tr>
+<td>==nav==</td>
+<td>导航类辅助内容</td>
+</tr>
+</tbody></table>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>网页头部<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">section</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>网页主体<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>网页脚部<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="4-5、iframe内联框架"><a href="#4-5、iframe内联框架" class="headerlink" title="4.5、iframe内联框架"></a>4.5、iframe内联框架</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--iframe内联框架</span></span><br><span class="line"><span class="comment">src：地址</span></span><br><span class="line"><span class="comment">height：高度</span></span><br><span class="line"><span class="comment">width：宽度</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"https://www.baidu.com"</span> <span class="attr">name</span>=<span class="string">"hello"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">"1000px"</span> <span class="attr">height</span>=<span class="string">"800px"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--&lt;iframe src="//player.bilibili.com/player.html?aid=200851300&amp;bvid=BV1fz411v77D&amp;cid=194041796&amp;page=1"--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--        scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"&gt;--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--&lt;/iframe&gt;--&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5、表单及其表单应用"><a href="#5、表单及其表单应用" class="headerlink" title="5、表单及其表单应用"></a>5、表单及其表单应用</h3><h4 id="5-1、初识表单post和get提交"><a href="#5-1、初识表单post和get提交" class="headerlink" title="5.1、初识表单post和get提交"></a>5.1、初识表单post和get提交</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>注册<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--表单form</span></span><br><span class="line"><span class="comment">action：表单提交的位置，可以是网站，也可以是一个请求处理地址</span></span><br><span class="line"><span class="comment">method：post，get  提交方式</span></span><br><span class="line"><span class="comment">        get：我们可以在url中看到我们提交的信息，不安全，高效。</span></span><br><span class="line"><span class="comment">        post：比较安全，传输大文件。</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"1.我的第一个网页.html"</span> <span class="attr">method</span>=<span class="string">"post"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--文本输入框：input type="text"</span></span><br><span class="line"><span class="comment">    value="carey帅"    默认初始值</span></span><br><span class="line"><span class="comment">    maxlength="8"     最长能写几个字符</span></span><br><span class="line"><span class="comment">    size="30"           文本框长度</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>名字：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"username"</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--密码框：input type="password"--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>密码：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"pwd"</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-2、文本框和单选框"><a href="#5-2、文本框和单选框" class="headerlink" title="5.2、文本框和单选框"></a>5.2、文本框和单选框</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--单选框标签</span></span><br><span class="line"><span class="comment">input type="radio"</span></span><br><span class="line"><span class="comment">value  ：单选框的值</span></span><br><span class="line"><span class="comment">name   ：表示组</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>性别：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">value</span>=<span class="string">"boy"</span> <span class="attr">name</span>=<span class="string">"sex"</span> <span class="attr">checked</span>&gt;</span>男</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">value</span>=<span class="string">"girl"</span> <span class="attr">name</span>=<span class="string">"sex"</span>&gt;</span>女</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-3、按钮和多选框"><a href="#5-3、按钮和多选框" class="headerlink" title="5.3、按钮和多选框"></a>5.3、按钮和多选框</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--多选框</span></span><br><span class="line"><span class="comment">input type="checkbox"</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>爱好：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"sleep"</span> <span class="attr">name</span>=<span class="string">"hobby"</span>&gt;</span>睡觉</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"code"</span> <span class="attr">name</span>=<span class="string">"hobby"</span> <span class="attr">checked</span>&gt;</span>敲代码</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"chat"</span> <span class="attr">name</span>=<span class="string">"hobby"</span>&gt;</span>聊天</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"game"</span> <span class="attr">name</span>=<span class="string">"hobby"</span>&gt;</span>游戏</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--按钮</span></span><br><span class="line"><span class="comment">input type="button"     普通按钮</span></span><br><span class="line"><span class="comment">input type="image"      图像按钮</span></span><br><span class="line"><span class="comment">input type="submit"     提交按钮</span></span><br><span class="line"><span class="comment">input type="reset"      重置</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>按钮：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">name</span>=<span class="string">"btn1"</span> <span class="attr">value</span>=<span class="string">"点击变长"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"image"</span> <span class="attr">src</span>=<span class="string">"../resources/image/1.jpg"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">value</span>=<span class="string">"清空表单"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-4、列表框文本域和文件域"><a href="#5-4、列表框文本域和文件域" class="headerlink" title="5.4、列表框文本域和文件域"></a>5.4、列表框文本域和文件域</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--文本域</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>反馈：</span><br><span class="line">    <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">"textarea"</span> <span class="attr">cols</span>=<span class="string">"50"</span> <span class="attr">rows</span>=<span class="string">"10"</span>&gt;</span>文本内容<span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--文件域</span></span><br><span class="line"><span class="comment">input type="file" name="files"</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"files"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"上传"</span> <span class="attr">name</span>=<span class="string">"upload"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-5、搜索框滑块和简单验证"><a href="#5-5、搜索框滑块和简单验证" class="headerlink" title="5.5、搜索框滑块和简单验证"></a>5.5、搜索框滑块和简单验证</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--邮件验证--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>邮箱：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"email"</span> <span class="attr">name</span>=<span class="string">"email"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--URL--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>URL：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"url"</span> <span class="attr">name</span>=<span class="string">"url"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--数字--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>商品数量：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"number"</span> <span class="attr">name</span>=<span class="string">"num"</span> <span class="attr">max</span>=<span class="string">"100"</span> <span class="attr">min</span>=<span class="string">"0"</span> <span class="attr">step</span>=<span class="string">"1"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--滑块</span></span><br><span class="line"><span class="comment">nput type="range"</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>音量：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"range"</span> <span class="attr">name</span>=<span class="string">"voice"</span> <span class="attr">min</span>=<span class="string">"0"</span> <span class="attr">max</span>=<span class="string">"100"</span> <span class="attr">step</span>=<span class="string">"2"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--搜索框--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>搜索：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"search"</span> <span class="attr">name</span>=<span class="string">"search"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-6、表单的应用"><a href="#5-6、表单的应用" class="headerlink" title="5.6、表单的应用"></a>5.6、表单的应用</h4><ul>
+<li>隐藏域    hidden</li>
+<li>只读        readonly</li>
+<li>禁用        disabled</li>
+</ul>
+<h3 id="6、表单的初级验证"><a href="#6、表单的初级验证" class="headerlink" title="6、表单的初级验证"></a>6、表单的初级验证</h3><p>常用方式</p>
+<ul>
+<li>placeholder    提示信息</li>
+<li>required          非空判断</li>
+<li>pattern             正则表达式</li>
+</ul>
+<p>常用正则表达式建议上网查找</p>
+<h3 id="7、HTML总结"><a href="#7、HTML总结" class="headerlink" title="7、HTML总结"></a>7、HTML总结</h3><p><img src="/blog/blog/.com/2020/05/26/HTML5-study/HTML%E6%80%BB%E7%BB%93.jpg" alt="HTML总结"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Java开发路线</title>
+    <url>/blog/2020/05/09/JAVAdeveloproad/</url>
+    <content><![CDATA[<h2 id="编程基础（掌握）"><a href="#编程基础（掌握）" class="headerlink" title="编程基础（掌握）"></a>编程基础（掌握）</h2><h3 id="JAVA语法"><a href="#JAVA语法" class="headerlink" title="JAVA语法"></a>JAVA语法</h3><h4 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h4><h4 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h4><ul>
+<li><p>类加载机制</p>
+</li>
+<li><p>字节码执行机制</p>
+</li>
+<li><p>JVM内存模型</p>
+</li>
+<li><p>GC垃圾回收</p>
+</li>
+<li><p>VM性能监控与故障定位</p>
+</li>
+<li><p>JVM调优</p>
+</li>
+</ul>
+<h4 id="并发-多线程"><a href="#并发-多线程" class="headerlink" title="并发/多线程"></a>并发/多线程</h4><ul>
+<li><p>并发编程的基础</p>
+</li>
+<li><p>线程池</p>
+</li>
+<li><p>锁</p>
+</li>
+<li><p>并发容器</p>
+</li>
+<li><p>原子类</p>
+</li>
+<li><p>JUC并发工具类</p>
+</li>
+</ul>
+<h3 id="数据结构和算法"><a href="#数据结构和算法" class="headerlink" title="数据结构和算法"></a>数据结构和算法</h3><h4 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h4><ul>
+<li>字符串</li>
+<li>数组</li>
+<li>链表</li>
+<li>堆、栈、队列</li>
+<li>二叉树</li>
+<li>哈希</li>
+<li>图</li>
+</ul>
+<h4 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h4><ul>
+<li>排序</li>
+<li>查找</li>
+<li>贪心</li>
+<li>分治</li>
+<li>动态规划</li>
+<li>回溯</li>
+</ul>
+<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><ul>
+<li>ARP协议</li>
+<li>IP/ ICMP协议</li>
+<li>TCP/ UDP协议</li>
+<li>DNS/HTTP/ HTTPS协议</li>
+<li>Session/ Cookie</li>
+</ul>
+<h3 id="MySQL数据库"><a href="#MySQL数据库" class="headerlink" title="MySQL数据库"></a>MySQL数据库</h3><ul>
+<li>SQL语句的书写</li>
+<li>SQL语句的优化</li>
+<li>事务以及隔离级别</li>
+<li>索引</li>
+<li>锁</li>
+</ul>
+<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><ul>
+<li>进程/ 线程</li>
+<li>并发/ 锁</li>
+<li>内存管理和调度</li>
+<li>I/ O原理</li>
+</ul>
+<h3 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h3><ul>
+<li>单例</li>
+<li>工厂</li>
+<li>代理</li>
+<li>策略</li>
+<li>模板方法</li>
+<li>观察者</li>
+<li>适配器</li>
+<li>责任链</li>
+<li>建造者</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="研发工具"><a href="#研发工具" class="headerlink" title="研发工具"></a>研发工具</h2><h3 id="集成开发环境"><a href="#集成开发环境" class="headerlink" title="集成开发环境"></a>集成开发环境</h3><ul>
+<li>Eclipse</li>
+<li>Intellij IDEA</li>
+<li>VS Code</li>
+</ul>
+<h3 id="Linux系统（了解）"><a href="#Linux系统（了解）" class="headerlink" title="Linux系统（了解）"></a>Linux系统（了解）</h3><ul>
+<li>常用命令</li>
+<li>Shell脚本</li>
+</ul>
+<h3 id="项目管理-构建工具（掌握）"><a href="#项目管理-构建工具（掌握）" class="headerlink" title="项目管理/构建工具（掌握）"></a>项目管理/构建工具（掌握）</h3><ul>
+<li>Maven</li>
+<li>Gradle</li>
+</ul>
+<h3 id="代码管理工具（了解）"><a href="#代码管理工具（了解）" class="headerlink" title="代码管理工具（了解）"></a>代码管理工具（了解）</h3><ul>
+<li>SVN</li>
+<li>Git</li>
+</ul>
+<h2 id="应用框架"><a href="#应用框架" class="headerlink" title="应用框架"></a>应用框架</h2><h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><h4 id="Spring家族框架（掌握-2-3month）"><a href="#Spring家族框架（掌握-2-3month）" class="headerlink" title="Spring家族框架（掌握,2-3month）"></a>Spring家族框架（掌握,2-3month）</h4><ul>
+<li><strong>Spring</strong><ul>
+<li>IoC</li>
+<li>AOP</li>
+</ul>
+</li>
+<li><strong>SpringMVC</strong></li>
+<li><strong>Spring Boot</strong><ul>
+<li>自动配置、开箱即用</li>
+<li>整合Web</li>
+<li>整合数据库（事务问题）</li>
+<li>整合权限<ul>
+<li>Shiro</li>
+<li>Spring Security</li>
+</ul>
+</li>
+<li>整合各种中间件<ul>
+<li>Redis、 MQ、 RPC框架、NIO框架</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="服务器软件"><a href="#服务器软件" class="headerlink" title="服务器软件"></a>服务器软件</h4><ul>
+<li>Web服务器<ul>
+<li>Nginx（重要）</li>
+</ul>
+</li>
+<li>应用服务器<ul>
+<li>Tomcat</li>
+<li>Jetty</li>
+<li>Undertow（性能较好）</li>
+</ul>
+</li>
+</ul>
+<h4 id="中间件（应对高并发、大容量）"><a href="#中间件（应对高并发、大容量）" class="headerlink" title="中间件（应对高并发、大容量）"></a>中间件（应对高并发、大容量）</h4><ul>
+<li><p>缓存</p>
+<ul>
+<li><strong>Redis</strong>（掌握，重要,2week）                                                                        <ul>
+<li>书籍：《Redis设计与实践》</li>
+<li>5大基础数据类型</li>
+<li>事务</li>
+<li>消息通知</li>
+<li>管道</li>
+<li>持久化</li>
+<li>集群</li>
+</ul>
+</li>
+<li>memcache</li>
+</ul>
+</li>
+<li><p>消息队列（学一个即可）</p>
+<ul>
+<li>RocketMQ</li>
+<li>RabbitMQ</li>
+<li>Kafka（大数据）</li>
+</ul>
+</li>
+<li><p>RPC框架</p>
+<ul>
+<li>Dubbo</li>
+<li>gRPC</li>
+<li>Thrift</li>
+<li>Spring Cloud</li>
+<li>Netty</li>
+</ul>
+</li>
+<li><p>数据库框架</p>
+<ul>
+<li><strong>ORM层框架</strong>（掌握）<ul>
+<li>Mybatis</li>
+<li>Hibernate</li>
+<li>JPA</li>
+</ul>
+</li>
+<li><strong>连接池</strong>（掌握）<ul>
+<li>Druid</li>
+<li>HikariCP</li>
+<li>C3P0</li>
+</ul>
+</li>
+<li>分库分表<ul>
+<li>MyCAT</li>
+<li>Sharding-JDBC</li>
+<li>Sharding-Sphere</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>搜索引擎（了解）</p>
+<ul>
+<li>ElasticSearch</li>
+<li>Solr</li>
+</ul>
+</li>
+<li><p>分布式/微服务（了解,2-3week）</p>
+<ul>
+<li><p>服务发现/注册</p>
+<ul>
+<li>Eureka</li>
+<li>Consul</li>
+<li>Zookeeper（重要）</li>
+<li>Nacos</li>
+</ul>
+</li>
+<li><p>网关</p>
+<ul>
+<li>Zuul</li>
+<li>Gateway</li>
+</ul>
+</li>
+<li><p>服务调用（负载均衡）</p>
+<ul>
+<li>Ribbon</li>
+<li>Feign</li>
+</ul>
+</li>
+<li><p>熔断/降级</p>
+<ul>
+<li>Hystrix</li>
+</ul>
+</li>
+<li><p>配置中心</p>
+<ul>
+<li>Config</li>
+<li>Apollo</li>
+<li>Nacos</li>
+</ul>
+</li>
+<li><p>认证和鉴权（稍微重要些）</p>
+<ul>
+<li><p>Shiro</p>
+</li>
+<li><p>Spring Security</p>
+</li>
+<li><p>OAuth2</p>
+</li>
+<li><p>SSO单点登录</p>
+</li>
+</ul>
+</li>
+<li><p>分布式事务</p>
+<ul>
+<li>JTA接口——Atomikos组件</li>
+<li>2PC、3PC</li>
+<li>XA模式</li>
+<li>TCC模式——tcc-transaction、ByteTCC、EasyTransaction、SeaTa</li>
+<li>SAGA模式——ServiceComb、Seata</li>
+<li>LCN模式——tx-Icn</li>
+</ul>
+</li>
+<li><p>任务调度</p>
+<ul>
+<li>Quartz</li>
+<li>Elastic-Job</li>
+</ul>
+</li>
+<li><p>链路追踪和监控</p>
+<ul>
+<li>Zipkin</li>
+<li>Sleuth</li>
+<li>Skywalking</li>
+</ul>
+</li>
+<li><p>日志分析与监控——ELK</p>
+<ul>
+<li>ElasticSearch</li>
+<li>Logstash</li>
+<li>Kibana</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>虚拟化/容器化</p>
+<ul>
+<li>容器化——Docker</li>
+<li>容器编排技术——Kubernetes、Swarm</li>
+</ul>
+</li>
+</ul>
+<h3 id="前端（了解）"><a href="#前端（了解）" class="headerlink" title="前端（了解）"></a>前端（了解）</h3><ul>
+<li><p>基础套餐（大致了解，2-3天）</p>
+<ul>
+<li>三大件<ul>
+<li>HTML</li>
+<li>JavaScript</li>
+<li>CSS</li>
+</ul>
+</li>
+<li>基础库<ul>
+<li>jQuery</li>
+<li>Ajax</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>模板框架</p>
+<ul>
+<li>JSP/JSTL（已过时）</li>
+<li>Thymeleaf</li>
+<li>FreeMarker</li>
+</ul>
+</li>
+<li><p>组件化框架</p>
+<ul>
+<li><p>Node</p>
+</li>
+<li><p>Vue</p>
+</li>
+<li><p>React</p>
+</li>
+<li><p>Angular</p>
+</li>
+</ul>
+<hr>
+</li>
+</ul>
+<h2 id="运维知识（配置）"><a href="#运维知识（配置）" class="headerlink" title="运维知识（配置）"></a>运维知识（配置）</h2><ul>
+<li>Web服务器<ul>
+<li>Nginx</li>
+</ul>
+</li>
+<li>应用服务器<ul>
+<li>Tomcat</li>
+<li>Jetty</li>
+<li>Undertow</li>
+</ul>
+</li>
+<li>CDN加速</li>
+<li>持续集成/持续部署<ul>
+<li>Jenkins</li>
+</ul>
+</li>
+<li>代码质量检查<ul>
+<li>sonar</li>
+</ul>
+</li>
+<li>日志收集和分析<ul>
+<li>ELK</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="成神之路"><a href="#成神之路" class="headerlink" title="成神之路"></a>成神之路</h2><ul>
+<li>徒手撕源码</li>
+<li>光脚造轮子</li>
+<li>闭着眼睛深度调优</li>
+<li>吊打面试官</li>
+</ul>
+<h2 id="平稳降落"><a href="#平稳降落" class="headerlink" title="平稳降落"></a>平稳降落</h2><h2 id="路线图"><a href="#路线图" class="headerlink" title="路线图"></a>路线图</h2><p><img src="/blog/blog/.com/2020/05/09/JAVAdeveloproad/C:%5CUsers%5CCarey%5CDesktop%5CJava%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF-%E9%AB%98%E6%B8%85%E7%89%88.jpg" alt="路线图"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>JavaScript</title>
     <url>/blog/2020/05/28/JavaScript-study/</url>
     <content><![CDATA[<h3 id="1、什么是JavaScript"><a href="#1、什么是JavaScript" class="headerlink" title="1、什么是JavaScript"></a>1、什么是JavaScript</h3><h4 id="1-1、概述"><a href="#1-1、概述" class="headerlink" title="1.1、概述"></a>1.1、概述</h4><p>JavaScript是一门世界上最流行的脚本语言</p>
@@ -609,498 +1104,183 @@
 ]]></content>
   </entry>
   <entry>
-    <title>注解</title>
-    <url>/blog/2020/05/30/Annotation/</url>
-    <content><![CDATA[<h2 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h2><h3 id="1、注解"><a href="#1、注解" class="headerlink" title="1、注解"></a>1、注解</h3><h4 id="什么是注解"><a href="#什么是注解" class="headerlink" title="什么是注解"></a>什么是注解</h4><p>Annotation是从JDK5.0开始引入的新技术.</p>
-<p>Annotation的作用：</p>
-<ul>
-<li>不是程序本身，可以对程序作出解释.（这一点和注释（comment）没什么区别）</li>
-<li>==可以被其他程序（比如：编译器等）读取==</li>
+    <title>操作系统概述</title>
+    <url>/blog/2020/05/10/OSfirst/</url>
+    <content><![CDATA[<h2 id="操作系统的概念（定义）"><a href="#操作系统的概念（定义）" class="headerlink" title="操作系统的概念（定义）"></a>操作系统的概念（定义）</h2><p>操作系统（Operating System， OS）是指控制和管理整个计算机系统的硬件和软件资源，并合理地组织调度计算机的工作和资源的分配；以提供给用户和其他软件方便的接口和环境；它是计算机系统中最基本的系统软件。</p>
+<hr>
+<h2 id="操作系统的特征"><a href="#操作系统的特征" class="headerlink" title="操作系统的特征"></a>操作系统的特征</h2><ul>
+<li>并发：指两个或多个事件在同一时间间隔内发生。这些事件宏观上是同时发生的，但微观上是交替发生的。<br>易混淆考点–并行：指两个或多个事件在同一时刻同时发生。</li>
+<li>共享即资源共享，是指系统中的资源可供内存中多个并发执行的进程共同使用。<ul>
+<li>互斥共享方式(如对摄像头设备的共享使用)</li>
+<li>同时共享方式(如对磁盘自由的共享使用)</li>
 </ul>
-<p>Annotation的格式：</p>
-<ul>
-<li>注解是以“@注释名”在代码中存在的，还可以增加一些参数值，例如：@SuppressWarnings（value=”unchecked”）.</li>
-</ul>
-<p>Annotation在哪里使用？</p>
-<ul>
-<li>可以附加在package，class，method，field等上面，相当于给他们增加了额外的辅助信息，我们可以通过反射机制编程实现对这些元数据的访问</li>
-</ul>
-<p>2、</p>
-<a id="more"></a>]]></content>
-  </entry>
-  <entry>
-    <title>HTML5学习</title>
-    <url>/blog/2020/05/26/HTML5-study/</url>
-    <content><![CDATA[<h3 id="1、初识HTML"><a href="#1、初识HTML" class="headerlink" title="1、初识HTML"></a>1、初识HTML</h3><p>HTML</p>
-<ul>
-<li>==H==yper ==T==ext ==M==arkup ==L==anguage(超文本==标记语言==)</li>
-</ul>
-<p>W3C</p>
-<ul>
-<li><p>==W==orld ==W==ide ==W==eb ==C==onsortium(万维网联盟)</p>
 </li>
-<li><p>成立于1994年，Web技术领域最权威和具影响力的国际==中立性技术标准机构==</p>
+<li>虚拟是指把一个物理上的实体变为若干个逻辑上的对应物。物理实体（前者）是实际存在的，而逻辑上对应物（后者）是用户感受到的。<ul>
+<li>空分复用技术(如虚拟存储器)</li>
+<li>时分复用技术(如虚拟处理器)</li>
+</ul>
 </li>
-<li><p><a href="http://www.w3.org/" target="_blank" rel="noopener">http://www.w3.org/</a></p>
+<li>异步是指在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底的，而是走走停停，以不可预知的速度向前推进，这就是进程的异步性。</li>
+</ul>
+<hr>
+<h2 id="OS的发展与分类"><a href="#OS的发展与分类" class="headerlink" title="OS的发展与分类"></a>OS的发展与分类</h2><h3 id="手工操作系统"><a href="#手工操作系统" class="headerlink" title="手工操作系统"></a>手工操作系统</h3><h3 id="批处理阶段"><a href="#批处理阶段" class="headerlink" title="批处理阶段"></a>批处理阶段</h3><ul>
+<li>单道批处理系统<br>引入脱机输入/输出技术（用外围机+磁带完成），并由监督程序负责控制作业的输入、输出<br>缺点：内存中仅能有一道程序运行, CPU有大量的时间是在空闲等待I/O完成</li>
+<li>多道批处理系统(操作系统开始出现)<br>优点：多道程序并发执行，共享计算机资源。资源利用率大幅提升<br>缺点：没有人机交互功能</li>
+</ul>
+<h3 id="分时操作系统"><a href="#分时操作系统" class="headerlink" title="分时操作系统"></a>分时操作系统</h3><p>计算机以时间片为单位轮流为各个用户/作业服务<br>优点：解决了人机交互问题<br>缺点：不能优先处理一些紧急任务</p>
+<h3 id="实时操作系统"><a href="#实时操作系统" class="headerlink" title="实时操作系统"></a>实时操作系统</h3><p>要在严格的时限内处理完事件，具有及时性和可靠性</p>
+<ul>
+<li><p>硬实时系统  必须在绝对严格的规定时间内完成处理    如导弹控制系统</p>
 </li>
-<li><p><a href="http://www.chinaw3c.org/" target="_blank" rel="noopener">http://www.chinaw3c.org/</a></p>
+<li><p>软实时系统     能接受偶尔违反时间规定              如12306火车订票系统</p>
 </li>
 </ul>
-<p>W3C标准包括</p>
-<ul>
-<li>==结构==化标准语言(HTML、XML)</li>
-<li>==表现==标准语言(CSS)</li>
-<li>==行为==标准(DOM、ECMAScript)</li>
-</ul>
-<p>基本信息：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- DOCTYPE：告诉浏览器，我们要使用什么规范 --&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- head标签代表网页头部 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- meta描述性标签，它用来描述我们网站的一些信息--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- meta一般用来做SEO--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">"carey的html笔记"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"来这个地方可以查看自己的html笔记"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- title网页标题 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>我的第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- body标签代表网页主体 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">Hello，World！</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
+<h3 id="网络操作系统"><a href="#网络操作系统" class="headerlink" title="网络操作系统"></a>网络操作系统</h3><p>实现网络中各种资源的共享（如文件共享）和各台计算机之间的通信</p>
+<h3 id="分布式操作系统"><a href="#分布式操作系统" class="headerlink" title="分布式操作系统"></a>分布式操作系统</h3><p>分布性和并行性<br>任何工作都可以分布在这些计算机上，由它们并行、协同完成这个任务</p>
+<h3 id="个人计算机操作系统"><a href="#个人计算机操作系统" class="headerlink" title="个人计算机操作系统"></a>个人计算机操作系统</h3><hr>
 <a id="more"></a>
 
-<h3 id="2、网页的基本标签"><a href="#2、网页的基本标签" class="headerlink" title="2、网页的基本标签"></a>2、网页的基本标签</h3><p><strong>补充：IDEA中快捷键，标签名+Tab键</strong></p>
-<h4 id="2-1、标题标签"><a href="#2-1、标题标签" class="headerlink" title="2.1、标题标签"></a>2.1、标题标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--标题标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>一级标签<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>二级标签<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>三级标签<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>四级标签<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>五级标签<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>六级标签<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-2、段落标签"><a href="#2-2、段落标签" class="headerlink" title="2.2、段落标签"></a>2.2、段落标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--段落标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>两只老虎，两只老虎，<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>跑得快，跑得快，<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>一只没有耳朵，<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>一只没有尾巴，<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>真奇怪！真奇怪！<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-3、水平标签"><a href="#2-3、水平标签" class="headerlink" title="2.3、水平标签"></a>2.3、水平标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--水平线标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-4、换行标签"><a href="#2-4、换行标签" class="headerlink" title="2.4、换行标签"></a>2.4、换行标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--换行标签--&gt;</span></span><br><span class="line">两只老虎，两只老虎，<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">跑得快，跑得快，<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">一只没有耳朵，<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">一只没有尾巴，<span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">真奇怪！真奇怪！</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-5、粗体，斜体"><a href="#2-5、粗体，斜体" class="headerlink" title="2.5、粗体，斜体"></a>2.5、粗体，斜体</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--粗体，斜体--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>字体样式标签<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">粗体：<span class="tag">&lt;<span class="name">strong</span>&gt;</span>i love you<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">斜体：<span class="tag">&lt;<span class="name">em</span>&gt;</span>i love you<span class="tag">&lt;/<span class="name">em</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-6、特殊符号"><a href="#2-6、特殊符号" class="headerlink" title="2.6、特殊符号"></a>2.6、特殊符号</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--特殊符号--&gt;</span></span><br><span class="line">空       格</span><br><span class="line">空 <span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span>  格</span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">大于号：<span class="symbol">&amp;gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">小于号：<span class="symbol">&amp;lt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">商标：<span class="symbol">&amp;copy;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3、图像、超链接、网页布局"><a href="#3、图像、超链接、网页布局" class="headerlink" title="3、图像、超链接、网页布局"></a>3、图像、超链接、网页布局</h3><h4 id="3-1、图像标签"><a href="#3-1、图像标签" class="headerlink" title="3.1、图像标签"></a>3.1、图像标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--img学习</span></span><br><span class="line"><span class="comment">src：图片地址     (必填)</span></span><br><span class="line"><span class="comment">    相对地址(推荐使用) ， 绝对地址</span></span><br><span class="line"><span class="comment">    ../    --上一级目录</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">alt：图片名字(必填)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">title：鼠标悬停时候的文字</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../resources/image/1.jpg"</span> <span class="attr">alt</span>=<span class="string">"Edge的logo"</span> <span class="attr">title</span>=<span class="string">"悬停文字"</span> <span class="attr">width</span>=<span class="string">"300"</span> <span class="attr">height</span>=<span class="string">"300"</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="3-2、超链接标签及其应用"><a href="#3-2、超链接标签及其应用" class="headerlink" title="3.2、超链接标签及其应用"></a>3.2、超链接标签及其应用</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--使用name作为标记--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">"top"</span>&gt;</span>顶部<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--a标签</span></span><br><span class="line"><span class="comment">href：必填，表示要跳转到哪个页面</span></span><br><span class="line"><span class="comment">target：表示窗口在哪里打开</span></span><br><span class="line"><span class="comment">    _blank      在新标签中打开</span></span><br><span class="line"><span class="comment">    _self       在自己的网页中打开(默认)</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"1.我的第一个网页.html"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>点击我跳转到页面一<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://www.baidu.com"</span> <span class="attr">target</span>=<span class="string">"_self"</span>&gt;</span>点击我跳转到百度<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"1.我的第一个网页.html"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../resources/image/1.jpg"</span> <span class="attr">alt</span>=<span class="string">"Edge的logo"</span> <span class="attr">title</span>=<span class="string">"悬停文字"</span> <span class="attr">width</span>=<span class="string">"300"</span> <span class="attr">height</span>=<span class="string">"300"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--锚链接</span></span><br><span class="line"><span class="comment">1.需要一个标记</span></span><br><span class="line"><span class="comment">2.跳转到标记</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#top"</span>&gt;</span>回到顶部<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">"down"</span>&gt;</span>down<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--功能性链接</span></span><br><span class="line"><span class="comment">邮件链接：mailto</span></span><br><span class="line"><span class="comment">QQ链接：可以网上搜索qq推广登录后填写生成得到标签内容</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"mailto:64174@gmail.com"</span>&gt;</span>点击联系我<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="3-3、行内元素和块元素"><a href="#3-3、行内元素和块元素" class="headerlink" title="3.3、行内元素和块元素"></a>3.3、行内元素和块元素</h4><ul>
-<li>块元素<ul>
-<li>无论内容多少，该元素独占一行</li>
-<li>(p、h1-h6…)</li>
+<h2 id="OS的运行机制和体系结构"><a href="#OS的运行机制和体系结构" class="headerlink" title="OS的运行机制和体系结构"></a>OS的运行机制和体系结构</h2><h3 id="运行机制"><a href="#运行机制" class="headerlink" title="运行机制"></a>运行机制</h3><ul>
+<li>两种指令<ul>
+<li>特权指令                只能在核心态下执行</li>
+<li>非特权指令</li>
 </ul>
 </li>
-<li>行内元素<ul>
-<li>内容撑开宽度，左右都是行内元素的可以排在一行</li>
-<li>(a、strong、em…)</li>
+<li>两种处理器状态                   <ul>
+<li>核心态</li>
+<li>用户态</li>
+</ul>
+</li>
+<li>两种程序<ul>
+<li>内核程序         只能在核心态下执行</li>
+<li>应用程序</li>
 </ul>
 </li>
 </ul>
-<h3 id="4、列表、表单、媒体元素"><a href="#4、列表、表单、媒体元素" class="headerlink" title="4、列表、表单、媒体元素"></a>4、列表、表单、媒体元素</h3><h4 id="4-1、列表标签"><a href="#4-1、列表标签" class="headerlink" title="4.1、列表标签"></a>4.1、列表标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--有序列表</span></span><br><span class="line"><span class="comment">应用范围：试卷，问答...</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Java<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Python<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>运维<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>前端<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>C/C++<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--无序列表</span></span><br><span class="line"><span class="comment">应用范围：导航，侧边栏...</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Java<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Python<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>运维<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>前端<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>C/C++<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--自定义列表</span></span><br><span class="line"><span class="comment">dl：标签</span></span><br><span class="line"><span class="comment">dt：列表名称</span></span><br><span class="line"><span class="comment">dd：列表内容</span></span><br><span class="line"><span class="comment">应用范围：公司网站底部...</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>学科<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Java<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Python<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Linux<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>C<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>位置<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>上海<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>广州<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>深圳<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="4-2、表格标签"><a href="#4-2、表格标签" class="headerlink" title="4.2、表格标签"></a>4.2、表格标签</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--表格table</span></span><br><span class="line"><span class="comment">行   tr  rows</span></span><br><span class="line"><span class="comment">列   td</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">"1px"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--colspan 跨列--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">"4"</span>&gt;</span>1-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--rowspan 跨行--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span> <span class="attr">rowspan</span>=<span class="string">"2"</span>&gt;</span>2-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>2-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>2-3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>2-4<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>3-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>3-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>3-3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="4-3、媒体元素"><a href="#4-3、媒体元素" class="headerlink" title="4.3、媒体元素"></a>4.3、媒体元素</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--音频和视频</span></span><br><span class="line"><span class="comment">src：资源路径</span></span><br><span class="line"><span class="comment">controls：控制条</span></span><br><span class="line"><span class="comment">autoplay：自动播放</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">"../resources/video/IU.mp4"</span> <span class="attr">controls</span> <span class="attr">autoplay</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">"../resources/audio/寻.mp3"</span> <span class="attr">controls</span> <span class="attr">autoplay</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="4-4、页面结构分析"><a href="#4-4、页面结构分析" class="headerlink" title="4.4、页面结构分析"></a>4.4、页面结构分析</h4><table>
-<thead>
-<tr>
-<th>元素名</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>==header==</td>
-<td>标题头部区域的内容(用于页面或页面中的一块区域)</td>
-</tr>
-<tr>
-<td>==footer==</td>
-<td>标记脚部区域的内容(用于整个页面或页面的一块区域)</td>
-</tr>
-<tr>
-<td>==section==</td>
-<td>Web页面中的一块独立区域</td>
-</tr>
-<tr>
-<td>article</td>
-<td>独立的文章内容</td>
-</tr>
-<tr>
-<td>aside</td>
-<td>相关内容或应用(常用语侧边栏)</td>
-</tr>
-<tr>
-<td>==nav==</td>
-<td>导航类辅助内容</td>
-</tr>
-</tbody></table>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>网页头部<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">section</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>网页主体<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>网页脚部<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="4-5、iframe内联框架"><a href="#4-5、iframe内联框架" class="headerlink" title="4.5、iframe内联框架"></a>4.5、iframe内联框架</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--iframe内联框架</span></span><br><span class="line"><span class="comment">src：地址</span></span><br><span class="line"><span class="comment">height：高度</span></span><br><span class="line"><span class="comment">width：宽度</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"https://www.baidu.com"</span> <span class="attr">name</span>=<span class="string">"hello"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">"1000px"</span> <span class="attr">height</span>=<span class="string">"800px"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--&lt;iframe src="//player.bilibili.com/player.html?aid=200851300&amp;bvid=BV1fz411v77D&amp;cid=194041796&amp;page=1"--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--        scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"&gt;--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--&lt;/iframe&gt;--&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="5、表单及其表单应用"><a href="#5、表单及其表单应用" class="headerlink" title="5、表单及其表单应用"></a>5、表单及其表单应用</h3><h4 id="5-1、初识表单post和get提交"><a href="#5-1、初识表单post和get提交" class="headerlink" title="5.1、初识表单post和get提交"></a>5.1、初识表单post和get提交</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>注册<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--表单form</span></span><br><span class="line"><span class="comment">action：表单提交的位置，可以是网站，也可以是一个请求处理地址</span></span><br><span class="line"><span class="comment">method：post，get  提交方式</span></span><br><span class="line"><span class="comment">        get：我们可以在url中看到我们提交的信息，不安全，高效。</span></span><br><span class="line"><span class="comment">        post：比较安全，传输大文件。</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"1.我的第一个网页.html"</span> <span class="attr">method</span>=<span class="string">"post"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--文本输入框：input type="text"</span></span><br><span class="line"><span class="comment">    value="carey帅"    默认初始值</span></span><br><span class="line"><span class="comment">    maxlength="8"     最长能写几个字符</span></span><br><span class="line"><span class="comment">    size="30"           文本框长度</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>名字：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"username"</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--密码框：input type="password"--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>密码：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"pwd"</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="5-2、文本框和单选框"><a href="#5-2、文本框和单选框" class="headerlink" title="5.2、文本框和单选框"></a>5.2、文本框和单选框</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--单选框标签</span></span><br><span class="line"><span class="comment">input type="radio"</span></span><br><span class="line"><span class="comment">value  ：单选框的值</span></span><br><span class="line"><span class="comment">name   ：表示组</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>性别：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">value</span>=<span class="string">"boy"</span> <span class="attr">name</span>=<span class="string">"sex"</span> <span class="attr">checked</span>&gt;</span>男</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">value</span>=<span class="string">"girl"</span> <span class="attr">name</span>=<span class="string">"sex"</span>&gt;</span>女</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="5-3、按钮和多选框"><a href="#5-3、按钮和多选框" class="headerlink" title="5.3、按钮和多选框"></a>5.3、按钮和多选框</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--多选框</span></span><br><span class="line"><span class="comment">input type="checkbox"</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>爱好：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"sleep"</span> <span class="attr">name</span>=<span class="string">"hobby"</span>&gt;</span>睡觉</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"code"</span> <span class="attr">name</span>=<span class="string">"hobby"</span> <span class="attr">checked</span>&gt;</span>敲代码</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"chat"</span> <span class="attr">name</span>=<span class="string">"hobby"</span>&gt;</span>聊天</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"game"</span> <span class="attr">name</span>=<span class="string">"hobby"</span>&gt;</span>游戏</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--按钮</span></span><br><span class="line"><span class="comment">input type="button"     普通按钮</span></span><br><span class="line"><span class="comment">input type="image"      图像按钮</span></span><br><span class="line"><span class="comment">input type="submit"     提交按钮</span></span><br><span class="line"><span class="comment">input type="reset"      重置</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>按钮：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">name</span>=<span class="string">"btn1"</span> <span class="attr">value</span>=<span class="string">"点击变长"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"image"</span> <span class="attr">src</span>=<span class="string">"../resources/image/1.jpg"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">value</span>=<span class="string">"清空表单"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="5-4、列表框文本域和文件域"><a href="#5-4、列表框文本域和文件域" class="headerlink" title="5.4、列表框文本域和文件域"></a>5.4、列表框文本域和文件域</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--文本域</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>反馈：</span><br><span class="line">    <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">"textarea"</span> <span class="attr">cols</span>=<span class="string">"50"</span> <span class="attr">rows</span>=<span class="string">"10"</span>&gt;</span>文本内容<span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--文件域</span></span><br><span class="line"><span class="comment">input type="file" name="files"</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"files"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"上传"</span> <span class="attr">name</span>=<span class="string">"upload"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="5-5、搜索框滑块和简单验证"><a href="#5-5、搜索框滑块和简单验证" class="headerlink" title="5.5、搜索框滑块和简单验证"></a>5.5、搜索框滑块和简单验证</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--邮件验证--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>邮箱：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"email"</span> <span class="attr">name</span>=<span class="string">"email"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--URL--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>URL：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"url"</span> <span class="attr">name</span>=<span class="string">"url"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--数字--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>商品数量：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"number"</span> <span class="attr">name</span>=<span class="string">"num"</span> <span class="attr">max</span>=<span class="string">"100"</span> <span class="attr">min</span>=<span class="string">"0"</span> <span class="attr">step</span>=<span class="string">"1"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--滑块</span></span><br><span class="line"><span class="comment">nput type="range"</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>音量：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"range"</span> <span class="attr">name</span>=<span class="string">"voice"</span> <span class="attr">min</span>=<span class="string">"0"</span> <span class="attr">max</span>=<span class="string">"100"</span> <span class="attr">step</span>=<span class="string">"2"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--搜索框--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>搜索：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"search"</span> <span class="attr">name</span>=<span class="string">"search"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="5-6、表单的应用"><a href="#5-6、表单的应用" class="headerlink" title="5.6、表单的应用"></a>5.6、表单的应用</h4><ul>
-<li>隐藏域    hidden</li>
-<li>只读        readonly</li>
-<li>禁用        disabled</li>
+<h3 id="操作系统内核"><a href="#操作系统内核" class="headerlink" title="操作系统内核"></a>操作系统内核</h3><ul>
+<li>时钟管理</li>
+<li>中断处理</li>
+<li>原语   —-  是一种特殊的程序，其执行具有原子性</li>
+<li>对系统资源进行管理的功能<ul>
+<li>进程管理</li>
+<li>存储器管理</li>
+<li>设备管理</li>
 </ul>
-<h3 id="6、表单的初级验证"><a href="#6、表单的初级验证" class="headerlink" title="6、表单的初级验证"></a>6、表单的初级验证</h3><p>常用方式</p>
-<ul>
-<li>placeholder    提示信息</li>
-<li>required          非空判断</li>
-<li>pattern             正则表达式</li>
+</li>
+<li>操作系统的体系结构<ul>
+<li>大内核<ul>
+<li>优点：高性能</li>
+<li>缺点：内核代码庞大，结构混乱，难以维护</li>
 </ul>
-<p>常用正则表达式建议上网查找</p>
-<h3 id="7、HTML总结"><a href="#7、HTML总结" class="headerlink" title="7、HTML总结"></a>7、HTML总结</h3><p><img src="/blog/blog/.com/2020/05/26/HTML5-study/HTML%E6%80%BB%E7%BB%93.jpg" alt="HTML总结"></p>
+</li>
+<li>微内核<ul>
+<li>优点：内核功能少，结构清晰，方便维护</li>
+<li>缺点：需要频繁地在核心态和用户态之间切换，性能低</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="中断和异常"><a href="#中断和异常" class="headerlink" title="中断和异常"></a>中断和异常</h2><h3 id="中断机制的诞生"><a href="#中断机制的诞生" class="headerlink" title="中断机制的诞生"></a>中断机制的诞生</h3><p>为了实现多道程序并发执行而引入的技术</p>
+<h3 id="中断的概念和作用"><a href="#中断的概念和作用" class="headerlink" title="中断的概念和作用"></a>中断的概念和作用</h3><ul>
+<li>发生中断，就意味着需要操作系统介入开展管理工作，CPU会立即进入核心态</li>
+<li>“中断”是CPU从用户态进入核心态的唯一途径<br>“用户态-&gt;核心态”是通过中断实现的，并且中断是唯一途径<br>“核心态-&gt;用户态”：执行一条特权指令——修改PSW的标志位为“用户态”</li>
+</ul>
+<h3 id="中断的分类"><a href="#中断的分类" class="headerlink" title="中断的分类"></a>中断的分类</h3><h4 id="内中断-也称异常、例外、陷入"><a href="#内中断-也称异常、例外、陷入" class="headerlink" title="内中断(也称异常、例外、陷入)"></a>内中断(也称异常、例外、陷入)</h4><ul>
+<li>自愿中断—指令中断</li>
+<li>强迫中断<ul>
+<li>硬件故障</li>
+<li>软中断</li>
+</ul>
+</li>
+</ul>
+<h4 id="外中断-中断"><a href="#外中断-中断" class="headerlink" title="外中断(中断)"></a>外中断(中断)</h4><ul>
+<li>外设请求</li>
+<li>人工干预</li>
+</ul>
+<h4 id="补充：内中断的另一种分类方式"><a href="#补充：内中断的另一种分类方式" class="headerlink" title="补充：内中断的另一种分类方式"></a>补充：内中断的另一种分类方式</h4><ul>
+<li>陷阱、陷入(trap)</li>
+<li>故障(fault)</li>
+<li>终止(abort)</li>
+</ul>
+<h4 id="外中断的处理过程"><a href="#外中断的处理过程" class="headerlink" title="外中断的处理过程"></a>外中断的处理过程</h4><ul>
+<li>每条指令执行结束后，CPU检查是否有外部中断信号</li>
+<li>若有外部中断信号，则需要保护被中断进程的CPU环境</li>
+<li>根据中断信号类型转入相应的中断处理程序</li>
+<li>恢复原进程的CPU环境并退出中断，返回原进程继续往下执行</li>
+</ul>
+<hr>
+<h2 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h2><h3 id="什么是系统调用，有何作用"><a href="#什么是系统调用，有何作用" class="headerlink" title="什么是系统调用，有何作用"></a>什么是系统调用，有何作用</h3><ul>
+<li>操作系统提供给应用程序使用的接口</li>
+<li>应用程序通过系统调用来请求获得操作系统的服务</li>
+<li>系统调用会使处理器从用户态进入核心态</li>
+<li>分类<ul>
+<li>设备管理</li>
+<li>文件管理</li>
+<li>进程控制</li>
+<li>进程通信</li>
+<li>内存管理</li>
+</ul>
+</li>
+</ul>
+<p>凡是与资源有关的操作、会直接影响到其他进程的操作，一定需要操作系统介入，即需要通过系统调用来实现</p>
+<h3 id="系统调用和库函数的区别"><a href="#系统调用和库函数的区别" class="headerlink" title="系统调用和库函数的区别"></a>系统调用和库函数的区别</h3><ul>
+<li>系统调用是操作系统向上层提供的接口</li>
+<li>有的库函数是对系统调用的进一步封装</li>
+<li>当今编写的应用程序大多是通过高级语言提供的库函数间接地进行系统调用</li>
+</ul>
+<h3 id="系统调用背后的过程"><a href="#系统调用背后的过程" class="headerlink" title="系统调用背后的过程"></a>系统调用背后的过程</h3><p>1.传递系统调用参数<br>2.执行陷入指令<br>3.执行系统调用相应服务程序<br>4.返回用户程序</p>
+<p>系统调用发送在用户态，对系统调用的处理发送在核心态<br>执行陷入指令会产生内中断，使处理器从用户态进入核心态</p>
 ]]></content>
   </entry>
   <entry>
-    <title>Java开发路线</title>
-    <url>/blog/2020/05/09/JAVAdeveloproad/</url>
-    <content><![CDATA[<h2 id="编程基础（掌握）"><a href="#编程基础（掌握）" class="headerlink" title="编程基础（掌握）"></a>编程基础（掌握）</h2><h3 id="JAVA语法"><a href="#JAVA语法" class="headerlink" title="JAVA语法"></a>JAVA语法</h3><h4 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h4><h4 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h4><ul>
-<li><p>类加载机制</p>
-</li>
-<li><p>字节码执行机制</p>
-</li>
-<li><p>JVM内存模型</p>
-</li>
-<li><p>GC垃圾回收</p>
-</li>
-<li><p>VM性能监控与故障定位</p>
-</li>
-<li><p>JVM调优</p>
-</li>
-</ul>
-<h4 id="并发-多线程"><a href="#并发-多线程" class="headerlink" title="并发/多线程"></a>并发/多线程</h4><ul>
-<li><p>并发编程的基础</p>
-</li>
-<li><p>线程池</p>
-</li>
-<li><p>锁</p>
-</li>
-<li><p>并发容器</p>
-</li>
-<li><p>原子类</p>
-</li>
-<li><p>JUC并发工具类</p>
-</li>
-</ul>
-<h3 id="数据结构和算法"><a href="#数据结构和算法" class="headerlink" title="数据结构和算法"></a>数据结构和算法</h3><h4 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h4><ul>
-<li>字符串</li>
-<li>数组</li>
-<li>链表</li>
-<li>堆、栈、队列</li>
-<li>二叉树</li>
-<li>哈希</li>
-<li>图</li>
-</ul>
-<h4 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h4><ul>
-<li>排序</li>
-<li>查找</li>
-<li>贪心</li>
-<li>分治</li>
-<li>动态规划</li>
-<li>回溯</li>
-</ul>
-<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><ul>
-<li>ARP协议</li>
-<li>IP/ ICMP协议</li>
-<li>TCP/ UDP协议</li>
-<li>DNS/HTTP/ HTTPS协议</li>
-<li>Session/ Cookie</li>
-</ul>
-<h3 id="MySQL数据库"><a href="#MySQL数据库" class="headerlink" title="MySQL数据库"></a>MySQL数据库</h3><ul>
-<li>SQL语句的书写</li>
-<li>SQL语句的优化</li>
-<li>事务以及隔离级别</li>
-<li>索引</li>
-<li>锁</li>
-</ul>
-<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><ul>
-<li>进程/ 线程</li>
-<li>并发/ 锁</li>
-<li>内存管理和调度</li>
-<li>I/ O原理</li>
-</ul>
-<h3 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h3><ul>
-<li>单例</li>
-<li>工厂</li>
-<li>代理</li>
-<li>策略</li>
-<li>模板方法</li>
-<li>观察者</li>
-<li>适配器</li>
-<li>责任链</li>
-<li>建造者</li>
-</ul>
+    <title>Linux学习</title>
+    <url>/blog/2020/05/09/Linux-study/</url>
+    <content><![CDATA[<p>@<a href="Linux系统">TOC</a></p>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p>打开命令行：Ctrl+Alt+T<br>自动补齐：输入前几个字符后+Tab键（只需输入文件或目录名的前几个字符，然后按TAB键，如无相重的，完整的文件名百立即自动在命令行出现；如有相重的，再按一下TAB键，系统会列出当前度目录下所有以这几个字符开头的名字）<br>方向键↑： 取上一个命令<br>方向键↓： 取下一个命令<br>终止命令：Ctirl +C</p>
 <a id="more"></a>
 
-<h2 id="研发工具"><a href="#研发工具" class="headerlink" title="研发工具"></a>研发工具</h2><h3 id="集成开发环境"><a href="#集成开发环境" class="headerlink" title="集成开发环境"></a>集成开发环境</h3><ul>
-<li>Eclipse</li>
-<li>Intellij IDEA</li>
-<li>VS Code</li>
-</ul>
-<h3 id="Linux系统（了解）"><a href="#Linux系统（了解）" class="headerlink" title="Linux系统（了解）"></a>Linux系统（了解）</h3><ul>
-<li>常用命令</li>
-<li>Shell脚本</li>
-</ul>
-<h3 id="项目管理-构建工具（掌握）"><a href="#项目管理-构建工具（掌握）" class="headerlink" title="项目管理/构建工具（掌握）"></a>项目管理/构建工具（掌握）</h3><ul>
-<li>Maven</li>
-<li>Gradle</li>
-</ul>
-<h3 id="代码管理工具（了解）"><a href="#代码管理工具（了解）" class="headerlink" title="代码管理工具（了解）"></a>代码管理工具（了解）</h3><ul>
-<li>SVN</li>
-<li>Git</li>
-</ul>
-<h2 id="应用框架"><a href="#应用框架" class="headerlink" title="应用框架"></a>应用框架</h2><h3 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h3><h4 id="Spring家族框架（掌握-2-3month）"><a href="#Spring家族框架（掌握-2-3month）" class="headerlink" title="Spring家族框架（掌握,2-3month）"></a>Spring家族框架（掌握,2-3month）</h4><ul>
-<li><strong>Spring</strong><ul>
-<li>IoC</li>
-<li>AOP</li>
-</ul>
-</li>
-<li><strong>SpringMVC</strong></li>
-<li><strong>Spring Boot</strong><ul>
-<li>自动配置、开箱即用</li>
-<li>整合Web</li>
-<li>整合数据库（事务问题）</li>
-<li>整合权限<ul>
-<li>Shiro</li>
-<li>Spring Security</li>
-</ul>
-</li>
-<li>整合各种中间件<ul>
-<li>Redis、 MQ、 RPC框架、NIO框架</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="服务器软件"><a href="#服务器软件" class="headerlink" title="服务器软件"></a>服务器软件</h4><ul>
-<li>Web服务器<ul>
-<li>Nginx（重要）</li>
-</ul>
-</li>
-<li>应用服务器<ul>
-<li>Tomcat</li>
-<li>Jetty</li>
-<li>Undertow（性能较好）</li>
-</ul>
-</li>
-</ul>
-<h4 id="中间件（应对高并发、大容量）"><a href="#中间件（应对高并发、大容量）" class="headerlink" title="中间件（应对高并发、大容量）"></a>中间件（应对高并发、大容量）</h4><ul>
-<li><p>缓存</p>
-<ul>
-<li><strong>Redis</strong>（掌握，重要,2week）                                                                        <ul>
-<li>书籍：《Redis设计与实践》</li>
-<li>5大基础数据类型</li>
-<li>事务</li>
-<li>消息通知</li>
-<li>管道</li>
-<li>持久化</li>
-<li>集群</li>
-</ul>
-</li>
-<li>memcache</li>
-</ul>
-</li>
-<li><p>消息队列（学一个即可）</p>
-<ul>
-<li>RocketMQ</li>
-<li>RabbitMQ</li>
-<li>Kafka（大数据）</li>
-</ul>
-</li>
-<li><p>RPC框架</p>
-<ul>
-<li>Dubbo</li>
-<li>gRPC</li>
-<li>Thrift</li>
-<li>Spring Cloud</li>
-<li>Netty</li>
-</ul>
-</li>
-<li><p>数据库框架</p>
-<ul>
-<li><strong>ORM层框架</strong>（掌握）<ul>
-<li>Mybatis</li>
-<li>Hibernate</li>
-<li>JPA</li>
-</ul>
-</li>
-<li><strong>连接池</strong>（掌握）<ul>
-<li>Druid</li>
-<li>HikariCP</li>
-<li>C3P0</li>
-</ul>
-</li>
-<li>分库分表<ul>
-<li>MyCAT</li>
-<li>Sharding-JDBC</li>
-<li>Sharding-Sphere</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>搜索引擎（了解）</p>
-<ul>
-<li>ElasticSearch</li>
-<li>Solr</li>
-</ul>
-</li>
-<li><p>分布式/微服务（了解,2-3week）</p>
-<ul>
-<li><p>服务发现/注册</p>
-<ul>
-<li>Eureka</li>
-<li>Consul</li>
-<li>Zookeeper（重要）</li>
-<li>Nacos</li>
-</ul>
-</li>
-<li><p>网关</p>
-<ul>
-<li>Zuul</li>
-<li>Gateway</li>
-</ul>
-</li>
-<li><p>服务调用（负载均衡）</p>
-<ul>
-<li>Ribbon</li>
-<li>Feign</li>
-</ul>
-</li>
-<li><p>熔断/降级</p>
-<ul>
-<li>Hystrix</li>
-</ul>
-</li>
-<li><p>配置中心</p>
-<ul>
-<li>Config</li>
-<li>Apollo</li>
-<li>Nacos</li>
-</ul>
-</li>
-<li><p>认证和鉴权（稍微重要些）</p>
-<ul>
-<li><p>Shiro</p>
-</li>
-<li><p>Spring Security</p>
-</li>
-<li><p>OAuth2</p>
-</li>
-<li><p>SSO单点登录</p>
-</li>
-</ul>
-</li>
-<li><p>分布式事务</p>
-<ul>
-<li>JTA接口——Atomikos组件</li>
-<li>2PC、3PC</li>
-<li>XA模式</li>
-<li>TCC模式——tcc-transaction、ByteTCC、EasyTransaction、SeaTa</li>
-<li>SAGA模式——ServiceComb、Seata</li>
-<li>LCN模式——tx-Icn</li>
-</ul>
-</li>
-<li><p>任务调度</p>
-<ul>
-<li>Quartz</li>
-<li>Elastic-Job</li>
-</ul>
-</li>
-<li><p>链路追踪和监控</p>
-<ul>
-<li>Zipkin</li>
-<li>Sleuth</li>
-<li>Skywalking</li>
-</ul>
-</li>
-<li><p>日志分析与监控——ELK</p>
-<ul>
-<li>ElasticSearch</li>
-<li>Logstash</li>
-<li>Kibana</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>虚拟化/容器化</p>
-<ul>
-<li>容器化——Docker</li>
-<li>容器编排技术——Kubernetes、Swarm</li>
-</ul>
-</li>
-</ul>
-<h3 id="前端（了解）"><a href="#前端（了解）" class="headerlink" title="前端（了解）"></a>前端（了解）</h3><ul>
-<li><p>基础套餐（大致了解，2-3天）</p>
-<ul>
-<li>三大件<ul>
-<li>HTML</li>
-<li>JavaScript</li>
-<li>CSS</li>
-</ul>
-</li>
-<li>基础库<ul>
-<li>jQuery</li>
-<li>Ajax</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>模板框架</p>
-<ul>
-<li>JSP/JSTL（已过时）</li>
-<li>Thymeleaf</li>
-<li>FreeMarker</li>
-</ul>
-</li>
-<li><p>组件化框架</p>
-<ul>
-<li><p>Node</p>
-</li>
-<li><p>Vue</p>
-</li>
-<li><p>React</p>
-</li>
-<li><p>Angular</p>
-</li>
-</ul>
+<h2 id="Linux中文件颜色所代表的属性和颜色"><a href="#Linux中文件颜色所代表的属性和颜色" class="headerlink" title="Linux中文件颜色所代表的属性和颜色"></a>Linux中文件颜色所代表的属性和颜色</h2><p>蓝色：目录<br>白色文件：一般性文件，如文本文件，配置文件，源码文件等 </p>
+<h2 id="Linux命令："><a href="#Linux命令：" class="headerlink" title="Linux命令："></a>Linux命令：</h2><h3 id="pwd命令"><a href="#pwd命令" class="headerlink" title="pwd命令"></a>pwd命令</h3><p>用于显示工作目录，执行pwd指令可立刻得知您目前所在的工作目录的绝对路径名称。</p>
+<h3 id="ls命令"><a href="#ls命令" class="headerlink" title="ls命令"></a>ls命令</h3><p>用于显示指定工作目录下之内容（列出目前工作目录所含之文件及子目录)。<br>ls ：多列显示输出结果；<br>ls -C：多列显示输出结果。这是默认选项；<br>ls -l：与“-C”选项功能相反，所有输出信息用单列格式输出，不输出为多列；   可以用ll进行简单表示，但会多一条本级目录和上级目录<br>ls -a：显示所有档案及目录（ls内定将档案名或目录名称为“.”的视为影藏，不会列出）；</p>
+<h4 id="ls-通配符使用"><a href="#ls-通配符使用" class="headerlink" title="ls 通配符使用"></a>ls 通配符使用</h4><p>*            代表任意个数个字符<br>？          代表1个字符<br>[ ]            表示可以匹配字符组中的任意一个<br>[abc]    匹配a、b、c中的任意一个<br>[a-f]        匹配从a到f范围内的任意一个字符</p>
+<h3 id="cd命令"><a href="#cd命令" class="headerlink" title="cd命令"></a>cd命令</h3><p>用于切换当前工作目录至 dirName(目录参数)。                打开文件夹<br>cd ..  返回上一级目录<br>cd .   当前目录<br>cd ~  进入用户主目录<br>cd     进入用户主目录<br>cd -   返回进入此目录之前所在的目录(切换最近的两个目录来回切换)                           </p>
+<h3 id="clear命令"><a href="#clear命令" class="headerlink" title="clear命令"></a>clear命令</h3><p>用于清除当前屏幕终端上的任何信息</p>
+<h3 id="touch命令"><a href="#touch命令" class="headerlink" title="touch命令"></a>touch命令</h3><p>一是用来创建新的空文件；二是用于把已存在文件的时间标签更新为系统当前的时间（默认方式），它们的数据将原封不动地保留下来</p>
+<h3 id="mkdir命令"><a href="#mkdir命令" class="headerlink" title="mkdir命令"></a>mkdir命令</h3><p>用来创建目录</p>
+<h3 id="rm命令"><a href="#rm命令" class="headerlink" title="rm命令"></a>rm命令</h3><p>可以删除一个目录中的一个或多个文件或目录，也可以将某个目录及其下属的所有文件及其子目录均删除掉。对于链接文件，只是删除整个链接文件，而原有文件保持不变。<br>rm -r或-R：递归处理，将指定目录下的所有文件与子目录一并处理；</p>
+<h3 id="mv命令"><a href="#mv命令" class="headerlink" title="mv命令"></a>mv命令</h3><p>用来为文件或目录改名、或将文件或目录移入其它位置</p>
+<h3 id="cp命令"><a href="#cp命令" class="headerlink" title="cp命令"></a>cp命令</h3><p>主要用于复制文件或目录</p>
+<h3 id="帮助文档"><a href="#帮助文档" class="headerlink" title="帮助文档"></a>帮助文档</h3><p>命令 –help       或 man 命令(q退出，b上一页，空格下一页)</p>
+<h3 id="which命令"><a href="#which命令" class="headerlink" title="which命令"></a>which命令</h3><p>用于查找并显示给定命令的绝对路径，环境变量PATH中保存了查找命令时需要遍历的目录。<br>which cd 为空，因为cd是shell内置的命令</p>
+<h3 id="Linux-系统目录结构"><a href="#Linux-系统目录结构" class="headerlink" title="Linux 系统目录结构"></a>Linux 系统目录结构</h3><p>/bin：bin是Binary的缩写, 这个目录存放着最经常使用的命令。<br>/sbin：s就是Super User的意思，这里存放的是系统管理员使用的系统管理程序。<br>/usr/bin：系统用户使用的应用程序。<br>/usr/sbin：超级用户使用的比较高级的管理程序和系统守护程序。</p>
+<h3 id="find命令"><a href="#find命令" class="headerlink" title="find命令"></a>find命令</h3><p>用来在指定目录下查找文件。<br>find 搜索范围 搜索条件<br>示例一：find /home -name 123<br>//精确搜索<br>示例二：find /home -name 123*                 //模糊搜索 其他用法：*123* 123？？<br>示例三：find /home -iname abc               //选项-i 不区分大小写<br>示例四：find /home -size +204800            //根据文件大小搜索，1数据块=512字节Byte=0.5KB(加号表示大于该数据块)<br>                                          -204800        //204800=00MB 100<em>1024KB 100</em>1024<em>2</em>数据块(减号表示小于该数据块)<br>示例五：find /home -user carey             //在home路径下搜索用户名为carey的文件<br>示例六：find /home -mmin -5                //文件内容上次被修改时间在5分钟以内<br>                                                                mmin上次文件内容被修改时间<br>                                                                amin 上次文件被访问时间<br>                                                                cmin 上次文件属性（文件的权限）被修改时间<br>                                                                -5 5分钟以内 +5超过5分钟<br>示例七：find /home -type f                    //-type文件类型  ( f:文件 d:目录（文件夹）l:软链接文件（Link）)<br>                                                                ———-条件链接<br>                                                                -a and同时满足             -o or或者，满足其中一个即可<br>示例八：find /home -name 123 -a -size +5<br>示例九：ls -i                                            //列出带id的文件<br>              find /home -inum 3434              //在home路径下搜索id为3434的文件</p>
+<h3 id="locate-slocate命令"><a href="#locate-slocate命令" class="headerlink" title="locate/slocate命令"></a>locate/slocate命令</h3><p>用来查找文件或目录。其实是find -name的另一种写法，但是要比后者快得多，原因在于它不搜索具体目录，而是搜索一个数据库/var/lib/locatedb，这个数据库中含有本地所有文件信息。<br>优点：查找快<br>缺点：最新文件找不到（需要时间更新索引库）</p>
+<h3 id="updatedb命令"><a href="#updatedb命令" class="headerlink" title="updatedb命令"></a>updatedb命令</h3><p>用来创建或更新slocate命令所必需的数据库文件。<br>sudo updatedb                         //updatedb命令前面加sudo表示通过管理员方式运行</p>
+<h3 id="cat命令"><a href="#cat命令" class="headerlink" title="cat命令"></a>cat命令</h3><p>用来查看文件内容<br>cat xx.txt             显示所有文件内容<br>cat -b xx.txt           显示行号，对于空白行不编号<br>cat -n xx.txt          显示行号，包含空白行编号</p>
+<h3 id="more命令"><a href="#more命令" class="headerlink" title="more命令"></a>more命令</h3><p>类似cat，不过分页显示文件内容<br>more xx.txt                                    （下一页（空格） 上一页（b） 下一行（Enter））</p>
+<h3 id="grep命令"><a href="#grep命令" class="headerlink" title="grep命令"></a>grep命令</h3><p>搜索文件内容<br>grep xx xxx.txt<br>grep -n xx xx.txt         显示包含内容行的行号<br>grep -v xx xx.txt         去掉包含内容的行，显示其他所有内容<br>grep -v # xx.txt         去掉带#的行（去掉带注释的行） ‘#’<br>grep -v ^# xx.txt         去掉只有注释的行               ^x       以x开头的行<br>grep #$ xx.txt                                                          x$   以x结尾的行<br>grep -i xx xx.txt         忽略大小写搜索</p>
+<h3 id="echo命令"><a href="#echo命令" class="headerlink" title="echo命令"></a>echo命令</h3><p>用于字符串的输出<br>echo xxx<br>echo xxx &gt; xx.txt                 写入（覆盖）<br>echo xxx &gt;&gt; xx.txt                 追加（末尾）</p>
+<p>ls &gt; xx.txt                            把ls显示的内容写入(覆盖)到xx.txt中<br>ls &gt;&gt; xx.txt                           把ls显示的内容追加到xx.txt中</p>
+<h3 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h3><p>把一个命令的输出 通过管道连接 作为另一个命令的输入<br>输出就是命令的结果，输入一般是一个命令的参数，管道连接通过 | 建立。      </p>
+<h3 id="文件软链接"><a href="#文件软链接" class="headerlink" title="文件软链接"></a>文件软链接</h3><p>ln -s 源文件 目标文件</p>
+<h3 id="用户添加"><a href="#用户添加" class="headerlink" title="用户添加"></a>用户添加</h3><p>第一步：添加用户名<br>useradd xx                (sudo useradd xx)        （-m：创建家目录 和 -g：指定所在的组 选项）<br>第二步：设置密码(不设置用户名的用户是不能使用的)（注意是passwd不是password）<br>passwd xx                （sudo passwd xx）<br>passwd 给自己设置密码</p>
+<h3 id="sudo命令"><a href="#sudo命令" class="headerlink" title="sudo命令"></a>sudo命令</h3><p>以系统管理者的身份执行指令，也就是说，经由 sudo 所执行的指令就好像是 root 亲自执行。<br>使用权限：在 /etc/sudoers 中有出现的使用者。用户使用sudo时，必须先输入密码，之后有5分钟的有效期限，超过期限则必须重新输入密码。</p>
+<h3 id="用户组"><a href="#用户组" class="headerlink" title="用户组"></a>用户组</h3><p>每个用户都有一个初始组，可以有零个或者多个附加组。用户组的作用，是为了方便权限控制。（附加组<br>就是为了给用户附加别的权限）<br>当创建用户的时候，系统会创建一个跟用户名同名的组。<br>文件属性：所属用户、所属用户组</p>
+<h3 id="用户切换"><a href="#用户切换" class="headerlink" title="用户切换"></a>用户切换</h3><p>su xx                           用户切换<br>su - xx                     用户切换，并回到家目录<br>切换到root用户:  1、 su       2、  su -<br>使用 su 命令时，有 - 和没有 - 是完全不同的，- 选项表示在切换用户身份的同时，连当前使用的环境变量也切换成指定用户的。我们知道，环境变量是用来定义操作系统环境的，因此如果系统环境没有随用户身份切换，很多命令无法正确执行。<br>exit 退出当前用户，返回上一个用户（从哪个用户切换过来的）如果没有上一个用户，直接退出终端</p>
+<h3 id="用户删除"><a href="#用户删除" class="headerlink" title="用户删除"></a>用户删除</h3><p>userdel xx<br>userdel -r xx         删除家目录<br>userdel -f xx        强制删除，即使用户正在登陆系统</p>
+<h3 id="用户组管理"><a href="#用户组管理" class="headerlink" title="用户组管理"></a>用户组管理</h3><p>groupadd xx                             添加<br>            cat /etc/group 确认组是否被添加成功<br>goupmod -n newxx oldxx            改名<br>groupdel xx                                删除</p>
+<h3 id="Linux中的ID"><a href="#Linux中的ID" class="headerlink" title="Linux中的ID"></a>Linux中的ID</h3><p>文件id uid gid<br>ls -i            查看文件id<br>id                查看当前用户的uid和gid<br>id xx            查看xx用户的uid和gid</p>
+<h3 id="关于配置文件"><a href="#关于配置文件" class="headerlink" title="关于配置文件"></a>关于配置文件</h3><p>/etc/passwd         配置当前系统有哪些用户，以及用户的密码（密码在影子文件里面，passwd的影子文件）<br>1，用户名<br>2，密码标志<br>3，UID<br>4，GID<br>5，用户全名<br>6，家目录<br>7，使用的shell</p>
+<h4 id="什么是shell-（我们的命令-cd-ls-…）"><a href="#什么是shell-（我们的命令-cd-ls-…）" class="headerlink" title="什么是shell?（我们的命令 cd ls …）"></a>什么是shell?（我们的命令 cd ls …）</h4><p>shell是用来解析命令的，它接收用户命令，然后调用相应的程序执行。shell相当于一个翻译，翻译我们的命令，让机器听懂。<br>第一种shell：/bin/bash                    翻译一号<br>第二种shell：/usr/sbin/nologin        翻译二号<br>第三种shell：/bin/sh                        翻译三号（我们创建用户的时候的shell）<br>cat /etc/shells                    查看所有的shell<br>chsh                                更换shell<br>/etc/group                配置当前系统有哪些用户组<br>                                                                                1，组名<br>                                                                                2，组密码标志<br>                                                                                3，GID<br>                                                                                4，组中附加用户<br>which cd？<br>1，为什么没有命令文件<br>因为cd这个命令是放在shell（bash里面的）<br>2，什么是内置命令（cd dirs ls）<br>内置命令在系统启动时就调入内存，是常驻内存的，所以执行效率高。<br>而外部命令是系统的软件功能，用户需要时才从硬盘中读入内存。<br>大部分内置命令都是内置在shell中的，也有一些内置命令有自己单独的文件。<br>系统启动，会把shell中的内置命令，其他其他不在shell中的内置命令加载到内存中。</p>
+<h3 id="查看用户信息"><a href="#查看用户信息" class="headerlink" title="查看用户信息"></a>查看用户信息</h3><p>id<br>whoami         当前登录用户<br>who                当前所有登录用户罗列出来</p>
+<h3 id="修改用户信息（usermod）（某些需要重新登录生效）"><a href="#修改用户信息（usermod）（某些需要重新登录生效）" class="headerlink" title="修改用户信息（usermod）（某些需要重新登录生效）"></a>修改用户信息（usermod）（某些需要重新登录生效）</h3><p>usermod -g xxgroup xxuser                        修改初始组（基本不去修改）<br>usermod -G xxgroup,xxgroup xxuser             修改附加组<br>usermod -s /bin/bash xxuser                        修改shell</p>
+<h3 id="用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）"><a href="#用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）" class="headerlink" title="用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）"></a>用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）</h3><p>u g o</p>
 <hr>
-</li>
-</ul>
-<h2 id="运维知识（配置）"><a href="#运维知识（配置）" class="headerlink" title="运维知识（配置）"></a>运维知识（配置）</h2><ul>
-<li>Web服务器<ul>
-<li>Nginx</li>
-</ul>
-</li>
-<li>应用服务器<ul>
-<li>Tomcat</li>
-<li>Jetty</li>
-<li>Undertow</li>
-</ul>
-</li>
-<li>CDN加速</li>
-<li>持续集成/持续部署<ul>
-<li>Jenkins</li>
-</ul>
-</li>
-<li>代码质量检查<ul>
-<li>sonar</li>
-</ul>
-</li>
-<li>日志收集和分析<ul>
-<li>ELK</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="成神之路"><a href="#成神之路" class="headerlink" title="成神之路"></a>成神之路</h2><ul>
-<li>徒手撕源码</li>
-<li>光脚造轮子</li>
-<li>闭着眼睛深度调优</li>
-<li>吊打面试官</li>
-</ul>
-<h2 id="平稳降落"><a href="#平稳降落" class="headerlink" title="平稳降落"></a>平稳降落</h2><h2 id="路线图"><a href="#路线图" class="headerlink" title="路线图"></a>路线图</h2><p><img src="/blog/blog/.com/2020/05/09/JAVAdeveloproad/C:%5CUsers%5CCarey%5CDesktop%5CJava%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF-%E9%AB%98%E6%B8%85%E7%89%88.jpg" alt="路线图"></p>
+<p>a表示文件类型 -二进制文件（包括不限于文本文件） d目录（文件夹） l（软连接文件）<br>后面表示这个文件的权限<br>u（user）所有者            g（group）所属组         o（other）其他用户<br>r读写 w写 x执行</p>
+<h3 id="可执行文件"><a href="#可执行文件" class="headerlink" title="可执行文件"></a>可执行文件</h3><p>windows下的是exe（批处理命令或者说批处理脚本），一般用来启动某个应用程序的<br>linux下的shell脚本（或者类型的脚本），一般用来启动某个应用程序或者服务程序</p>
+<h3 id="权限修改"><a href="#权限修改" class="headerlink" title="权限修改"></a>权限修改</h3><p>只有文件所有者和超管可以修改文件的权限<br>chmod change the permissions mode of file<br>格式一<br>            chmod [ugoa][+-=][rwx] 文件或者目录<br>            chmod u+w,g+x xx.txt<br>格式二<br>            用数字表示权限 r=4 w=2 x=1<br>            r–rw-rwx            467<br>            651                rw-r-x–x<br>            chmod 651 xxfile<br>            chmod -R 777 xxfile 修改文件包括文件的所有子文件<br>chmod                                 修改文件权限<br>chown(change owner)            修改拥有者（所属者）<br>chgrp(change group)            修改拥有组（所属组）<br>            文件是所属者和所属组发生改变，用户对文件的权限也发生改变<br>chown newuser 文件/文件夹                        修改文件或者文件夹的拥有者<br>chgrp newgroupname 文件/文件夹                修改文件或者文件夹的所属组<br>-R 递归修改所有子文件</p>
 ]]></content>
   </entry>
   <entry>
@@ -1832,250 +2012,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux学习</title>
-    <url>/blog/2020/05/09/Linux-study/</url>
-    <content><![CDATA[<p>@<a href="Linux系统">TOC</a></p>
-<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p>打开命令行：Ctrl+Alt+T<br>自动补齐：输入前几个字符后+Tab键（只需输入文件或目录名的前几个字符，然后按TAB键，如无相重的，完整的文件名百立即自动在命令行出现；如有相重的，再按一下TAB键，系统会列出当前度目录下所有以这几个字符开头的名字）<br>方向键↑： 取上一个命令<br>方向键↓： 取下一个命令<br>终止命令：Ctirl +C</p>
-<a id="more"></a>
-
-<h2 id="Linux中文件颜色所代表的属性和颜色"><a href="#Linux中文件颜色所代表的属性和颜色" class="headerlink" title="Linux中文件颜色所代表的属性和颜色"></a>Linux中文件颜色所代表的属性和颜色</h2><p>蓝色：目录<br>白色文件：一般性文件，如文本文件，配置文件，源码文件等 </p>
-<h2 id="Linux命令："><a href="#Linux命令：" class="headerlink" title="Linux命令："></a>Linux命令：</h2><h3 id="pwd命令"><a href="#pwd命令" class="headerlink" title="pwd命令"></a>pwd命令</h3><p>用于显示工作目录，执行pwd指令可立刻得知您目前所在的工作目录的绝对路径名称。</p>
-<h3 id="ls命令"><a href="#ls命令" class="headerlink" title="ls命令"></a>ls命令</h3><p>用于显示指定工作目录下之内容（列出目前工作目录所含之文件及子目录)。<br>ls ：多列显示输出结果；<br>ls -C：多列显示输出结果。这是默认选项；<br>ls -l：与“-C”选项功能相反，所有输出信息用单列格式输出，不输出为多列；   可以用ll进行简单表示，但会多一条本级目录和上级目录<br>ls -a：显示所有档案及目录（ls内定将档案名或目录名称为“.”的视为影藏，不会列出）；</p>
-<h4 id="ls-通配符使用"><a href="#ls-通配符使用" class="headerlink" title="ls 通配符使用"></a>ls 通配符使用</h4><p>*            代表任意个数个字符<br>？          代表1个字符<br>[ ]            表示可以匹配字符组中的任意一个<br>[abc]    匹配a、b、c中的任意一个<br>[a-f]        匹配从a到f范围内的任意一个字符</p>
-<h3 id="cd命令"><a href="#cd命令" class="headerlink" title="cd命令"></a>cd命令</h3><p>用于切换当前工作目录至 dirName(目录参数)。                打开文件夹<br>cd ..  返回上一级目录<br>cd .   当前目录<br>cd ~  进入用户主目录<br>cd     进入用户主目录<br>cd -   返回进入此目录之前所在的目录(切换最近的两个目录来回切换)                           </p>
-<h3 id="clear命令"><a href="#clear命令" class="headerlink" title="clear命令"></a>clear命令</h3><p>用于清除当前屏幕终端上的任何信息</p>
-<h3 id="touch命令"><a href="#touch命令" class="headerlink" title="touch命令"></a>touch命令</h3><p>一是用来创建新的空文件；二是用于把已存在文件的时间标签更新为系统当前的时间（默认方式），它们的数据将原封不动地保留下来</p>
-<h3 id="mkdir命令"><a href="#mkdir命令" class="headerlink" title="mkdir命令"></a>mkdir命令</h3><p>用来创建目录</p>
-<h3 id="rm命令"><a href="#rm命令" class="headerlink" title="rm命令"></a>rm命令</h3><p>可以删除一个目录中的一个或多个文件或目录，也可以将某个目录及其下属的所有文件及其子目录均删除掉。对于链接文件，只是删除整个链接文件，而原有文件保持不变。<br>rm -r或-R：递归处理，将指定目录下的所有文件与子目录一并处理；</p>
-<h3 id="mv命令"><a href="#mv命令" class="headerlink" title="mv命令"></a>mv命令</h3><p>用来为文件或目录改名、或将文件或目录移入其它位置</p>
-<h3 id="cp命令"><a href="#cp命令" class="headerlink" title="cp命令"></a>cp命令</h3><p>主要用于复制文件或目录</p>
-<h3 id="帮助文档"><a href="#帮助文档" class="headerlink" title="帮助文档"></a>帮助文档</h3><p>命令 –help       或 man 命令(q退出，b上一页，空格下一页)</p>
-<h3 id="which命令"><a href="#which命令" class="headerlink" title="which命令"></a>which命令</h3><p>用于查找并显示给定命令的绝对路径，环境变量PATH中保存了查找命令时需要遍历的目录。<br>which cd 为空，因为cd是shell内置的命令</p>
-<h3 id="Linux-系统目录结构"><a href="#Linux-系统目录结构" class="headerlink" title="Linux 系统目录结构"></a>Linux 系统目录结构</h3><p>/bin：bin是Binary的缩写, 这个目录存放着最经常使用的命令。<br>/sbin：s就是Super User的意思，这里存放的是系统管理员使用的系统管理程序。<br>/usr/bin：系统用户使用的应用程序。<br>/usr/sbin：超级用户使用的比较高级的管理程序和系统守护程序。</p>
-<h3 id="find命令"><a href="#find命令" class="headerlink" title="find命令"></a>find命令</h3><p>用来在指定目录下查找文件。<br>find 搜索范围 搜索条件<br>示例一：find /home -name 123<br>//精确搜索<br>示例二：find /home -name 123*                 //模糊搜索 其他用法：*123* 123？？<br>示例三：find /home -iname abc               //选项-i 不区分大小写<br>示例四：find /home -size +204800            //根据文件大小搜索，1数据块=512字节Byte=0.5KB(加号表示大于该数据块)<br>                                          -204800        //204800=00MB 100<em>1024KB 100</em>1024<em>2</em>数据块(减号表示小于该数据块)<br>示例五：find /home -user carey             //在home路径下搜索用户名为carey的文件<br>示例六：find /home -mmin -5                //文件内容上次被修改时间在5分钟以内<br>                                                                mmin上次文件内容被修改时间<br>                                                                amin 上次文件被访问时间<br>                                                                cmin 上次文件属性（文件的权限）被修改时间<br>                                                                -5 5分钟以内 +5超过5分钟<br>示例七：find /home -type f                    //-type文件类型  ( f:文件 d:目录（文件夹）l:软链接文件（Link）)<br>                                                                ———-条件链接<br>                                                                -a and同时满足             -o or或者，满足其中一个即可<br>示例八：find /home -name 123 -a -size +5<br>示例九：ls -i                                            //列出带id的文件<br>              find /home -inum 3434              //在home路径下搜索id为3434的文件</p>
-<h3 id="locate-slocate命令"><a href="#locate-slocate命令" class="headerlink" title="locate/slocate命令"></a>locate/slocate命令</h3><p>用来查找文件或目录。其实是find -name的另一种写法，但是要比后者快得多，原因在于它不搜索具体目录，而是搜索一个数据库/var/lib/locatedb，这个数据库中含有本地所有文件信息。<br>优点：查找快<br>缺点：最新文件找不到（需要时间更新索引库）</p>
-<h3 id="updatedb命令"><a href="#updatedb命令" class="headerlink" title="updatedb命令"></a>updatedb命令</h3><p>用来创建或更新slocate命令所必需的数据库文件。<br>sudo updatedb                         //updatedb命令前面加sudo表示通过管理员方式运行</p>
-<h3 id="cat命令"><a href="#cat命令" class="headerlink" title="cat命令"></a>cat命令</h3><p>用来查看文件内容<br>cat xx.txt             显示所有文件内容<br>cat -b xx.txt           显示行号，对于空白行不编号<br>cat -n xx.txt          显示行号，包含空白行编号</p>
-<h3 id="more命令"><a href="#more命令" class="headerlink" title="more命令"></a>more命令</h3><p>类似cat，不过分页显示文件内容<br>more xx.txt                                    （下一页（空格） 上一页（b） 下一行（Enter））</p>
-<h3 id="grep命令"><a href="#grep命令" class="headerlink" title="grep命令"></a>grep命令</h3><p>搜索文件内容<br>grep xx xxx.txt<br>grep -n xx xx.txt         显示包含内容行的行号<br>grep -v xx xx.txt         去掉包含内容的行，显示其他所有内容<br>grep -v # xx.txt         去掉带#的行（去掉带注释的行） ‘#’<br>grep -v ^# xx.txt         去掉只有注释的行               ^x       以x开头的行<br>grep #$ xx.txt                                                          x$   以x结尾的行<br>grep -i xx xx.txt         忽略大小写搜索</p>
-<h3 id="echo命令"><a href="#echo命令" class="headerlink" title="echo命令"></a>echo命令</h3><p>用于字符串的输出<br>echo xxx<br>echo xxx &gt; xx.txt                 写入（覆盖）<br>echo xxx &gt;&gt; xx.txt                 追加（末尾）</p>
-<p>ls &gt; xx.txt                            把ls显示的内容写入(覆盖)到xx.txt中<br>ls &gt;&gt; xx.txt                           把ls显示的内容追加到xx.txt中</p>
-<h3 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h3><p>把一个命令的输出 通过管道连接 作为另一个命令的输入<br>输出就是命令的结果，输入一般是一个命令的参数，管道连接通过 | 建立。      </p>
-<h3 id="文件软链接"><a href="#文件软链接" class="headerlink" title="文件软链接"></a>文件软链接</h3><p>ln -s 源文件 目标文件</p>
-<h3 id="用户添加"><a href="#用户添加" class="headerlink" title="用户添加"></a>用户添加</h3><p>第一步：添加用户名<br>useradd xx                (sudo useradd xx)        （-m：创建家目录 和 -g：指定所在的组 选项）<br>第二步：设置密码(不设置用户名的用户是不能使用的)（注意是passwd不是password）<br>passwd xx                （sudo passwd xx）<br>passwd 给自己设置密码</p>
-<h3 id="sudo命令"><a href="#sudo命令" class="headerlink" title="sudo命令"></a>sudo命令</h3><p>以系统管理者的身份执行指令，也就是说，经由 sudo 所执行的指令就好像是 root 亲自执行。<br>使用权限：在 /etc/sudoers 中有出现的使用者。用户使用sudo时，必须先输入密码，之后有5分钟的有效期限，超过期限则必须重新输入密码。</p>
-<h3 id="用户组"><a href="#用户组" class="headerlink" title="用户组"></a>用户组</h3><p>每个用户都有一个初始组，可以有零个或者多个附加组。用户组的作用，是为了方便权限控制。（附加组<br>就是为了给用户附加别的权限）<br>当创建用户的时候，系统会创建一个跟用户名同名的组。<br>文件属性：所属用户、所属用户组</p>
-<h3 id="用户切换"><a href="#用户切换" class="headerlink" title="用户切换"></a>用户切换</h3><p>su xx                           用户切换<br>su - xx                     用户切换，并回到家目录<br>切换到root用户:  1、 su       2、  su -<br>使用 su 命令时，有 - 和没有 - 是完全不同的，- 选项表示在切换用户身份的同时，连当前使用的环境变量也切换成指定用户的。我们知道，环境变量是用来定义操作系统环境的，因此如果系统环境没有随用户身份切换，很多命令无法正确执行。<br>exit 退出当前用户，返回上一个用户（从哪个用户切换过来的）如果没有上一个用户，直接退出终端</p>
-<h3 id="用户删除"><a href="#用户删除" class="headerlink" title="用户删除"></a>用户删除</h3><p>userdel xx<br>userdel -r xx         删除家目录<br>userdel -f xx        强制删除，即使用户正在登陆系统</p>
-<h3 id="用户组管理"><a href="#用户组管理" class="headerlink" title="用户组管理"></a>用户组管理</h3><p>groupadd xx                             添加<br>            cat /etc/group 确认组是否被添加成功<br>goupmod -n newxx oldxx            改名<br>groupdel xx                                删除</p>
-<h3 id="Linux中的ID"><a href="#Linux中的ID" class="headerlink" title="Linux中的ID"></a>Linux中的ID</h3><p>文件id uid gid<br>ls -i            查看文件id<br>id                查看当前用户的uid和gid<br>id xx            查看xx用户的uid和gid</p>
-<h3 id="关于配置文件"><a href="#关于配置文件" class="headerlink" title="关于配置文件"></a>关于配置文件</h3><p>/etc/passwd         配置当前系统有哪些用户，以及用户的密码（密码在影子文件里面，passwd的影子文件）<br>1，用户名<br>2，密码标志<br>3，UID<br>4，GID<br>5，用户全名<br>6，家目录<br>7，使用的shell</p>
-<h4 id="什么是shell-（我们的命令-cd-ls-…）"><a href="#什么是shell-（我们的命令-cd-ls-…）" class="headerlink" title="什么是shell?（我们的命令 cd ls …）"></a>什么是shell?（我们的命令 cd ls …）</h4><p>shell是用来解析命令的，它接收用户命令，然后调用相应的程序执行。shell相当于一个翻译，翻译我们的命令，让机器听懂。<br>第一种shell：/bin/bash                    翻译一号<br>第二种shell：/usr/sbin/nologin        翻译二号<br>第三种shell：/bin/sh                        翻译三号（我们创建用户的时候的shell）<br>cat /etc/shells                    查看所有的shell<br>chsh                                更换shell<br>/etc/group                配置当前系统有哪些用户组<br>                                                                                1，组名<br>                                                                                2，组密码标志<br>                                                                                3，GID<br>                                                                                4，组中附加用户<br>which cd？<br>1，为什么没有命令文件<br>因为cd这个命令是放在shell（bash里面的）<br>2，什么是内置命令（cd dirs ls）<br>内置命令在系统启动时就调入内存，是常驻内存的，所以执行效率高。<br>而外部命令是系统的软件功能，用户需要时才从硬盘中读入内存。<br>大部分内置命令都是内置在shell中的，也有一些内置命令有自己单独的文件。<br>系统启动，会把shell中的内置命令，其他其他不在shell中的内置命令加载到内存中。</p>
-<h3 id="查看用户信息"><a href="#查看用户信息" class="headerlink" title="查看用户信息"></a>查看用户信息</h3><p>id<br>whoami         当前登录用户<br>who                当前所有登录用户罗列出来</p>
-<h3 id="修改用户信息（usermod）（某些需要重新登录生效）"><a href="#修改用户信息（usermod）（某些需要重新登录生效）" class="headerlink" title="修改用户信息（usermod）（某些需要重新登录生效）"></a>修改用户信息（usermod）（某些需要重新登录生效）</h3><p>usermod -g xxgroup xxuser                        修改初始组（基本不去修改）<br>usermod -G xxgroup,xxgroup xxuser             修改附加组<br>usermod -s /bin/bash xxuser                        修改shell</p>
-<h3 id="用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）"><a href="#用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）" class="headerlink" title="用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）"></a>用户权限（文件对用户来说的权限，用户操作文件或者文件夹的权限）</h3><p>u g o</p>
-<hr>
-<p>a表示文件类型 -二进制文件（包括不限于文本文件） d目录（文件夹） l（软连接文件）<br>后面表示这个文件的权限<br>u（user）所有者            g（group）所属组         o（other）其他用户<br>r读写 w写 x执行</p>
-<h3 id="可执行文件"><a href="#可执行文件" class="headerlink" title="可执行文件"></a>可执行文件</h3><p>windows下的是exe（批处理命令或者说批处理脚本），一般用来启动某个应用程序的<br>linux下的shell脚本（或者类型的脚本），一般用来启动某个应用程序或者服务程序</p>
-<h3 id="权限修改"><a href="#权限修改" class="headerlink" title="权限修改"></a>权限修改</h3><p>只有文件所有者和超管可以修改文件的权限<br>chmod change the permissions mode of file<br>格式一<br>            chmod [ugoa][+-=][rwx] 文件或者目录<br>            chmod u+w,g+x xx.txt<br>格式二<br>            用数字表示权限 r=4 w=2 x=1<br>            r–rw-rwx            467<br>            651                rw-r-x–x<br>            chmod 651 xxfile<br>            chmod -R 777 xxfile 修改文件包括文件的所有子文件<br>chmod                                 修改文件权限<br>chown(change owner)            修改拥有者（所属者）<br>chgrp(change group)            修改拥有组（所属组）<br>            文件是所属者和所属组发生改变，用户对文件的权限也发生改变<br>chown newuser 文件/文件夹                        修改文件或者文件夹的拥有者<br>chgrp newgroupname 文件/文件夹                修改文件或者文件夹的所属组<br>-R 递归修改所有子文件</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>操作系统概述</title>
-    <url>/blog/2020/05/10/OSfirst/</url>
-    <content><![CDATA[<h2 id="操作系统的概念（定义）"><a href="#操作系统的概念（定义）" class="headerlink" title="操作系统的概念（定义）"></a>操作系统的概念（定义）</h2><p>操作系统（Operating System， OS）是指控制和管理整个计算机系统的硬件和软件资源，并合理地组织调度计算机的工作和资源的分配；以提供给用户和其他软件方便的接口和环境；它是计算机系统中最基本的系统软件。</p>
-<hr>
-<h2 id="操作系统的特征"><a href="#操作系统的特征" class="headerlink" title="操作系统的特征"></a>操作系统的特征</h2><ul>
-<li>并发：指两个或多个事件在同一时间间隔内发生。这些事件宏观上是同时发生的，但微观上是交替发生的。<br>易混淆考点–并行：指两个或多个事件在同一时刻同时发生。</li>
-<li>共享即资源共享，是指系统中的资源可供内存中多个并发执行的进程共同使用。<ul>
-<li>互斥共享方式(如对摄像头设备的共享使用)</li>
-<li>同时共享方式(如对磁盘自由的共享使用)</li>
-</ul>
-</li>
-<li>虚拟是指把一个物理上的实体变为若干个逻辑上的对应物。物理实体（前者）是实际存在的，而逻辑上对应物（后者）是用户感受到的。<ul>
-<li>空分复用技术(如虚拟存储器)</li>
-<li>时分复用技术(如虚拟处理器)</li>
-</ul>
-</li>
-<li>异步是指在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底的，而是走走停停，以不可预知的速度向前推进，这就是进程的异步性。</li>
-</ul>
-<hr>
-<h2 id="OS的发展与分类"><a href="#OS的发展与分类" class="headerlink" title="OS的发展与分类"></a>OS的发展与分类</h2><h3 id="手工操作系统"><a href="#手工操作系统" class="headerlink" title="手工操作系统"></a>手工操作系统</h3><h3 id="批处理阶段"><a href="#批处理阶段" class="headerlink" title="批处理阶段"></a>批处理阶段</h3><ul>
-<li>单道批处理系统<br>引入脱机输入/输出技术（用外围机+磁带完成），并由监督程序负责控制作业的输入、输出<br>缺点：内存中仅能有一道程序运行, CPU有大量的时间是在空闲等待I/O完成</li>
-<li>多道批处理系统(操作系统开始出现)<br>优点：多道程序并发执行，共享计算机资源。资源利用率大幅提升<br>缺点：没有人机交互功能</li>
-</ul>
-<h3 id="分时操作系统"><a href="#分时操作系统" class="headerlink" title="分时操作系统"></a>分时操作系统</h3><p>计算机以时间片为单位轮流为各个用户/作业服务<br>优点：解决了人机交互问题<br>缺点：不能优先处理一些紧急任务</p>
-<h3 id="实时操作系统"><a href="#实时操作系统" class="headerlink" title="实时操作系统"></a>实时操作系统</h3><p>要在严格的时限内处理完事件，具有及时性和可靠性</p>
-<ul>
-<li><p>硬实时系统  必须在绝对严格的规定时间内完成处理    如导弹控制系统</p>
-</li>
-<li><p>软实时系统     能接受偶尔违反时间规定              如12306火车订票系统</p>
-</li>
-</ul>
-<h3 id="网络操作系统"><a href="#网络操作系统" class="headerlink" title="网络操作系统"></a>网络操作系统</h3><p>实现网络中各种资源的共享（如文件共享）和各台计算机之间的通信</p>
-<h3 id="分布式操作系统"><a href="#分布式操作系统" class="headerlink" title="分布式操作系统"></a>分布式操作系统</h3><p>分布性和并行性<br>任何工作都可以分布在这些计算机上，由它们并行、协同完成这个任务</p>
-<h3 id="个人计算机操作系统"><a href="#个人计算机操作系统" class="headerlink" title="个人计算机操作系统"></a>个人计算机操作系统</h3><hr>
-<a id="more"></a>
-
-<h2 id="OS的运行机制和体系结构"><a href="#OS的运行机制和体系结构" class="headerlink" title="OS的运行机制和体系结构"></a>OS的运行机制和体系结构</h2><h3 id="运行机制"><a href="#运行机制" class="headerlink" title="运行机制"></a>运行机制</h3><ul>
-<li>两种指令<ul>
-<li>特权指令                只能在核心态下执行</li>
-<li>非特权指令</li>
-</ul>
-</li>
-<li>两种处理器状态                   <ul>
-<li>核心态</li>
-<li>用户态</li>
-</ul>
-</li>
-<li>两种程序<ul>
-<li>内核程序         只能在核心态下执行</li>
-<li>应用程序</li>
-</ul>
-</li>
-</ul>
-<h3 id="操作系统内核"><a href="#操作系统内核" class="headerlink" title="操作系统内核"></a>操作系统内核</h3><ul>
-<li>时钟管理</li>
-<li>中断处理</li>
-<li>原语   —-  是一种特殊的程序，其执行具有原子性</li>
-<li>对系统资源进行管理的功能<ul>
-<li>进程管理</li>
-<li>存储器管理</li>
-<li>设备管理</li>
-</ul>
-</li>
-<li>操作系统的体系结构<ul>
-<li>大内核<ul>
-<li>优点：高性能</li>
-<li>缺点：内核代码庞大，结构混乱，难以维护</li>
-</ul>
-</li>
-<li>微内核<ul>
-<li>优点：内核功能少，结构清晰，方便维护</li>
-<li>缺点：需要频繁地在核心态和用户态之间切换，性能低</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="中断和异常"><a href="#中断和异常" class="headerlink" title="中断和异常"></a>中断和异常</h2><h3 id="中断机制的诞生"><a href="#中断机制的诞生" class="headerlink" title="中断机制的诞生"></a>中断机制的诞生</h3><p>为了实现多道程序并发执行而引入的技术</p>
-<h3 id="中断的概念和作用"><a href="#中断的概念和作用" class="headerlink" title="中断的概念和作用"></a>中断的概念和作用</h3><ul>
-<li>发生中断，就意味着需要操作系统介入开展管理工作，CPU会立即进入核心态</li>
-<li>“中断”是CPU从用户态进入核心态的唯一途径<br>“用户态-&gt;核心态”是通过中断实现的，并且中断是唯一途径<br>“核心态-&gt;用户态”：执行一条特权指令——修改PSW的标志位为“用户态”</li>
-</ul>
-<h3 id="中断的分类"><a href="#中断的分类" class="headerlink" title="中断的分类"></a>中断的分类</h3><h4 id="内中断-也称异常、例外、陷入"><a href="#内中断-也称异常、例外、陷入" class="headerlink" title="内中断(也称异常、例外、陷入)"></a>内中断(也称异常、例外、陷入)</h4><ul>
-<li>自愿中断—指令中断</li>
-<li>强迫中断<ul>
-<li>硬件故障</li>
-<li>软中断</li>
-</ul>
-</li>
-</ul>
-<h4 id="外中断-中断"><a href="#外中断-中断" class="headerlink" title="外中断(中断)"></a>外中断(中断)</h4><ul>
-<li>外设请求</li>
-<li>人工干预</li>
-</ul>
-<h4 id="补充：内中断的另一种分类方式"><a href="#补充：内中断的另一种分类方式" class="headerlink" title="补充：内中断的另一种分类方式"></a>补充：内中断的另一种分类方式</h4><ul>
-<li>陷阱、陷入(trap)</li>
-<li>故障(fault)</li>
-<li>终止(abort)</li>
-</ul>
-<h4 id="外中断的处理过程"><a href="#外中断的处理过程" class="headerlink" title="外中断的处理过程"></a>外中断的处理过程</h4><ul>
-<li>每条指令执行结束后，CPU检查是否有外部中断信号</li>
-<li>若有外部中断信号，则需要保护被中断进程的CPU环境</li>
-<li>根据中断信号类型转入相应的中断处理程序</li>
-<li>恢复原进程的CPU环境并退出中断，返回原进程继续往下执行</li>
-</ul>
-<hr>
-<h2 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h2><h3 id="什么是系统调用，有何作用"><a href="#什么是系统调用，有何作用" class="headerlink" title="什么是系统调用，有何作用"></a>什么是系统调用，有何作用</h3><ul>
-<li>操作系统提供给应用程序使用的接口</li>
-<li>应用程序通过系统调用来请求获得操作系统的服务</li>
-<li>系统调用会使处理器从用户态进入核心态</li>
-<li>分类<ul>
-<li>设备管理</li>
-<li>文件管理</li>
-<li>进程控制</li>
-<li>进程通信</li>
-<li>内存管理</li>
-</ul>
-</li>
-</ul>
-<p>凡是与资源有关的操作、会直接影响到其他进程的操作，一定需要操作系统介入，即需要通过系统调用来实现</p>
-<h3 id="系统调用和库函数的区别"><a href="#系统调用和库函数的区别" class="headerlink" title="系统调用和库函数的区别"></a>系统调用和库函数的区别</h3><ul>
-<li>系统调用是操作系统向上层提供的接口</li>
-<li>有的库函数是对系统调用的进一步封装</li>
-<li>当今编写的应用程序大多是通过高级语言提供的库函数间接地进行系统调用</li>
-</ul>
-<h3 id="系统调用背后的过程"><a href="#系统调用背后的过程" class="headerlink" title="系统调用背后的过程"></a>系统调用背后的过程</h3><p>1.传递系统调用参数<br>2.执行陷入指令<br>3.执行系统调用相应服务程序<br>4.返回用户程序</p>
-<p>系统调用发送在用户态，对系统调用的处理发送在核心态<br>执行陷入指令会产生内中断，使处理器从用户态进入核心态</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>操作系统5.1</title>
-    <url>/blog/2020/05/23/OSfifthone/</url>
-    <content><![CDATA[<h2 id="5-1-1、-I-O设备的基本概念与分类"><a href="#5-1-1、-I-O设备的基本概念与分类" class="headerlink" title="5.1.1、 I/O设备的基本概念与分类"></a>5.1.1、 I/O设备的基本概念与分类</h2><h3 id="什么是I-O设备"><a href="#什么是I-O设备" class="headerlink" title="什么是I/O设备"></a>什么是I/O设备</h3><ul>
-<li>将数据Input/Output(输入/输出)计算机的外部设备</li>
-</ul>
-<h3 id="按使用特性分类"><a href="#按使用特性分类" class="headerlink" title="按使用特性分类"></a>按使用特性分类</h3><ul>
-<li>人机交互类外部设备</li>
-<li>存储设备</li>
-<li>网络通信设备</li>
-</ul>
-<h3 id="按传输速率分类"><a href="#按传输速率分类" class="headerlink" title="按传输速率分类"></a>按传输速率分类</h3><ul>
-<li>低速设备</li>
-<li>中速设备</li>
-<li>高速设备</li>
-</ul>
-<h3 id="按信息交换的单位分类"><a href="#按信息交换的单位分类" class="headerlink" title="按信息交换的单位分类"></a>按信息交换的单位分类</h3><ul>
-<li>块设备（传输快，可寻址）</li>
-<li>字符设备（传输满，不可寻址，常采用==中断驱动方式==）</li>
-</ul>
-<h2 id="5-1-2、I-O控制器"><a href="#5-1-2、I-O控制器" class="headerlink" title="5.1.2、I/O控制器"></a>5.1.2、I/O控制器</h2><h3 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h3><ul>
-<li>接受和识别CPU发出的命令（要有控制寄存器）</li>
-<li>向CPU报告设备的状态（要有状态寄存器）</li>
-<li>数据交换（要有数据寄存器，暂存输入/输出的数据）</li>
-<li>地址识别（由I/O逻辑实现）</li>
-</ul>
-<h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3><ul>
-<li>CPU与控制器之间的接口（实现控制器与CPU之间的通信）</li>
-<li>I/O逻辑（负责识别CPU发出的命令，并向设备发出命令）</li>
-<li>控制器与设备之间的接口（实现控制器与设备之间的通信）</li>
-</ul>
-<h3 id="两种寄存器编址方式"><a href="#两种寄存器编址方式" class="headerlink" title="两种寄存器编址方式"></a>两种寄存器编址方式</h3><ul>
-<li>内存映射I/O<ul>
-<li>控制器中的寄存器与内存统一编制</li>
-<li>可以采用对内存进行操作的指令来对控制器进行操作</li>
-</ul>
-</li>
-<li>寄存器独立编制<ul>
-<li>控制器中的寄存器独立编制</li>
-<li>需要设置专门的指令来操作控制器</li>
-</ul>
-</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="5-1-3、IO控制方式"><a href="#5-1-3、IO控制方式" class="headerlink" title="5.1.3、IO控制方式"></a>5.1.3、IO控制方式</h2><p><img src="/blog/blog/.com/2020/05/23/OSfifthone/IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F.png" alt="image-20200524105920314"></p>
-<h2 id="5-1-4、IO软件层次结构"><a href="#5-1-4、IO软件层次结构" class="headerlink" title="5.1.4、IO软件层次结构"></a>5.1.4、IO软件层次结构</h2><p><img src="/blog/blog/.com/2020/05/23/OSfifthone/IO%E8%BD%AF%E4%BB%B6%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84.png" alt="image-20200524110859626"></p>
-<p><img src="/blog/blog/.com/2020/05/23/OSfifthone/IO%E8%BD%AF%E4%BB%B6%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E8%A1%A5%E5%85%85.png" alt="image-20200524110932162"></p>
-<h2 id="5-1-5、IO核心子系统"><a href="#5-1-5、IO核心子系统" class="headerlink" title="5.1.5、IO核心子系统"></a>5.1.5、IO核心子系统</h2><p><img src="/blog/blog/.com/2020/05/23/OSfifthone/IO%E6%A0%B8%E5%BF%83%E5%AD%90%E7%B3%BB%E7%BB%9F.png" alt="image-20200524111344364"></p>
-<h2 id="5-1-6、假脱机技术-SPOOLing技术"><a href="#5-1-6、假脱机技术-SPOOLing技术" class="headerlink" title="5.1.6、假脱机技术/SPOOLing技术"></a>5.1.6、假脱机技术/SPOOLing技术</h2><h3 id="脱机技术"><a href="#脱机技术" class="headerlink" title="脱机技术"></a>脱机技术</h3><ul>
-<li>外围控制机+更高速的设备——-磁带</li>
-<li>作用：缓解设备与CPU的速度矛盾，实现预输入、缓输出</li>
-</ul>
-<h3 id="假脱机技术"><a href="#假脱机技术" class="headerlink" title="假脱机技术"></a>假脱机技术</h3><ul>
-<li>又叫SPOOLing技术，用软件的方式模拟脱机技术</li>
-<li>输入井和输出井—–模拟脱机输入/输出时的磁带</li>
-<li>输入进程和输出进程——模拟脱机输入/输出时的外围控制机</li>
-<li>输入缓冲区和输出缓冲区——内存中的缓冲区，输入、输出时的“中转站”</li>
-</ul>
-<h3 id="共享打印机"><a href="#共享打印机" class="headerlink" title="共享打印机"></a>共享打印机</h3><p>用SPOOLing技术将独占式打印机“虚拟”成共享打印机</p>
-<h2 id="5-1-7、设备的分配与回收"><a href="#5-1-7、设备的分配与回收" class="headerlink" title="5.1.7、设备的分配与回收"></a>5.1.7、设备的分配与回收</h2><p><img src="/blog/blog/.com/2020/05/23/OSfifthone/%E8%AE%BE%E5%A4%87%E7%9A%84%E5%88%86%E9%85%8D%E4%B8%8E%E5%9B%9E%E6%94%B6.png" alt="image-20200524113435733"></p>
-<h2 id="5-1-8、缓冲区管理"><a href="#5-1-8、缓冲区管理" class="headerlink" title="5.1.8、缓冲区管理"></a>5.1.8、缓冲区管理</h2><p><img src="/blog/blog/.com/2020/05/23/OSfifthone/%E7%BC%93%E5%86%B2%E5%8C%BA%E7%AE%A1%E7%90%86.png" alt="image-20200524140636556"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>操作系统4.1</title>
     <url>/blog/2020/05/20/OSfourthone/</url>
     <content><![CDATA[<h2 id="4-1-1、初识文件管理"><a href="#4-1-1、初识文件管理" class="headerlink" title="4.1.1、初识文件管理"></a>4.1.1、初识文件管理</h2><ul>
@@ -2282,219 +2218,67 @@
 ]]></content>
   </entry>
   <entry>
-    <title>操作系统4.2</title>
-    <url>/blog/2020/05/23/OSfourthtwo/</url>
-    <content><![CDATA[<h2 id="4-2-1、磁盘的结构"><a href="#4-2-1、磁盘的结构" class="headerlink" title="4.2.1、磁盘的结构"></a>4.2.1、磁盘的结构</h2><h3 id="磁盘、磁道、扇区的概念"><a href="#磁盘、磁道、扇区的概念" class="headerlink" title="磁盘、磁道、扇区的概念"></a>磁盘、磁道、扇区的概念</h3><ul>
-<li>磁盘由表面涂有磁性物质的圆形盘片组成</li>
-<li>每个盘片被划分为一个个磁道，每个磁道又划分为一个个扇区</li>
+    <title>操作系统5.1</title>
+    <url>/blog/2020/05/23/OSfifthone/</url>
+    <content><![CDATA[<h2 id="5-1-1、-I-O设备的基本概念与分类"><a href="#5-1-1、-I-O设备的基本概念与分类" class="headerlink" title="5.1.1、 I/O设备的基本概念与分类"></a>5.1.1、 I/O设备的基本概念与分类</h2><h3 id="什么是I-O设备"><a href="#什么是I-O设备" class="headerlink" title="什么是I/O设备"></a>什么是I/O设备</h3><ul>
+<li>将数据Input/Output(输入/输出)计算机的外部设备</li>
 </ul>
-<h3 id="如何在磁盘中读-写数据"><a href="#如何在磁盘中读-写数据" class="headerlink" title="如何在磁盘中读/写数据"></a>如何在磁盘中读/写数据</h3><ul>
-<li>磁头移动到目标位置，盘片旋转，对应扇区划过磁道才能完成读/写</li>
+<h3 id="按使用特性分类"><a href="#按使用特性分类" class="headerlink" title="按使用特性分类"></a>按使用特性分类</h3><ul>
+<li>人机交互类外部设备</li>
+<li>存储设备</li>
+<li>网络通信设备</li>
 </ul>
-<h3 id="盘面、柱面的概念"><a href="#盘面、柱面的概念" class="headerlink" title="盘面、柱面的概念"></a>盘面、柱面的概念</h3><ul>
-<li>磁盘有多个盘片“摞”起来，每个盘片有两个盘面</li>
-<li>所以盘面中相对位置相同的磁道组成柱面</li>
+<h3 id="按传输速率分类"><a href="#按传输速率分类" class="headerlink" title="按传输速率分类"></a>按传输速率分类</h3><ul>
+<li>低速设备</li>
+<li>中速设备</li>
+<li>高速设备</li>
 </ul>
-<h3 id="磁盘的物理地址"><a href="#磁盘的物理地址" class="headerlink" title="磁盘的物理地址"></a>磁盘的物理地址</h3><ul>
-<li>（柱面号，盘面号，扇区号）</li>
+<h3 id="按信息交换的单位分类"><a href="#按信息交换的单位分类" class="headerlink" title="按信息交换的单位分类"></a>按信息交换的单位分类</h3><ul>
+<li>块设备（传输快，可寻址）</li>
+<li>字符设备（传输满，不可寻址，常采用==中断驱动方式==）</li>
 </ul>
-<h3 id="磁盘的分类"><a href="#磁盘的分类" class="headerlink" title="磁盘的分类"></a>磁盘的分类</h3><ul>
-<li>根据磁头是否可移动<ul>
-<li>固定头磁盘（每个磁道有一个磁头）</li>
-<li>移动头磁盘（每个盘面只有一个磁头）</li>
+<h2 id="5-1-2、I-O控制器"><a href="#5-1-2、I-O控制器" class="headerlink" title="5.1.2、I/O控制器"></a>5.1.2、I/O控制器</h2><h3 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h3><ul>
+<li>接受和识别CPU发出的命令（要有控制寄存器）</li>
+<li>向CPU报告设备的状态（要有状态寄存器）</li>
+<li>数据交换（要有数据寄存器，暂存输入/输出的数据）</li>
+<li>地址识别（由I/O逻辑实现）</li>
+</ul>
+<h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3><ul>
+<li>CPU与控制器之间的接口（实现控制器与CPU之间的通信）</li>
+<li>I/O逻辑（负责识别CPU发出的命令，并向设备发出命令）</li>
+<li>控制器与设备之间的接口（实现控制器与设备之间的通信）</li>
+</ul>
+<h3 id="两种寄存器编址方式"><a href="#两种寄存器编址方式" class="headerlink" title="两种寄存器编址方式"></a>两种寄存器编址方式</h3><ul>
+<li>内存映射I/O<ul>
+<li>控制器中的寄存器与内存统一编制</li>
+<li>可以采用对内存进行操作的指令来对控制器进行操作</li>
 </ul>
 </li>
-<li>根据盘片是否可更换<ul>
-<li>固定盘磁盘</li>
-<li>可换盘磁盘</li>
+<li>寄存器独立编制<ul>
+<li>控制器中的寄存器独立编制</li>
+<li>需要设置专门的指令来操作控制器</li>
 </ul>
 </li>
 </ul>
 <a id="more"></a>
 
-<h2 id="4-2-2、磁盘调度算法"><a href="#4-2-2、磁盘调度算法" class="headerlink" title="4.2.2、磁盘调度算法"></a>4.2.2、磁盘调度算法</h2><h3 id="一次磁盘读-写操作需要的时间"><a href="#一次磁盘读-写操作需要的时间" class="headerlink" title="一次磁盘读/写操作需要的时间"></a>一次磁盘读/写操作需要的时间</h3><ul>
-<li>寻找时间(寻道时间)：启动磁臂，<font color="red">移动磁头所花的时间</font></li>
-<li>延迟时间：将目标扇区转到磁头下面所花的时间</li>
-<li>传输时间：读/写    数据花费的时间</li>
+<h2 id="5-1-3、IO控制方式"><a href="#5-1-3、IO控制方式" class="headerlink" title="5.1.3、IO控制方式"></a>5.1.3、IO控制方式</h2><p><img src="/blog/blog/.com/2020/05/23/OSfifthone/IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F.png" alt="image-20200524105920314"></p>
+<h2 id="5-1-4、IO软件层次结构"><a href="#5-1-4、IO软件层次结构" class="headerlink" title="5.1.4、IO软件层次结构"></a>5.1.4、IO软件层次结构</h2><p><img src="/blog/blog/.com/2020/05/23/OSfifthone/IO%E8%BD%AF%E4%BB%B6%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84.png" alt="image-20200524110859626"></p>
+<p><img src="/blog/blog/.com/2020/05/23/OSfifthone/IO%E8%BD%AF%E4%BB%B6%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E8%A1%A5%E5%85%85.png" alt="image-20200524110932162"></p>
+<h2 id="5-1-5、IO核心子系统"><a href="#5-1-5、IO核心子系统" class="headerlink" title="5.1.5、IO核心子系统"></a>5.1.5、IO核心子系统</h2><p><img src="/blog/blog/.com/2020/05/23/OSfifthone/IO%E6%A0%B8%E5%BF%83%E5%AD%90%E7%B3%BB%E7%BB%9F.png" alt="image-20200524111344364"></p>
+<h2 id="5-1-6、假脱机技术-SPOOLing技术"><a href="#5-1-6、假脱机技术-SPOOLing技术" class="headerlink" title="5.1.6、假脱机技术/SPOOLing技术"></a>5.1.6、假脱机技术/SPOOLing技术</h2><h3 id="脱机技术"><a href="#脱机技术" class="headerlink" title="脱机技术"></a>脱机技术</h3><ul>
+<li>外围控制机+更高速的设备——-磁带</li>
+<li>作用：缓解设备与CPU的速度矛盾，实现预输入、缓输出</li>
 </ul>
-<h3 id="磁盘调度算法"><a href="#磁盘调度算法" class="headerlink" title="磁盘调度算法"></a>磁盘调度算法</h3><ul>
-<li>先来先服务(FCFS)<ul>
-<li>按访问请求到达的先后顺序进行处理</li>
+<h3 id="假脱机技术"><a href="#假脱机技术" class="headerlink" title="假脱机技术"></a>假脱机技术</h3><ul>
+<li>又叫SPOOLing技术，用软件的方式模拟脱机技术</li>
+<li>输入井和输出井—–模拟脱机输入/输出时的磁带</li>
+<li>输入进程和输出进程——模拟脱机输入/输出时的外围控制机</li>
+<li>输入缓冲区和输出缓冲区——内存中的缓冲区，输入、输出时的“中转站”</li>
 </ul>
-</li>
-<li>最短寻找时间优先(SSTF)<ul>
-<li>每次都优先响应距离磁头最近的磁道访问请求</li>
-<li>贪心算法的思想，能保证眼前最优，但无发生保证总的寻道时间最短</li>
-<li>缺点：可能导致饥饿</li>
-</ul>
-</li>
-<li>扫描算法(电梯算法、SCAN)<ul>
-<li>只有磁头移动到最边缘的磁道时才可以改变磁头移动方向</li>
-<li>缺点：对各个位置磁道的响应频率不平均</li>
-</ul>
-</li>
-<li>循环扫描算法(C-SCAN)<ul>
-<li>只有磁头朝某个方向移动时才会响应请求，移动到边缘后立即让磁头返回起点，返回途中不响应任何请求</li>
-</ul>
-</li>
-<li>低频考点<ul>
-<li>LOOK算法<ul>
-<li>SCAN算法的改进，只要在磁头移动方向上不再有请求，就立即改变磁头方向</li>
-</ul>
-</li>
-<li>C-LOOK算法<ul>
-<li>C-SCAN算法的改进，只要在磁头移动方向上不再有请求，就立即让磁头返回</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="4-2-3、减少延迟时间的方法"><a href="#4-2-3、减少延迟时间的方法" class="headerlink" title="4.2.3、减少延迟时间的方法"></a>4.2.3、减少延迟时间的方法</h2><h3 id="交替编号"><a href="#交替编号" class="headerlink" title="交替编号"></a>交替编号</h3><ul>
-<li>具体做法：让编号相邻的扇区在物理上不相邻</li>
-<li>原理：读取完一个扇区后需要一段时间处理才可以继续读入下一个扇区</li>
-</ul>
-<h3 id="错位命名"><a href="#错位命名" class="headerlink" title="错位命名"></a>错位命名</h3><ul>
-<li>具体做法：让相邻盘面的扇区编号“错位”</li>
-<li>原理：与“交替编号”的原理相同。“错位命名法”可降低延迟时间</li>
-</ul>
-<h3 id="磁盘地址结构的设计"><a href="#磁盘地址结构的设计" class="headerlink" title="磁盘地址结构的设计"></a>磁盘地址结构的设计</h3><ul>
-<li>理解为什么要用（柱面号，盘面号，扇区号）的结构</li>
-<li>理解为什么不用（盘面号，柱面号，扇区号）的结构</li>
-<li>原因：在读取地址连续的磁盘块时，前者更不需要移动磁头</li>
-</ul>
-<h2 id="4-2-4、磁盘的管理"><a href="#4-2-4、磁盘的管理" class="headerlink" title="4.2.4、磁盘的管理"></a>4.2.4、磁盘的管理</h2><h3 id="磁盘初始化"><a href="#磁盘初始化" class="headerlink" title="磁盘初始化"></a>磁盘初始化</h3><ul>
-<li>低级格式化/物理格式化：划分扇区</li>
-<li>磁盘分区（C盘、D盘、E盘）</li>
-<li>逻辑格式化：建立文件系统（建立根目录文件、建立用于存储空间管理的数据结构）</li>
-</ul>
-<h3 id="引导块"><a href="#引导块" class="headerlink" title="引导块"></a>引导块</h3><ul>
-<li>计算机启动时需要运行初始化程序（自举程序）来完成初始化</li>
-<li>ROM中存放很小的自举装入程序</li>
-<li>完整的自举程序存放在初始块(引导块)中</li>
-</ul>
-<h3 id="坏块的管理"><a href="#坏块的管理" class="headerlink" title="坏块的管理"></a>坏块的管理</h3><ul>
-<li>简单的磁盘：逻辑格式化时将坏块标记出来</li>
-<li>复杂的磁盘：磁盘控制器维护一个坏块链，并管理备用扇区</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>操作系统2.4</title>
-    <url>/blog/2020/05/16/OSsecondfour/</url>
-    <content><![CDATA[<h2 id="2-4-1、死锁的概念"><a href="#2-4-1、死锁的概念" class="headerlink" title="2.4.1、死锁的概念"></a>2.4.1、死锁的概念</h2><h3 id="什么是死锁"><a href="#什么是死锁" class="headerlink" title="什么是死锁"></a>什么是死锁</h3><ul>
-<li>各进程互相等待对方手里的资源，导致各进程都阻塞，无法向前推进</li>
-</ul>
-<h3 id="死锁、饥饿、死循环的区别"><a href="#死锁、饥饿、死循环的区别" class="headerlink" title="死锁、饥饿、死循环的区别"></a>死锁、饥饿、死循环的区别</h3><ul>
-<li>死锁：至少是两个进程一起死锁，死锁进程处于阻塞态</li>
-<li>饥饿：可以只有一个进程饥饿，饥饿进程可能阻塞也可能就绪</li>
-<li>死循环：可能只有一个进程发生死循环，死循环的进程可上处理机</li>
-<li>死锁和饥饿是操作系统要解决的问题，死循环是应用程序员要解决的</li>
-</ul>
-<h3 id="死锁产生的必要条件"><a href="#死锁产生的必要条件" class="headerlink" title="死锁产生的必要条件"></a>死锁产生的必要条件</h3><ul>
-<li><p>互斥条件</p>
-<ul>
-<li>对必须互斥使用的资源的争抢才会导致死锁</li>
-</ul>
-</li>
-<li><p>不剥夺条件</p>
-<ul>
-<li>进程保持的资源只能主动释放，不可强行剥夺</li>
-</ul>
-</li>
-<li><p>请求和保持条件</p>
-<ul>
-<li>保持着某些资源不放的同时，请求别的资源</li>
-</ul>
-</li>
-<li><p>循环等待条件</p>
-<ul>
-<li>存在一种进程资源的循环等待链</li>
-<li>循环等待未必死锁，死锁一定有循环等待</li>
-</ul>
-</li>
-</ul>
-<h3 id="什么时候会发生死锁"><a href="#什么时候会发生死锁" class="headerlink" title="什么时候会发生死锁"></a>什么时候会发生死锁</h3><ul>
-<li>对不可剥夺资源的不合理分配，可能导致死锁</li>
-</ul>
-<h3 id="死锁的处理策略"><a href="#死锁的处理策略" class="headerlink" title="死锁的处理策略"></a>死锁的处理策略</h3><ul>
-<li><p>预防死锁</p>
-<ul>
-<li>破坏死锁产生的四个必要条件</li>
-</ul>
-</li>
-<li><p>避免死锁</p>
-<ul>
-<li>避免系统进入不安全状态(银行家算法)</li>
-</ul>
-</li>
-<li><p>死锁的检测和解除</p>
-<ul>
-<li>允许死锁发生，系统负责检测出死锁并解除</li>
-</ul>
-</li>
-</ul>
-  <a id="more"></a>
-
-<h2 id="2-4-2、预防死锁"><a href="#2-4-2、预防死锁" class="headerlink" title="2.4.2、预防死锁"></a>2.4.2、预防死锁</h2><h3 id="破坏互斥条件"><a href="#破坏互斥条件" class="headerlink" title="破坏互斥条件"></a>破坏互斥条件</h3><ul>
-<li>将临界资源改造为可共享使用的资源(如SPOOLing技术)</li>
-<li>缺点：可行性不高，很多时候无法破坏互斥条件</li>
-</ul>
-<h3 id="破坏不剥夺条件"><a href="#破坏不剥夺条件" class="headerlink" title="破坏不剥夺条件"></a>破坏不剥夺条件</h3><ul>
-<li>方案一：申请的资源得不到满足时，立即释放拥有的所有资源</li>
-<li>方案二：申请的资源被其他进程占用时，由操作系统协助剥夺(考虑优先级)</li>
-<li>缺点：实现复杂；剥夺资源可能导致部分工作失效；反复申请和释放导致系统开销大；可能导致饥饿</li>
-</ul>
-<h3 id="破坏请求和保持条件"><a href="#破坏请求和保持条件" class="headerlink" title="破坏请求和保持条件"></a>破坏请求和保持条件</h3><ul>
-<li>运行前分配好所有需要的资源，之后一直保持</li>
-<li>缺点：资源利用率低；可能导致饥饿</li>
-</ul>
-<h3 id="破坏循环等待条件"><a href="#破坏循环等待条件" class="headerlink" title="破坏循环等待条件"></a>破坏循环等待条件</h3><ul>
-<li>给资源编号，必须按编号从小到大的顺序申请资源</li>
-<li>缺点：不方便增加新设备；会导致资源浪费；用户编程麻烦</li>
-</ul>
-<h2 id="2-4-3、避免死锁"><a href="#2-4-3、避免死锁" class="headerlink" title="2.4.3、避免死锁"></a>2.4.3、避免死锁</h2><h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><ul>
-<li>长度为m的一维数组Available 表示还有多少可用资源</li>
-<li>n*m矩阵Max表示各进程对资源的最大需求数</li>
-<li>n*m矩阵Allocation表示已经给各进程分配了多少资源</li>
-<li>Max - Allocation = Need 矩阵表示各进程最多还需要多少资源</li>
-<li>用长度为m的一维数组Request表示进程此次申请的各种资源数</li>
-</ul>
-<h3 id="银行家算法步骤："><a href="#银行家算法步骤：" class="headerlink" title="银行家算法步骤："></a>银行家算法步骤：</h3><p>① 检查此次申请是否超过了之前声明的最大需求数</p>
-<p>② 检查此时系统剩余的可用资源是否还能满足这次请求</p>
-<p>③ 试探着分配，更改各数据结构</p>
-<p>④ 用安全性算法检查此次分配是否会导致系统进入不安全状态</p>
-<h3 id="安全性算法步骤："><a href="#安全性算法步骤：" class="headerlink" title="安全性算法步骤："></a>安全性算法步骤：</h3><ul>
-<li>检查当前的剩余可用资源是否能满足某个进程的最大需求，如果可以，就把该进程加入安全序列，并把该进程持有的资源全部回收。</li>
-<li>不断重复上述过程，看最终是否能让所有进程都加入安全序列。</li>
-</ul>
-<p>系统处于不安全状态未必死锁，但死锁时一定处于不安全状态。系统处于安全状态一定不会死锁。</p>
-<h2 id="2-4-4、死锁的检测和解除"><a href="#2-4-4、死锁的检测和解除" class="headerlink" title="2.4.4、死锁的检测和解除"></a>2.4.4、死锁的检测和解除</h2><h3 id="如何检测"><a href="#如何检测" class="headerlink" title="如何检测"></a>如何检测</h3><ul>
-<li>数据结构：==资源分配图==<ul>
-<li>两种结点<ul>
-<li>进程结点</li>
-<li>资源结点</li>
-</ul>
-</li>
-<li>两种边<ul>
-<li>进程结点—&gt;资源结点(请求边)</li>
-<li>资源结点—&gt;进程结点(分配边)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>==死锁检测算法==<ul>
-<li>==依次消除与不阻塞进程相连的边，直到无边可消==</li>
-<li>注：所谓不阻塞进程是指其申请的资源数还足够的进程</li>
-<li>死锁定理：若资源分配图是不可完全简化的，说明发生了死锁</li>
-</ul>
-</li>
-<li>如何解除<ul>
-<li>资源剥夺法</li>
-<li>撤销进程法(终止进程法)</li>
-<li>进程回退法</li>
-</ul>
-</li>
-</ul>
+<h3 id="共享打印机"><a href="#共享打印机" class="headerlink" title="共享打印机"></a>共享打印机</h3><p>用SPOOLing技术将独占式打印机“虚拟”成共享打印机</p>
+<h2 id="5-1-7、设备的分配与回收"><a href="#5-1-7、设备的分配与回收" class="headerlink" title="5.1.7、设备的分配与回收"></a>5.1.7、设备的分配与回收</h2><p><img src="/blog/blog/.com/2020/05/23/OSfifthone/%E8%AE%BE%E5%A4%87%E7%9A%84%E5%88%86%E9%85%8D%E4%B8%8E%E5%9B%9E%E6%94%B6.png" alt="image-20200524113435733"></p>
+<h2 id="5-1-8、缓冲区管理"><a href="#5-1-8、缓冲区管理" class="headerlink" title="5.1.8、缓冲区管理"></a>5.1.8、缓冲区管理</h2><p><img src="/blog/blog/.com/2020/05/23/OSfifthone/%E7%BC%93%E5%86%B2%E5%8C%BA%E7%AE%A1%E7%90%86.png" alt="image-20200524140636556"></p>
 ]]></content>
   </entry>
   <entry>
@@ -2772,6 +2556,487 @@
 <li>集二者多所长</li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>操作系统4.2</title>
+    <url>/blog/2020/05/23/OSfourthtwo/</url>
+    <content><![CDATA[<h2 id="4-2-1、磁盘的结构"><a href="#4-2-1、磁盘的结构" class="headerlink" title="4.2.1、磁盘的结构"></a>4.2.1、磁盘的结构</h2><h3 id="磁盘、磁道、扇区的概念"><a href="#磁盘、磁道、扇区的概念" class="headerlink" title="磁盘、磁道、扇区的概念"></a>磁盘、磁道、扇区的概念</h3><ul>
+<li>磁盘由表面涂有磁性物质的圆形盘片组成</li>
+<li>每个盘片被划分为一个个磁道，每个磁道又划分为一个个扇区</li>
+</ul>
+<h3 id="如何在磁盘中读-写数据"><a href="#如何在磁盘中读-写数据" class="headerlink" title="如何在磁盘中读/写数据"></a>如何在磁盘中读/写数据</h3><ul>
+<li>磁头移动到目标位置，盘片旋转，对应扇区划过磁道才能完成读/写</li>
+</ul>
+<h3 id="盘面、柱面的概念"><a href="#盘面、柱面的概念" class="headerlink" title="盘面、柱面的概念"></a>盘面、柱面的概念</h3><ul>
+<li>磁盘有多个盘片“摞”起来，每个盘片有两个盘面</li>
+<li>所以盘面中相对位置相同的磁道组成柱面</li>
+</ul>
+<h3 id="磁盘的物理地址"><a href="#磁盘的物理地址" class="headerlink" title="磁盘的物理地址"></a>磁盘的物理地址</h3><ul>
+<li>（柱面号，盘面号，扇区号）</li>
+</ul>
+<h3 id="磁盘的分类"><a href="#磁盘的分类" class="headerlink" title="磁盘的分类"></a>磁盘的分类</h3><ul>
+<li>根据磁头是否可移动<ul>
+<li>固定头磁盘（每个磁道有一个磁头）</li>
+<li>移动头磁盘（每个盘面只有一个磁头）</li>
+</ul>
+</li>
+<li>根据盘片是否可更换<ul>
+<li>固定盘磁盘</li>
+<li>可换盘磁盘</li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="4-2-2、磁盘调度算法"><a href="#4-2-2、磁盘调度算法" class="headerlink" title="4.2.2、磁盘调度算法"></a>4.2.2、磁盘调度算法</h2><h3 id="一次磁盘读-写操作需要的时间"><a href="#一次磁盘读-写操作需要的时间" class="headerlink" title="一次磁盘读/写操作需要的时间"></a>一次磁盘读/写操作需要的时间</h3><ul>
+<li>寻找时间(寻道时间)：启动磁臂，<font color="red">移动磁头所花的时间</font></li>
+<li>延迟时间：将目标扇区转到磁头下面所花的时间</li>
+<li>传输时间：读/写    数据花费的时间</li>
+</ul>
+<h3 id="磁盘调度算法"><a href="#磁盘调度算法" class="headerlink" title="磁盘调度算法"></a>磁盘调度算法</h3><ul>
+<li>先来先服务(FCFS)<ul>
+<li>按访问请求到达的先后顺序进行处理</li>
+</ul>
+</li>
+<li>最短寻找时间优先(SSTF)<ul>
+<li>每次都优先响应距离磁头最近的磁道访问请求</li>
+<li>贪心算法的思想，能保证眼前最优，但无发生保证总的寻道时间最短</li>
+<li>缺点：可能导致饥饿</li>
+</ul>
+</li>
+<li>扫描算法(电梯算法、SCAN)<ul>
+<li>只有磁头移动到最边缘的磁道时才可以改变磁头移动方向</li>
+<li>缺点：对各个位置磁道的响应频率不平均</li>
+</ul>
+</li>
+<li>循环扫描算法(C-SCAN)<ul>
+<li>只有磁头朝某个方向移动时才会响应请求，移动到边缘后立即让磁头返回起点，返回途中不响应任何请求</li>
+</ul>
+</li>
+<li>低频考点<ul>
+<li>LOOK算法<ul>
+<li>SCAN算法的改进，只要在磁头移动方向上不再有请求，就立即改变磁头方向</li>
+</ul>
+</li>
+<li>C-LOOK算法<ul>
+<li>C-SCAN算法的改进，只要在磁头移动方向上不再有请求，就立即让磁头返回</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-2-3、减少延迟时间的方法"><a href="#4-2-3、减少延迟时间的方法" class="headerlink" title="4.2.3、减少延迟时间的方法"></a>4.2.3、减少延迟时间的方法</h2><h3 id="交替编号"><a href="#交替编号" class="headerlink" title="交替编号"></a>交替编号</h3><ul>
+<li>具体做法：让编号相邻的扇区在物理上不相邻</li>
+<li>原理：读取完一个扇区后需要一段时间处理才可以继续读入下一个扇区</li>
+</ul>
+<h3 id="错位命名"><a href="#错位命名" class="headerlink" title="错位命名"></a>错位命名</h3><ul>
+<li>具体做法：让相邻盘面的扇区编号“错位”</li>
+<li>原理：与“交替编号”的原理相同。“错位命名法”可降低延迟时间</li>
+</ul>
+<h3 id="磁盘地址结构的设计"><a href="#磁盘地址结构的设计" class="headerlink" title="磁盘地址结构的设计"></a>磁盘地址结构的设计</h3><ul>
+<li>理解为什么要用（柱面号，盘面号，扇区号）的结构</li>
+<li>理解为什么不用（盘面号，柱面号，扇区号）的结构</li>
+<li>原因：在读取地址连续的磁盘块时，前者更不需要移动磁头</li>
+</ul>
+<h2 id="4-2-4、磁盘的管理"><a href="#4-2-4、磁盘的管理" class="headerlink" title="4.2.4、磁盘的管理"></a>4.2.4、磁盘的管理</h2><h3 id="磁盘初始化"><a href="#磁盘初始化" class="headerlink" title="磁盘初始化"></a>磁盘初始化</h3><ul>
+<li>低级格式化/物理格式化：划分扇区</li>
+<li>磁盘分区（C盘、D盘、E盘）</li>
+<li>逻辑格式化：建立文件系统（建立根目录文件、建立用于存储空间管理的数据结构）</li>
+</ul>
+<h3 id="引导块"><a href="#引导块" class="headerlink" title="引导块"></a>引导块</h3><ul>
+<li>计算机启动时需要运行初始化程序（自举程序）来完成初始化</li>
+<li>ROM中存放很小的自举装入程序</li>
+<li>完整的自举程序存放在初始块(引导块)中</li>
+</ul>
+<h3 id="坏块的管理"><a href="#坏块的管理" class="headerlink" title="坏块的管理"></a>坏块的管理</h3><ul>
+<li>简单的磁盘：逻辑格式化时将坏块标记出来</li>
+<li>复杂的磁盘：磁盘控制器维护一个坏块链，并管理备用扇区</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>操作系统2.4</title>
+    <url>/blog/2020/05/16/OSsecondfour/</url>
+    <content><![CDATA[<h2 id="2-4-1、死锁的概念"><a href="#2-4-1、死锁的概念" class="headerlink" title="2.4.1、死锁的概念"></a>2.4.1、死锁的概念</h2><h3 id="什么是死锁"><a href="#什么是死锁" class="headerlink" title="什么是死锁"></a>什么是死锁</h3><ul>
+<li>各进程互相等待对方手里的资源，导致各进程都阻塞，无法向前推进</li>
+</ul>
+<h3 id="死锁、饥饿、死循环的区别"><a href="#死锁、饥饿、死循环的区别" class="headerlink" title="死锁、饥饿、死循环的区别"></a>死锁、饥饿、死循环的区别</h3><ul>
+<li>死锁：至少是两个进程一起死锁，死锁进程处于阻塞态</li>
+<li>饥饿：可以只有一个进程饥饿，饥饿进程可能阻塞也可能就绪</li>
+<li>死循环：可能只有一个进程发生死循环，死循环的进程可上处理机</li>
+<li>死锁和饥饿是操作系统要解决的问题，死循环是应用程序员要解决的</li>
+</ul>
+<h3 id="死锁产生的必要条件"><a href="#死锁产生的必要条件" class="headerlink" title="死锁产生的必要条件"></a>死锁产生的必要条件</h3><ul>
+<li><p>互斥条件</p>
+<ul>
+<li>对必须互斥使用的资源的争抢才会导致死锁</li>
+</ul>
+</li>
+<li><p>不剥夺条件</p>
+<ul>
+<li>进程保持的资源只能主动释放，不可强行剥夺</li>
+</ul>
+</li>
+<li><p>请求和保持条件</p>
+<ul>
+<li>保持着某些资源不放的同时，请求别的资源</li>
+</ul>
+</li>
+<li><p>循环等待条件</p>
+<ul>
+<li>存在一种进程资源的循环等待链</li>
+<li>循环等待未必死锁，死锁一定有循环等待</li>
+</ul>
+</li>
+</ul>
+<h3 id="什么时候会发生死锁"><a href="#什么时候会发生死锁" class="headerlink" title="什么时候会发生死锁"></a>什么时候会发生死锁</h3><ul>
+<li>对不可剥夺资源的不合理分配，可能导致死锁</li>
+</ul>
+<h3 id="死锁的处理策略"><a href="#死锁的处理策略" class="headerlink" title="死锁的处理策略"></a>死锁的处理策略</h3><ul>
+<li><p>预防死锁</p>
+<ul>
+<li>破坏死锁产生的四个必要条件</li>
+</ul>
+</li>
+<li><p>避免死锁</p>
+<ul>
+<li>避免系统进入不安全状态(银行家算法)</li>
+</ul>
+</li>
+<li><p>死锁的检测和解除</p>
+<ul>
+<li>允许死锁发生，系统负责检测出死锁并解除</li>
+</ul>
+</li>
+</ul>
+  <a id="more"></a>
+
+<h2 id="2-4-2、预防死锁"><a href="#2-4-2、预防死锁" class="headerlink" title="2.4.2、预防死锁"></a>2.4.2、预防死锁</h2><h3 id="破坏互斥条件"><a href="#破坏互斥条件" class="headerlink" title="破坏互斥条件"></a>破坏互斥条件</h3><ul>
+<li>将临界资源改造为可共享使用的资源(如SPOOLing技术)</li>
+<li>缺点：可行性不高，很多时候无法破坏互斥条件</li>
+</ul>
+<h3 id="破坏不剥夺条件"><a href="#破坏不剥夺条件" class="headerlink" title="破坏不剥夺条件"></a>破坏不剥夺条件</h3><ul>
+<li>方案一：申请的资源得不到满足时，立即释放拥有的所有资源</li>
+<li>方案二：申请的资源被其他进程占用时，由操作系统协助剥夺(考虑优先级)</li>
+<li>缺点：实现复杂；剥夺资源可能导致部分工作失效；反复申请和释放导致系统开销大；可能导致饥饿</li>
+</ul>
+<h3 id="破坏请求和保持条件"><a href="#破坏请求和保持条件" class="headerlink" title="破坏请求和保持条件"></a>破坏请求和保持条件</h3><ul>
+<li>运行前分配好所有需要的资源，之后一直保持</li>
+<li>缺点：资源利用率低；可能导致饥饿</li>
+</ul>
+<h3 id="破坏循环等待条件"><a href="#破坏循环等待条件" class="headerlink" title="破坏循环等待条件"></a>破坏循环等待条件</h3><ul>
+<li>给资源编号，必须按编号从小到大的顺序申请资源</li>
+<li>缺点：不方便增加新设备；会导致资源浪费；用户编程麻烦</li>
+</ul>
+<h2 id="2-4-3、避免死锁"><a href="#2-4-3、避免死锁" class="headerlink" title="2.4.3、避免死锁"></a>2.4.3、避免死锁</h2><h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><ul>
+<li>长度为m的一维数组Available 表示还有多少可用资源</li>
+<li>n*m矩阵Max表示各进程对资源的最大需求数</li>
+<li>n*m矩阵Allocation表示已经给各进程分配了多少资源</li>
+<li>Max - Allocation = Need 矩阵表示各进程最多还需要多少资源</li>
+<li>用长度为m的一维数组Request表示进程此次申请的各种资源数</li>
+</ul>
+<h3 id="银行家算法步骤："><a href="#银行家算法步骤：" class="headerlink" title="银行家算法步骤："></a>银行家算法步骤：</h3><p>① 检查此次申请是否超过了之前声明的最大需求数</p>
+<p>② 检查此时系统剩余的可用资源是否还能满足这次请求</p>
+<p>③ 试探着分配，更改各数据结构</p>
+<p>④ 用安全性算法检查此次分配是否会导致系统进入不安全状态</p>
+<h3 id="安全性算法步骤："><a href="#安全性算法步骤：" class="headerlink" title="安全性算法步骤："></a>安全性算法步骤：</h3><ul>
+<li>检查当前的剩余可用资源是否能满足某个进程的最大需求，如果可以，就把该进程加入安全序列，并把该进程持有的资源全部回收。</li>
+<li>不断重复上述过程，看最终是否能让所有进程都加入安全序列。</li>
+</ul>
+<p>系统处于不安全状态未必死锁，但死锁时一定处于不安全状态。系统处于安全状态一定不会死锁。</p>
+<h2 id="2-4-4、死锁的检测和解除"><a href="#2-4-4、死锁的检测和解除" class="headerlink" title="2.4.4、死锁的检测和解除"></a>2.4.4、死锁的检测和解除</h2><h3 id="如何检测"><a href="#如何检测" class="headerlink" title="如何检测"></a>如何检测</h3><ul>
+<li>数据结构：==资源分配图==<ul>
+<li>两种结点<ul>
+<li>进程结点</li>
+<li>资源结点</li>
+</ul>
+</li>
+<li>两种边<ul>
+<li>进程结点—&gt;资源结点(请求边)</li>
+<li>资源结点—&gt;进程结点(分配边)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>==死锁检测算法==<ul>
+<li>==依次消除与不阻塞进程相连的边，直到无边可消==</li>
+<li>注：所谓不阻塞进程是指其申请的资源数还足够的进程</li>
+<li>死锁定理：若资源分配图是不可完全简化的，说明发生了死锁</li>
+</ul>
+</li>
+<li>如何解除<ul>
+<li>资源剥夺法</li>
+<li>撤销进程法(终止进程法)</li>
+<li>进程回退法</li>
+</ul>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>操作系统2.2</title>
+    <url>/blog/2020/05/12/OSsecondtwo/</url>
+    <content><![CDATA[<h2 id="处理机调度"><a href="#处理机调度" class="headerlink" title="处理机调度"></a>处理机调度</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li>按某种算法选择一个进程将处理机分配给它</li>
+</ul>
+<h3 id="三个层次"><a href="#三个层次" class="headerlink" title="三个层次"></a>三个层次</h3><ul>
+<li><p>高级调度<strong>(作业调度)</strong></p>
+<ul>
+<li>按照某种规则，从后备队列中选择合适的作业将其调入内存，并为其创建进程</li>
+</ul>
+</li>
+<li><p>中级调度<strong>(内存调度)</strong></p>
+<ul>
+<li>按照某种规则，从挂起队列中选择合适的进程将其数据调回内存</li>
+</ul>
+</li>
+<li><p>低级调度(进程调度)</p>
+<ul>
+<li>按照某种规则，从就绪队列中选择一个进程为其分配处理机</li>
+</ul>
+</li>
+</ul>
+<h3 id="三层调度的联系、对比"><a href="#三层调度的联系、对比" class="headerlink" title="三层调度的联系、对比"></a>三层调度的联系、对比</h3><ul>
+<li>高级调度<ul>
+<li>外存-&gt;内存(面向作业)</li>
+<li>发生频率：最低</li>
+</ul>
+</li>
+<li>中级调度<ul>
+<li>外存-&gt;内存(面向进程)</li>
+<li>发送频率：中等</li>
+</ul>
+</li>
+<li>低级调度<ul>
+<li>内存-&gt;CPU</li>
+<li>发生频率：最高</li>
+</ul>
+</li>
+</ul>
+<h3 id="补充知识"><a href="#补充知识" class="headerlink" title="补充知识"></a>补充知识</h3><ul>
+<li>为减轻系统负载，提供资源利用率，暂时不执行的进程会被调到外存从而变为“挂起态”</li>
+<li>七状态模型：在五状态模型的基础上加入了“就绪挂起”和“阻塞挂起”两种状态</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="进程调度的时机、切换与过程、调度方式"><a href="#进程调度的时机、切换与过程、调度方式" class="headerlink" title="进程调度的时机、切换与过程、调度方式"></a>进程调度的时机、切换与过程、调度方式</h2><h3 id="时机"><a href="#时机" class="headerlink" title="时机"></a>时机</h3><ul>
+<li>什么时候需要进程调度？<ul>
+<li>主动放弃<ul>
+<li>进程正常终止</li>
+<li>运行过程中发生异常而终止</li>
+<li>主动阻塞(如等待I/O)</li>
+</ul>
+</li>
+<li>被动放弃<ul>
+<li>分给进程的时间片用完</li>
+<li>有更紧急的事情需要处理(如I/O中断)</li>
+<li>有更高优先级的进程进入就绪队列</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>什么时候不能进行进程调度<ul>
+<li>在处理中断的过程中</li>
+<li>进程在操作系统内核程序临界区中</li>
+<li>原子操作过程中(原语)</li>
+</ul>
+</li>
+</ul>
+<h3 id="切换与过程"><a href="#切换与过程" class="headerlink" title="切换与过程"></a>切换与过程</h3><ul>
+<li>切换过程<ul>
+<li>对原来运行进程各种数据的保存</li>
+<li>对新的进程各种数据的恢复</li>
+</ul>
+</li>
+<li>重要结论：<strong>进程调度、切换是有代价的</strong>，并不是调度越频繁，并发度越高</li>
+</ul>
+<h3 id="方式"><a href="#方式" class="headerlink" title="方式"></a>方式</h3><ul>
+<li>非剥夺调度方式(非抢占式)<ul>
+<li>只能由当前运行的进程主动放弃CPU</li>
+</ul>
+</li>
+<li>剥夺调度方式(抢占式)<ul>
+<li>可由操作系统剥夺当前进程的CPU使用权</li>
+</ul>
+</li>
+</ul>
+<h2 id="调度算法的评价指标"><a href="#调度算法的评价指标" class="headerlink" title="调度算法的评价指标"></a>调度算法的评价指标</h2><h3 id="CPU利用率"><a href="#CPU利用率" class="headerlink" title="CPU利用率"></a>CPU利用率</h3><ul>
+<li>$$<br>利用率 = 忙碌的时间/总时间<br>$$</li>
+</ul>
+<h3 id="系统吞吐量"><a href="#系统吞吐量" class="headerlink" title="系统吞吐量"></a>系统吞吐量</h3><ul>
+<li>$$<br>系统吞吐量 = 总共完成了多少道作业/总共花了多少时间<br>$$</li>
+</ul>
+<h3 id="周转时间"><a href="#周转时间" class="headerlink" title="周转时间"></a>周转时间</h3><ul>
+<li><p>$$<br>周转时间 = 作业完成时间-作业到达时间<br>$$</p>
+</li>
+<li><p>$$<br>平均周转时间 = 各作业周转时间之和/作业数<br>$$</p>
+</li>
+<li><p>$$<br>带权周转时间 = 作业周转时间 / 作业实际运行的时间<br>$$</p>
+</li>
+<li><p>$$<br>平均带权周转时间 = 各作业带权周转时间之和 / 作业数<br>$$</p>
+</li>
+</ul>
+<h3 id="等待时间"><a href="#等待时间" class="headerlink" title="等待时间"></a>等待时间</h3><ul>
+<li>//进程/作业                等待被服务的时间之和</li>
+<li>周转时间-运行时间-(I/O操作的时间)</li>
+<li>平均等待时间即   各个进程/作业等待时间的平均值</li>
+</ul>
+<h3 id="响应时间"><a href="#响应时间" class="headerlink" title="响应时间"></a>响应时间</h3><ul>
+<li>从用户提交请求到首次产生响应所用的时间</li>
+</ul>
+<h2 id="调度算法"><a href="#调度算法" class="headerlink" title="调度算法"></a>调度算法</h2><h3 id="先来先服务-FCFS"><a href="#先来先服务-FCFS" class="headerlink" title="先来先服务(FCFS)"></a>先来先服务(FCFS)</h3><ul>
+<li>思想&amp;&amp;规则<ul>
+<li>按照到达的先后顺序调度，事实上就是等待时间越久越优先得到服务</li>
+</ul>
+</li>
+<li>可抢占？<ul>
+<li>非抢占式</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>公平：实现简单</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>对短作业不利</li>
+</ul>
+</li>
+<li>考虑到等待时间&amp;运行时间？<ul>
+<li>等待时间√    </li>
+<li>运行时间×</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>不会</li>
+</ul>
+</li>
+</ul>
+<h3 id="短作业优先-SJF-SPF"><a href="#短作业优先-SJF-SPF" class="headerlink" title="短作业优先(SJF/SPF)"></a>短作业优先(SJF/SPF)</h3><ul>
+<li>思想&amp;规则<ul>
+<li>每次调度时选择当前已到达且运行时间最短的作业/进程</li>
+</ul>
+</li>
+<li>可抢占？<ul>
+<li>默认为非抢占式，也有SJF的抢占式，版本最短剩余时间优先算法(SRTN)</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>“最短的”平均等待/周转时间</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>对长作业不利，可能导致饥饿；难以做到真正的短作业优先</li>
+</ul>
+</li>
+<li>考虑到等待时间&amp;运行时间<ul>
+<li>等待时间×</li>
+<li>运行时间√</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>会</li>
+</ul>
+</li>
+</ul>
+<h3 id="高响应比优先-HRRN"><a href="#高响应比优先-HRRN" class="headerlink" title="高响应比优先(HRRN)"></a>高响应比优先(HRRN)</h3><ul>
+<li><p>$$<br>响应比 = (等待时间+要求服务的时间)/要求服务的时间<br>$$</p>
+</li>
+<li><p>思想&amp;规则</p>
+<ul>
+<li>非抢占式的调度算法，只有当前运行的进程主动放弃CPU时（正常/异常完成，或主动阻塞），才需要进行调度，调度时计算所有就绪进程的响应比，选响应比最高的进程上处理机</li>
+</ul>
+</li>
+<li><p>可抢占式？</p>
+<ul>
+<li>非抢占式</li>
+</ul>
+</li>
+<li><p>优点</p>
+<ul>
+<li>上述两种算法的权衡折中，综合考虑的等待时间和运行时间</li>
+</ul>
+</li>
+<li><p>缺点</p>
+</li>
+<li><p>考虑到等待时间&amp;运行时间？</p>
+<ul>
+<li>等待时间√</li>
+<li>运行时间√</li>
+</ul>
+</li>
+<li><p>会导致饥饿？</p>
+<ul>
+<li>不会</li>
+</ul>
+</li>
+</ul>
+<h3 id="时间片轮转-RR"><a href="#时间片轮转-RR" class="headerlink" title="时间片轮转(RR)"></a>时间片轮转(RR)</h3><ul>
+<li>思想&amp;规则</li>
+<li>可抢占？<ul>
+<li>抢占式</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>公平，适用于分时系统</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>频繁切换有开销，不区分优先级</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>不会</li>
+</ul>
+</li>
+<li>补充<ul>
+<li>时间片太大或太小有何影响？</li>
+</ul>
+</li>
+</ul>
+<h3 id="优先级调度"><a href="#优先级调度" class="headerlink" title="优先级调度"></a>优先级调度</h3><ul>
+<li>思想&amp;规则</li>
+<li>可抢占？<ul>
+<li>有抢占式的，也有非抢占式的。注意做题时的区别</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>区分优先级，适用于实时系统</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>可能导致饥饿</li>
+</ul>
+</li>
+<li>会导致饥饿？<ul>
+<li>会</li>
+</ul>
+</li>
+<li>补充<ul>
+<li>动态/静态优先级。</li>
+<li>各类型进程如何设置优先级？</li>
+<li>如何调整优先级？</li>
+</ul>
+</li>
+</ul>
+<h3 id="多级反馈队列"><a href="#多级反馈队列" class="headerlink" title="多级反馈队列"></a>多级反馈队列</h3><ul>
+<li>思想&amp;规则<ul>
+<li>较复杂，注意理解</li>
+</ul>
+</li>
+<li>可抢占？<ul>
+<li>抢占式</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>平衡优秀</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>一般不说它有缺点，不过可能导致饥饿</li>
 </ul>
 </li>
 </ul>
@@ -3227,271 +3492,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>操作系统2.2</title>
-    <url>/blog/2020/05/12/OSsecondtwo/</url>
-    <content><![CDATA[<h2 id="处理机调度"><a href="#处理机调度" class="headerlink" title="处理机调度"></a>处理机调度</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
-<li>按某种算法选择一个进程将处理机分配给它</li>
-</ul>
-<h3 id="三个层次"><a href="#三个层次" class="headerlink" title="三个层次"></a>三个层次</h3><ul>
-<li><p>高级调度<strong>(作业调度)</strong></p>
-<ul>
-<li>按照某种规则，从后备队列中选择合适的作业将其调入内存，并为其创建进程</li>
-</ul>
-</li>
-<li><p>中级调度<strong>(内存调度)</strong></p>
-<ul>
-<li>按照某种规则，从挂起队列中选择合适的进程将其数据调回内存</li>
-</ul>
-</li>
-<li><p>低级调度(进程调度)</p>
-<ul>
-<li>按照某种规则，从就绪队列中选择一个进程为其分配处理机</li>
-</ul>
-</li>
-</ul>
-<h3 id="三层调度的联系、对比"><a href="#三层调度的联系、对比" class="headerlink" title="三层调度的联系、对比"></a>三层调度的联系、对比</h3><ul>
-<li>高级调度<ul>
-<li>外存-&gt;内存(面向作业)</li>
-<li>发生频率：最低</li>
-</ul>
-</li>
-<li>中级调度<ul>
-<li>外存-&gt;内存(面向进程)</li>
-<li>发送频率：中等</li>
-</ul>
-</li>
-<li>低级调度<ul>
-<li>内存-&gt;CPU</li>
-<li>发生频率：最高</li>
-</ul>
-</li>
-</ul>
-<h3 id="补充知识"><a href="#补充知识" class="headerlink" title="补充知识"></a>补充知识</h3><ul>
-<li>为减轻系统负载，提供资源利用率，暂时不执行的进程会被调到外存从而变为“挂起态”</li>
-<li>七状态模型：在五状态模型的基础上加入了“就绪挂起”和“阻塞挂起”两种状态</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="进程调度的时机、切换与过程、调度方式"><a href="#进程调度的时机、切换与过程、调度方式" class="headerlink" title="进程调度的时机、切换与过程、调度方式"></a>进程调度的时机、切换与过程、调度方式</h2><h3 id="时机"><a href="#时机" class="headerlink" title="时机"></a>时机</h3><ul>
-<li>什么时候需要进程调度？<ul>
-<li>主动放弃<ul>
-<li>进程正常终止</li>
-<li>运行过程中发生异常而终止</li>
-<li>主动阻塞(如等待I/O)</li>
-</ul>
-</li>
-<li>被动放弃<ul>
-<li>分给进程的时间片用完</li>
-<li>有更紧急的事情需要处理(如I/O中断)</li>
-<li>有更高优先级的进程进入就绪队列</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>什么时候不能进行进程调度<ul>
-<li>在处理中断的过程中</li>
-<li>进程在操作系统内核程序临界区中</li>
-<li>原子操作过程中(原语)</li>
-</ul>
-</li>
-</ul>
-<h3 id="切换与过程"><a href="#切换与过程" class="headerlink" title="切换与过程"></a>切换与过程</h3><ul>
-<li>切换过程<ul>
-<li>对原来运行进程各种数据的保存</li>
-<li>对新的进程各种数据的恢复</li>
-</ul>
-</li>
-<li>重要结论：<strong>进程调度、切换是有代价的</strong>，并不是调度越频繁，并发度越高</li>
-</ul>
-<h3 id="方式"><a href="#方式" class="headerlink" title="方式"></a>方式</h3><ul>
-<li>非剥夺调度方式(非抢占式)<ul>
-<li>只能由当前运行的进程主动放弃CPU</li>
-</ul>
-</li>
-<li>剥夺调度方式(抢占式)<ul>
-<li>可由操作系统剥夺当前进程的CPU使用权</li>
-</ul>
-</li>
-</ul>
-<h2 id="调度算法的评价指标"><a href="#调度算法的评价指标" class="headerlink" title="调度算法的评价指标"></a>调度算法的评价指标</h2><h3 id="CPU利用率"><a href="#CPU利用率" class="headerlink" title="CPU利用率"></a>CPU利用率</h3><ul>
-<li>$$<br>利用率 = 忙碌的时间/总时间<br>$$</li>
-</ul>
-<h3 id="系统吞吐量"><a href="#系统吞吐量" class="headerlink" title="系统吞吐量"></a>系统吞吐量</h3><ul>
-<li>$$<br>系统吞吐量 = 总共完成了多少道作业/总共花了多少时间<br>$$</li>
-</ul>
-<h3 id="周转时间"><a href="#周转时间" class="headerlink" title="周转时间"></a>周转时间</h3><ul>
-<li><p>$$<br>周转时间 = 作业完成时间-作业到达时间<br>$$</p>
-</li>
-<li><p>$$<br>平均周转时间 = 各作业周转时间之和/作业数<br>$$</p>
-</li>
-<li><p>$$<br>带权周转时间 = 作业周转时间 / 作业实际运行的时间<br>$$</p>
-</li>
-<li><p>$$<br>平均带权周转时间 = 各作业带权周转时间之和 / 作业数<br>$$</p>
-</li>
-</ul>
-<h3 id="等待时间"><a href="#等待时间" class="headerlink" title="等待时间"></a>等待时间</h3><ul>
-<li>//进程/作业                等待被服务的时间之和</li>
-<li>周转时间-运行时间-(I/O操作的时间)</li>
-<li>平均等待时间即   各个进程/作业等待时间的平均值</li>
-</ul>
-<h3 id="响应时间"><a href="#响应时间" class="headerlink" title="响应时间"></a>响应时间</h3><ul>
-<li>从用户提交请求到首次产生响应所用的时间</li>
-</ul>
-<h2 id="调度算法"><a href="#调度算法" class="headerlink" title="调度算法"></a>调度算法</h2><h3 id="先来先服务-FCFS"><a href="#先来先服务-FCFS" class="headerlink" title="先来先服务(FCFS)"></a>先来先服务(FCFS)</h3><ul>
-<li>思想&amp;&amp;规则<ul>
-<li>按照到达的先后顺序调度，事实上就是等待时间越久越优先得到服务</li>
-</ul>
-</li>
-<li>可抢占？<ul>
-<li>非抢占式</li>
-</ul>
-</li>
-<li>优点<ul>
-<li>公平：实现简单</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>对短作业不利</li>
-</ul>
-</li>
-<li>考虑到等待时间&amp;运行时间？<ul>
-<li>等待时间√    </li>
-<li>运行时间×</li>
-</ul>
-</li>
-<li>会导致饥饿？<ul>
-<li>不会</li>
-</ul>
-</li>
-</ul>
-<h3 id="短作业优先-SJF-SPF"><a href="#短作业优先-SJF-SPF" class="headerlink" title="短作业优先(SJF/SPF)"></a>短作业优先(SJF/SPF)</h3><ul>
-<li>思想&amp;规则<ul>
-<li>每次调度时选择当前已到达且运行时间最短的作业/进程</li>
-</ul>
-</li>
-<li>可抢占？<ul>
-<li>默认为非抢占式，也有SJF的抢占式，版本最短剩余时间优先算法(SRTN)</li>
-</ul>
-</li>
-<li>优点<ul>
-<li>“最短的”平均等待/周转时间</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>对长作业不利，可能导致饥饿；难以做到真正的短作业优先</li>
-</ul>
-</li>
-<li>考虑到等待时间&amp;运行时间<ul>
-<li>等待时间×</li>
-<li>运行时间√</li>
-</ul>
-</li>
-<li>会导致饥饿？<ul>
-<li>会</li>
-</ul>
-</li>
-</ul>
-<h3 id="高响应比优先-HRRN"><a href="#高响应比优先-HRRN" class="headerlink" title="高响应比优先(HRRN)"></a>高响应比优先(HRRN)</h3><ul>
-<li><p>$$<br>响应比 = (等待时间+要求服务的时间)/要求服务的时间<br>$$</p>
-</li>
-<li><p>思想&amp;规则</p>
-<ul>
-<li>非抢占式的调度算法，只有当前运行的进程主动放弃CPU时（正常/异常完成，或主动阻塞），才需要进行调度，调度时计算所有就绪进程的响应比，选响应比最高的进程上处理机</li>
-</ul>
-</li>
-<li><p>可抢占式？</p>
-<ul>
-<li>非抢占式</li>
-</ul>
-</li>
-<li><p>优点</p>
-<ul>
-<li>上述两种算法的权衡折中，综合考虑的等待时间和运行时间</li>
-</ul>
-</li>
-<li><p>缺点</p>
-</li>
-<li><p>考虑到等待时间&amp;运行时间？</p>
-<ul>
-<li>等待时间√</li>
-<li>运行时间√</li>
-</ul>
-</li>
-<li><p>会导致饥饿？</p>
-<ul>
-<li>不会</li>
-</ul>
-</li>
-</ul>
-<h3 id="时间片轮转-RR"><a href="#时间片轮转-RR" class="headerlink" title="时间片轮转(RR)"></a>时间片轮转(RR)</h3><ul>
-<li>思想&amp;规则</li>
-<li>可抢占？<ul>
-<li>抢占式</li>
-</ul>
-</li>
-<li>优点<ul>
-<li>公平，适用于分时系统</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>频繁切换有开销，不区分优先级</li>
-</ul>
-</li>
-<li>会导致饥饿？<ul>
-<li>不会</li>
-</ul>
-</li>
-<li>补充<ul>
-<li>时间片太大或太小有何影响？</li>
-</ul>
-</li>
-</ul>
-<h3 id="优先级调度"><a href="#优先级调度" class="headerlink" title="优先级调度"></a>优先级调度</h3><ul>
-<li>思想&amp;规则</li>
-<li>可抢占？<ul>
-<li>有抢占式的，也有非抢占式的。注意做题时的区别</li>
-</ul>
-</li>
-<li>优点<ul>
-<li>区分优先级，适用于实时系统</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>可能导致饥饿</li>
-</ul>
-</li>
-<li>会导致饥饿？<ul>
-<li>会</li>
-</ul>
-</li>
-<li>补充<ul>
-<li>动态/静态优先级。</li>
-<li>各类型进程如何设置优先级？</li>
-<li>如何调整优先级？</li>
-</ul>
-</li>
-</ul>
-<h3 id="多级反馈队列"><a href="#多级反馈队列" class="headerlink" title="多级反馈队列"></a>多级反馈队列</h3><ul>
-<li>思想&amp;规则<ul>
-<li>较复杂，注意理解</li>
-</ul>
-</li>
-<li>可抢占？<ul>
-<li>抢占式</li>
-</ul>
-</li>
-<li>优点<ul>
-<li>平衡优秀</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>一般不说它有缺点，不过可能导致饥饿</li>
-</ul>
-</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
     <title>操作系统3.2</title>
     <url>/blog/2020/05/19/OSthirdtwo/</url>
     <content><![CDATA[<h2 id="3-2-1、虚拟内存的基本概念"><a href="#3-2-1、虚拟内存的基本概念" class="headerlink" title="3.2.1、虚拟内存的基本概念"></a>3.2.1、虚拟内存的基本概念</h2><h3 id="传统存储管理方式的特征、缺点"><a href="#传统存储管理方式的特征、缺点" class="headerlink" title="传统存储管理方式的特征、缺点"></a>传统存储管理方式的特征、缺点</h3><ul>
@@ -3731,6 +3731,13 @@
 ]]></content>
   </entry>
   <entry>
+    <title>eclipse快捷键</title>
+    <url>/blog/2020/05/10/eclipse-convenientkey/</url>
+    <content><![CDATA[<p>常用的快捷键：</p>
+<p>添加单行注释： Ctrl + /        取消：Ctrl + /<br>添加多行注释：Ctrl + Shift + /        取消：Ctrl + Shift + <br>向下复制一行：Ctrl + Alt + 向下<br>向上复制一行：Ctrl + Alt + 向上<br>向上移动代码：Alt + 向上<br>向下移动代码：Alt + 向下<br>删除当前行：Ctrl + D<br>格式化：Ctrl + Shift + F<br>智能提示：Alt + /<br>更改变量名称：Alt + Shift + R<br>弹出源代码的相关选项： Alt+Shift+S</p>
+<a id="more"></a>]]></content>
+  </entry>
+  <entry>
     <title>IDEA快捷键</title>
     <url>/blog/2020/05/09/idea-confidentkey/</url>
     <content><![CDATA[<p><strong>main方法：  main  /   psvm</strong></p>
@@ -3742,13 +3749,6 @@
 <p><strong>插入方法：Alt + Insert</strong></p>
 <p><strong>Translation： 选中单词或者段落ctrl+shift+y翻译，ctrl+shift+s切换翻译源</strong></p>
 <p><strong>上下移动代码：Ctrl+Shift+上下键</strong></p>
-<a id="more"></a>]]></content>
-  </entry>
-  <entry>
-    <title>eclipse快捷键</title>
-    <url>/blog/2020/05/10/eclipse-convenientkey/</url>
-    <content><![CDATA[<p>常用的快捷键：</p>
-<p>添加单行注释： Ctrl + /        取消：Ctrl + /<br>添加多行注释：Ctrl + Shift + /        取消：Ctrl + Shift + <br>向下复制一行：Ctrl + Alt + 向下<br>向上复制一行：Ctrl + Alt + 向上<br>向上移动代码：Alt + 向上<br>向下移动代码：Alt + 向下<br>删除当前行：Ctrl + D<br>格式化：Ctrl + Shift + F<br>智能提示：Alt + /<br>更改变量名称：Alt + Shift + R<br>弹出源代码的相关选项： Alt+Shift+S</p>
 <a id="more"></a>]]></content>
   </entry>
   <entry>
@@ -4878,6 +4878,16 @@
 ]]></content>
   </entry>
   <entry>
+    <title>解决乱码</title>
+    <url>/blog/2020/05/28/solve-the-mess/</url>
+    <content><![CDATA[<h3 id="1、解决Tomcat乱码"><a href="#1、解决Tomcat乱码" class="headerlink" title="1、解决Tomcat乱码"></a>1、解决Tomcat乱码</h3><p>1.在32位的idea.exe.vmoptions和64位的idea64.exe.vmoptions启动项配置文件下添加了下面</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-Dfile.encoding&#x3D;UTF-8&#96; &#96;-Dconsole.encoding&#x3D;UTF-8</span><br></pre></td></tr></table></figure>
+
+<p>2.tomcat目录下conf目录下的自己的server.xml文件中添加了一个配置<img src="/blog/blog/.com/2020/05/28/solve-the-mess/%E4%BF%AE%E6%94%B9server.xml.png" alt="img"></p>
+<p>3.修改 tomcat 下的 logging.properties这个文件 为 GBK 就好了。<br>#java.util.logging.ConsoleHandler.encoding = UTF-8<br>java.util.logging.ConsoleHandler.encoding = GBK</p>
+<a id="more"></a>]]></content>
+  </entry>
+  <entry>
     <title>多线程</title>
     <url>/blog/2020/05/24/thread-study/</url>
     <content><![CDATA[<h4 id="1、线程实现"><a href="#1、线程实现" class="headerlink" title="1、线程实现"></a>1、线程实现</h4><h5 id="1-1、继承Thread类"><a href="#1-1、继承Thread类" class="headerlink" title="1.1、继承Thread类"></a>1.1、继承Thread类</h5><ul>
@@ -5024,16 +5034,6 @@
 <h4 id="5、总结"><a href="#5、总结" class="headerlink" title="5、总结"></a>5、总结</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//回顾总结线程的创建</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadNew</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> MyThread1().start();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">new</span> Thread(<span class="keyword">new</span> MyThread2()).start();</span><br><span class="line"></span><br><span class="line">        FutureTask&lt;Integer&gt; futureTask = <span class="keyword">new</span> FutureTask&lt;Integer&gt;(<span class="keyword">new</span> MyThread3());</span><br><span class="line">        <span class="keyword">new</span> Thread(futureTask).start();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Integer integer = futureTask.get();</span><br><span class="line">            System.out.println(integer);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (ExecutionException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//1.继承Thread类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread1</span> <span class="keyword">extends</span> <span class="title">Thread</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"MyThread1"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//2.实现Runnable接口</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread2</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"MyThread2"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//3.实现Callable接口</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread3</span> <span class="keyword">implements</span> <span class="title">Callable</span>&lt;<span class="title">Integer</span>&gt;</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Integer <span class="title">call</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"MyThread3"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">100</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
-  </entry>
-  <entry>
-    <title>解决乱码</title>
-    <url>/blog/2020/05/28/solve-the-mess/</url>
-    <content><![CDATA[<h3 id="1、解决Tomcat乱码"><a href="#1、解决Tomcat乱码" class="headerlink" title="1、解决Tomcat乱码"></a>1、解决Tomcat乱码</h3><p>1.在32位的idea.exe.vmoptions和64位的idea64.exe.vmoptions启动项配置文件下添加了下面</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-Dfile.encoding&#x3D;UTF-8&#96; &#96;-Dconsole.encoding&#x3D;UTF-8</span><br></pre></td></tr></table></figure>
-
-<p>2.tomcat目录下conf目录下的自己的server.xml文件中添加了一个配置<img src="/blog/blog/.com/2020/05/28/solve-the-mess/%E4%BF%AE%E6%94%B9server.xml.png" alt="img"></p>
-<p>3.修改 tomcat 下的 logging.properties这个文件 为 GBK 就好了。<br>#java.util.logging.ConsoleHandler.encoding = UTF-8<br>java.util.logging.ConsoleHandler.encoding = GBK</p>
-<a id="more"></a>]]></content>
   </entry>
   <entry>
     <title>mysql学习</title>
