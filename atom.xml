@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://cxxqing.github.io/blog/.com/"/>
-  <updated>2020-06-25T07:54:19.350Z</updated>
+  <updated>2020-06-25T13:21:52.924Z</updated>
   <id>https://cxxqing.github.io/blog/.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>spring-mvc</title>
+    <link href="https://cxxqing.github.io/blog/.com/2020/06/25/spring-mvc/"/>
+    <id>https://cxxqing.github.io/blog/.com/2020/06/25/spring-mvc/</id>
+    <published>2020-06-25T13:21:52.000Z</published>
+    <updated>2020-06-25T13:21:52.924Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Spring5</title>
@@ -890,54 +905,6 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统概述</title>
-    <link href="https://cxxqing.github.io/blog/.com/2020/05/10/OSfirst/"/>
-    <id>https://cxxqing.github.io/blog/.com/2020/05/10/OSfirst/</id>
-    <published>2020-05-10T07:59:26.000Z</published>
-    <updated>2020-06-15T14:51:37.475Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;操作系统的概念（定义）&quot;&gt;&lt;a href=&quot;#操作系统的概念（定义）&quot; class=&quot;headerlink&quot; title=&quot;操作系统的概念（定义）&quot;&gt;&lt;/a&gt;操作系统的概念（定义）&lt;/h2&gt;&lt;p&gt;操作系统（Operating System， OS）是指控制和管理整个计算机系统的硬件和软件资源，并合理地组织调度计算机的工作和资源的分配；以提供给用户和其他软件方便的接口和环境；它是计算机系统中最基本的系统软件。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;操作系统的特征&quot;&gt;&lt;a href=&quot;#操作系统的特征&quot; class=&quot;headerlink&quot; title=&quot;操作系统的特征&quot;&gt;&lt;/a&gt;操作系统的特征&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;并发：指两个或多个事件在同一时间间隔内发生。这些事件宏观上是同时发生的，但微观上是交替发生的。&lt;br&gt;易混淆考点–并行：指两个或多个事件在同一时刻同时发生。&lt;/li&gt;
-&lt;li&gt;共享即资源共享，是指系统中的资源可供内存中多个并发执行的进程共同使用。&lt;ul&gt;
-&lt;li&gt;互斥共享方式(如对摄像头设备的共享使用)&lt;/li&gt;
-&lt;li&gt;同时共享方式(如对磁盘自由的共享使用)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;虚拟是指把一个物理上的实体变为若干个逻辑上的对应物。物理实体（前者）是实际存在的，而逻辑上对应物（后者）是用户感受到的。&lt;ul&gt;
-&lt;li&gt;空分复用技术(如虚拟存储器)&lt;/li&gt;
-&lt;li&gt;时分复用技术(如虚拟处理器)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;异步是指在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底的，而是走走停停，以不可预知的速度向前推进，这就是进程的异步性。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;OS的发展与分类&quot;&gt;&lt;a href=&quot;#OS的发展与分类&quot; class=&quot;headerlink&quot; title=&quot;OS的发展与分类&quot;&gt;&lt;/a&gt;OS的发展与分类&lt;/h2&gt;&lt;h3 id=&quot;手工操作系统&quot;&gt;&lt;a href=&quot;#手工操作系统&quot; class=&quot;headerlink&quot; title=&quot;手工操作系统&quot;&gt;&lt;/a&gt;手工操作系统&lt;/h3&gt;&lt;h3 id=&quot;批处理阶段&quot;&gt;&lt;a href=&quot;#批处理阶段&quot; class=&quot;headerlink&quot; title=&quot;批处理阶段&quot;&gt;&lt;/a&gt;批处理阶段&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;单道批处理系统&lt;br&gt;引入脱机输入/输出技术（用外围机+磁带完成），并由监督程序负责控制作业的输入、输出&lt;br&gt;缺点：内存中仅能有一道程序运行, CPU有大量的时间是在空闲等待I/O完成&lt;/li&gt;
-&lt;li&gt;多道批处理系统(操作系统开始出现)&lt;br&gt;优点：多道程序并发执行，共享计算机资源。资源利用率大幅提升&lt;br&gt;缺点：没有人机交互功能&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;分时操作系统&quot;&gt;&lt;a href=&quot;#分时操作系统&quot; class=&quot;headerlink&quot; title=&quot;分时操作系统&quot;&gt;&lt;/a&gt;分时操作系统&lt;/h3&gt;&lt;p&gt;计算机以时间片为单位轮流为各个用户/作业服务&lt;br&gt;优点：解决了人机交互问题&lt;br&gt;缺点：不能优先处理一些紧急任务&lt;/p&gt;
-&lt;h3 id=&quot;实时操作系统&quot;&gt;&lt;a href=&quot;#实时操作系统&quot; class=&quot;headerlink&quot; title=&quot;实时操作系统&quot;&gt;&lt;/a&gt;实时操作系统&lt;/h3&gt;&lt;p&gt;要在严格的时限内处理完事件，具有及时性和可靠性&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;硬实时系统  必须在绝对严格的规定时间内完成处理    如导弹控制系统&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;软实时系统     能接受偶尔违反时间规定              如12306火车订票系统&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;网络操作系统&quot;&gt;&lt;a href=&quot;#网络操作系统&quot; class=&quot;headerlink&quot; title=&quot;网络操作系统&quot;&gt;&lt;/a&gt;网络操作系统&lt;/h3&gt;&lt;p&gt;实现网络中各种资源的共享（如文件共享）和各台计算机之间的通信&lt;/p&gt;
-&lt;h3 id=&quot;分布式操作系统&quot;&gt;&lt;a href=&quot;#分布式操作系统&quot; class=&quot;headerlink&quot; title=&quot;分布式操作系统&quot;&gt;&lt;/a&gt;分布式操作系统&lt;/h3&gt;&lt;p&gt;分布性和并行性&lt;br&gt;任何工作都可以分布在这些计算机上，由它们并行、协同完成这个任务&lt;/p&gt;
-&lt;h3 id=&quot;个人计算机操作系统&quot;&gt;&lt;a href=&quot;#个人计算机操作系统&quot; class=&quot;headerlink&quot; title=&quot;个人计算机操作系统&quot;&gt;&lt;/a&gt;个人计算机操作系统&lt;/h3&gt;&lt;hr&gt;
     
     </summary>
     
