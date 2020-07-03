@@ -213,10 +213,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-07-03 16:41:14 / 修改时间：21:13:03" itemprop="dateCreated datePublished" datetime="2020-07-03T16:41:14+08:00">2020-07-03</time>
+              <time title="创建时间：2020-07-03 16:41:14" itemprop="dateCreated datePublished" datetime="2020-07-03T16:41:14+08:00">2020-07-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-04 00:06:14" itemprop="dateModified" datetime="2020-07-04T00:06:14+08:00">2020-07-04</time>
+              </span>
 
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -224,14 +230,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.3k</span>
+              <span>6.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
+              <span>6 分钟</span>
             </span>
 
         </div>
@@ -354,7 +360,77 @@
 <p>只需要做一次这个设置，如果你传递了–global 选项，因为Git将总是会使用该信息来处理你在系统中所做的一切操作。如果你希望在一个特定的项目中使用不同的名称或e-mail地址，你可以在该项目中运行该命令而不要–global选项。总之–global为全局配置，不加为某个项目的特定配置。</p>
 <img src="/blog/2020/07/03/git/%E8%8E%B7%E5%BE%97%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE.png" class>
 
-<h3 id="4、Git基本理论（重要）"><a href="#4、Git基本理论（重要）" class="headerlink" title="4、Git基本理论（重要）"></a>4、Git基本理论（重要）</h3>
+<h3 id="4、Git基本理论（重要）"><a href="#4、Git基本理论（重要）" class="headerlink" title="4、Git基本理论（重要）"></a>4、Git基本理论（重要）</h3><h4 id="4-1、三个区域"><a href="#4-1、三个区域" class="headerlink" title="4.1、三个区域"></a>4.1、三个区域</h4><p>Git本地有三个工作区域：工作目录（Working Directory）、暂存区(Stage/Index)、资源库(Repository或Git Directory)。如果在加上远程的git仓库(Remote Directory)就可以分为四个工作区域。文件在这四个区域之间的转换关系如下：</p>
+<img src="/blog/2020/07/03/git/git%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%9F%9F.png" class>
+
+<ul>
+<li>Workspace：工作区，就是我们平时存放项目代码的地方</li>
+<li>Index / Stage：暂存区，用于临时存放我们的改动，事实上它只是一个文件，保存即将提交到文件列表信息</li>
+<li>Repository：仓库区（或本地仓库），就是安全存放数据的位置，这里面有我们提交到所有版本的数据。其中HEAD指向最新放入仓库的版本</li>
+<li>Remote：远程仓库，托管代码的服务器，可以简单的认为是我们项目组中的一台电脑用于远程数据交换</li>
+</ul>
+<p>本地的三个区域确切的说应该是git仓库中HEAD指向的版本：</p>
+<img src="/blog/2020/07/03/git/%E6%9C%AC%E5%9C%B0%E4%B8%89%E4%B8%AA%E5%8C%BA%E5%9F%9F.png" class>
+
+<ul>
+<li>Directory：使用Git管理的一个目录，也就是一个仓库，包含我们的工作空间和Git的管理空间。</li>
+<li>WorkSpace：需要通过Git进行版本控制的目录和文件，这些目录和文件组成了工作空间。</li>
+<li>.git：存放Git管理信息的目录，初始化仓库的时候自动创建。</li>
+<li>Index/Stage：暂存区，或者叫待提交更新区，在提交进入repo之前，我们可以把所有的更新放在暂存区。</li>
+<li>Local Repo：本地仓库，一个存放在本地的版本库；HEAD会只是当前的开发分支（branch）。</li>
+<li>Stash：隐藏，是一个工作状态保存栈，用于保存/恢复WorkSpace中的临时状态。</li>
+</ul>
+<h4 id="4-2、工作流程"><a href="#4-2、工作流程" class="headerlink" title="4.2、工作流程"></a>4.2、工作流程</h4><p>git的工作流程一般是这样的：</p>
+<p>１、在工作目录中添加、修改文件；</p>
+<p>２、将需要进行版本管理的文件放入暂存区域；</p>
+<p>３、将暂存区域的文件提交到git仓库。</p>
+<p>因此，git管理的文件有三种状态：已修改（modified）,已暂存（staged）,已提交(committed)</p>
+<img src="/blog/2020/07/03/git/%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.png" class>
+
+<h3 id="5、Git项目搭建"><a href="#5、Git项目搭建" class="headerlink" title="5、Git项目搭建"></a>5、Git项目搭建</h3><h4 id="5-1、创建工作目录与常用指令"><a href="#5-1、创建工作目录与常用指令" class="headerlink" title="5.1、创建工作目录与常用指令"></a>5.1、创建工作目录与常用指令</h4><p>工作目录（WorkSpace)一般就是你希望Git帮助你管理的文件夹，可以是你项目的目录，也可以是一个空目录，建议不要有中文。</p>
+<p>日常使用只要记住下图6个命令：</p>
+<img src="/blog/2020/07/03/git/git%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8.png" class>
+
+<h4 id="5-1、本地仓库搭建"><a href="#5-1、本地仓库搭建" class="headerlink" title="5.1、本地仓库搭建"></a>5.1、本地仓库搭建</h4><p>创建本地仓库的方法有两种：一种是创建全新的仓库，另一种是克隆远程仓库。</p>
+<h5 id="1、创建全新的仓库"><a href="#1、创建全新的仓库" class="headerlink" title="1、创建全新的仓库"></a>1、创建全新的仓库</h5><p>1、创建全新的仓库，需要用GIT管理的项目的根目录执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在当前目录新建一个Git代码库</span></span><br><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+
+<p>2、执行后可以看到，仅仅在项目目录多出了一个.git目录，关于版本等的所有信息都在这个目录里面。</p>
+<h5 id="2、克隆远程仓库"><a href="#2、克隆远程仓库" class="headerlink" title="2、克隆远程仓库"></a>2、克隆远程仓库</h5><p>1、另一种方式是克隆远程目录，由于是将远程服务器上的仓库完全镜像一份至本地！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 克隆一个项目和它的整个代码历史(版本信息)</span></span><br><span class="line">$ git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure>
+
+<p>2、去 gitee 或者 github 上克隆一个测试</p>
+<h3 id="6、Git文件操作"><a href="#6、Git文件操作" class="headerlink" title="6、Git文件操作"></a>6、Git文件操作</h3><h4 id="6-1、文件的四种状态"><a href="#6-1、文件的四种状态" class="headerlink" title="6.1、文件的四种状态"></a>6.1、文件的四种状态</h4><p>版本控制就是对文件的版本控制，要对文件进行修改、提交等操作，首先要知道文件当前在什么状态，不然可能会提交了现在还不想提交的文件，或者要提交的文件没提交上。</p>
+<ul>
+<li>Untracked: 未跟踪, 此文件在文件夹中, 但并没有加入到git库, 不参与版本控制. 通过git add 状态变为Staged.</li>
+<li>Unmodify: 文件已经入库, 未修改, 即版本库中的文件快照内容与文件夹中完全一致. 这种类型的文件有两种去处, 如果它被修改, 而变为Modified. 如果使用git rm移出版本库, 则成为Untracked文件</li>
+<li>Modified: 文件已修改, 仅仅是修改, 并没有进行其他的操作. 这个文件也有两个去处, 通过git add可进入暂存staged状态, 使用git checkout 则丢弃修改过, 返回到unmodify状态, 这个git checkout即从库中取出文件, 覆盖当前修改 !</li>
+<li>Staged: 暂存状态. 执行git commit则将修改同步到库中, 这时库中的文件和本地文件又变为一致, 文件为Unmodify状态. 执行git reset HEAD filename取消暂存, 文件状态为Modified</li>
+</ul>
+<h4 id="6-2、查看文件状态"><a href="#6-2、查看文件状态" class="headerlink" title="6.2、查看文件状态"></a>6.2、查看文件状态</h4><p>上面说文件有4种状态，通过如下命令可以查看到文件的状态：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查看指定文件状态</span></span><br><span class="line">git status [filename]</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看所有文件状态</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># git add .                  添加所有文件到暂存区</span></span><br><span class="line"><span class="comment"># git commit -m "消息内容"    提交暂存区中的内容到本地仓库 -m 提交信息</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="6-3、忽略文件"><a href="#6-3、忽略文件" class="headerlink" title="6.3、忽略文件"></a>6.3、忽略文件</h4><p>有些时候我们不想把某些文件纳入版本控制中，比如数据库文件，临时文件，设计文件等</p>
+<p>在主目录下建立”.gitignore”文件，此文件有如下规则：</p>
+<ol>
+<li>忽略文件中的空行或以井号（#）开始的行将会被忽略。</li>
+<li>可以使用Linux通配符。例如：星号（*）代表任意多个字符，问号（？）代表一个字符，方括号（[abc]）代表可选字符范围，大括号（{string1,string2,…}）代表可选的字符串等。</li>
+<li>如果名称的最前面有一个感叹号（!），表示例外规则，将不被忽略。</li>
+<li>如果名称的最前面是一个路径分隔符（/），表示要忽略的文件在此目录下，而子目录中的文件不忽略。</li>
+<li>如果名称的最后面是一个路径分隔符（/），表示要忽略的是此目录下该名称的子目录，而非文件（默认文件或目录都忽略）</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#为注释</span></span><br><span class="line">*.txt        <span class="comment">#忽略所有 .txt结尾的文件,这样的话上传就不会被选中！</span></span><br><span class="line">!lib.txt     <span class="comment">#但lib.txt除外</span></span><br><span class="line">/temp        <span class="comment">#仅忽略项目根目录下的TODO文件,不包括其它目录temp</span></span><br><span class="line">build/       <span class="comment">#忽略build/目录下的所有文件</span></span><br><span class="line">doc/*.txt    <span class="comment">#会忽略 doc/notes.txt 但不包括 doc/server/arch.txt</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="7、使用码云"><a href="#7、使用码云" class="headerlink" title="7、使用码云"></a>7、使用码云</h3><p>1、注册登录码云，完善个人信息</p>
+<p>2、设置本机绑定SSH公钥，实现免密码登录！（免密码登录，这一步挺重要的，码云是远程仓库，我们是平时工作在本地仓库！)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入 C:\Users\Carey\.ssh 目录</span></span><br><span class="line"><span class="comment"># 生成公钥</span></span><br><span class="line">ssh-keygen</span><br><span class="line"><span class="comment">#加密生成可用这个   ssh-keygen -t rsa</span></span><br></pre></td></tr></table></figure>
+
+<p>3、将公钥信息public key 添加到码云账户中即可！</p>
+<p>4、使用码云创建一个自己的仓库！</p>
+<img src="/blog/2020/07/03/git/%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93.png" class>
+
+<h3 id="8、git分支"><a href="#8、git分支" class="headerlink" title="8、git分支"></a>8、git分支</h3><p>git分支中常用指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 列出所有本地分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有远程分支</span></span><br><span class="line">git branch -r</span><br><span class="line"><span class="comment"># 新建一个分支，但依然停留在当前分支</span></span><br><span class="line">git branch [branch-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，并切换到该分支</span></span><br><span class="line">git checkout -b [branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">$ git merge [branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除分支</span></span><br><span class="line">$ git branch -d [branch-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除远程分支</span></span><br><span class="line">$ git push origin --delete [branch-name]</span><br><span class="line">$ git branch -dr [remote/branch]</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -1396,13 +1472,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">314k</span>
+    <span title="站点总字数">317k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:46</span>
+    <span title="站点阅读时长">4:48</span>
 </div>
 
         
