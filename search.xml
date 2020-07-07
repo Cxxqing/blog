@@ -4574,7 +4574,7 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Javaweb学习</title>
+    <title>javaweb</title>
     <url>/blog/2020/05/14/javaweb/</url>
     <content><![CDATA[<h2 id="Javaweb"><a href="#Javaweb" class="headerlink" title="Javaweb"></a>Javaweb</h2><p>学习自：<a href="https://www.bilibili.com/video/BV12J411M7Sj?p=1" target="_blank" rel="noopener">https://www.bilibili.com/video/BV12J411M7Sj?p=1</a>    </p>
 <a id="more"></a>
@@ -4620,7 +4620,7 @@
 </ul>
 <h4 id="1-3、静态web"><a href="#1-3、静态web" class="headerlink" title="1.3、静态web"></a>1.3、静态web</h4><ul>
 <li><p>*.htm,*.html,这些都是网页的后缀，如果服务器上一直存在这些东西，我们就可以直接进行读取，通络；</p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/image-20200515002613898.png" alt="image-20200515002613898"></p>
+<img src="/blog/2020/05/14/javaweb/image-20200515002613898.png" class>
 </li>
 <li><p>静态web存在的缺点</p>
 <ul>
@@ -4635,7 +4635,8 @@
 </li>
 </ul>
 <h4 id="1-4、动态web"><a href="#1-4、动态web" class="headerlink" title="1.4、动态web"></a>1.4、动态web</h4><p>页面会动态展示：“web的页面展示效果因人而异</p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/image-20200515001740921.png" alt="image-20200515001740921"></p>
+<img src="/blog/2020/05/14/javaweb/image-20200515001740921.png" class>
+
 <p>缺点：</p>
 <ul>
 <li>加入服务器的动态web资源出现了错误，我们需要重新编写我们的<strong>后台程序</strong>，重新发布<ul>
@@ -4648,7 +4649,8 @@
 <li><p>Web页面可以动态更新，所以用户看到都不是同一个页面</p>
 </li>
 <li><p>它可以与数据库交互(数据持久化：注册，商品信息，用户信息…..)</p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/image-20200515002307795.png" alt="image-20200515002307795"></p>
+<img src="/blog/2020/05/14/javaweb/image-20200515002307795.png" class>
+
 </li>
 </ul>
 <h3 id="2、web服务器"><a href="#2、web服务器" class="headerlink" title="2、web服务器"></a>2、web服务器</h3><h4 id="2-1、技术讲解"><a href="#2-1、技术讲解" class="headerlink" title="2.1、技术讲解"></a>2.1、技术讲解</h4><p><strong>ASP:</strong></p>
@@ -4678,7 +4680,8 @@
 <p><strong>IIS</strong> </p>
 <p>微软的;ASP…Windows自带</p>
 <p><strong>Tomcat</strong></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/Tomcat-logo.png" alt="image-20200522093402530"></p>
+<img src="/blog/2020/05/14/javaweb/Tomcat-logo.png" class>
+
 <p>Tomcat是Apache 软件基金会（Apache Software Foundation）的Jakarta 项目中的一个核心项目，最新的Servlet和JSP规范总是能在Tomcat中得到体现，因为Tomcat 技术先进、性能稳定，而且<strong>免费</strong>，因而深受Java 爱好者的喜爱并得到了部分软件开发商的认可，成为目前比较流行的Web 应用服务器。</p>
 <p>Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于轻量级应用<a href="https://baike.baidu.com/item/服务器" target="_blank" rel="noopener">服务器</a>，在中小型系统和并发访问用户不是很多的场合下被普遍使用，是开发和调试JSP 程序的首选。对于一个初学者来说，它是最佳的选择</p>
 <p>Tomcat 实际上运行JSP 页面和Servlet。Tomcat最新版本为<strong>10.0.0-M4。</strong></p>
@@ -4689,18 +4692,23 @@
 <p>2、了解配置文件及目录结构</p>
 <p>3、这个东西的作用</p>
 <h3 id="3、Tomcat"><a href="#3、Tomcat" class="headerlink" title="3、Tomcat"></a>3、Tomcat</h3><h4 id="3-1、安装Tomcat"><a href="#3-1、安装Tomcat" class="headerlink" title="3.1、安装Tomcat"></a>3.1、安装Tomcat</h4><p> Tomcat官网：<a href="https://tomcat.apache.org/" target="_blank" rel="noopener">https://tomcat.apache.org/</a></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/Tomcat%E4%B8%8B%E8%BD%BD.png" alt="image-20200522094350611"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%A7%A3%E5%8E%8BTomcat%E5%AE%89%E8%A3%85%E5%8C%85.png" alt="image-20200522100420201"></p>
+<img src="/blog/2020/05/14/javaweb/Tomcat%E4%B8%8B%E8%BD%BD.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E8%A7%A3%E5%8E%8BTomcat%E5%AE%89%E8%A3%85%E5%8C%85.png" class>
+
 <h4 id="3-2、Tomcat启动和配置"><a href="#3-2、Tomcat启动和配置" class="headerlink" title="3.2、Tomcat启动和配置"></a>3.2、Tomcat启动和配置</h4><p>文件夹作用：</p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/Tomcat%E6%96%87%E4%BB%B6%E5%A4%B9%E4%BD%9C%E7%94%A8.png" alt="image-20200522101352070"></p>
+<img src="/blog/2020/05/14/javaweb/Tomcat%E6%96%87%E4%BB%B6%E5%A4%B9%E4%BD%9C%E7%94%A8.png" class>
+
 <p><strong>启动，关闭Tomcat</strong></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8%E5%85%B3%E9%97%ADTomcat.png" alt="image-20200522102718557"></p>
+<img src="/blog/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8%E5%85%B3%E9%97%ADTomcat.png" class>
+
 <p>访问测试：<a href="http://localhost:8080/" target="_blank" rel="noopener">http://localhost:8080/</a></p>
 <p>可能遇到的问题：</p>
 <p>1、java环境变量没有配置</p>
 <p>2、闪退问题：需要配置兼容性</p>
 <p>3、乱码问题：配置文件中设置</p>
-<h4 id="3-3、配置"><a href="#3-3、配置" class="headerlink" title="3.3、配置"></a>3.3、配置</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%96%87%E4%BB%B6.png" alt="image-20200522120749015"></p>
+<h4 id="3-3、配置"><a href="#3-3、配置" class="headerlink" title="3.3、配置"></a>3.3、配置</h4><img src="/blog/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%96%87%E4%BB%B6.png" class>
+
 <p>可以配置启动的端口号</p>
 <ul>
 <li>tomcat的默认端口号为8080</li>
@@ -4726,9 +4734,11 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>          www.carey.com</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>没有，去DNS服务器找，找到的话就返回，找不到就返回找不到；</li>
+<li><p>没有，去DNS(全世界的域名都在这里管理)服务器找，找到的话就返回，找不到就返回找不到；</p>
+<img src="/blog/2020/05/14/javaweb/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E8%BF%87%E7%A8%8B.png" class>
+
+</li>
 </ul>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E8%BF%87%E7%A8%8B.png" alt="image-20200522123410354"></p>
 <h4 id="3-4、发布一个web网站"><a href="#3-4、发布一个web网站" class="headerlink" title="3.4、发布一个web网站"></a>3.4、发布一个web网站</h4><p>不会就先模仿</p>
 <ul>
 <li>将自己写的网站，放到服务器(Tomcat)中指定的web应用的文件夹(webapps)下，就可以访问了</li>
@@ -4818,16 +4828,21 @@
 </ul>
 <p>Maven会规定好你该如何去编写我们的Java代码，必须要按照这个规范来；</p>
 <h4 id="5-2、下载安装Maven"><a href="#5-2、下载安装Maven" class="headerlink" title="5.2、下载安装Maven"></a>5.2、下载安装Maven</h4><p>官网：<a href="https://maven.apache.org/" target="_blank" rel="noopener">https://maven.apache.org/</a></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85maven.png" alt="image-20200522213953483"></p>
+<img src="/blog/2020/05/14/javaweb/%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85maven.png" class>
+
 <p>下载完成后，解压即可；</p>
 <h4 id="5-3、配置环境变量"><a href="#5-3、配置环境变量" class="headerlink" title="5.3、配置环境变量"></a>5.3、配置环境变量</h4><p>在我们的系统环境变量中</p>
 <p>配置如下配置：</p>
 <ul>
-<li>M2_HOME        maven目录下的bin目录</li>
-<li>MAVEN_HOME         maven的目录</li>
-<li>在系统的path中配置    %MAVEN_HOME%\bin</li>
+<li><p>M2_HOME        maven目录下的bin目录</p>
+</li>
+<li><p>MAVEN_HOME         maven的目录</p>
+</li>
+<li><p>在系统的path中配置    %MAVEN_HOME%\bin</p>
+<img src="/blog/2020/05/14/javaweb/%E6%B5%8B%E8%AF%95maven%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png" class>
+
+</li>
 </ul>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%B5%8B%E8%AF%95maven%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png" alt="image-20200522220445894"></p>
 <p>测试maven是否安装成功，保证必须配置完毕！</p>
 <h4 id="5-4、阿里云镜像"><a href="#5-4、阿里云镜像" class="headerlink" title="5.4、阿里云镜像"></a>5.4、阿里云镜像</h4><ul>
 <li>镜像：mirrors<ul>
@@ -4844,65 +4859,98 @@
 
 <h4 id="5-6、在IDEA中使用Maven"><a href="#5-6、在IDEA中使用Maven" class="headerlink" title="5.6、在IDEA中使用Maven"></a>5.6、在IDEA中使用Maven</h4><p>1.启动IDEA</p>
 <p>2.创建一个MavenWeb项目</p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%88%9B%E5%BB%BAMavenWeb%E9%A1%B9%E7%9B%AE.png" alt="image-20200522223156611"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E7%BB%84id%E5%92%8C%E9%A1%B9%E7%9B%AE%E5%90%8D.png" alt="image-20200522223407655"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%80%89%E6%8B%A9maven%E7%B1%BB%E5%9E%8B%E5%92%8C%E4%BB%93%E5%BA%93.png" alt="image-20200522224000978"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/IDEA%E8%87%AA%E5%B8%A6maven.png" alt="image-20200522223842283"></p>
+<img src="/blog/2020/05/14/javaweb/%E5%88%9B%E5%BB%BAMavenWeb%E9%A1%B9%E7%9B%AE.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E7%BB%84id%E5%92%8C%E9%A1%B9%E7%9B%AE%E5%90%8D.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E9%80%89%E6%8B%A9maven%E7%B1%BB%E5%9E%8B%E5%92%8C%E4%BB%93%E5%BA%93.png" class>
+
+<img src="/blog/2020/05/14/javaweb/IDEA%E8%87%AA%E5%B8%A6maven.png" class>
+
 <p>3.等待项目初始化完毕    </p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/maven%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png" alt="image-20200522224912953"></p>
+<img src="/blog/2020/05/14/javaweb/maven%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png" class>
+
 <p>4.观察maven仓库中多了什么东西？</p>
 <p>5.IDEA中的Maven设置</p>
 <p>IDEA项目配置成功后，看一眼Maven配置</p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%A3%80%E6%9F%A5IDEA%E7%9A%84Maven%E9%85%8D%E7%BD%AE.png" alt="image-20200523001345121"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5%E6%BA%90%E7%A0%81.png" alt="image-20200523001539992"></p>
+<img src="/blog/2020/05/14/javaweb/%E6%A3%80%E6%9F%A5IDEA%E7%9A%84Maven%E9%85%8D%E7%BD%AE.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5%E6%BA%90%E7%A0%81.png" class>
+
 <p>6.到这里，Maven在IDEA中的配置和使用就OK了！</p>
-<h4 id="5-7、创建一个普通的Maven项目"><a href="#5-7、创建一个普通的Maven项目" class="headerlink" title="5.7、创建一个普通的Maven项目"></a>5.7、创建一个普通的Maven项目</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9AMaven%E9%A1%B9%E7%9B%AE.png" alt="image-20200523002048926"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%B9%B2%E5%87%80Maven%E9%A1%B9%E7%9B%AE%E7%95%8C%E9%9D%A2.png" alt="image-20200523002836004"></p>
+<h4 id="5-7、创建一个普通的Maven项目"><a href="#5-7、创建一个普通的Maven项目" class="headerlink" title="5.7、创建一个普通的Maven项目"></a>5.7、创建一个普通的Maven项目</h4><img src="/blog/2020/05/14/javaweb/%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9AMaven%E9%A1%B9%E7%9B%AE.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E5%B9%B2%E5%87%80Maven%E9%A1%B9%E7%9B%AE%E7%95%8C%E9%9D%A2.png" class>
+
 <p>下面这个只有在Web应用下才会有！</p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/WEB-INF.png" alt="image-20200523003159794"></p>
-<h4 id="5-8、标记文件夹功能"><a href="#5-8、标记文件夹功能" class="headerlink" title="5.8、标记文件夹功能"></a>5.8、标记文件夹功能</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%A0%87%E8%AE%B0%E7%9B%AE%E5%BD%95%E5%8A%9F%E8%83%BD.png" alt="image-20200523004313123"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E9%85%8D%E7%BD%AE.png" alt="image-20200523004720479"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%9C%A8%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E4%B8%AD%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%BB%99%E7%9B%AE%E5%BD%95%E6%A0%87%E8%AE%B0%E7%B1%BB%E5%9E%8B.png" alt="image-20200523004851461"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/target.png" alt="image-20200523005028198"></p>
-<h4 id="5-9、在IDEA中配置Tomcat"><a href="#5-9、在IDEA中配置Tomcat" class="headerlink" title="5.9、在IDEA中配置Tomcat"></a>5.9、在IDEA中配置Tomcat</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0%E9%85%8D%E7%BD%AE.png" alt="image-20200523005358175"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%9F%A5%E7%9C%8B%E9%80%89%E6%8B%A9%E9%85%8D%E7%BD%AE.png" alt="image-20200523005635890"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%80%89%E6%8B%A9Tomcat.png" alt="image-20200523010053534"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="image-20200523011121914"></p>
+<img src="/blog/2020/05/14/javaweb/WEB-INF.png" class>
+
+<h4 id="5-8、标记文件夹功能"><a href="#5-8、标记文件夹功能" class="headerlink" title="5.8、标记文件夹功能"></a>5.8、标记文件夹功能</h4><img src="/blog/2020/05/14/javaweb/%E6%A0%87%E8%AE%B0%E7%9B%AE%E5%BD%95%E5%8A%9F%E8%83%BD.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E9%85%8D%E7%BD%AE.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E5%9C%A8%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E4%B8%AD%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%BB%99%E7%9B%AE%E5%BD%95%E6%A0%87%E8%AE%B0%E7%B1%BB%E5%9E%8B.png" class>
+
+<img src="/blog/2020/05/14/javaweb/target.png" class>
+
+<h4 id="5-9、在IDEA中配置Tomcat"><a href="#5-9、在IDEA中配置Tomcat" class="headerlink" title="5.9、在IDEA中配置Tomcat"></a>5.9、在IDEA中配置Tomcat</h4><img src="/blog/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0%E9%85%8D%E7%BD%AE.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E6%9F%A5%E7%9C%8B%E9%80%89%E6%8B%A9%E9%85%8D%E7%BD%AE.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E9%80%89%E6%8B%A9Tomcat.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E9%85%8D%E7%BD%AETomcat%E6%9C%8D%E5%8A%A1%E5%99%A8.png" class>
+
 <p>解决警告问题</p>
 <p>必须要的配置：<strong>为什么会有这个问题：我们访问一个网站，需要制定一个文件夹名字；</strong></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0Artifact%E8%A7%A3%E5%86%B3%E8%AD%A6%E5%91%8A.png" alt="image-20200523011503518"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E8%B7%AF%E5%BE%84%E8%AE%BE%E7%BD%AE.png" alt="image-20200523011829379"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8Tomcat.png" alt="image-20200523011934034"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E9%BB%98%E8%AE%A4%E7%9A%84index.jsp%E7%9A%84%E5%86%85%E5%AE%B9.png" alt="image-20200523012356070"></p>
+<img src="/blog/2020/05/14/javaweb/%E6%B7%BB%E5%8A%A0Artifact%E8%A7%A3%E5%86%B3%E8%AD%A6%E5%91%8A.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E8%B7%AF%E5%BE%84%E8%AE%BE%E7%BD%AE.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E5%90%AF%E5%8A%A8Tomcat.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E8%AE%BF%E9%97%AE%E9%BB%98%E8%AE%A4%E7%9A%84index.jsp%E7%9A%84%E5%86%85%E5%AE%B9.png" class>
+
 <h4 id="5-10、pom文件"><a href="#5-10、pom文件" class="headerlink" title="5.10、pom文件"></a>5.10、pom文件</h4><p>pom.xml是Maven的核心配置文件</p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/Maven%E5%86%85%E5%AE%B9%E4%BB%8B%E7%BB%8D.png" alt="image-20200523013103579"></p>
+<img src="/blog/2020/05/14/javaweb/Maven%E5%86%85%E5%AE%B9%E4%BB%8B%E7%BB%8D.png" class>
+
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--Maven版本和头文件--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span> <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--这里就是我们刚才配置的GAV--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.carey<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>javaweb-01-maven<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!--Package：项目的打包方式</span></span><br><span class="line"><span class="comment">  jar：java应用</span></span><br><span class="line"><span class="comment">  war：Javaweb应用</span></span><br><span class="line"><span class="comment">  --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>war<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--配置--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--项目的默认构建编码--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--编码版本--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--项目依赖--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--具体依赖的jar包配置文件--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.11<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--项目构建用的东西--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">finalName</span>&gt;</span>javaweb-01-maven<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginManagement</span>&gt;</span><span class="comment">&lt;!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-clean-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-resources-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.0.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.8.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-surefire-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.22.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-war-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-install-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.5.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-deploy-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.8.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginManagement</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/pom.xml%E9%85%8D%E7%BD%AE%E5%90%8E%E5%AF%BC%E5%85%A5jar%E7%A4%BA%E4%BE%8B.png" alt="image-20200523015623291"></p>
+<img src="/blog/2020/05/14/javaweb/pom.xml%E9%85%8D%E7%BD%AE%E5%90%8E%E5%AF%BC%E5%85%A5jar%E7%A4%BA%E4%BE%8B.png" class>
+
 <p>maven由于它的约定大于配置，我们之后可能遇到我们写的配置文件，无法被导出或者生效的问题，解决方案：</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--在build中配置resources，来防止我们资源导出失败的问题--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">excludes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">excludes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>false<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>false<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="5-11、IDEA操作"><a href="#5-11、IDEA操作" class="headerlink" title="5.11、IDEA操作"></a>5.11、IDEA操作</h4><p><img src="/blog/blog/.com/2020/05/14/javaweb/%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%E6%A0%91.png" alt="image-20200523021318428"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/Maven%E4%B8%ADjar%E5%8C%85%E7%9A%84%E8%81%94%E7%B3%BB%E5%85%B3%E8%81%94%E5%9B%BE.png" alt="image-20200523021221135"></p>
+<h4 id="5-11、IDEA操作"><a href="#5-11、IDEA操作" class="headerlink" title="5.11、IDEA操作"></a>5.11、IDEA操作</h4><img src="/blog/2020/05/14/javaweb/%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%E6%A0%91.png" class>
+
+<img src="/blog/2020/05/14/javaweb/Maven%E4%B8%ADjar%E5%8C%85%E7%9A%84%E8%81%94%E7%B3%BB%E5%85%B3%E8%81%94%E5%9B%BE.png" class>
+
 <h4 id="5-12、解决遇到的问题"><a href="#5-12、解决遇到的问题" class="headerlink" title="5.12、解决遇到的问题"></a>5.12、解决遇到的问题</h4><p>1.Maven 3.6.2</p>
 <p>解决方法：IDEA版本用高级点或者降级Maven为3.6.1</p>
 <p>2.Tomcat闪退</p>
 <p>3.IDEA中每次都要重复配置Maven</p>
 <p>在IDEA中的全局默认配置中去配置</p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E5%85%A8%E5%B1%80%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E5%85%A5%E5%8F%A3.png" alt="image-20200523153718385"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%85%8D%E7%BD%AE%E5%85%A8%E5%B1%80%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE.png" alt="image-20200523154009316"></p>
+<img src="/blog/2020/05/14/javaweb/%E5%85%A8%E5%B1%80%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E5%85%A5%E5%8F%A3.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E9%85%8D%E7%BD%AE%E5%85%A8%E5%B1%80%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE.png" class>
+
 <p>4.Maven项目中Tomcat无法配置</p>
 <p>5.maven默认web项目中的web.xml版本问题</p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%BB%98%E8%AE%A4%E7%9A%84web.xml%E7%89%88%E6%9C%AC.png" alt="image-20200523154912626"></p>
+<img src="/blog/2020/05/14/javaweb/%E9%BB%98%E8%AE%A4%E7%9A%84web.xml%E7%89%88%E6%9C%AC.png" class>
+
 <p>6.替换为webapp4.0版本和tomcat一致</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">web-app</span> <span class="attr">xmlns</span>=<span class="string">"http://xmlns.jcp.org/xml/ns/javaee"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://xmlns.jcp.org/xml/ns/javaee</span></span></span><br><span class="line"><span class="tag"><span class="string">                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">version</span>=<span class="string">"4.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">metadata-complete</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">web-app</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">web-app</span> <span class="attr">xmlns</span>=<span class="string">"http://xmlns.jcp.org/xml/ns/javaee"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://xmlns.jcp.org/xml/ns/javaee</span></span></span><br><span class="line"><span class="tag"><span class="string">                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">version</span>=<span class="string">"4.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">metadata-complete</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">web-app</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>7.Maven仓库的使用</p>
 <p>地址：<a href="https://mvnrepository.com/" target="_blank" rel="noopener">https://mvnrepository.com/</a></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%90%9C%E7%B4%A2Java%E5%8C%85.png" alt="image-20200523155823185"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E6%9F%A5%E6%89%BEservlet%E7%9A%84jar%E5%8C%85.png" alt="image-20200523160040910"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84jar%E5%8C%85%E7%89%88%E6%9C%AC.png" alt="image-20200523160200025"></p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/jar%E5%92%8CMaven%E4%BE%9D%E8%B5%96%E5%8F%AF%E9%80%89.png" alt="image-20200523160321856"></p>
+<img src="/blog/2020/05/14/javaweb/%E6%90%9C%E7%B4%A2Java%E5%8C%85.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E6%9F%A5%E6%89%BEservlet%E7%9A%84jar%E5%8C%85.png" class>
+
+<img src="/blog/2020/05/14/javaweb/%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84jar%E5%8C%85%E7%89%88%E6%9C%AC.png" class>
+
+<img src="/blog/2020/05/14/javaweb/jar%E5%92%8CMaven%E4%BE%9D%E8%B5%96%E5%8F%AF%E9%80%89.png" class>
+
 <h3 id="6、Servlet"><a href="#6、Servlet" class="headerlink" title="6、Servlet"></a>6、Servlet</h3><h4 id="6-1、Servlet简介"><a href="#6-1、Servlet简介" class="headerlink" title="6.1、Servlet简介"></a>6.1、Servlet简介</h4><ul>
 <li>Servlet就是sun公司开发动态web的一门技术</li>
 <li>Sun在这些API中提供一个接口叫做：Servlet，如果你想发开一个Servlet程序，只需要完成两个小步骤：<ul>
@@ -4919,7 +4967,7 @@
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">module</span>&gt;</span>servlet-01<span class="tag">&lt;/<span class="name">module</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>子项目会有</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>javaweb-02-servlet<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.carey<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>javaweb-02-servlet<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.carey<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>父项目中的java子项目可以直接使用</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">son extends father</span><br></pre></td></tr></table></figure>
@@ -4930,7 +4978,8 @@
 <p>4.编写一个Servlet程序</p>
 <p>​    1.编写一个普通类</p>
 <p>​    2.实现Servlet接口，这里我们直接继承HttpServlet</p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E7%9B%B4%E6%8E%A5%E7%BB%A7%E6%89%BFHttpServlet.png" alt="image-20200523190307395"></p>
+<img src="/blog/2020/05/14/javaweb/%E7%9B%B4%E6%8E%A5%E7%BB%A7%E6%89%BFHttpServlet.png" class>
+
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloServlet</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//由于get或者post只是请求实现的不同的方式，可以相互调用，业务逻辑都一样；</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        <span class="comment">//ServletOutputStream outputStream = resp.getOutputStream();</span></span><br><span class="line">        PrintWriter writer = resp.getWriter();<span class="comment">//响应流</span></span><br><span class="line">        writer.print(<span class="string">"Hello,Servlet"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        doGet(req, resp);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>5.编写Servlet的映射</p>
@@ -4940,8 +4989,10 @@
 <p>6.配置Tomcat</p>
 <p>​    注意：配置项目发布的路径就可以了</p>
 <p>7.启动测试，ok！</p>
-<h4 id="6-3、Servlet原理"><a href="#6-3、Servlet原理" class="headerlink" title="6.3、Servlet原理"></a>6.3、Servlet原理</h4><p>Servlet是由web服务器调用，web服务器在收到浏览器请求之后，会</p>
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/Servlet%E5%8E%9F%E7%90%86.png" alt="image-20200523205318797"></p>
+<h4 id="6-3、Servlet原理"><a href="#6-3、Servlet原理" class="headerlink" title="6.3、Servlet原理"></a>6.3、Servlet原理</h4><p>浏览器发起请求给服务器（web容器），web容器要进行相应处理，（如果是第一次访问的话，会产生一个.class文件，当然这只加载一次）将请求（包含请求头和请求体）和响应（响应头和响应体）调用Servlet的service方法，service方法需要传入两个参数，一个是请求一个是响应，然后这个方法是通过我们人为去操作重写的，决定要去怎么处理这个请求，并且如何做出响应，处理完成之后，web容器就响应浏览器。</p>
+<p>Servlet是由web服务器调用，web服务器在收到浏览器请求之后，会</p>
+<img src="/blog/2020/05/14/javaweb/Servlet%E5%8E%9F%E7%90%86.png" class>
+
 <h4 id="6-4、Mapping问题"><a href="#6-4、Mapping问题" class="headerlink" title="6.4、Mapping问题"></a>6.4、Mapping问题</h4><p>1.一个Servlet可以指定一个映射路径</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/hello<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -4955,11 +5006,11 @@
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--默认请求路径--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>5.指定一些后缀或者前缀等等…..</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--可以自定义后缀实现请求映射</span></span><br><span class="line"><span class="comment">注意点：*前面不能加项目映射的路径--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>*.do<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--可以自定义后缀实现请求映射</span></span><br><span class="line"><span class="comment">    注意点：*前面不能加项目映射的路径--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>*.do<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>6.优先级问题</p>
 <p>指定了固有的映射路径优先级最高，如果找不到就会走默认的处理请求；</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--404--&gt;</span>    </span><br><span class="line">   <span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>error<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>com.carey.servlet.ErrorServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>error<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--404--&gt;</span>    </span><br><span class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>error<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>com.carey.servlet.ErrorServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>error<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="6-5、ServlrtContex"><a href="#6-5、ServlrtContex" class="headerlink" title="6.5、ServlrtContex"></a>6.5、ServlrtContex</h4><p> web容器在启动的时候，它会为每个web程序都创建一个对应的ServletContex对象，它代表了当前的web应用；</p>
 <h5 id="1、共享数据"><a href="#1、共享数据" class="headerlink" title="1、共享数据"></a>1、共享数据</h5><p>我在这个Servlet中保存的数据，可以在另外一个servlet中拿到;</p>
@@ -4976,7 +5027,8 @@
 
 <h5 id="3、请求转发"><a href="#3、请求转发" class="headerlink" title="3、请求转发"></a>3、请求转发</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        ServletContext context = <span class="keyword">this</span>.getServletContext();</span><br><span class="line">        System.out.println(<span class="string">"进入了ServletDemo04"</span>);</span><br><span class="line">        <span class="comment">//RequestDispatcher requestDispatcher = context.getRequestDispatcher("/gp");//转发的请求路径</span></span><br><span class="line">        <span class="comment">//requestDispatcher.forward(req, resp);//调用forward实现转发请求；</span></span><br><span class="line">        context.getRequestDispatcher(<span class="string">"/gp"</span>).forward(req, resp);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/blog/.com/2020/05/14/javaweb/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%92%8C%E9%87%8D%E5%AE%9A%E5%90%91%E5%8C%BA%E5%88%AB.png" alt="image-20200524202900416"></p>
+<img src="/blog/2020/05/14/javaweb/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%92%8C%E9%87%8D%E5%AE%9A%E5%90%91%E5%8C%BA%E5%88%AB.png" class>
+
 <h5 id="4、读取资源文件"><a href="#4、读取资源文件" class="headerlink" title="4、读取资源文件"></a>4、读取资源文件</h5><p>Properties</p>
 <ul>
 <li>在java目录下新建properties</li>
