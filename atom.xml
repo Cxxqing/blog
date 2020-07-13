@@ -44,7 +44,7 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/06/25/spring-mvc/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/25/spring-mvc/</id>
     <published>2020-06-25T13:21:52.000Z</published>
-    <updated>2020-06-30T14:09:54.129Z</updated>
+    <updated>2020-07-11T08:55:30.687Z</updated>
     
     <summary type="html">
     
@@ -155,7 +155,7 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/06/05/MyBatis/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/05/MyBatis/</id>
     <published>2020-06-04T16:37:42.000Z</published>
-    <updated>2020-06-24T08:07:35.071Z</updated>
+    <updated>2020-07-13T16:00:45.857Z</updated>
     
     <summary type="html">
     
@@ -189,15 +189,11 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/31/smbms-web-servlet/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/31/smbms-web-servlet/</id>
     <published>2020-05-31T07:30:01.000Z</published>
-    <updated>2020-06-15T14:49:00.948Z</updated>
+    <updated>2020-07-10T14:06:05.179Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;SMBMS&quot;&gt;&lt;a href=&quot;#SMBMS&quot; class=&quot;headerlink&quot; title=&quot;SMBMS&quot;&gt;&lt;/a&gt;SMBMS&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/blog/blog/.com/2020/05/31/smbms-web-servlet/SMBMS.png&quot; alt=&quot;image-20200531154107414&quot;&gt;&lt;/p&gt;
-&lt;p&gt;数据库：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/blog/.com/2020/05/31/smbms-web-servlet/%E6%95%B0%E6%8D%AE%E5%BA%93.png&quot; alt=&quot;image-20200531154623620&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;项目如何搭建？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;考虑使用不使用Maven？ 依赖，jar&lt;/p&gt;
+      &lt;h2 id=&quot;SMBMS&quot;&gt;&lt;a href=&quot;#SMBMS&quot; class=&quot;headerlink&quot; title=&quot;SMBMS&quot;&gt;&lt;/a&gt;SMBMS&lt;/h2&gt;
     
     </summary>
     
