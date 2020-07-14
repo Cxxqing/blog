@@ -71,53 +71,12 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/06/15/Spring-5/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/15/Spring-5/</id>
     <published>2020-06-15T07:09:30.863Z</published>
-    <updated>2020-06-25T15:19:02.374Z</updated>
+    <updated>2020-07-14T09:34:04.879Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;title: Spring5&lt;br&gt;date: 2020-06-15 15:09:30&lt;br&gt;tags: 框架&lt;br&gt;categories: 后端&lt;/p&gt;
-&lt;h2 id=&quot;1、Spring&quot;&gt;&lt;a href=&quot;#1、Spring&quot; class=&quot;headerlink&quot; title=&quot;1、Spring&quot;&gt;&lt;/a&gt;1、Spring&lt;/h2&gt;&lt;h3 id=&quot;1-1、简介&quot;&gt;&lt;a href=&quot;#1-1、简介&quot; class=&quot;headerlink&quot; title=&quot;1.1、简介&quot;&gt;&lt;/a&gt;1.1、简介&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Spring : 春天 —&amp;gt;给软件行业带来了春天&lt;/li&gt;
-&lt;li&gt;2002年，Rod Jahnson首次推出了Spring框架雏形interface21框架。&lt;/li&gt;
-&lt;li&gt;2004年3月24日，Spring框架以interface21框架为基础，经过重新设计，发布了1.0正式版。&lt;/li&gt;
-&lt;li&gt;Rod Johnson，Spring Framework创始人，著名作者。很难想象Rod Johnson的学历 , 他是悉尼大学的博士，然而他的专业不是计算机，而是音乐学。&lt;/li&gt;
-&lt;li&gt;Spring理念 : 使现有技术更加实用 , 本身就是一个大杂烩 , 整合现有的框架技术&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;SSH：Struct2 + Spring + Hibernate&lt;/li&gt;
-&lt;li&gt;SSM：SpringMVC + Spring + MyBatis&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;官网 : &lt;a href=&quot;http://spring.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://spring.io/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;官方下载地址 : &lt;a href=&quot;https://repo.spring.io/libs-release-local/org/springframework/spring/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://repo.spring.io/libs-release-local/org/springframework/spring/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;GitHub : &lt;a href=&quot;https://github.com/spring-projects&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/spring-projects&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;org.springframework&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;spring-webmvc&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;5.2.7.RELEASE&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;org.springframework&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;spring-jdbc&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;5.2.7.RELEASE&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;1-2、优点&quot;&gt;&lt;a href=&quot;#1-2、优点&quot; class=&quot;headerlink&quot; title=&quot;1.2、优点&quot;&gt;&lt;/a&gt;1.2、优点&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Spring是一个开源免费的框架（容器）&lt;/li&gt;
-&lt;li&gt;Spring是一个轻量级的框架 , 非侵入式的&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;控制反转( IoC)  , 面向切面编程 (Aop)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;对事务的处理 , 对框架整合的支持&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;总结一句话：Spring是一个轻量级的控制反转(IoC)和面向切面编程(AOP)的容器（框架）。&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&quot;1-3、组成&quot;&gt;&lt;a href=&quot;#1-3、组成&quot; class=&quot;headerlink&quot; title=&quot;1.3、组成&quot;&gt;&lt;/a&gt;1.3、组成&lt;/h3&gt;&lt;img src=&quot;/blog/2020/06/15/Spring-5/%E4%B8%83%E5%A4%A7%E6%A8%A1%E5%9D%97.png&quot; class&gt;
-
-&lt;h3 id=&quot;1-4、拓展&quot;&gt;&lt;a href=&quot;#1-4、拓展&quot; class=&quot;headerlink&quot; title=&quot;1.4、拓展&quot;&gt;&lt;/a&gt;1.4、拓展&lt;/h3&gt;&lt;p&gt;现代化Java开发，即基于Spring的开发！&lt;/p&gt;
-&lt;img src=&quot;/blog/2020/06/15/Spring-5/%E7%8E%B0%E4%BB%A3%E5%8C%96Java%E5%BC%80%E5%8F%91.png&quot; class&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Spring Boot&lt;ul&gt;
-&lt;li&gt;一个快速开发的脚手架。&lt;/li&gt;
-&lt;li&gt;基于Spring Boot 快速开发单个微服务&lt;/li&gt;
-&lt;li&gt;约定大于配置！&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Spring Cloud&lt;ul&gt;
-&lt;li&gt;SpringCloud是基于SpringBoot实现的&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;学习SpringBoot的前提是需要完全掌握Spring和SpringMVC，承上启下的作用！&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;弊端：发展了太久之后，违背了原来的理念，配置十分繁琐，人称：”配置地域“！&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1、Spring&quot;&gt;&lt;a href=&quot;#1、Spring&quot; class=&quot;headerlink&quot; title=&quot;1、Spring&quot;&gt;&lt;/a&gt;1、Spring&lt;/h2&gt;
     
     </summary>
     

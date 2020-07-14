@@ -4025,7 +4025,9 @@
     <title>Spring-5</title>
     <url>/blog/2020/06/15/Spring-5/</url>
     <content><![CDATA[<p>title: Spring5<br>date: 2020-06-15 15:09:30<br>tags: 框架<br>categories: 后端</p>
-<h2 id="1、Spring"><a href="#1、Spring" class="headerlink" title="1、Spring"></a>1、Spring</h2><h3 id="1-1、简介"><a href="#1-1、简介" class="headerlink" title="1.1、简介"></a>1.1、简介</h3><ul>
+<h2 id="1、Spring"><a href="#1、Spring" class="headerlink" title="1、Spring"></a>1、Spring</h2><a id="more"></a>
+
+<h3 id="1-1、简介"><a href="#1-1、简介" class="headerlink" title="1.1、简介"></a>1.1、简介</h3><ul>
 <li>Spring : 春天 —&gt;给软件行业带来了春天</li>
 <li>2002年，Rod Jahnson首次推出了Spring框架雏形interface21框架。</li>
 <li>2004年3月24日，Spring框架以interface21框架为基础，经过重新设计，发布了1.0正式版。</li>
@@ -4067,7 +4069,7 @@
 </ul>
 <p>学习SpringBoot的前提是需要完全掌握Spring和SpringMVC，承上启下的作用！</p>
 <p><strong>弊端：发展了太久之后，违背了原来的理念，配置十分繁琐，人称：”配置地域“！</strong></p>
-<a id="more"></a>
+<!--more-->
 
 <h2 id="2、IOC理论推导"><a href="#2、IOC理论推导" class="headerlink" title="2、IOC理论推导"></a>2、IOC理论推导</h2><p>1.UserDao 接口</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserDao</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getUser</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
