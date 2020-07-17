@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://cxxqing.github.io/blog/.com/"/>
-  <updated>2020-07-03T16:06:14.468Z</updated>
+  <updated>2020-07-17T08:26:48.022Z</updated>
   <id>https://cxxqing.github.io/blog/.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ssm</title>
+    <link href="https://cxxqing.github.io/blog/.com/2020/07/17/ssm/"/>
+    <id>https://cxxqing.github.io/blog/.com/2020/07/17/ssm/</id>
+    <published>2020-07-17T08:25:12.000Z</published>
+    <updated>2020-07-17T08:26:48.022Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;整合SSM&quot;&gt;&lt;a href=&quot;#整合SSM&quot; class=&quot;headerlink&quot; title=&quot;整合SSM&quot;&gt;&lt;/a&gt;整合SSM&lt;/h2&gt;&lt;h3 id=&quot;1、环境要求&quot;&gt;&lt;a href=&quot;#1、环境要求&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>git</title>
@@ -44,7 +67,7 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/06/25/spring-mvc/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/25/spring-mvc/</id>
     <published>2020-06-25T13:21:52.000Z</published>
-    <updated>2020-07-11T08:55:30.687Z</updated>
+    <updated>2020-07-17T08:25:42.306Z</updated>
     
     <summary type="html">
     
@@ -67,20 +90,23 @@
   </entry>
   
   <entry>
-    <title>Spring-5</title>
+    <title>Spring5</title>
     <link href="https://cxxqing.github.io/blog/.com/2020/06/15/Spring-5/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/15/Spring-5/</id>
-    <published>2020-06-15T07:09:30.863Z</published>
-    <updated>2020-07-14T09:34:04.879Z</updated>
+    <published>2020-06-15T07:09:30.000Z</published>
+    <updated>2020-07-16T14:55:43.555Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;title: Spring5&lt;br&gt;date: 2020-06-15 15:09:30&lt;br&gt;tags: 框架&lt;br&gt;categories: 后端&lt;/p&gt;
-&lt;h2 id=&quot;1、Spring&quot;&gt;&lt;a href=&quot;#1、Spring&quot; class=&quot;headerlink&quot; title=&quot;1、Spring&quot;&gt;&lt;/a&gt;1、Spring&lt;/h2&gt;
+      &lt;h2 id=&quot;1、Spring&quot;&gt;&lt;a href=&quot;#1、Spring&quot; class=&quot;headerlink&quot; title=&quot;1、Spring&quot;&gt;&lt;/a&gt;1、Spring&lt;/h2&gt;
     
     </summary>
     
     
+      <category term="后端" scheme="https://cxxqing.github.io/blog/.com/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="框架" scheme="https://cxxqing.github.io/blog/.com/tags/%E6%A1%86%E6%9E%B6/"/>
     
   </entry>
   
@@ -785,63 +811,6 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统2.2</title>
-    <link href="https://cxxqing.github.io/blog/.com/2020/05/12/OSsecondtwo/"/>
-    <id>https://cxxqing.github.io/blog/.com/2020/05/12/OSsecondtwo/</id>
-    <published>2020-05-12T07:19:11.000Z</published>
-    <updated>2020-06-15T14:49:52.629Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;处理机调度&quot;&gt;&lt;a href=&quot;#处理机调度&quot; class=&quot;headerlink&quot; title=&quot;处理机调度&quot;&gt;&lt;/a&gt;处理机调度&lt;/h2&gt;&lt;h3 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot; title=&quot;基本概念&quot;&gt;&lt;/a&gt;基本概念&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;按某种算法选择一个进程将处理机分配给它&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;三个层次&quot;&gt;&lt;a href=&quot;#三个层次&quot; class=&quot;headerlink&quot; title=&quot;三个层次&quot;&gt;&lt;/a&gt;三个层次&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;高级调度&lt;strong&gt;(作业调度)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;按照某种规则，从后备队列中选择合适的作业将其调入内存，并为其创建进程&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;中级调度&lt;strong&gt;(内存调度)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;按照某种规则，从挂起队列中选择合适的进程将其数据调回内存&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;低级调度(进程调度)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;按照某种规则，从就绪队列中选择一个进程为其分配处理机&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;三层调度的联系、对比&quot;&gt;&lt;a href=&quot;#三层调度的联系、对比&quot; class=&quot;headerlink&quot; title=&quot;三层调度的联系、对比&quot;&gt;&lt;/a&gt;三层调度的联系、对比&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;高级调度&lt;ul&gt;
-&lt;li&gt;外存-&amp;gt;内存(面向作业)&lt;/li&gt;
-&lt;li&gt;发生频率：最低&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;中级调度&lt;ul&gt;
-&lt;li&gt;外存-&amp;gt;内存(面向进程)&lt;/li&gt;
-&lt;li&gt;发送频率：中等&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;低级调度&lt;ul&gt;
-&lt;li&gt;内存-&amp;gt;CPU&lt;/li&gt;
-&lt;li&gt;发生频率：最高&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;补充知识&quot;&gt;&lt;a href=&quot;#补充知识&quot; class=&quot;headerlink&quot; title=&quot;补充知识&quot;&gt;&lt;/a&gt;补充知识&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;为减轻系统负载，提供资源利用率，暂时不执行的进程会被调到外存从而变为“挂起态”&lt;/li&gt;
-&lt;li&gt;七状态模型：在五状态模型的基础上加入了“就绪挂起”和“阻塞挂起”两种状态&lt;/li&gt;
-&lt;/ul&gt;
     
     </summary>
     
