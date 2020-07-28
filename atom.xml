@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://cxxqing.github.io/blog/.com/"/>
-  <updated>2020-07-17T14:28:20.968Z</updated>
+  <updated>2020-07-28T07:46:01.852Z</updated>
   <id>https://cxxqing.github.io/blog/.com/</id>
   
   <author>
@@ -17,11 +17,83 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>design-mode</title>
+    <link href="https://cxxqing.github.io/blog/.com/2020/07/28/design-mode/"/>
+    <id>https://cxxqing.github.io/blog/.com/2020/07/28/design-mode/</id>
+    <published>2020-07-28T06:52:27.000Z</published>
+    <updated>2020-07-28T07:46:01.852Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;3、工厂模式&quot;&gt;&lt;a href=&quot;#3、工厂模式&quot; class=&quot;headerlink&quot; title=&quot;3、工厂模式&quot;&gt;&lt;/a&gt;3、工厂模式&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;核心本质:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实例化对象不使用
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot</title>
+    <link href="https://cxxqing.github.io/blog/.com/2020/07/21/SpringBoot/"/>
+    <id>https://cxxqing.github.io/blog/.com/2020/07/21/SpringBoot/</id>
+    <published>2020-07-21T09:23:39.000Z</published>
+    <updated>2020-07-24T02:51:48.844Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1、SpringBoot简介&quot;&gt;&lt;a href=&quot;#1、SpringBoot简介&quot; class=&quot;headerlink&quot; title=&quot;1、SpringBoot简介&quot;&gt;&lt;/a&gt;1、SpringBoot简介&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vue</title>
+    <link href="https://cxxqing.github.io/blog/.com/2020/07/19/vue/"/>
+    <id>https://cxxqing.github.io/blog/.com/2020/07/19/vue/</id>
+    <published>2020-07-19T09:27:46.435Z</published>
+    <updated>2020-07-27T16:44:46.584Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;title: vue&lt;br&gt;date: 2020-07-19 17:27:46&lt;br&gt;tags:&lt;/p&gt;
+&lt;h3 id=&quot;1、Vue概述：&quot;&gt;&lt;a href=&quot;#1、Vue概述：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>ssm</title>
     <link href="https://cxxqing.github.io/blog/.com/2020/07/17/ssm/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/07/17/ssm/</id>
     <published>2020-07-17T08:25:12.000Z</published>
-    <updated>2020-07-17T14:28:20.968Z</updated>
+    <updated>2020-07-19T08:51:31.031Z</updated>
     
     <summary type="html">
     
@@ -61,7 +133,7 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/06/25/spring-mvc/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/25/spring-mvc/</id>
     <published>2020-06-25T13:21:52.000Z</published>
-    <updated>2020-07-17T08:25:42.306Z</updated>
+    <updated>2020-07-21T08:59:03.077Z</updated>
     
     <summary type="html">
     
@@ -659,152 +731,6 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统2.4</title>
-    <link href="https://cxxqing.github.io/blog/.com/2020/05/16/OSsecondfour/"/>
-    <id>https://cxxqing.github.io/blog/.com/2020/05/16/OSsecondfour/</id>
-    <published>2020-05-16T07:14:21.000Z</published>
-    <updated>2020-06-15T14:50:45.534Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;2-4-1、死锁的概念&quot;&gt;&lt;a href=&quot;#2-4-1、死锁的概念&quot; class=&quot;headerlink&quot; title=&quot;2.4.1、死锁的概念&quot;&gt;&lt;/a&gt;2.4.1、死锁的概念&lt;/h2&gt;&lt;h3 id=&quot;什么是死锁&quot;&gt;&lt;a href=&quot;#什么是死锁&quot; class=&quot;headerlink&quot; title=&quot;什么是死锁&quot;&gt;&lt;/a&gt;什么是死锁&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;各进程互相等待对方手里的资源，导致各进程都阻塞，无法向前推进&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;死锁、饥饿、死循环的区别&quot;&gt;&lt;a href=&quot;#死锁、饥饿、死循环的区别&quot; class=&quot;headerlink&quot; title=&quot;死锁、饥饿、死循环的区别&quot;&gt;&lt;/a&gt;死锁、饥饿、死循环的区别&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;死锁：至少是两个进程一起死锁，死锁进程处于阻塞态&lt;/li&gt;
-&lt;li&gt;饥饿：可以只有一个进程饥饿，饥饿进程可能阻塞也可能就绪&lt;/li&gt;
-&lt;li&gt;死循环：可能只有一个进程发生死循环，死循环的进程可上处理机&lt;/li&gt;
-&lt;li&gt;死锁和饥饿是操作系统要解决的问题，死循环是应用程序员要解决的&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;死锁产生的必要条件&quot;&gt;&lt;a href=&quot;#死锁产生的必要条件&quot; class=&quot;headerlink&quot; title=&quot;死锁产生的必要条件&quot;&gt;&lt;/a&gt;死锁产生的必要条件&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;互斥条件&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;对必须互斥使用的资源的争抢才会导致死锁&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;不剥夺条件&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;进程保持的资源只能主动释放，不可强行剥夺&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;请求和保持条件&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;保持着某些资源不放的同时，请求别的资源&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;循环等待条件&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;存在一种进程资源的循环等待链&lt;/li&gt;
-&lt;li&gt;循环等待未必死锁，死锁一定有循环等待&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;什么时候会发生死锁&quot;&gt;&lt;a href=&quot;#什么时候会发生死锁&quot; class=&quot;headerlink&quot; title=&quot;什么时候会发生死锁&quot;&gt;&lt;/a&gt;什么时候会发生死锁&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;对不可剥夺资源的不合理分配，可能导致死锁&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;死锁的处理策略&quot;&gt;&lt;a href=&quot;#死锁的处理策略&quot; class=&quot;headerlink&quot; title=&quot;死锁的处理策略&quot;&gt;&lt;/a&gt;死锁的处理策略&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;预防死锁&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;破坏死锁产生的四个必要条件&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;避免死锁&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;避免系统进入不安全状态(银行家算法)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;死锁的检测和解除&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;允许死锁发生，系统负责检测出死锁并解除&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>javaweb</title>
-    <link href="https://cxxqing.github.io/blog/.com/2020/05/14/javaweb/"/>
-    <id>https://cxxqing.github.io/blog/.com/2020/05/14/javaweb/</id>
-    <published>2020-05-14T13:50:15.000Z</published>
-    <updated>2020-07-08T06:30:02.765Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;学习自：&lt;a href=&quot;https://www.bilibili.com/video/BV12J411M7Sj?p=1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/BV12J411M7Sj?p=1&lt;/a&gt;    &lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统2.3</title>
-    <link href="https://cxxqing.github.io/blog/.com/2020/05/13/OSsecondthree/"/>
-    <id>https://cxxqing.github.io/blog/.com/2020/05/13/OSsecondthree/</id>
-    <published>2020-05-13T03:55:17.000Z</published>
-    <updated>2020-06-15T14:50:13.305Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;2-3-1互斥同步&quot;&gt;&lt;a href=&quot;#2-3-1互斥同步&quot; class=&quot;headerlink&quot; title=&quot;2.3.1互斥同步&quot;&gt;&lt;/a&gt;2.3.1互斥同步&lt;/h2&gt;&lt;h3 id=&quot;进程同步&quot;&gt;&lt;a href=&quot;#进程同步&quot; class=&quot;headerlink&quot; title=&quot;进程同步&quot;&gt;&lt;/a&gt;进程同步&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;并发性带来了异步性，有时需要通过进程同步解决这种异步问题。有的进程之间需要相互配合地完成工作，各进程的工作推进需要遵循一定的先后顺序。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;进程互斥&quot;&gt;&lt;a href=&quot;#进程互斥&quot; class=&quot;headerlink&quot; title=&quot;进程互斥&quot;&gt;&lt;/a&gt;进程互斥&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;对临界资源的访问，需要互斥的进行。即同一时间段内只能允许一个进程访问该资源&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;四个部门&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;进入区&lt;ul&gt;
-&lt;li&gt;检查是否可进入临界区，若可进入，需要“上锁”&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;临界区&lt;ul&gt;
-&lt;li&gt;访问邻接资源的那段代码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;退出区&lt;ul&gt;
-&lt;li&gt;负责“解锁”&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;剩余区&lt;ul&gt;
-&lt;li&gt;其余代码部分&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;需要遵循的原则&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;空闲让进&lt;ul&gt;
-&lt;li&gt;临界区空闲时，应允许一个进程访问&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;忙则等待&lt;ul&gt;
-&lt;li&gt;临界区正在被访问时，其他试图访问的进程需要等待&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;有限等待&lt;ul&gt;
-&lt;li&gt;要在有限时间内进入临界区，保证不会饥饿&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;让权等待&lt;ul&gt;
-&lt;li&gt;进不了临界区的进程，需释放处理机，防止忙等&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
