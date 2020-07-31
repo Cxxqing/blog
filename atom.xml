@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://cxxqing.github.io/blog/.com/"/>
-  <updated>2020-07-28T07:46:01.852Z</updated>
+  <updated>2020-07-30T16:01:27.397Z</updated>
   <id>https://cxxqing.github.io/blog/.com/</id>
   
   <author>
@@ -17,11 +17,57 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Swagger</title>
+    <link href="https://cxxqing.github.io/blog/.com/2020/07/30/Swagger/"/>
+    <id>https://cxxqing.github.io/blog/.com/2020/07/30/Swagger/</id>
+    <published>2020-07-30T07:30:17.000Z</published>
+    <updated>2020-07-30T16:01:27.397Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;1、Swagger简介&quot;&gt;&lt;a href=&quot;#1、Swagger简介&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Shiro</title>
+    <link href="https://cxxqing.github.io/blog/.com/2020/07/28/Shiro/"/>
+    <id>https://cxxqing.github.io/blog/.com/2020/07/28/Shiro/</id>
+    <published>2020-07-28T07:58:43.000Z</published>
+    <updated>2020-07-28T08:18:15.014Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;1、Shiro简介&quot;&gt;&lt;a href=&quot;#1、Shiro简介&quot; class=&quot;headerlink&quot; title=&quot;1、Shiro简介&quot;&gt;&lt;/a&gt;1、Shiro简介&lt;/h3&gt;&lt;h4 id=&quot;1-1、什么是Shiro&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>design-mode</title>
     <link href="https://cxxqing.github.io/blog/.com/2020/07/28/design-mode/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/07/28/design-mode/</id>
     <published>2020-07-28T06:52:27.000Z</published>
-    <updated>2020-07-28T07:46:01.852Z</updated>
+    <updated>2020-07-31T07:17:51.961Z</updated>
     
     <summary type="html">
     
@@ -592,144 +638,6 @@
 &lt;li&gt;除了文件名之外的所有信息都放到索引结点中，每个文件对应一个索引结点&lt;/li&gt;
 &lt;li&gt;目录项中只包含文件名、索引结点指针，因此每个目录项的长度大幅减小&lt;/li&gt;
 &lt;li&gt;由于目录项长度减小，因此每个磁盘可以存放更多个目录项，因此检索文件时磁盘I/O的次数就少了很多&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统3.2</title>
-    <link href="https://cxxqing.github.io/blog/.com/2020/05/19/OSthirdtwo/"/>
-    <id>https://cxxqing.github.io/blog/.com/2020/05/19/OSthirdtwo/</id>
-    <published>2020-05-19T06:45:10.000Z</published>
-    <updated>2020-06-15T14:49:28.935Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;3-2-1、虚拟内存的基本概念&quot;&gt;&lt;a href=&quot;#3-2-1、虚拟内存的基本概念&quot; class=&quot;headerlink&quot; title=&quot;3.2.1、虚拟内存的基本概念&quot;&gt;&lt;/a&gt;3.2.1、虚拟内存的基本概念&lt;/h2&gt;&lt;h3 id=&quot;传统存储管理方式的特征、缺点&quot;&gt;&lt;a href=&quot;#传统存储管理方式的特征、缺点&quot; class=&quot;headerlink&quot; title=&quot;传统存储管理方式的特征、缺点&quot;&gt;&lt;/a&gt;传统存储管理方式的特征、缺点&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;一次性：作业数据必须一次全部调入内存&lt;/li&gt;
-&lt;li&gt;驻留性：作业数据在整个运行期间都会常驻内存&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;局部性原理&quot;&gt;&lt;a href=&quot;#局部性原理&quot; class=&quot;headerlink&quot; title=&quot;局部性原理&quot;&gt;&lt;/a&gt;局部性原理&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;时间局部性：现在访问的指令、数据在不久后很可能会被再次访问&lt;/li&gt;
-&lt;li&gt;空间局部性：现在访问的内存单元周围的内存空间，很可能在不久后会被访问&lt;/li&gt;
-&lt;li&gt;高速缓存技术：使用频繁的数据放到更高速的存储器中&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;虚拟内存的定义和特征&quot;&gt;&lt;a href=&quot;#虚拟内存的定义和特征&quot; class=&quot;headerlink&quot; title=&quot;虚拟内存的定义和特征&quot;&gt;&lt;/a&gt;虚拟内存的定义和特征&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;程序不需全部装入即可运行，运行时根据需要动态调入数据，若内存不够，还需换出一些数据&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;特征&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;多次性：无需在作业运行时一次性全部装入内存，而是允许被分成多次调入内存。&lt;/li&gt;
-&lt;li&gt;对换性：无需在作业运行时一直常驻内存，而是允许在作业运行过程中，将作业换入、换出。&lt;/li&gt;
-&lt;li&gt;虚拟性：从逻辑上扩充了内存的容量，使用户看到的内存容量，远大于实际的容量。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;如何实现虚拟内存技术&quot;&gt;&lt;a href=&quot;#如何实现虚拟内存技术&quot; class=&quot;headerlink&quot; title=&quot;如何实现虚拟内存技术&quot;&gt;&lt;/a&gt;如何实现虚拟内存技术&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;访问的信息不在内存时，由操作系统负责将所需信息从外存调入内存==（请求调页功能）==&lt;/li&gt;
-&lt;li&gt;内存空间不够时，将内存中暂时用不到的信息换出到外存==（页面置换功能）==&lt;/li&gt;
-&lt;li&gt;虚拟内存的实现&lt;ul&gt;
-&lt;li&gt;==请求分页存储管理==&lt;/li&gt;
-&lt;li&gt;请求分段存储管理&lt;/li&gt;
-&lt;li&gt;请求段页式存储管理&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;3-2-2、请求分页管理方式&quot;&gt;&lt;a href=&quot;#3-2-2、请求分页管理方式&quot; class=&quot;headerlink&quot; title=&quot;3.2.2、请求分页管理方式&quot;&gt;&lt;/a&gt;3.2.2、请求分页管理方式&lt;/h2&gt;&lt;h3 id=&quot;页表机制&quot;&gt;&lt;a href=&quot;#页表机制&quot; class=&quot;headerlink&quot; title=&quot;页表机制&quot;&gt;&lt;/a&gt;页表机制&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;在基本分页的基础上增加了几个表项&lt;/li&gt;
-&lt;li&gt;状态位：表示页面是否已在内存中&lt;/li&gt;
-&lt;li&gt;访问字段：记录最近被访问过几次，或记录上次访问的及时，供置换算法选择换出页面时参考&lt;/li&gt;
-&lt;li&gt;修改位：表示页面调入内存后是否被修改过，只有修改过的页面才需在置换时写回外存&lt;/li&gt;
-&lt;li&gt;外存地址：页面在外存中存放的位置&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;缺页中断机构&quot;&gt;&lt;a href=&quot;#缺页中断机构&quot; class=&quot;headerlink&quot; title=&quot;缺页中断机构&quot;&gt;&lt;/a&gt;缺页中断机构&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;找到页表项后检查是否已在内存，若没在内存，产生缺页中断&lt;/li&gt;
-&lt;li&gt;缺页中断处理中，需要讲目标页面调入内存，有必要时还要换出页面&lt;/li&gt;
-&lt;li&gt;缺页中断属于内中断，属于内中断中的“故障”，即可能被系统修复的异常&lt;/li&gt;
-&lt;li&gt;一条指令在执行过程中可能产生多次缺页中断&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;地址变换机构（重点关注与基本分页不同的地方）&quot;&gt;&lt;a href=&quot;#地址变换机构（重点关注与基本分页不同的地方）&quot; class=&quot;headerlink&quot; title=&quot;地址变换机构（重点关注与基本分页不同的地方）&quot;&gt;&lt;/a&gt;地址变换机构（重点关注与基本分页不同的地方）&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;找到页表项是需要检查页面是否在内存中&lt;/li&gt;
-&lt;li&gt;若页面不在内存中，需要请求调页&lt;/li&gt;
-&lt;li&gt;若内存空间不够，还需要调出页面&lt;/li&gt;
-&lt;li&gt;页面调入内存后，需要修改相应页表项&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统3.1</title>
-    <link href="https://cxxqing.github.io/blog/.com/2020/05/16/OSthirdone/"/>
-    <id>https://cxxqing.github.io/blog/.com/2020/05/16/OSthirdone/</id>
-    <published>2020-05-16T08:31:49.000Z</published>
-    <updated>2020-06-15T14:49:41.624Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;3-1-1、内存的基础知识&quot;&gt;&lt;a href=&quot;#3-1-1、内存的基础知识&quot; class=&quot;headerlink&quot; title=&quot;3.1.1、内存的基础知识&quot;&gt;&lt;/a&gt;3.1.1、内存的基础知识&lt;/h2&gt;&lt;h3 id=&quot;什么是内存，有何作用&quot;&gt;&lt;a href=&quot;#什么是内存，有何作用&quot; class=&quot;headerlink&quot; title=&quot;==什么是内存，有何作用==&quot;&gt;&lt;/a&gt;==什么是内存，有何作用==&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;存储单元、内存地址的概念和联系&lt;/li&gt;
-&lt;li&gt;按字节编址 VS 按字编址&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;进程运行的基本原理&quot;&gt;&lt;a href=&quot;#进程运行的基本原理&quot; class=&quot;headerlink&quot; title=&quot;进程运行的基本原理&quot;&gt;&lt;/a&gt;进程运行的基本原理&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;指令的工作原理&lt;ul&gt;
-&lt;li&gt;操作码+若干参数（可能包含地址参数）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;==逻辑地址（相对地址） vs 物理地址（绝对地址）==&lt;/li&gt;
-&lt;li&gt;==从写程序到程序运行==&lt;ul&gt;
-&lt;li&gt;编辑源代码文件&lt;/li&gt;
-&lt;li&gt;编译&lt;ul&gt;
-&lt;li&gt;由源代码文件生成目标模块(高级语言“翻译为”机器语言)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;链接&lt;ul&gt;
-&lt;li&gt;由目标模块生成装入模块，链接后形成完整的逻辑地址&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;装入&lt;ul&gt;
-&lt;li&gt;将装入模块装入内存，装入后形成物理地址&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;三种链接方式&lt;ul&gt;
-&lt;li&gt;静态链接&lt;ul&gt;
-&lt;li&gt;装入前链接成一个完整装入模块&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;装入时动态链接&lt;ul&gt;
-&lt;li&gt;运行前面边装入边链接&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;运行时动态链接&lt;ul&gt;
-&lt;li&gt;运行时需要目标模块才装入并链接&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;==三种装入方式==&lt;ul&gt;
-&lt;li&gt;绝对装入&lt;ul&gt;
-&lt;li&gt;编译时产生绝对地址&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;可重定位装入&lt;ul&gt;
-&lt;li&gt;装入时将逻辑地址转换为物理地址&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;==动态运行时装入==&lt;ul&gt;
-&lt;li&gt;运行时将逻辑地址转换为物理地址，需设置重定位寄存器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
