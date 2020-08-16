@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://cxxqing.github.io/blog/.com/"/>
-  <updated>2020-08-01T17:26:52.305Z</updated>
+  <updated>2020-08-10T02:44:58.226Z</updated>
   <id>https://cxxqing.github.io/blog/.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jvm</title>
+    <link href="https://cxxqing.github.io/blog/.com/2020/08/08/jvm/"/>
+    <id>https://cxxqing.github.io/blog/.com/2020/08/08/jvm/</id>
+    <published>2020-08-08T03:07:27.000Z</published>
+    <updated>2020-08-10T02:44:58.226Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;1-jvm的位置&quot;&gt;&lt;a href=&quot;#1-jvm的位置&quot; class=&quot;headerlink&quot; title=&quot;1.jvm的位置&quot;&gt;&lt;/a&gt;1.jvm的位置&lt;/h3&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>mybatis-plus</title>
@@ -85,7 +108,7 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/07/28/design-mode/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/07/28/design-mode/</id>
     <published>2020-07-28T06:52:27.000Z</published>
-    <updated>2020-08-01T03:22:53.143Z</updated>
+    <updated>2020-08-04T03:05:41.472Z</updated>
     
     <summary type="html">
     
@@ -157,7 +180,7 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/07/17/ssm/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/07/17/ssm/</id>
     <published>2020-07-17T08:25:12.000Z</published>
-    <updated>2020-07-19T08:51:31.031Z</updated>
+    <updated>2020-08-12T16:11:23.442Z</updated>
     
     <summary type="html">
     
@@ -224,7 +247,7 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/06/15/Spring-5/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/15/Spring-5/</id>
     <published>2020-06-15T07:09:30.000Z</published>
-    <updated>2020-07-16T14:55:43.555Z</updated>
+    <updated>2020-08-04T03:05:58.888Z</updated>
     
     <summary type="html">
     
@@ -521,48 +544,6 @@
 &lt;li&gt;寄存器独立编制&lt;ul&gt;
 &lt;li&gt;控制器中的寄存器独立编制&lt;/li&gt;
 &lt;li&gt;需要设置专门的指令来操作控制器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统4.2</title>
-    <link href="https://cxxqing.github.io/blog/.com/2020/05/23/OSfourthtwo/"/>
-    <id>https://cxxqing.github.io/blog/.com/2020/05/23/OSfourthtwo/</id>
-    <published>2020-05-23T03:13:22.000Z</published>
-    <updated>2020-06-15T14:50:55.177Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;4-2-1、磁盘的结构&quot;&gt;&lt;a href=&quot;#4-2-1、磁盘的结构&quot; class=&quot;headerlink&quot; title=&quot;4.2.1、磁盘的结构&quot;&gt;&lt;/a&gt;4.2.1、磁盘的结构&lt;/h2&gt;&lt;h3 id=&quot;磁盘、磁道、扇区的概念&quot;&gt;&lt;a href=&quot;#磁盘、磁道、扇区的概念&quot; class=&quot;headerlink&quot; title=&quot;磁盘、磁道、扇区的概念&quot;&gt;&lt;/a&gt;磁盘、磁道、扇区的概念&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;磁盘由表面涂有磁性物质的圆形盘片组成&lt;/li&gt;
-&lt;li&gt;每个盘片被划分为一个个磁道，每个磁道又划分为一个个扇区&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;如何在磁盘中读-写数据&quot;&gt;&lt;a href=&quot;#如何在磁盘中读-写数据&quot; class=&quot;headerlink&quot; title=&quot;如何在磁盘中读/写数据&quot;&gt;&lt;/a&gt;如何在磁盘中读/写数据&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;磁头移动到目标位置，盘片旋转，对应扇区划过磁道才能完成读/写&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;盘面、柱面的概念&quot;&gt;&lt;a href=&quot;#盘面、柱面的概念&quot; class=&quot;headerlink&quot; title=&quot;盘面、柱面的概念&quot;&gt;&lt;/a&gt;盘面、柱面的概念&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;磁盘有多个盘片“摞”起来，每个盘片有两个盘面&lt;/li&gt;
-&lt;li&gt;所以盘面中相对位置相同的磁道组成柱面&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;磁盘的物理地址&quot;&gt;&lt;a href=&quot;#磁盘的物理地址&quot; class=&quot;headerlink&quot; title=&quot;磁盘的物理地址&quot;&gt;&lt;/a&gt;磁盘的物理地址&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;（柱面号，盘面号，扇区号）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;磁盘的分类&quot;&gt;&lt;a href=&quot;#磁盘的分类&quot; class=&quot;headerlink&quot; title=&quot;磁盘的分类&quot;&gt;&lt;/a&gt;磁盘的分类&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;根据磁头是否可移动&lt;ul&gt;
-&lt;li&gt;固定头磁盘（每个磁道有一个磁头）&lt;/li&gt;
-&lt;li&gt;移动头磁盘（每个盘面只有一个磁头）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;根据盘片是否可更换&lt;ul&gt;
-&lt;li&gt;固定盘磁盘&lt;/li&gt;
-&lt;li&gt;可换盘磁盘&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
