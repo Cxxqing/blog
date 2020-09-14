@@ -10023,7 +10023,7 @@
 </ul>
 <p>像上面那样用组件没有任何意义，所以我们是需要传递参数到组件的，此时就需要使用 <code>props</code> 属性了！</p>
 <p><strong>注意：默认规则下 props 属性里的值不能为大写；</strong></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--组件：传递给组件中的值：props--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">carey</span> <span class="attr">v-for</span>=<span class="string">"item in items"</span> <span class="attr">v-bind:chen</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">carey</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--1.导入Vue.js--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">    <span class="comment">//定义一个Vue组件component</span></span></span><br><span class="line"><span class="actionscript">    Vue.component(<span class="string">"carey"</span>,&#123;</span></span><br><span class="line"><span class="actionscript">        props: [<span class="string">'chen'</span>],</span></span><br><span class="line"><span class="handlebars"><span class="xml">        template: '<span class="tag">&lt;<span class="name">li</span>&gt;</span></span><span class="template-variable">&#123;&#123;chen&#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">li</span>&gt;</span>'</span></span></span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="actionscript">        el:<span class="string">"#app"</span>,</span></span><br><span class="line">        data: &#123;</span><br><span class="line"><span class="actionscript">            items: [<span class="string">"java"</span>,<span class="string">"mysql"</span>,<span class="string">"python"</span>]</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--组件：传递给组件中的值：props--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- v-bind:遍历的参数="接收参数"   通过v-bind绑定要遍历的参数传递到那个props接收 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">chenqing</span> <span class="attr">v-for</span>=<span class="string">"item in items"</span> <span class="attr">v-bind:chen</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">chenqing</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--1.导入Vue.js--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">    <span class="comment">//定义一个Vue组件component</span></span></span><br><span class="line"><span class="actionscript">    Vue.component(<span class="string">"chenqing"</span>,&#123;</span></span><br><span class="line"><span class="actionscript">      <span class="comment">//父组件向子组件传值，需要props接收</span></span></span><br><span class="line"><span class="actionscript">        props: [<span class="string">'chen'</span>],</span></span><br><span class="line"><span class="handlebars"><span class="xml">        template: '<span class="tag">&lt;<span class="name">li</span>&gt;</span></span><span class="template-variable">&#123;&#123;chen&#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">li</span>&gt;</span>'</span></span></span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="actionscript">        el:<span class="string">"#app"</span>,</span></span><br><span class="line">        data: &#123;</span><br><span class="line"><span class="actionscript">            items: [<span class="string">"java"</span>,<span class="string">"mysql"</span>,<span class="string">"python"</span>]</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>说明：</p>
 <ul>
@@ -10048,7 +10048,7 @@
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"name"</span>: <span class="string">"狂神说Java"</span>,</span><br><span class="line">  <span class="attr">"url"</span>: <span class="string">"https://blog.kuangstudy.com"</span>,</span><br><span class="line">  <span class="attr">"page"</span>: <span class="number">1</span>,</span><br><span class="line">  <span class="attr">"isNonProfit"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"address"</span>: &#123;</span><br><span class="line">    <span class="attr">"street"</span>: <span class="string">"含光门"</span>,</span><br><span class="line">    <span class="attr">"city"</span>: <span class="string">"陕西西安"</span>,</span><br><span class="line">    <span class="attr">"country"</span>: <span class="string">"中国"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"links"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"name"</span>: <span class="string">"bilibili"</span>,</span><br><span class="line">      <span class="attr">"url"</span>: <span class="string">"https://space.bilibili.com/95256449"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"name"</span>: <span class="string">"狂伸说java"</span>,</span><br><span class="line">      <span class="attr">"url"</span>: <span class="string">"https://blog.kuangstudy.com"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"name"</span>: <span class="string">"百度"</span>,</span><br><span class="line">      <span class="attr">"url"</span>: <span class="string">"https://www.baidu.com/"</span></span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><strong>测试代码</strong></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--v-cloak 解决闪烁问题--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">        <span class="selector-attr">[v-cloak]</span> &#123;</span></span><br><span class="line">            display: none;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"vue"</span> <span class="attr">v-cloak</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>名称：&#123;&#123;info.name&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>地址：&#123;&#123;info.address.country&#125;&#125;-&#123;&#123;info.address.city&#125;&#125;-&#123;&#123;info.address.street&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>链接：<span class="tag">&lt;<span class="name">a</span> <span class="attr">v-bind:href</span>=<span class="string">"info.url"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>&#123;&#123;info.url&#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span> <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--引入 JS 文件--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://unpkg.com/axios/dist/axios.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="actionscript">        el: <span class="string">'#vue'</span>,</span></span><br><span class="line">        data() &#123;</span><br><span class="line"><span class="actionscript">            <span class="keyword">return</span> &#123;</span></span><br><span class="line">                info: &#123;</span><br><span class="line"><span class="actionscript">                    name: <span class="literal">null</span>,</span></span><br><span class="line">                    address: &#123;</span><br><span class="line"><span class="actionscript">                        country: <span class="literal">null</span>,</span></span><br><span class="line"><span class="actionscript">                        city: <span class="literal">null</span>,</span></span><br><span class="line"><span class="actionscript">                        street: <span class="literal">null</span></span></span><br><span class="line">                    &#125;,</span><br><span class="line"><span class="actionscript">                    url: <span class="literal">null</span></span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line"><span class="actionscript">        mounted() &#123; <span class="comment">//钩子函数</span></span></span><br><span class="line">            axios</span><br><span class="line"><span class="actionscript">                .get(<span class="string">'../data.json'</span>)</span></span><br><span class="line"><span class="javascript">                .then(<span class="function"><span class="params">response</span> =&gt;</span> (<span class="keyword">this</span>.info = response.data));</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!--v-cloak 解决闪烁问题--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-attr">[v-cloak]</span> &#123;</span></span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- 在标签中添加上面的v-cloak的话，就不会因为加载慢导致延迟存在闪烁问题了 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"vue"</span> <span class="attr">v-cloak</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>名称：&#123;&#123;info.name&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>地址：&#123;&#123;info.address.country&#125;&#125;-&#123;&#123;info.address.city&#125;&#125;-&#123;&#123;info.address.street&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>链接：<span class="tag">&lt;<span class="name">a</span> <span class="attr">v-bind:href</span>=<span class="string">"info.url"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>&#123;&#123;info.url&#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span> <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!--引入 JS 文件--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://unpkg.com/axios/dist/axios.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="actionscript">      el: <span class="string">'#vue'</span>,</span></span><br><span class="line">      data()</span><br><span class="line"><span class="actionscript">      &#123;       <span class="comment">//这个是vue自带的data()方法,跟下面的mounted一样，属于自带</span></span></span><br><span class="line"><span class="actionscript">        <span class="keyword">return</span> &#123;</span></span><br><span class="line"><span class="actionscript">          <span class="comment">//请求的返回参数合适，必须和json字符串一样</span></span></span><br><span class="line">          info: &#123;</span><br><span class="line"><span class="actionscript">            name: <span class="literal">null</span>,</span></span><br><span class="line">            address: &#123;</span><br><span class="line"><span class="actionscript">              country: <span class="literal">null</span>,</span></span><br><span class="line"><span class="actionscript">              city: <span class="literal">null</span>,</span></span><br><span class="line"><span class="actionscript">              street: <span class="literal">null</span></span></span><br><span class="line">            &#125;,</span><br><span class="line"><span class="actionscript">            url: <span class="literal">null</span></span></span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line">      mounted()</span><br><span class="line"><span class="actionscript">      &#123; <span class="comment">//钩子函数    链式编程   ES6新特性</span></span></span><br><span class="line">        axios</span><br><span class="line"><span class="actionscript">          .get(<span class="string">'../data.json'</span>)</span></span><br><span class="line"><span class="javascript">          .then(<span class="function"><span class="params">response</span> =&gt;</span> (<span class="keyword">this</span>.info = response.data));</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="6-3、Vue的生命周期"><a href="#6-3、Vue的生命周期" class="headerlink" title="6.3、Vue的生命周期"></a>6.3、Vue的生命周期</h4><p>官方文档：<a href="https://cn.vuejs.org/v2/guide/instance.html#生命周期图示" target="_blank" rel="noopener">https://cn.vuejs.org/v2/guide/instance.html#生命周期图示</a></p>
 <p>Vue 实例有一个完整的生命周期，也就是从开始创建、初始化数据、编译模板、挂载 DOM、渲染→更新→渲染、卸载等一系列过程，我们称这是 Vue 的生命周期。通俗说就是 Vue 实例从创建到销毁的过程，就是生命周期。</p>
@@ -10056,30 +10056,34 @@
 <img src="/blog/2020/07/19/vue/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png" class>
 
 <h3 id="7、-计算属性、内容分发、自定义事件"><a href="#7、-计算属性、内容分发、自定义事件" class="headerlink" title="7、 计算属性、内容分发、自定义事件"></a>7、 计算属性、内容分发、自定义事件</h3><h4 id="7-1、什么是计算属性"><a href="#7-1、什么是计算属性" class="headerlink" title="7.1、什么是计算属性"></a>7.1、什么是计算属性</h4><p>计算属性的重点突出在 <code>属性</code> 两个字上（属性是名词），首先它是个 <code>属性</code> 其次这个属性有 <code>计算</code>的能力（计算是动词），这里的 <code>计算</code> 就是个函数；简单点说，它就是一个能够将计算结果缓存起来的属性（将行为转化成了静态的属性），仅此而已；可以想象为缓存！</p>
-<p><strong>上代码：</strong></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--注意，一个是方法，一个是属性--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>currentTime1：&#123;&#123;currentTime1()&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>currentTime2：&#123;&#123;currentTime2&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="actionscript">        el:<span class="string">"#app"</span>,</span></span><br><span class="line">        data: &#123;</span><br><span class="line"><span class="actionscript">            message: <span class="string">"hello,carey"</span></span></span><br><span class="line">        &#125;,</span><br><span class="line">        methods: &#123;</span><br><span class="line"><span class="actionscript">            currentTime1: <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">return</span> <span class="built_in">Date</span>.now(); <span class="comment">//返回一个时间戳</span></span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        computed: &#123;</span><br><span class="line"><span class="actionscript">            <span class="comment">//currentTime2,这是一个属性！不是方法</span></span></span><br><span class="line"><span class="actionscript">            currentTime2: <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">                <span class="keyword">this</span>.message;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">return</span> <span class="built_in">Date</span>.now(); <span class="comment">//返回一个时间戳</span></span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>代码：</strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--注意，一个是方法，一个是属性--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>currentTime1：&#123;&#123;currentTime1()&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>currentTime2：&#123;&#123;currentTime2&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="actionscript">      el: <span class="string">"#app"</span>,</span></span><br><span class="line">      data: &#123;</span><br><span class="line"><span class="actionscript">        message: <span class="string">"hello,carey"</span></span></span><br><span class="line">      &#125;,</span><br><span class="line"><span class="actionscript">      methods: &#123;    <span class="comment">//这里currentTime1使用的时候是方法</span></span></span><br><span class="line"><span class="actionscript">        currentTime1: <span class="function"><span class="keyword">function</span> <span class="params">()</span></span></span></span><br><span class="line">        &#123;</span><br><span class="line"><span class="javascript">          <span class="keyword">return</span> <span class="built_in">Date</span>.now();   <span class="comment">//返回一个时间戳</span></span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line"><span class="actionscript">      computed: &#123;    <span class="comment">//这里currentTime2使用的时候是属性</span></span></span><br><span class="line"><span class="actionscript">        currentTime2: <span class="function"><span class="keyword">function</span> <span class="params">()</span></span></span></span><br><span class="line">        &#123;</span><br><span class="line"><span class="actionscript">          <span class="keyword">this</span>.message;</span></span><br><span class="line"><span class="javascript">          <span class="keyword">return</span> <span class="built_in">Date</span>.now();  <span class="comment">//返回一个时间戳</span></span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line"></span><br><span class="line">    &#125;);</span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>注意：methods 和 computed 里的东西不能重名</strong></p>
+<p><strong>注意：methods 和 computed 里的东西不要重名</strong></p>
 <p><strong>说明：</strong></p>
 <ul>
 <li>methods：定义方法，调用方法使用 currentTime1()，需要带括号</li>
 <li>computed：定义计算属性，调用属性使用 currentTime2，不需要带括号；this.message 是为了能够让 currentTime2 观察到数据变化而变化</li>
-<li>如何在方法中的值发生了变化，则缓存就会刷新！可以在控制台使用 vm.message=”carey”,改变下数据的值，再次测试观察效果！</li>
+<li>如何在方法中的值发生了变化，则缓存就会刷新！可以在控制台使用 vm.message=”123”,改变下数据的值，再次测试观察效果！</li>
 </ul>
+<img src="/blog/2020/07/19/vue/computed%E6%B5%8B%E8%AF%95.png" class>
+
+<p>computed定义的属性很像一个缓存机制，只有改变里面所定义的东西，再次使用该属性的时候才会改变</p>
 <p><strong>结论：</strong></p>
 <p>调用方法时，每次都需要进行计算，既然有计算过程则必定产生系统开销，那如果这个结果是不经常变化的呢？此时就可以考虑将这个结果缓存起来，采用计算属性可以很方便的做到这一点,计算属性的主要特性就是为了将不经常变化的计算结果进行缓存，以节约我们的系统开销;</p>
 <h4 id="7-2、内容分发"><a href="#7-2、内容分发" class="headerlink" title="7.2、内容分发"></a>7.2、内容分发</h4><p>在 <code>Vue.js</code> 中我们使用 <code>&lt;slot&gt;</code> 元素作为承载分发内容的出口，作者称其为 插槽，可以应用在组合组件的场景中;</p>
+<p>slot相当于一个空标签，通过vue可以实现动态改变值和样式，把一块区域内容抽了出来可以实现复用，就和Java里封装的工具类一样</p>
 <p><strong>测试</strong></p>
 <p>比如准备制作一个待办事项组件（todo），该组件由待办标题（todo-title）和待办内容（todo-items）组成，但这三个组件又是相互独立的，该如何操作呢？</p>
 <p><strong>第一步: 定义一个待办事项的组件</strong></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"vue"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">todo</span>&gt;</span><span class="tag">&lt;/<span class="name">todo</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript">    Vue.component(<span class="string">'todo'</span>, &#123;</span></span><br><span class="line"><span class="handlebars"><span class="xml">        template: '<span class="tag">&lt;<span class="name">div</span>&gt;</span>\</span></span></span><br><span class="line"><span class="handlebars"><span class="xml">                    <span class="tag">&lt;<span class="name">div</span>&gt;</span>待办事项<span class="tag">&lt;/<span class="name">div</span>&gt;</span>\</span></span></span><br><span class="line"><span class="handlebars"><span class="xml">                    <span class="tag">&lt;<span class="name">ul</span>&gt;</span>\</span></span></span><br><span class="line"><span class="handlebars"><span class="xml">                        <span class="tag">&lt;<span class="name">li</span>&gt;</span>学习Java<span class="tag">&lt;/<span class="name">li</span>&gt;</span>\</span></span></span><br><span class="line"><span class="handlebars"><span class="xml">                    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>\</span></span></span><br><span class="line"><span class="handlebars"><span class="xml">               <span class="tag">&lt;/<span class="name">div</span>&gt;</span>'</span></span></span><br><span class="line">    &#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"vue"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">todo</span>&gt;</span><span class="tag">&lt;/<span class="name">todo</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript">    Vue.component(<span class="string">'todo'</span>, &#123;</span></span><br><span class="line">        template: `</span><br><span class="line"><span class="handlebars"><span class="xml">			<span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">				<span class="tag">&lt;<span class="name">div</span>&gt;</span>待办事项<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">				<span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">					<span class="tag">&lt;<span class="name">li</span>&gt;</span>学习Java<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">  				<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">    		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span></span><br><span class="line">		`</span><br><span class="line">    &#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>第二步: 我们需要让待办事项的标题和值实现动态绑定,怎么做呢? 我们可以留出一个插槽!</strong></p>
 <p>1-将上面的代码留出一个插槽,即 slot</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">Vue.component('todo', &#123;</span><br><span class="line">    template: '<span class="tag">&lt;<span class="name">div</span>&gt;</span>\</span><br><span class="line">                    <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">"todo-title"</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span>\</span><br><span class="line">                    <span class="tag">&lt;<span class="name">ul</span>&gt;</span>\</span><br><span class="line">                        <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">"todo-items"</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span>\</span><br><span class="line">                    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>\</span><br><span class="line">               <span class="tag">&lt;/<span class="name">div</span>&gt;</span>'</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Vue.component(&quot;todo&quot;, &#123;</span><br><span class="line">  template: &#96;</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">              &lt;slot name&#x3D;&quot;todo-title&quot;&gt;&lt;&#x2F;slot&gt;</span><br><span class="line">              &lt;ul&gt;</span><br><span class="line">                &lt;slot name&#x3D;&quot;todo-items&quot;&gt;&lt;&#x2F;slot&gt; </span><br><span class="line">              &lt;&#x2F;ul&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">    &#96;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
 <p>2-定义一个名为 todo-title 的待办标题组件 和 todo-items 的待办内容组件</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">Vue.component('todo-title', &#123;</span><br><span class="line">    props: ['title'],</span><br><span class="line">    template: '<span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;title&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span>'</span><br><span class="line">&#125;);</span><br><span class="line">//这里的index,就是数组的下标,使用for循环遍历的时候,可以循环出来!</span><br><span class="line">Vue.component('todo-items', &#123;</span><br><span class="line">    props: ['item', 'index'],</span><br><span class="line">    template: '<span class="tag">&lt;<span class="name">li</span>&gt;</span>&#123;&#123;index + 1&#125;&#125;. &#123;&#123;item&#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span>'</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">Vue.component("todo-title", &#123;</span><br><span class="line">  props: ['title'],</span><br><span class="line">  template: `</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;title&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  `</span><br><span class="line">&#125;);</span><br><span class="line">//这里的index,就是数组的下标,使用for循环遍历的时候,可以循环出来!</span><br><span class="line">Vue.component("todo-items", &#123;</span><br><span class="line">  props: ['item', 'index'],</span><br><span class="line">  template: `</span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>&#123;&#123;index + 1&#125;&#125;、&#123;&#123;item&#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  `</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
 <p>3-实例化 Vue 并初始化数据</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">var vm = new Vue(&#123;</span><br><span class="line">    el: '#vue',</span><br><span class="line">    data: &#123;</span><br><span class="line">		title: "待办事项",</span><br><span class="line">        todoItems: ['学Java', '学linux', '学前端']</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
@@ -10135,8 +10139,8 @@
 <p>Vue的开发都是要基于NodeJS, 实际开发采用 vue-cli脚手架开发,vue-router 路由,vuex做状态管理; Vue UI,界面我们一般使用 ElementUI(饿了么出品),或者ICE(阿里巴巴出品!)来快速搭建前端项目~</p>
 <p><strong>官网:</strong></p>
 <ul>
-<li><a href="https://element.eleme.cn/#/zh-CN" target="_blank" rel="noopener">https://element.eleme.cn/#/zh-CN</a></li>
-<li><a href="https://ice.work/" target="_blank" rel="noopener">https://ice.work/</a></li>
+<li>ElementUI：<a href="https://element.eleme.cn/#/zh-CN" target="_blank" rel="noopener">https://element.eleme.cn/#/zh-CN</a></li>
+<li>ICE：<a href="https://ice.work/" target="_blank" rel="noopener">https://ice.work/</a></li>
 </ul>
 <h3 id="8、vue-cli"><a href="#8、vue-cli" class="headerlink" title="8、vue-cli"></a>8、vue-cli</h3><h4 id="8-1、什么是vue-cli"><a href="#8-1、什么是vue-cli" class="headerlink" title="8.1、什么是vue-cli"></a>8.1、什么是vue-cli</h4><p>vue-cli 官方提供的一个脚手架,用于快速生成一个 vue 的项目模板;</p>
 <p>预先定义好的目录结构及基础代码，就好比咱们在创建 Maven 项目时可以选择创建一个骨架项目，这个骨架项目就是脚手架,我们的开发更加的快速;</p>
@@ -11029,6 +11033,872 @@
 <p>JMM（Java Memory Model的缩写）</p>
 <p>2.他干嘛的？     官方，其他人的博客，对应的视频</p>
 <p>3.他该如何学习</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>redis</title>
+    <url>/blog/2020/09/02/redis/</url>
+    <content><![CDATA[<h2 id="Redis学习"><a href="#Redis学习" class="headerlink" title="Redis学习"></a>Redis学习</h2><a id="more"></a>
+
+<h3 id="Nosql概述"><a href="#Nosql概述" class="headerlink" title="Nosql概述"></a>Nosql概述</h3><h4 id="为什么使用Nosql"><a href="#为什么使用Nosql" class="headerlink" title="为什么使用Nosql"></a>为什么使用Nosql</h4><blockquote>
+<p>1、单级Mysql的年代</p>
+</blockquote>
+<img src="/blog/2020/09/02/redis/image-20200902225601453.png" class>
+
+<p>90年代,一个网站的访问量一般不会太大，单个数据库完全够用。</p>
+<p>但如果随着用户增多，网站会出现以下问题：</p>
+<ol>
+<li>数据量增加到一定程度，单机数据库就放不下了</li>
+<li>数据的索引（B+ Tree）,一个机器内存也存放不下</li>
+<li>访问量变大后（读写混合），一台服务器承受不住。</li>
+</ol>
+<p>如果出现上面的情况之一，必须要进行晋级改进技术！</p>
+<blockquote>
+<p>2、Memcached(缓存) + Mysql + 垂直拆分（读写分离）</p>
+</blockquote>
+<p>网站80%的情况都是在读，每次都要去查询数据库的话就十分的麻烦！所以说我们希望减轻数据库的压力，我们可以使用缓存来保证效率！</p>
+<img src="/blog/2020/09/02/redis/image-20200902231157620.png" class>
+
+<p>发展过程：优化数据结构和索引–&gt;文件缓存（IO）–&gt;Memcached（当时最热门的技术！）</p>
+<ol>
+<li>优化数据库的数据结构和索引(难度大)</li>
+<li>文件缓存，通过IO流获取比每次都访问数据库效率略高，但是流量爆炸式增长时候，IO流也承受不了</li>
+<li>MemCache,当时最热门的技术，通过在数据库和数据库访问层之间加上一层缓存，第一次访问时查询数据库，将结果保存到缓存，后续的查询先检查缓存，若有直接拿去使用，效率显著提升。</li>
+</ol>
+<blockquote>
+<p>3、分库分表 + 水平拆分 + Mysql集群</p>
+</blockquote>
+<p>==本质：数据库（读，写）==</p>
+<p>早些年MyISM：表锁，十分影响效率！高并发下就会出现严重的锁问题</p>
+<p>转战Innodb：行琐</p>
+<p>慢慢的就开始使用分库分表来解决写的压力！MySQL在那个年代推出了表分区，但这个并没有多少公司使用！</p>
+<p>MySQL的集群，很好的满足了当时那个年代的一些需求</p>
+<img src="/blog/2020/09/02/redis/image-20200902233057887.png" class>
+
+<blockquote>
+<p>4、如今最近的年代</p>
+</blockquote>
+<p> 如今信息量井喷式增长，各种各样的数据出现（用户定位数据，图片数据等），大数据的背景下关系型数据库无法满足大量数据要求。</p>
+<blockquote>
+<p>目前一个基本的互联网项目</p>
+</blockquote>
+<img src="/blog/2020/09/02/redis/image-20200902235638078.png" class>
+
+<blockquote>
+<p>为什么要用NoSQL ？</p>
+</blockquote>
+<p>用户的个人信息，社交网络，地理位置。用户自己产生的数据，用户日志等等爆发式增长！<br>这时候我们就需要使用NoSQL数据库的，Nosql可以很好的处理以上的情况！</p>
+<h4 id="什么是NoSQL"><a href="#什么是NoSQL" class="headerlink" title="什么是NoSQL"></a>什么是NoSQL</h4><p><strong>NoSQL = Not Only SQL（不仅仅是SQL）</strong></p>
+<p>关系型数据库：行+列，同一个表下数据的结构是一样的。</p>
+<p>非关系型数据库：数据存储没有固定的格式，并且可以进行横向扩展。</p>
+<p>NoSQL泛指非关系型数据库，随着web2.0互联网的诞生，传统的关系型数据库很难对付web2.0时代！尤其是超大规模的高并发的社区，暴露出来很多难以克服的问题，NoSQL在当今大数据环境下发展的十分迅速，Redis是发展最快的。</p>
+<blockquote>
+<p>NoSQL特点</p>
+</blockquote>
+<ol>
+<li>方便扩展（数据之间没有关系，很好扩展！）</li>
+<li>大数据量高性能（Redis一秒可以写8万次，读11万次，NoSQL的缓存记录级，是一种细粒度的缓存，性能会比较高！）</li>
+<li>数据类型是多样型的！（不需要事先设计数据库，随取随用）</li>
+<li>传统的 RDBMS 和 NoSQL</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">传统的 RDBMS(关系型数据库)</span><br><span class="line">- 结构化组织</span><br><span class="line">- SQL</span><br><span class="line">- 数据和关系都存在单独的表中 row col</span><br><span class="line">- 操作，数据定义语言</span><br><span class="line">- 严格的一致性</span><br><span class="line">- 基础的事务</span><br><span class="line">- ...</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">NoSQL</span><br><span class="line">- 不仅仅是数据</span><br><span class="line">- 没有固定的查询语言</span><br><span class="line">- 键值对存储，列存储，文档存储，图形数据库（社交关系）</span><br><span class="line">- 最终一致性</span><br><span class="line">- CAP定理和BASE	</span><br><span class="line">- 高性能，高可用，高扩展</span><br><span class="line">- ...</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>了解：3V + 3高</p>
+</blockquote>
+<p>大数据时代的3V ：主要是<strong>描述问题</strong>的</p>
+<ol>
+<li>海量Velume</li>
+<li>多样Variety</li>
+<li>实时Velocity</li>
+</ol>
+<p>大数据时代的3高 ： 主要是<strong>对程序的要求</strong></p>
+<ol>
+<li>高并发</li>
+<li>高可扩</li>
+<li>高性能</li>
+</ol>
+<p>真正在公司中的实践：NoSQL + RDBMS 一起使用才是最强的。</p>
+<h4 id="阿里巴巴演进分析"><a href="#阿里巴巴演进分析" class="headerlink" title="阿里巴巴演进分析"></a>阿里巴巴演进分析</h4><img src="/blog/2020/09/02/redis/image-20200903162312046.png" class>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"># 商品信息</span><br><span class="line">  一般存放在关系型数据库：Mysql,阿里巴巴使用的Mysql都是经过内部改动的。</span><br><span class="line"></span><br><span class="line"># 商品描述、评论(文字居多)</span><br><span class="line">  文档型数据库：MongoDB</span><br><span class="line"></span><br><span class="line"># 图片</span><br><span class="line">  分布式文件系统 FastDFS</span><br><span class="line">  - 淘宝：TFS</span><br><span class="line">  - Google: GFS</span><br><span class="line">  - Hadoop: HDFS</span><br><span class="line">  - 阿里云: oss</span><br><span class="line"></span><br><span class="line"># 商品的关键字 用于搜索</span><br><span class="line">  - 搜索引擎：solr,elasticsearch</span><br><span class="line">  - 阿里：Isearch 多隆</span><br><span class="line"></span><br><span class="line"># 商品热门的波段信息</span><br><span class="line">  - 内存数据库：Redis，Tair，Memcache</span><br><span class="line"></span><br><span class="line"># 商品交易，外部支付接口</span><br><span class="line">  - 第三方应用</span><br></pre></td></tr></table></figure>
+
+<p>大型互联网应用问题：</p>
+<ul>
+<li>数据类型太多了</li>
+<li>数据源繁多，经常重构</li>
+<li>数据要改造，大面积改造麻烦</li>
+</ul>
+<p>解决问题：</p>
+<img src="/blog/2020/09/02/redis/image-20200903163303464.png" class>
+
+<img src="/blog/2020/09/02/redis/image-20200903163415290.png" class>
+
+<h4 id="Nosql的四大分类"><a href="#Nosql的四大分类" class="headerlink" title="Nosql的四大分类"></a>Nosql的四大分类</h4><p><strong>KV键值对：</strong></p>
+<ul>
+<li>新浪：Redis</li>
+<li>美团：Redis + Tair</li>
+<li>阿里、百度：Redis + Memcache</li>
+</ul>
+<p><strong>文档型数据库（bson数据格式和json一样）：</strong></p>
+<ul>
+<li><strong>MongoDB</strong>(一般必须要掌握)<ul>
+<li>基于分布式文件存储的数据库。C++编写，用于处理大量文档。</li>
+<li>MongoDB是介于关系型数据库和非关系型数据库的中间产品。MongoDB是非关系型数据库中功能最丰富的，最像关系型数据库的数据库。</li>
+</ul>
+</li>
+<li>ConthDB</li>
+</ul>
+<p><strong>列存储数据库</strong></p>
+<ul>
+<li>HBase(大数据必学)</li>
+<li>分布式文件系统</li>
+</ul>
+<p><strong>图关系数据库</strong></p>
+<p>用于广告推荐，社交网络</p>
+<ul>
+<li>Neo4j、InfoGrid</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>分类</strong></th>
+<th align="center"><strong>Examples举例</strong></th>
+<th align="center"><strong>典型应用场景</strong></th>
+<th align="center"><strong>数据模型</strong></th>
+<th align="center"><strong>优点</strong></th>
+<th align="center"><strong>缺点</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>键值对（key-value）</strong></td>
+<td align="center">Tokyo Cabinet/Tyrant, Redis, Voldemort, Oracle BDB</td>
+<td align="center">内容缓存，主要用于处理大量数据的高访问负载，也用于一些日志系统等等。</td>
+<td align="center">Key 指向 Value 的键值对，通常用hash table来实现</td>
+<td align="center">查找速度快</td>
+<td align="center">数据无结构化，通常只被当作字符串或者二进制数据</td>
+</tr>
+<tr>
+<td><strong>列存储数据库</strong></td>
+<td align="center">Cassandra, HBase, Riak</td>
+<td align="center">分布式的文件系统</td>
+<td align="center">以列簇式存储，将同一列数据存在一起</td>
+<td align="center">查找速度快，可扩展性强，更容易进行分布式扩展</td>
+<td align="center">功能相对局限</td>
+</tr>
+<tr>
+<td><strong>文档型数据库</strong></td>
+<td align="center">CouchDB, MongoDb</td>
+<td align="center">Web应用（与Key-Value类似，Value是结构化的，不同的是数据库能够了解Value的内容）</td>
+<td align="center">Key-Value对应的键值对，Value为结构化数据</td>
+<td align="center">数据结构要求不严格，表结构可变，不需要像关系型数据库一样需要预先定义表结构</td>
+<td align="center">查询性能不高，而且缺乏统一的查询语法。</td>
+</tr>
+<tr>
+<td><strong>图形(Graph)数据库</strong></td>
+<td align="center">Neo4J, InfoGrid, Infinite Graph</td>
+<td align="center">社交网络，推荐系统等。专注于构建关系图谱</td>
+<td align="center">图结构</td>
+<td align="center">利用图结构相关算法。比如最短路径寻址，N度关系查找等</td>
+<td align="center">很多时候需要对整个图做计算才能得出需要的信息，而且这种结构不太好做分布式的集群</td>
+</tr>
+</tbody></table>
+<h3 id="Redis入门"><a href="#Redis入门" class="headerlink" title="Redis入门"></a>Redis入门</h3><h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><blockquote>
+<p>Redis是什么？</p>
+</blockquote>
+<p>Redis（Remote Dictionary Server )，即远程字典服务。</p>
+<p>是一个开源的使用ANSI C语言编写、支持网络、可基于内存亦可持久化的日志型、<strong>Key-Value数据库</strong>，并提供多种语言的API。</p>
+<p>与memcached一样，为了保证效率，<strong>数据都是缓存在内存中</strong>。区别的是redis会周期性的把更新的数据写入磁盘或者把修改操作写入追加的记录文件，并且在此基础上实现了master-slave(主从)同步。</p>
+<blockquote>
+<p>Redis能该干什么？</p>
+</blockquote>
+<p> 1、内存存储、持久化，内存是断电即失的，所以需要持久化（RDB、AOF）</p>
+<p>2、效率高、可用于高速缓存</p>
+<p>3、发布订阅系统</p>
+<p>4、地图信息分析</p>
+<p>5、计时器、计数器(eg：浏览量)</p>
+<p>……</p>
+<blockquote>
+<p>特性</p>
+</blockquote>
+<p>1、多样的数据类型</p>
+<p>2、持久化</p>
+<p>3、集群</p>
+<p>4、事务</p>
+<p>……</p>
+<blockquote>
+<p>环境搭建</p>
+</blockquote>
+<p>官网：<a href="https://redis.io/" target="_blank" rel="noopener">https://redis.io/</a></p>
+<p>推荐使用Linux服务器学习。</p>
+<h4 id="Windows安装"><a href="#Windows安装" class="headerlink" title="Windows安装"></a>Windows安装</h4><p>1、下载安装包：<a href="https://github.com/dmajkic/redis" target="_blank" rel="noopener">https://github.com/dmajkic/redis</a></p>
+<p>2、下载完毕得到压缩包</p>
+<p>3、解压到自己电脑上的环境目录</p>
+<p>4、开启Redis，双击运行服务即可redis-server.exe</p>
+<img src="/blog/2020/09/02/redis/image-20200903174236733.png" class>
+
+<p>5、使用Redis客户端来连接Redis</p>
+<img src="/blog/2020/09/02/redis/image-20200903174221560.png" class>
+
+<h4 id="Linux安装"><a href="#Linux安装" class="headerlink" title="Linux安装"></a>Linux安装</h4><p>1、下载安装包</p>
+<img src="/blog/2020/09/02/redis/image-20200903174718423.png" class>
+
+<p>2、解压Redis的安装包！程序/opt</p>
+<img src="/blog/2020/09/02/redis/image-20200903221909900.png" class>
+
+<p>3、进入解压后的文件，可以看到Redis的配置文件</p>
+<img src="/blog/2020/09/02/redis/image-20200903222030989.png" class>
+
+<p>4、基本的环境安装</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum install gcc-c++</span><br><span class="line"></span><br><span class="line">make</span><br><span class="line"></span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+
+<img src="/blog/2020/09/02/redis/image-20200903222454706.png" class>
+
+<img src="/blog/2020/09/02/redis/image-20200903222537678.png" class>
+
+<p>5、redis的默认安装路径<code>/usr/local/bin</code></p>
+<img src="/blog/2020/09/02/redis/image-20200903223009976.png" class>
+
+<p>6、将Redis配置文件     复制到我们当前目录下</p>
+<img src="/blog/2020/09/02/redis/image-20200903224424203.png" class>
+
+<p>7、Redis默认不是后台启动的，修改配置文件！</p>
+<img src="/blog/2020/09/02/redis/image-20200903224740736.png" class>
+
+<p>8、启动Redis服务</p>
+<img src="/blog/2020/09/02/redis/image-20200903225107747.png" class>
+
+<p>9、使用redis-cli进行连接测试</p>
+<img src="/blog/2020/09/02/redis/image-20200903225406634.png" class>
+
+<p>10、查看redis的进程是否开启！</p>
+<img src="/blog/2020/09/02/redis/image-20200903234705904.png" class>
+
+<p>11、如何关闭Redis服务</p>
+<img src="/blog/2020/09/02/redis/image-20200903234902991.png" class>
+
+<p>12、再次查看进程是否存在</p>
+<img src="/blog/2020/09/02/redis/image-20200903234952342.png" class>
+
+<p>13、后面我们会使用单机多Redis启动集群测试！</p>
+<h4 id="测试性能"><a href="#测试性能" class="headerlink" title="测试性能"></a>测试性能</h4><p><strong>redis-benchmark：</strong>Redis官方提供的性能测试工具，参数选项如下：</p>
+<img src="/blog/2020/09/02/redis/20200513214125892.png" class>
+
+<p><strong>简单测试：</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 测试：100个并发连接 100000请求</span></span><br><span class="line">redis-benchmark -h localhost -p 6379 -c 100 -n 100000</span><br></pre></td></tr></table></figure>
+
+<img src="/blog/2020/09/02/redis/image-20200905202029723.png" class>
+
+<h4 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h4><p>redis默认有16个数据库</p>
+<img src="/blog/2020/09/02/redis/image-20200905202416347.png" class>
+
+<p>默认使用的第0个;</p>
+<p>16个数据库为：DB 0~DB 15<br>默认使用DB 0 ，可以使用<code>select n</code>切换到DB n，<code>dbsize</code>可以查看当前数据库的大小，与key数量相关。</p>
+<p>切换数据库、查看数据库大小</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; SELECT 3         #切换数据库</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379[3]&gt; DBSIZE		#查看数据库大小</span><br><span class="line">(integer) 0</span><br></pre></td></tr></table></figure>
+
+<p>查看数据库所有的<code>key *</code></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379[3]&gt; keys *	#查看数据库所有的key</span><br><span class="line">1) "name"</span><br></pre></td></tr></table></figure>
+
+<p>清除当前数据库<code>flushdb</code></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379[3]&gt; flushdb    #清除当前数据库</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379[3]&gt; keys *</span><br><span class="line">(empty array)</span><br></pre></td></tr></table></figure>
+
+<p>清除全部的数据库<code>FLUSHALL</code></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; FLUSHALL	#清除全部的数据库</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; keys *</span><br><span class="line">(empty array)</span><br></pre></td></tr></table></figure>
+
+<p><code>keys *</code> ：查看当前数据库中所有的key。</p>
+<p><code>flushdb</code>：清空当前数据库中的键值对。</p>
+<p><code>flushall</code>：清空所有数据库的键值对。</p>
+<p><strong>Redis是单线程的，Redis是基于内存操作的。</strong></p>
+<p>所以Redis的性能瓶颈不是CPU,而是机器内存和网络带宽。</p>
+<p><strong>Redis为什么单线程还这么快？</strong></p>
+<ul>
+<li><p>误区1：高性能的服务器一定是多线程的？</p>
+</li>
+<li><p>误区2：多线程（CPU上下文会切换！）一定比单线程效率高！</p>
+<p>速度：CPU&gt;内存&gt;磁盘</p>
+</li>
+</ul>
+<p>核心：Redis是将所有的数据放在内存中的，所以说使用单线程去操作效率就是最高的，多线程（CPU上下文会切换：耗时的操作！），对于内存系统来说，如果没有上下文切换效率就是最高的，多次读写都是在一个CPU上的，在内存存储数据情况下，单线程就是最佳的方案。</p>
+<h3 id="五大数据类型"><a href="#五大数据类型" class="headerlink" title="五大数据类型"></a>五大数据类型</h3><p>Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。 它支持多种类型的数据结构，如 <a href="http://www.redis.cn/topics/data-types-intro.html#strings" target="_blank" rel="noopener">字符串（strings）</a>， <a href="http://www.redis.cn/topics/data-types-intro.html#hashes" target="_blank" rel="noopener">散列（hashes）</a>， <a href="http://www.redis.cn/topics/data-types-intro.html#lists" target="_blank" rel="noopener">列表（lists）</a>， <a href="http://www.redis.cn/topics/data-types-intro.html#sets" target="_blank" rel="noopener">集合（sets）</a>， <a href="http://www.redis.cn/topics/data-types-intro.html#sorted-sets" target="_blank" rel="noopener">有序集合（sorted sets）</a> 与范围查询， <a href="http://www.redis.cn/topics/data-types-intro.html#bitmaps" target="_blank" rel="noopener">bitmaps</a>， <a href="http://www.redis.cn/topics/data-types-intro.html#hyperloglogs" target="_blank" rel="noopener">hyperloglogs</a> 和 <a href="http://www.redis.cn/commands/geoadd.html" target="_blank" rel="noopener">地理空间（geospatial）</a> 索引半径查询。 Redis 内置了 <a href="http://www.redis.cn/topics/replication.html" target="_blank" rel="noopener">复制（replication）</a>，<a href="http://www.redis.cn/commands/eval.html" target="_blank" rel="noopener">LUA脚本（Lua scripting）</a>， <a href="http://www.redis.cn/topics/lru-cache.html" target="_blank" rel="noopener">LRU驱动事件（LRU eviction）</a>，<a href="http://www.redis.cn/topics/transactions.html" target="_blank" rel="noopener">事务（transactions）</a> 和不同级别的 <a href="http://www.redis.cn/topics/persistence.html" target="_blank" rel="noopener">磁盘持久化（persistence）</a>， 并通过 <a href="http://www.redis.cn/topics/sentinel.html" target="_blank" rel="noopener">Redis哨兵（Sentinel）</a>和自动 <a href="http://www.redis.cn/topics/cluster-tutorial.html" target="_blank" rel="noopener">分区（Cluster）</a>提供高可用性（high availability）。</p>
+<h4 id="Redis-Key"><a href="#Redis-Key" class="headerlink" title="Redis-Key"></a>Redis-Key</h4><p>下面学习的命令：</p>
+<ul>
+<li><code>exists key</code>：判断键是否存在</li>
+<li><code>del key</code>：删除键值对</li>
+<li><code>move key db</code>：将键值对移动到指定数据库</li>
+<li><code>expire key second</code>：设置键值对的过期时间</li>
+<li><code>type key</code>：查看value的数据类型</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; keys *		# 查看所有的key</span><br><span class="line">(empty array)</span><br><span class="line">127.0.0.1:6379&gt; set name carey # set key</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; keys *</span><br><span class="line">1) "name"</span><br><span class="line">127.0.0.1:6379&gt; set age 1</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; keys *</span><br><span class="line">1) "name"</span><br><span class="line">2) "age"</span><br><span class="line">127.0.0.1:6379&gt; EXISTS name		# 判断当前的key是否存在</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; EXISTS name1</span><br><span class="line">(integer) 0</span><br><span class="line">127.0.0.1:6379&gt; move name 1		# 移动当前的key到指定的数据库</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; EXISTS name</span><br><span class="line">(integer) 0</span><br><span class="line">127.0.0.1:6379&gt; keys *</span><br><span class="line">1) "age"</span><br><span class="line">127.0.0.1:6379&gt; set name carey</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; keys *</span><br><span class="line">1) "name"</span><br><span class="line">2) "age"</span><br><span class="line">127.0.0.1:6379&gt; get name</span><br><span class="line">"carey"</span><br><span class="line">127.0.0.1:6379&gt; EXPIRE name 10	# 设置key的过期时间，单位是秒</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; ttl name	# 查看当前key的剩余时间</span><br><span class="line">(integer) 5</span><br><span class="line">127.0.0.1:6379&gt; ttl name</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; ttl name</span><br><span class="line">(integer) 0</span><br><span class="line">127.0.0.1:6379&gt; ttl name</span><br><span class="line">(integer) -2</span><br><span class="line">127.0.0.1:6379&gt; get name</span><br><span class="line">(nil)</span><br><span class="line">127.0.0.1:6379&gt; set name carey</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; keys *</span><br><span class="line">1) "name"</span><br><span class="line">2) "age"</span><br><span class="line">127.0.0.1:6379&gt; type name	# 查看当前key的一个类型</span><br><span class="line">string</span><br><span class="line">127.0.0.1:6379&gt; type age</span><br><span class="line">string</span><br><span class="line">127.0.0.1:6379&gt; SELECT 1</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379[1]&gt; keys *</span><br><span class="line">1) "name"</span><br><span class="line">127.0.0.1:6379[1]&gt; del name   # 删除当前key</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379[1]&gt; keys *</span><br><span class="line">(empty array)</span><br></pre></td></tr></table></figure>
+
+<p>关于<code>TTL</code>命令</p>
+<p>Redis的key，通过TTL命令返回key的过期时间，一般来说有3种：</p>
+<ol>
+<li>当前key没有设置过期时间，所以会返回-1.</li>
+<li>当前key有设置过期时间，而且key已经过期，所以会返回-2.</li>
+<li>当前key有设置过期时间，且key还没有过期，故会返回key的正常剩余时间.</li>
+</ol>
+<p>关于重命名<code>RENAME</code>和<code>RENAMENX</code></p>
+<ul>
+<li><code>RENAME key newkey</code>修改 key 的名称</li>
+<li><code>RENAMENX key newkey</code>仅当 newkey 不存在时，将 key 改名为 newkey 。</li>
+</ul>
+<p>更多命令学习：<a href="https://www.redis.net.cn/order/" target="_blank" rel="noopener">https://www.redis.net.cn/order/</a></p>
+<h4 id="String-字符串"><a href="#String-字符串" class="headerlink" title="String(字符串)"></a>String(字符串)</h4><p>普通的set、get直接略过。</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>APPEND key value</code></td>
+<td>向指定的key的value后追加字符串<br>如果当前key不存在，就相当于set key</td>
+<td>127.0.0.1:6379[1]&gt; set key1 v1<br>OK<br>127.0.0.1:6379[1]&gt; APPEND key1 “hello”<br>(integer) 7<br>127.0.0.1:6379[1]&gt; get key1<br>“v1hello”</td>
+</tr>
+<tr>
+<td><code>DECR/INCR key</code></td>
+<td>将指定key的value数值进行+1/-1(仅对于数字)</td>
+<td>127.0.0.1:6379&gt; set views 5<br>OK<br>127.0.0.1:6379&gt; get views<br>“5”<br>127.0.0.1:6379&gt; INCR views<br>(integer) 6<br>127.0.0.1:6379&gt; DECR views<br>(integer) 5</td>
+</tr>
+<tr>
+<td><code>INCRBY/DECRBY key n</code></td>
+<td>按指定的步长对数值进行加减</td>
+<td>127.0.0.1:6379&gt; get views<br>“-1”<br>127.0.0.1:6379&gt; INCRBY views 10<br>(integer) 9<br>127.0.0.1:6379&gt; DECRBY views 5<br>(integer) 4<br>127.0.0.1:6379&gt; get views<br>“4”</td>
+</tr>
+<tr>
+<td><code>INCRBYFLOAT key n</code></td>
+<td>为数值加上浮点型数值</td>
+<td>127.0.0.1:6379&gt; INCRBYFLOAT age 5.2 “20.2”</td>
+</tr>
+<tr>
+<td><code>STRLEN key</code></td>
+<td>获取key保存值的字符串长度</td>
+<td>127.0.0.1:6379&gt; set msg ‘hello world’<br>OK<br>127.0.0.1:6379&gt; get msg<br>“hello world”<br>127.0.0.1:6379&gt; STRLEN msg<br>(integer) 11</td>
+</tr>
+<tr>
+<td><code>GETRANGE key start end</code></td>
+<td>按起止位置获取字符串<br>（闭区间，起止位置都取）, <br> end取-1的话，是取整个字符串</td>
+<td>127.0.0.1:6379&gt; set key1 “hello,carey”<br>OK<br>127.0.0.1:6379&gt; get key1<br>“hello,carey”<br>127.0.0.1:6379&gt; GETRANGE key1 0 3<br>“hell”<br>127.0.0.1:6379&gt; GETRANGE key1 0 -1<br>“hello,carey”</td>
+</tr>
+<tr>
+<td><code>SETRANGE key offset value</code></td>
+<td>用指定的value 替换key中 offset开始的值</td>
+<td>127.0.0.1:6379&gt; set key2 abcdefg<br>OK<br>127.0.0.1:6379&gt; get key2<br>“abcdefg”<br>127.0.0.1:6379&gt; SETRANGE key2 1 xx<br>(integer) 7<br>127.0.0.1:6379&gt; get key2<br>“axxdefg”</td>
+</tr>
+<tr>
+<td><code>GETSET key value</code></td>
+<td>将给定 key 的值设为 value ，并返回 key 的旧值(old value)。</td>
+<td>127.0.0.1:6379&gt; GETSET msg test “hello world”</td>
+</tr>
+<tr>
+<td><code>SETNX key value</code></td>
+<td>仅当key不存在时进行set<br>(在分布式锁中常常使用)</td>
+<td>127.0.0.1:6379&gt; SETNX mykey “redis”<br>(integer) 1<br>127.0.0.1:6379&gt; SETNX mykey “MongoDB”<br>(integer) 0<br>127.0.0.1:6379&gt; get mykey<br>“redis”</td>
+</tr>
+<tr>
+<td><code>SETEX key seconds value</code></td>
+<td>set 键值对并设置过期时间</td>
+<td>127.0.0.1:6379&gt; SETEX key3 30 “hello”<br>OK<br>127.0.0.1:6379&gt; ttl key3<br>(integer) 25<br>127.0.0.1:6379&gt; get key3<br>“hello”<br>127.0.0.1:6379&gt; keys *<br>1) “key2”<br>2) “key1”<br>3) “msg”<br>4) “mykey”<br>127.0.0.1:6379&gt; ttl key3<br>(integer) -2</td>
+</tr>
+<tr>
+<td><code>MSET key1 value1 [key2 value2..]</code></td>
+<td>批量set键值对</td>
+<td>127.0.0.1:6379&gt; keys *<br>(empty array)<br>127.0.0.1:6379&gt; MSET k1 v1 k2 v2 k3 v3<br>OK<br>127.0.0.1:6379&gt; keys *<br>1) “k3”<br>2) “k2”<br>3) “k1”<br>127.0.0.1:6379&gt; MGET k1 k2 k3<br>1) “v1”<br>2) “v2”<br>3) “v3”</td>
+</tr>
+<tr>
+<td><code>MSETNX key1 value1 [key2 value2..]</code></td>
+<td>批量设置键值对，仅当参数中所有的key都不存在时执行,(示例中k1已经创建过了)</td>
+<td>127.0.0.1:6379&gt; MSETNX k1 v1 k4 v4<br>(integer) 0<br>127.0.0.1:6379&gt; get k4<br>(nil)</td>
+</tr>
+<tr>
+<td><code>MGET key1 [key2..]</code></td>
+<td>批量获取多个key保存的值</td>
+<td>127.0.0.1:6379&gt; MGET k1 k2 k3 1) “v1” 2) “v2” 3) “v3”</td>
+</tr>
+<tr>
+<td><code>PSETEX key milliseconds value</code></td>
+<td>和 SETEX 命令相似，但它以毫秒为单位设置 key 的生存时间，</td>
+<td></td>
+</tr>
+<tr>
+<td><code>getset key value</code></td>
+<td>先get后set，<br>如果不存在值，则返回nil，<br>如果存在值，获取原来的值。  <br>最后设置新的值。</td>
+<td>127.0.0.1:6379&gt; getset db redis<br>(nil)<br>127.0.0.1:6379&gt; get db<br>“redis”<br>127.0.0.1:6379&gt; getset db mongodb<br>“redis”<br>127.0.0.1:6379&gt; get db<br>“mongodb”</td>
+</tr>
+</tbody></table>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 对象</span></span><br><span class="line">127.0.0.1:6379&gt; set user:1 &#123;name:zhangsan,age:3&#125; # 设置一个user:1 对象 值为 Jason字符来保存一个对象！</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> user:&#123;id&#125;:&#123;field&#125;</span></span><br><span class="line"></span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; get user:1</span><br><span class="line">"&#123;name:zhangsan,age:3&#125;"</span><br><span class="line">127.0.0.1:6379&gt; del user:1</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; get user:1</span><br><span class="line">(nil)</span><br><span class="line">127.0.0.1:6379&gt; mset user:1:name zhangsan user:1:age 2</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; mget user:1:name user:1:age</span><br><span class="line">1) "zhangsan"</span><br><span class="line">2) "2"</span><br></pre></td></tr></table></figure>
+
+<p>String类似的使用场景：value除了是字符串还可以是数字，用途举例：</p>
+<ul>
+<li>计数器</li>
+<li>统计多单位的数量：uid:123666：follow 0</li>
+<li>粉丝数</li>
+<li>对象存储缓存</li>
+</ul>
+<h4 id="List-列表"><a href="#List-列表" class="headerlink" title="List(列表)"></a>List(列表)</h4><blockquote>
+<p>Redis列表是简单的字符串列表，按照插入顺序排序。你可以添加一个元素到列表的头部（左边）或者尾部（右边）</p>
+<p>一个列表最多可以包含 232 - 1 个元素 (4294967295, 每个列表超过40亿个元素)。</p>
+</blockquote>
+<p>在Redis里面，我们可以把list玩成 栈 、队列、 双端队列</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; LPUSH list one	# 将一个值或者多个值，插入到列表头部（左）</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; LPUSH list two</span><br><span class="line">(integer) 2</span><br><span class="line">127.0.0.1:6379&gt; LPUSH list three</span><br><span class="line">(integer) 3</span><br><span class="line">127.0.0.1:6379&gt; LRANGE list 0 -1	# 获取list中的值</span><br><span class="line">1) "three"</span><br><span class="line">2) "two"</span><br><span class="line">3) "one"</span><br><span class="line">127.0.0.1:6379&gt; LRANGE list 0 1		# 通过区间获取具体的值</span><br><span class="line">1) "three"</span><br><span class="line">2) "two"</span><br><span class="line">127.0.0.1:6379&gt; RPUSH list righr	# 将一个值或者多个值，插入到列表尾部（右）</span><br><span class="line">(integer) 4</span><br><span class="line">127.0.0.1:6379&gt; LRANGE list 0 -1</span><br><span class="line">1) "three"</span><br><span class="line">2) "two"</span><br><span class="line">3) "one"</span><br><span class="line">4) "righr"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; LRANGE list 0 -1</span><br><span class="line">1) "three"</span><br><span class="line">2) "two"</span><br><span class="line">3) "one"</span><br><span class="line">4) "righr"</span><br><span class="line">127.0.0.1:6379&gt; LPOP list	# 移除list的第一个元素</span><br><span class="line">"three"</span><br><span class="line">127.0.0.1:6379&gt; RPOP list	# 移除list的最后一个元素</span><br><span class="line">"righr"</span><br><span class="line">127.0.0.1:6379&gt; LRANGE list 0 -1</span><br><span class="line">1) "two"</span><br><span class="line">2) "one"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; LRANGE list 0 -1</span><br><span class="line">1) "two"</span><br><span class="line">2) "one"</span><br><span class="line">127.0.0.1:6379&gt; LINDEX list 1	# 通过下标获得list中的某一个值</span><br><span class="line">"one"</span><br><span class="line">127.0.0.1:6379&gt; LINDEX list 0</span><br><span class="line">"two"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; LPUSH list one</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; LPUSH list two</span><br><span class="line">(integer) 2</span><br><span class="line">127.0.0.1:6379&gt; LPUSH list three</span><br><span class="line">(integer) 3</span><br><span class="line">127.0.0.1:6379&gt; LLEN list	# 返回列表的长度</span><br><span class="line">(integer) 3</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; LPUSH list three</span><br><span class="line">(integer) 4</span><br><span class="line">127.0.0.1:6379&gt; LRANGE list 0 -1</span><br><span class="line">1) "three"</span><br><span class="line">2) "three"</span><br><span class="line">3) "two"</span><br><span class="line">4) "one"</span><br><span class="line">127.0.0.1:6379&gt; LREM list 1 three	# 移除list集合中指定个数的value，精确匹配</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; LPUSH list three</span><br><span class="line">(integer) 4</span><br><span class="line">127.0.0.1:6379&gt; LREM list 2 three</span><br><span class="line">(integer) 2</span><br><span class="line">127.0.0.1:6379&gt; LRANGE list 0 -1</span><br><span class="line">1) "two"</span><br><span class="line">2) "one"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; FLUSHALL</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; RPUSH mylist "hello"</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; RPUSH mylist "hello1"</span><br><span class="line">(integer) 2</span><br><span class="line">127.0.0.1:6379&gt; RPUSH mylist "hello2"</span><br><span class="line">(integer) 3</span><br><span class="line">127.0.0.1:6379&gt; RPUSH mylist "hello3"</span><br><span class="line">(integer) 4</span><br><span class="line">127.0.0.1:6379&gt; LTRIM mylist 1 2	# 通过下标截取指定的长度，这个list已经被改变了，截断了只剩下截取的元素 </span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; LRANGE mylist 0 -1</span><br><span class="line">1) "hello1"</span><br><span class="line">2) "hello2"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">###################################################################</span></span></span><br><span class="line">rpoplpush # 移除列表的最后一个元素，将他移动到新的列表中</span><br><span class="line"></span><br><span class="line">127.0.0.1:6379&gt; RPUSH mylist "hello"</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; RPUSH mylist "hello1"</span><br><span class="line">(integer) 2</span><br><span class="line">127.0.0.1:6379&gt; RPUSH mylist "hello2"</span><br><span class="line">(integer) 3</span><br><span class="line">127.0.0.1:6379&gt; RPOPLPUSH mylist myotherlist	# 移除列表的最后一个元素，将他移动到新的列表中</span><br><span class="line">"hello2"</span><br><span class="line">127.0.0.1:6379&gt; LRANGE mylist 0 -1 # 查看原来的列表</span><br><span class="line">1) "hello"</span><br><span class="line">2) "hello1"</span><br><span class="line">127.0.0.1:6379&gt; LRANGE myotherlist 0 -1 # 查看目标列表中，确实存在该值</span><br><span class="line">1) "hello2"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">lset # 将列表中指定下标的值替换为另外一个值，更新操作</span><br><span class="line"></span><br><span class="line">127.0.0.1:6379&gt; EXISTS list	#判断列表是否存在</span><br><span class="line">(integer) 0</span><br><span class="line">127.0.0.1:6379&gt; lset list 0 item	# 如果不存在列表我们去更新就会报错</span><br><span class="line">(error) ERR no such key</span><br><span class="line">127.0.0.1:6379&gt; lpush list value1</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; LRANGE list 0 0</span><br><span class="line">1) "value1"</span><br><span class="line">127.0.0.1:6379&gt; LSET list 0 item	# 如果存在，更新当前下标的值</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; LRANGE list 0 0</span><br><span class="line">1) "item"</span><br><span class="line">127.0.0.1:6379&gt; LSET list 1 other	# 如果不存在，则会报错</span><br><span class="line">(error) ERR index out of range</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">linsert # 将某个具体的value插入到列表中某个元素的前面或者后面</span><br><span class="line"></span><br><span class="line">127.0.0.1:6379&gt; RPUSH mylist "hello"</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; RPUSH mylist "world"</span><br><span class="line">(integer) 2</span><br><span class="line">127.0.0.1:6379&gt; LINSERT mylist before "world" "other"</span><br><span class="line">(integer) 3</span><br><span class="line">127.0.0.1:6379&gt; LRANGE mylist 0 -1</span><br><span class="line">1) "hello"</span><br><span class="line">2) "other"</span><br><span class="line">3) "world"</span><br><span class="line">127.0.0.1:6379&gt; LINSERT mylist after "world" "new"</span><br><span class="line">(integer) 4</span><br><span class="line">127.0.0.1:6379&gt; LRANGE mylist 0 -1</span><br><span class="line">1) "hello"</span><br><span class="line">2) "other"</span><br><span class="line">3) "world"</span><br><span class="line">4) "new"</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>小结</p>
+</blockquote>
+<ul>
+<li>list实际上是一个链表，before Node after , left, right 都可以插入值</li>
+<li><strong>如果key不存在，则创建新的链表</strong></li>
+<li>如果key存在，新增内容</li>
+<li>如果移除了所有值，空链表，也代表不存在</li>
+<li>在两边插入或者改动值，效率最高！修改中间元素，效率相对较低</li>
+</ul>
+<p><strong>应用：</strong></p>
+<p><strong>消息排队！消息队列（Lpush Rpop）,栈（Lpush Lpop）</strong></p>
+<h4 id="Set-集合"><a href="#Set-集合" class="headerlink" title="Set(集合)"></a>Set(集合)</h4><blockquote>
+<p>Redis的Set是<strong>string类型</strong>的无序集合。集合成员是唯一的，这就意味着集合中不能出现重复的数据。</p>
+<p>Redis 中 集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是O(1)。</p>
+<p>集合中最大的成员数为 232 - 1 (4294967295, 每个集合可存储40多亿个成员)。</p>
+</blockquote>
+<p>set中的值不能重复</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; sadd myset "hello"		# set集合中添加元素</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; sadd myset "carey"</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; sadd myset "excellentcarey"</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SMEMBERS myset		# 查看指定set的所有值</span><br><span class="line">1) "carey"</span><br><span class="line">2) "excellentcarey"</span><br><span class="line">3) "hello"</span><br><span class="line">127.0.0.1:6379&gt; SISMEMBER myset carey	# 判断某一个值是不是在set集合中</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SISMEMBER myset word</span><br><span class="line">(integer) 0</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; SCARD myset		# 获取set集合中的内容元素个数</span><br><span class="line">(integer) 3</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; SREM myset hello	# 移除set集合中的指定元素</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SCARD myset</span><br><span class="line">(integer) 2</span><br><span class="line">127.0.0.1:6379&gt; SMEMBERS myset</span><br><span class="line">1) "carey"</span><br><span class="line">2) "excellentcarey"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; SMEMBERS myset</span><br><span class="line">1) "carey"</span><br><span class="line">2) "excellentcarey"</span><br><span class="line">127.0.0.1:6379&gt; SRANDMEMBER myset	# 随机抽选出一个元素</span><br><span class="line">"excellentcarey"</span><br><span class="line">127.0.0.1:6379&gt; SRANDMEMBER myset</span><br><span class="line">"excellentcarey"</span><br><span class="line">127.0.0.1:6379&gt; SRANDMEMBER myset</span><br><span class="line">"carey"</span><br><span class="line">127.0.0.1:6379&gt; SRANDMEMBER myset 1</span><br><span class="line">1) "carey"</span><br><span class="line">127.0.0.1:6379&gt; SRANDMEMBER myset 2		# 随机抽选出指定个数的元素</span><br><span class="line">1) "carey"</span><br><span class="line">2) "excellentcarey"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; SMEMBERS myset</span><br><span class="line">1) "carey"</span><br><span class="line">2) "carey2"</span><br><span class="line">3) "excellentcarey"</span><br><span class="line">127.0.0.1:6379&gt; SPOP myset	# 随机删除一些set集合中的元素！</span><br><span class="line">"excellentcarey"</span><br><span class="line">127.0.0.1:6379&gt; SPOP myset</span><br><span class="line">"carey"</span><br><span class="line">127.0.0.1:6379&gt; SMEMBERS myset</span><br><span class="line">1) "carey2"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">SMOVE	# 将一个指定的值，移动到另外一个set集合中</span><br><span class="line"></span><br><span class="line">127.0.0.1:6379&gt; SADD myset "hello" </span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SADD myset "world"</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SADD myset "carey"</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; sadd myset2 "set2"</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SMOVE myset myset2 "carey"  # 将一个指定的值，移动到另外一个set集合</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SMEMBERS myset</span><br><span class="line">1) "hello"</span><br><span class="line">2) "world"</span><br><span class="line">127.0.0.1:6379&gt; SMEMBERS myset2</span><br><span class="line">1) "carey"</span><br><span class="line">2) "set2"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line">数字集合类：</span><br><span class="line">- 差集	SDIFF</span><br><span class="line">- 交集	SINTER</span><br><span class="line">- 并集	SUNION</span><br><span class="line">127.0.0.1:6379&gt; SADD key1 a</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SADD key1 b</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SADD key1 c</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SADD key2 c</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SADD key2 d</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SADD key2 e</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; SDIFF key1 key2		# 差集</span><br><span class="line">1) "b"</span><br><span class="line">2) "a"</span><br><span class="line">127.0.0.1:6379&gt; SINTER key1 key2	# 交集	共同好友就可以这样实现</span><br><span class="line">1) "c"</span><br><span class="line">127.0.0.1:6379&gt; SUNION key1 key2	# 并集</span><br><span class="line">1) "a"</span><br><span class="line">2) "c"</span><br><span class="line">3) "e"</span><br><span class="line">4) "b"</span><br><span class="line">5) "d"</span><br></pre></td></tr></table></figure>
+
+<h4 id="Hash（哈希）"><a href="#Hash（哈希）" class="headerlink" title="Hash（哈希）"></a>Hash（哈希）</h4><blockquote>
+<p>Redis hash 是一个string类型的field和value的映射表，hash特别适合用于存储对象。</p>
+<p>Set就是一种简化的Hash,只变动key,而value使用默认值填充。可以将一个Hash表作为一个对象进行存储，表中存放对象的信息。</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; HSET myhash field1 carey	# set一个具体 key-value</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; HGET myhash field1	# 获取一个字段值</span><br><span class="line">"carey"</span><br><span class="line">127.0.0.1:6379&gt; HMSET myhash field1 hello field2 world	# set多个key-value</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; HMGET myhash field1 field2	# 获取多个字段值</span><br><span class="line">1) "hello"</span><br><span class="line">2) "world"</span><br><span class="line">127.0.0.1:6379&gt; HGETALL myhash	# 获取全部的数据</span><br><span class="line">1) "field1"</span><br><span class="line">2) "hello"</span><br><span class="line">3) "field2"</span><br><span class="line">4) "world"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">###############################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; HDEL myhash field1		# 删除hash指定key字段，对应的value值也就消失了</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; HGETALL myhash</span><br><span class="line">1) "field2"</span><br><span class="line">2) "world"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">###############################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; HMSET myhash field1 hello field2 world</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; HGETALL myhash</span><br><span class="line">1) "field2"</span><br><span class="line">2) "world"</span><br><span class="line">3) "field1"</span><br><span class="line">4) "hello"</span><br><span class="line">127.0.0.1:6379&gt; HLEN myhash		# 获取hash表的字段数量</span><br><span class="line">(integer) 2</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">##################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; HEXISTS myhash field1	# 判断hash中指定字段是否存在</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; HEXISTS myhash field3</span><br><span class="line">(integer) 0</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">##################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; HKEYS myhash	# 只获得所有field</span><br><span class="line">1) "field2"</span><br><span class="line">2) "field1"</span><br><span class="line">127.0.0.1:6379&gt; HVALS myhash	# 只获得所有value</span><br><span class="line">1) "world"</span><br><span class="line">2) "hello"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">##################################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; HSET myhash field3 5	# 指定增量</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; HINCRBY myhash field3 1	</span><br><span class="line">(integer) 6</span><br><span class="line">127.0.0.1:6379&gt; HINCRBY myhash field3 -1</span><br><span class="line">(integer) 5</span><br><span class="line">127.0.0.1:6379&gt; HSETNX myhash field4 hello	# 如果不存在则可以设置</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; HSETNX myhash field4 world	# 如果存在则不可以设置</span><br><span class="line">(integer) 0</span><br></pre></td></tr></table></figure>
+
+<p> Hash变更的数据user name age，尤其是用户信息之类的，经常变动的信息！<strong>Hash更适合于对象的存储，Sring更加适合字符串存储！</strong></p>
+<h4 id="Zset（有序集合）"><a href="#Zset（有序集合）" class="headerlink" title="Zset（有序集合）"></a>Zset（有序集合）</h4><blockquote>
+<p>不同的是每个元素都会关联一个double类型的分数（score）。redis正是通过分数来为集合中的成员进行从小到大的排序。</p>
+<p>score相同：按字典顺序排序</p>
+<p>有序集合的成员是唯一的,但分数(score)却可以重复。</p>
+</blockquote>
+<p>在set的基础上，增加了一个值，set k1 v1      zset k1 score1 v1</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; ZADD myset 1 one	# 添加一个值</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; ZADD myset 2 two 3 three	# 添加多个值</span><br><span class="line">(integer) 2</span><br><span class="line">127.0.0.1:6379&gt; ZRANGE myset 0 -1</span><br><span class="line">1) "one"</span><br><span class="line">2) "two"</span><br><span class="line">3) "three"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">##########################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; ZADD salary 2500 xiaohong	# 添加用户</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; ZADD salary 5000 zhangsan</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; ZADD salary 500 carey</span><br><span class="line">(integer) 1</span><br><span class="line"><span class="meta">#</span><span class="bash"> ZRANGEBYSCORE key min max</span></span><br><span class="line">127.0.0.1:6379&gt; ZRANGEBYSCORE salary -inf +inf	# 显示全部的用户 从小到大</span><br><span class="line">1) "carey"</span><br><span class="line">2) "xiaohong"</span><br><span class="line">3) "zhangsan"</span><br><span class="line">127.0.0.1:6379&gt; ZRANGEBYSCORE salary 0 -1</span><br><span class="line">(empty array)</span><br><span class="line">127.0.0.1:6379&gt; ZREVRANGE salary 0 -1	# 从大到小进行排序  ，要用ZREVRANGE</span><br><span class="line">1) "zhangsan"</span><br><span class="line">2) "xiaohong"</span><br><span class="line">3) "carey"</span><br><span class="line">127.0.0.1:6379&gt; ZRANGEBYSCORE salary -inf +inf withscores	# 显示全部的用户 从小到大并附带成绩</span><br><span class="line">1) "carey"</span><br><span class="line">2) "500"</span><br><span class="line">3) "xiaohong"</span><br><span class="line">4) "2500"</span><br><span class="line">5) "zhangsan"</span><br><span class="line">6) "5000"</span><br><span class="line">127.0.0.1:6379&gt; ZRANGEBYSCORE salary -inf 2500 withscores	# 显示工资小于2500员工的升序排列</span><br><span class="line">1) "carey"</span><br><span class="line">2) "500"</span><br><span class="line">3) "xiaohong"</span><br><span class="line">4) "2500"</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">##########################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; ZRANGE salary 0 -1</span><br><span class="line">1) "carey"</span><br><span class="line">2) "xiaohong"</span><br><span class="line">3) "zhangsan"</span><br><span class="line">127.0.0.1:6379&gt; ZREM salary xiaohong	# 移除有序集合中的指定元素</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; ZRANGE salary 0 -1</span><br><span class="line">1) "carey"</span><br><span class="line">2) "zhangsan"</span><br><span class="line">127.0.0.1:6379&gt; ZCARD salary	# 获取有序集合的个数</span><br><span class="line">(integer) 2</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">##########################################################</span></span></span><br><span class="line">127.0.0.1:6379&gt; zadd myset 1 hello</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; zadd myset 2 world 3 carey</span><br><span class="line">(integer) 2</span><br><span class="line">127.0.0.1:6379&gt; ZCOUNT myset 1 3	#获取指定区间的成员数量</span><br><span class="line">(integer) 3</span><br><span class="line">127.0.0.1:6379&gt; ZCOUNT myset 1 2</span><br><span class="line">(integer) 2</span><br></pre></td></tr></table></figure>
+
+<p>应用案例：</p>
+<ul>
+<li>set排序 存储班级成绩表 工资表排序！</li>
+<li>普通消息，1.重要消息 2.带权重进行判断</li>
+<li>排行榜应用实现，取Top N测试</li>
+</ul>
+<h3 id="三种特殊数据类型"><a href="#三种特殊数据类型" class="headerlink" title="三种特殊数据类型"></a>三种特殊数据类型</h3><h4 id="Geospatial-地理位置"><a href="#Geospatial-地理位置" class="headerlink" title="Geospatial(地理位置)"></a>Geospatial(地理位置)</h4><blockquote>
+<p>使用经纬度定位地理坐标并用一个<strong>有序集合zset保存</strong>，所以zset命令也可以使用</p>
+</blockquote>
+<p><img src="/blog/blog/.com/2020/09/02/redis/image-20200907135848524.png" alt="image-20200907135848524"></p>
+<blockquote>
+<p>geoadd</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> geoadd 添加地理位置</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 规则：两极无法直接添加，我们一般会下载城市数据，直接通过java程序一次性导入</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 参数 key 值（纬度、经度、名称）</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 有效的经度从-180度到180度。</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 有效的纬度从-85.05112878度到85.05112878度。</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 当坐标位置超出上述指定范围时，该命令将会返回一个错误。</span></span><br><span class="line"></span><br><span class="line">127.0.0.1:6379&gt; GEOADD china:city 114.085947 22.547 shenzhen</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; GEOADD china:city 113.280637 23.125178 shanghai</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; GEOADD china:city 116.355733 23.543778 jieyang 113.760234 23.048884 dongguang</span><br><span class="line">(integer) 2</span><br><span class="line">127.0.0.1:6379&gt; GEOADD china:city 113.280637 23.125178 guangzhou 116.405285 39.904989 beijing</span><br><span class="line">(integer) 2</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>geopos</p>
+</blockquote>
+<p>获得当前定位：一定是一个坐标值</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; GEOPOS china:city jieyang	# 获取指定的城市的经度和纬度</span><br><span class="line">1) 1) "116.3557317852973938"</span><br><span class="line">   2) "23.54377903364970592"</span><br><span class="line">127.0.0.1:6379&gt; GEOPOS china:city shenzhen shanghai</span><br><span class="line">1) 1) "114.08594459295272827"</span><br><span class="line">   2) "22.54699993773966327"</span><br><span class="line">2) 1) "113.28063815832138062"</span><br><span class="line">   2) "23.12517743834835215"</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>geodist</p>
+</blockquote>
+<p>两个人之间的位置</p>
+<p>指定单位的参数 unit 必须是以下单位的其中一个：</p>
+<ul>
+<li><strong>m</strong> 表示单位为米。</li>
+<li><strong>km</strong> 表示单位为千米。</li>
+<li><strong>mi</strong> 表示单位为英里。</li>
+<li><strong>ft</strong> 表示单位为英尺。</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; GEODIST china:city beijing shanghai km	# 查看北京到上海的直线距离</span><br><span class="line">"1889.3706"</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>georadius 以给定的经纬度为中心，找出某一半径内的元素</p>
+</blockquote>
+<p>通过<code>georadius</code>就可以完成 <strong>附近的人</strong>功能</p>
+<p>withcoord:带上坐标</p>
+<p>withdist:带上距离，单位与半径单位相同</p>
+<p>COUNT n : 只显示前n个(按距离递增排序)</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; GEORADIUS china:city 110 30 1000 km # 以100，30这个经纬度为中心，寻找方圆1000km以内的城市</span><br><span class="line">1) "shenzhen"</span><br><span class="line">2) "guangzhou"</span><br><span class="line">3) "shanghai"</span><br><span class="line">4) "dongguang"</span><br><span class="line">5) "jieyang"</span><br><span class="line">127.0.0.1:6379&gt; GEORADIUS china:city 110 30 900 km</span><br><span class="line">1) "guangzhou"</span><br><span class="line">2) "shanghai"</span><br><span class="line">3) "dongguang"</span><br><span class="line">127.0.0.1:6379&gt; GEORADIUS china:city 110 30 900 km withdist	# 显示到中心位置的距离</span><br><span class="line">1) 1) "guangzhou"</span><br><span class="line">   2) "831.2636"</span><br><span class="line">2) 1) "shanghai"</span><br><span class="line">   2) "831.2636"</span><br><span class="line">3) 1) "dongguang"</span><br><span class="line">   2) "858.7679"</span><br><span class="line">127.0.0.1:6379&gt; GEORADIUS china:city 110 30 900 km withcoord # 显示他人的定位信息</span><br><span class="line">1) 1) "guangzhou"</span><br><span class="line">   2) 1) "113.28063815832138062"</span><br><span class="line">      2) "23.12517743834835215"</span><br><span class="line">2) 1) "shanghai"</span><br><span class="line">   2) 1) "113.28063815832138062"</span><br><span class="line">      2) "23.12517743834835215"</span><br><span class="line">3) 1) "dongguang"</span><br><span class="line">   2) 1) "113.76023322343826294"</span><br><span class="line">      2) "23.04888486617340959"</span><br><span class="line">127.0.0.1:6379&gt; GEORADIUS china:city 110 30 900 km withdist withcoord count 1	# 筛选出指定的结果</span><br><span class="line">1) 1) "guangzhou"</span><br><span class="line">   2) "831.2636"</span><br><span class="line">   3) 1) "113.28063815832138062"</span><br><span class="line">      2) "23.12517743834835215"</span><br><span class="line">127.0.0.1:6379&gt; GEORADIUS china:city 110 30 900 km withdist withcoord count 2</span><br><span class="line">1) 1) "guangzhou"</span><br><span class="line">   2) "831.2636"</span><br><span class="line">   3) 1) "113.28063815832138062"</span><br><span class="line">      2) "23.12517743834835215"</span><br><span class="line">2) 1) "shanghai"</span><br><span class="line">   2) "831.2636"</span><br><span class="line">   3) 1) "113.28063815832138062"</span><br><span class="line">      2) "23.12517743834835215"</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>georadiusbymember</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 找出位于指定元素周围的其他元素</span></span><br><span class="line">127.0.0.1:6379&gt; GEORADIUSBYMEMBER china:city guangzhou 100 km</span><br><span class="line">1) "guangzhou"</span><br><span class="line">2) "shanghai"</span><br><span class="line">3) "dongguang"</span><br><span class="line">127.0.0.1:6379&gt; GEORADIUSBYMEMBER china:city jieyang 400 km </span><br><span class="line">1) "shenzhen"</span><br><span class="line">2) "guangzhou"</span><br><span class="line">3) "shanghai"</span><br><span class="line">4) "dongguang"</span><br><span class="line">5) "jieyang"</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>geohash</p>
+</blockquote>
+<p>该命令将返回11个字符的Geohash字符串</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 将二维的经纬度转换为一维的字符串，如果两个字符串越接近，则距离就越近</span></span><br><span class="line">127.0.0.1:6379&gt; geohash china:city beijing shanghai </span><br><span class="line">1) "wx4g0b7xrt0"</span><br><span class="line">2) "ws0e9cb3yj0"</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>GEO底层的实现原理其实就是Zset！我们可以使用Zset命令来操作geo！</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; ZRANGE china:city 0 -1	# 查看地图中全部的元素</span><br><span class="line">1) "shenzhen"</span><br><span class="line">2) "guangzhou"</span><br><span class="line">3) "shanghai"</span><br><span class="line">4) "dongguang"</span><br><span class="line">5) "jieyang"</span><br><span class="line">6) "beijing"</span><br><span class="line">127.0.0.1:6379&gt; ZREM china:city beijing # 移除指定的元素</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; ZRANGE china:city 0 -1</span><br><span class="line">1) "shenzhen"</span><br><span class="line">2) "guangzhou"</span><br><span class="line">3) "shanghai"</span><br><span class="line">4) "dongguang"</span><br><span class="line">5) "jieyang"</span><br></pre></td></tr></table></figure>
+
+<h4 id="Hyperloglog-基数统计"><a href="#Hyperloglog-基数统计" class="headerlink" title="Hyperloglog(基数统计)"></a>Hyperloglog(基数统计)</h4><blockquote>
+<p>Redis HyperLogLog 是用来做基数统计的算法，HyperLogLog 的优点是，在输入元素的数量或者体积非常非常大时，计算基数所需的空间总是固定的、并且是很小的。</p>
+<p>花费 12 KB 内存，就可以计算接近 2^64 个不同元素的基数。</p>
+<p>因为 HyperLogLog 只会根据输入元素来计算基数，而不会储存输入元素本身，所以 HyperLogLog 不能像集合那样，返回输入的各个元素。</p>
+<p>其底层使用string数据类型</p>
+</blockquote>
+<p><strong>什么是基数？</strong></p>
+<p>基数是数据集中不重复的元素的个数</p>
+<p><strong>应用场景：</strong></p>
+<p>网页的访问量（UV）：一个用户多次访问，也只能算作一个人。</p>
+<blockquote>
+<p>传统实现，存储用户的id,然后每次进行比较。当用户变多之后这种方式及其浪费空间，而我们的目的只是<strong>计数</strong>，Hyperloglog就能帮助我们利用最小的空间完成。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>PFADD key element1 [elememt2..]</code></td>
+<td>添加指定元素到 HyperLogLog 中</td>
+</tr>
+<tr>
+<td><code>PFCOUNT key [key]</code></td>
+<td>返回给定 HyperLogLog 的基数估算值。</td>
+</tr>
+<tr>
+<td><code>PFMERGE destkey sourcekey [sourcekey..]</code></td>
+<td>将多个 HyperLogLog 合并为一个 HyperLogLog</td>
+</tr>
+</tbody></table>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; PFADD mykey a b c d e f g h i j	# 创建第一组元素 mykey</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; PFCOUNT mykey	# 统计mykey 元素的基数数量</span><br><span class="line">(integer) 10</span><br><span class="line">127.0.0.1:6379&gt; PFADD mykey2 i j z x c v b n m	# 创建第二组元素 mykey2</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; PFCOUNT mykey2</span><br><span class="line">(integer) 9</span><br><span class="line">127.0.0.1:6379&gt; PFMERGE mykey3 mykey mykey2	# 合并两组 mykey mykey2 =&gt;mykey3 并集</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; PFCOUNT mykey3	# 看并集的数量</span><br><span class="line">(integer) 15</span><br></pre></td></tr></table></figure>
+
+<p>如果允许容错，那么就可以使用Hyperloglog</p>
+<p>如果不允许容错，就使用set或者自己的数据类型即可</p>
+<h4 id="BitMaps-位图"><a href="#BitMaps-位图" class="headerlink" title="BitMaps(位图)"></a>BitMaps(位图)</h4><blockquote>
+<p>使用位存储，信息状态只有 0 和 1</p>
+<p>Bitmap是一串连续的2进制数字（0或1），每一位所在的位置为偏移(offset)，在bitmap上可执行AND,OR,XOR,NOT以及其它位操作。</p>
+</blockquote>
+<p><strong>应用场景</strong></p>
+<p>签到统计、状态统计</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>setbit key offset value</code></td>
+<td>为指定key的offset位设置值</td>
+</tr>
+<tr>
+<td><code>getbit key offset</code></td>
+<td>获取offset位的值</td>
+</tr>
+<tr>
+<td><code>bitcount key [start end]</code></td>
+<td>统计字符串被设置为1的bit数，也可以指定统计范围按字节</td>
+</tr>
+<tr>
+<td><code>bitop operration destkey key[key..]</code></td>
+<td>对一个或多个保存二进制位的字符串 key 进行位元操作，并将结果保存到 destkey 上。</td>
+</tr>
+<tr>
+<td><code>BITPOS key bit [start] [end]</code></td>
+<td>返回字符串里面第一个被设置为1或者0的bit位。start和end只能按字节,不能按位</td>
+</tr>
+</tbody></table>
+<p>使用bitmap来记录 周一到周日的打卡</p>
+<p>周一：1 周二：0 周三：0 周四：1….</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; SETBIT sign 0 1</span><br><span class="line">(integer) 0</span><br><span class="line">127.0.0.1:6379&gt; SETBIT sign 1 0</span><br><span class="line">(integer) 0</span><br><span class="line">127.0.0.1:6379&gt; SETBIT sign 2 0</span><br><span class="line">(integer) 0</span><br><span class="line">127.0.0.1:6379&gt; SETBIT sign 3 1</span><br><span class="line">(integer) 0</span><br><span class="line">127.0.0.1:6379&gt; SETBIT sign 4 1</span><br><span class="line">(integer) 0</span><br><span class="line">127.0.0.1:6379&gt; SETBIT sign 5 0</span><br><span class="line">(integer) 0</span><br><span class="line">127.0.0.1:6379&gt; SETBIT sign 6 0</span><br><span class="line">(integer) 0</span><br></pre></td></tr></table></figure>
+
+<p>查看某一天是否有打卡</p>
+ <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; GETBIT sign 3</span><br><span class="line">(integer) 1</span><br><span class="line">127.0.0.1:6379&gt; GETBIT sign 6</span><br><span class="line">(integer) 0</span><br></pre></td></tr></table></figure>
+
+<p>统计操作，统计 打卡的天数</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; BITCOUNT sign	# 统计这周的打卡记录，就可以看到是否有全勤</span><br><span class="line">(integer) 3</span><br></pre></td></tr></table></figure>
+
+<h3 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h3><p>==Redis的单条命令是保证原子性的，但是redis事务不能保证原子性==</p>
+<blockquote>
+<p>Redis事务本质：一组命令的集合。</p>
+<p>—————– 队列 set set set 执行 ——————-</p>
+<p>事务中每条命令都会被序列化，执行过程中按顺序执行，不允许其他命令进行干扰。</p>
+<ul>
+<li>一次性</li>
+<li>顺序性</li>
+<li>排他性</li>
+</ul>
+<hr>
+<ol>
+<li>Redis事务没有隔离级别的概念</li>
+<li>Redis单条命令是保证原子性的，但是事务不保证原子性！</li>
+</ol>
+</blockquote>
+<p><strong>Redis事务操作过程</strong></p>
+<ul>
+<li>开启事务（<code>multi</code>）</li>
+<li>命令入队</li>
+<li>执行事务（<code>exec</code>）</li>
+</ul>
+<p>所以事务中的命令在加入时都没有被执行，直到提交时才会开始执行(Exec)一次性完成。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; multi	# 开启事务</span><br><span class="line">OK</span><br><span class="line"><span class="meta">#</span><span class="bash"> 命令入队</span></span><br><span class="line">127.0.0.1:6379&gt; set k1 v1</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; set k2 v2</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; get k2</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; set k3 v3</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; EXEC	# 执行事务</span><br><span class="line">1) OK</span><br><span class="line">2) OK</span><br><span class="line">3) "v2"</span><br><span class="line">4) OK</span><br></pre></td></tr></table></figure>
+
+<p><strong>取消事务(discard)</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; multi	# 开启事务</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; set k1 v1</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; set k2 v2</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; set k4 v4</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; DISCARD	# 取消事务</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; get k4	# 事务队列中命令都不会被执行</span><br><span class="line">(nil)</span><br></pre></td></tr></table></figure>
+
+<p><strong>事务错误</strong></p>
+<blockquote>
+<p>编译时异常(代码有问题，命令有错！），事务中所有的命令都不会执行</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; MULTI</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; set k1 v1</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; set k2 v2</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; set k3 v3</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; getset k3	# 错误的命令</span><br><span class="line">(error) ERR wrong number of arguments for 'getset' command</span><br><span class="line">127.0.0.1:6379&gt; set k4 v4</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; set k5 v5</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; exec	# 执行事务时报错</span><br><span class="line">(error) EXECABORT Transaction discarded because of previous errors.</span><br><span class="line">127.0.0.1:6379&gt; get k5	# 所有的命令都不会执行</span><br><span class="line">(nil)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p> 运行时异常代码（比如1/0的情况）逻辑错误，但事务中 *<em>其他命令可以正常执行 *</em> &gt;&gt;&gt; 所以不保证事务原子性</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; MULTI</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; set k1 "v1"</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; INCR k1		# 会执行的时候失败</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; set k2 v2</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; set k3 v3</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; get k3</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; EXEC</span><br><span class="line">1) OK</span><br><span class="line">2) (error) ERR value is not an integer or out of range	# 虽然第二条命令报错了，但是依旧正常执行成功了</span><br><span class="line">3) OK</span><br><span class="line">4) OK</span><br><span class="line">5) "v3"</span><br><span class="line">127.0.0.1:6379&gt; get k2</span><br><span class="line">"v2"</span><br><span class="line">127.0.0.1:6379&gt; get k3</span><br><span class="line">"v3"</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>监控</strong>     Watch（面试常问）</p>
+</blockquote>
+<p><strong>悲观锁：</strong></p>
+<ul>
+<li>很悲观，认为什么时候都会出现问题，无论做什么都会加锁</li>
+</ul>
+<p><strong>乐观锁：</strong></p>
+<ul>
+<li>很乐观，认为什么时候都不会出现问题，所以不会上锁！更新数据的时候去判断一下，在此期间是否有人修改过这个数据</li>
+<li>获取version</li>
+<li>更新的时候比较version</li>
+</ul>
+<p>使用<code>watch key</code>监控指定数据，相当于乐观锁加锁。</p>
+<blockquote>
+<p>正常执行</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; set money 100</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; set out 0</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; watch money	# 监视 watch 对象</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; MULTI # 事务正常结束，数据期间没有发生变动，这个时候就正常执行成功！</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; DECRBY money 20</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; INCRBY out 20</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; EXEC</span><br><span class="line">1) (integer) 80</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>测试多线程修改值，使用watch可以当做redis的乐观锁操作（相当于getversion）</p>
+</blockquote>
+<p>我们启动另外一个客户端模拟插队线程。</p>
+<p>线程1：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; watch money		# 监视 money</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; MULTI</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; DECRBY money 10</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; INCRBY out 10</span><br><span class="line">QUEUED</span><br></pre></td></tr></table></figure>
+
+<p>模拟线程插队，线程2：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; get money</span><br><span class="line">"80"</span><br><span class="line">127.0.0.1:6379&gt; set money 1000</span><br><span class="line">OK</span><br></pre></td></tr></table></figure>
+
+<p>回到线程1，执行事务：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; EXEC	# 执行之前，另外一个线程2，修改了值，这个时候，就会导致事务执行失败+</span><br><span class="line">(nil)</span><br></pre></td></tr></table></figure>
+
+<p>如果修改失败，解锁获取最新值，然后再加锁进行事务。</p>
+<p><code>unwatch</code>进行解锁。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; UNWATCH		# 先解锁</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; WATCH money	# 获取最新的值，再次监视，	select version</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; MULTI</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; DECRBY money 1</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; INCRBY money 1</span><br><span class="line">QUEUED</span><br><span class="line">127.0.0.1:6379&gt; EXEC	# 跟监视的值比较是否发生了变化，如果没有变化，那么可以执行成功，如果变化就执行失败</span><br><span class="line">1) (integer) 999</span><br><span class="line">2) (integer) 1000</span><br></pre></td></tr></table></figure>
+
+<h3 id="Jedis"><a href="#Jedis" class="headerlink" title="Jedis"></a>Jedis</h3><p>使用Java来操作Redis，Jedis是Redis官方推荐使用的Java连接redis的客户端。如果要使用java操作redis，那么就一定要对jedis十分的熟悉</p>
+<p>1、导入依赖</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--导入jedis的包--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>redis.clients<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jedis<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.3.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--fastjson--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alibaba<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>fastjson<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.70<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>2、编码测试</p>
+<ul>
+<li>连接数据库</li>
+<li>操作命令</li>
+<li>断开连接</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.carey;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> redis.clients.jedis.Jedis;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestPing</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 1、new Jedis对象即可</span></span><br><span class="line">        Jedis jedis = <span class="keyword">new</span> Jedis(<span class="string">"127.0.0.1"</span>, <span class="number">6379</span>);</span><br><span class="line">        <span class="comment">//Jedis所有的命令就是之前学习的所有指令</span></span><br><span class="line">        System.out.println(jedis.ping());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<img src="/blog/2020/09/02/redis/image-20200907214034031.png" class>
+
+<p><strong>常用的API</strong></p>
+<hr>
+<p>String</p>
+<p>List</p>
+<p>Set</p>
+<p>Hash</p>
+<p>Zset</p>
+<blockquote>
+<p>所有的api命令，就是我们对应的上面学习的指令，一个都没有变化</p>
+</blockquote>
+<p><strong>事务</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.carey;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.alibaba.fastjson.JSONObject;</span><br><span class="line"><span class="keyword">import</span> redis.clients.jedis.Jedis;</span><br><span class="line"><span class="keyword">import</span> redis.clients.jedis.Transaction;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestPing</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Jedis jedis = <span class="keyword">new</span> Jedis(<span class="string">"127.0.0.1"</span>, <span class="number">6379</span>);</span><br><span class="line"></span><br><span class="line">        jedis.flushDB();</span><br><span class="line"></span><br><span class="line">        JSONObject jsonObject = <span class="keyword">new</span> JSONObject();</span><br><span class="line">        jsonObject.put(<span class="string">"hello"</span>,<span class="string">"world"</span>);</span><br><span class="line">        jsonObject.put(<span class="string">"name"</span>,<span class="string">"carey"</span>);</span><br><span class="line">        <span class="comment">// 开启事务</span></span><br><span class="line">        Transaction multi = jedis.multi();</span><br><span class="line">        String result = jsonObject.toJSONString();</span><br><span class="line">        <span class="comment">// jedis.watch(result)</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            multi.set(<span class="string">"user1"</span>,result);</span><br><span class="line">            multi.set(<span class="string">"user2"</span>,result);</span><br><span class="line">            <span class="keyword">int</span> i = <span class="number">1</span>/<span class="number">0</span>; <span class="comment">// 代码抛出异常，事务执行失败</span></span><br><span class="line">            multi.exec();   <span class="comment">//执行事务</span></span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            multi.discard();    <span class="comment">//放弃事务</span></span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            System.out.println(jedis.get(<span class="string">"user1"</span>));</span><br><span class="line">            System.out.println(jedis.get(<span class="string">"user2"</span>));</span><br><span class="line">            jedis.close();  <span class="comment">//关闭连接</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="SpringBoot整合"><a href="#SpringBoot整合" class="headerlink" title="SpringBoot整合"></a>SpringBoot整合</h3><p>1.导入依赖</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--redis依赖--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-redis<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>springboot 2.x后 ，原来使用的 Jedis 被 lettuce 替换。</p>
+<p>jedis：采用的直连，多个线程操作的话，是不安全的。如果要避免不安全，使用jedis pool连接池！更像BIO模式</p>
+<p>lettuce：采用netty，实例可以在多个线程中共享，不存在线程不安全的情况！可以减少线程数据了，更像NIO模式</p>
+<p>我们在学习SpringBoot自动配置的原理时，整合一个组件并进行配置一定会有一个自动配置类xxxAutoConfiguration,并且在spring.factories中也一定能找到这个类的完全限定名。Redis也不例外。</p>
+<img src="/blog/2020/09/02/redis/image-20200908155357565.png" class>
+
+<p>查看RedisAutoConfiguration源码可知还有RedisProperties类</p>
+<img src="/blog/2020/09/02/redis/image-20200908155445779.png" class>
+
+<p>前面说SpringBoot2.x后默认使用Lettuce来替换Jedis，可以通过源码进行验证:</p>
+<p>先看Jedis</p>
+<img src="/blog/2020/09/02/redis/image-20200908202135475.png" class>
+
+<p>@ConditionalOnClass注解中有两个类是默认不存在的，所以Jedis是无法生效的</p>
+<p>再看Lettuce</p>
+<img src="/blog/2020/09/02/redis/image-20200908202214526.png" class>
+
+<p>完美生效，没有问题</p>
+<p>回看RedisAutoConfiguration</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedisAutoConfiguration</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="meta">@ConditionalOnMissingBean</span>(name = <span class="string">"redisTemplate"</span>)	<span class="comment">//我们可以自己定义一个redisTemplate来替换这个默认的</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> RedisTemplate&lt;Object, Object&gt; <span class="title">redisTemplate</span><span class="params">(RedisConnectionFactory redisConnectionFactory)</span></span></span><br><span class="line"><span class="function">          <span class="keyword">throws</span> UnknownHostException </span>&#123;</span><br><span class="line">        <span class="comment">// 默认的RedisTemplate没有过多的设置，redis对象都是需要序列化</span></span><br><span class="line">        <span class="comment">// 两个泛型都是Object，Object的类型，我们后面使用需要强制转换&lt;String,Object&gt;</span></span><br><span class="line">       RedisTemplate&lt;Object, Object&gt; template = <span class="keyword">new</span> RedisTemplate&lt;&gt;();</span><br><span class="line">       template.setConnectionFactory(redisConnectionFactory);</span><br><span class="line">       <span class="keyword">return</span> template;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="meta">@ConditionalOnMissingBean</span> <span class="comment">// 由于String是redis中最常使用的类型，所以说单独提出来一个bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> StringRedisTemplate <span class="title">stringRedisTemplate</span><span class="params">(RedisConnectionFactory redisConnectionFactory)</span></span></span><br><span class="line"><span class="function">          <span class="keyword">throws</span> UnknownHostException </span>&#123;</span><br><span class="line">       StringRedisTemplate template = <span class="keyword">new</span> StringRedisTemplate();</span><br><span class="line">       template.setConnectionFactory(redisConnectionFactory);</span><br><span class="line">       <span class="keyword">return</span> template;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>只有两个简单的Bean</p>
+<ul>
+<li><strong>RedisTemplate</strong></li>
+<li><strong>StringRedisTemplate</strong></li>
+</ul>
+<p>当看到xxTemplate时可以对比RestTemplate、SqlSessionTemplate,通过使用这些Template来间接操作组件。那么这俩也不会例外。分别用于操作Redis和Redis中的String数据类型。</p>
+<p>在RedisTemplate上也有一个条件注解，说明我们是可以对其进行定制化的</p>
+<p>说完这些，我们需要知道如何编写配置文件然后连接Redis，就需要阅读RedisProperties</p>
+<img src="/blog/2020/09/02/redis/image-20200908202535629.png" class>
+
+<p>基本的属性配置：</p>
+<img src="/blog/2020/09/02/redis/image-20200908202614676.png" class>
+
+<p>还有一些连接池相关的配置。注意使用时一定使用Lettuce的连接池。</p>
+<img src="/blog/2020/09/02/redis/image-20200908202708524.png" class>
+
+<p>2.配置连接</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置redis</span></span><br><span class="line"><span class="meta">spring.redis.host</span>=<span class="string">127.0.0.1</span></span><br><span class="line"><span class="meta">spring.redis.port</span>=<span class="string">6379</span></span><br></pre></td></tr></table></figure>
+
+<p>3.测试</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.carey;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.junit.jupiter.api.Test;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.test.context.SpringBootTest;</span><br><span class="line"><span class="keyword">import</span> org.springframework.data.redis.core.RedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@SpringBootTest</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Redis02SpringbootApplicationTests</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> RedisTemplate redisTemplate;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">contextLoads</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// redisTemplate    操作不同的数据类型，api和我们的指令是一样的</span></span><br><span class="line">        <span class="comment">// opsForValue 操作字符串 类似String</span></span><br><span class="line">        <span class="comment">// opsForList 操作List    类似List</span></span><br><span class="line">        <span class="comment">// opsForSet</span></span><br><span class="line">        <span class="comment">// opsForHash</span></span><br><span class="line">        <span class="comment">// opsForZSet</span></span><br><span class="line">        <span class="comment">// opsForGeo</span></span><br><span class="line">        <span class="comment">// opsForHyperLogLog</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//除了基本的操作，我们常用的方法都可以直接通过redisTemplate操作，比如事务，和基本的CRUD</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//        RedisConnection connection = redisTemplate.getConnectionFactory().getConnection();</span></span><br><span class="line"><span class="comment">//        connection.flushDb();</span></span><br><span class="line"><span class="comment">//        connection.flushAll();</span></span><br><span class="line"></span><br><span class="line">        redisTemplate.opsForValue().set(<span class="string">"mykey"</span>,<span class="string">"陈同学学Java"</span>);</span><br><span class="line">        System.out.println(redisTemplate.opsForValue().get(<span class="string">"mykey"</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>测试结果：</p>
+<img src="/blog/2020/09/02/redis/image-20200908204416214.png" class>
+
+<img src="/blog/2020/09/02/redis/image-20200908204431764.png" class>
+
+<p>在程序中可以正常输出，但是数据出现了乱码</p>
+<p> 这时候就关系到存储对象的序列化问题，在网络中传输的对象也是一样需要序列化，否者就全是乱码。</p>
+<p>我们转到看那个默认的RedisTemplate内部什么样子：</p>
+<img src="/blog/2020/09/02/redis/image-20200908204714254.png" class>
+
+<p>在最开始就能看到几个关于序列化的参数。</p>
+<p>默认的序列化器是采用JDK序列化器</p>
+<img src="/blog/2020/09/02/redis/image-20200908205004188.png" class>
+
+<p>而默认的RedisTemplate中的所有序列化器都是使用这个序列化器：</p>
+<img src="/blog/2020/09/02/redis/image-20200908205103740.png" class>
+
+<p>后续我们定制RedisTemplate就可以对其进行修改。</p>
+<p><code>RedisSerializer</code>提供了多种序列化方案：</p>
+<ul>
+<li>直接调用RedisSerializer的静态方法来返回序列化器，然后set</li>
+</ul>
+<img src="/blog/2020/09/02/redis/image-20200908205423139.png" class>
+
+<ul>
+<li>自己new 相应的实现类，然后set</li>
+</ul>
+<ul>
+<li><strong>定制RedisTemplate的模板：</strong></li>
+</ul>
+<p>我们创建一个Bean加入容器，就会触发RedisTemplate上的条件注解使默认的RedisTemplate失效。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedisConfig</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 编写我们自己的redisTemplate</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> RedisTemplate&lt;String, Object&gt; <span class="title">redisTemplate</span><span class="params">(RedisConnectionFactory redisConnectionFactory)</span></span></span><br><span class="line"><span class="function">            <span class="keyword">throws</span> UnknownHostException </span>&#123;</span><br><span class="line">        <span class="comment">// 将template 泛型设置为 &lt;String, Object&gt;</span></span><br><span class="line">        RedisTemplate&lt;String, Object&gt; template = <span class="keyword">new</span> RedisTemplate&lt;&gt;();</span><br><span class="line">        <span class="comment">// 连接工厂，不必修改</span></span><br><span class="line">        template.setConnectionFactory(redisConnectionFactory);</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">         * 序列化设置</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="comment">// key、hash的key 采用 String序列化方式</span></span><br><span class="line">        template.setKeySerializer(RedisSerializer.string());</span><br><span class="line">        template.setHashKeySerializer(RedisSerializer.string());</span><br><span class="line">        <span class="comment">// value、hash的value 采用 Jackson 序列化方式</span></span><br><span class="line">        template.setValueSerializer(RedisSerializer.json());</span><br><span class="line">        template.setHashValueSerializer(RedisSerializer.json());</span><br><span class="line">        template.afterPropertiesSet();</span><br><span class="line">        <span class="keyword">return</span> template;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样一来，只要实体类进行了序列化，我们存什么都不会有乱码的担忧了。</p>
+<h3 id="自定义Redis工具类"><a href="#自定义Redis工具类" class="headerlink" title="自定义Redis工具类"></a>自定义Redis工具类</h3><p>使用RedisTemplate需要频繁调用<code>.opForxxx</code>然后才能进行对应的操作，这样使用起来代码效率低下，工作中一般不会这样使用，而是将这些常用的公共API抽取出来封装成为一个工具类，然后直接使用工具类来间接操作Redis,不但效率高并且易用。</p>
+<p>工具类参考博客：</p>
+<p><a href="https://www.cnblogs.com/zeng1994/p/03303c805731afc9aa9c60dbbd32a323.html" target="_blank" rel="noopener">https://www.cnblogs.com/zeng1994/p/03303c805731afc9aa9c60dbbd32a323.html</a></p>
+<p><a href="https://www.cnblogs.com/zhzhlong/p/11434284.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhzhlong/p/11434284.html</a></p>
+<h3 id="Redis-conf详解"><a href="#Redis-conf详解" class="headerlink" title="Redis.conf详解"></a>Redis.conf详解</h3><p>Redis启动的时候，就通过配置文件来启动</p>
+<blockquote>
+<p>单位</p>
+</blockquote>
+<img src="/blog/2020/09/02/redis/image-20200908210526710.png" class>
+
+<p>配置文件 unit单位 对大小写不敏感，也就是容量单位不区分大小写</p>
+<blockquote>
+<p>包含</p>
+</blockquote>
+<img src="/blog/2020/09/02/redis/image-20200908210826638.png" class>
+
+<p>可以使用 include 组合多个配置问题</p>
+<blockquote>
+<p>网络配置</p>
+</blockquote>
+<img src="/blog/2020/09/02/redis/image-20200908211219690.png" class>
+
+<blockquote>
+<p>通用 GENERAL</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">daemonize yes	# 以守护进程的方式运行，默认是no，我们需要自己开启为yes！</span><br><span class="line"></span><br><span class="line">pidfile /var/run/redis_6379.pid	# 如果以后台的方式运行，我们就需要指定一个pid文件</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 日志</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Specify the server verbosity level.</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> This can be one of:</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> debug (a lot of information, useful <span class="keyword">for</span> development/testing)</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> verbose (many rarely useful info, but not a mess like the debug level)</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> notice (moderately verbose, what you want <span class="keyword">in</span> production probably)</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> warning (only very important / critical messages are logged)</span></span><br><span class="line">loglevel notice</span><br><span class="line">logfile "" # 日志的文件位置名</span><br><span class="line">databases 16	# 数据库的数量，默认是16个数据库</span><br><span class="line">always-show-logo yes	# 是否显示logo</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>快照</p>
+</blockquote>
+<p>持久化，在规定的时间内，执行了多少次操作，则会持久化到文件 .rdb .aof</p>
+<p>由于Redis是基于内存的数据库，如果没有持久化，那么数据断电即失，需要将数据由内存持久化到文件中</p>
+<p>持久化方式：</p>
+<ul>
+<li>RDB</li>
+<li>AOF</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 如果900s内，至少有1个key进行了修改，我们即进行持久化操作</span></span><br><span class="line">save 900 1</span><br><span class="line"><span class="meta">#</span><span class="bash"> 如果300s内，至少有10个key进行了修改，我们即进行持久化操作</span></span><br><span class="line">save 300 10</span><br><span class="line"><span class="meta">#</span><span class="bash"> 如果60s内，至少有10000个key进行了修改，我们即进行持久化操作</span></span><br><span class="line">save 60 10000</span><br><span class="line"></span><br><span class="line">stop-writes-on-bgsave-error yes	# 持久化如果出错，是否还需要继续工作</span><br><span class="line"></span><br><span class="line">rdbcompression yes	# 是否压缩 rdb 文件，需要消耗一些cpu资源</span><br><span class="line"></span><br><span class="line">rdbchecksum yes # 保存rdb文件的时候，进行错误的检查校验</span><br><span class="line"></span><br><span class="line">dir ./	# rdb文件保存的目录</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>主从复制</p>
+</blockquote>
+<img src="/blog/2020/09/02/redis/image-20200908213223828.png" class>
+
+<p>详细见后面的主从复制介绍</p>
+<blockquote>
+<p>SECURITY 安全</p>
+</blockquote>
+<img src="/blog/2020/09/02/redis/image-20200908213659767.png" class>
+
+<p>可以在这里设置redis的密码，默认是没有密码的</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">127.0.0.1:6379&gt; ping</span><br><span class="line">PONG</span><br><span class="line">127.0.0.1:6379&gt; config get requirepass	# 获取redis的密码</span><br><span class="line">1) "requirepass"</span><br><span class="line">2) ""</span><br><span class="line">127.0.0.1:6379&gt; config set requirepass "123456"	# 设置redis的密码</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; config get requirepass</span><br><span class="line">1) "requirepass"</span><br><span class="line">2) "123456"</span><br><span class="line">127.0.0.1:6379&gt; ping</span><br><span class="line">PONG</span><br><span class="line">127.0.0.1:6379&gt; auth "123456"	# 使用密码进行登录</span><br><span class="line">OK</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>客户端连接相关</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">maxclients 10000  # 设置能连接上redis的最大客户端数量</span><br><span class="line"></span><br><span class="line">maxmemory &lt;bytes&gt; # redis配置最大的内存容量</span><br><span class="line"></span><br><span class="line">maxmemory-policy noeviction # 内存达到上限之后的处理策略</span><br><span class="line"><span class="meta">#</span><span class="bash"> maxmemory-policy 六种方式</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 1、volatile-lru：只对设置了过期时间的key进行LRU（默认值）</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 2、allkeys-lru ： 删除lru算法的key</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 3、volatile-random：随机删除即将过期key</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 4、allkeys-random：随机删除</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 5、volatile-ttl ： 删除即将过期的</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 6、noeviction ： 永不过期，返回错误</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>APPEND ONLY MODE               aof配置</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">appendonly no	# 默认是不开启aof模式的，默认是使用rdb方式持久化的，在大部分情况下，rdb完全够用</span><br><span class="line"></span><br><span class="line">appendfilename "appendonly.aof"	# 持久化的文件夹名字</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> appendfsync always	<span class="comment"># 每次修改都会sync。消耗性能</span></span></span><br><span class="line">appendfsync everysec	# 每秒执行一次sync，可能会丢失这1s的数据</span><br><span class="line"><span class="meta">#</span><span class="bash"> appendfsync no		<span class="comment"># 不执行sync，这个时候操作系统自己同步数据，速度最快</span></span></span><br></pre></td></tr></table></figure>
+
+<p>具体看redis持久化</p>
+<h3 id="Redis持久化"><a href="#Redis持久化" class="headerlink" title="Redis持久化"></a>Redis持久化</h3><p>在面试和工作中，持久化是重点</p>
+<p>Redis是内存数据库，如果不将内存中的数据库状态保存到磁盘，那么一旦服务器进程退出，服务器中的数据库状态也会消失，所以Redis提供了持久化的功能来处理！</p>
+<h4 id="RDB（Redis-DataBases）"><a href="#RDB（Redis-DataBases）" class="headerlink" title="RDB（Redis DataBases）"></a>RDB（Redis DataBases）</h4><blockquote>
+<p>什么是RDB</p>
+</blockquote>
+<p>RDB是Redis用来进行持久化的一种方式，在指定的时间间隔把当前内存中的数据集快照写入磁盘，也就是 Snapshot 快照（数据库中所有键值对数据）。恢复时是将快照文件直接读到内存里。</p>
+<img src="/blog/2020/09/02/redis/graphviz-cd96bfa5c61ef2b8dd69a9b0a97cde047cb722a8.svg" class>
+
+<p>默认情况下， Redis 将数据库快照保存在名字为 dump.rdb的二进制文件中。文件名可以在配置文件中进行自定义。</p>
+<p><strong>工作原理</strong></p>
+<hr>
+<p>在进行 <strong><code>RDB</code></strong> 的时候，<strong><code>redis</code></strong> 的主线程是不会做 <strong><code>io</code></strong> 操作的，主线程会 <strong><code>fork</code></strong> 一个子线程来完成该操作；</p>
+<ol>
+<li>Redis 调用forks。同时拥有父进程和子进程。</li>
+<li>子进程将数据集写入到一个临时 RDB 文件中。</li>
+<li>当子进程完成对新 RDB 文件的写入时，Redis 用新 RDB 文件替换原来的 RDB 文件，并删除旧的 RDB 文件。</li>
+</ol>
+<p>这种工作方式使得 Redis 可以从写时复制（copy-on-write）机制中获益(因为是使用子进程进行写操作，而父进程依然可以接收来自客户端的请求。)</p>
+<img src="/blog/2020/09/02/redis/20200513215141519.jpg" class>
+
+<p>rdb默认保存在dump.rdb中</p>
+<img src="/blog/2020/09/02/redis/image-20200909100642105.png" class>
+
+<p><strong>触发机制</strong></p>
+<hr>
+<ol>
+<li>save的规则满足的情况下，会自动触发rdb原则</li>
+<li>执行flushall命令，也会触发我们的rdb原则</li>
+<li>退出redis，也会自动产生rdb文件</li>
+</ol>
 ]]></content>
   </entry>
 </search>
