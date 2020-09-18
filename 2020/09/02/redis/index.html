@@ -76,8 +76,18 @@
 <meta property="og:image" content="https://cxxqing.github.io/blog/2020/09/02/redis/graphviz-cd96bfa5c61ef2b8dd69a9b0a97cde047cb722a8.svg">
 <meta property="og:image" content="https://cxxqing.github.io/blog/2020/09/02/redis/20200513215141519.jpg">
 <meta property="og:image" content="https://cxxqing.github.io/blog/2020/09/02/redis/image-20200909100642105.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/09/02/redis/image-20200914150922307.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/09/02/redis/image-20200914152428585.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200513215220858.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3MzIyNw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200513215150892.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3MzIyNw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020051321523151.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3MzIyNw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/09/02/redis/image-20200914153642177.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/09/02/redis/image-20200914154947561.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/09/02/redis/image-20200914155131741.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/09/02/redis/image-20200914155316232.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/09/02/redis/image-20200914160314727.png">
 <meta property="article:published_time" content="2020-09-02T14:47:21.000Z">
-<meta property="article:modified_time" content="2020-09-14T06:27:00.887Z">
+<meta property="article:modified_time" content="2020-09-14T12:50:55.601Z">
 <meta property="article:author" content="Carey">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cxxqing.github.io/blog/2020/09/02/redis/image-20200902225601453.png">
@@ -186,7 +196,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/blog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">39</span></a>
+    <a href="/blog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">38</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -274,7 +284,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-14 14:27:00" itemprop="dateModified" datetime="2020-09-14T14:27:00+08:00">2020-09-14</time>
+                <time title="修改时间：2020-09-14 20:50:55" itemprop="dateModified" datetime="2020-09-14T20:50:55+08:00">2020-09-14</time>
               </span>
 
           <br>
@@ -283,14 +293,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>35k</span>
+              <span>36k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>31 分钟</span>
+              <span>33 分钟</span>
             </span>
 
         </div>
@@ -1163,6 +1173,134 @@
 <li>执行flushall命令，也会触发我们的rdb原则</li>
 <li>退出redis，也会自动产生rdb文件</li>
 </ol>
+<p>备份就自动生成一个dump.rdb</p>
+<p><img src="/blog/blog/.com/2020/09/02/redis/image-20200914150922307.png" alt="image-20200914150922307"></p>
+<blockquote>
+<p>如何恢复rdb文件</p>
+</blockquote>
+<p>1、只需要将rdb文件放在redis启动目录就可以了，redis启动的时候会自动检查dump.rdb恢复其中的数据</p>
+<p>2、查看需要存在的位置</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1:6379&gt; config get dir</span><br><span class="line">1) "dir"</span><br><span class="line">2) "/usr/local/bin"		# 如果在这个目录下存在dump.rdb文件，启动就会自动恢复其中的数据</span><br></pre></td></tr></table></figure>
+
+<h5 id="触发持久化规则"><a href="#触发持久化规则" class="headerlink" title="触发持久化规则"></a>触发持久化规则</h5><p>满足配置条件中的触发条件 ；</p>
+<p>可以通过配置文件对 Redis 进行设置， 让它在“ N 秒内数据集至少有 M 个改动”这一条件被满足时， 自动进行数据集保存操作。</p>
+<p><img src="/blog/blog/.com/2020/09/02/redis/image-20200914152428585.png" alt="image-20200914152428585"></p>
+<p><img src="https://img-blog.csdnimg.cn/20200513215220858.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3MzIyNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h5 id="save"><a href="#save" class="headerlink" title="save"></a>save</h5><p>使用 <code>save</code> 命令，会立刻对当前内存中的数据进行持久化 ,但是会阻塞，也就是不接受其他操作了；</p>
+<p>由于 <code>save</code> 命令是同步命令，会占用Redis的主进程。若Redis数据非常多时，<code>save</code>命令执行速度会非常慢，阻塞所有客户端的请求。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200513215150892.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3MzIyNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h5 id="flushall命令"><a href="#flushall命令" class="headerlink" title="flushall命令"></a>flushall命令</h5><p><code>flushall</code> 命令也会触发持久化 ；</p>
+<h5 id="bgsave"><a href="#bgsave" class="headerlink" title="bgsave"></a>bgsave</h5><p><code>bgsave</code> 是异步进行，进行持久化的时候，<code>redis</code> 还可以将继续响应客户端请求 ；</p>
+<p><img src="https://img-blog.csdnimg.cn/2020051321523151.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3MzIyNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>bgsave和save对比</strong></p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>save</th>
+<th>bgsave</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IO类型</td>
+<td>同步</td>
+<td>异步</td>
+</tr>
+<tr>
+<td>阻塞？</td>
+<td>是</td>
+<td>是（阻塞发生在fock()，通常非常快）</td>
+</tr>
+<tr>
+<td>复杂度</td>
+<td>O(n)</td>
+<td>O(n)</td>
+</tr>
+<tr>
+<td>优点</td>
+<td>不会消耗额外的内存</td>
+<td>不阻塞客户端命令</td>
+</tr>
+<tr>
+<td>缺点</td>
+<td>阻塞客户端命令</td>
+<td>需要fock子进程，消耗内存</td>
+</tr>
+</tbody></table>
+<h5 id="RDB的优缺点"><a href="#RDB的优缺点" class="headerlink" title="RDB的优缺点"></a>RDB的优缺点</h5><p><strong>优点：</strong></p>
+<ol>
+<li>适合大规模的数据恢复</li>
+<li>对数据的完整性要求不高</li>
+</ol>
+<p><strong>缺点：</strong></p>
+<ol>
+<li>需要一定的时间间隔进行操作，如果redis意外宕机了，这个最后一次修改的数据就没有了。</li>
+<li>fork进程的时候，会占用一定的内容空间。</li>
+</ol>
+<h4 id="AOF（Append-Only-File）"><a href="#AOF（Append-Only-File）" class="headerlink" title="AOF（Append Only File）"></a>AOF（Append Only File）</h4><p>将我们所有的命令都记录下来，history，恢复的时候就把这个文件全部再执行一遍</p>
+<p>以日志的形式来记录每个写的操作，将Redis执行过的所有指令记录下来（读操作不记录），只许追加文件但不可以改写文件，redis启动之初会读取该文件重新构建数据，换言之，redis重启的话就根据日志文件的内容将写指令从前到后执行一次以完成数据的恢复工作。</p>
+<p>==AOF保存的是appendonly.aof文件==</p>
+<p><img src="/blog/blog/.com/2020/09/02/redis/image-20200914153642177.png" alt="image-20200914153642177"></p>
+<p><code>appendonly yes</code>表示启用AOF</p>
+<p>默认是不开启的，我们需要手动配置，然后重启redis，就可以生效了！</p>
+<p>如果这个aof文件有错位，这时候redis是启动不起来的，如下图的情况所示</p>
+<p><img src="/blog/blog/.com/2020/09/02/redis/image-20200914154947561.png" alt="image-20200914154947561">        这时我们需要修复这个aof文件</p>
+<p>redis给我们提供了一个工具<code>redis-check-aof --fix</code></p>
+<p><img src="/blog/blog/.com/2020/09/02/redis/image-20200914155131741.png" alt="image-20200914155131741"></p>
+<p>如果文件正常，重启就可以直接恢复了</p>
+<p><img src="/blog/blog/.com/2020/09/02/redis/image-20200914155316232.png" alt="image-20200914155316232"></p>
+<h5 id="重写规则说明"><a href="#重写规则说明" class="headerlink" title="重写规则说明"></a>重写规则说明</h5><p>aof默认就是文件的无限追加，文件会越来越大</p>
+<p><img src="/blog/blog/.com/2020/09/02/redis/image-20200914160314727.png" alt="image-20200914160314727"></p>
+<p>图片中的意思是如果aof文件大于64m，太大了，fork一个新的进程来将我们的文件进行重写</p>
+<h5 id="AOF的优缺点"><a href="#AOF的优缺点" class="headerlink" title="AOF的优缺点"></a>AOF的优缺点</h5><p><strong>配置文件内容</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">appendonly no	# 默认是不开启aof模式的，默认是使用rdb方式持久化，在大部分情况下，rdb完全够用</span><br><span class="line">appendfilename "appendonly.aof"	# 持久化的文件的名字</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> appendfsync always	<span class="comment"># 每次修改都会sync。消耗性能</span></span></span><br><span class="line">appendfsync everysec	# 每秒执行一次sync。可能会丢失这1秒的数据</span><br><span class="line"><span class="meta">#</span><span class="bash"> appendfsync no		<span class="comment"># 不执行sync，这个时候操作系统自己同步数据，速度最快</span></span></span><br></pre></td></tr></table></figure>
+
+<p><strong>优点</strong></p>
+<ol>
+<li>每一次修改都会同步，文件的完整性会更加好</li>
+<li>每秒同步一次，可能会丢失一秒的数据</li>
+<li>从不同步，效率最高的</li>
+</ol>
+<p><strong>缺点</strong></p>
+<ol>
+<li>相对于数据文件来说，aof远远大于rdb，修复速度也比rdb慢！</li>
+<li>aof运行效率也要比rdb慢，所以我们redis默认的配置就是rdb持久化</li>
+</ol>
+<h4 id="RDB和AOP选择"><a href="#RDB和AOP选择" class="headerlink" title="RDB和AOP选择"></a>RDB和AOP选择</h4><p><strong>RDB 和 AOF 对比</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>RDB</th>
+<th>AOF</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>启动优先级</td>
+<td>低</td>
+<td>高</td>
+</tr>
+<tr>
+<td>体积</td>
+<td>小</td>
+<td>大</td>
+</tr>
+<tr>
+<td>恢复速度</td>
+<td>快</td>
+<td>慢</td>
+</tr>
+<tr>
+<td>数据安全性</td>
+<td>丢数据</td>
+<td>根据策略决定</td>
+</tr>
+</tbody></table>
+<p><strong>如何选择使用哪种持久化方式？</strong></p>
+<p>一般来说， 如果想达到足以媲美 PostgreSQL 的数据安全性， 你应该同时使用两种持久化功能。</p>
+<p>如果你非常关心你的数据， 但仍然可以承受数分钟以内的数据丢失， 那么你可以只使用 RDB 持久化。</p>
+<p>有很多用户都只使用 AOF 持久化， 但并不推荐这种方式： 因为定时生成 RDB 快照（snapshot）非常便于进行数据库备份， 并且 RDB 恢复数据集的速度也要比 AOF 恢复的速度要快。</p>
+<h3 id="Redis发布订阅"><a href="#Redis发布订阅" class="headerlink" title="Redis发布订阅"></a>Redis发布订阅</h3><p>Redis 发布订阅(pub/sub)是一种消息通信模式：发送者(pub)发送消息，订阅者(sub)接收消息。</p>
 
     </div>
 
@@ -1276,7 +1414,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Redis学习"><span class="nav-number">1.</span> <span class="nav-text">Redis学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nosql概述"><span class="nav-number">1.1.</span> <span class="nav-text">Nosql概述</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么使用Nosql"><span class="nav-number">1.1.1.</span> <span class="nav-text">为什么使用Nosql</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是NoSQL"><span class="nav-number">1.1.2.</span> <span class="nav-text">什么是NoSQL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阿里巴巴演进分析"><span class="nav-number">1.1.3.</span> <span class="nav-text">阿里巴巴演进分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Nosql的四大分类"><span class="nav-number">1.1.4.</span> <span class="nav-text">Nosql的四大分类</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis入门"><span class="nav-number">1.2.</span> <span class="nav-text">Redis入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#概述"><span class="nav-number">1.2.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Windows安装"><span class="nav-number">1.2.2.</span> <span class="nav-text">Windows安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux安装"><span class="nav-number">1.2.3.</span> <span class="nav-text">Linux安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试性能"><span class="nav-number">1.2.4.</span> <span class="nav-text">测试性能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基础知识"><span class="nav-number">1.2.5.</span> <span class="nav-text">基础知识</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五大数据类型"><span class="nav-number">1.3.</span> <span class="nav-text">五大数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Redis-Key"><span class="nav-number">1.3.1.</span> <span class="nav-text">Redis-Key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#String-字符串"><span class="nav-number">1.3.2.</span> <span class="nav-text">String(字符串)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#List-列表"><span class="nav-number">1.3.3.</span> <span class="nav-text">List(列表)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Set-集合"><span class="nav-number">1.3.4.</span> <span class="nav-text">Set(集合)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hash（哈希）"><span class="nav-number">1.3.5.</span> <span class="nav-text">Hash（哈希）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Zset（有序集合）"><span class="nav-number">1.3.6.</span> <span class="nav-text">Zset（有序集合）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三种特殊数据类型"><span class="nav-number">1.4.</span> <span class="nav-text">三种特殊数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Geospatial-地理位置"><span class="nav-number">1.4.1.</span> <span class="nav-text">Geospatial(地理位置)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hyperloglog-基数统计"><span class="nav-number">1.4.2.</span> <span class="nav-text">Hyperloglog(基数统计)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#BitMaps-位图"><span class="nav-number">1.4.3.</span> <span class="nav-text">BitMaps(位图)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务"><span class="nav-number">1.5.</span> <span class="nav-text">事务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jedis"><span class="nav-number">1.6.</span> <span class="nav-text">Jedis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SpringBoot整合"><span class="nav-number">1.7.</span> <span class="nav-text">SpringBoot整合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义Redis工具类"><span class="nav-number">1.8.</span> <span class="nav-text">自定义Redis工具类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-conf详解"><span class="nav-number">1.9.</span> <span class="nav-text">Redis.conf详解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis持久化"><span class="nav-number">1.10.</span> <span class="nav-text">Redis持久化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#RDB（Redis-DataBases）"><span class="nav-number">1.10.1.</span> <span class="nav-text">RDB（Redis DataBases）</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Redis学习"><span class="nav-number">1.</span> <span class="nav-text">Redis学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nosql概述"><span class="nav-number">1.1.</span> <span class="nav-text">Nosql概述</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么使用Nosql"><span class="nav-number">1.1.1.</span> <span class="nav-text">为什么使用Nosql</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是NoSQL"><span class="nav-number">1.1.2.</span> <span class="nav-text">什么是NoSQL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阿里巴巴演进分析"><span class="nav-number">1.1.3.</span> <span class="nav-text">阿里巴巴演进分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Nosql的四大分类"><span class="nav-number">1.1.4.</span> <span class="nav-text">Nosql的四大分类</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis入门"><span class="nav-number">1.2.</span> <span class="nav-text">Redis入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#概述"><span class="nav-number">1.2.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Windows安装"><span class="nav-number">1.2.2.</span> <span class="nav-text">Windows安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux安装"><span class="nav-number">1.2.3.</span> <span class="nav-text">Linux安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试性能"><span class="nav-number">1.2.4.</span> <span class="nav-text">测试性能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基础知识"><span class="nav-number">1.2.5.</span> <span class="nav-text">基础知识</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五大数据类型"><span class="nav-number">1.3.</span> <span class="nav-text">五大数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Redis-Key"><span class="nav-number">1.3.1.</span> <span class="nav-text">Redis-Key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#String-字符串"><span class="nav-number">1.3.2.</span> <span class="nav-text">String(字符串)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#List-列表"><span class="nav-number">1.3.3.</span> <span class="nav-text">List(列表)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Set-集合"><span class="nav-number">1.3.4.</span> <span class="nav-text">Set(集合)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hash（哈希）"><span class="nav-number">1.3.5.</span> <span class="nav-text">Hash（哈希）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Zset（有序集合）"><span class="nav-number">1.3.6.</span> <span class="nav-text">Zset（有序集合）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三种特殊数据类型"><span class="nav-number">1.4.</span> <span class="nav-text">三种特殊数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Geospatial-地理位置"><span class="nav-number">1.4.1.</span> <span class="nav-text">Geospatial(地理位置)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hyperloglog-基数统计"><span class="nav-number">1.4.2.</span> <span class="nav-text">Hyperloglog(基数统计)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#BitMaps-位图"><span class="nav-number">1.4.3.</span> <span class="nav-text">BitMaps(位图)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务"><span class="nav-number">1.5.</span> <span class="nav-text">事务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jedis"><span class="nav-number">1.6.</span> <span class="nav-text">Jedis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SpringBoot整合"><span class="nav-number">1.7.</span> <span class="nav-text">SpringBoot整合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义Redis工具类"><span class="nav-number">1.8.</span> <span class="nav-text">自定义Redis工具类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-conf详解"><span class="nav-number">1.9.</span> <span class="nav-text">Redis.conf详解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis持久化"><span class="nav-number">1.10.</span> <span class="nav-text">Redis持久化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#RDB（Redis-DataBases）"><span class="nav-number">1.10.1.</span> <span class="nav-text">RDB（Redis DataBases）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#触发持久化规则"><span class="nav-number">1.10.1.1.</span> <span class="nav-text">触发持久化规则</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#save"><span class="nav-number">1.10.1.2.</span> <span class="nav-text">save</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#flushall命令"><span class="nav-number">1.10.1.3.</span> <span class="nav-text">flushall命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#bgsave"><span class="nav-number">1.10.1.4.</span> <span class="nav-text">bgsave</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RDB的优缺点"><span class="nav-number">1.10.1.5.</span> <span class="nav-text">RDB的优缺点</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AOF（Append-Only-File）"><span class="nav-number">1.10.2.</span> <span class="nav-text">AOF（Append Only File）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#重写规则说明"><span class="nav-number">1.10.2.1.</span> <span class="nav-text">重写规则说明</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#AOF的优缺点"><span class="nav-number">1.10.2.2.</span> <span class="nav-text">AOF的优缺点</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RDB和AOP选择"><span class="nav-number">1.10.3.</span> <span class="nav-text">RDB和AOP选择</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis发布订阅"><span class="nav-number">1.11.</span> <span class="nav-text">Redis发布订阅</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1292,7 +1430,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives/">
         
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">38</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1354,13 +1492,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">549k</span>
+    <span title="站点总字数">521k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">8:19</span>
+    <span title="站点阅读时长">7:54</span>
 </div>
 
         
