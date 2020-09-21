@@ -133,7 +133,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/blog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">38</span></a>
+    <a href="/blog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">39</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -186,6 +186,131 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cxxqing.github.io/blog/.com/2020/05/23/OSfifthone/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.jpg">
+      <meta itemprop="name" content="Carey">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Carey's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2020/05/23/OSfifthone/" class="post-title-link" itemprop="url">操作系统5.1</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-23 14:56:11" itemprop="dateCreated datePublished" datetime="2020-05-23T14:56:11+08:00">2020-05-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-15 22:51:48" itemprop="dateModified" datetime="2020-06-15T22:51:48+08:00">2020-06-15</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>698</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="5-1-1、-I-O设备的基本概念与分类"><a href="#5-1-1、-I-O设备的基本概念与分类" class="headerlink" title="5.1.1、 I/O设备的基本概念与分类"></a>5.1.1、 I/O设备的基本概念与分类</h2><h3 id="什么是I-O设备"><a href="#什么是I-O设备" class="headerlink" title="什么是I/O设备"></a>什么是I/O设备</h3><ul>
+<li>将数据Input/Output(输入/输出)计算机的外部设备</li>
+</ul>
+<h3 id="按使用特性分类"><a href="#按使用特性分类" class="headerlink" title="按使用特性分类"></a>按使用特性分类</h3><ul>
+<li>人机交互类外部设备</li>
+<li>存储设备</li>
+<li>网络通信设备</li>
+</ul>
+<h3 id="按传输速率分类"><a href="#按传输速率分类" class="headerlink" title="按传输速率分类"></a>按传输速率分类</h3><ul>
+<li>低速设备</li>
+<li>中速设备</li>
+<li>高速设备</li>
+</ul>
+<h3 id="按信息交换的单位分类"><a href="#按信息交换的单位分类" class="headerlink" title="按信息交换的单位分类"></a>按信息交换的单位分类</h3><ul>
+<li>块设备（传输快，可寻址）</li>
+<li>字符设备（传输满，不可寻址，常采用==中断驱动方式==）</li>
+</ul>
+<h2 id="5-1-2、I-O控制器"><a href="#5-1-2、I-O控制器" class="headerlink" title="5.1.2、I/O控制器"></a>5.1.2、I/O控制器</h2><h3 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h3><ul>
+<li>接受和识别CPU发出的命令（要有控制寄存器）</li>
+<li>向CPU报告设备的状态（要有状态寄存器）</li>
+<li>数据交换（要有数据寄存器，暂存输入/输出的数据）</li>
+<li>地址识别（由I/O逻辑实现）</li>
+</ul>
+<h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3><ul>
+<li>CPU与控制器之间的接口（实现控制器与CPU之间的通信）</li>
+<li>I/O逻辑（负责识别CPU发出的命令，并向设备发出命令）</li>
+<li>控制器与设备之间的接口（实现控制器与设备之间的通信）</li>
+</ul>
+<h3 id="两种寄存器编址方式"><a href="#两种寄存器编址方式" class="headerlink" title="两种寄存器编址方式"></a>两种寄存器编址方式</h3><ul>
+<li>内存映射I/O<ul>
+<li>控制器中的寄存器与内存统一编制</li>
+<li>可以采用对内存进行操作的指令来对控制器进行操作</li>
+</ul>
+</li>
+<li>寄存器独立编制<ul>
+<li>控制器中的寄存器独立编制</li>
+<li>需要设置专门的指令来操作控制器</li>
+</ul>
+</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/blog/2020/05/23/OSfifthone/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -1332,123 +1457,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cxxqing.github.io/blog/.com/2020/05/10/OSfirst/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blog/images/avatar.jpg">
-      <meta itemprop="name" content="Carey">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Carey's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/blog/2020/05/10/OSfirst/" class="post-title-link" itemprop="url">操作系统概述</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-10 15:59:26" itemprop="dateCreated datePublished" datetime="2020-05-10T15:59:26+08:00">2020-05-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-15 22:51:37" itemprop="dateModified" datetime="2020-06-15T22:51:37+08:00">2020-06-15</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.7k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="操作系统的概念（定义）"><a href="#操作系统的概念（定义）" class="headerlink" title="操作系统的概念（定义）"></a>操作系统的概念（定义）</h2><p>操作系统（Operating System， OS）是指控制和管理整个计算机系统的硬件和软件资源，并合理地组织调度计算机的工作和资源的分配；以提供给用户和其他软件方便的接口和环境；它是计算机系统中最基本的系统软件。</p>
-<hr>
-<h2 id="操作系统的特征"><a href="#操作系统的特征" class="headerlink" title="操作系统的特征"></a>操作系统的特征</h2><ul>
-<li>并发：指两个或多个事件在同一时间间隔内发生。这些事件宏观上是同时发生的，但微观上是交替发生的。<br>易混淆考点–并行：指两个或多个事件在同一时刻同时发生。</li>
-<li>共享即资源共享，是指系统中的资源可供内存中多个并发执行的进程共同使用。<ul>
-<li>互斥共享方式(如对摄像头设备的共享使用)</li>
-<li>同时共享方式(如对磁盘自由的共享使用)</li>
-</ul>
-</li>
-<li>虚拟是指把一个物理上的实体变为若干个逻辑上的对应物。物理实体（前者）是实际存在的，而逻辑上对应物（后者）是用户感受到的。<ul>
-<li>空分复用技术(如虚拟存储器)</li>
-<li>时分复用技术(如虚拟处理器)</li>
-</ul>
-</li>
-<li>异步是指在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底的，而是走走停停，以不可预知的速度向前推进，这就是进程的异步性。</li>
-</ul>
-<hr>
-<h2 id="OS的发展与分类"><a href="#OS的发展与分类" class="headerlink" title="OS的发展与分类"></a>OS的发展与分类</h2><h3 id="手工操作系统"><a href="#手工操作系统" class="headerlink" title="手工操作系统"></a>手工操作系统</h3><h3 id="批处理阶段"><a href="#批处理阶段" class="headerlink" title="批处理阶段"></a>批处理阶段</h3><ul>
-<li>单道批处理系统<br>引入脱机输入/输出技术（用外围机+磁带完成），并由监督程序负责控制作业的输入、输出<br>缺点：内存中仅能有一道程序运行, CPU有大量的时间是在空闲等待I/O完成</li>
-<li>多道批处理系统(操作系统开始出现)<br>优点：多道程序并发执行，共享计算机资源。资源利用率大幅提升<br>缺点：没有人机交互功能</li>
-</ul>
-<h3 id="分时操作系统"><a href="#分时操作系统" class="headerlink" title="分时操作系统"></a>分时操作系统</h3><p>计算机以时间片为单位轮流为各个用户/作业服务<br>优点：解决了人机交互问题<br>缺点：不能优先处理一些紧急任务</p>
-<h3 id="实时操作系统"><a href="#实时操作系统" class="headerlink" title="实时操作系统"></a>实时操作系统</h3><p>要在严格的时限内处理完事件，具有及时性和可靠性</p>
-<ul>
-<li><p>硬实时系统  必须在绝对严格的规定时间内完成处理    如导弹控制系统</p>
-</li>
-<li><p>软实时系统     能接受偶尔违反时间规定              如12306火车订票系统</p>
-</li>
-</ul>
-<h3 id="网络操作系统"><a href="#网络操作系统" class="headerlink" title="网络操作系统"></a>网络操作系统</h3><p>实现网络中各种资源的共享（如文件共享）和各台计算机之间的通信</p>
-<h3 id="分布式操作系统"><a href="#分布式操作系统" class="headerlink" title="分布式操作系统"></a>分布式操作系统</h3><p>分布性和并行性<br>任何工作都可以分布在这些计算机上，由它们并行、协同完成这个任务</p>
-<h3 id="个人计算机操作系统"><a href="#个人计算机操作系统" class="headerlink" title="个人计算机操作系统"></a>个人计算机操作系统</h3><hr>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/blog/2020/05/10/OSfirst/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1520,7 +1528,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives/">
         
-          <span class="site-state-item-count">38</span>
+          <span class="site-state-item-count">39</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1582,13 +1590,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">521k</span>
+    <span title="站点总字数">599k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">7:54</span>
+    <span title="站点阅读时长">9:05</span>
 </div>
 
         
