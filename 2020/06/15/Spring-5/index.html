@@ -63,7 +63,7 @@
 <meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/15/Spring-5/%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3%E7%9A%84aspectJ%E6%B5%8B%E8%AF%95%E5%8C%85.png">
 <meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/15/Spring-5/%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3%E7%9A%84aspectJ%E6%B5%8B%E8%AF%95.png">
 <meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/15/Spring-5/mybatis-spring.png">
-<meta property="og:image" content="https://cxxqing.github.io/blog/blog/.com/2020/06/15/Spring-5/SqlSessionDaoSupport.png">
+<meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/15/Spring-5/SqlSessionDaoSupport.png">
 <meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/15/Spring-5/bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%9B%BE.jpg">
 <meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/15/Spring-5/bean%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F1%E5%8D%95%E4%BE%8B.png">
 <meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/15/Spring-5/bean%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F1%E5%A4%9A%E5%AE%9E%E4%BE%8B.png">
@@ -71,7 +71,7 @@
 <meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/15/Spring-5/bean%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F3.png">
 <meta property="og:image" content="https://cxxqing.github.io/blog/2020/06/15/Spring-5/bean%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F4.png">
 <meta property="article:published_time" content="2020-06-15T07:09:30.000Z">
-<meta property="article:modified_time" content="2020-10-18T15:20:56.492Z">
+<meta property="article:modified_time" content="2020-10-29T08:18:53.595Z">
 <meta property="article:author" content="Carey">
 <meta property="article:tag" content="框架">
 <meta name="twitter:card" content="summary">
@@ -181,7 +181,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/blog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">39</span></a>
+    <a href="/blog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">41</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -269,7 +269,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-18 23:20:56" itemprop="dateModified" datetime="2020-10-18T23:20:56+08:00">2020-10-18</time>
+                <time title="修改时间：2020-10-29 16:18:53" itemprop="dateModified" datetime="2020-10-29T16:18:53+08:00">2020-10-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1245,7 +1245,9 @@
 </blockquote>
 <p>mybatis-spring1.2.3版以上的才有这个 .</p>
 <p>官方文档截图 :</p>
-<p>dao继承Support类 , 直接利用 getSqlSession() 获得 , 然后直接注入SqlSessionFactory . 比起方式1 , 不需要管理SqlSessionTemplate , 而且对事务的支持更加友好 . 可跟踪源码查看<br><img src="/blog/blog/.com/2020/06/15/Spring-5/SqlSessionDaoSupport.png" alt="image-20200625143111030"></p>
+<p>dao继承Support类 , 直接利用 getSqlSession() 获得 , 然后直接注入SqlSessionFactory . 比起方式1 , 不需要管理SqlSessionTemplate , 而且对事务的支持更加友好 . 可跟踪源码查看</p>
+<img src="/blog/2020/06/15/Spring-5/SqlSessionDaoSupport.png" class>
+
 <p>测试：</p>
 <p>1、将我们上面写的UserDaoImpl修改一下</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserDaoImpl</span> <span class="keyword">extends</span> <span class="title">SqlSessionDaoSupport</span> <span class="keyword">implements</span> <span class="title">UserMapper</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;User&gt; <span class="title">selectUser</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        UserMapper mapper = getSqlSession().getMapper(UserMapper<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">        <span class="keyword">return</span> mapper.selectUser();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1400,7 +1402,7 @@
 <ol>
 <li>Spring对bean进行实例化;</li>
 <li>Spring将值和bean的引用注入到bean对应的属性中;</li>
-<li>加载xxxAware接口<br>1）、如果bean实现了BeanNameAware接口，Spring将bean的ID传递给setBean-Name(）方法;<br>2）、如果bean实现了BeanFactoryAware接口，Spring将调用setBeanFactory()方法，将BeanFactory容器实例传入;<br>3）、如果bean实现了ApplicationContextAware接口，Spring将调用setApplicationcontext()方法，将bean所在的应用上下文的引用传入进来;</li>
+<li>加载xxxAware接口<br> 1）、如果bean实现了BeanNameAware接口，Spring将bean的ID传递给setBean-Name(）方法;<br> 2）、如果bean实现了BeanFactoryAware接口，Spring将调用setBeanFactory()方法，将BeanFactory容器实例传入;<br> 3）、如果bean实现了ApplicationContextAware接口，Spring将调用setApplicationcontext()方法，将bean所在的应用上下文的引用传入进来;</li>
 <li>如果bean实现了BeanPostProcessor接口，Spring将调用它们的post-ProcessBeforeInitialization()方法;</li>
 <li>如果bean实现了InitializingBean接口，Spring将调用它们的after-Propertiesset()方法。类似地，如果bean使用init-method声明了初始化方法，该方法也会被调用;</li>
 <li>如果bean实现了BeanPostProcessor接口，Spring将调用它们的post-ProcessAfterInitialization()方法;</li>
@@ -1598,7 +1600,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives/">
         
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">41</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1660,13 +1662,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">589k</span>
+    <span title="站点总字数">644k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">8:55</span>
+    <span title="站点阅读时长">9:45</span>
 </div>
 
         

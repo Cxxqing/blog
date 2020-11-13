@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://cxxqing.github.io/blog/.com/"/>
-  <updated>2020-09-22T14:41:58.951Z</updated>
+  <updated>2020-11-06T03:51:53.283Z</updated>
   <id>https://cxxqing.github.io/blog/.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JAVA基础</title>
+    <link href="https://cxxqing.github.io/blog/.com/2020/11/06/JAVA%E5%9F%BA%E7%A1%80/"/>
+    <id>https://cxxqing.github.io/blog/.com/2020/11/06/JAVA%E5%9F%BA%E7%A1%80/</id>
+    <published>2020-11-06T01:13:04.000Z</published>
+    <updated>2020-11-06T03:51:53.283Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;常用类&quot;&gt;&lt;a href=&quot;#常用类&quot; class=&quot;headerlink&quot; title=&quot;常用类&quot;&gt;&lt;/a&gt;常用类&lt;/h2&gt;&lt;h3 id=&quot;日期和日历类&quot;&gt;&lt;a href=&quot;#日期和日历类&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>maven</title>
@@ -260,7 +283,7 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/06/25/spring-mvc/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/25/spring-mvc/</id>
     <published>2020-06-25T13:21:52.000Z</published>
-    <updated>2020-07-21T08:59:03.077Z</updated>
+    <updated>2020-11-07T08:06:55.735Z</updated>
     
     <summary type="html">
     
@@ -287,7 +310,7 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/06/15/Spring-5/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/15/Spring-5/</id>
     <published>2020-06-15T07:09:30.000Z</published>
-    <updated>2020-10-18T15:20:56.492Z</updated>
+    <updated>2020-10-29T08:18:53.595Z</updated>
     
     <summary type="html">
     
@@ -333,7 +356,7 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/06/05/MyBatis/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/06/05/MyBatis/</id>
     <published>2020-06-04T16:37:42.000Z</published>
-    <updated>2020-10-21T07:16:14.805Z</updated>
+    <updated>2020-10-24T06:41:17.917Z</updated>
     
     <summary type="html">
     
@@ -414,7 +437,7 @@
     <link href="https://cxxqing.github.io/blog/.com/2020/05/28/JavaScript-study/"/>
     <id>https://cxxqing.github.io/blog/.com/2020/05/28/JavaScript-study/</id>
     <published>2020-05-27T16:53:59.000Z</published>
-    <updated>2020-06-15T14:53:27.592Z</updated>
+    <updated>2020-11-05T02:41:30.596Z</updated>
     
     <summary type="html">
     
@@ -448,45 +471,6 @@
 
 &lt;p&gt;2.tomcat目录下conf目录下的自己的server.xml文件中添加了一个配置&lt;img src=&quot;/blog/blog/.com/2020/05/28/solve-the-mess/%E4%BF%AE%E6%94%B9server.xml.png&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
 &lt;p&gt;3.修改 tomcat 下的 logging.properties这个文件 为 GBK 就好了。&lt;br&gt;#java.util.logging.ConsoleHandler.encoding = UTF-8&lt;br&gt;java.util.logging.ConsoleHandler.encoding = GBK&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>HTML5学习</title>
-    <link href="https://cxxqing.github.io/blog/.com/2020/05/26/HTML5-study/"/>
-    <id>https://cxxqing.github.io/blog/.com/2020/05/26/HTML5-study/</id>
-    <published>2020-05-26T08:46:49.000Z</published>
-    <updated>2020-06-15T14:54:08.406Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;1、初识HTML&quot;&gt;&lt;a href=&quot;#1、初识HTML&quot; class=&quot;headerlink&quot; title=&quot;1、初识HTML&quot;&gt;&lt;/a&gt;1、初识HTML&lt;/h3&gt;&lt;p&gt;HTML&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;==H==yper ==T==ext ==M==arkup ==L==anguage(超文本==标记语言==)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;W3C&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;==W==orld ==W==ide ==W==eb ==C==onsortium(万维网联盟)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;成立于1994年，Web技术领域最权威和具影响力的国际==中立性技术标准机构==&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.w3.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.w3.org/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.chinaw3c.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.chinaw3c.org/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;W3C标准包括&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;==结构==化标准语言(HTML、XML)&lt;/li&gt;
-&lt;li&gt;==表现==标准语言(CSS)&lt;/li&gt;
-&lt;li&gt;==行为==标准(DOM、ECMAScript)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;基本信息：&lt;/p&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- DOCTYPE：告诉浏览器，我们要使用什么规范 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;!DOCTYPE &lt;span class=&quot;meta-keyword&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;lang&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;en&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- head标签代表网页头部 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- meta描述性标签，它用来描述我们网站的一些信息--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- meta一般用来做SEO--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;charset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;keywords&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;carey的html笔记&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;description&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;来这个地方可以查看自己的html笔记&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- title网页标题 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;我的第一个网页&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- body标签代表网页主体 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Hello，World！&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
